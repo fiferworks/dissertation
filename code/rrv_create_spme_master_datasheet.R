@@ -188,35 +188,34 @@ gc_data$Location <-
 gc_data$Location <- str_trim(gc_data$Location)
 gc_data$Location <- gsub("rose", "field", gc_data$Location)
 
-# FIGURE OUT A WAY TO ASSIGN TREATMENTS FOR BLANKS -> NAs
 
-gc_data$Treatment <-
-  sub("blank_bag_1ul_nonyl_acetate", NA, gc_data$Treatment)
-gc_data$Treatment <-
-  sub("rose_1ul_nonyl_acetate", "greenhouse", gc_data$Treatment)
-gc_data$Treatment <-
-  sub("blank_bag_1ul_nonyl_acetate", NA, gc_data$Treatment)
-gc_data$Treatment <- sub("blank_fiber*", NA, gc_data$Treatment)
-gc_data$Treatment <- sub("blank_no_fiber", NA, gc_data$Treatment)
+# Assigns blank treatments to NA
+gc_data$Treatment[gc_data$`Injection Type` == "blank"] <- NA
+
+#removing folder names
+gc_data$Treatment <- sub("TIC\\/rose_", "", gc_data$Treatment)
+gc_data$Treatment <- sub("MS_CALL\\/rose_", "", gc_data$Treatment)
 
 # cleaning
 gc_data$Treatment <-
-  sub("rose_clean_actigard*", "actigard", gc_data$Treatment)
-gc_data$Treatment <- sub("rose_rrv*", "rrv", gc_data$Treatment)
+  sub("1ul_nonyl_acetate", "untreated", gc_data$Treatment)
+gc_data$Treatment <- sub("clean_site*", "untreated", gc_data$Treatment)
+gc_data$Treatment <- sub("clean_actigard*", "actigard", gc_data$Treatment)
+gc_data$Treatment <- sub("rrv_site*", "rrv", gc_data$Treatment)
 
 # removing underscores
 gc_data$Treatment <- gsub("_", " ", gc_data$Treatment)
 
-# list of words to remove for cleaning
-stopwords <-
-  c("site", "clean")
-x  = gc_data$Treatment
-x  =  tm::removeWords(x, stopwords)
-gc_data$Treatment <- x
-
 # removing other parts
 gc_data$Treatment <- tm::removePunctuation(gc_data$Treatment)
 gc_data$Treatment <- tm::removeNumbers(gc_data$Treatment)
+
+# list of words to remove for cleaning
+stopwords <-
+  c("site")
+x  = gc_data$Treatment
+x  =  tm::removeWords(x, stopwords)
+gc_data$Treatment <- x
 
 # cleaning up whitespace
 gc_data$Treatment <- str_trim(gc_data$Treatment)
