@@ -1,0 +1,3 @@
+# First report of *Phyllocoptes fructiphilus* in Florida
+<!-- this imports my publication -->
+\includepdf[pages={-}]{pubs/pfruct-report.pdf}

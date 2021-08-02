@@ -1,0 +1,108 @@
+# 3. Objective 2: Potential of the predatory mite *Amblyseius swirskii* to control *Phyllocoptes fructiphilus* {#swirskii}
+
+<!-- Uncomment and run code chunk to update values after changing R files: -->
+<!-- ```{r} -->
+<!-- source('code/rrv_pred_mite_data_cleaning.R') -->
+<!-- source('code/rrv_pred_mite_analysis.R') -->
+<!-- source('code/rrv_pred_mite_graphs.R') -->
+<!-- ``` -->
+
+## 3.1 *A. swirskii* attraction to RRV-infected roses {#swirskii-roses}
+
+#### 3.1.1 Problem Statement
+
+Some pest species can be successfully managed by introducing their natural enemies to control them. Phytoseiid mites such as *Amblyseius swirskii* Athias-Henriot belong to a group of predatory mites which are used in agriculture for pest control [@Smith1991; @Onzo2012; @Buitenhuis2015]. Phytoseiid mites integrate well into pest management programs and are compatible with certain pesticides [@Trumble1993; @Nicetic2001; @Fernandez2017] and other bio-control agents [@Midthassel2016], which together help control pests when conventional methods are undesireable or unavailable.
+
+*A. swirskii* are generalist predators which feed on other common agricultural pests such as whiteflies [@Bolckmans2005], spider mites [@McMurtry1970], and thrips [@Wimmer2008]. *A. swirskii* can persist on pollen [@Loughner2011; @Delisle2015] and other arthropods even when the pest of concern is absent [@Janssen2015]. This allows *A. swirskii*  to be released as a preventative measure instead of reacting to an outbreak [@Kutuk2011]. Predatory mites are able to locate their prey in tight areas when other predators might be too big. These features make *A. swirskii* an interesting option for managing *P. fructiphilus*, but their potential has not yet been tested.
+
+Predators like *A. swirskii* learn to associate their prey with chemical cues [@Boer2004a; @Boer2004b; @Boer2005], and become attracted to the Volatile Organic Compounds (VOCs) released when plants are injured by pests or infected with pathogens [@Boer2004b].
+
+Salicylic Acid plays a role in activating a plant's immune system and helps protect the plant from pests, bacteria, fungus or viruses [@Gozzo2013]. We are collaborating with the University of Georgia to test how activating plant defensive compounds might protect roses from *P. fructiphilus* and/or RRD. We applied Acibenzolar-S-methyl (ASM), a chemical which works like Salicylic Acid to activate plant defenses [@Ziadi2001; @Tripathi2010] at a high and a low rate, as well as a miticide and water as controls. These data suggest that activated plant defenses may work to control *P. fructiphilus*.
+
+#### 3.1.2 Preliminary Data
+
+Predatory mites do not feed on the plants they live on, so they shouldn't be harmed by activated plant defensive compounds. In natural systems, predatory mites learn to follow plant defensive chemicals to find their prey [@Boer2004a]. This suggests that combining ASM-activated plant defenses with predatory mites may enhance the ability of predatory mites to find their prey, but this combination hasn't been tested yet.
+
+Preliminary tests with *A. swirskii* show attraction towards compounds from RRV-infected roses. The lab has tested some of these compounds with Y-tube choice tests to determine their role in attracting *A. swirskii* to the infected roses. Other chemicals remain to be tested. Understanding which chemicals are responsible for attracting *A. swirskii* to RRV-infected roses is a preliminary part of determining if *A. swirskii* will search for *P. fructiphilus* when on a rose.
+
+```{r}
+knitr::include_graphics('figure/reed.jpg')
+```
+
+`r fig_nums(name = "rose_vols", caption = "*Amblyseius swirskii* attraction to healthy and Rose Rosette Virus-infected Pink Double Knock Out® roses. Asterisks represent significant differences as calculated by &chi;-squared contingency table tests for given probabilities. N.S. = not significant. RRV-infected vs Healthy Rose: &chi;-squared = 9.33, df = 1, α = 0.05, p-value = 0.002. Filtered Air vs Healthy Rose: &chi;-squared = 0.47, df = 1, α = 0.05, p-value = 0.4913.")`
+
+## 3.2 Volatile changes in Rose Rosette Virus-infected Plants Treated with Acibenzolar-S-Methyl, a functional analog of Salicylic Acid {#swirskii-trials}
+
+#### 3.2.1 Problem Statement
+Some mites orient themselves towards volatiles of their prey or the host plant of their prey. We intend to investigate differences between RRV-infected and uninfected Pink Double Knock Out® roses and their volatiles, as well as the effects of SAR-induction on rose volatiles. The results will help inform future assays involving predatory mites and their *P. fructiphilus*-seeking behaviors in relation to rose RRV-infection status and the use of SAR-inducers for biological control.
+
+<!-- #### Rationale -->
+
+
+<!-- #### Proposal:  -->
+
+#### 3.2.2 Materials & Methods
+We plan on collecting plant volatiles from Double Knock Out® roses and comparing the differences between RRV-infected and uninfected roses, using a push-pull volatile collection system as illustrated in *`r citef("test_vols")`*. Filtered air fills an oven bag sealed over rose canes to trap leaf volatiles. Volatiles are then drawn through a clean collection filter by a vaccuum. The chemicals on the filter are eluted with 150 ul of dichloromethane, then 5 ul of nonyl acetate are added as an internal standard to the extraction. The extractions then are injected into a GC-MS and their spectra are analyzed. Compounds are identified by comparison to mass spectra databases as well as synthetic standards for confirmation.
+
+Treatments will be the following:
+
+1.	Uninfected Pink Double Knock Out® roses
+1.	RRD infected Pink Double Knock Out® roses
+1.	SAR-induced uninfected Pink Double Knock Out® roses
+1.	SAR-induced RRD-infected Pink Double Knock Out® roses
+
+A group of 20 plants will be isolated. Volatiles from the 20 plants will be collected as a baseline (already collected). Then half of the plants will be SAR inducted by bi-weekly spray applications of Acibenzolar-S-Methyl. Subsequently half of the remaining plants (5 control and 5 SAR-induced plants) will be grafted with RRV-infected buds to innoculate them with the virus [@Doudrick1987]. Volatiles will be collected bi-monthly following SAR-induction and RRV application.  
+
+```{r test-vols}
+grid::grid.raster(tiff::readTIFF("figure/vol-extract-trap-filter.tif"))
+```
+
+`r fig_nums(name = "test-vols", caption = "Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. The exterior end of the filter is attached to a vacuum airline set to allow for constant static pressure on the bag from inflation. The rose is then left for 24 hours, the filter is eluted with Dichloromethane into a gas chromatography vial, 1 ul of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled Gas Chromatography - Mass Spectrometer (GC-MS) for chemical identification.")`
+
+#### 3.2.3 Potential benefits
+By determining which chemicals change during infection or with SAR-induction, we can gain insight into the physiological changes occuring during RRV-infection and SAR-induction in roses. Testing headspace volatiles can also give us insight into what VOCs predators like *A. swirskii* may encounter on infected or SAR-induced roses.
+
+#### 3.2.4 Expected outcomes
+
+- Determine which headspace VOCs are different between RRV-infected and healthy roses
+
+- Determine what effects SAR-induction has on RRV-infected and healthy roses
+
+- Creates a starting point for volatile testing for future olfactometer studies with *A. swirskii*
+
+Knowing which VOCs affect the host-seeking abilities of a predatory mite like *A. swirskii* is part of preliminary work for determining the compatibility of *A. swirskii* as a predator of *P. fructiphilus*.
+
+
+#### 3.3.1 Proposal: a series of behavioral tests to determine which compounds from RRV-infected Pink Double Knock Out® roses are attractive to *A. swirskii*
+
+We propose observing the behavior of *A. swirskii* with Y-tube choice tests to test *A. swirskii*'s potential to control *P. fructiphilus*.
+
+#### 3.3.2 Materials & Methods
+
+*Amblyseius swirskii* Athias-Henriot will be reared according to procedures adapted from @Sarwar2017: *A. swirskii* mites will be reared in growth chambers set at 25 &deg;C with 70\% RH and 16:8 hours light:dark. Colonies will be kept in vermiculite-filled plastic containers, which will be suspended on plastic pylons in a moat of water with a surfactant to break the surface tension, preventing mite escape. Colonies will be fed every 2 days with bee pollen.
+
+1. We will analyze differences in headspace VOCs extracted from both RRV-infected and uninfected roses using paired Gas Chromatography-Mass Spectrometry and preform a Principal Component Analysis to determine which compounds are good candidates for testing *A. swirskii* attraction.
+
+1. We will record the reponses of *A. swirkii* mites with two-arm olfactometer assays to determine the attractiveness to the selected compounds and analyze the results using &chi;-squared tests.
+
+1. If there are significant differences in *A. swirskii* attraction towards single compounds or blends with Y-tube assays, we will preform a series of tests with four-arm olfactometer assays to compare *A. swirskii* choices between different attractive compounds.
+
+#### 3.3.3 Potential benefits
+
+*A. swirskii* are compatible with some pesticides and existing bio-control methods. *A. swirskii* feed on other pests as well, so they can integrate with existing pest management programs. Developing a bio-control option for RRD can increase profitability for rose growers, reduces losses from RRV-infection, and reduce the number of pesticide applications required. Reduced reliance on pesticides promotes the health and safety of growers as well as protecting the environment. Reducing pesticide usage can also prevent *P. fructiphilus* from developing pesticide resistance and decrease risks for pollinators which frequent roses. Predatory mites are low-maintenance to rear and deploy. Mites subsist in the environment without decreasing sustainability in other areas. Overall, predatory mites represent great value for sustainable agriculture.
+
+```{r}
+knitr::include_graphics('figure/reed.jpg')
+```
+
+`r fig_nums(name = "test_vols", caption = "*Amblyseius swirskii* attraction to Methyl Salicylate (MeSA) and D-L Limonene vs Filtered Air at concentrations of 1 g/mL. 100 &mu;m of chemical was applied to 3 cm dental wicks inside of erlenmeyer flasks which were part of the air line attached to the olfactometer. Asterisks represent significant differences as calculated by &chi;-squared contingency table tests for given probabilities. N.S. = not significant. MeSA vs Air: &chi;-squared = 0.48649, df = 1, α = 0.05, p-value = 0.4855. D-L Limonene vs Air: &chi;-squared = 0.94737, df = 1, α = 0.05, p-value = 0.3304.")`
+
+#### 3.3.4 Expected outcomes
+
+Potential outcomes of observing predatory mite behaviors are: 
+
+- Identify which RRV-infected rose compounds are attracting *A. swirskii*
+
+- Determine rate of *A. swirskii* predation on *P. fructiphilus*
+
+Nursery managers are interested in alternative and less expensive management options to combat *P. fructiphilus* and Rose Rosette Virus. Predatory mites have potential to fulfill this need: Mites from the family Phytoseiidae are being investigated as biocontrol agents for the management of *P. fructiphilus*. Preliminary data suggest that the phytoseiid mite *A. swirskii* is attracted to volatiles of Rose Rosette-infected roses. This attraction may have synergistic effects for *P. fructiphilus* control. *A. swirskii*  This research will contribute testing the suitability of *A. swirskii* as a biocontrol option for the management of *P. fructiphilus*.

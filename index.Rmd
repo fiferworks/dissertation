@@ -1,0 +1,196 @@
+---
+title: 'Mite-Virus-Plant Complexes of Importance for Florida Agriculture: Early Detection, Chemical Ecology and Biocontrol of *Phyllocoptes fructiphilus* and *Brevipalpus californicus*'
+author: 'Austin Nathaniel Fife'
+date: '2021'
+institution: 'The University of Florida'
+division: 'College of Agriculture and Life Sciences'
+advisor: 'Xavier Martini'
+# If you have more two advisors, un-silence line 9:
+altadvisor: 'Mathews Paret'
+department: 'See your Editorial Document Management record for your exact major'
+degree: 'Doctor of Philosophy'
+knit: bookdown::render_book
+site: bookdown::bookdown_site
+
+# This will automatically install the {remotes} package and {thesisdown}
+# Change this to FALSE if you'd like to install them manually on your own.
+params:
+  'Install needed packages for {thesisdown}': True
+  
+# Remove the hashtag to specify which version of output you would like.
+# Can only choose one at a time.
+output:
+  thesisdown::thesis_pdf:
+    latex_engine: xelatex
+    fig_caption: yes
+#  thesisdown::thesis_gitbook: default         
+#  thesisdown::thesis_word: default
+#  thesisdown::thesis_epub: default
+
+# If you are creating a PDF you'll need to write your preliminary content 
+# (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
+# for the .RMD files. If you are NOT producing a PDF, delete or silence
+# lines 25-39 in this YAML header.
+# If you are creating a PDF you'll need to write your preliminary content here or
+# use code similar to line 20 for the files.  If you are producing in a different
+# format than PDF, you can delete or ignore lines 20-31 in this YAML header.
+abstract: '`r paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`' 
+
+# If you'd rather include the preliminary content in files instead of inline
+# like below, use a command like that for the abstract above.  Note that a tab 
+# is needed on the line after the `|`.
+acknowledgements: |
+  Acknowledgments must be written in complete sentences. Do not use direct address. For example, instead of Thanks, Mom and Dad!, you should say I thank my parents.
+dedication: |
+  For Liz, Violet, Juniper and Fifes to come
+
+#Use this section for your biography
+preface: |
+  This section is for your biographical sketch. It should be in third person, past tense. Do not put personal details such as your birthday here. Again, to make a full paragraph you must write at least three sentences.
+  
+keywords: keywords #this isn't implemented yet
+subject: subject #also not implemented
+
+# Specify the location of the bibliography below
+bibliography: bib/thesis.bib
+citation_package: natbib
+biblio-style: apalike
+
+# Download your specific csl file and refer to it in the line below.
+csl: csl/entsoc.csl
+lot: true
+lof: true
+# toc: true
+# space_between_paragraphs: true
+---
+
+<!--
+Above is the YAML (YAML Ain't Markup Language) header that includes a lot of 
+metadata used to produce the document.  Be careful with spacing in this header!
+If you'd prefer to not include a Dedication, for example, simply delete the section entirely, or silence them (add # before each line). 
+If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
+If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
+If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
+-->
+
+```{r include_packages, include=FALSE}
+# This chunk ensures that the thesisdown package is
+# installed and loaded. This thesisdown package includes
+# the template files for the thesis.
+if (!require(remotes)) {
+  if (params$`Install needed packages for {thesisdown}`) {
+    install.packages("remotes", repos = "https://cran.rstudio.com")
+  } else {
+    stop(
+      paste('You need to run install.packages("remotes")",
+            "first in the Console.')
+    )
+  }
+}
+if (!require(thesisdown)) {
+  if (params$`Install needed packages for {thesisdown}`) {
+    remotes::install_github("ismayc/thesisdown")
+  } else {
+    stop(
+      paste(
+        "You need to run",
+        'remotes::install_github("ismayc/thesisdown")',
+        "first in the Console."
+      )
+    )
+  }
+}
+library(thesisdown)
+# Set how wide the R output will go
+options(width = 70)
+
+# loading package to use python scripts
+if (!require(reticulate)) {
+  if (params$`Install needed packages for {thesisdown}`) {
+    install.packages("reticulate", repos = "https://cran.rstudio.com")
+  } else {
+    stop(
+      paste('You need to run install.packages("remotes")",
+            "first in the Console.')
+    )
+  }
+}
+
+if(!require(captioner))
+  devtools::install_github("adletaw/captioner")
+
+#installs the required phantomjs for the maps
+if(!require(webshot))
+  webshot::install_phantomjs()
+
+pkgs <-
+  c(
+    "bookdown",
+    "thesisdown",
+    "tidyverse",
+    "sf",
+    "ggplot2",
+    "leaflet",
+    "leafsync",
+    "dplyr",
+    "ggthemes",
+    "showtext",
+    "extrafont",
+    "Cairo",
+    "writexl",
+    "readxl",
+    "mapview",
+    "htmlwidgets",
+    "viridisLite",
+    "wesanderson",
+    "captioner",
+    "pryr",
+    "tiff"
+    )
+
+# install.packages(pkgs, character.only = TRUE, ask = FALSE)
+
+lapply(pkgs, library, character.only = TRUE)
+
+rm(pkgs)
+
+#loads the library to use python in rmarkdown chunks
+library(reticulate)
+
+# tells r which python to use, check if the path if correct:
+use_python("C:/ProgramData/Anaconda3/python.exe")
+
+# might need to run this
+# reticulate::py_available(initialize = TRUE)
+
+# discover which python version will be used
+# py_discover_config()
+
+#setting up captions for use in the document
+tab_nums <- captioner::captioner(prefix = 'Table')
+fig_nums <- captioner::captioner()
+
+#allows me to use a custom function instead of the citation function of captioner, which is wordy to use
+citef <- pryr::partial(fig_nums, display = "cite") #for figures
+citet <- pryr::partial(tab_nums, display = "cite") #for tables
+
+# R global options
+knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE)
+```
+
+<!--
+The acknowledgments, preface, dedication, and abstract are added into the PDF
+version automatically by inputting them in the YAML at the top of this file.
+Alternatively, you can put that content in files like 00--prelim.Rmd and
+00-abstract.Rmd like done below.
+-->
+
+```{r eval=!knitr::is_latex_output(), child=here::here("prelims", "00--prelim.Rmd")}
+```
+
+```{r eval=!knitr::is_latex_output(), child=here::here("prelims", "00-abstract.Rmd")}
+```
+
+<!-- The {.unnumbered} option here means that the introduction will be 
+"Chapter 0." You can also use {-} for no numbers on chapters.
+-->

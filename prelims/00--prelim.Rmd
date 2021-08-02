@@ -1,0 +1,21 @@
+```{r setup, include=FALSE, echo=F}
+opts_chunk$set(echo=F, message=F, warning=F)
+```
+
+
+# Preliminary Content {-}
+
+## Acknowledgements {-}
+
+I want to thank a few people.
+
+## Preface {-}
+
+Born in Dallas, Texas, but raised in a small town in Idaho, Austin Nathaniel Fife studied at Brigham Young University - Idaho
+This section is for your biographical sketch. It should be in third person, past tense. Do not put personal details such as your birthday here. Again, to make a full paragraph you must write at least three sentences.
+
+## Dedication {-}
+
+You can have a dedication here if you wish. 
+
+`r if(!knitr:::is_latex_output()) '## Abstract {-}'`
