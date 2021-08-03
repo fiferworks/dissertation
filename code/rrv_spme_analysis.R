@@ -13,5 +13,8 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
 # reading in master datasheet
-df <- read_excel("data/rrd_spme_master_datasheet.xlsx")
+df <- read_excel("data/rrd_spme_master_datasheet.xlsx", col_types = "guess")
 
+# changing remaining columns to factors
+df <- df %>%
+  mutate_if(is.character, as.factor)

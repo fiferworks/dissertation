@@ -75,7 +75,7 @@ for (file in gcfiles) {
     gc_data_temp <- gc_data_temp %>% slice(-(1:1))
     
     # dropping unnecessary columns
-    gc_data_temp <- select(gc_data_temp, -'X9', -'Amount')
+    gc_data_temp <- select(gc_data_temp,-'X9',-'Amount')
     
     # grabs the file name of the file being processed
     file_name <- file
@@ -199,8 +199,10 @@ gc_data$Treatment <- sub("MS_CALL\\/rose_", "", gc_data$Treatment)
 # cleaning
 gc_data$Treatment <-
   sub("1ul_nonyl_acetate", "untreated", gc_data$Treatment)
-gc_data$Treatment <- sub("clean_site*", "untreated", gc_data$Treatment)
-gc_data$Treatment <- sub("clean_actigard*", "actigard", gc_data$Treatment)
+gc_data$Treatment <-
+  sub("clean_site*", "untreated", gc_data$Treatment)
+gc_data$Treatment <-
+  sub("clean_actigard*", "actigard", gc_data$Treatment)
 gc_data$Treatment <- sub("rrv_site*", "rrv", gc_data$Treatment)
 
 # removing underscores
@@ -222,8 +224,34 @@ gc_data$Treatment <- str_trim(gc_data$Treatment)
 
 gc_data$Treatment <- sub("rose", "untreated", gc_data$Treatment)
 
-####MAKE COLUMN THAT DIVIDES AREA OF EACH CHEMICAL BY THE INTERNAL STANDARD!####
+# changing column types to numeric
+cols.num <-
+  c(
+    "Peak No.",
+    "Retention Time (min)",
+    "Area (counts*min)",
+    "Height (counts)",
+    "Relative Area (%)",
+    "Relative Height (%)"
+  )
+gc_data[cols.num] <- sapply(gc_data[cols.num], as.numeric)
 
+# make all NA chems into true NAs
+gc_data$`Peak Name` <- sub("NA .*$", NA, gc_data$`Peak Name`)
+
+# helper function to turn empty cells into NAs: https://stackoverflow.com/questions/24172111/change-the-blank-cells-to-na
+
+empty_as_na <- function(x){
+  if("factor" %in% class(x)) x <- as.character(x) ## since ifelse wont work with factors
+  ifelse(as.character(x)!="", x, NA)
+}
+
+## transform all columns
+gc_data <- gc_data %>% mutate_each(funs(empty_as_na)) 
+
+####MAKE COLUMN THAT DIVIDES AREA OF EACH CHEMICAL BY THE INTERNAL STANDARD!####
+unique(gc_data$`Peak Name`)
+head(gc_data)
 
 # saving master datasheet as excel spreadsheet
 write_xlsx(gc_data, "data/rrd_spme_master_datasheet.xlsx")
