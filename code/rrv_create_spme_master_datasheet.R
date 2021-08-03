@@ -47,7 +47,7 @@ for (file in gcfiles) {
   if (!exists("gc_data")) {
     tbl_colnames <-
       c(
-        'Sample',
+        'Filename',
         'No.',
         'Peak Name',
         'Retention Time',
@@ -85,7 +85,7 @@ for (file in gcfiles) {
     file_name <- str_sub(file_name, end = -17)
     
     # adding column for the source file
-    gc_data_temp <- gc_data_temp %>% add_column(Sample = file_name)
+    gc_data_temp <- gc_data_temp %>% add_column(Filename = file_name)
     # appends gc_data_temp to our gcdata file
     gc_data <- bind_rows(gc_data, gc_data_temp)
   }
@@ -104,7 +104,7 @@ gc_data <-
 
 gc_data <-
   gc_data %>% select(
-    Sample,
+    Filename,
     'Peak No.',
     'Peak Name',
     'Retention Time (min)',
@@ -115,7 +115,8 @@ gc_data <-
   )
 
 # Duplicating columns which will describe the type of sample each trial is
-gc_data$`Injection Type` <- gc_data$Sample
+gc_data$`Injection Type` <- gc_data$Filename
+gc_data$Sample <- gc_data$Filename
 gc_data$Treatment <- gc_data$`Injection Type`
 
 # replacing underscores and slashes with spaces
@@ -188,6 +189,14 @@ gc_data$Location <-
 gc_data$Location <- str_trim(gc_data$Location)
 gc_data$Location <- gsub("rose", "field", gc_data$Location)
 
+# list of words to remove for cleaning Sample column
+stopwords <-
+  c("MS_CALL/",
+    "TIC/"
+  )
+x  = gc_data$Sample
+x  =  tm::removeWords(x, stopwords)
+gc_data$Sample <- x
 
 # Assigns blank treatments to NA
 gc_data$Treatment[gc_data$`Injection Type` == "blank"] <- NA
@@ -249,9 +258,34 @@ empty_as_na <- function(x){
 ## transform all columns
 gc_data <- gc_data %>% mutate_each(funs(empty_as_na)) 
 
-####MAKE COLUMN THAT DIVIDES AREA OF EACH CHEMICAL BY THE INTERNAL STANDARD!####
-unique(gc_data$`Peak Name`)
-head(gc_data)
+
+####MAKE COLUMN THAT DIVIDES AREA OF EACH CHEMICAL BY THE INTERNAL STANDARD ####
+# assigns the column to `IS Relative Area (%)`
+# View(gc_data %>%
+#   group_by(Sample) %>%
+#   filter(`Peak Name` == "Nonyl Acetate"))
+#   
+# 
+# 
+# unique(gc_data$Filename)
+# head(gc_data)
+
+# gc_data <-
+#   gc_data %>% select(
+#     'Sample',
+#     'Peak No.',
+#     'Peak Name',
+#     'Retention Time (min)',
+#     'IS Relative Area (%)',
+#     'Area (counts*min)',
+#     'Height (counts)',
+#     'Relative Area (%)',
+#     'Relative Height (%)',
+#     'Injection Type',
+#     'Channel',
+#     'Location',
+#     'Filename'
+#   )
 
 # saving master datasheet as excel spreadsheet
 write_xlsx(gc_data, "data/rrd_spme_master_datasheet.xlsx")
