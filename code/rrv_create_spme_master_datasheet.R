@@ -222,6 +222,9 @@ gc_data$Treatment <- str_trim(gc_data$Treatment)
 
 gc_data$Treatment <- sub("rose", "untreated", gc_data$Treatment)
 
+####MAKE COLUMN THAT DIVIDES AREA OF EACH CHEMICAL BY THE INTERNAL STANDARD!####
+
+
 # saving master datasheet as excel spreadsheet
 write_xlsx(gc_data, "data/rrd_spme_master_datasheet.xlsx")
 
