@@ -1,3 +1,4 @@
+####LOADING PACKAGES AND READING IN FILE LISTS####
 # loading required packages
 pkgs <-
   c("tidyverse",
@@ -39,6 +40,7 @@ msfiles <-
 #combine the lists
 gcfiles <- c(ticfiles, msfiles)
 
+####IMPORTING DATASHEETS AND CREATING COMBINED TABLE####
 #Using the list we created, we create temporary files, tidy them up a little, and combine them into a single dataframe (tibble)
 
 #R will do the following actions for all files listed in "ticfiles"
@@ -65,14 +67,11 @@ for (file in gcfiles) {
     # reads off the name of the file
     print(file)
     
-    # filters out undetected peaks
-    gc_data_temp <- gc_data_temp %>% filter(gc_data_temp$No. > 0)
-    
     # removes the totals on the last column
     gc_data_temp <- gc_data_temp %>% filter(row_number() <= n() - 1)
     
     # removes two rows which were incorrectly parsed and duplicated
-    gc_data_temp <- gc_data_temp %>% slice(-(1:1))
+    gc_data_temp <- gc_data_temp %>% slice(-(1:2))
     
     # dropping unnecessary columns
     gc_data_temp <- select(gc_data_temp,-'X9',-'Amount')
@@ -85,12 +84,15 @@ for (file in gcfiles) {
     file_name <- str_sub(file_name, end = -17)
     
     # adding column for the source file
-    gc_data_temp <- gc_data_temp %>% add_column(Filename = file_name)
+    gc_data_temp <-
+      gc_data_temp %>% add_column(Filename = file_name)
     # appends gc_data_temp to our gcdata file
     gc_data <- bind_rows(gc_data, gc_data_temp)
   }
 }
 
+
+####CREATING MORE DATA COLUMNS AND CLEANING DATA####
 #renaming columns
 gc_data <-
   gc_data %>% rename(
@@ -192,8 +194,7 @@ gc_data$Location <- gsub("rose", "field", gc_data$Location)
 # list of words to remove for cleaning Sample column
 stopwords <-
   c("MS_CALL/",
-    "TIC/"
-  )
+    "TIC/")
 x  = gc_data$Sample
 x  =  tm::removeWords(x, stopwords)
 gc_data$Sample <- x
@@ -248,47 +249,70 @@ gc_data[cols.num] <- sapply(gc_data[cols.num], as.numeric)
 # make all NA chems into true NAs
 gc_data$`Peak Name` <- sub("NA .*$", NA, gc_data$`Peak Name`)
 
-# helper function to turn empty cells into NAs: https://stackoverflow.com/questions/24172111/change-the-blank-cells-to-na
-
-empty_as_na <- function(x){
-  if("factor" %in% class(x)) x <- as.character(x) ## since ifelse wont work with factors
-  ifelse(as.character(x)!="", x, NA)
-}
-
-## transform all columns
-gc_data <- gc_data %>% mutate_each(funs(empty_as_na)) 
+# turns empty cells into NAs
+gc_data$`Peak Name` <-
+  ifelse(as.character(gc_data$`Peak Name`) != "", gc_data$`Peak Name`, NA)
 
 
 ####MAKE COLUMN THAT DIVIDES AREA OF EACH CHEMICAL BY THE INTERNAL STANDARD ####
-# assigns the column to `IS Relative Area (%)`
-# View(gc_data %>%
-#   group_by(Sample) %>%
-#   filter(`Peak Name` == "Nonyl Acetate"))
-#   
-# 
-# 
-# unique(gc_data$Filename)
-# head(gc_data)
 
-# gc_data <-
-#   gc_data %>% select(
-#     'Sample',
-#     'Peak No.',
-#     'Peak Name',
-#     'Retention Time (min)',
-#     'IS Relative Area (%)',
-#     'Area (counts*min)',
-#     'Height (counts)',
-#     'Relative Area (%)',
-#     'Relative Height (%)',
-#     'Injection Type',
-#     'Channel',
-#     'Location',
-#     'Filename'
-#   )
+# tibble of internal standards
+IntStds <- gc_data %>%
+  group_by(Sample) %>%
+  filter(`Peak Name` == 'Nonyl Acetate')
+
+# works to remove samples without internal standards
+IntStds <- IntStds %>%  filter(`Peak No.` > 0)
+
+# tibble without internal standards
+Peaks <- gc_data %>%
+  group_by(Sample)
+
+#list of unique samples
+sample_list <- unique(IntStds$Sample)
+
+# removing blank samples
+blank_list <- c("blank_fiber_1", "blank_fiber_2", "blank_fiber_3",)
+
+# making a dataframe for the following loop
+tbl_colnames <-
+  c(
+    'Sample',
+    'Treatment',
+    'Peak No.',
+    'Peak Name',
+    'Retention Time (min)',
+    'IS Relative Area (%)',
+    'Area (counts*min)',
+    'Height (counts)',
+    'Relative Area (%)',
+    'Relative Height (%)',
+    'Injection Type',
+    'Channel',
+    'Location',
+    'Filename'
+  )
+df <-
+  read_csv("\n",
+           col_names = tbl_colnames,
+           col_types = "ccdcddddddcccc")
+
+# loop to calculate area relative to the internal standard of each sample
+for (i in 1:length(sample_list)) {
+  if (exists("df")) {
+    filtered_peaks <- Peaks[Peaks$Sample == sample_list[i], ]
+    filtered_is <- IntStds[IntStds$Sample == sample_list[i], ]
+    tmp <-
+      mutate(
+        filtered_peaks,
+        `IS Relative Area (%)` =  filtered_peaks$`Area (counts*min)` / filtered_is$`Area (counts*min)`
+      )
+    df <- bind_rows(df, tmp)
+  }
+}
 
 # saving master datasheet as excel spreadsheet
-write_xlsx(gc_data, "data/rrd_spme_master_datasheet.xlsx")
+write_xlsx(df, "data/rrd_spme_master_datasheet.xlsx")
 
 # cleanup
 rm(list = ls())
