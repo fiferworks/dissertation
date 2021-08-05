@@ -35,7 +35,7 @@ df <- df %>%
   mutate_if(is.character, as.factor)
 
 ####CREATING PIVOT TABLE####
-df <- df %>% select("Sample", `IS Relative Area (%)`, `Peak Name`) %>%
+df <- df %>% select("Sample", `IS Relative Area (%)`, `Peak Name`, 'Treatment') %>%
   pivot_wider(
     names_from = `Peak Name`,
     values_from = `IS Relative Area (%)`,
