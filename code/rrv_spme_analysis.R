@@ -64,12 +64,19 @@ ggsave(
   dpi = 300
 )
 
-
+# plotting the PCAs against one another
 spme_pca <- df %>%
   mutate(PCA1 = pca$x[, 1], PCA2 = pca$x[, 2])
 
-ggplot(spme_pca, aes(PCA1, PCA2, col = Treatment)) +
-  geom_point() +
+ggplot(spme_pca,
+       aes(
+         PCA1,
+         PCA2,
+         color = Treatment,
+         shape = Treatment,
+         label = Treatment
+       )) +
+  geom_point(size = 2, alpha = 0.6) +
   theme_bw() +
   stat_ellipse(level = 0.95)
 
@@ -83,6 +90,31 @@ ggsave(
   scale = 1,
   dpi = 300
 )
+
+ggplot(spme_pca,
+       aes(
+         PCA1,
+         PCA2,
+         color = Treatment,
+         shape = Treatment,
+         label = Treatment
+       )) +
+  geom_point(size = 2, alpha = 0.6) +
+  theme_bw() +
+  stat_ellipse(level = 0.95) +
+  geom_text(aes(label = Sample), hjust = -0.05, vjust = 0)
+
+#saving the file
+ggsave(
+  'figure/spme_pca_labeled_graph.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
 
 #cleanup
 rm(list = ls())
