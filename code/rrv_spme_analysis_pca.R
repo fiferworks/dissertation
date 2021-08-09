@@ -2,6 +2,7 @@
 pkgs <-
   c("tidyverse",
     "factoextra",
+    "tibble",
     "ggplot2",
     "Cairo",
     "readxl",
@@ -22,7 +23,7 @@ df <-
 
 
 ####PRINCIPAL COMPONENT ANALYSIS####
-pca <- df %>% select(-Sample,-Treatment) %>%
+pca <- df %>% select(-Sample, -Treatment) %>%
   prcomp(center = TRUE, scale = FALSE)
 
 # summary(pca)
@@ -33,6 +34,27 @@ pca <- df %>% select(-Sample,-Treatment) %>%
 # pca_dat$coord
 
 pca_dat <- get_pca(pca)
+
+# making some tables from the pca, 'rrd_spme_pca_correlation_table.xlsx' is
+# a table of correlations between variables and dimensions,
+x <- data.frame(pca_dat$cor, check.names = FALSE)
+x <- tibble::rownames_to_column(x)
+x <- as_tibble(x)
+x <- x %>% select(rowname, Dim.1, Dim.2) %>%
+  rename(Chemical = rowname,
+         PCA1 = Dim.1,
+         PCA2 = Dim.2)
+write_xlsx(x, path = 'data/rrd_spme_pca_correlation_table.xlsx')
+
+# 'rrd_spme_pca_contribution_table.xlsx' is a table of contributions of the variables
+x <- data.frame(pca_dat$contrib, check.names = FALSE)
+x <- tibble::rownames_to_column(x)
+x <- as_tibble(x)
+x <- x %>% select(rowname, Dim.1, Dim.2) %>%
+  rename(Chemical = rowname,
+         PCA1 = Dim.1,
+         PCA2 = Dim.2)
+write_xlsx(x, path = 'data/rrd_spme_pca_contribution_table.xlsx')
 
 ####PLOTTING THE PCA VALUES####
 fviz_pca_biplot(pca, label = 'var')
@@ -48,7 +70,8 @@ ggsave(
   dpi = 300
 )
 
-# fviz_pca_var(pca)
+fviz_pca_biplot(pca, label = 'ind')
+
 # fviz_screeplot(pca, addlabels = TRUE, choice = "eigenvalue")
 
 fviz_screeplot(pca, addlabels = TRUE, choice = "variance")
