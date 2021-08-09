@@ -24,7 +24,7 @@ df <-
 
 
 ####UNIFORM MANIFOLD APPROXIMATION AND PROJECTION####
-spme_umap <- select(df, -Sample, -Treatment) %>%
+spme_umap <- select(df,-Sample,-Treatment) %>%
   as.matrix() %>%
   umap(
     n_neighbors = 7,
@@ -39,7 +39,7 @@ tib_spme_umap <- df %>%
             .predicate = is.numeric,
             scale = FALSE) %>%
   mutate(UMAP1 = spme_umap$layout[, 1], UMAP2 = spme_umap$layout[, 2]) %>%
-  pivot_longer(c(-UMAP1, -UMAP2, -Sample, -Treatment),
+  pivot_longer(c(-UMAP1,-UMAP2,-Sample,-Treatment),
                names_to = 'Variable',
                values_to = 'Value')
 # gather(key = 'Variable', value = 'Value', c(-UMAP1, -UMAP2, -Sample, -Treatment))
@@ -48,7 +48,7 @@ tib_spme_umap <- df %>%
 
 ####2D UMAP PLOTS####
 ggplot(tib_spme_umap, aes(UMAP1, UMAP2, col = Value, shape = Treatment)) +
-  facet_wrap(~ Variable) +
+  facet_wrap( ~ Variable) +
   geom_point(size = 3) +
   scale_color_viridis_b(begin = 1,
                         end = 0,
@@ -90,7 +90,6 @@ ggsave(
 #   scale = 1,
 #   dpi = 300
 # )
-
 
 #cleanup
 rm(list = ls())
