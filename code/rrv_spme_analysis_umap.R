@@ -4,6 +4,7 @@ pkgs <-
     "umap",
     "Rcpp",
     "ggplot2",
+    "GGally",
     "Cairo",
     "readxl",
     "writexl")
@@ -23,20 +24,65 @@ df <-
 
 
 ####UNIFORM MANIFOLD APPROXIMATION AND PROJECTION####
-
-spme_umap <- select(df,-Sample,-Treatment) %>%
+spme_umap <- select(df, -Sample, -Treatment) %>%
   as.matrix() %>%
   umap(
     n_neighbors = 7,
     min_dist = 0.1,
     metric = "manhattan",
-    n_epochs = 200,
+    n_epochs = 2000,
     verbose = TRUE
   )
 
+tib_spme_umap <- df %>%
+  mutate_if(.funs = scale,
+            .predicate = is.numeric,
+            scale = FALSE) %>%
+  mutate(UMAP1 = spme_umap$layout[, 1], UMAP2 = spme_umap$layout[, 2]) %>%
+  pivot_longer(c(-UMAP1, -UMAP2, -Sample, -Treatment),
+               names_to = 'Variable',
+               values_to = 'Value')
+# gather(key = 'Variable', value = 'Value', c(-UMAP1, -UMAP2, -Sample, -Treatment))
+
+# ggpairs(as.data.frame(spme_umap$layout), mapping = aes(col = df$Treatment))
+
+####2D UMAP PLOTS####
+ggplot(tib_spme_umap, aes(UMAP1, UMAP2, col = Value, shape = Treatment)) +
+  facet_wrap(~ Variable) +
+  geom_point(size = 3) +
+  scale_color_viridis_b(begin = 1,
+                        end = 0,
+                        option = "D") +
+  theme_bw()
+
+#saving the file
+ggsave(
+  'figure/spme_umap_graph_2d.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
+# ####3D UMAP PLOTS####
+# spme_umap_3d <- select(df, -Sample, -Treatment) %>%
+#   as.matrix() %>%
+#   umap(
+#     n_neighbors = 7,
+#     min_dist = 0.1,
+#     n_components = 3,
+#     metric = "manhattan",
+#     n_epochs = 2000,
+#     verbose = TRUE
+#   )
+#
+# ggpairs(as.data.frame(spme_umap_3d$layout), mapping = aes(col = df$Treatment))
+#
 # #saving the file
 # ggsave(
-#   'figure/spme_screeplot_graph.png',
+#   'figure/spme_umap_graph_3d.png',
 #   plot = last_plot(),
 #   type = 'cairo',
 #   width = 16,
@@ -44,34 +90,7 @@ spme_umap <- select(df,-Sample,-Treatment) %>%
 #   scale = 1,
 #   dpi = 300
 # )
-# 
-# # plotting the PCAs against one another
-# spme_pca <- df %>%
-#   mutate(PCA1 = pca$x[, 1], PCA2 = pca$x[, 2])
-# 
-# ggplot(spme_pca,
-#        aes(
-#          PCA1,
-#          PCA2,
-#          color = Treatment,
-#          shape = Treatment,
-#          label = Treatment
-#        )) +
-#   geom_point(size = 2, alpha = 0.6) +
-#   theme_bw() +
-#   stat_ellipse(level = 0.95)
-# 
-# #saving the file
-# ggsave(
-#   'figure/spme_pca_graph.png',
-#   plot = last_plot(),
-#   type = 'cairo',
-#   width = 16,
-#   height = 9,
-#   scale = 1,
-#   dpi = 300
-# )
-# 
-# 
-# #cleanup
-# rm(list = ls())
+
+
+#cleanup
+rm(list = ls())
