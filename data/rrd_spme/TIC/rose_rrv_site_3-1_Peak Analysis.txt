@@ -50,14 +50,14 @@ n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
 n.a.	NA (background)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Toulene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Hexanal <n->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (Hexanal <n->)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Xylene <m->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (contaminant)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-1	Oxime, methoxy-phenyl-	7.457	0.116	BM *	5.77	0.79	23042	
+1	NA (Oxime, methoxy-phenyl-)	7.457	0.116	BM *	5.77	0.79	23042	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Pinene <1R-alpha->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 2	Carene, <3->	8.198	0.036	BMB*	21.51	1.11	287447	
@@ -77,15 +77,15 @@ n.a.	NA (1-Hexanol, 2-ethyl-)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
 n.a.	D-Limonene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 6	Pinene <alpha->	11.368	0.035	BMB*	5.18	1.10	573598	
 7	Carene <delta-3>	11.688	0.037	BMB	54.82	1.84	538592	
-n.a.	Dodecane	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (Dodecane)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Undecane	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Nonanal	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (Undecane)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (Nonanal)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
@@ -96,11 +96,11 @@ n.a.	Limonene oxide, trans-	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Benzaldehyde <para-ethyl->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-8	1-Nonanol	15.385	0.042	BMB	38.50	1.46	740029	
+8	NA (1-Nonanol)	15.385	0.042	BMB	38.50	1.46	740029	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Terpineol <alpha->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Dodecane	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Decanal	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (Dodecane)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (Decanal)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
@@ -113,9 +113,9 @@ n.a.	NA (Caprolactam)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
 n.a.	NA (spironolactone)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Pentadecane	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (Pentadecane)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (Hexadecane, 1-bromo-)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	2-cyclopentylcyclopentan-1-one	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (2-cyclopentylcyclopentan-1-one)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (spironolactone)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 9	Nonyl Acetate	19.377	0.080	BM *	18.53	0.62	322669	
 n.a.	NA (spironolactone)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
@@ -142,7 +142,7 @@ n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Zonarene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	NA (Zonarene)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 14	Murrolene <gamma->	23.744	0.044	BMB	8.00	0.76	1645242	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	

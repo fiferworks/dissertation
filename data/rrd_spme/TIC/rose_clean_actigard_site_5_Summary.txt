@@ -3,7 +3,7 @@ Summary
 Sequence Details							
 Name:		rrd_spme			Created On:	20/Feb/21 05:10:37	
 Directory:		Austin			Created By:	ISQ1710520	
-Data Vault:		ChromeleonLocal			Updated On:	30/Jul/21 18:23:24	
+Data Vault:		ChromeleonLocal			Updated On:	11/Aug/21 14:00:40	
 No. of Injections:		33			Updated By:	ISQ1710520	
 							
 By Component		NA (background)					
