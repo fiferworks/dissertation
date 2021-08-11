@@ -17,7 +17,7 @@ if (length(nu_pkgs))
 lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
-# reading in the GC/MS data channel "TIC"
+# reading in the SPME GC/MS data channel "TIC"
 ticfiles <-
   list.files(
     path = "./data/rrd_spme/TIC",
@@ -27,7 +27,7 @@ ticfiles <-
     full.names = T
   )
 
-# reading in the GC/MS data channel mass calls "MS_CALL"
+# reading in the SPME GC/MS data channel mass calls "MS_CALL"
 msfiles <-
   list.files(
     path = "./data/rrd_spme/MS_CALL",
@@ -37,8 +37,19 @@ msfiles <-
     full.names = T
   )
 
+# reading in the QSEP GC/MS data channel mass calls "MS_CALL"
+qsfiles <-
+  list.files(
+    path = "./data/rrd_qsep/TIC",
+    pattern = "*_Integration.txt",
+    ignore.case = T,
+    recursive = T,
+    full.names = T
+  )
+
+
 #combine the lists
-gcfiles <- c(ticfiles, msfiles)
+gcfiles <- c(ticfiles, msfiles, qsfiles)
 
 ####IMPORTING DATASHEETS AND CREATING COMBINED TABLE####
 #Using the list we created, we create temporary files, tidy them up a little, and combine them into a single dataframe (tibble)
@@ -272,7 +283,7 @@ Peaks <- gc_data %>%
 sample_list <- unique(IntStds$Sample)
 
 # removing blank samples
-blank_list <- c("blank_fiber_1", "blank_fiber_2", "blank_fiber_3",)
+# blank_list <- c("blank_fiber_1", "blank_fiber_2", "blank_fiber_3")
 
 # making a dataframe for the following loop
 tbl_colnames <-
@@ -312,7 +323,7 @@ for (i in 1:length(sample_list)) {
 }
 
 # saving master datasheet as excel spreadsheet
-write_xlsx(df, "data/rrd_spme_master_datasheet.xlsx")
+write_xlsx(df, "data/rrd_volatiles_master_datasheet.xlsx")
 
 # cleanup
 rm(list = ls())
