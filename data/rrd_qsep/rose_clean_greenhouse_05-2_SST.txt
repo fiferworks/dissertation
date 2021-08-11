@@ -1,0 +1,43 @@
+Chromatogram and SST Results						
+						
+Injection Details						
+Injection Name:		rose_clean_greenhouse_05-2		Run Time (min):	19.99	
+Vial Number:		6		Injection Volume:	1.00	
+Injection Type:		Unknown		Channel:	TIC	
+Calibration Level:				Wavelength:	n.a.	
+Instrument Method:		training-splitless		Bandwidth:	n.a.	
+Processing Method:		basic qualitative		Dilution Factor:	1.0000	
+Injection Date/Time:		21/Sep/19 05:55		Sample Weight:	1.0000	
+						
+Chromatogram						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+SST Results						
+No. 	Name 	Inj.Condition 	Peak 	Test Result 	Injection 	
+n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+	Number of executed test cases: 	n.a.	Total Result: 	Passed		

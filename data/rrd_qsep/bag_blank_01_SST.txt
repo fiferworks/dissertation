@@ -1,0 +1,43 @@
+Chromatogram and SST Results						
+						
+Injection Details						
+Injection Name:		bag_blank_01		Run Time (min):	19.99	
+Vial Number:		155		Injection Volume:	1.00	
+Injection Type:		Blank		Channel:	TIC	
+Calibration Level:				Wavelength:	n.a.	
+Instrument Method:		training-splitless		Bandwidth:	n.a.	
+Processing Method:		basic qualitative		Dilution Factor:	1.0000	
+Injection Date/Time:		08/Sep/18 04:04		Sample Weight:	1.0000	
+						
+Chromatogram						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+SST Results						
+No. 	Name 	Inj.Condition 	Peak 	Test Result 	Injection 	
+n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+	Number of executed test cases: 	n.a.	Total Result: 	Passed		
