@@ -200,6 +200,7 @@
             <text variable="volume"/>
           </group>
           <text variable="page"/>
+          <text variable="DOI" prefix=", DOI:"/>
         </group>
       </if>
       <else-if type="bill book graphic legal_case motion_picture report song" match="any">
