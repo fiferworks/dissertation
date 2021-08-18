@@ -1967,12 +1967,13 @@ blue (405 nm) laser light, which could be detected with CLSM.},
 
 @Article{Fernandez2017,
   author    = {Fern{\'a}ndez, M. Mar and Medina, Pilar and Wanumen, Andrea and Del Estal, Pedro and Smagghe, Guy and Vi{\~n}uela, Elisa},
-  title     = {Compatibility of sulfoxaflor and other modern pesticides with adults of the predatory mite {\textit{Amblyseius swirskii}}. residual contact and persistence studies},
   journal   = {{BioControl}},
+  title     = {Compatibility of sulfoxaflor and other modern pesticides with adults of the predatory mite {\textit{Amblyseius swirskii}}. residual contact and persistence studies},
   year      = {2017},
-  volume    = {62},
   number    = {2},
   pages     = {197--208},
+  volume    = {62},
+  doi       = {10.1007/s10526-017-9784-1},
   publisher = {Springer},
 }
 
@@ -2879,6 +2880,7 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   year      = {1968},
   number    = {4},
   volume    = {4},
+  doi       = {10.5070/C526w4x67c},
 }
 
 @Article{Knorr1968b,
@@ -3015,7 +3017,7 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
 }
 
 @Article{Kubo2006a,
-  author  = {Kubo, K. S.},
+  author  = {Kubo, K. S. and Freitas-Astua, J. and Machado and M. A. Kitajima E., W.},
   journal = {Summa Phytopathol},
   title   = {Estudo da variabilidade genetica do orchid fleck virus {(OFV)} por {SSCP}},
   year    = {2006},
@@ -3025,7 +3027,7 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
 }
 
 @Article{Kubo2006b,
-  author  = {Kubo, K. S.},
+  author  = {Kubo, K. S. and Freitas-Astua, J. and Machado M., A. and Kitajima E., W.},
   journal = {Summa Phytopathol},
   title   = {Otimizacao da diagnose molecular da mancha anular da orquidea},
   year    = {2006},
@@ -3752,12 +3754,13 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
 
 @Article{Midthassel2016,
   author    = {Midthassel, Audun and Leather, Simon R. and Wright, Denis J. and Baxter, Ian H.},
-  title     = {Compatibility of {\textit{Amblyseius swirskii}} with {\textit{Beauveria bassiana}}: two potentially complimentary biocontrol agents},
   journal   = {Biocontrol},
+  title     = {Compatibility of {\textit{Amblyseius swirskii}} with {\textit{Beauveria bassiana}}: two potentially complimentary biocontrol agents},
   year      = {2016},
-  volume    = {61},
   number    = {4},
   pages     = {437--447},
+  volume    = {61},
+  doi       = {10.1007/s10526-016-9718-3},
   publisher = {Springer},
 }
 
@@ -4009,10 +4012,10 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
 
 @Article{Nuzzaci1996,
   author    = {Nuzzaci, Giorgio and de Lillo, Enrico},
-  title     = {Perspectives on eriophyoid mite research},
   journal   = {Entomologica},
+  title     = {Perspectives on eriophyoid mite research},
   year      = {1996},
-  pages     = {Vol 30 (1996)-},
+  pages     = {Vol 30 (1996)--},
   doi       = {10.15162/0425-1016/673},
   language  = {en},
   publisher = {Entomologica},
@@ -4394,6 +4397,7 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   pages     = {1169--1174},
   volume    = {98},
   abstract  = {Brevipalpus mites (Acari: Tenuipalpidae) carrying citrus leprosis virus are considered serious quarantine pests. The objective of this research was to clarify the effectiveness of commonly used fruit cleaners, soaps, waxes, and mechanical brushing techniques (alone and in combination) on removal and/or mortality of mites (percentage of density reduction) from infested citrus fruits. Six bioassays were conducted with infested lemons, Citrus limon (L.) Burm.f. (Sapindales: Rutaceae), using non-virulent Brevipalpus yothersi Baker as a model species. In each bioassay, all stages (eggs, nymphs, and adults) of B. yothersi were recorded before and after treatment. Results indicated that none of the treatments provided 100% reduction of all stages of mites, as would be required for quarantine treatments. In general, mite reduction following single treatments (soap rinse, brushing, or waxing alone) was not significantly different from reduction obtained with a water drench control. However, several combination treatments were successful in achieving $\sim$90% reduction of mites, particularly those that included application of a food-grade wax coating. Therefore, a combination of treatments, including a soap wash and mechanical brushing followed by a wax coating, may be the most effective method to achieve significant reduction of all stages of Brevipalpus mites from infested citrus. Espec{\'{i}}menes de Brevipalpus yothersi (Acari: Tenuipalpidae) que sean vectores de la leprosis de los c{\'{i}}tricos se consideran plagas cuarentenarias. El objetivo de esta investigaci{\'{o}}n fue el de clarificar la efectividad de substancias utilizadas para limpiar la fruta como jabones, ceras y t{\'{e}}cnicas como el cepillado mec{\'{a}}nico de los frutos (utilizadas singularmente o en combinaci{\'{o}}n) sobre la remoci{\'{o}}n o mortalidad causada en los {\'{a}}caros infestando frutos de c{\'{i}}tricos. Se hicieron seis bioensayos probando los tratamientos mencionados antes en lim{\'{o}}n Citrus limon (L.) Burm. f. (Sapindales: Rutaceae), usando, Brevipalpus yothersi Baker no-virulento como especie modelo. En cada bioensayo todos los estados (huevos, estados inmaduros y adultos) de B. yothersi infestando limones, fueron evaluados antes y despu{\'{e}}s de tratamiento. Los resultados indicaron que ninguno de los tratamientos causaba el 100% de reducci{\'{o}}n de todos los estados de los {\'{a}}caros, lo cual es requerido en tratamientos de cuarentena. En general, la reducci{\'{o}}n de {\'{a}}caros despu{\'{e}}s de un solo tratamiento (jabones, limpiadores, cepillado o encerado solo) no fue significativamente diferente del testigo representado por la inmersi{\'{o}}n de los limones en agua. Sin embargo, la combinaci{\'{o}}n de varios tratamientos result{\'{o}} en $\sim$90% de reducci{\'{o}}n de {\'{a}}caros, particularmente cuando estos inclu{\'{i}}an la aplicaci{\'{o}}n de ceras utilizadas para recubrir la fruta. En consecuencia, la combinaci{\'{o}}n de tratamientos incluyendo una soluci{\'{o}}n jabonosa, cepillado mec{\'{a}}nico, seguido por en encerado de la fruta, podr{\'{i}}a ser el tratamiento m{\'{a}}s efectivo para alcanzar la reducci{\'{o}}n significativa de todos los estados de {\'{a}}caros Brevipalpus cuando estos est{\'{a}}n infestando c{\'{i}}tricos.},
+  doi       = {10.1653/024.098.0422},
   publisher = {Florida Entomological Society},
   url       = {http://www.jstor.org/stable/24587628},
 }
@@ -5137,6 +5141,19 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   doi       = {10.1016/s0065-3527(08)60544-8},
 }
 
+@Article{Smallwood2001,
+  author    = {Smallwood, Peter D.},
+  journal   = {American Zoologist},
+  title     = {An integrative approach to the study of plant-animal interactions},
+  year      = {2001},
+  month     = aug,
+  number    = {4},
+  pages     = {807--809},
+  volume    = {41},
+  doi       = {10.1093/icb/41.4.807},
+  publisher = {Oxford University Press ({OUP})},
+}
+
 @Article{Smith1991,
   author    = {Smith, D. and Papacek, D. F.},
   title     = {Studies of the predatory mite {\textit{Amblyseius victoriensis}} ({{Acarina}: {Phytoseiidae}}) in citrus orchards in south-east {Queensland}: control of {\textit{Tegolophus australis}} and {\textit{Phyllocoptruta oleivora}} ({{Acarina}: {Eriophyidae}}), effect of pesticides, alternative host plants and augmentative release},
@@ -5469,6 +5486,30 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   year    = {2018},
 }
 
+@Book{Vacante2010,
+  author    = {Vacante, Vincenzo},
+  publisher = {CABI},
+  title     = {Citrus mites: identification, bionomy and control},
+  year      = {2010},
+  isbn      = {978-1-84593-498-9},
+  month     = jan,
+  ean       = {9781845934989},
+  pagetotal = {352},
+  url       = {https://www.ebook.de/de/product/8907013/vincenzo_vacante_citrus_mites_identification_bionomy_and_control.html},
+}
+
+@Book{Vacante2016,
+  author    = {Vacante, Vincenzo},
+  publisher = {CABI},
+  title     = {Handbook of mites of economic plants: identification, bio-ecology and control},
+  year      = {2016},
+  isbn      = {978-1-84593-994-6},
+  month     = feb,
+  ean       = {9781845939946},
+  pagetotal = {832},
+  url       = {https://www.ebook.de/de/product/24216869/vincenzo_vacante_handbook_of_mites_of_economic_plants_identification_bio_ecology_and_control.html},
+}
+
 @Article{Valenzano2019,
   author    = {Valenzano, Domenico and Bari, Giuseppe and Valeria, Malagnini and de Lillo, Enrico},
   title     = {Off-host survival of {Eriophyoidea} and remarks on their dispersal modes},
@@ -5527,7 +5568,7 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   title     = {First report of {Orchid fleck virus} associated with {Citrus leprosis} symptoms in rough lemon ({\textit{Citrus jambhiri}}) and mandarin ({\textit{C. reticulata}}) the {United States}},
   year      = {2021},
   month     = mar,
-  doi       = {10.1094/pdis-12-20-2736-pdn},
+  doi       = {10.1094/PDIS-12-20-2736-PDN},
   publisher = {Scientific Societies},
 }
 
