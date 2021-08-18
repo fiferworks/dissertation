@@ -20,34 +20,46 @@ rm(pkgs, nu_pkgs)
 
 # reading in master datasheet
 df <-
-  read_excel("data/ofv_pca_table.xlsx", col_types = "guess")
+  read_excel("data/rrv_volatiles_pca_table.xlsx", col_types = "guess")
 
+# making df with SPME chems only
+rrd_spme <-
+  df %>%  select_if(~ any(. > 0)) %>% filter(`Injection Method` == 'rrd_spme')
+
+df <- df %>% select(colnames(rrd_spme))
+
+# qsep only
+rrd_qsep <-
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
 
 ####UNIFORM MANIFOLD APPROXIMATION AND PROJECTION####
-spme_umap <- select(df,-Sample,-Treatment) %>%
+volatiles_umap <-
+  select(rrd_spme,-Sample,-Treatment,-`Injection Method`) %>%
   as.matrix() %>%
   umap(
     n_neighbors = 7,
-    min_dist = 0.1,
+    min_dist = 0.5,
     metric = "manhattan",
-    n_epochs = 2000,
+    n_epochs = 4000,
     verbose = TRUE
   )
 
-tib_spme_umap <- df %>%
+tib_vols_umap <- rrd_spme %>%
   mutate_if(.funs = scale,
             .predicate = is.numeric,
             scale = FALSE) %>%
-  mutate(UMAP1 = spme_umap$layout[, 1], UMAP2 = spme_umap$layout[, 2]) %>%
-  pivot_longer(c(-UMAP1,-UMAP2,-Sample,-Treatment),
-               names_to = 'Variable',
-               values_to = 'Value')
+  mutate(UMAP1 = volatiles_umap$layout[, 1], UMAP2 = volatiles_umap$layout[, 2]) %>%
+  pivot_longer(
+    c(-UMAP1,-UMAP2,-Sample,-Treatment,-`Injection Method`),
+    names_to = 'Variable',
+    values_to = 'Value'
+  )
 # gather(key = 'Variable', value = 'Value', c(-UMAP1, -UMAP2, -Sample, -Treatment))
 
-# ggpairs(as.data.frame(spme_umap$layout), mapping = aes(col = df$Treatment))
+# ggpairs(as.data.frame(volatiles_umap$layout), mapping = aes(col = df$Treatment))
 
 ####2D UMAP PLOTS####
-ggplot(tib_spme_umap, aes(UMAP1, UMAP2, col = Value, shape = Treatment)) +
+ggplot(tib_vols_umap, aes(UMAP1, UMAP2, col = Value, shape = Treatment)) +
   facet_wrap( ~ Variable) +
   geom_point(size = 3) +
   scale_color_viridis_b(begin = 1,
@@ -57,7 +69,7 @@ ggplot(tib_spme_umap, aes(UMAP1, UMAP2, col = Value, shape = Treatment)) +
 
 #saving the file
 ggsave(
-  'figure/spme_umap_graph_2d.png',
+  'figure/rrv_volatiles_umap_graph_2d.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
@@ -66,30 +78,31 @@ ggsave(
   dpi = 300
 )
 
-# ####3D UMAP PLOTS####
-# spme_umap_3d <- select(df, -Sample, -Treatment) %>%
-#   as.matrix() %>%
-#   umap(
-#     n_neighbors = 7,
-#     min_dist = 0.1,
-#     n_components = 3,
-#     metric = "manhattan",
-#     n_epochs = 2000,
-#     verbose = TRUE
-#   )
-#
-# ggpairs(as.data.frame(spme_umap_3d$layout), mapping = aes(col = df$Treatment))
-#
-# #saving the file
-# ggsave(
-#   'figure/spme_umap_graph_3d.png',
-#   plot = last_plot(),
-#   type = 'cairo',
-#   width = 16,
-#   height = 9,
-#   scale = 1,
-#   dpi = 300
-# )
+####3D UMAP PLOTS####
+volatiles_umap_3d <- select(df, -Sample, -Treatment) %>%
+  as.matrix() %>%
+  umap(
+    n_neighbors = 7,
+    min_dist = 0.1,
+    n_components = 3,
+    metric = "manhattan",
+    n_epochs = 2000,
+    verbose = TRUE
+  )
+
+ggpairs(as.data.frame(volatiles_umap_3d$layout),
+        mapping = aes(col = df$Treatment))
+
+#saving the file
+ggsave(
+  'figure/rrv_volatiles_umap_graph_3d.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
 
 #cleanup
 rm(list = ls())

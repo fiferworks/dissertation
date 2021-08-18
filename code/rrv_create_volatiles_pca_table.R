@@ -1,6 +1,7 @@
 ####SETUP####
 pkgs <-
   c("tidyverse",
+    "tidyselect",
     "readxl",
     "writexl")
 
@@ -15,7 +16,7 @@ rm(pkgs, nu_pkgs)
 
 # reading in master datasheet
 df <-
-  read_excel("data/rrd_spme_master_datasheet.xlsx", col_types = "guess")
+  read_excel("data/rrv_volatiles_master_datasheet.xlsx", col_types = "guess")
 
 ####DATA CLEANING####
 # removing unidentified peaks
@@ -35,7 +36,12 @@ df <- df %>%
   mutate_if(is.character, as.factor)
 
 ####CREATING PIVOT TABLE####
-df <- df %>% select("Sample", `IS Relative Area (%)`, `Peak Name`, 'Treatment') %>%
+df <-
+  df %>% select("Sample",
+                `IS Relative Area (%)`,
+                `Peak Name`,
+                'Treatment',
+                `Injection Method`) %>%
   pivot_wider(
     names_from = `Peak Name`,
     values_from = `IS Relative Area (%)`,
@@ -43,8 +49,13 @@ df <- df %>% select("Sample", `IS Relative Area (%)`, `Peak Name`, 'Treatment') 
     values_fn = sum
   )
 
+
+df <- df %>%  select("Sample",
+                     'Treatment',
+                     `Injection Method`, sort(colnames(.)))
+
 #saving datasheet as excel spreadsheet
-write_xlsx(df, "data/ofv_pca_table.xlsx")
+write_xlsx(df, "data/rrv_volatiles_pca_table.xlsx")
 
 #cleanup
 rm(list = ls())

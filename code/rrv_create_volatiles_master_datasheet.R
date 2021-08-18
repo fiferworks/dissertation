@@ -52,15 +52,15 @@ qsfiles <-
 gcfiles <- c(ticfiles, msfiles, qsfiles)
 
 ####IMPORTING DATASHEETS AND CREATING COMBINED TABLE####
-#Using the list we created, we create temporary files, tidy them up a little, and combine them into a single dataframe (tibble)
-
-#R will do the following actions for all files listed in "ticfiles"
-#R checks if we have the temp file "dummy", if not, R creates one
+# Using the list we created, we create temporary files, tidy them up a little, and combine them into a single dataframe (tibble)
+# The warnings are about an unnamed column, R automatically gives it a placeholder name0
+# R will do the following actions for all files listed in "gcfiles"
+# R checks if we have the temp file "dummy", if not, R creates one
 for (file in gcfiles) {
   if (!exists("gc_data")) {
     tbl_colnames <-
       c(
-        'Filename',
+        'Path',
         'No.',
         'Peak Name',
         'Retention Time',
@@ -88,15 +88,12 @@ for (file in gcfiles) {
     gc_data_temp <- select(gc_data_temp,-'X9',-'Amount')
     
     # grabs the file name of the file being processed
-    file_name <- file
-    
-    #removes the special symbols in the beginning
-    file_name <- str_sub(file_name, start = 17)
-    file_name <- str_sub(file_name, end = -17)
+    path_name <- file
     
     # adding column for the source file
     gc_data_temp <-
-      gc_data_temp %>% add_column(Filename = file_name)
+      gc_data_temp %>% add_column(Path = path_name)
+    
     # appends gc_data_temp to our gcdata file
     gc_data <- bind_rows(gc_data, gc_data_temp)
   }
@@ -104,7 +101,7 @@ for (file in gcfiles) {
 
 
 ####CREATING MORE DATA COLUMNS AND CLEANING DATA####
-#renaming columns
+# renaming columns
 gc_data <-
   gc_data %>% rename(
     'Peak No.' = 'No.',
@@ -117,7 +114,7 @@ gc_data <-
 
 gc_data <-
   gc_data %>% select(
-    Filename,
+    Path,
     'Peak No.',
     'Peak Name',
     'Retention Time (min)',
@@ -127,9 +124,24 @@ gc_data <-
     'Relative Height (%)'
   )
 
+
 # Duplicating columns which will describe the type of sample each trial is
-gc_data$`Injection Type` <- gc_data$Filename
-gc_data$Sample <- gc_data$Filename
+gc_data$`Injection Method` <- gc_data$Path
+gc_data$`Injection Method` <-
+  str_sub(gc_data$`Injection Method`, start = 8)
+gc_data$`Injection Method` <-
+  str_sub(gc_data$`Injection Method`, end = 8)
+
+gc_data$`Injection Type` <- gc_data$Path
+
+# removes the special symbols from the beginning of the path before appending
+gc_data$`Injection Type` <-
+  str_sub(gc_data$`Injection Type`, start = 17)
+gc_data$`Injection Type` <-
+  str_sub(gc_data$`Injection Type`, end = -17)
+
+# making more columns from the cleaned path names
+gc_data$Sample <- gc_data$`Injection Type`
 gc_data$Treatment <- gc_data$`Injection Type`
 
 # replacing underscores and slashes with spaces
@@ -159,7 +171,10 @@ stopwords <-
     "clean",
     "actigard",
     "rrv",
-    "field"
+    "field",
+    "greenhouse",
+    "test",
+    "is"
   )
 x  = gc_data$`Injection Type`
 x  =  tm::removeWords(x, stopwords)
@@ -188,7 +203,9 @@ stopwords <-
     "TIC",
     "clean",
     "actigard",
-    "rrv"
+    "rrv",
+    "test",
+    "is"
   )
 x  = gc_data$Location
 x  =  tm::removeWords(x, stopwords)
@@ -199,6 +216,10 @@ gc_data$Location <- tm::removePunctuation(gc_data$Location)
 gc_data$Location <- tm::removeNumbers(gc_data$Location)
 gc_data$Location <-
   gsub(" blank     field", "field", gc_data$Location)
+gc_data$Location <-
+  gsub(" rose   greenhouse ", "greenhouse ", gc_data$Location)
+gc_data$Location <-
+  gsub(" rose  greenhouse ", "greenhouse ", gc_data$Location)
 gc_data$Location <- str_trim(gc_data$Location)
 gc_data$Location <- gsub("rose", "field", gc_data$Location)
 
@@ -225,6 +246,12 @@ gc_data$Treatment <-
 gc_data$Treatment <-
   sub("clean_actigard*", "actigard", gc_data$Treatment)
 gc_data$Treatment <- sub("rrv_site*", "rrv", gc_data$Treatment)
+gc_data$Treatment <-
+  sub("clean_greenhouse*", "untreated", gc_data$Treatment)
+gc_data$Treatment <-
+  sub("clean_test*", "untreated", gc_data$Treatment)
+gc_data$Treatment <-
+  sub("clean_no*", "untreated", gc_data$Treatment)
 
 # removing underscores
 gc_data$Treatment <- gsub("_", " ", gc_data$Treatment)
@@ -235,15 +262,13 @@ gc_data$Treatment <- tm::removeNumbers(gc_data$Treatment)
 
 # list of words to remove for cleaning
 stopwords <-
-  c("site")
+  c("site", "no", "is", "greenhouse")
 x  = gc_data$Treatment
 x  =  tm::removeWords(x, stopwords)
 gc_data$Treatment <- x
 
 # cleaning up whitespace
 gc_data$Treatment <- str_trim(gc_data$Treatment)
-
-gc_data$Treatment <- sub("rose", "untreated", gc_data$Treatment)
 
 # changing column types to numeric
 cols.num <-
@@ -266,7 +291,6 @@ gc_data$`Peak Name` <-
 
 
 ####MAKE COLUMN THAT DIVIDES AREA OF EACH CHEMICAL BY THE INTERNAL STANDARD ####
-
 # tibble of internal standards
 IntStds <- gc_data %>%
   group_by(Sample) %>%
@@ -282,9 +306,6 @@ Peaks <- gc_data %>%
 #list of unique samples
 sample_list <- unique(IntStds$Sample)
 
-# removing blank samples
-# blank_list <- c("blank_fiber_1", "blank_fiber_2", "blank_fiber_3")
-
 # making a dataframe for the following loop
 tbl_colnames <-
   c(
@@ -298,15 +319,16 @@ tbl_colnames <-
     'Height (counts)',
     'Relative Area (%)',
     'Relative Height (%)',
+    'Injection Method',
     'Injection Type',
     'Channel',
     'Location',
-    'Filename'
+    'Path'
   )
 df <-
   read_csv("\n",
            col_names = tbl_colnames,
-           col_types = "ccdcddddddcccc")
+           col_types = "ccdcddddddccccc")
 
 # loop to calculate area relative to the internal standard of each sample
 for (i in 1:length(sample_list)) {
@@ -323,7 +345,7 @@ for (i in 1:length(sample_list)) {
 }
 
 # saving master datasheet as excel spreadsheet
-write_xlsx(df, "data/rrd_volatiles_master_datasheet.xlsx")
+write_xlsx(df, "data/rrv_volatiles_master_datasheet.xlsx")
 
 # cleanup
 rm(list = ls())
