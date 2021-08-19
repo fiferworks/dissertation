@@ -21,11 +21,11 @@ df <- read_csv("data/rrv_volatiles_pca_table.csv")
 
 # making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
 rrd_spme <-
-  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if( ~ any(. > 0))
+  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
 
 # qsep only
 rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
 
 df <- df %>% select(
   Sample,
@@ -49,7 +49,6 @@ df <- df %>% select(
   `Caryophyllene <9-epi-(E)->`,
   `Murrolene <alpha->`,
   `Murrolene <gamma->`,
-  `Muurrolene <gamma->`,
   `Farnesene <(E,E)-, alpha->`,
   `Farnesene <(E)-, beta->`
 )
@@ -75,7 +74,7 @@ make_main_umap <- function(y) {
           ".png",
           sep = "")
   umapd <-
-    y %>% select(-Sample,-Treatment,-`Injection Method`) %>%
+    y %>% select(-Sample, -Treatment, -`Injection Method`) %>%
     as.matrix() %>%
     umap(config = custom.config)
   
@@ -85,7 +84,7 @@ make_main_umap <- function(y) {
               scale = FALSE) %>%
     mutate(UMAP1 = umapd$layout[, 1], UMAP2 = umapd$layout[, 2]) %>%
     pivot_longer(
-      c(-UMAP1, -UMAP2, -Sample, -Treatment, -`Injection Method`),
+      c(-UMAP1,-UMAP2,-Sample,-Treatment,-`Injection Method`),
       names_to = 'Variable',
       values_to = 'Value'
     )
@@ -127,7 +126,7 @@ umap_n_save_graph <- function(x) {
           ".png",
           sep = "")
   umapped <-
-    x %>% select(-Sample,-Treatment,-`Injection Method`) %>%
+    x %>% select(-Sample, -Treatment, -`Injection Method`) %>%
     as.matrix() %>%
     umap(config = custom.config)
   
@@ -137,14 +136,14 @@ umap_n_save_graph <- function(x) {
               scale = FALSE) %>%
     mutate(UMAP1 = umapped$layout[, 1], UMAP2 = umapped$layout[, 2]) %>%
     pivot_longer(
-      c(-UMAP1, -UMAP2, -Sample, -Treatment, -`Injection Method`),
+      c(-UMAP1,-UMAP2,-Sample,-Treatment,-`Injection Method`),
       names_to = 'Variable',
       values_to = 'Value'
     )
   
   ggplot(tib_vols_umap, aes(UMAP1, UMAP2, col = Value, shape = Treatment)) +
     ggtitle(paste(deparse(substitute(x)))) +
-    facet_wrap(~ Variable) +
+    facet_wrap( ~ Variable) +
     geom_point(size = 3) +
     scale_color_viridis_b(begin = 1,
                           end = 0,
