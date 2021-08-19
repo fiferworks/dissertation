@@ -2,9 +2,7 @@
 pkgs <-
   c("tidyverse",
     "lubridate",
-    "tm",
-    "readxl",
-    "writexl")
+    "tm")
 
 #installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -19,7 +17,7 @@ df <- read_csv("./data/ofv_gps_from_photos.csv")
 
 #dropping unnecessary exif data
 df <-
-  select(df,-"GPSAltitude")
+  select(df, -"GPSAltitude")
 
 #sorting the columns by date
 df$date <- lubridate::as_datetime(df$DateTimeOriginal)
@@ -82,21 +80,17 @@ df$symptoms <- sub("/.*", "", df$symptoms)
 df <- df %>%
   add_column(family = df$plant_cv) %>%
   mutate(family = ifelse(
-    as.character(
-      family == 'citrus'),
+    as.character(family == 'citrus'),
     'rutaceae',
     as.character(family)
   )) %>%
   mutate(family = ifelse(
-    as.character(
-      family == 'liriopogon' |family == 'aspidistra_elatior'
-    ),
+    as.character(family == 'liriopogon' | family == 'aspidistra_elatior'),
     'nolinoideae',
     as.character(family)
   )) %>%
   mutate(family = ifelse(
-    as.character(
-      family == 'other'),
+    as.character(family == 'other'),
     'unknown',
     as.character(family)
   ))
@@ -116,7 +110,7 @@ df <- df %>%
   ))
 
 #saving master datasheet as excel spreadsheet
-write_xlsx(df, "data/ofv_master_datasheet.xlsx")
+write_csv(df, "data/ofv_master_datasheet.csv")
 
 #cleanup
 rm(list = ls())

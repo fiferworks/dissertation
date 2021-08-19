@@ -1,12 +1,10 @@
 #####LOADING PACKAGES####
 pkgs <-
   c('tidyverse',
-    'readxl',
     'ggthemes',
     'showtext',
     'extrafont',
-    'Cairo',
-    'writexl')
+    'Cairo')
 
 # #installs the packages if you don't have them already installed
 # lapply(pkgs, install.packages, character.only = TRUE)
@@ -43,7 +41,7 @@ showtext_auto()
 
 
 ####READING IN THE REQUIRED FILES####
-df <- read_xlsx('all_mites_survey.xlsx')
+df <- read_csvx('all_mites_survey.csv')
 
 #making sure certain columns are considered as factors
 df$p_fructiphilus <- as.factor(df$p_fructiphilus)

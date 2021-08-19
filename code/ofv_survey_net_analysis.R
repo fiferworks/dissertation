@@ -1,10 +1,7 @@
 #a list of packages used for this script
 pkgs <-
   c('tidyverse',
-    'readxl',
     'igraph',
-    'readxl',
-    'writexl',
     'geosphere',
     'sp',
     'sf')
@@ -19,7 +16,7 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
 #####LOADING REQUIRED FILES####
-df <- read_xlsx('ofv_clean_datasheet.xlsx')
+df <- read_csv('ofv_clean_datasheet.csv')
 
 #selecting only Tallahassee Museum sites
 #str_detect with filter after creating a single string from 'muse' collapsed by | (OR)
@@ -50,8 +47,8 @@ D = distm(df1[, 2:3], df2[, 2:3])
 D2 = distm(cit1[, 2:3], cit2[, 2:3])
 
 #which.min picks out the smallest entry in each row & uses this to index df1
-tmp_df <- bind_cols(df1, df2[apply(D, 1, which.min),])
-tmp_cit <- bind_cols(cit1, cit2[apply(D2, 1, which.min),])
+tmp_df <- bind_cols(df1, df2[apply(D, 1, which.min), ])
+tmp_cit <- bind_cols(cit1, cit2[apply(D2, 1, which.min), ])
 
 #splitting dataframe by time
 df1 <- tmp_df %>%
@@ -359,13 +356,15 @@ tmp_aspd_t2 <-
     'source'
   ))
 tmp_cit <-
-  data_frame(select(cit,
-                    'id',
-                    'plant_cv',
-                    'labs',
-                    'symptoms',
-                    'disease_status',
-                    'source'))
+  data_frame(select(
+    cit,
+    'id',
+    'plant_cv',
+    'labs',
+    'symptoms',
+    'disease_status',
+    'source'
+  ))
 
 tot <-
   SpatialPointsDataFrame(
@@ -544,7 +543,7 @@ bet <- betweenness(cropdmtx_cit)
 eig <- evcent(cropdmtx_cit)$vector
 name <- get.vertex.attribute(cropdmtx_cit, "name")
 itable <- cbind(name, deg, clo, bet, eig)
-itable[1,]
-hist(degree.distribution(cropdmtx_cit)) 
+itable[1, ]
+hist(degree.distribution(cropdmtx_cit))
 
 object.name <- cbind(V(cropdmtx_cit)$id, deg, clo, bet, eig)

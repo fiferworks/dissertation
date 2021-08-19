@@ -1,9 +1,7 @@
 ####SETUP####
 pkgs <-
   c("tidyverse",
-    "tidyselect",
-    "readxl",
-    "writexl")
+    "tidyselect")
 
 # installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -15,8 +13,7 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
 # reading in master datasheet
-df <-
-  read_excel("data/rrv_volatiles_master_datasheet.xlsx", col_types = "guess")
+df <- read_csv("data/rrv_volatiles_master_datasheet.csv")
 
 ####DATA CLEANING####
 # removing unidentified peaks
@@ -55,7 +52,7 @@ df <- df %>%  select("Sample",
                      `Injection Method`, sort(colnames(.)))
 
 #saving datasheet as excel spreadsheet
-write_xlsx(df, "data/rrv_volatiles_pca_table.xlsx")
+write_csv(df, "data/rrv_volatiles_pca_table.csv")
 
 #cleanup
 rm(list = ls())

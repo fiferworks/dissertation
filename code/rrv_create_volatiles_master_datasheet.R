@@ -4,9 +4,7 @@ pkgs <-
   c("tidyverse",
     "lubridate",
     "tm",
-    "stringr",
-    "readxl",
-    "writexl")
+    "stringr")
 
 # installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -85,7 +83,7 @@ for (file in gcfiles) {
     gc_data_temp <- gc_data_temp %>% slice(-(1:2))
     
     # dropping unnecessary columns
-    gc_data_temp <- select(gc_data_temp,-'X9',-'Amount')
+    gc_data_temp <- select(gc_data_temp, -'X9', -'Amount')
     
     # grabs the file name of the file being processed
     path_name <- file
@@ -333,8 +331,8 @@ df <-
 # loop to calculate area relative to the internal standard of each sample
 for (i in 1:length(sample_list)) {
   if (exists("df")) {
-    filtered_peaks <- Peaks[Peaks$Sample == sample_list[i], ]
-    filtered_is <- IntStds[IntStds$Sample == sample_list[i], ]
+    filtered_peaks <- Peaks[Peaks$Sample == sample_list[i],]
+    filtered_is <- IntStds[IntStds$Sample == sample_list[i],]
     tmp <-
       mutate(
         filtered_peaks,
@@ -345,7 +343,7 @@ for (i in 1:length(sample_list)) {
 }
 
 # saving master datasheet as excel spreadsheet
-write_xlsx(df, "data/rrv_volatiles_master_datasheet.xlsx")
+write_csv(df, "data/rrv_volatiles_master_datasheet.csv")
 
 # cleanup
 rm(list = ls())

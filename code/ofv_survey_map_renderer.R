@@ -12,7 +12,6 @@ pkgs <-
     'showtext',
     'leaflet',
     'dplyr',
-    'readxl',
     'maps',
     'mapview',
     'htmlwidgets',
@@ -63,7 +62,7 @@ showtext_auto()
 
 
 #####LOADING REQUIRED FILES####
-df <- read_xlsx('data/ofv_master_datasheet.xlsx')
+df <- read_csv('data/ofv_master_datasheet.csv')
 
 #making sure R knows what variables are factors
 df$symptoms <- as_factor(df$symptoms)
@@ -149,7 +148,9 @@ gg_ofv_map <-
   geom_sf(data = asp,
           aes(color = symptoms),
           show.legend = T) +
-  scale_color_viridis(discrete = T, direction = 1, alpha = 0.5) +
+  scale_color_viridis(discrete = T,
+                      direction = 1,
+                      alpha = 0.5) +
   theme_tufte(base_size = 40, base_family = "gill_sans") +
   ggtitle(expression('Asparagales with Orchid Fleck Virus in Northern Florida')) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +

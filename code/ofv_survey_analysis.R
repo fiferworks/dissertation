@@ -15,7 +15,7 @@ lapply(pkgs, library, character.only = TRUE)
 # library(INApreliminary)
 
 #####LOADING REQUIRED FILES####
-df <- read_xlsx('ofv_clean_datasheet.xlsx')
+df <- read_csv('ofv_clean_datasheet.csv')
 
 #making sure R knows what variables are factors
 df$symptoms <- as_factor(df$symptoms)

@@ -4,9 +4,7 @@ pkgs <-
     "factoextra",
     "tibble",
     "ggplot2",
-    "Cairo",
-    "readxl",
-    "writexl")
+    "Cairo")
 
 # installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -18,8 +16,7 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
 # reading in master datasheet
-df <-
-  read_excel("data/rrv_volatiles_pca_table.xlsx", col_types = "guess")
+df <- read_csv("data/rrv_volatiles_pca_table.csv")
 
 # picking out the chemistry we want to compare
 df <- df %>% select(
@@ -52,19 +49,19 @@ df <- df %>% select(
 
 # making df with SPME chems only
 rrd_spme <-
-  df %>%  select_if(~ any(. > 0)) %>% filter(`Injection Method` == 'rrd_spme')
+  df %>%  select_if( ~ any(. > 0)) %>% filter(`Injection Method` == 'rrd_spme')
 
 df <- df %>% select(colnames(rrd_spme))
 
 # qsep only
 rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
 
 ####PRINCIPAL COMPONENT ANALYSIS####
 
 # quick helper function to run for each dataframe
 run_pca <- function(data) {
-  data %>% select(-Sample,-Treatment, -`Injection Method`) %>%
+  data %>% select(-Sample, -Treatment,-`Injection Method`) %>%
     prcomp(center = TRUE, scale = FALSE)
 }
 
@@ -154,13 +151,11 @@ save_table <- function(tab) {
       PCA3 = Dim.3
     )
   filename <-
-    paste(
-      "data/rrv_volatiles_pca_correlation_table_",
-      deparse(substitute(tab)),
-      ".xlsx",
-      sep = ""
-    )
-  write_xlsx(x, path = filename)
+    paste("data/rrv_volatiles_pca_correlation_table_",
+          deparse(substitute(tab)),
+          ".csv",
+          sep = "")
+  write_csv(x, filename)
   
   x <- data.frame(tab$contrib, check.names = FALSE)
   x <- tibble::rownames_to_column(x)
@@ -176,10 +171,10 @@ save_table <- function(tab) {
     paste(
       "data/rrv_volatiles_pca_contribution_table_",
       deparse(substitute(tab)),
-      ".xlsx",
+      ".csv",
       sep = ""
     )
-  write_xlsx(x, path = filename2)
+  write_csv(x, filename2)
 }
 
 save_table(pca_dat)

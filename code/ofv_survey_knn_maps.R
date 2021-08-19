@@ -1,15 +1,13 @@
 #a list of packages used for this script
 pkgs <-
-  c(
-    'tidyverse',
+  c('tidyverse',
     'readxl',
     'sf',
     'spdep',
     'spDataLarge',
     'ggmap',
     'readxl',
-    'writexl'
-  )
+    'writexl')
 
 #installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -21,7 +19,7 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
 #####LOADING REQUIRED FILES####
-df <- read_xlsx('ofv_clean_datasheet.xlsx')
+df <- read_csv('ofv_clean_datasheet.csv')
 
 #making sure R knows what variables are factors
 df$symptoms <- as_factor(df$symptoms)
@@ -56,8 +54,12 @@ tm <-
            crs = 4326)
 
 ####CALCULATING KNN####
-city <-st_read('City_Limits_for_Tallahassee_Florida/City_Limits_for_Tallahassee_Florida.shp')
-musm <-st_read('Parks_Boundaries__-_Florida_s_Capital_Region-shp/Parks_Boundaries__-_Florida_s_Capital_Region.shp')
+city <-
+  st_read('City_Limits_for_Tallahassee_Florida/City_Limits_for_Tallahassee_Florida.shp')
+musm <-
+  st_read(
+    'Parks_Boundaries__-_Florida_s_Capital_Region-shp/Parks_Boundaries__-_Florida_s_Capital_Region.shp'
+  )
 
 #knn on coordinates
 df_knn <- knearneigh(df$geometry, k = 3)
@@ -68,14 +70,18 @@ df_coords <- st_geometry(df)
 tm_coords <- st_geometry(tm)
 
 #plotting city knn
-png("../images/map_knn_city_ofv.png", width = 1920, height = 1080)
+png("../images/map_knn_city_ofv.png",
+    width = 1920,
+    height = 1080)
 plot(knn2nb(df_knn), df_coords)
 plot(st_geometry(city), border = 'grey', add = T)
 title(main = "Knn of OFV-infected plants in Tallahassee, k = 2")
 dev.off()
 
 #plotting museum knn
-png("../images/map_knn_muse_ofv.png", width = 1920, height = 1080)
+png("../images/map_knn_muse_ofv.png",
+    width = 1920,
+    height = 1080)
 plot(knn2nb(tm_knn), tm_coords)
 plot(st_geometry(musm), border = 'grey', add = T)
 plot(st_geometry(city), border = 'grey', add = T)
