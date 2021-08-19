@@ -130,7 +130,7 @@ n.a.	Farnesene <(E)-, beta->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
 37	NA (bag)	14.296	n.a.	BM *	n.a.	n.a.	n.a.	
 n.a.	Aromadendrene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 38	Caryophyllene <9-epi-(E)->	14.337	0.027	 M *	2.83	n.a.	1535399	
-39	Muurrolene <gamma->	14.486	0.035	 M *	1.07	n.a.	944832	
+39	Murrolene <gamma->	14.486	0.035	 M *	1.07	n.a.	944832	
 40	NA (bag)	14.568	0.055	 M 	1.33	1.07	386207	
 n.a.	Germacrene D	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 41	NA (bag)	14.666	0.032	 M 	1.61	n.a.	1156151	

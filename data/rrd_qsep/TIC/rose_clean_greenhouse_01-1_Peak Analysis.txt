@@ -127,7 +127,7 @@ n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Aromadendrene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 17	Caryophyllene <9-epi-(E)->	14.347	0.028	 M 	2.92	n.a.	1446208	
-18	Muurrolene <gamma->	14.513	0.039	 M ^	1.42	0.70	754158	
+18	Murrolene <gamma->	14.513	0.039	 M ^	1.42	0.70	754158	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 19	Germacrene D	14.591	0.026	 M 	3.52	n.a.	1790895	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
