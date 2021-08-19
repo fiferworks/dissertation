@@ -21,6 +21,35 @@ rm(pkgs, nu_pkgs)
 df <-
   read_excel("data/rrv_volatiles_pca_table.xlsx", col_types = "guess")
 
+# picking out the chemistry we want to compare
+df <- df %>% select(
+  Sample,
+  Treatment,
+  `Injection Method`,
+  `Pinene <1R-alpha->`,
+  `Pinene <alpha->`,
+  `Pinene <beta->`,
+  `Carene, <3->`,
+  `Carene <delta-3>`,
+  `Phellandrene <beta->`,
+  `p-Cymene`,
+  `D-Limonene`,
+  `Limonene oxide, trans-`,
+  `Copaene <alpha->`,
+  `Copaene <beta->`,
+  `Bourbonene <beta->`,
+  `Bergamotene <alpha-, cis->`,
+  Caryophyllene,
+  `Caryophyllene oxide`,
+  `Caryophyllene <9-epi-(E)->`,
+  `Murrolene <alpha->`,
+  `Murrolene <gamma->`,
+  `Muurrolene <gamma->`,
+  `Farnesene <(E,E)-, alpha->`,
+  `Farnesene <(E)-, beta->`
+)
+
+
 # making df with SPME chems only
 rrd_spme <-
   df %>%  select_if( ~ any(. > 0)) %>% filter(`Injection Method` == 'rrd_spme')
@@ -30,36 +59,6 @@ df <- df %>% select(colnames(rrd_spme))
 # qsep only
 rrd_qsep <-
   df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
-
-# # picking out the chemistry we want to compare
-# chems <- c(
-#   "Sample",
-#   "Treatment",
-#   "Pinene <1R-alpha->",
-#   "Pinene <alpha->",
-#   "Pinene <beta->",
-#   "Carene, <3->",
-#   "Carene <delta-3>",
-#   "Phellandrene <beta->",
-#   "p-Cymene",
-#   "D-Limonene",
-#   "Limonene oxide, trans-",
-#   "Copaene <alpha->",
-#   "Copaene <beta->",
-#   "Bourbonene <beta->",
-#   "Bergamotene <alpha-, cis->",
-#   "Caryophyllene",
-#   "Caryophyllene oxide",
-#   "Caryophyllene <9-epi-(E)->",
-#   "Murrolene <alpha->",
-#   "Murrolene <gamma->",
-#   "Farnesene <(E,E)-, alpha->",
-#   "Farnesene <(E)-, beta->"
-# )
-#
-# setdiff(chems, colnames(rrd_spme))
-#
-# chems %in% colnames(rrd_spme)
 
 ####PRINCIPAL COMPONENT ANALYSIS####
 
@@ -94,12 +93,29 @@ plot_n_save <- function(graph) {
   )
   fviz_pca_biplot(graph, label = "var")
   filename2 <-
-    paste("figure/rrv_volatiles_biplot_",
+    paste("figure/rrv_volatiles_biplot_var",
           deparse(substitute(graph)),
           ".png",
           sep = "")
   ggsave(
     file = filename2,
+    plot = last_plot(),
+    device = png,
+    type = 'cairo',
+    width = 16,
+    height = 9,
+    scale = 1,
+    dpi = 300
+  )
+  
+  fviz_pca_biplot(graph, label = "ind")
+  filename3 <-
+    paste("figure/rrv_volatiles_biplot_ind",
+          deparse(substitute(graph)),
+          ".png",
+          sep = "")
+  ggsave(
+    file = filename3,
     plot = last_plot(),
     device = png,
     type = 'cairo',
@@ -186,7 +202,7 @@ pca_comp_qsep <- rrd_qsep %>%
   mutate(PCA1 = pca_qsep$x[, 1], PCA2 = pca_qsep$x[, 2])
 
 # function fer savin'
-save_pca_comparasions <- function (graph) {
+save_pca_comparisons <- function (graph) {
   ggplot(graph,
          aes(
            PCA1,
@@ -248,9 +264,9 @@ save_pca_comparasions <- function (graph) {
 }
 
 #savin'
-save_pca_comparasions(pca_comp_df)
-save_pca_comparasions(pca_comp_spme)
-save_pca_comparasions(pca_comp_qsep)
+save_pca_comparisons(pca_comp_df)
+save_pca_comparisons(pca_comp_spme)
+save_pca_comparisons(pca_comp_qsep)
 
 
 #cleanup
