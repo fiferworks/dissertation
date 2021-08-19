@@ -103,7 +103,7 @@ plot_n_save <- function(graph) {
     title = paste(deparse(substitute(graph)))
   )
   filename2 <-
-    paste("figure/rrv_volatiles_biplot_var",
+    paste("figure/rrv_volatiles_biplot_var_",
           deparse(substitute(graph)),
           ".png",
           sep = "")
@@ -127,7 +127,7 @@ plot_n_save <- function(graph) {
     title = paste(deparse(substitute(graph)))
   )
   filename3 <-
-    paste("figure/rrv_volatiles_biplot_ind",
+    paste("figure/rrv_volatiles_biplot_ind_",
           deparse(substitute(graph)),
           ".png",
           sep = "")
@@ -171,7 +171,7 @@ save_table <- function(tab) {
       PCA3 = Dim.3
     )
   filename <-
-    paste("data/rrv_volatiles_pca_correlation_table_",
+    paste("data/rrv_volatiles_correlation_table_",
           deparse(substitute(tab)),
           ".csv",
           sep = "")
@@ -188,12 +188,10 @@ save_table <- function(tab) {
       PCA3 = Dim.3
     )
   filename2 <-
-    paste(
-      "data/rrv_volatiles_pca_contribution_table_",
-      deparse(substitute(tab)),
-      ".csv",
-      sep = ""
-    )
+    paste("data/rrv_volatiles_contribution_table_",
+          deparse(substitute(tab)),
+          ".csv",
+          sep = "")
   write_csv(x, filename2)
 }
 
@@ -231,7 +229,7 @@ save_pca_comparisons <- function (graph) {
     stat_ellipse(level = 0.95)
   
   filename <-
-    paste("figure/rrv_volatiles_pca_comparison_",
+    paste("figure/rrv_volatiles_comparison_",
           deparse(substitute(graph)),
           ".png",
           sep = "")
@@ -257,12 +255,10 @@ save_pca_comparisons <- function (graph) {
     geom_text(aes(label = Sample), hjust = -0.05, vjust = 0)
   
   filename2 <-
-    paste(
-      "figure/rrv_volatiles_pca_comparison_labeled_",
-      deparse(substitute(graph)),
-      ".png",
-      sep = ""
-    )
+    paste("figure/rrv_volatiles_comparison_labeled_",
+          deparse(substitute(graph)),
+          ".png",
+          sep = "")
   ggsave(
     file = filename2,
     plot = last_plot(),
