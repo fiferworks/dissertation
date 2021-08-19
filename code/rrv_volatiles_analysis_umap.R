@@ -19,7 +19,14 @@ rm(pkgs, nu_pkgs)
 # reading in master datasheet
 df <- read_csv("data/rrv_volatiles_pca_table.csv")
 
-# picking out the chemistry we want to compare
+# making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
+rrd_spme <-
+  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if( ~ any(. > 0))
+
+# qsep only
+rrd_qsep <-
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
+
 df <- df %>% select(
   Sample,
   Treatment,
@@ -47,21 +54,14 @@ df <- df %>% select(
   `Farnesene <(E)-, beta->`
 )
 
-# making df with SPME chems only
-rrd_spme <-
-  df %>%  select_if( ~ any(. > 0)) %>% filter(`Injection Method` == 'rrd_spme')
-
-df <- df %>% select(colnames(rrd_spme))
-
-# qsep only
-rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
+df <- df %>%
+  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
 # setting up parameters for UMAP
 custom.config = umap.defaults
 custom.config$random_state = 123
 custom.config$n_neighbors = 7
-custom.config$min_dist = 0.25
+custom.config$min_dist = 0.15
 custom.config$n_components = 2
 custom.config$metric = "euclidean"
 custom.config$n_epochs = 200
@@ -148,7 +148,7 @@ umap_n_save_graph <- function(x) {
     geom_point(size = 3) +
     scale_color_viridis_b(begin = 1,
                           end = 0,
-                          option = "B") +
+                          option = "D") +
     theme_bw()
   ggsave(
     file = filename,

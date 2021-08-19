@@ -18,7 +18,14 @@ rm(pkgs, nu_pkgs)
 # reading in master datasheet
 df <- read_csv("data/rrv_volatiles_pca_table.csv")
 
-# picking out the chemistry we want to compare
+# making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
+rrd_spme <-
+  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
+
+# qsep only
+rrd_qsep <-
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
+
 df <- df %>% select(
   Sample,
   Treatment,
@@ -46,16 +53,19 @@ df <- df %>% select(
   `Farnesene <(E)-, beta->`
 )
 
+df <- df %>%
+  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
-# making df with SPME chems only
-rrd_spme <-
-  df %>%  select_if( ~ any(. > 0)) %>% filter(`Injection Method` == 'rrd_spme')
+# setting up parameters for UMAP
+custom.config = umap.defaults
+custom.config$random_state = 123
+custom.config$n_neighbors = 7
+custom.config$min_dist = 0.25
+custom.config$n_components = 2
+custom.config$metric = "euclidean"
+custom.config$n_epochs = 200
+custom.config$verbose = TRUE
 
-df <- df %>% select(colnames(rrd_spme))
-
-# qsep only
-rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
 
 ####PRINCIPAL COMPONENT ANALYSIS####
 
@@ -72,7 +82,12 @@ pca_qsep <- run_pca(rrd_qsep)
 ####PLOTTING SCREEPLOTS AND PCA####
 # fviz_screeplot(pca_df, addlabels = TRUE, choice = "eigenvalue")
 plot_n_save <- function(graph) {
-  fviz_screeplot(graph, addlabels = TRUE, choice = "variance")
+  fviz_screeplot(
+    graph,
+    addlabels = TRUE,
+    choice = "variance",
+    title = paste(deparse(substitute(graph)))
+  )
   filename <-
     paste("figure/rrv_volatiles_screeplot_",
           deparse(substitute(graph)),
@@ -88,7 +103,12 @@ plot_n_save <- function(graph) {
     scale = 1,
     dpi = 300
   )
-  fviz_pca_biplot(graph, addEllipses = TRUE, label = "var")
+  fviz_pca_biplot(
+    graph,
+    addEllipses = TRUE,
+    label = "var",
+    title = paste(deparse(substitute(graph)))
+  )
   filename2 <-
     paste("figure/rrv_volatiles_biplot_var",
           deparse(substitute(graph)),
@@ -105,7 +125,12 @@ plot_n_save <- function(graph) {
     dpi = 300
   )
   
-  fviz_pca_biplot(graph, addEllipses = TRUE, label = "ind")
+  fviz_pca_biplot(
+    graph,
+    addEllipses = TRUE,
+    label = "ind",
+    title = paste(deparse(substitute(graph)))
+  )
   filename3 <-
     paste("figure/rrv_volatiles_biplot_ind",
           deparse(substitute(graph)),
@@ -199,13 +224,10 @@ pca_comp_qsep <- rrd_qsep %>%
 # function fer savin'
 save_pca_comparisons <- function (graph) {
   ggplot(graph,
-         aes(
-           PCA1,
-           PCA2,
-           color = Treatment,
-           shape = Treatment,
-           label = Treatment
-         )) +
+         aes(PCA1,
+             PCA2,
+             color = Treatment)) +
+    ggtitle(paste(deparse(substitute(graph)))) +
     geom_point(size = 2, alpha = 0.6) +
     theme_bw() +
     stat_ellipse(level = 0.95)
@@ -227,13 +249,10 @@ save_pca_comparisons <- function (graph) {
   )
   
   ggplot(graph,
-         aes(
-           PCA1,
-           PCA2,
-           color = Treatment,
-           shape = Treatment,
-           label = Treatment
-         )) +
+         aes(PCA1,
+             PCA2,
+             color = Treatment)) +
+    ggtitle(paste(deparse(substitute(graph)))) +
     geom_point(size = 2, alpha = 0.6) +
     theme_bw() +
     stat_ellipse(level = 0.95) +
