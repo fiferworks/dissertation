@@ -3,7 +3,7 @@ Summary
 Sequence Details							
 Name:		rrd_qsep			Created On:	25/Aug/18 00:53:40	
 Directory:		Austin			Created By:	ISQ1710520	
-Data Vault:		ChromeleonLocal			Updated On:	11/Aug/21 16:03:32	
+Data Vault:		ChromeleonLocal			Updated On:	19/Aug/21 14:21:26	
 No. of Injections:		61			Updated By:	ISQ1710520	
 							
 By Component		Pinene <alpha->					
