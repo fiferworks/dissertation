@@ -48,27 +48,17 @@ df <- df %>% select(
   `Caryophyllene <9-epi-(E)->`,
   `Murrolene <alpha->`,
   `Murrolene <gamma->`,
-  `Muurrolene <gamma->`,
   `Farnesene <(E,E)-, alpha->`,
   `Farnesene <(E)-, beta->`
 )
 
+# removing the baseline plants from the data,
+# they overwhelm components from rrv plants
 df <- df %>%
   filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
-# setting up parameters for UMAP
-custom.config = umap.defaults
-custom.config$random_state = 123
-custom.config$n_neighbors = 7
-custom.config$min_dist = 0.25
-custom.config$n_components = 2
-custom.config$metric = "euclidean"
-custom.config$n_epochs = 200
-custom.config$verbose = TRUE
-
-
 ####PRINCIPAL COMPONENT ANALYSIS####
-
+# prcomp uses singular value decomposition (SVD)
 # quick helper function to run for each dataframe
 run_pca <- function(data) {
   data %>% select(-Sample, -Treatment,-`Injection Method`) %>%
@@ -105,8 +95,11 @@ plot_n_save <- function(graph) {
   )
   fviz_pca_biplot(
     graph,
+    col.var = "contrib",
+    select.var = list(contrib = 5),
     addEllipses = TRUE,
     label = "var",
+    repel = TRUE,
     title = paste(deparse(substitute(graph)))
   )
   filename2 <-
@@ -129,6 +122,8 @@ plot_n_save <- function(graph) {
     graph,
     addEllipses = TRUE,
     label = "ind",
+    repel = TRUE,
+    select.ind = list(contrib = 10),
     title = paste(deparse(substitute(graph)))
   )
   filename3 <-
@@ -206,6 +201,9 @@ save_table(pca_dat)
 save_table(pca_dat_spme)
 save_table(pca_dat_qsep)
 
+
+
+
 ####PLOTTING PCAS AGAINST ONE ANOTHER####
 pca_df <- run_pca(df)
 pca_spme <- run_pca(rrd_spme)
@@ -277,11 +275,10 @@ save_pca_comparisons <- function (graph) {
   )
 }
 
-#savin'
+#savin' graphs
 save_pca_comparisons(pca_comp_df)
 save_pca_comparisons(pca_comp_spme)
 save_pca_comparisons(pca_comp_qsep)
-
 
 #cleanup
 rm(list = ls())
