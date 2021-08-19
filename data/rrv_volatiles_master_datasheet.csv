@@ -9036,7 +9036,7 @@ bag_blank_01,NA,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rr
 bag_blank_01,NA,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_01_Integration.txt
 bag_blank_01,NA,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_01_Integration.txt
 bag_blank_01,NA,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_01_Integration.txt
-bag_blank_01,NA,NA,Muurolene <gamma->,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_01_Integration.txt
+bag_blank_01,NA,NA,Murrolene <gamma->,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_01_Integration.txt
 bag_blank_01,NA,15,NA,14.571,0.020294841243029636,260530.874,7663722.705,0.3,0.53,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_01_Integration.txt
 bag_blank_01,NA,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_01_Integration.txt
 bag_blank_01,NA,16,NA,14.649,0.023562528508321728,302479.141,10816744.639,0.34,0.75,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_01_Integration.txt
@@ -9163,7 +9163,7 @@ bag_blank_02,NA,36,Humulene,14.211,0.07830297423305166,3304618.932,153095909.507
 bag_blank_02,NA,37,NA,14.296,0.060880596548387275,2569342.658,106089634.626,0.12,0.32,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_02_Integration.txt
 bag_blank_02,NA,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_02_Integration.txt
 bag_blank_02,NA,38,Caryophyllene <9-epi-(E)->,14.337,0.14085612393683022,5944548.319,206665539.693,0.28,0.62,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_02_Integration.txt
-bag_blank_02,NA,39,Muurrolene <gamma->,14.486,0.2771574565165106,11696870.865,301268959.05,0.56,0.9,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_02_Integration.txt
+bag_blank_02,NA,39,Murrolene <gamma->,14.486,0.2771574565165106,11696870.865,301268959.05,0.56,0.9,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_02_Integration.txt
 bag_blank_02,NA,40,NA,14.568,0.4433533463239747,18710832.841,376833343.2,0.89,1.12,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_02_Integration.txt
 bag_blank_02,NA,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_02_Integration.txt
 bag_blank_02,NA,41,NA,14.666,0.4085478441533929,17241936.895,430467243.693,0.82,1.28,rrd_qsep,blank,TIC,blank,./data/rrd_qsep/TIC/bag_blank_02_Integration.txt
@@ -9287,7 +9287,7 @@ rose_clean_greenhouse_01-1,untreated,16,Humulene,14.245,0.160591553280312,473813
 rose_clean_greenhouse_01-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt
 rose_clean_greenhouse_01-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt
 rose_clean_greenhouse_01-1,untreated,17,Caryophyllene <9-epi-(E)->,14.347,0.314111481967002,9267630.536,239047845.787,1.92,1.75,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt
-rose_clean_greenhouse_01-1,untreated,18,Muurrolene <gamma->,14.513,4.94536545319512,145909406.427,3689947486.852,30.19,27.04,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt
+rose_clean_greenhouse_01-1,untreated,18,Murrolene <gamma->,14.513,4.94536545319512,145909406.427,3689947486.852,30.19,27.04,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt
 rose_clean_greenhouse_01-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt
 rose_clean_greenhouse_01-1,untreated,19,Germacrene D,14.591,0.38319063601546327,11305760.672,404048630.604,2.34,2.96,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt
 rose_clean_greenhouse_01-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt
@@ -9411,7 +9411,7 @@ rose_clean_greenhouse_01-2,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_01-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt
 rose_clean_greenhouse_01-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt
 rose_clean_greenhouse_01-2,untreated,8,Caryophyllene <9-epi-(E)->,14.337,0.008695772130906824,348115.067,11717488.056,0.58,0.48,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt
-rose_clean_greenhouse_01-2,untreated,9,Muurrolene <gamma->,14.48,0.27037615615017474,10823882.261,447422620.428,18.01,18.22,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt
+rose_clean_greenhouse_01-2,untreated,9,Murrolene <gamma->,14.48,0.27037615615017474,10823882.261,447422620.428,18.01,18.22,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt
 rose_clean_greenhouse_01-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt
 rose_clean_greenhouse_01-2,untreated,10,Germacrene D,14.572,0.015493906877999527,620262.623,10850283.273,1.03,0.44,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt
 rose_clean_greenhouse_01-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt
@@ -9535,7 +9535,7 @@ rose_clean_greenhouse_02-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_02-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt
 rose_clean_greenhouse_02-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt
 rose_clean_greenhouse_02-1,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt
-rose_clean_greenhouse_02-1,untreated,7,Muurrolene <gamma->,14.486,0.1471123226094749,3858204.191,142304830.397,4.23,4.21,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt
+rose_clean_greenhouse_02-1,untreated,7,Murrolene <gamma->,14.486,0.1471123226094749,3858204.191,142304830.397,4.23,4.21,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt
 rose_clean_greenhouse_02-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt
 rose_clean_greenhouse_02-1,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt
 rose_clean_greenhouse_02-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt
@@ -9660,7 +9660,7 @@ rose_clean_greenhouse_02-2,untreated,19,Humulene,14.243,0.07631031343211762,2979
 rose_clean_greenhouse_02-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt
 rose_clean_greenhouse_02-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt
 rose_clean_greenhouse_02-2,untreated,20,Caryophyllene <9-epi-(E)->,14.341,0.15006841667070822,5860329.838,190975353.547,1.21,1.23,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt
-rose_clean_greenhouse_02-2,untreated,21,Muurrolene <gamma->,14.504,3.307761421969914,129171569.796,3712066174.955,26.76,24,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt
+rose_clean_greenhouse_02-2,untreated,21,Murrolene <gamma->,14.504,3.307761421969914,129171569.796,3712066174.955,26.76,24,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt
 rose_clean_greenhouse_02-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt
 rose_clean_greenhouse_02-2,untreated,22,Germacrene D,14.586,0.21787347581982547,8508188.862,324529692.948,1.76,2.1,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt
 rose_clean_greenhouse_02-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt
@@ -9784,7 +9784,7 @@ rose_clean_greenhouse_02-3,untreated,17,Humulene,14.243,0.05991078826083257,2123
 rose_clean_greenhouse_02-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt
 rose_clean_greenhouse_02-3,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt
 rose_clean_greenhouse_02-3,untreated,18,Caryophyllene <9-epi-(E)->,14.342,0.21287385926845395,7544413.559,262986858.919,1.39,1.79,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt
-rose_clean_greenhouse_02-3,untreated,19,Muurrolene <gamma->,14.515,4.873324058388965,172714358.775,4008726603.124,31.83,27.25,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt
+rose_clean_greenhouse_02-3,untreated,19,Murrolene <gamma->,14.515,4.873324058388965,172714358.775,4008726603.124,31.83,27.25,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt
 rose_clean_greenhouse_02-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt
 rose_clean_greenhouse_02-3,untreated,20,Germacrene D,14.594,0.26653037187906725,9446041.7,339358100.515,1.74,2.31,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt
 rose_clean_greenhouse_02-3,untreated,21,NA,14.668,0.1019787040664006,3614203.831,109166816.756,0.67,0.74,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt
@@ -9909,7 +9909,7 @@ rose_clean_greenhouse_03-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_03-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt
 rose_clean_greenhouse_03-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt
 rose_clean_greenhouse_03-1,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt
-rose_clean_greenhouse_03-1,untreated,10,Muurrolene <gamma->,14.487,1.9575522840556914,44749067.855,1336864636.593,12.55,11.42,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt
+rose_clean_greenhouse_03-1,untreated,10,Murrolene <gamma->,14.487,1.9575522840556914,44749067.855,1336864636.593,12.55,11.42,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt
 rose_clean_greenhouse_03-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt
 rose_clean_greenhouse_03-1,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt
 rose_clean_greenhouse_03-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt
@@ -10033,7 +10033,7 @@ rose_clean_greenhouse_03-2,untreated,10,Humulene,14.238,0.03279197628567818,7767
 rose_clean_greenhouse_03-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt
 rose_clean_greenhouse_03-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt
 rose_clean_greenhouse_03-2,untreated,11,Caryophyllene <9-epi-(E)->,14.336,0.06438396244610929,1525104.173,55889183.192,1.17,1.15,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt
-rose_clean_greenhouse_03-2,untreated,12,Muurrolene <gamma->,14.489,2.629580876979627,62288567.158,2219458448.961,47.59,45.77,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt
+rose_clean_greenhouse_03-2,untreated,12,Murrolene <gamma->,14.489,2.629580876979627,62288567.158,2219458448.961,47.59,45.77,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt
 rose_clean_greenhouse_03-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt
 rose_clean_greenhouse_03-2,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt
 rose_clean_greenhouse_03-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt
@@ -10158,7 +10158,7 @@ rose_clean_greenhouse_04-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_04-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt
 rose_clean_greenhouse_04-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt
 rose_clean_greenhouse_04-1,untreated,10,Caryophyllene <9-epi-(E)->,14.345,0.12251206637023503,4041690.898,110069700.055,1.39,1.17,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt
-rose_clean_greenhouse_04-1,untreated,11,Muurrolene <gamma->,14.501,2.524396813994484,83280218.254,2736003437.268,28.66,29.02,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt
+rose_clean_greenhouse_04-1,untreated,11,Murrolene <gamma->,14.501,2.524396813994484,83280218.254,2736003437.268,28.66,29.02,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt
 rose_clean_greenhouse_04-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt
 rose_clean_greenhouse_04-1,untreated,12,Germacrene D,14.586,0.13241479358804417,4368383.31,168379332.433,1.5,1.79,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt
 rose_clean_greenhouse_04-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt
@@ -10284,7 +10284,7 @@ rose_clean_greenhouse_04-2,untreated,21,Humulene,14.241,0.12415923652351896,4267
 rose_clean_greenhouse_04-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt
 rose_clean_greenhouse_04-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt
 rose_clean_greenhouse_04-2,untreated,22,Caryophyllene <9-epi-(E)->,14.343,0.28911030094941154,9936552.27,336102977.065,1.89,2.34,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt
-rose_clean_greenhouse_04-2,untreated,23,Muurrolene <gamma->,14.52,5.321188423417072,182886139.768,3884762288.883,34.8,27.1,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt
+rose_clean_greenhouse_04-2,untreated,23,Murrolene <gamma->,14.52,5.321188423417072,182886139.768,3884762288.883,34.8,27.1,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt
 rose_clean_greenhouse_04-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt
 rose_clean_greenhouse_04-2,untreated,24,Germacrene D,14.592,0.3384786699550387,11633314.293,397884771.254,2.21,2.78,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt
 rose_clean_greenhouse_04-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt
@@ -10408,7 +10408,7 @@ rose_clean_greenhouse_05-1,untreated,17,Humulene,14.253,0.1820729115281525,96085
 rose_clean_greenhouse_05-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt
 rose_clean_greenhouse_05-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt
 rose_clean_greenhouse_05-1,untreated,18,Caryophyllene <9-epi-(E)->,14.355,0.3598525196967915,18990511.171,690270840.594,1.78,2.6,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt
-rose_clean_greenhouse_05-1,untreated,19,Muurrolene <gamma->,14.535,5.0384245096201985,265892974.752,4013163968.378,24.91,15.09,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt
+rose_clean_greenhouse_05-1,untreated,19,Murrolene <gamma->,14.535,5.0384245096201985,265892974.752,4013163968.378,24.91,15.09,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt
 rose_clean_greenhouse_05-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt
 rose_clean_greenhouse_05-1,untreated,20,Germacrene D,14.617,0.3305586882641301,17444586.653,762407006.953,1.63,2.87,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt
 rose_clean_greenhouse_05-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt
@@ -10533,7 +10533,7 @@ rose_clean_greenhouse_05-2,untreated,16,Humulene,14.241,0.06229482486505443,2012
 rose_clean_greenhouse_05-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt
 rose_clean_greenhouse_05-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt
 rose_clean_greenhouse_05-2,untreated,17,Caryophyllene <9-epi-(E)->,14.34,0.11673409400062239,3771345.004,141033302.111,1.25,1.49,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt
-rose_clean_greenhouse_05-2,untreated,18,Muurrolene <gamma->,14.496,2.7697182851184303,89481683.192,2839766951.734,29.76,29.91,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt
+rose_clean_greenhouse_05-2,untreated,18,Murrolene <gamma->,14.496,2.7697182851184303,89481683.192,2839766951.734,29.76,29.91,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt
 rose_clean_greenhouse_05-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt
 rose_clean_greenhouse_05-2,untreated,19,Germacrene D,14.581,0.13556291013268834,4379650.249,132770567.909,1.46,1.4,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt
 rose_clean_greenhouse_05-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt
@@ -10658,7 +10658,7 @@ rose_clean_greenhouse_06-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_06-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt
 rose_clean_greenhouse_06-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt
 rose_clean_greenhouse_06-1,untreated,11,Caryophyllene <9-epi-(E)->,14.35,0.21480381265402315,8015651.709,276153265.23,1.56,1.88,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt
-rose_clean_greenhouse_06-1,untreated,12,Muurrolene <gamma->,14.52,4.397860677281484,164111237.218,3844129864.078,31.92,26.11,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt
+rose_clean_greenhouse_06-1,untreated,12,Murrolene <gamma->,14.52,4.397860677281484,164111237.218,3844129864.078,31.92,26.11,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt
 rose_clean_greenhouse_06-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt
 rose_clean_greenhouse_06-1,untreated,13,Germacrene D,14.595,0.20206631799378397,7540337.423,263056320.45,1.47,1.79,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt
 rose_clean_greenhouse_06-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt
@@ -10783,7 +10783,7 @@ rose_clean_greenhouse_06-2,untreated,25,Humulene,14.245,0.38302192852172917,4600
 rose_clean_greenhouse_06-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt
 rose_clean_greenhouse_06-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt
 rose_clean_greenhouse_06-2,untreated,26,Caryophyllene <9-epi-(E)->,14.343,0.9494298456606346,11404092.665,428869056.92,1.29,1.98,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt
-rose_clean_greenhouse_06-2,untreated,27,Muurrolene <gamma->,14.53,18.41986662520568,221250539.817,3878992115.452,25.04,17.9,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt
+rose_clean_greenhouse_06-2,untreated,27,Murrolene <gamma->,14.53,18.41986662520568,221250539.817,3878992115.452,25.04,17.9,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt
 rose_clean_greenhouse_06-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt
 rose_clean_greenhouse_06-2,untreated,28,Germacrene D,14.602,1.5905244957266194,19104611.908,697277925.743,2.16,3.22,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt
 rose_clean_greenhouse_06-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt
@@ -10908,7 +10908,7 @@ rose_clean_greenhouse_07-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_07-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt
 rose_clean_greenhouse_07-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt
 rose_clean_greenhouse_07-1,untreated,14,Caryophyllene <9-epi-(E)->,14.347,0.038152116726067775,1261519.853,40096810.701,1.02,0.91,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt
-rose_clean_greenhouse_07-1,untreated,15,Muurrolene <gamma->,14.486,0.8014593582289271,26500676.202,1007316451.146,21.46,22.88,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt
+rose_clean_greenhouse_07-1,untreated,15,Murrolene <gamma->,14.486,0.8014593582289271,26500676.202,1007316451.146,21.46,22.88,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt
 rose_clean_greenhouse_07-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt
 rose_clean_greenhouse_07-1,untreated,16,Germacrene D,14.585,0.09008643200495463,2978755.367,91714181.329,2.41,2.08,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt
 rose_clean_greenhouse_07-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt
@@ -11032,7 +11032,7 @@ rose_clean_greenhouse_08-1,untreated,15,Humulene,14.25,0.08432771003805624,15925
 rose_clean_greenhouse_08-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt
 rose_clean_greenhouse_08-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt
 rose_clean_greenhouse_08-1,untreated,16,Caryophyllene <9-epi-(E)->,14.349,0.09651247444899493,1822608.972,61209948.351,1.05,1.04,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt
-rose_clean_greenhouse_08-1,untreated,17,Muurrolene <gamma->,14.492,2.324513138920502,43897729.56,1607434356.473,25.25,27.4,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt
+rose_clean_greenhouse_08-1,untreated,17,Murrolene <gamma->,14.492,2.324513138920502,43897729.56,1607434356.473,25.25,27.4,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt
 rose_clean_greenhouse_08-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt
 rose_clean_greenhouse_08-1,untreated,18,Germacrene D,14.587,0.24855090714622682,4693808.919,135327706.456,2.7,2.31,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt
 rose_clean_greenhouse_08-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt
@@ -11158,7 +11158,7 @@ rose_clean_greenhouse_08-2,untreated,20,Humulene,14.242,0.08333005458079216,3057
 rose_clean_greenhouse_08-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt
 rose_clean_greenhouse_08-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt
 rose_clean_greenhouse_08-2,untreated,21,Caryophyllene <9-epi-(E)->,14.34,0.11335796062739191,4159103.089,143728628.982,1.22,1.32,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt
-rose_clean_greenhouse_08-2,untreated,22,Muurrolene <gamma->,14.497,2.666352422657897,97828458.946,3023024561.549,28.59,27.81,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt
+rose_clean_greenhouse_08-2,untreated,22,Murrolene <gamma->,14.497,2.666352422657897,97828458.946,3023024561.549,28.59,27.81,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt
 rose_clean_greenhouse_08-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt
 rose_clean_greenhouse_08-2,untreated,23,Germacrene D,14.582,0.17113044337205593,6278775.233,217877421.215,1.83,2,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt
 rose_clean_greenhouse_08-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt
@@ -11282,7 +11282,7 @@ rose_clean_greenhouse_08-3,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_08-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt
 rose_clean_greenhouse_08-3,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt
 rose_clean_greenhouse_08-3,untreated,15,Caryophyllene <9-epi-(E)->,14.34,0.03582321521767186,1126954.577,38959900.302,0.96,0.99,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt
-rose_clean_greenhouse_08-3,untreated,16,Muurrolene <gamma->,14.483,0.9477478331879146,29814988.743,1148106555.5,25.31,29.1,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt
+rose_clean_greenhouse_08-3,untreated,16,Murrolene <gamma->,14.483,0.9477478331879146,29814988.743,1148106555.5,25.31,29.1,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt
 rose_clean_greenhouse_08-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt
 rose_clean_greenhouse_08-3,untreated,17,Germacrene D,14.578,0.0864324238735907,2719058.44,73659489.89,2.31,1.87,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt
 rose_clean_greenhouse_08-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt
@@ -11407,7 +11407,7 @@ rose_clean_greenhouse_09-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_09-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt
 rose_clean_greenhouse_09-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt
 rose_clean_greenhouse_09-1,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt
-rose_clean_greenhouse_09-1,untreated,13,Muurrolene <gamma->,14.491,0.5980592129145275,17225537.731,644002550.495,4.2,5.13,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt
+rose_clean_greenhouse_09-1,untreated,13,Murrolene <gamma->,14.491,0.5980592129145275,17225537.731,644002550.495,4.2,5.13,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt
 rose_clean_greenhouse_09-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt
 rose_clean_greenhouse_09-1,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt
 rose_clean_greenhouse_09-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt
@@ -11531,7 +11531,7 @@ rose_clean_greenhouse_09-2,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_09-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt
 rose_clean_greenhouse_09-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt
 rose_clean_greenhouse_09-2,untreated,11,Caryophyllene <9-epi-(E)->,14.336,0.02115043620803094,544868.466,18203021.598,0.83,0.81,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt
-rose_clean_greenhouse_09-2,untreated,12,Muurrolene <gamma->,14.476,0.4917519981509985,12668304.06,495842142.029,19.35,22.07,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt
+rose_clean_greenhouse_09-2,untreated,12,Murrolene <gamma->,14.476,0.4917519981509985,12668304.06,495842142.029,19.35,22.07,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt
 rose_clean_greenhouse_09-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt
 rose_clean_greenhouse_09-2,untreated,13,Germacrene D,14.574,0.038487367228464534,991495.047,21820737.193,1.51,0.97,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt
 rose_clean_greenhouse_09-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt
@@ -11655,7 +11655,7 @@ rose_clean_greenhouse_10-1,untreated,17,Humulene,14.25,0.17027580569771636,46074
 rose_clean_greenhouse_10-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt
 rose_clean_greenhouse_10-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt
 rose_clean_greenhouse_10-1,untreated,18,Caryophyllene <9-epi-(E)->,14.349,0.21336917897285593,5773514.154,196968688.769,1.64,1.88,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt
-rose_clean_greenhouse_10-1,untreated,19,Muurrolene <gamma->,14.512,4.491844816351045,121543935.022,3291926856.294,34.45,31.47,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt
+rose_clean_greenhouse_10-1,untreated,19,Murrolene <gamma->,14.512,4.491844816351045,121543935.022,3291926856.294,34.45,31.47,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt
 rose_clean_greenhouse_10-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt
 rose_clean_greenhouse_10-1,untreated,20,Germacrene D,14.594,0.5419546511825907,14664643.059,517467108.439,4.16,4.95,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt
 rose_clean_greenhouse_10-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt
@@ -11782,7 +11782,7 @@ rose_clean_greenhouse_10-2,untreated,19,Humulene,14.241,0.0667349297698982,24720
 rose_clean_greenhouse_10-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt
 rose_clean_greenhouse_10-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt
 rose_clean_greenhouse_10-2,untreated,20,Caryophyllene <9-epi-(E)->,14.336,0.1724321459170362,6387264.042,229600645.142,1.63,2.04,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt
-rose_clean_greenhouse_10-2,untreated,21,Muurrolene <gamma->,14.51,3.9932029490262266,147916976.113,3557864576.58,37.71,31.66,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt
+rose_clean_greenhouse_10-2,untreated,21,Murrolene <gamma->,14.51,3.9932029490262266,147916976.113,3557864576.58,37.71,31.66,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt
 rose_clean_greenhouse_10-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt
 rose_clean_greenhouse_10-2,untreated,22,Germacrene D,14.585,0.17770118679245347,6582440.847,249249111.342,1.68,2.22,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt
 rose_clean_greenhouse_10-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt
@@ -11907,7 +11907,7 @@ rose_clean_greenhouse_10-3,untreated,13,Humulene,14.239,0.03921828701720091,1705
 rose_clean_greenhouse_10-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt
 rose_clean_greenhouse_10-3,untreated,14,Aromadendrene,14.334,0.08862771445830656,3854025.548,134944910.724,1.2,1.28,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt
 rose_clean_greenhouse_10-3,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt
-rose_clean_greenhouse_10-3,untreated,15,Muurrolene <gamma->,14.49,1.7166904655077744,74651241.46,2473642774.079,23.19,23.49,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt
+rose_clean_greenhouse_10-3,untreated,15,Murrolene <gamma->,14.49,1.7166904655077744,74651241.46,2473642774.079,23.19,23.49,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt
 rose_clean_greenhouse_10-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt
 rose_clean_greenhouse_10-3,untreated,16,Germacrene D,14.579,0.08177103272098957,3555858.922,114448028.44,1.1,1.09,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt
 rose_clean_greenhouse_10-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt
@@ -12031,7 +12031,7 @@ rose_clean_greenhouse_11-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_11-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt
 rose_clean_greenhouse_11-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt
 rose_clean_greenhouse_11-1,untreated,13,Caryophyllene <9-epi-(E)->,14.347,0.045585465863557384,1433148.036,38091868.933,0.52,0.41,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt
-rose_clean_greenhouse_11-1,untreated,14,Muurrolene <gamma->,14.486,0.8678810603045679,27285057.057,1048661843.146,9.98,11.41,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt
+rose_clean_greenhouse_11-1,untreated,14,Murrolene <gamma->,14.486,0.8678810603045679,27285057.057,1048661843.146,9.98,11.41,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt
 rose_clean_greenhouse_11-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt
 rose_clean_greenhouse_11-1,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt
 rose_clean_greenhouse_11-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt
@@ -12158,7 +12158,7 @@ rose_clean_greenhouse_11-2,untreated,21,Humulene,14.241,0.10832900537044307,3429
 rose_clean_greenhouse_11-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt
 rose_clean_greenhouse_11-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt
 rose_clean_greenhouse_11-2,untreated,22,Caryophyllene <9-epi-(E)->,14.337,0.17523402862194282,5547623.356,206175333.049,1.32,1.7,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt
-rose_clean_greenhouse_11-2,untreated,23,Muurrolene <gamma->,14.503,3.837741097026032,121496619.758,3286810777.701,28.9,27.05,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt
+rose_clean_greenhouse_11-2,untreated,23,Murrolene <gamma->,14.503,3.837741097026032,121496619.758,3286810777.701,28.9,27.05,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt
 rose_clean_greenhouse_11-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt
 rose_clean_greenhouse_11-2,untreated,24,Germacrene D,14.582,0.18238830746336165,5774116.148,203314583.429,1.37,1.67,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt
 rose_clean_greenhouse_11-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt
@@ -12282,7 +12282,7 @@ rose_clean_greenhouse_11-3,untreated,18,Humulene,14.241,0.12010386258669868,3883
 rose_clean_greenhouse_11-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt
 rose_clean_greenhouse_11-3,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt
 rose_clean_greenhouse_11-3,untreated,19,Caryophyllene <9-epi-(E)->,14.34,0.14668602419149526,4743540.547,173744099.08,1.3,1.57,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt
-rose_clean_greenhouse_11-3,untreated,20,Muurrolene <gamma->,14.5,3.2065830644692714,103694655.762,3069769256.927,28.42,27.78,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt
+rose_clean_greenhouse_11-3,untreated,20,Murrolene <gamma->,14.5,3.2065830644692714,103694655.762,3069769256.927,28.42,27.78,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt
 rose_clean_greenhouse_11-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt
 rose_clean_greenhouse_11-3,untreated,21,Germacrene D,14.581,0.2788924381255639,9018838.678,330044260.123,2.47,2.99,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt
 rose_clean_greenhouse_11-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt
@@ -12406,7 +12406,7 @@ rose_clean_greenhouse_12-1,untreated,14,Humulene,14.25,0.09089812319229414,17327
 rose_clean_greenhouse_12-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt
 rose_clean_greenhouse_12-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt
 rose_clean_greenhouse_12-1,untreated,15,Caryophyllene <9-epi-(E)->,14.348,0.17005609246233233,3241794.178,116905333.008,1.19,1.29,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt
-rose_clean_greenhouse_12-1,untreated,16,Muurrolene <gamma->,14.502,4.451539162852412,84860080.767,2679594238.265,31.22,29.58,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt
+rose_clean_greenhouse_12-1,untreated,16,Murrolene <gamma->,14.502,4.451539162852412,84860080.767,2679594238.265,31.22,29.58,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt
 rose_clean_greenhouse_12-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt
 rose_clean_greenhouse_12-1,untreated,17,Germacrene D,14.587,0.22954008163159492,4375742.671,143653945.34,1.61,1.59,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt
 rose_clean_greenhouse_12-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt
@@ -12531,7 +12531,7 @@ rose_clean_greenhouse_12-2,untreated,14,Humulene,14.236,0.0727053882354809,27046
 rose_clean_greenhouse_12-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt
 rose_clean_greenhouse_12-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt
 rose_clean_greenhouse_12-2,untreated,15,Caryophyllene <9-epi-(E)->,14.338,0.08311088094418381,3091706.666,87801944.377,1.45,1.26,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt
-rose_clean_greenhouse_12-2,untreated,16,Muurrolene <gamma->,14.485,1.2694004405376391,47221419.858,1649343294.957,22.19,23.72,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt
+rose_clean_greenhouse_12-2,untreated,16,Murrolene <gamma->,14.485,1.2694004405376391,47221419.858,1649343294.957,22.19,23.72,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt
 rose_clean_greenhouse_12-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt
 rose_clean_greenhouse_12-2,untreated,17,Germacrene D,14.576,0.1680898067254776,6252904.193,184389351.729,2.94,2.65,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt
 rose_clean_greenhouse_12-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt
@@ -12655,7 +12655,7 @@ rose_clean_greenhouse_12-3,untreated,21,Humulene,14.241,0.09742743897255685,4042
 rose_clean_greenhouse_12-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt
 rose_clean_greenhouse_12-3,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt
 rose_clean_greenhouse_12-3,untreated,22,Caryophyllene <9-epi-(E)->,14.34,0.2534050992943311,10514081.37,403891724.733,1.67,2.39,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt
-rose_clean_greenhouse_12-3,untreated,23,Muurrolene <gamma->,14.52,5.002240396530521,207548951.098,3707747194.811,33.04,21.9,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt
+rose_clean_greenhouse_12-3,untreated,23,Murrolene <gamma->,14.52,5.002240396530521,207548951.098,3707747194.811,33.04,21.9,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt
 rose_clean_greenhouse_12-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt
 rose_clean_greenhouse_12-3,untreated,24,Germacrene D,14.595,0.31782616163205474,13186988.479,466666163.53,2.1,2.76,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt
 rose_clean_greenhouse_12-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt
@@ -12780,7 +12780,7 @@ rose_clean_greenhouse_13-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_13-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt
 rose_clean_greenhouse_13-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt
 rose_clean_greenhouse_13-1,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt
-rose_clean_greenhouse_13-1,untreated,8,Muurrolene <gamma->,14.486,0.42409422033293354,13885548.293,545142610.343,7.03,7.9,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt
+rose_clean_greenhouse_13-1,untreated,8,Murrolene <gamma->,14.486,0.42409422033293354,13885548.293,545142610.343,7.03,7.9,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt
 rose_clean_greenhouse_13-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt
 rose_clean_greenhouse_13-1,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt
 rose_clean_greenhouse_13-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt
@@ -12904,7 +12904,7 @@ rose_clean_greenhouse_13-2,untreated,16,Humulene,14.235,0.046144090431278546,140
 rose_clean_greenhouse_13-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt
 rose_clean_greenhouse_13-2,untreated,17,Aromadendrene,14.334,0.11802774652223152,3589920.818,139548084.997,1.45,1.92,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt
 rose_clean_greenhouse_13-2,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt
-rose_clean_greenhouse_13-2,untreated,18,Muurrolene <gamma->,14.494,2.9724486639661944,90409718.508,2777764905.51,36.53,38.13,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt
+rose_clean_greenhouse_13-2,untreated,18,Murrolene <gamma->,14.494,2.9724486639661944,90409718.508,2777764905.51,36.53,38.13,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt
 rose_clean_greenhouse_13-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt
 rose_clean_greenhouse_13-2,untreated,19,Germacrene D,14.579,0.12587373219507583,3828563.579,115761568.867,1.55,1.59,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt
 rose_clean_greenhouse_13-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt
@@ -13030,7 +13030,7 @@ rose_clean_greenhouse_13-3,untreated,20,Humulene,14.239,0.10478561105021514,2427
 rose_clean_greenhouse_13-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt
 rose_clean_greenhouse_13-3,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt
 rose_clean_greenhouse_13-3,untreated,21,Caryophyllene <9-epi-(E)->,14.338,0.2439576340239223,5652207.344,216626500.6,1.57,2.07,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt
-rose_clean_greenhouse_13-3,untreated,22,Muurrolene <gamma->,14.501,5.509676352791785,127652628.166,3366767838.433,35.54,32.16,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt
+rose_clean_greenhouse_13-3,untreated,22,Murrolene <gamma->,14.501,5.509676352791785,127652628.166,3366767838.433,35.54,32.16,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt
 rose_clean_greenhouse_13-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt
 rose_clean_greenhouse_13-3,untreated,23,Germacrene D,14.582,0.31699329997194675,7344356.594,258486788.779,2.04,2.47,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt
 rose_clean_greenhouse_13-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt
@@ -13155,7 +13155,7 @@ rose_clean_greenhouse_14-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_14-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt
 rose_clean_greenhouse_14-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt
 rose_clean_greenhouse_14-1,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt
-rose_clean_greenhouse_14-1,untreated,12,Muurrolene <gamma->,14.484,0.44196702780526276,12577679.575,480090932.233,5.83,7,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt
+rose_clean_greenhouse_14-1,untreated,12,Murrolene <gamma->,14.484,0.44196702780526276,12577679.575,480090932.233,5.83,7,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt
 rose_clean_greenhouse_14-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt
 rose_clean_greenhouse_14-1,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt
 rose_clean_greenhouse_14-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt
@@ -13281,7 +13281,7 @@ rose_clean_greenhouse_14-2,untreated,21,Humulene,14.239,0.06959515992643796,3679
 rose_clean_greenhouse_14-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt
 rose_clean_greenhouse_14-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt
 rose_clean_greenhouse_14-2,untreated,22,Caryophyllene <9-epi-(E)->,14.338,0.13415664438613106,7093404.715,260950417.593,1.59,2.08,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt
-rose_clean_greenhouse_14-2,untreated,23,Muurrolene <gamma->,14.508,2.814501262220557,148814071.902,3488302230.243,33.34,27.84,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt
+rose_clean_greenhouse_14-2,untreated,23,Murrolene <gamma->,14.508,2.814501262220557,148814071.902,3488302230.243,33.34,27.84,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt
 rose_clean_greenhouse_14-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt
 rose_clean_greenhouse_14-2,untreated,24,Germacrene D,14.586,0.13766621081193164,7278969.695,247980316.03,1.63,1.98,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt
 rose_clean_greenhouse_14-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt
@@ -13405,7 +13405,7 @@ rose_clean_greenhouse_14-3,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_14-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt
 rose_clean_greenhouse_14-3,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt
 rose_clean_greenhouse_14-3,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt
-rose_clean_greenhouse_14-3,untreated,7,Muurrolene <gamma->,14.472,0.21623218589201357,7750147.005,313204508.808,9.51,10.23,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt
+rose_clean_greenhouse_14-3,untreated,7,Murrolene <gamma->,14.472,0.21623218589201357,7750147.005,313204508.808,9.51,10.23,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt
 rose_clean_greenhouse_14-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt
 rose_clean_greenhouse_14-3,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt
 rose_clean_greenhouse_14-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt
@@ -13530,7 +13530,7 @@ rose_clean_greenhouse_15-1,untreated,19,Humulene,14.255,0.359059619899183,123847
 rose_clean_greenhouse_15-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt
 rose_clean_greenhouse_15-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt
 rose_clean_greenhouse_15-1,untreated,20,Caryophyllene <9-epi-(E)->,14.353,0.9389947176873855,32387929.223,1119146826.482,2.27,3.3,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt
-rose_clean_greenhouse_15-1,untreated,21,Muurrolene <gamma->,14.53,8.35599430846179,288216053.991,4086260383.088,20.17,12.04,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt
+rose_clean_greenhouse_15-1,untreated,21,Murrolene <gamma->,14.53,8.35599430846179,288216053.991,4086260383.088,20.17,12.04,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt
 rose_clean_greenhouse_15-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt
 rose_clean_greenhouse_15-1,untreated,22,Germacrene D,14.632,0.6138718619185997,21173748.948,847236937.523,1.48,2.5,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt
 rose_clean_greenhouse_15-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt
@@ -13654,7 +13654,7 @@ rose_clean_greenhouse_15-2,untreated,18,Humulene,14.235,0.06221735939856262,2138
 rose_clean_greenhouse_15-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt
 rose_clean_greenhouse_15-2,untreated,19,Aromadendrene,14.334,0.1225360285310274,4211705.189,162462224.36,0.95,1.24,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt
 rose_clean_greenhouse_15-2,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt
-rose_clean_greenhouse_15-2,untreated,20,Muurrolene <gamma->,14.493,3.0979482571887886,106480068.813,3055792259.405,23.94,23.34,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt
+rose_clean_greenhouse_15-2,untreated,20,Murrolene <gamma->,14.493,3.0979482571887886,106480068.813,3055792259.405,23.94,23.34,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt
 rose_clean_greenhouse_15-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt
 rose_clean_greenhouse_15-2,untreated,21,Germacrene D,14.578,0.22274408543775567,7655972.139,270922091.274,1.72,2.07,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt
 rose_clean_greenhouse_15-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt
@@ -13780,7 +13780,7 @@ rose_clean_greenhouse_16-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_16-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt
 rose_clean_greenhouse_16-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt
 rose_clean_greenhouse_16-1,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt
-rose_clean_greenhouse_16-1,untreated,12,Muurrolene <gamma->,14.486,1.1802149425719999,40301106.219,1497305752.555,21.35,24.71,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt
+rose_clean_greenhouse_16-1,untreated,12,Murrolene <gamma->,14.486,1.1802149425719999,40301106.219,1497305752.555,21.35,24.71,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt
 rose_clean_greenhouse_16-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt
 rose_clean_greenhouse_16-1,untreated,13,Germacrene D,14.581,0.09333751499283774,3187220.37,77569075.356,1.69,1.28,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt
 rose_clean_greenhouse_16-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt
@@ -13904,7 +13904,7 @@ rose_clean_greenhouse_16-2,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_16-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt
 rose_clean_greenhouse_16-2,untreated,13,Aromadendrene,14.334,0.0509976964248653,1828874.176,54079446.806,0.76,0.69,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt
 rose_clean_greenhouse_16-2,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt
-rose_clean_greenhouse_16-2,untreated,14,Muurrolene <gamma->,14.483,1.250118842957688,44831634.154,1632369641.724,18.67,20.72,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt
+rose_clean_greenhouse_16-2,untreated,14,Murrolene <gamma->,14.483,1.250118842957688,44831634.154,1632369641.724,18.67,20.72,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt
 rose_clean_greenhouse_16-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt
 rose_clean_greenhouse_16-2,untreated,15,Germacrene D,14.572,0.13866654712646012,4972845.538,100569779.042,2.07,1.28,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt
 rose_clean_greenhouse_16-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt
@@ -14028,7 +14028,7 @@ rose_clean_greenhouse_16-3,untreated,18,Humulene,14.238,0.03526172308275333,1470
 rose_clean_greenhouse_16-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt
 rose_clean_greenhouse_16-3,untreated,19,Aromadendrene,14.333,0.03344822514505414,1395247.958,31233253.595,0.23,0.18,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt
 rose_clean_greenhouse_16-3,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt
-rose_clean_greenhouse_16-3,untreated,20,Muurrolene <gamma->,14.476,0.6030267909256722,25154455.73,968837179.298,4.14,5.46,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt
+rose_clean_greenhouse_16-3,untreated,20,Murrolene <gamma->,14.476,0.6030267909256722,25154455.73,968837179.298,4.14,5.46,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt
 rose_clean_greenhouse_16-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt
 rose_clean_greenhouse_16-3,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt
 rose_clean_greenhouse_16-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt
@@ -14152,7 +14152,7 @@ rose_clean_greenhouse_17-1,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_17-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt
 rose_clean_greenhouse_17-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt
 rose_clean_greenhouse_17-1,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt
-rose_clean_greenhouse_17-1,untreated,11,Muurrolene <gamma->,14.491,1.2664982808465897,38025342.915,1413744773.859,15.83,17.19,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt
+rose_clean_greenhouse_17-1,untreated,11,Murrolene <gamma->,14.491,1.2664982808465897,38025342.915,1413744773.859,15.83,17.19,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt
 rose_clean_greenhouse_17-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt
 rose_clean_greenhouse_17-1,untreated,12,Germacrene D,14.582,0.1763939819350193,5296052.709,111592070.756,2.2,1.36,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt
 rose_clean_greenhouse_17-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt
@@ -14276,7 +14276,7 @@ rose_clean_greenhouse_17-2,untreated,16,Humulene,14.236,0.035745516123206054,129
 rose_clean_greenhouse_17-2,untreated,17,NA,14.277,0.01900797504406135,690106.317,32348351.165,0.28,0.4,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt
 rose_clean_greenhouse_17-2,untreated,18,Aromadendrene,14.335,0.10071799225410231,3656682.131,99954175.759,1.46,1.24,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt
 rose_clean_greenhouse_17-2,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt
-rose_clean_greenhouse_17-2,untreated,19,Muurrolene <gamma->,14.488,1.8945493447684394,68783785.104,2329941075.03,27.44,28.83,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt
+rose_clean_greenhouse_17-2,untreated,19,Murrolene <gamma->,14.488,1.8945493447684394,68783785.104,2329941075.03,27.44,28.83,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt
 rose_clean_greenhouse_17-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt
 rose_clean_greenhouse_17-2,untreated,20,Germacrene D,14.576,0.27029870076602985,9813504.092,336718966.118,3.91,4.17,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt
 rose_clean_greenhouse_17-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt
@@ -14402,7 +14402,7 @@ rose_clean_greenhouse_18-1,untreated,17,Humulene,14.245,0.27575994760326306,2473
 rose_clean_greenhouse_18-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt
 rose_clean_greenhouse_18-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt
 rose_clean_greenhouse_18-1,untreated,18,Caryophyllene <9-epi-(E)->,14.343,0.6579359926146393,5900602.824,223798749.715,1.48,1.99,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt
-rose_clean_greenhouse_18-1,untreated,19,Muurrolene <gamma->,14.51,14.154829428543142,126945519.681,3287726424.546,31.82,29.27,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt
+rose_clean_greenhouse_18-1,untreated,19,Murrolene <gamma->,14.51,14.154829428543142,126945519.681,3287726424.546,31.82,29.27,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt
 rose_clean_greenhouse_18-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt
 rose_clean_greenhouse_18-1,untreated,20,Germacrene D,14.588,0.6416966943380092,5754963.05,212249675.458,1.44,1.89,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt
 rose_clean_greenhouse_18-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt
@@ -14526,7 +14526,7 @@ rose_clean_greenhouse_18-2,untreated,15,Humulene,14.237,0.06432649982362644,2202
 rose_clean_greenhouse_18-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt
 rose_clean_greenhouse_18-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt
 rose_clean_greenhouse_18-2,untreated,16,Caryophyllene <9-epi-(E)->,14.336,0.09118961376132532,3122662.615,100369642.919,1.13,1.12,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt
-rose_clean_greenhouse_18-2,untreated,17,Muurrolene <gamma->,14.489,2.083625768994502,71350892.104,2399730599.357,25.87,26.84,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt
+rose_clean_greenhouse_18-2,untreated,17,Murrolene <gamma->,14.489,2.083625768994502,71350892.104,2399730599.357,25.87,26.84,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt
 rose_clean_greenhouse_18-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt
 rose_clean_greenhouse_18-2,untreated,18,Germacrene D,14.577,0.21113137927925824,7229903.031,203007341.174,2.62,2.27,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt
 rose_clean_greenhouse_18-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt
@@ -14650,7 +14650,7 @@ rose_clean_greenhouse_18-3,untreated,13,Humulene,14.234,0.06019070084869201,2071
 rose_clean_greenhouse_18-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt
 rose_clean_greenhouse_18-3,untreated,14,Aromadendrene,14.333,0.1075807405077441,3702082.193,132697893.248,0.95,1.06,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt
 rose_clean_greenhouse_18-3,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt
-rose_clean_greenhouse_18-3,untreated,15,Muurrolene <gamma->,14.493,2.5104588179322698,86390229.722,2643106707.326,22.19,21.12,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt
+rose_clean_greenhouse_18-3,untreated,15,Murrolene <gamma->,14.493,2.5104588179322698,86390229.722,2643106707.326,22.19,21.12,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt
 rose_clean_greenhouse_18-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt
 rose_clean_greenhouse_18-3,untreated,16,Germacrene D,14.578,0.09871333847951923,3396936.021,126137809.141,0.87,1.01,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt
 rose_clean_greenhouse_18-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt
@@ -14776,7 +14776,7 @@ rose_clean_greenhouse_19-1,untreated,19,Humulene,14.242,0.14489530795157268,4093
 rose_clean_greenhouse_19-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt
 rose_clean_greenhouse_19-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt
 rose_clean_greenhouse_19-1,untreated,20,Caryophyllene <9-epi-(E)->,14.344,0.2410951698080578,6811783.082,160045810.262,1.5,1.15,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt
-rose_clean_greenhouse_19-1,untreated,21,Muurrolene <gamma->,14.501,3.125966062445814,88319491.245,2767326699.789,19.51,19.93,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt
+rose_clean_greenhouse_19-1,untreated,21,Murrolene <gamma->,14.501,3.125966062445814,88319491.245,2767326699.789,19.51,19.93,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt
 rose_clean_greenhouse_19-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt
 rose_clean_greenhouse_19-1,untreated,22,Germacrene D,14.586,0.5989468267813116,16922345.914,603124151.577,3.74,4.34,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt
 rose_clean_greenhouse_19-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt
@@ -14900,7 +14900,7 @@ rose_clean_greenhouse_19-2,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_19-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt
 rose_clean_greenhouse_19-2,untreated,15,Aromadendrene,14.33,0.04253116461859041,2065141.888,55467173.357,0.71,0.58,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt
 rose_clean_greenhouse_19-2,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt
-rose_clean_greenhouse_19-2,untreated,16,Muurrolene <gamma->,14.479,0.9261081536127486,44968078.302,1643747302.044,15.37,17.22,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt
+rose_clean_greenhouse_19-2,untreated,16,Murrolene <gamma->,14.479,0.9261081536127486,44968078.302,1643747302.044,15.37,17.22,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt
 rose_clean_greenhouse_19-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt
 rose_clean_greenhouse_19-2,untreated,17,Germacrene D,14.575,0.164227629312923,7974231.59,160437193.061,2.73,1.68,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt
 rose_clean_greenhouse_19-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt
@@ -15025,7 +15025,7 @@ rose_clean_greenhouse_19-3,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose
 rose_clean_greenhouse_19-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt
 rose_clean_greenhouse_19-3,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt
 rose_clean_greenhouse_19-3,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt
-rose_clean_greenhouse_19-3,untreated,12,Muurrolene <gamma->,14.47,0.18540516713511543,6562280.753,220221810.273,2.89,3,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt
+rose_clean_greenhouse_19-3,untreated,12,Murrolene <gamma->,14.47,0.18540516713511543,6562280.753,220221810.273,2.89,3,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt
 rose_clean_greenhouse_19-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt
 rose_clean_greenhouse_19-3,untreated,13,Germacrene D,14.572,0.07119417072650856,2519865.781,51846673.468,1.11,0.71,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt
 rose_clean_greenhouse_19-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt
@@ -15150,7 +15150,7 @@ rose_clean_greenhouse_20-1,untreated,18,Humulene,14.249,0.1402370954928672,63069
 rose_clean_greenhouse_20-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt
 rose_clean_greenhouse_20-1,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt
 rose_clean_greenhouse_20-1,untreated,19,Caryophyllene <9-epi-(E)->,14.347,0.27109783036566565,12192239.486,485327435.376,1.07,1.68,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt
-rose_clean_greenhouse_20-1,untreated,20,Muurrolene <gamma->,14.528,5.275075945938889,237239040.803,3998122149.773,20.87,13.87,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt
+rose_clean_greenhouse_20-1,untreated,20,Murrolene <gamma->,14.528,5.275075945938889,237239040.803,3998122149.773,20.87,13.87,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt
 rose_clean_greenhouse_20-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt
 rose_clean_greenhouse_20-1,untreated,21,Germacrene D,14.606,0.43757900956408546,19679493.825,726520299.398,1.73,2.52,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt
 rose_clean_greenhouse_20-1,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt
@@ -15274,7 +15274,7 @@ rose_clean_greenhouse_20-2,untreated,15,Humulene,14.233,0.05131251763570536,1877
 rose_clean_greenhouse_20-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt
 rose_clean_greenhouse_20-2,untreated,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt
 rose_clean_greenhouse_20-2,untreated,16,Caryophyllene <9-epi-(E)->,14.335,0.085464596094539,3126835.076,103765504.114,1.44,1.48,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt
-rose_clean_greenhouse_20-2,untreated,17,Muurrolene <gamma->,14.485,1.9360837498532153,70834179.95,2401352093.324,32.73,34.22,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt
+rose_clean_greenhouse_20-2,untreated,17,Murrolene <gamma->,14.485,1.9360837498532153,70834179.95,2401352093.324,32.73,34.22,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt
 rose_clean_greenhouse_20-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt
 rose_clean_greenhouse_20-2,untreated,18,Germacrene D,14.573,0.16545600111481626,6053426.231,217955323.923,2.8,3.11,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt
 rose_clean_greenhouse_20-2,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt
@@ -15399,7 +15399,7 @@ rose_clean_greenhouse_20-3,untreated,13,Humulene,14.236,0.03578639795791288,1310
 rose_clean_greenhouse_20-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt
 rose_clean_greenhouse_20-3,untreated,14,Aromadendrene,14.331,0.05932791113758473,2172806.739,73550979.362,0.82,0.8,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt
 rose_clean_greenhouse_20-3,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt
-rose_clean_greenhouse_20-3,untreated,15,Muurrolene <gamma->,14.48,1.3498051424722048,49434838.572,1750953333.203,18.68,19.03,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt
+rose_clean_greenhouse_20-3,untreated,15,Murrolene <gamma->,14.48,1.3498051424722048,49434838.572,1750953333.203,18.68,19.03,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt
 rose_clean_greenhouse_20-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt
 rose_clean_greenhouse_20-3,untreated,16,Germacrene D,14.572,0.061138259541938154,2239108.369,54681810.346,0.85,0.59,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt
 rose_clean_greenhouse_20-3,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt
@@ -15523,7 +15523,7 @@ rose_clean_test_greenhouse_01,untreated,15,Humulene,14.234,0.08354827226418175,3
 rose_clean_test_greenhouse_01,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt
 rose_clean_test_greenhouse_01,untreated,16,Aromadendrene,14.333,0.16653346472393982,703438.806,26165986.678,1.21,1.42,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt
 rose_clean_test_greenhouse_01,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt
-rose_clean_test_greenhouse_01,untreated,17,Muurrolene <gamma->,14.486,4.120921856867391,17406809.829,536538133.922,29.98,29.21,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt
+rose_clean_test_greenhouse_01,untreated,17,Murrolene <gamma->,14.486,4.120921856867391,17406809.829,536538133.922,29.98,29.21,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt
 rose_clean_test_greenhouse_01,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt
 rose_clean_test_greenhouse_01,untreated,18,Germacrene D,14.575,0.33616728929318374,1419973.559,53218890.7,2.45,2.9,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt
 rose_clean_test_greenhouse_01,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt
@@ -15648,7 +15648,7 @@ rose_clean_test_greenhouse_02,untreated,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,r
 rose_clean_test_greenhouse_02,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt
 rose_clean_test_greenhouse_02,untreated,10,Aromadendrene,14.326,0.028429915065275858,80566.323,1854141.65,0.64,0.4,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt
 rose_clean_test_greenhouse_02,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt
-rose_clean_test_greenhouse_02,untreated,11,Muurrolene <gamma->,14.469,0.3521872046625969,998048.289,43153239.795,7.87,9.24,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt
+rose_clean_test_greenhouse_02,untreated,11,Murrolene <gamma->,14.469,0.3521872046625969,998048.289,43153239.795,7.87,9.24,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt
 rose_clean_test_greenhouse_02,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt
 rose_clean_test_greenhouse_02,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt
 rose_clean_test_greenhouse_02,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt
@@ -15772,7 +15772,7 @@ rose_clean_test_greenhouse_03,untreated,10,Humulene,14.234,0.06090058665031993,5
 rose_clean_test_greenhouse_03,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt
 rose_clean_test_greenhouse_03,untreated,11,Aromadendrene,14.33,0.0873943871301916,722615.772,19189589.449,0.93,0.87,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt
 rose_clean_test_greenhouse_03,untreated,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt
-rose_clean_test_greenhouse_03,untreated,12,Muurrolene <gamma->,14.472,1.1666732206390296,9646574.542,363127567.787,12.48,16.46,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt
+rose_clean_test_greenhouse_03,untreated,12,Murrolene <gamma->,14.472,1.1666732206390296,9646574.542,363127567.787,12.48,16.46,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt
 rose_clean_test_greenhouse_03,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt
 rose_clean_test_greenhouse_03,untreated,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt
 rose_clean_test_greenhouse_03,untreated,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt
@@ -15897,7 +15897,7 @@ rose_rrv_greenhouse_01,rrv,11,Humulene,14.232,0.07124740081780086,1548561.466,48
 rose_rrv_greenhouse_01,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt
 rose_rrv_greenhouse_01,rrv,12,Aromadendrene,14.334,0.18112076596546497,3936657.838,149477239.079,3.99,5.51,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt
 rose_rrv_greenhouse_01,rrv,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt
-rose_rrv_greenhouse_01,rrv,13,Muurrolene <gamma->,14.49,1.7779524759831853,38643777.332,669360956.76,39.19,24.7,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt
+rose_rrv_greenhouse_01,rrv,13,Murrolene <gamma->,14.49,1.7779524759831853,38643777.332,669360956.76,39.19,24.7,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt
 rose_rrv_greenhouse_01,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt
 rose_rrv_greenhouse_01,rrv,14,Germacrene D,14.582,0.2726041781750068,5925048.787,229134422.801,6.01,8.45,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt
 rose_rrv_greenhouse_01,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt
@@ -16021,7 +16021,7 @@ rose_rrv_greenhouse_02,rrv,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,green
 rose_rrv_greenhouse_02,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt
 rose_rrv_greenhouse_02,rrv,11,Aromadendrene,14.33,0.03711849824848674,459812.579,12122051.602,1.02,0.86,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt
 rose_rrv_greenhouse_02,rrv,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt
-rose_rrv_greenhouse_02,rrv,12,Muurrolene <gamma->,14.472,0.6301001360092823,7805487.351,311911655.5,17.32,22.24,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt
+rose_rrv_greenhouse_02,rrv,12,Murrolene <gamma->,14.472,0.6301001360092823,7805487.351,311911655.5,17.32,22.24,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt
 rose_rrv_greenhouse_02,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt
 rose_rrv_greenhouse_02,rrv,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt
 rose_rrv_greenhouse_02,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt
@@ -16146,7 +16146,7 @@ rose_rrv_greenhouse_03,rrv,20,Humulene,14.241,0.1483461640995483,1667519.404,460
 rose_rrv_greenhouse_03,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt
 rose_rrv_greenhouse_03,rrv,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt
 rose_rrv_greenhouse_03,rrv,21,Caryophyllene <9-epi-(E)->,14.34,0.17086211996479042,1920615.219,69461320.753,1.05,1.43,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt
-rose_rrv_greenhouse_03,rrv,22,Muurrolene <gamma->,14.493,2.6104305743178293,29343149.261,734560399.331,16.09,15.07,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt
+rose_rrv_greenhouse_03,rrv,22,Murrolene <gamma->,14.493,2.6104305743178293,29343149.261,734560399.331,16.09,15.07,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt
 rose_rrv_greenhouse_03,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt
 rose_rrv_greenhouse_03,rrv,23,Germacrene D,14.581,0.3268166291065949,3673657.987,133492722.65,2.01,2.74,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt
 rose_rrv_greenhouse_03,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt
@@ -16270,7 +16270,7 @@ rose_rrv_greenhouse_04,rrv,NA,Humulene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,green
 rose_rrv_greenhouse_04,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt
 rose_rrv_greenhouse_04,rrv,NA,Aromadendrene,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt
 rose_rrv_greenhouse_04,rrv,NA,Caryophyllene <9-epi-(E)->,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt
-rose_rrv_greenhouse_04,rrv,15,Muurrolene <gamma->,14.473,0.04557461390979837,477598.04,15304407.964,0.42,0.54,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt
+rose_rrv_greenhouse_04,rrv,15,Murrolene <gamma->,14.473,0.04557461390979837,477598.04,15304407.964,0.42,0.54,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt
 rose_rrv_greenhouse_04,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt
 rose_rrv_greenhouse_04,rrv,NA,Germacrene D,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt
 rose_rrv_greenhouse_04,rrv,NA,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,TIC,greenhouse,./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt
