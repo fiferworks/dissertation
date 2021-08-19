@@ -52,19 +52,19 @@ df <- df %>% select(
 
 # making df with SPME chems only
 rrd_spme <-
-  df %>%  select_if( ~ any(. > 0)) %>% filter(`Injection Method` == 'rrd_spme')
+  df %>%  select_if(~ any(. > 0)) %>% filter(`Injection Method` == 'rrd_spme')
 
 df <- df %>% select(colnames(rrd_spme))
 
 # qsep only
 rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
 
 ####PRINCIPAL COMPONENT ANALYSIS####
 
 # quick helper function to run for each dataframe
 run_pca <- function(data) {
-  data %>% select(-Sample, -Treatment,-`Injection Method`) %>%
+  data %>% select(-Sample,-Treatment, -`Injection Method`) %>%
     prcomp(center = TRUE, scale = FALSE)
 }
 
@@ -91,7 +91,7 @@ plot_n_save <- function(graph) {
     scale = 1,
     dpi = 300
   )
-  fviz_pca_biplot(graph, label = "var")
+  fviz_pca_biplot(graph, addEllipses = TRUE, label = "var")
   filename2 <-
     paste("figure/rrv_volatiles_biplot_var",
           deparse(substitute(graph)),
@@ -108,7 +108,7 @@ plot_n_save <- function(graph) {
     dpi = 300
   )
   
-  fviz_pca_biplot(graph, label = "ind")
+  fviz_pca_biplot(graph, addEllipses = TRUE, label = "ind")
   filename3 <-
     paste("figure/rrv_volatiles_biplot_ind",
           deparse(substitute(graph)),
