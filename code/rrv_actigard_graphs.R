@@ -1,4 +1,4 @@
-#####LOADING PACKAGES####
+####SETUP####
 pkgs <-
   c('tidyverse',
     'viridis',
@@ -8,16 +8,18 @@ pkgs <-
     'Cairo',
     'eply')
 
-# #installs the packages if you don't havae them already installed
-# lapply(pkgs, install.packages, character.only = TRUE)
+# installs missing packages
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
 
-#loads the necessarty packages for the program
-lapply(pkgs, library, character.only = T)
-rm(pkgs)
+# loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
 
 ####GETTING REQUIRED FONTS####
 #telling R the path where the fonts are located
-font_paths('../fonts')
+font_paths('fonts/')
 
 #imports the font Gill Sans MT as the font family 'gill_sans'
 font_add(
@@ -45,10 +47,11 @@ showtext_auto()
 
 ####ACTIGARD DATA PREP####
 #reading in the data
-df  <- read_csv('actigrd.csv', col_types = "dddddddfffffDf")
+df  <-
+  read_csv('data/rrv_actigard_master_datasheet.csv', col_types = "dddddddfffffDf")
 
 #reading in the difference letters
-abc <- read_table("actigard_cld_letters.txt")
+abc <- read_table("data/rrv_actigard_cld_letters.txt")
 
 #rows to columns
 abc <- abc %>% gather(key = 'treat')
@@ -167,18 +170,18 @@ ggplot(data = actgrd,
     begin = 0,
     end = 1,
     option = 'C'
-  )) +
-  
-  #saving the file
-  ggsave(
-    '../images/actigard_graph.png',
-    plot = last_plot(),
-    type = 'cairo',
-    width = 16,
-    height = 9,
-    scale = 1,
-    dpi = 300
-  )
+  ))
+
+#saving the file
+ggsave(
+  'figure/rrv_actigard_graph.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
 
 #cleanup
 rm(list = ls(all.names = TRUE))
