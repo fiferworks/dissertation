@@ -1,16 +1,20 @@
-####PACKAGES####
+####SETUP####
 pkgs <- c('tidyverse', 'readxl', 'writexl')
-lapply(pkgs, library, character.only = T)
-rm(list = ls())
 
-# #installs the packages if you don't have them already installed
-# lapply(pkgs, install.packages, character.only = TRUE)
+# installs missing packages
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
+
+# loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
 
 ####GRIFFIN DATA####
 #reading in file, data from IPM 2019 Georgia Trials
 q1 <-
   read_excel(
-    'jessie_ipm_datasheet.xlsx',
+    'data/rrv_ipm_trial_2019.xlsx',
     sheet = 1,
     col_types = c('guess',
                   'guess',
@@ -54,12 +58,16 @@ q1 <-
                 'Date',
                 'Field')
 
+q2 <- read_excel('data/rrv_mite_survey_master.xlsx')
+
+q2 %>% select(da)
+
 #getting summary stats for each treatment group
 q1 <-
   q1 %>% group_by(Treatment) %>% mutate(N = n()) %>% ungroup()
 
 #saving the master file
-write_xlsx(q1, 'ipm_master.xlsx')
+write_csv(q1, 'rrv_ipm_master_datasheet.csv')
 
 #dropping unused columns
 q1 <-
