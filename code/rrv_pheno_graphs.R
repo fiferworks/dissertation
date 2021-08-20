@@ -2,18 +2,13 @@
 pkgs <-
   c(
     'tidyverse',
-    'readxl',
     'ggthemes',
     'showtext',
     'extrafont',
     'Cairo',
-    'writexl',
     'lubridate',
     'scales'
   )
-
-# #installs the packages if you don't have them already installed
-# lapply(pkgs, install.packages, character.only = TRUE)
 
 #installs the packages if you don't have them already installed
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -26,7 +21,7 @@ rm(pkgs, nu_pkgs)
 
 ####GETTING REQUIRED FONTS####
 #telling R the path where the fonts are located
-font_paths('../fonts')
+font_paths('fonts')
 
 #imports the font Gill Sans MT as the font family 'gill_sans'
 font_add(
@@ -54,7 +49,7 @@ showtext_auto()
 
 
 ####READING IN THE REQUIRED FILES####
-df <- read_xlsx('clean_pheno_datasheet.xlsx')
+df <- read_csv('data/rrv_pheno_clean_datasheet.csv')
 
 ####REMOVING NAS####
 #removing columns of NA
@@ -180,7 +175,7 @@ geom_text(
   
   #saving the file
   ggsave(
-    '../images/graph_bar_pf_pheno_2020.png',
+    'figure/rrv_pheno_bargraph_2020.png',
     plot = last_plot(),
     type = "cairo",
     width = 16,

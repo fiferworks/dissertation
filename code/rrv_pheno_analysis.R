@@ -1,5 +1,5 @@
 #####LOADING PACKAGES####
-pkgs <-  c('tidyverse', 'readxl', 'lme4', 'nlme')
+pkgs <-  c('tidyverse', 'lme4', 'nlme', 'car', 'emmeans', 'multcompView')
 
 #installs the packages if you don't have them already installed
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -11,7 +11,7 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
 ####READING IN THE REQUIRED FILES####
-df <- read_xlsx('clean_pheno_datasheet.xlsx')
+df <- read_csv('data/rrv_pheno_clean_datasheet.csv')
 
 #filter by sites which were pruned
 df <-
@@ -27,5 +27,17 @@ df$month <- as_factor(df$month)
 
 
 
-lme(eriophyoids ~ month, data = df, random = 1|sample_no)
+sink('data/rrv_pheno_analysis_results.txt')
+q <- glmer(eriophyoids ~ month*other_mites + (1|id), data = df, family = 'poisson')
+summary(q)
+plot(q)
+Anova(q)
 
+main_effects <-
+  emmeans(q, list(pairwise ~ month), adjust = "tukey", details = "true")
+
+#gives a compact letter display of estimated marginal means (lsmeans)
+# CLD(q, Letters = letters, adjust = "tukey", details = "true")
+# CLD(q, Letters = letters, by = "period", adjust = "tukey", details = "true")
+# CLD(q, Letters = letters, by = "germ", adjust = "tukey", details = "true")
+sink()

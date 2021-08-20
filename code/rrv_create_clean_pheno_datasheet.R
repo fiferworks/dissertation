@@ -21,7 +21,7 @@ rm(pkgs, nu_pkgs)
 df <- read_csv("data/rrv_pheno_gps_from_photos.csv")
 
 #dropping unnecessary exif data
-df <- select(df,-"GPSAltitude")
+df <- select(df, -"GPSAltitude")
 
 #sorting the columns by date
 df$date <- lubridate::as_date(df$DateTimeOriginal)
@@ -54,7 +54,7 @@ df <- df %>% distinct(date, id, .keep_all = TRUE)
 pf <- read_excel('data/rrv_pheno_master_datasheet.xlsx')
 
 #removing the GPS data from the master dataset, which is simply copy-pasted from a single reading
-pf <- select(pf,-c('lon', 'lat', 'lon_lat'))
+pf <- select(pf, -c('lon', 'lat', 'lon_lat'))
 
 #combining GPS data with phenology data
 df <- left_join(pf, df)
@@ -69,7 +69,7 @@ df %>% arrange(date, id)
 # apply(df, 1, percentMissed)
 
 
-# only 12.6% of the dry weights are lost, imputing missing weights
+#### only 12.6% of the dry weights are lost, imputing missing weights ####
 w <-
   df %>% select(id, grams_dry_weight, other_mites, eriophyoids)
 
@@ -91,7 +91,20 @@ tempData$imp$grams_dry_weight
 
 w <- as_tibble(complete(tempData, 1))
 
+#### adding a column for months (easier for nice graphs later) ####
 df$grams_dry_weight[1:24] <- w$grams_dry_weight[1:24]
+
+df <-
+  df %>% add_column(month = month(df$date, label = TRUE, abbr = FALSE),
+                    .before = "other_mites")
+
+# adding a column for mites/gram
+df <-
+  df %>% mutate(
+    'mites/g' = (eriophyoids + other_mites) / grams_dry_weight,
+    'erios/gram' = eriophyoids / grams_dry_weight,
+    .before = p_fructiphilus
+  )
 
 ####Saving Master Datasheet as Excel Spreadsheet####
 write_csv(df, "data/rrv_pheno_clean_datasheet.csv")
