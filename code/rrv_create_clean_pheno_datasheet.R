@@ -5,7 +5,8 @@ pkgs <-
     "readxl",
     "writexl",
     "stringr",
-    "biogeo")
+    "mlr",
+    "mice")
 
 #installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -45,8 +46,7 @@ df <-
   rename(df,
          lat = "GPSLongitude",
          lon = "GPSLatitude",
-         lon_lat = 'GPSPosition'
-         )
+         lon_lat = 'GPSPosition')
 
 df <- df %>% distinct(date, id, .keep_all = TRUE)
 
@@ -60,9 +60,38 @@ pf <- select(pf, -c('lon', 'lat', 'lon_lat'))
 df <- left_join(pf, df)
 
 #making id a factor for sorting
-df$id <-as_factor(df$id)
-
+df$id <- as_factor(df$id)
 df %>% arrange(date, id)
+
+# figuring out how much data is missing from dry weights
+# percentMissed <- function(x){sum(is.na(x))/length(x)*100}
+# apply(df, 2, percentMissed)
+# apply(df, 1, percentMissed)
+
+
+# only 12.6% of the dry weights are lost, imputing missing weights
+w <-
+  df %>% select(id, grams_dry_weight, other_mites, eriophyoids)
+
+imputeMethod <- imputeLearner("regr.rpart")
+gramImp <-
+  impute(as.data.frame(w), classes = list(numeric = imputeMethod))
+
+tempData <-
+  mice(
+    w,
+    m = 5,
+    maxit = 500,
+    meth = 'pmm',
+    seed = 500,
+    data.init = gramImp$data
+  )
+
+tempData$imp$grams_dry_weight
+
+w <- as_tibble(complete(tempData, 1))
+
+df$grams_dry_weight[1:24] <- w$grams_dry_weight[1:24]
 
 ####Saving Master Datasheet as Excel Spreadsheet####
 write_csv(df, "data_rrv_pheno_clean_datasheet.csv")
