@@ -1,14 +1,12 @@
 #####LOADING PACKAGES####
 pkgs <-
-  c(
-    'tidyverse',
+  c('tidyverse',
     'ggthemes',
     'showtext',
     'extrafont',
     'Cairo',
     'lubridate',
-    'scales'
-  )
+    'scales')
 
 #installs the packages if you don't have them already installed
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -56,10 +54,19 @@ df <- read_csv('data/rrv_pheno_clean_datasheet.csv')
 df$p_fructiphilus <- replace_na(df$p_fructiphilus, 0)
 
 #making sure months are interpreted correctly
-df$month <- month(df$month, label = T)
+df$month <- month(df$date, label = T, abbr = FALSE)
+
+#adding year column
+df$year <- year(df$date)
+
+df1 <- df %>% filter(year == 2020)
+
+df1 <- df1 %>% filter(id == 'Pheno 11' |
+                        id == 'Pheno 12' |
+                        id == 'Pheno 13' | id == 'Pheno 14')
 
 ####SUMMARY STATS####
-df <- df %>% group_by(month) %>% mutate(
+df1 <- df1 %>% group_by(month) %>% mutate(
   totals = sum(eriophyoids),
   per_plant = mean(eriophyoids),
   sd = sd(eriophyoids),
@@ -70,7 +77,7 @@ df <- df %>% group_by(month) %>% mutate(
   ungroup()
 
 #makes a list of totals for each month to display on the graphs
-pheno <- df %>% group_by(month) %>% summarize(
+pheno <- df1 %>% group_by(month) %>% summarize(
   totals = sum(eriophyoids),
   tot_per_g = sum(pf_per_gram),
   per_plant = mean(eriophyoids),
@@ -113,17 +120,17 @@ ggplot(data = pheno,
     position = position_fill(),
     vjust = 1.3
   ) +
-geom_text(
-  aes(
-    month,
-    tot_per_g,
-    label = round(tot_per_g, digits = 3),
-    fill = NULL
-  ),
-  size = 30,
-  position = position_stack(),
-  vjust = -1.3
-) +
+  geom_text(
+    aes(
+      month,
+      tot_per_g,
+      label = round(tot_per_g, digits = 3),
+      fill = NULL
+    ),
+    size = 30,
+    position = position_stack(),
+    vjust = -1.3
+  ) +
   theme_tufte(base_size = 20, base_family = "gill_sans") +
   ggtitle(expression(
     'Number of' ~ italic(P. ~ fructiphilus) ~ 'collected per gram of rose dry weight'
@@ -171,17 +178,18 @@ geom_text(
     y = 980,
     label = "Pruned",
     color = "red"
-  ) +
-  
-  #saving the file
-  ggsave(
-    'figure/rrv_pheno_bargraph_2020.png',
-    plot = last_plot(),
-    type = "cairo",
-    width = 16,
-    height = 9,
-    scale = 1,
-    dpi = 300
   )
+
+#saving the file
+ggsave(
+  'figure/rrv_pheno_bargraph.png',
+  plot = last_plot(),
+  type = "cairo",
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
 #cleanup
 rm(list = ls(all.names = TRUE))

@@ -63,25 +63,31 @@ df <- left_join(pf, df)
 df$id <- as_factor(df$id)
 df %>% arrange(date, id)
 
+pf <- read_excel('data/rrv_ipm_trial_2021.xlsx')
+
+pf$id <- as_factor(pf$id)
+
+df <- bind_rows(df, pf)
+
 # figuring out how much data is missing from dry weights
 # percentMissed <- function(x){sum(is.na(x))/length(x)*100}
 # apply(df, 2, percentMissed)
 # apply(df, 1, percentMissed)
 
 
-#### only 12.6% of the dry weights are lost, imputing missing weights ####
-w <-
+#### only one week of the dry weights are lost, imputing missing weights ####
+pf <-
   df %>% select(id, grams_dry_weight, other_mites, eriophyoids)
 
 imputeMethod <- imputeLearner("regr.rpart")
 gramImp <-
-  impute(as.data.frame(w), classes = list(numeric = imputeMethod))
+  impute(as.data.frame(pf), classes = list(numeric = imputeMethod))
 
 tempData <-
   mice(
-    w,
+    pf,
     m = 5,
-    maxit = 500,
+    maxit = 50,
     meth = 'pmm',
     seed = 500,
     data.init = gramImp$data
@@ -89,10 +95,10 @@ tempData <-
 
 tempData$imp$grams_dry_weight
 
-w <- as_tibble(complete(tempData, 1))
+pf <- as_tibble(complete(tempData, 1))
 
 #### adding a column for months (easier for nice graphs later) ####
-df$grams_dry_weight[1:24] <- w$grams_dry_weight[1:24]
+df$grams_dry_weight[1:24] <- pf$grams_dry_weight[1:24]
 
 df <-
   df %>% add_column(month = month(df$date, label = TRUE, abbr = FALSE),
