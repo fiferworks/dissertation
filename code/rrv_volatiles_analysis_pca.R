@@ -20,11 +20,11 @@ df <- read_csv("data/rrv_volatiles_pca_table.csv")
 
 # making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
 rrd_spme <-
-  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
+  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if( ~ any(. > 0))
 
 # qsep only
 rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
 
 df <- df %>% select(
   Sample,
@@ -52,8 +52,22 @@ df <- df %>% select(
   `Farnesene <(E)-, beta->`
 )
 
-# removing the baseline plants from the data,
+# averaging the baseline plants from the data,
 # they overwhelm components from rrv plants
+avg_clean_rose_qsep <- df %>%
+  filter(str_detect(Sample, "rose_clean_greenhouse*"))
+
+avg_clean_rose_qsep <-
+  avg_clean_rose_qsep %>% summarise(across(is.numeric, mean))
+
+avg_clean_rose_qsep <-
+  avg_clean_rose_qsep %>% add_column('Sample' = 'avg_clean_rose_qsep', 'Treatment' = 'untreated')
+
+df <- bind_rows(df, avg_clean_rose_qsep)
+
+df <- df %>%
+  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
+
 df <- df %>%
   filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
@@ -61,7 +75,7 @@ df <- df %>%
 # prcomp uses singular value decomposition (SVD)
 # quick helper function to run for each dataframe
 run_pca <- function(data) {
-  data %>% select(-Sample, -Treatment,-`Injection Method`) %>%
+  data %>% select(-Sample,-Treatment, -`Injection Method`) %>%
     prcomp(center = TRUE, scale = FALSE)
 }
 
