@@ -1,11 +1,14 @@
 ####PACKAGES####
 pkgs <- c('tidyverse', 'readxl')
-lapply(pkgs, library, character.only = T)
-rm(list = ls())
 
-# #installs the packages if you don't have them already installed
-# lapply(pkgs, install.packages, character.only = TRUE)
+# installs missing packages
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
 
+# loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
 ####GRIFFIN DATA####
 #reading in file, data from Griffin 2018 actigard trial
 q1 <- read_excel(
@@ -166,7 +169,7 @@ df <-
   )
 
 #saving output
-write_csv(df, 'data/actigard_master_datasheet.csv')
+write_csv(df, 'data/rrv_actigard_master_datasheet.csv')
 
 #cleanup
 rm(list = ls())
