@@ -31,7 +31,7 @@ summary(glm_1)
 #ANOVA
 Anova(glm_1, type = c("III")) #treatment is significant
 
-#multiple comparisions
+#multiple comparisons
 #suggests that both the low Actigard rate and Kontos treatments are significantly different than the water treatment
 summary(glht(glm_1, linfct = mcp(treat = "Tukey")), test = adjusted("holm"))
 
