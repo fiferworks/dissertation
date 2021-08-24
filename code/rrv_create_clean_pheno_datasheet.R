@@ -18,56 +18,81 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
 ####Importing GPS data####
-df <- read_csv("data/rrv_pheno_gps_from_photos.csv")
+gps <- read_csv("data/rrv_pheno_gps_from_photos.csv")
 
 #dropping unnecessary exif data
-df <- select(df, -"GPSAltitude")
+gps <- select(gps,-"GPSAltitude")
 
 #sorting the columns by date
-df$date <- lubridate::as_date(df$DateTimeOriginal)
-df <- dplyr::arrange(df, date)
+gps$date <- lubridate::as_date(gps$DateTimeOriginal)
+gps <- dplyr::arrange(gps, date)
 
 #making the id column based off of the filename
-df$id <- gsub("[^0-9.-]", "", df$SourceFile)
+gps$id <- gsub("[^0-9.-]", "", gps$SourceFile)
 
 #loop to remove the extra numbers in the dates
 for (i in 1:6) {
-  df$id <- gsub("(.*)-.*", "\\1", df$id)
+  gps$id <- gsub("(.*)-.*", "\\1", gps$id)
 }
 
 #removes the last dot
-df$id <- sub(".", "", df$id)
+gps$id <- sub(".", "", gps$id)
 
 #adds in the 'Pheno' label
-df$id <- paste('Pheno', df$id, sep = ' ')
+gps$id <- paste('Pheno', gps$id, sep = ' ')
 
 #renaming columns
-df <-
-  rename(df,
+gps <-
+  rename(gps,
          lat = "GPSLongitude",
          lon = "GPSLatitude",
          lon_lat = 'GPSPosition')
 
-df <- df %>% distinct(date, id, .keep_all = TRUE)
+gps <- gps %>% distinct(date, id, .keep_all = TRUE)
+
+avgs <-
+  gps %>% group_by(id) %>% summarize(lat = mean(lat, na.rm = TRUE),
+                                     lon = mean(lon, na.rm = TRUE))
+avgs$lon_lat <- paste(avgs$lon, avgs$lat)
+
+gps <- gps %>% select(-lat,-lon,-lon_lat)
+
+gps <- left_join(gps, avgs)
 
 ####Reading in the Master Datasheet####
-pf <- read_excel('data/rrv_pheno_master_datasheet.xlsx')
+df <- read_excel('data/rrv_pheno_master_datasheet.xlsx')
 
 #removing the GPS data from the master dataset, which is simply copy-pasted from a single reading
-pf <- select(pf, -c('lon', 'lat', 'lon_lat'))
-
-#combining GPS data with phenology data
-df <- left_join(pf, df)
+df <- select(df,-c('lon', 'lat', 'lon_lat'))
 
 #making id a factor for sorting
 df$id <- as_factor(df$id)
-df %>% arrange(date, id)
+df <- df %>% arrange(date, id)
+gps$id <- as_factor(gps$id)
+gps <- gps %>% arrange(id)
 
-pf <- read_excel('data/rrv_ipm_trial_2021.xlsx')
+ipm <- read_excel('data/rrv_ipm_trial_2021.xlsx')
 
-pf$id <- as_factor(pf$id)
+ipm$id <- as_factor(ipm$id)
+ipm <- ipm %>% arrange(date, id)
 
-df <- bind_rows(df, pf)
+# combining phenology dataset with the ipm treatments (they are at the same sites)
+df <- bind_rows(df, ipm)
+
+# filling in missing information for some rows
+df$rose_spp <- 'KO'
+df$city <- 'Tallahassee'
+df$state <- 'FL'
+df$county <- 'Leon'
+df$collector <- "Austin Fife"
+df$shade <- "open sun"
+df$p_fructiphilus <- "verified"
+df$symptoms <- "No"
+
+gps <-
+  gps %>% select(id, lat, lon , lon_lat) %>% distinct(id, .keep_all = TRUE)
+
+df <- left_join(df, gps)
 
 # figuring out how much data is missing from dry weights
 # percentMissed <- function(x){sum(is.na(x))/length(x)*100}
@@ -76,16 +101,17 @@ df <- bind_rows(df, pf)
 
 
 #### only one week of the dry weights are lost, imputing missing weights ####
-pf <-
+missing_weights <-
   df %>% select(id, grams_dry_weight, other_mites, eriophyoids)
 
 imputeMethod <- imputeLearner("regr.rpart")
 gramImp <-
-  impute(as.data.frame(pf), classes = list(numeric = imputeMethod))
+  impute(as.data.frame(missing_weights),
+         classes = list(numeric = imputeMethod))
 
 tempData <-
   mice(
-    pf,
+    missing_weights,
     m = 5,
     maxit = 50,
     meth = 'pmm',
@@ -95,10 +121,10 @@ tempData <-
 
 tempData$imp$grams_dry_weight
 
-pf <- as_tibble(complete(tempData, 1))
+missing_weights <- as_tibble(complete(tempData, 1))
 
 #### adding a column for months (easier for nice graphs later) ####
-df$grams_dry_weight[1:24] <- pf$grams_dry_weight[1:24]
+df$grams_dry_weight[1:24] <- missing_weights$grams_dry_weight[1:24]
 
 df <-
   df %>% add_column(month = month(df$date, label = TRUE, abbr = FALSE),
