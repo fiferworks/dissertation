@@ -21,7 +21,7 @@ rm(pkgs, nu_pkgs)
 gps <- read_csv("data/rrv_pheno_gps_from_photos.csv")
 
 #dropping unnecessary exif data
-gps <- select(gps,-"GPSAltitude")
+gps <- select(gps, -"GPSAltitude")
 
 #sorting the columns by date
 gps$date <- lubridate::as_date(gps$DateTimeOriginal)
@@ -55,15 +55,18 @@ avgs <-
                                      lon = mean(lon, na.rm = TRUE))
 avgs$lon_lat <- paste(avgs$lon, avgs$lat)
 
-gps <- gps %>% select(-lat,-lon,-lon_lat)
+gps <- gps %>% select(-lat, -lon, -lon_lat)
 
 gps <- left_join(gps, avgs)
 
-####Reading in the Master Datasheet####
-df <- read_excel('data/rrv_pheno_master_datasheet.xlsx')
+####Reading in the RRV Survey Master Datasheet####
+df <- read_excel('data/rrv_mite_survey_master.xlsx')
+
+# filtering out the phenology trials
+df <- filter(df, grepl('Pheno*', id))
 
 #removing the GPS data from the master dataset, which is simply copy-pasted from a single reading
-df <- select(df,-c('lon', 'lat', 'lon_lat'))
+df <- select(df, -c('lon', 'lat', 'lon_lat'))
 
 #making id a factor for sorting
 df$id <- as_factor(df$id)
@@ -71,13 +74,18 @@ df <- df %>% arrange(date, id)
 gps$id <- as_factor(gps$id)
 gps <- gps %>% arrange(id)
 
-ipm <- read_excel('data/rrv_ipm_trial_2021.xlsx')
+# reading in the mite ipm trials
+ipm <- read_excel('data/rrv_ipm_trial_2020-2021.xlsx')
 
 ipm$id <- as_factor(ipm$id)
 ipm <- ipm %>% arrange(date, id)
 
 # combining phenology dataset with the ipm treatments (they are at the same sites)
 df <- bind_rows(df, ipm)
+
+# arranging by date
+df <- df %>% arrange(date, id)
+
 
 # filling in missing information for some rows
 df$rose_spp <- 'KO'
