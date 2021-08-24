@@ -1,5 +1,12 @@
 #####LOADING PACKAGES####
-pkgs <-  c('tidyverse', 'lme4', 'nlme', 'car', 'emmeans', 'multcompView')
+pkgs <-
+  c('tidyverse',
+    'lme4',
+    'nlme',
+    'car',
+    'emmeans',
+    'multcomp',
+    'multcompView')
 
 #installs the packages if you don't have them already installed
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -12,32 +19,37 @@ rm(pkgs, nu_pkgs)
 
 ####READING IN THE REQUIRED FILES####
 df <- read_csv('data/rrv_pheno_clean_datasheet.csv')
+df$id <- as_factor(df$id)
 
-#filter by sites which were pruned
+#making sure months are interpreted correctly
+df$month <- month(df$date, label = T, abbr = FALSE)
+
+#adding year column
+df$year <- year(df$date)
+
+
+#filter by sites which were untreated for the
 df <-
   df %>% filter(id == 'Pheno 11' |
                   id == 'Pheno 12' |
                   id == 'Pheno 13' | id == 'Pheno 14')
 
-df <- df %>%
-  dplyr::select(sample_no, id, month, other_mites, eriophyoids)
-
-df$id <- as_factor(df$id)
-df$month <- as_factor(df$month)
+# df <- df %>%
+#   dplyr::select(sample_no, id, month, year, other_mites, eriophyoids)
 
 
 
-sink('data/rrv_pheno_analysis_results.txt')
-q <- glmer(eriophyoids ~ month*other_mites + (1|id), data = df, family = 'poisson')
+#### Stuck here####
+# sink('data/rrv_pheno_analysis_results.txt')
+glmer(eriophyoids ~ month + (1 | id),
+      data = df,
+      family = 'poisson')
+q
 summary(q)
 plot(q)
 Anova(q)
 
-main_effects <-
-  emmeans(q, list(pairwise ~ month), adjust = "tukey", details = "true")
+#multiple comparisons
+summary(glht(q, linfct = mcp(treat = "Tukey")), test = adjusted("holm"))
 
-#gives a compact letter display of estimated marginal means (lsmeans)
-# CLD(q, Letters = letters, adjust = "tukey", details = "true")
-# CLD(q, Letters = letters, by = "period", adjust = "tukey", details = "true")
-# CLD(q, Letters = letters, by = "germ", adjust = "tukey", details = "true")
-sink()
+# sink()

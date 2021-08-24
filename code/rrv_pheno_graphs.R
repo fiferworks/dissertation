@@ -57,9 +57,9 @@ df$year <- year(df$date)
 
 df1 <- df %>% filter(year == 2020)
 
-df1 <- df1 %>% filter(id == 'Pheno 11' |
-                        id == 'Pheno 12' |
-                        id == 'Pheno 13' | id == 'Pheno 14')
+# df1 <- df1 %>% filter(id == 'Pheno 11' |
+#                         id == 'Pheno 12' |
+#                         id == 'Pheno 13' | id == 'Pheno 14')
 
 ####SUMMARY STATS####
 df1 <- df1 %>% group_by(month) %>% mutate(
