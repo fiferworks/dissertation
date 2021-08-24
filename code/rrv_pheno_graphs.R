@@ -49,10 +49,6 @@ showtext_auto()
 ####READING IN THE REQUIRED FILES####
 df <- read_csv('data/rrv_pheno_clean_datasheet.csv')
 
-####REMOVING NAS####
-#removing columns of NA
-df$p_fructiphilus <- replace_na(df$p_fructiphilus, 0)
-
 #making sure months are interpreted correctly
 df$month <- month(df$date, label = T, abbr = FALSE)
 
@@ -79,12 +75,12 @@ df1 <- df1 %>% group_by(month) %>% mutate(
 #makes a list of totals for each month to display on the graphs
 pheno <- df1 %>% group_by(month) %>% summarize(
   totals = sum(eriophyoids),
-  tot_per_g = sum(pf_per_gram),
+  tot_per_g = sum(`erios/gram`),
   per_plant = mean(eriophyoids),
   sd = sd(eriophyoids),
   se = sd(eriophyoids) / sqrt(n()),
-  sd_per_g = sd(pf_per_gram),
-  se_per_g = sd(pf_per_gram) / sqrt(n()),
+  sd_per_g = sd(`erios/gram`),
+  se_per_g = sd(`erios/gram`) / sqrt(n()),
   log_xformed = log(mean(eriophyoids)),
   se_xformed = log(sd(eriophyoids) / sqrt(n())),
   n_samples = n()
