@@ -12,7 +12,7 @@ rm(pkgs, nu_pkgs)
 
 ####GRIFFIN DATA####
 #reading in file, data from IPM 2019 Georgia Trials
-q1 <-
+ga_trials <-
   read_excel(
     'data/rrv_ipm_trial_2019.xlsx',
     sheet = 1,
@@ -26,116 +26,104 @@ q1 <-
 
 
 #splitting plant and block into different columns
-q1 <-
-  separate(q1, `Block, Plant, Treat`, c('Block', 'Plant'), sep = 1)
+ga_trials <-
+  separate(ga_trials, `Block, Plant, Treat`, c('Block', 'Plant'), sep = 1)
 
 #splitting out treatments as well
-q1 <- separate(q1, Plant, c('Plant', 'Treatment'), sep = -1)
+ga_trials <-
+  separate(ga_trials, Plant, c('Plant', 'Treatment'), sep = -1)
 
 #renames treatments to more readable form
-q1$Treatment[q1$Treatment == 'M'] <- "Mites"
-q1$Treatment[q1$Treatment == 'W'] <- "Water"
-q1$Treatment[q1$Treatment == 'N'] <- "Ninja"
-q1$Treatment[q1$Treatment == 'K'] <- "Kontos"
-q1$Treatment[q1$Treatment == 'A'] <- "Actigard"
-q1$Treatment[q1$Treatment == '+'] <- "Mites + Ninja"
+ga_trials$Treatment[ga_trials$Treatment == 'M'] <- "Mites"
+ga_trials$Treatment[ga_trials$Treatment == 'W'] <- "Water"
+ga_trials$Treatment[ga_trials$Treatment == 'N'] <- "Ninja"
+ga_trials$Treatment[ga_trials$Treatment == 'K'] <- "Kontos"
+ga_trials$Treatment[ga_trials$Treatment == 'A'] <- "Actigard"
+ga_trials$Treatment[ga_trials$Treatment == '+'] <- "Mites + Ninja"
 
 #renaming a column to 'Field'
-q1 <- q1 %>% rename(Field = `Athens/Griffin`)
+ga_trials <- ga_trials %>% rename(Field = `Athens/Griffin`)
 
 #adding combined id for plants
-q1$ID <- paste(q1$Plant, q1$Block, sep = '')
+ga_trials$ID <- paste(ga_trials$Plant, ga_trials$Block, sep = '')
 
 #rearranging columns
-q1 <-
-  dplyr::select(q1,
-                'ID',
-                'Plant',
-                'Block',
-                'Treatment',
-                'Eriophyoids',
-                `Other Mites`,
-                'Date',
-                'Field')
-
-q2 <- read_excel('data/rrv_mite_survey_master.xlsx')
-
-q2 %>% select(da)
-
-#getting summary stats for each treatment group
-q1 <-
-  q1 %>% group_by(Treatment) %>% mutate(N = n()) %>% ungroup()
-
-#saving the master file
-write_csv(q1, 'rrv_ipm_master_datasheet.csv')
-
-#dropping unused columns
-q1 <-
+ga_trials <-
   dplyr::select(
-    q1,
+    ga_trials,
+    'ID',
     'Plant',
     'Block',
     'Treatment',
     'Eriophyoids',
-    'Other Mites',
+    `Other Mites`,
     'Date',
-    'Field',
-    'ID',
-    'N'
+    'Field'
   )
 
-#making things lowercase for ease of use when coding
-q1 <- q1 %>% rename(
-  'plant' = 'Plant',
-  'block' = 'Block',
-  'treat' = 'Treatment',
-  'date' = 'Date',
-  'erios' = 'Eriophyoids',
-  'other' = `Other Mites`,
-  'field' = 'Field',
-  'id' = 'ID',
-  'n' = 'N'
+#### TALLAHASSEE DATASHEET ####
+ta_trials <- read_excel('data/rrv_ipm_trial_2020-2021.xlsx')
+
+ta_trials <- ta_trials %>% add_column(Field = 'Tallahassee')
+
+# adding a column for mites/gram
+ta_trials <-
+  ta_trials %>% mutate(
+    'mites/g' = (eriophyoids + other_mites) / grams_dry_weight,
+    'erios/gram' = eriophyoids / grams_dry_weight,
+    .before = grams_dry_weight
+  )
+
+
+ta_trials <- ta_trials %>% rename(
+  'ID' = id,
+  'Eriophyoids' = eriophyoids,
+  `Other Mites` = other_mites,
+  'Date' = date
 )
 
-#forcing date to be read as a character to avoid errors
-q1$date <- as.character(q1$date)
 
-#making sure all variables are lowercase
-q1$id <- tolower(q1$id)
-q1$block <- tolower(q1$block)
-q1$treat <- tolower(q1$treat)
+#getting summary stats for each treatment group
+ga_trials <-
+  ga_trials %>% group_by(Treatment) %>% mutate(N = n()) %>% ungroup()
 
-#removing incomplete records
-q1 <- q1 %>% drop_na
+ga_trials <- ga_trials %>% add_column(
+  'mites/g' = NA,
+  'erios/gram' = NA,
+  'grams_dry_weight' = NA
+)
 
-df <- q1
+ta_trials <-
+  ta_trials %>% group_by(Treatment) %>% mutate(N = n()) %>% ungroup()
 
-#rearranging columns
-df <- dplyr::select(df,
-                    'id',
-                    'plant',
-                    'block',
-                    'treat',
-                    'erios',
-                    'other',
-                    'field',
-                    'n',
-                    'date')
+ta_trials <- ta_trials %>%  select(-sample_no)
+
+df <- bind_rows(ta_trials, ga_trials)
+
+
+
+df <-
+  df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
+
+df <- df %>%  select(-notes,-Plant)
+
+#saving the master file
+write_csv(df, 'rrv_ipm_master_datasheet.csv')
 
 #getting summary stats for each treatment group for other mites
 df <-
-  df %>% group_by(treat) %>% mutate(
-    per_plant = mean(other),
-    totals = sum(other),
-    sd = sd(other),
-    se = sd(other) / sqrt(n()),
+  df %>% group_by(Treatment) %>% mutate(
+    'mites/plant' = mean(`Other Mites` + Eriophyoids),
+    totals = sum(`Other Mites` + Eriophyoids),
+    sd = sd(`Other Mites` + Eriophyoids),
+    se = sd(`Other Mites` + Eriophyoids) / sqrt(n()),
     n_samples = n()
   ) %>%
   ungroup()
 
 
 #saving output
-write_csv(df, 'ipm.csv')
+write_csv(df, 'data/ipm.csv')
 
 #cleanup
 rm(list = ls())
