@@ -4119,6 +4119,16 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   publisher = {Scientific Societies},
 }
 
+@Article{Velarde2021,
+  author    = {Olmedo-Velarde, Alejandro and Roy, Avijit and Padmanabhan, Chellappan and Nunziata, Schyler and Nakhla, Mark K. and Melzer, Michael},
+  journal   = {Plant Disease},
+  title     = {First report of {Orchid fleck virus} associated with {Citrus leprosis} symptoms in rough lemon ({\textit{Citrus jambhiri}}) and mandarin ({\textit{C. reticulata}}) the {United States}},
+  year      = {2021},
+  month     = mar,
+  doi       = {10.1094/PDIS-12-20-2736-PDN},
+  publisher = {Scientific Societies},
+}
+
 @Article{Olson2017,
   author    = {Olson, Jen and Rebek, Eric J. and Schnelle, Michael A. and others},
   title     = {Rose rosette disease},
@@ -5562,16 +5572,6 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   publisher = {Elsevier {BV}},
 }
 
-@Article{Velarde2021,
-  author    = {Velarde, Alejandro Olmedo and Roy, Avijit and Padmanabhan, Chellappan and Nunziata, Schyler and Nakhla, Mark K. and Melzer, Michael},
-  journal   = {Plant Disease},
-  title     = {First report of {Orchid fleck virus} associated with {Citrus leprosis} symptoms in rough lemon ({\textit{Citrus jambhiri}}) and mandarin ({\textit{C. reticulata}}) the {United States}},
-  year      = {2021},
-  month     = mar,
-  doi       = {10.1094/PDIS-12-20-2736-PDN},
-  publisher = {Scientific Societies},
-}
-
 @Article{Villanueva2006,
   author    = {Villanueva, Raul T. and Gagn{\'e}, Raymond and Childers, Carl C.},
   journal   = {Florida Entomologist},
@@ -5851,6 +5851,7 @@ general and T. ludeni population forecast and precise timing of pest management 
   number    = {2},
   pages     = {313--323},
   volume    = {158},
+  doi       = {10.1007/s00705-012-1506-5},
   publisher = {Springer},
 }
 
