@@ -39,7 +39,7 @@ ga_trials$Treatment[ga_trials$Treatment == 'W'] <- "Water"
 ga_trials$Treatment[ga_trials$Treatment == 'N'] <- "Ninja"
 ga_trials$Treatment[ga_trials$Treatment == 'K'] <- "Kontos"
 ga_trials$Treatment[ga_trials$Treatment == 'A'] <- "Actigard"
-ga_trials$Treatment[ga_trials$Treatment == '+'] <- "Mites + Ninja"
+ga_trials$Treatment[ga_trials$Treatment == '+'] <- "MN"
 
 #renaming a column to 'Field'
 ga_trials <- ga_trials %>% rename(Field = `Athens/Griffin`)
@@ -69,7 +69,7 @@ ta_trials <- ta_trials %>% add_column(Field = 'Tallahassee')
 # adding a column for mites/gram
 ta_trials <-
   ta_trials %>% mutate(
-    'mites/g' = (eriophyoids + other_mites) / grams_dry_weight,
+    'mites/g' = (other_mites) / grams_dry_weight,
     'erios/gram' = eriophyoids / grams_dry_weight,
     .before = grams_dry_weight
   )
@@ -103,7 +103,7 @@ df <- bind_rows(ta_trials, ga_trials)
 df <-
   df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
 
-df <- df %>%  dplyr::select(-notes,-Plant)
+df <- df %>%  dplyr::select(-notes, -Plant)
 
 #saving the master file
 write_csv(df, 'rrv_ipm_master_datasheet.csv')
@@ -111,14 +111,13 @@ write_csv(df, 'rrv_ipm_master_datasheet.csv')
 #getting summary stats for each treatment group for other mites
 df <-
   df %>% group_by(Treatment) %>% mutate(
-    'mites/plant' = mean(`Other Mites` + Eriophyoids),
-    totals = sum(`Other Mites` + Eriophyoids),
-    sd = sd(`Other Mites` + Eriophyoids),
-    se = sd(`Other Mites` + Eriophyoids) / sqrt(n()),
+    'mites/plant' = mean(`Other Mites`),
+    totals = sum(`Other Mites`),
+    sd = sd(`Other Mites`),
+    se = sd(`Other Mites`) / sqrt(n()),
     n_samples = n()
   ) %>%
   ungroup()
-
 
 #saving output
 write_csv(df, 'data/ipm.csv')
