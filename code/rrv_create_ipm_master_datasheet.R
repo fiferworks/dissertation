@@ -1,5 +1,5 @@
 ####SETUP####
-pkgs <- c('tidyverse', 'readxl', 'writexl')
+pkgs <- c('tidyverse', 'readxl', 'writexl', 'lubridate')
 
 # installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -96,16 +96,14 @@ ga_trials <- ga_trials %>% add_column(
 ta_trials <-
   ta_trials %>% group_by(Treatment) %>% mutate(N = n()) %>% ungroup()
 
-ta_trials <- ta_trials %>%  select(-sample_no)
+ta_trials <- ta_trials %>%  dplyr::select(-sample_no)
 
 df <- bind_rows(ta_trials, ga_trials)
-
-
 
 df <-
   df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
 
-df <- df %>%  select(-notes,-Plant)
+df <- df %>%  dplyr::select(-notes,-Plant)
 
 #saving the master file
 write_csv(df, 'rrv_ipm_master_datasheet.csv')
