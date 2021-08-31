@@ -1,10 +1,10 @@
- Treatment        emmean     SE  df asymp.LCL asymp.UCL .group
- Kontos             1.57 0.0727 Inf      1.43      1.71  1    
- Untreated          2.95 0.0547 Inf      2.85      3.06   2   
- Actigard           3.91 0.0370 Inf      3.84      3.99    3  
- Mites + Actigard   4.08 0.0362 Inf      4.01      4.15     4 
- Water              4.09 0.0361 Inf      4.02      4.16     45
- Mites              4.16 0.0358 Inf      4.09      4.23      5
+ Treatment emmean     SE  df asymp.LCL asymp.UCL .group
+ Kontos      1.57 0.0727 Inf      1.43      1.71  1    
+ Untreated   2.95 0.0547 Inf      2.85      3.06   2   
+ Actigard    3.91 0.0370 Inf      3.84      3.99    3  
+ MA          4.08 0.0362 Inf      4.01      4.15     4 
+ Water       4.09 0.0361 Inf      4.02      4.16     45
+ Mites       4.16 0.0358 Inf      4.09      4.23      5
 
 Results are given on the log (not the response) scale. 
 Confidence level used: 0.95 
