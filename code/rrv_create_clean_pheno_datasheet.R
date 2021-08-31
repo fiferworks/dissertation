@@ -21,7 +21,7 @@ rm(pkgs, nu_pkgs)
 gps <- read_csv("data/rrv_pheno_gps_from_photos.csv")
 
 #dropping unnecessary exif data
-gps <- select(gps, -"GPSAltitude")
+gps <- dplyr::select(gps, -"GPSAltitude")
 
 #sorting the columns by date
 gps$date <- lubridate::as_date(gps$DateTimeOriginal)
@@ -55,7 +55,7 @@ avgs <-
                                      lon = mean(lon, na.rm = TRUE))
 avgs$lon_lat <- paste(avgs$lon, avgs$lat)
 
-gps <- gps %>% select(-lat, -lon, -lon_lat)
+gps <- gps %>% dplyr::select(-lat, -lon, -lon_lat)
 
 gps <- left_join(gps, avgs)
 
@@ -66,7 +66,7 @@ df <- read_excel('data/rrv_mite_survey_master.xlsx')
 df <- filter(df, grepl('Pheno*', id))
 
 #removing the GPS data from the master dataset, which is simply copy-pasted from a single reading
-df <- select(df, -c('lon', 'lat', 'lon_lat'))
+df <- dplyr::select(df, -c('lon', 'lat', 'lon_lat'))
 
 #making id a factor for sorting
 df$id <- as_factor(df$id)
@@ -98,7 +98,7 @@ df$p_fructiphilus <- "verified"
 df$symptoms <- "No"
 
 gps <-
-  gps %>% select(id, lat, lon , lon_lat) %>% distinct(id, .keep_all = TRUE)
+  gps %>% dplyr::select(id, lat, lon , lon_lat) %>% distinct(id, .keep_all = TRUE)
 
 df <- left_join(df, gps)
 
@@ -110,7 +110,7 @@ df <- left_join(df, gps)
 
 #### only one week of the dry weights are lost, imputing missing weights ####
 missing_weights <-
-  df %>% select(id, grams_dry_weight, other_mites, eriophyoids)
+  df %>% dplyr::select(id, grams_dry_weight, other_mites, eriophyoids)
 
 imputeMethod <- imputeLearner("regr.rpart")
 gramImp <-
