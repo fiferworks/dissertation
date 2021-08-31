@@ -1,106 +1,133 @@
-[[1]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
+Generalized linear mixed model fit by maximum likelihood
+  (Laplace Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: eriophyoids ~ month * other_mites + (1 | id)
+   Data: df
+      AIC       BIC    logLik  deviance  df.resid 
+1402.4903 1442.9847 -684.2451 1368.4903        63 
+Random effects:
+ Groups Name        Std.Dev.
+ id     (Intercept) 0.2933  
+Number of obs: 80, groups:  id, 4
+Fixed Effects:
+              (Intercept)                 monthApril  
+                  1.66045                   -1.22938  
+                monthJune                monthAugust  
+                  1.15340                    0.83976  
+             monthOctober              monthNovember  
+                -19.31849                   -0.57260  
+                 monthMay                  monthJuly  
+                  0.32996                    0.80311  
+              other_mites     monthApril:other_mites  
+                  0.13875                    0.10432  
+    monthJune:other_mites    monthAugust:other_mites  
+                 -0.14105                   -0.12729  
+ monthOctober:other_mites  monthNovember:other_mites  
+                 -0.18514                   -0.09529  
+     monthMay:other_mites      monthJuly:other_mites  
+                 -0.11797                   -0.11260  
+optimizer (Nelder_Mead) convergence code: 0 (OK) ; 0 optimizer warnings; 1 lme4 warnings 
+Generalized linear mixed model fit by maximum likelihood
+  (Laplace Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: eriophyoids ~ month * other_mites + (1 | id)
+   Data: df
 
-[[2]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
+     AIC      BIC   logLik deviance df.resid 
+  1402.5   1443.0   -684.2   1368.5       63 
 
-[[3]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
+Scaled residuals: 
+   Min     1Q Median     3Q    Max 
+-5.170 -2.529 -1.288  1.740 19.708 
 
-[[4]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
+Random effects:
+ Groups Name        Variance Std.Dev.
+ id     (Intercept) 0.08601  0.2933  
+Number of obs: 80, groups:  id, 4
 
-[[5]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
+Fixed effects:
+                           Estimate Std. Error z value Pr(>|z|)
+(Intercept)                 1.66045    0.21148   7.852 4.11e-15
+monthApril                 -1.22938    0.68398  -1.797 0.072273
+monthJune                   1.15340    0.15959   7.227 4.92e-13
+monthAugust                 0.83976    0.22634   3.710 0.000207
+monthOctober              -19.31849  165.32586  -0.117 0.906978
+monthNovember              -0.57260    0.57647  -0.993 0.320569
+monthMay                    0.32996    0.37824   0.872 0.383004
+monthJuly                   0.80311    0.18415   4.361 1.29e-05
+other_mites                 0.13875    0.01507   9.210  < 2e-16
+monthApril:other_mites      0.10432    0.10693   0.976 0.329252
+monthJune:other_mites      -0.14105    0.01536  -9.181  < 2e-16
+monthAugust:other_mites    -0.12729    0.02249  -5.661 1.51e-08
+monthOctober:other_mites   -0.18514  111.46252  -0.002 0.998675
+monthNovember:other_mites  -0.09529    0.02136  -4.462 8.12e-06
+monthMay:other_mites       -0.11797    0.02786  -4.235 2.29e-05
+monthJuly:other_mites      -0.11260    0.02033  -5.538 3.05e-08
+                             
+(Intercept)               ***
+monthApril                .  
+monthJune                 ***
+monthAugust               ***
+monthOctober                 
+monthNovember                
+monthMay                     
+monthJuly                 ***
+other_mites               ***
+monthApril:other_mites       
+monthJune:other_mites     ***
+monthAugust:other_mites   ***
+monthOctober:other_mites     
+monthNovember:other_mites ***
+monthMay:other_mites      ***
+monthJuly:other_mites     ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+Model is nearly unidentifiable: large eigenvalue ratio
+ - Rescale variables?
 
-[[6]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
+Analysis of Deviance Table (Type II Wald chisquare tests)
 
-[[7]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
-
-[1] "C:\\Users\\fifer\\OneDrive - University of Florida\\DISSERTATION\\MANUSCRIPT\\fonts"
-[2] "C:\\Users\\fifer\\OneDrive - University of Florida\\DISSERTATION\\fonts"            
-[3] "C:\\Windows\\Fonts"                                                                 
-[38;5;246m# A tibble: 190 x 30[39m
-   sample_no id     date                month other_mites eriophyoids `mites/g` `erios/gram` p_fructiphilus rose_spp symptoms rrv   city    state
-       [3m[38;5;246m<dbl>[39m[23m [3m[38;5;246m<chr>[39m[23m  [3m[38;5;246m<dttm>[39m[23m              [3m[38;5;246m<chr>[39m[23m       [3m[38;5;246m<dbl>[39m[23m       [3m[38;5;246m<dbl>[39m[23m     [3m[38;5;246m<dbl>[39m[23m        [3m[38;5;246m<dbl>[39m[23m          [3m[38;5;246m<dbl>[39m[23m [3m[38;5;246m<chr>[39m[23m    [3m[38;5;246m<chr>[39m[23m    [3m[38;5;246m<lgl>[39m[23m [3m[38;5;246m<chr>[39m[23m   [3m[38;5;246m<chr>[39m[23m
-[38;5;250m 1[39m       295 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           0           0     0            0                  0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m 2[39m       296 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           6           4     1.28         0.511              0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m 3[39m       297 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           2          15     0.946        0.834              0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m 4[39m       298 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           1          22     1.41         1.35               0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m 5[39m       299 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           2          31     4.50         4.22               0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m 6[39m       300 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           0           0     0            0                  0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m 7[39m       301 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           0           0     0            0                  0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m 8[39m       302 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           0           8     0.555        0.555              0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m 9[39m       303 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           8          17     2.80         1.91               0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;250m10[39m       304 Pheno~ 2020-03-31 [38;5;246m00:00:00[39m March           0           0     0            0                  0 KO       No       [31mNA[39m    Tallah~ FL   
-[38;5;246m# ... with 180 more rows, and 16 more variables: county <chr>, grams_dry_weight <dbl>, collector <chr>, shade <chr>, notes <lgl>,[39m
-[38;5;246m#   SourceFile <chr>, DateTimeOriginal <chr>, lat <dbl>, lon <dbl>, lon_lat <chr>, totals <dbl>, per_plant <dbl>, sd <dbl>, se <dbl>,[39m
-[38;5;246m#   log_xformed <dbl>, se_xformed <dbl>[39m
-[[1]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
-
-[[2]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
-
-[[3]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
-
-[[4]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
-
-[[5]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
-
-[[6]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
-
-[[7]]
- [1] "multcompView" "emmeans"      "car"          "carData"      "scales"       "Cairo"        "extrafont"    "showtext"     "showtextdb"  
-[10] "sysfonts"     "ggthemes"     "nlme"         "lme4"         "Matrix"       "mice"         "mlr"          "ParamHelpers" "writexl"     
-[19] "readxl"       "lubridate"    "forcats"      "stringr"      "dplyr"        "purrr"        "readr"        "tidyr"        "tibble"      
-[28] "ggplot2"      "tidyverse"    "stats"        "graphics"     "grDevices"    "utils"        "datasets"     "methods"      "base"        
-
-[1] "C:\\Users\\fifer\\OneDrive - University of Florida\\DISSERTATION\\MANUSCRIPT\\fonts"
-[2] "C:\\Users\\fifer\\OneDrive - University of Florida\\DISSERTATION\\fonts"            
-[3] "C:\\Windows\\Fonts"                                                                 
+Response: eriophyoids
+                     Chisq Df Pr(>Chisq)    
+month              36.7576  7  5.213e-06 ***
+other_mites         5.5026  1    0.01899 *  
+month:other_mites 101.0258  7  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+No documentation for ‘linfct’ in specified packages and libraries:
+you could try ‘??linfct’
+Generalized linear mixed model fit by maximum likelihood
+  (Laplace Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: eriophyoids ~ month + (1 | id)
+   Data: df
+      AIC       BIC    logLik  deviance  df.resid 
+1501.4698 1522.9081 -741.7349 1483.4698        71 
+Random effects:
+ Groups Name        Std.Dev.
+ id     (Intercept) 0.2782  
+Number of obs: 80, groups:  id, 4
+Fixed Effects:
+  (Intercept)     monthApril      monthJune    monthAugust  
+      2.63938       -0.84730        0.16170       -0.04082  
+ monthOctober  monthNovember       monthMay      monthJuly  
+    -23.38954       -0.04082       -0.37729       -0.01875  
+optimizer (Nelder_Mead) convergence code: 0 (OK) ; 0 optimizer warnings; 1 lme4 warnings 
+Generalized linear mixed model fit by maximum likelihood
+  (Laplace Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: eriophyoids ~ month + (1 | id)
+   Data: df
+      AIC       BIC    logLik  deviance  df.resid 
+1501.4698 1522.9081 -741.7349 1483.4698        71 
+Random effects:
+ Groups Name        Std.Dev.
+ id     (Intercept) 0.2782  
+Number of obs: 80, groups:  id, 4
+Fixed Effects:
+  (Intercept)     monthApril      monthJune    monthAugust  
+      2.63938       -0.84730        0.16170       -0.04082  
+ monthOctober  monthNovember       monthMay      monthJuly  
+    -23.38954       -0.04082       -0.37729       -0.01875  
+optimizer (Nelder_Mead) convergence code: 0 (OK) ; 0 optimizer warnings; 1 lme4 warnings 
