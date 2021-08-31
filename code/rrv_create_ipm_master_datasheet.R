@@ -70,7 +70,7 @@ ta_trials <- ta_trials %>% add_column(Field = 'Tallahassee')
 ta_trials <-
   ta_trials %>% mutate(
     'mites/g' = (other_mites) / grams_dry_weight,
-    'erios/gram' = eriophyoids / grams_dry_weight,
+    'erios/g' = eriophyoids / grams_dry_weight,
     .before = grams_dry_weight
   )
 
@@ -89,7 +89,7 @@ ga_trials <-
 
 ga_trials <- ga_trials %>% add_column(
   'mites/g' = NA,
-  'erios/gram' = NA,
+  'erios/g' = NA,
   'grams_dry_weight' = NA
 )
 
@@ -103,7 +103,7 @@ df <- bind_rows(ta_trials, ga_trials)
 df <-
   df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
 
-df <- df %>%  dplyr::select(-notes, -Plant)
+df <- df %>%  dplyr::select(-notes,-Plant)
 
 #saving the master file
 write_csv(df, 'rrv_ipm_master_datasheet.csv')
