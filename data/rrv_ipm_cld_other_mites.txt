@@ -1,0 +1,17 @@
+ Treatment         emmean   SE  df asymp.LCL asymp.UCL .group
+ Mites + Ninja    -1.3324 1.28 Inf     -3.84      1.18  1    
+ Kontos           -0.8621 1.27 Inf     -3.34      1.62  1    
+ Actigard         -0.2876 1.27 Inf     -2.77      2.19   2   
+ Mites            -0.2692 1.27 Inf     -2.75      2.21   2   
+ Mites + Actigard -0.1409 1.27 Inf     -2.62      2.34   23  
+ Water            -0.0103 1.26 Inf     -2.49      2.47    34 
+ Untreated         0.1260 1.27 Inf     -2.35      2.61     4 
+ Ninja             0.1672 1.27 Inf     -2.32      2.65    34 
+
+Results are given on the log (not the response) scale. 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 8 estimates 
+significance level used: alpha = 0.05 
+NOTE: Compact letter displays can be misleading
+      because they show NON-findings rather than findings.
+      Consider using 'pairs()', 'pwpp()', or 'pwpm()' instead. 

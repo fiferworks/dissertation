@@ -1,98 +1,166 @@
 ####PACKAGES####
-pkgs <- c('tidyverse', 'lme4', 'car', 'multcomp')
-lapply(pkgs, library, character.only = T)
-rm(pkgs)
+pkgs <-
+  c('tidyverse', 'lme4', 'car', 'multcomp', 'emmeans')
 
-# #installs the packages if you don't have them already installed
-# lapply(pkgs, install.packages, character.only = TRUE)
+#installs the packages if you don't have them already installed
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
 
-###########################################################################################
-#IMPORTANT NOTE! WE DID NOT RECOVER ERIOPHYOIDS FROM THESE SAMPLES! THESE ARE OTHER MITES!#
-###########################################################################################
+#loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
 
 ####IPM DATA ANALYSIS####
 #reading in the data
-df <- read_csv('ipm.csv')
+df <- read_csv('data/ipm.csv')
 
 #assigning columns as factors
-df$treat <- as_factor(df$treat)
-df$id <- as_factor(df$id)
-df$plant <- as_factor(df$plant)
-df$block <- as_factor(df$block)
-df$field <- as_factor(df$field)
+df$Treatment <- as_factor(df$Treatment)
+df$ID <- as_factor(df$ID)
+df$Block <- as_factor(df$Block)
+df$Field <- as_factor(df$Field)
 
 #Athens only
-athns <- filter(df, field == 'Athens')
+athns <- filter(df, Field == 'Athens')
 
 #Griffin only
-grifn <- filter(df, field == 'Griffin')
+grifn <- filter(df, Field == 'Griffin')
 
-#data are now ready to be analyzed
+#Tallahassee only
+talla <- filter(df, Field == 'Tallahassee')
 
-#glmer model of other mites for all sites
-glm_1 <-
-  glmer(other ~ treat + field + (1 |
-                                   block),
+##############
+#ERIOPHYOIDS!#
+##############
+glm_erios <-
+  glmer(Eriophyoids ~ Treatment + (1 | Field),
         family = 'poisson',
         data = df)
 
-summary(glm_1)
+summary(glm_erios)
 
 #ANOVA
-Anova(glm_1, type = c("III")) #treatment is significant
-
-#multiple comparisions
-summary(glht(glm_1, linfct = mcp(treat = "Tukey")), test = adjusted("holm"))
+Anova(glm_erios, type = c("III")) #treatment is significant
 
 #making a compact letter display for each treatment
-q <- glht(glm_1, linfct = mcp(treat = "Tukey"))
+er <- emmeans(glm_erios, "Treatment")
 
-sink(file = 'ipm_cld_letters.txt')
+sink(file = 'data/rrv_ipm_cld_all_erios.txt')
+cld(er)
+sink()
+
+#########################################################
+#IMPORTANT NOTE! THESE ARE OTHER MITES, NOT ERIOPHYOIDS!#
+#########################################################
+
+glm_other <-
+  glmer(`Other Mites` ~ Treatment + (1 | Field),
+        family = 'poisson',
+        data = df)
+
+summary(glm_other)
+
+#ANOVA
+Anova(glm_other, type = c("III")) #treatment is significant
+
+#making a compact letter display for each treatment
+q <- emmeans(glm_other, "Treatment")
+
+sink(file = 'data/rrv_ipm_cld_other_mites.txt')
 cld(q)
 sink()
 
 ####ATHENS SITES####
+###########################################################################################
+#IMPORTANT NOTE! WE DID NOT RECOVER ERIOPHYOIDS FROM THESE SAMPLES! THESE ARE OTHER MITES!#
+###########################################################################################
 #glmer model of other mites for all sites
-glm_2 <-
-  glmer(other ~ treat + (1 | block),
+glm_athens <-
+  glmer(`Other Mites` ~ Treatment + (1 | Block),
         family = 'poisson',
         data = athns)
 
-summary(glm_2)
+summary(glm_athens)
 
 #ANOVA
-Anova(glm_2, type = c("III")) #treatment is significant
+Anova(glm_athens, type = c("III")) #treatment is significant
 
 #multiple comparisions
-summary(glht(glm_2, linfct = mcp(treat = "Tukey")), test = adjusted("holm"))
+summary(glht(glm_athens, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
 
 #making a compact letter display for each treatment
-w <- glht(glm_2, linfct = mcp(treat = "Tukey"))
+w <- emmeans(glm_athens, "Treatment")
 
-sink(file = 'ipm_cld_letters_athns.txt')
+sink(file = 'data/rrv_ipm_cld_athns.txt')
 cld(w)
 sink()
 
-####GRIFFIN SITES####
-#glmer model of other mites for all sites
-glm_3 <-
-  glmer(other ~ treat + (1 | block),
-        family = 'poisson',
-        data = grifn)
+#####GRIFFIN SITES####
+####################################################################
+#NONE OF THE CODE CAN WORK, THERE WAS HARDLY ANY RECOVERY OF MITES!#
+####################################################################
+# #glmer model of other mites for all sites
+# glm_griffin <-
+#   glmer(`Other Mites` ~ Treatment + (1 | Block),
+#         family = 'poisson',
+#         data = grifn)
+#
+# summary(glm_griffin)
+#
+# #ANOVA
+# Anova(glm_griffin, type = c("III")) #treatment is significant
+#
+# #multiple comparisions
+# summary(glht(glm_griffin, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
+#
+# #making a compact letter display for each treatment
+# e <- emmeans(glm_griffin, "Treatment")
+#
+# sink(file = 'data/rrv_ipm_cld_grifn.txt')
+# cld(e)
+# sink()
 
-summary(glm_3)
+####TALLAHASSEE SITES####
+##############
+#ERIOPHYOIDS!#
+##############
+glm_talla_erios <-
+  glmer(Eriophyoids ~ Treatment + (1 | Block),
+        family = 'poisson',
+        data = talla)
+
+summary(glm_talla_erios)
 
 #ANOVA
-Anova(glm_3, type = c("III")) #treatment is significant
-
-#multiple comparisions
-summary(glht(glm_3, linfct = mcp(treat = "Tukey")), test = adjusted("holm"))
+Anova(glm_talla_erios, type = c("III")) #treatment is significant
 
 #making a compact letter display for each treatment
-e <- glht(glm_3, linfct = mcp(treat = "Tukey"))
+erio <- emmeans(glm_talla_erios, "Treatment")
 
-sink(file = 'ipm_cld_letters_grifn.txt')
-cld(e)
+sink(file = 'data/rrv_ipm_cld_erios_talla.txt')
+cld(erio)
+sink()
+
+#glmer model of other mites for all sites
+glm_talla <-
+  glmer(`Other Mites` ~ Treatment + (1 | Block),
+        family = 'poisson',
+        data = talla)
+
+summary(glm_talla)
+
+#ANOVA
+Anova(glm_talla, type = c("III")) #treatment is significant
+
+#multiple comparisions
+summary(glht(glm_talla, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
+
+#making a compact letter display for each treatment
+f <- emmeans(glm_talla, "Treatment")
+
+sink(file = 'data/rrv_ipm_cld_other_talla.txt')
+cld(f)
 sink()
 
 #cleanup
