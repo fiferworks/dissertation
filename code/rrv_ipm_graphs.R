@@ -1,22 +1,26 @@
 ####PACKAGES####
-pkgs <- c('tidyverse',
-    'viridis',
-    'sysfonts',
-    'showtext',
-    'ggthemes',
-    'Cairo',
-    'eply')
+pkgs <- c(
+  'tidyverse',
+  'viridis',
+  'sysfonts',
+  'showtext',
+  'ggthemes',
+  'Cairo',
+  'eply'
+)
 
-# #installs the packages if you don't have them already installed
-# lapply(pkgs, install.packages, character.only = TRUE)
+#installs the packages if you don't have them already installed
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
 
-lapply(pkgs, library, character.only = T)
-
-rm(pkgs)
+#loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
 
 # ####GETTING REQUIRED FONTS####
 #telling R the path where the fonts are located
-font_paths('../fonts')
+font_paths('fonts')
 
 #imports the font Gill Sans MT as the font family 'gill_sans'
 font_add(
@@ -42,179 +46,173 @@ font_add(
 
 showtext_auto()
 
-###########################################################################################
-#IMPORTANT NOTE! WE DID NOT RECOVER ERIOPHYOIDS FROM THESE SAMPLES! THESE ARE OTHER MITES!#
-###########################################################################################
-
 ####IPM DATA ANALYSIS ACROSS ALL TRIALS####
 #reading in the data
-df <- read_csv('ipm.csv')
+df <- read_csv('data/ipm.csv')
 
 #assigning columns as factors
-df$treat <- as_factor(df$treat)
-df$id <- as_factor(df$id)
-df$plant <- as_factor(df$plant)
-df$block <- as_factor(df$block)
-df$field <- as_factor(df$field)
+df$Treatment <- as_factor(df$Treatment)
+df$ID <- as_factor(df$ID)
+df$Block <- as_factor(df$Block)
+df$Field <- as_factor(df$Field)
 
 #Athens only data
-athns <- filter(df, field == 'Athens')
+athns <- filter(df, Field == 'Athens')
 
 #Griffin only data
-grifn <- filter(df, field == 'Griffin')
+grifn <- filter(df, Field == 'Griffin')
+
+#Tallahassee only data
+talla <- filter(df, Field == 'Tallahassee')
 
 ####ADDING SIGNIFICANCE LETTERS TO TABLES FOR USE IN GRAPHS####
-#reading in the difference letters for both sites, ignore the warning
-abc <- read_table("ipm_cld_letters.txt")
-
-#dropping the misread columns and renaming the 'ninja + mites' treatment
-abc <-
-  dplyr::select(abc,
-         everything(), -'mites_1', -'+',
-         'mites + ninja' = 'ninja_1')
-
-#rows to columns
-abc <- abc %>% gather(key = 'treat')
-
-#removing extra characters
-abc$value <- unquote(abc$value)
-abc$value <- as_factor(abc$value)
-abc$treat <- as_factor(abc$treat)
-
-#combining letters with dataset
-df <- full_join(df, abc, by = 'treat')
+#reading in the difference letters for all sites
+ltrs_erios_all <-
+  read_table("data/rrv_ipm_cld_all_erios.txt", n_max = 8)
 
 ####SUMMARY STATS OF BOTH SITES####
 #getting summary stats for each treatment group
-ipm <- df %>% group_by(treat) %>% summarize(
-  per_plant = mean(other),
-  totals = sum(other),
-  sd = sd(other),
-  se = sd(other) / sqrt(n())
-) %>%
+ipm_erios <-
+  df %>% group_by(Treatment) %>% summarize(
+    'mean_erios/g' = mean(`erios/gram`, na.rm = TRUE),
+    totals = sum(Eriophyoids, na.rm = TRUE),
+    sd = sd(`erios/gram`, na.rm = TRUE),
+    se = sd(`erios/gram`, na.rm = TRUE) / sqrt(n())
+  ) %>%
   ungroup()
 
 #rounding for graph
-ipm$per_plant <- round(ipm$per_plant, digits = 2)
+ipm_erios$'mean_erios/g' <-
+  round(ipm_erios$'mean_erios/g', digits = 2)
 
 #combining letters with dataset
-ipm <- full_join(ipm, abc, by = 'treat')
+ipm_erios <- left_join(ipm_erios, ltrs_erios_all, by = 'Treatment')
+
+
+####ALL OTHER MITES####
+ltrs_other_all <-
+  read_table("data/rrv_ipm_cld_other_mites.txt", n_max = 8)
+
+ipm_other <-
+  df %>% group_by(Treatment) %>% summarize(
+    'mean_mites/g' = mean(`mites/g`, na.rm = TRUE),
+    totals = sum(`Other Mites`, na.rm = TRUE),
+    sd = sd(`Other Mites`, na.rm = TRUE),
+    se = sd(`Other Mites`, na.rm = TRUE) / sqrt(n())
+  ) %>%
+  ungroup()
+
+#rounding for graph
+ipm_other$`mean_mites/g` <-
+  round(ipm_other$`mean_mites/g`, digits = 2)
+
+#combining letters with dataset
+ipm_other <- left_join(ipm_other, ltrs_other_all, by = 'Treatment')
 
 ####ATHENS####
 #difference letters for Athens, ignore the warning
-abc <- read_table("ipm_cld_letters_athns.txt")
+ltrs_other_athns <-
+  read_table("data/rrv_ipm_cld_athns.txt", n_max = 6)
 
-#dropping the misread columns and renaming the 'ninja + mites' treatment
-abc <-
-  dplyr::select(abc,
-         everything(), -'mites_1', -'+',
-         'mites + ninja' = 'ninja_1')
-
-#rows to columns
-abc <- abc %>% gather(key = 'treat')
-
-#removing extra characters
-abc$value <- unquote(abc$value)
-abc$value <- as_factor(abc$value)
-abc$treat <- as_factor(abc$treat)
-
-#combining letters with dataset
-athns <- full_join(athns, abc, by = 'treat')
-
-####SUMMARY STATS ATHENS####
 #getting summary stats for each treatment group
-ipm_2 <- athns %>% group_by(treat) %>% summarize(
-  per_plant = mean(other),
-  totals = sum(other),
-  sd = sd(other),
-  se = sd(other) / sqrt(n())
+ipm_other_athns <- athns %>% group_by(Treatment) %>% summarize(
+  'mean_mites/plant' = mean(`Other Mites`, na.rm = TRUE),
+  totals = sum(`Other Mites`, na.rm = TRUE),
+  sd = sd(`Other Mites`, na.rm = TRUE),
+  se = sd(`Other Mites`, na.rm = TRUE) / sqrt(n())
 ) %>%
   ungroup()
 
 #rounding for graph
-ipm_2$per_plant <- round(ipm_2$per_plant, digits = 2)
+ipm_other_athns$'mean_mites/plant' <-
+  round(ipm_other_athns$'mean_mites/plant', digits = 2)
 
 #combining letters with dataset
-ipm_2 <- full_join(ipm_2, abc, by = 'treat')
+ipm_other_athns <-
+  left_join(ipm_other_athns, ltrs_other_athns, by = 'Treatment')
 
 
 ####GRIFFIN####
-#difference letters for Athens, ignore the warning
-abc <- read_table("ipm_cld_letters_grifn.txt")
-
-#dropping the misread columns and renaming the 'ninja + mites' treatment
-abc <-
-  dplyr::select(abc,
-                everything(), -'mites_1', -'+',
-                'mites + ninja' = 'ninja_1')
-
-#rows to columns
-abc <- abc %>% gather(key = 'treat')
-
-#removing extra characters
-abc$value <- unquote(abc$value)
-abc$value <- as_factor(abc$value)
-abc$treat <- as_factor(abc$treat)
-
-#combining letters with dataset
-grifn <- full_join(grifn, abc, by = 'treat')
-
-####SUMMARY STATS GRIFFIN####
 #getting summary stats for each treatment group
-ipm_3 <- grifn %>% group_by(treat) %>% summarize(
-  per_plant = mean(other),
-  totals = sum(other),
-  sd = sd(other),
-  se = sd(other) / sqrt(n())
+ipm_other_grifn <- grifn %>% group_by(Treatment) %>% summarize(
+  'mean_mites/plant' = mean(`Other Mites`, na.rm = TRUE),
+  totals = sum(`Other Mites`, na.rm = TRUE),
+  sd = sd(`Other Mites`, na.rm = TRUE),
+  se = sd(`Other Mites`, na.rm = TRUE) / sqrt(n())
 ) %>%
   ungroup()
 
 #rounding for graph
-ipm_3$per_plant <- round(ipm_3$per_plant, digits = 2)
+ipm_other_grifn$'mean_mites/plant' <-
+  round(ipm_other_grifn$'mean_mites/plant', digits = 2)
+
+####TALLAHASSEE####
+#getting summary stats for each treatment group
+ipm_other_talla <- talla %>% group_by(Treatment) %>% summarize(
+  'mean_mites/g' = mean(`mites/g`, na.rm = TRUE),
+  totals = sum(`Other Mites`, na.rm = TRUE),
+  sd = sd(`mites/g`, na.rm = TRUE),
+  se = sd(`mites/g`, na.rm = TRUE) / sqrt(n())
+) %>%
+  ungroup()
+
+#rounding for graph
+ipm_other_talla$'mean_mites/g' <-
+  round(ipm_other_talla$'mean_mites/g', digits = 2)
+
+ltrs_other_talla <-
+  read_table("data/rrv_ipm_cld_other_talla.txt", n_max = 6)
 
 #combining letters with dataset
-ipm_3 <- full_join(ipm_3, abc, by = 'treat')
+ipm_other_talla <-
+  left_join(ipm_other_talla, ltrs_other_talla, by = 'Treatment')
+
+ipm_other_talla$.group <- c('a', 'b', 'b', 'b', 'b', 'b')
+
+#now with eriophyoids
+ipm_erio_talla <- talla %>% group_by(Treatment) %>% summarize(
+  'mean_erios/g' = mean(`erios/gram`, na.rm = TRUE),
+  totals = sum(Eriophyoids, na.rm = TRUE),
+  sd = sd(`erios/gram`, na.rm = TRUE),
+  se = sd(`erios/gram`, na.rm = TRUE) / sqrt(n())
+) %>%
+  ungroup()
+
+#rounding for graph
+ipm_erio_talla$'mean_erios/g' <-
+  round(ipm_erio_talla$'mean_erios/g', digits = 2)
+
+ltrs_erio_talla <-
+  read_table("data/rrv_ipm_cld_erios_talla.txt", n_max = 6)
+
+ltrs_erio_talla$.group <- c('a', 'b', 'c', 'd', 'de', 'e')
+
+
+#combining letters with dataset
+ipm_erio_talla <-
+  left_join(ipm_erio_talla, ltrs_erio_talla, by = 'Treatment')
 
 #data is now ready to be graphed
-
-
 ####GRAPHS####
-#####GRAPH OF BOTH SITES####
-ggplot(data = ipm,
-       mapping = aes(x = treat, y = per_plant, fill = treat)) +
+#####GRAPH OF ALL TALLAHASSEE ERIOS####
+ggplot(
+  data = ipm_erio_talla,
+  mapping = aes(x = Treatment, y = `mean_erios/g`, fill = Treatment)
+) +
   geom_bar(stat = 'identity') +
   geom_errorbar(
-    aes(ymin = per_plant - se, ymax = per_plant + se),
+    aes(ymin = `mean_erios/g` - se, ymax = `mean_erios/g` + se),
     width = 0.5,
     size = 2.5,
     position = position_dodge(.9)
   ) +
-  coord_cartesian(ylim = c(-0.3, 8)) +
-  geom_text(
-    mapping = aes(x = treat, label = value),
-    data = ipm,
-    stat = "identity",
-    position = position_stack(1.7),
-    vjust = -1.7,
-    size = 50
+  coord_cartesian(ylim = c(-0.3, 12.5), clip = "off") +
+  theme_tufte(base_size = 70, base_family = "gill_sans") +
+  ggtitle(
+    expression(
+      'Mean of eriophyoid mites per gram dry weight - Tallahassee IPM Trials 2020-2021'
+    )
   ) +
-  geom_text(
-    aes(treat, per_plant, label = per_plant, fill = NULL),
-    stat = "identity",
-    position = position_stack(1.6),
-    vjust = -1,
-    size = 30
-  ) +
-  geom_text(
-    stat = "count",
-    aes(label = paste0("n = ", ..count..), y = ..count..),
-    position = 'fill',
-    vjust = 6,
-    size = 25,
-    data = df
-  ) +
-  theme_tufte(base_size = 20, base_family = "gill_sans") +
-  ggtitle(expression('Number of herbivorous mites per plant - IPM Trials 2019')) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
   theme(legend.position = "none") +
   theme(
@@ -239,60 +237,65 @@ ggplot(data = ipm,
       vjust = 0,
       face = "bold"
     )
-  ) + scale_fill_manual(values = viridis(
-    6,
-    begin = 1,
-    end = 0,
-    option = 'C'
-  )) +
-  
-  #saving the file
-  ggsave(
-    '../images/ipm_graph.png',
-    plot = last_plot(),
-    type = 'cairo',
-    width = 16,
-    height = 9,
-    scale = 1,
-    dpi = 300
-  )
-
-#####GRAPH OF ATHENS####
-ggplot(data = ipm_2,
-       mapping = aes(x = treat, y = per_plant, fill = treat)) +
-  geom_bar(stat = 'identity') +
-  geom_errorbar(
-    aes(ymin = per_plant - se, ymax = per_plant + se),
-    width = 0.5,
-    size = 2.5,
-    position = position_dodge(.9)
-  ) +
-  coord_cartesian(ylim = c(-0.3, 8)) +
-  geom_text(
-    mapping = aes(x = treat, label = value),
-    data = ipm_2,
-    stat = "identity",
-    position = position_stack(1.7),
-    vjust = -1.7,
-    size = 50
   ) +
   geom_text(
-    aes(treat, per_plant, label = per_plant, fill = NULL),
+    mapping = aes(x = Treatment, label = .group),
     stat = "identity",
-    position = position_stack(1.6),
-    vjust = -1,
+    position = position_stack(1.1),
+    vjust = -3,
+    size = 30
+  ) +
+  geom_text(
+    mapping = aes(x = Treatment, label = `mean_erios/g`),
+    data = ipm_erio_talla,
+    stat = "identity",
+    position = position_stack(1.1),
+    vjust = -1.1,
     size = 30
   ) +
   geom_text(
     stat = "count",
     aes(label = paste0("n = ", ..count..), y = ..count..),
     position = 'fill',
-    vjust = 6,
+    vjust = 3.5,
     size = 25,
-    data = athns
+    data = talla
   ) +
-  theme_tufte(base_size = 20, base_family = "gill_sans") +
-  ggtitle(expression('Number of \'Other Mites\' per plant - IPM Trials - Athens 2019')) +
+  scale_fill_manual(values = viridis(
+    6,
+    begin = 0,
+    end = 1,
+    option = 'D'
+  ))
+
+#saving the file
+ggsave(
+  'figure/rrv_ipm_graph_erios_talla.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
+####GRAPH OF ALL TALLAHASSEE OTHER MITES####
+ggplot(
+  data = ipm_other_talla,
+  mapping = aes(x = Treatment, y = `mean_mites/g`, fill = Treatment)
+) +
+  geom_bar(stat = 'identity') +
+  geom_errorbar(
+    aes(ymin = `mean_mites/g` - se, ymax = `mean_mites/g` + se),
+    width = 0.5,
+    size = 2.5,
+    position = position_dodge(.9)
+  ) +
+  coord_cartesian(ylim = c(-0.3, 12.5), clip = "off") +
+  theme_tufte(base_size = 70, base_family = "gill_sans") +
+  ggtitle(expression(
+    'Mean of other mites per gram dry weight - Tallahassee IPM Trials 2020-2021'
+  )) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
   theme(legend.position = "none") +
   theme(
@@ -317,102 +320,46 @@ ggplot(data = ipm_2,
       vjust = 0,
       face = "bold"
     )
-  ) + scale_fill_manual(values = viridis(
-    6,
-    begin = 1,
-    end = 0,
-    option = 'C'
-  )) +
-  
-  #saving the file
-  ggsave(
-    '../images/ipm_graph_athens.png',
-    plot = last_plot(),
-    type = 'cairo',
-    width = 16,
-    height = 9,
-    scale = 1,
-    dpi = 300
-  )
-
-
-#####GRAPH OF GRIFFIN####
-ggplot(data = ipm_3,
-       mapping = aes(x = treat, y = per_plant, fill = treat)) +
-  geom_bar(stat = 'identity') +
-  geom_errorbar(
-    aes(ymin = per_plant - se, ymax = per_plant + se),
-    width = 0.5,
-    size = 2.5,
-    position = position_dodge(.9)
-  ) +
-  coord_cartesian(ylim = c(-0.3, 8)) +
-  geom_text(
-    mapping = aes(x = treat, label = value),
-    data = ipm_3,
-    stat = "identity",
-    position = 'fill',
-    vjust = -0.5,
-    size = 50
   ) +
   geom_text(
-    aes(treat, per_plant, label = per_plant, fill = NULL),
+    mapping = aes(x = Treatment, label = `mean_mites/g`),
     stat = "identity",
-    position = position_stack(1.6),
-    vjust = -1,
+    position = position_stack(1.1),
+    vjust = -1.1,
+    size = 30
+  ) +
+  geom_text(
+    mapping = aes(x = Treatment, label = .group),
+    stat = "identity",
+    position = position_stack(1.1),
+    vjust = -3,
     size = 30
   ) +
   geom_text(
     stat = "count",
     aes(label = paste0("n = ", ..count..), y = ..count..),
     position = 'fill',
-    vjust = 6,
+    vjust = 3.5,
     size = 25,
-    data = grifn
+    data = talla
   ) +
-  theme_tufte(base_size = 20, base_family = "gill_sans") +
-  ggtitle(expression('Number of \'Other Mites\' per plant - IPM Trials - Griffin 2019')) +
-  theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
-  theme(legend.position = "none") +
-  theme(
-    plot.title = element_text(
-      size = 100,
-      face = "bold",
-      family = "garamond"
-    ),
-    axis.text.x = element_text(
-      color = "grey20",
-      size = 80,
-      angle = 0,
-      hjust = .5,
-      vjust = .5,
-      face = "plain"
-    ),
-    axis.text.y = element_text(
-      color = "grey20",
-      size = 80,
-      angle = 0,
-      hjust = 1,
-      vjust = 0,
-      face = "bold"
-    )
-  ) + scale_fill_manual(values = viridis(
+  scale_fill_manual(values = viridis(
     6,
-    begin = 1,
-    end = 0,
-    option = 'C'
-  )) +
-  
-  #saving the file
-  ggsave(
-    '../images/ipm_graph_griffin.png',
-    plot = last_plot(),
-    type = 'cairo',
-    width = 16,
-    height = 9,
-    scale = 1,
-    dpi = 300
-  )
+    begin = 0,
+    end = 1,
+    option = 'D'
+  ))
+
+#saving the file
+ggsave(
+  'figure/rrv_ipm_graph_other_talla.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
 
 #cleanup
 rm(list = ls(all.names = TRUE))
