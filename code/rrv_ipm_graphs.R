@@ -1,13 +1,11 @@
 ####PACKAGES####
-pkgs <- c(
-  'tidyverse',
-  'viridis',
-  'sysfonts',
-  'showtext',
-  'ggthemes',
-  'Cairo',
-  'eply'
-)
+pkgs <- c('tidyverse',
+          'viridis',
+          'sysfonts',
+          'showtext',
+          'ggthemes',
+          'Cairo',
+          'eply')
 
 #installs the packages if you don't have them already installed
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -55,6 +53,7 @@ df$Treatment <- as_factor(df$Treatment)
 df$ID <- as_factor(df$ID)
 df$Block <- as_factor(df$Block)
 df$Field <- as_factor(df$Field)
+df$Month <- lubridate::month(df$Date, label = TRUE, abbr = FALSE)
 
 #Athens only data
 athns <- filter(df, Field == 'Athens')
@@ -74,10 +73,10 @@ ltrs_erios_all <-
 #getting summary stats for each treatment group
 ipm_erios <-
   df %>% group_by(Treatment) %>% summarize(
-    'mean_erios/g' = mean(`erios/gram`, na.rm = TRUE),
+    'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
     totals = sum(Eriophyoids, na.rm = TRUE),
-    sd = sd(`erios/gram`, na.rm = TRUE),
-    se = sd(`erios/gram`, na.rm = TRUE) / sqrt(n())
+    sd = sd(`erios/g`, na.rm = TRUE),
+    se = sd(`erios/g`, na.rm = TRUE) / sqrt(n())
   ) %>%
   ungroup()
 
@@ -171,10 +170,10 @@ ipm_other_talla$.group <- c('a', 'b', 'b', 'b', 'b', 'b')
 
 #now with eriophyoids
 ipm_erio_talla <- talla %>% group_by(Treatment) %>% summarize(
-  'mean_erios/g' = mean(`erios/gram`, na.rm = TRUE),
+  'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
   totals = sum(Eriophyoids, na.rm = TRUE),
-  sd = sd(`erios/gram`, na.rm = TRUE),
-  se = sd(`erios/gram`, na.rm = TRUE) / sqrt(n())
+  sd = sd(`erios/g`, na.rm = TRUE),
+  se = sd(`erios/g`, na.rm = TRUE) / sqrt(n())
 ) %>%
   ungroup()
 
@@ -353,6 +352,129 @@ ggplot(
 #saving the file
 ggsave(
   'figure/rrv_ipm_graph_other_talla.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
+####TALLAHASSEE BY WEEK####
+may_week <-
+  talla %>% filter(Month == 'May') %>% group_by(Treatment) %>% summarize(
+    'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
+    totals = sum(Eriophyoids, na.rm = TRUE),
+    sd = sd(`erios/g`, na.rm = TRUE),
+    se = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+    Treatment = Treatment,
+    Month = Month
+  ) %>% distinct()
+
+jun_week <-
+  talla %>% filter(Month == 'June') %>% group_by(Treatment) %>% summarize(
+    'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
+    totals = sum(Eriophyoids, na.rm = TRUE),
+    sd = sd(`erios/g`, na.rm = TRUE),
+    se = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+    Treatment = Treatment,
+    Month = Month
+  ) %>% distinct()
+
+jul_week <-
+  talla %>% filter(Month == 'July') %>% group_by(Treatment) %>% summarize(
+    'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
+    totals = sum(Eriophyoids, na.rm = TRUE),
+    sd = sd(`erios/g`, na.rm = TRUE),
+    se = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+    Treatment = Treatment,
+    Month = Month
+  ) %>% distinct()
+
+aug_week <-
+  talla %>% filter(Month == 'August') %>% group_by(Treatment) %>% summarize(
+    'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
+    totals = sum(Eriophyoids, na.rm = TRUE),
+    sd = sd(`erios/g`, na.rm = TRUE),
+    se = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+    Treatment = Treatment,
+    Month = Month
+  ) %>% distinct()
+
+talla_week <- bind_rows(may_week, jun_week, jul_week, aug_week)
+talla_week$`mean_erios/g` <-
+  round(talla_week$`mean_erios/g`, digits = 1)
+talla_week$Treatment <-
+  gsub('Mites \\+ Actigard', 'MA', talla_week$Treatment)
+
+# plots of Eriophyoids per week
+ggplot(
+  data = talla_week,
+  mapping = aes(y = `mean_erios/g`, x = Treatment, fill = Treatment)
+) +
+  geom_bar(stat = 'identity') +
+  geom_errorbar(
+    aes(ymin = `mean_erios/g` - se, ymax = `mean_erios/g` + se),
+    width = 0.5,
+    size = 2.5,
+    position = position_dodge(.9)
+  ) +
+  facet_wrap(~ Month, strip.position = 'top') +
+  coord_cartesian(ylim = c(-3, 17), clip = "off") +
+  theme_tufte(base_size = 70, base_family = "gill_sans") +
+  ggtitle(expression(
+    'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'per gram of rose dry weight - IPM Tallahassee'
+  )) +
+  theme(axis.title = element_blank(), axis.text.x = element_blank()) +
+  theme(legend.position = "none") +
+  theme(
+    plot.title = element_text(
+      size = 80,
+      face = "bold",
+      family = "garamond"
+    ),
+    axis.text.x = element_text(
+      color = "grey20",
+      size = 70,
+      angle = 0,
+      hjust = .5,
+      vjust = .5,
+      face = "plain"
+    ),
+    axis.text.y = element_text(
+      color = "grey20",
+      size = 70,
+      angle = 0,
+      hjust = 1,
+      vjust = 0,
+      face = "bold"
+    ),
+    strip.text = element_text(size = 70)
+  ) +
+  geom_text(
+    mapping = aes(x = Treatment, label = `mean_erios/g`),
+    stat = "identity",
+    position = position_stack(1.2),
+    vjust = -1.1,
+    size = 20
+  ) +
+  geom_text(
+    mapping = aes(x = Treatment, label = paste0("n = ", totals)),
+    stat = "identity",
+    position = position_fill(-1),
+    vjust = 1,
+    size = 20
+  ) +
+  scale_fill_manual(values = viridis(
+    6,
+    begin = 0,
+    end = 1,
+    option = 'D'
+  ))
+
+#saving the file
+ggsave(
+  'figure/rrv_ipm_graph_erios_talla_week.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
