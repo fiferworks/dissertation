@@ -55,7 +55,7 @@ df$month <- month(df$date, label = T, abbr = FALSE)
 #adding year column
 df$year <- year(df$date)
 
-df1 <- df %>% filter(year == 2020)
+df1 <- df %>% filter(Study == 'Phenology')
 
 # df1 <- df1 %>% filter(id == 'Pheno 11' |
 #                         id == 'Pheno 12' |
@@ -74,15 +74,15 @@ df1 <- df1 %>% group_by(month) %>% mutate(
 
 #makes a list of totals for each month to display on the graphs
 pheno <- df1 %>% group_by(month) %>% summarize(
-  totals = sum(eriophyoids),
-  tot_per_g = sum(`erios/gram`),
-  per_plant = mean(eriophyoids),
-  sd = sd(eriophyoids),
-  se = sd(eriophyoids) / sqrt(n()),
-  sd_per_g = sd(`erios/gram`),
-  se_per_g = sd(`erios/gram`) / sqrt(n()),
-  log_xformed = log(mean(eriophyoids)),
-  se_xformed = log(sd(eriophyoids) / sqrt(n())),
+  totals = sum(eriophyoids, na.rm = TRUE),
+  tot_per_g = mean(`erios/g`, na.rm = TRUE),
+  per_plant = mean(eriophyoids, na.rm = TRUE),
+  sd = sd(eriophyoids, na.rm = TRUE),
+  se = sd(eriophyoids, na.rm = TRUE) / sqrt(n()),
+  sd_per_g = sd(`erios/g`, na.rm = TRUE),
+  se_per_g = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+  log_xformed = log(mean(eriophyoids, na.rm = TRUE)),
+  se_xformed = log(sd(eriophyoids, na.rm = TRUE) / sqrt(n())),
   n_samples = n()
 ) %>%
   ungroup()
@@ -96,7 +96,7 @@ ggplot(data = pheno,
     data = pheno,
     mapping = aes(
       x = 2.5,
-      y = 930,
+      y = 40,
       xend = 2.5,
       yend = 0
     ),
@@ -105,31 +105,31 @@ ggplot(data = pheno,
   ) +
   geom_errorbar(
     aes(ymin = tot_per_g - se_per_g, ymax = tot_per_g + se_per_g),
-    width = 0.65,
-    size = 1,
+    width = 0.5,
+    size = 2.5,
     position = position_dodge(.9)
   ) +
-  coord_cartesian(ylim = c(-0.9, 1000)) +
+  coord_cartesian(ylim = c(-2, 45), clip = "off") +
   geom_text(
     aes(month, totals, label = paste0("n = ", totals), fill = NULL),
-    size = 30,
+    size = 25,
     position = position_fill(),
-    vjust = 1.3
+    vjust = 2
   ) +
   geom_text(
     aes(
       month,
       tot_per_g,
-      label = round(tot_per_g, digits = 3),
+      label = round(tot_per_g, digits = 1),
       fill = NULL
     ),
     size = 30,
-    position = position_stack(),
-    vjust = -1.3
+    position = position_stack(1.5),
+    vjust = -.7
   ) +
-  theme_tufte(base_size = 20, base_family = "gill_sans") +
+  theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(expression(
-    'Number of' ~ italic(P. ~ fructiphilus) ~ 'collected per gram of rose dry weight'
+    'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'collected per gram of rose dry weight'
   )) +
   ylab("mites/g") +
   theme(axis.title.x = element_blank(), axis.text = element_blank()) +
@@ -171,7 +171,7 @@ ggplot(data = pheno,
     geom = "text",
     size = 25,
     x = 2.5,
-    y = 980,
+    y = 42,
     label = "Pruned",
     color = "red"
   )
