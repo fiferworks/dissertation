@@ -41,15 +41,17 @@ df <-
 
 #### Stuck here####
 # sink('data/rrv_pheno_analysis_results.txt')
-glmer(eriophyoids ~ month + (1 | id),
-      data = df,
-      family = 'poisson')
+q <- glmer(eriophyoids ~ month + (1 | id),
+           data = df,
+           family = 'poisson')
 q
 summary(q)
 plot(q)
 Anova(q)
 
 #multiple comparisons
-summary(glht(q, linfct = mcp(treat = "Tukey")), test = adjusted("holm"))
+summary(glht(q, linfct = mcp(month = "Tukey")), test = adjusted("holm"))
 
+w <- emmeans(q, 'month')
+cld(w)
 # sink()
