@@ -60,13 +60,7 @@ gps <- gps %>% dplyr::select(-lat, -lon, -lon_lat)
 gps <- left_join(gps, avgs)
 
 ####Reading in the RRV Survey Master Datasheet####
-df <- read_excel('data/rrv_mite_survey_master.xlsx')
-
-# filtering out the phenology trials
-df <- filter(df, grepl('Pheno*', id))
-
-#removing the GPS data from the master dataset, which is simply copy-pasted from a single reading
-df <- dplyr::select(df, -c('lon', 'lat', 'lon_lat'))
+df <- read_excel('data/rrv_pheno_jessie_datasheet.xlsx')
 
 #making id a factor for sorting
 df$id <- as_factor(df$id)
@@ -79,6 +73,9 @@ ipm <- read_excel('data/rrv_ipm_trial_2020-2021.xlsx')
 
 ipm$id <- as_factor(ipm$id)
 ipm <- ipm %>% arrange(date, id)
+
+df <- df %>% add_column(Study = 'Phenology')
+ipm <- ipm %>% add_column(Study = 'IPM')
 
 # combining phenology dataset with the ipm treatments (they are at the same sites)
 df <- bind_rows(df, ipm)
@@ -96,6 +93,9 @@ df$collector <- "Austin Fife"
 df$shade <- "open sun"
 df$p_fructiphilus <- "verified"
 df$symptoms <- "No"
+
+# reset the sample_column
+df$sample_no <- 1:length(df$sample_no)
 
 gps <-
   gps %>% dplyr::select(id, lat, lon , lon_lat) %>% distinct(id, .keep_all = TRUE)
@@ -133,6 +133,8 @@ missing_weights <- as_tibble(complete(tempData, 1))
 
 #### adding a column for months (easier for nice graphs later) ####
 df$grams_dry_weight[1:24] <- missing_weights$grams_dry_weight[1:24]
+df$grams_dry_weight[124:172] <-
+  missing_weights$grams_dry_weight[124:172]
 
 df <-
   df %>% add_column(month = month(df$date, label = TRUE, abbr = FALSE),
@@ -142,7 +144,7 @@ df <-
 df <-
   df %>% mutate(
     'mites/g' = (eriophyoids + other_mites) / grams_dry_weight,
-    'erios/gram' = eriophyoids / grams_dry_weight,
+    'erios/g' = eriophyoids / grams_dry_weight,
     .before = p_fructiphilus
   )
 
