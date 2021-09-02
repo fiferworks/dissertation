@@ -1408,6 +1408,19 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Article{Chisholm2006,
+  author    = {Chisholm, Stephen T. and Coaker, Gitta and Day, Brad and Staskawicz, Brian J.},
+  journal   = {Cell},
+  title     = {Host-microbe interactions: shaping the evolution of the plant immune response},
+  year      = {2006},
+  month     = feb,
+  number    = {4},
+  pages     = {803--814},
+  volume    = {124},
+  doi       = {10.1016/j.cell.2006.02.008},
+  publisher = {Elsevier {BV}},
+}
+
 @Article{Choudhary2014,
   author    = {Choudhary, Nandlal and Roy, Avijit and Govindarajulu, A. and Nakhla, M. K. and Levy, L. and Brlansky, R. H.},
   journal   = {Journal of Virological Methods},
@@ -2608,6 +2621,19 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   month     = dec,
   doi       = {10.1111/j.1445-6664.2006.00222.x},
   publisher = {Wiley},
+}
+
+@Article{Jones2006,
+  author    = {Jones, Jonathan D. G. and Dangl, Jeffery L.},
+  journal   = {Nature},
+  title     = {The plant immune system},
+  year      = {2006},
+  month     = nov,
+  number    = {7117},
+  pages     = {323--329},
+  volume    = {444},
+  doi       = {10.1038/nature05286},
+  publisher = {Springer Science and Business Media {LLC}},
 }
 
 @Article{Jung2000,
