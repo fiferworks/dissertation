@@ -33,7 +33,7 @@ plot(
 mtgraph <- make_empty_graph(50)
 plot(
   mtgraph,
-  vertex.size = 1 ,
+  vertex.size = 8,
   vertex.label = NA,
   vertex.color = "plum"
 )
@@ -41,7 +41,7 @@ plot(
 fulgraph <- make_full_graph(50)
 plot(
   fulgraph,
-  vertex.size = 1 ,
+  vertex.size = 8,
   vertex.label = NA,
   vertex.color = "plum"
 )
@@ -49,7 +49,7 @@ plot(
 tregraph <- make_tree(50)
 plot(
   tregraph,
-  vertex.size = 1 ,
+  vertex.size = 8,
   vertex.label = NA,
   vertex.color = "plum"
 )
@@ -57,7 +57,7 @@ plot(
 erdograph <- sample_gnm(n = 100, m = 40)
 plot(
   erdograph,
-  vertex.size = 1 ,
+  vertex.size = 8,
   vertex.label = NA,
   vertex.color = "plum"
 )
