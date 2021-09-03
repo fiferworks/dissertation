@@ -41,151 +41,163 @@ No. 	Peak Name 	Retention Time	Width (50%)	Type 	Resolution (EP)	Asymmetry (EP)	
 		min	min					
 TIC	TIC	TIC	TIC	TIC	TIC	TIC	TIC	
 n.a.	NA (background)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (contaminant)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (background)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+1	NA (SPME fiber)	2.146	0.062	BMB	6.91	0.61	6744	
+2	NA (SPME fiber)	2.792	0.049	BMB	29.14	2.78	18109	
 n.a.	Toulene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Hexanal <n->)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	Hexanal <n->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+3	NA (SPME fiber)	5.139	0.046	BMB	15.46	3.03	68566	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-1	Xylene <m->	6.374	0.048	BMB	6.03	2.90	97450	
-n.a.	NA (contaminant)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-2	NA (Oxime, methoxy-phenyl-)	7.374	0.148	 MB	23.24	n.a.	13826	
+4	Xylene <m->	6.374	0.048	BMB	6.92	2.90	97450	
+5	Styrene	6.972	0.054	BM 	2.35	n.a.	92538	
+6	NA (SPME fiber)	7.374	0.148	 MB	8.96	n.a.	13826	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Pinene <1R-alpha->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Carene, <3->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Benzaldehyde)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+7	Benzaldehyde	8.928	0.057	BM 	n.a.	n.a.	135520	
+8		9.010	n.a.	 MB	n.a.	n.a.	n.a.	
 n.a.	Phellandrene <beta->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Pinene <beta->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Mesitylene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+9	NA (SPME fiber)	10.210	0.032	BM 	n.a.	2.18	569563	
+10		10.384	n.a.	 MB	n.a.	n.a.	n.a.	
 n.a.	p-Cymene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	(1S,2R,4S)-Neo-dihydrocarveol	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (1-Hexanol, 2-ethyl-)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-3	D-Limonene	11.112	0.042	BMB	17.91	1.96	384151	
+11	NA (1-Hexanol, 2-ethyl-)	11.112	0.042	BMB	21.74	1.96	384151	
 n.a.	Pinene <alpha->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Carene <delta-3>	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Dodecane)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Undecane)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Nonanal)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	Dodecane	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+12	NA (silicate)	12.843	0.052	BMB	7.09	1.66	340962	
+n.a.	Undecane	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	Nonanal	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+13	NA (bag)	13.407	0.042	BMB	8.02	1.49	557585	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (2,6-Dimethyl-1,3,5,7-octatetraene, E,E-)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+14	NA (silicate)	14.292	0.088	BMB	4.01	1.02	146540	
 n.a.	Limonene oxide, trans-	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Benzaldehyde <para-ethyl->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-4	NA (1-Nonanol)	15.550	0.250	 M *	2.63	1.80	21396	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+15	NA (bag)	14.744	0.045	BMB	3.07	2.13	590681	
+16	NA (SPME fiber)	14.955	0.036	BMB	2.73	1.90	964984	
+17	Benzaldehyde <para-ethyl->	15.183	0.063	BM 	n.a.	n.a.	324753	
+18	NA (1-Nonanol)	15.479	n.a.	 M 	n.a.	n.a.	n.a.	
+19		15.496	n.a.	 M 	n.a.	n.a.	n.a.	
+20		15.550	n.a.	 M 	n.a.	n.a.	n.a.	
+21		15.604	n.a.	 M 	n.a.	n.a.	n.a.	
+22	NA (bag)	15.744	n.a.	 M 	n.a.	n.a.	n.a.	
+23		15.805	n.a.	 M 	n.a.	n.a.	n.a.	
 n.a.	Terpineol <alpha->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-5	NA (Dodecane)	16.234	0.057	 M 	2.02	n.a.	450063	
-6	NA (Decanal)	16.407	0.044	 M *	5.69	n.a.	757611	
+24	Dodecane	16.234	0.057	 M 	2.02	n.a.	450063	
+25	Decanal	16.407	0.044	 MB	3.45	1.10	757611	
+26	NA (SPME fiber)	17.074	0.184	BMB	n.a.	1.95	47890	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+27	NA (bag)	17.730	n.a.	BM 	n.a.	n.a.	n.a.	
+28	NA (bag)	17.907	0.053	 M 	n.a.	n.a.	643336	
 n.a.	NA (Caprolactam)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (spironolactone)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Pentadecane)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Hexadecane, 1-bromo-)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+29	NA (bag)	18.421	n.a.	 MB	n.a.	n.a.	n.a.	
+n.a.	Pentadecane	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+30	Hexadecane, 1-bromo-	18.546	0.045	BMB	3.55	1.04	961835	
 n.a.	NA (2-cyclopentylcyclopentan-1-one)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (spironolactone)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+31	NA (spironolactone)	18.808	0.043	BMB	4.20	1.03	1083068	
+32		19.148	0.053	BM *	1.20	1.25	723505	
 n.a.	NA (spironolactone)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-7	Nonyl Acetate	19.890	0.678	 M *^	6.41	0.83	4771	
+33	Nonyl Acetate	19.890	0.678	 M *^	1.04	0.83	4771	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+34		20.512	0.029	 MB*	4.77	1.61	2793840	
+35		20.761	0.033	BMB	10.46	1.60	2259865	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Copaene <alpha->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+36	NA (silicate)	21.356	0.035	BM 	6.47	1.63	2106800	
 n.a.	Bourbonene <beta->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+37	NA (bag)	21.590	n.a.	Rd	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+38	NA (bag)	21.760	0.039	 M 	0.95	n.a.	1709852	
+39	NA (silicate)	21.822	0.037	 M 	1.21	n.a.	1905669	
+40	NA (silicate)	21.896	0.036	 MB	6.36	n.a.	2045357	
+41		21.958	n.a.	Rd	n.a.	n.a.	n.a.	
 n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Caryophyllene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Caryophyllene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+42	NA (silicate)	22.298	0.038	BMB	7.70	1.51	1870726	
+n.a.	Caryophyllene <beta->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Cubebene <beta->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	Bergamotene <alpha-, cis->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+43		22.791	0.037	BMB	6.64	1.20	2079891	
+n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+44	NA (bag)	23.233	0.041	BM 	1.34	n.a.	1751553	
+45		23.325	0.040	 M 	1.30	n.a.	1931602	
+46	NA (bag)	23.410	0.037	 M 	1.58	n.a.	2164671	
+n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+47	Zonarene	23.509	0.036	 M 	1.52	0.94	2312903	
+48		23.611	0.043	 M 	n.a.	n.a.	1693954	
+49	Murrolene <gamma->	23.740	n.a.	 M 	n.a.	n.a.	n.a.	
+50		23.791	0.041	 MB	5.35	n.a.	1900275	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+51	NA (bag)	24.199	0.049	BMB	1.45	0.78	1327598	
+52	Murrolene <alpha->	24.315	0.044	BM 	1.45	n.a.	1655000	
+53	Farnesene <(E,E)-, alpha->	24.417	0.038	 MB	12.84	n.a.	2234640	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
 n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Zonarene)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-8	Murrolene <gamma->	23.791	0.041	 M *	n.a.	0.75	1900275	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Murrolene <alpha->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Farnesene <(E,E)-, alpha->	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	Caryophyllene oxide	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (bag)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+54	NA (bag)	25.233	0.037	BMB	3.49	1.35	2634844	
+55	NA (bag)	25.457	0.039	BMB	5.89	2.18	2327607	
+56		25.542	n.a.	Rd	n.a.	n.a.	n.a.	
+57	NA (bag)	25.594	n.a.	Rd	n.a.	n.a.	n.a.	
+58	NA (silicate)	25.852	0.040	BMB	7.55	1.67	2347043	
+59	Caryophyllene oxide	26.389	0.044	BM 	1.28	0.73	1970035	
+60	NA (bag)	26.525	0.081	 MB	9.12	0.90	592275	
+61	NA (SPME fiber)	27.471	0.041	BMB	9.55	1.02	2463621	
+62	NA (silicate)	28.117	0.039	BMB	2.71	1.02	2936501	
+63	NA (contaminant)	28.291	0.037	BMB	5.58	1.15	3264443	
+n.a.	Napthlene, 1,6-dimethyl-4-1-methylethyl)-)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+64	NA (silicate)	28.658	0.041	BMB	6.96	0.96	2724363	
+65		28.763	n.a.	Rd	n.a.	n.a.	n.a.	
+66		29.120	0.038	BMB	2.91	0.96	3323135	
+67	NA (silicate)	29.304	0.037	BM 	3.13	1.48	3489524	
+68	NA (silicate)	29.501	0.038	 MB	4.77	n.a.	3421788	
+69		29.787	0.033	BM 	2.15	1.11	4482911	
+70	NA (silicate)	29.910	0.034	 MB	8.94	2.68	4276211	
+71	Sulindac sulfide	30.399	0.031	BMB	4.08	1.69	5462589	
+72		30.444	n.a.	Rd	n.a.	n.a.	n.a.	
+73	NA (SPME fiber)	30.610	0.030	BMB	3.04	1.07	5610347	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (contaminant)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Napthlene, 1,6-dimethyl-4-(1-methylethyl)-)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (contaminant)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (Sulindac sulfide)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+74		30.807	0.046	BM 	1.26	n.a.	2478936	
+75	NA (silicate)	30.899	0.040	 M 	1.11	n.a.	3355318	
+76		30.964	0.029	 MB	7.31	n.a.	6314344	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (contaminant)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+77	NA (SPME fiber)	31.307	0.026	BMB	4.81	0.71	7757814	
+78		31.539	0.030	BM 	0.95	n.a.	5991835	
+79	NA (silicate)	31.590	0.033	 M 	1.26	n.a.	5164698	
+80	NA (silicate)	31.654	0.028	 M 	n.a.	n.a.	7251986	
+81		31.716	n.a.	 M 	n.a.	n.a.	n.a.	
+82	NA (silicate)	31.794	n.a.	Rd	n.a.	n.a.	n.a.	
+83		31.892	n.a.	Ru	n.a.	n.a.	n.a.	
+84		31.950	0.064	 MB	9.13	n.a.	1375893	
+85		32.001	n.a.	Rd	n.a.	n.a.	n.a.	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+86	NA (silicate)	32.624	0.023	BMB	9.92	1.24	11230774	
+87	NA (silicate)	33.005	0.022	BMB	n.a.	1.29	12013668	
+88	NA (silicate)	33.134	n.a.	BM 	n.a.	n.a.	n.a.	
+89		33.164	n.a.	 MB	n.a.	n.a.	n.a.	
+90		33.331	0.025	BMB	13.34	1.43	9794980	
 n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (SPME fiber)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (squalene)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
-n.a.	NA (silicate)	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+91	NA (silicate)	33.858	0.022	BMB	9.45	1.01	13677599	
+92	NA (silicate)	34.212	n.a.	Ru	n.a.	n.a.	n.a.	
+93	NA (silicate)	34.270	0.030	BM 	3.12	1.88	7308561	
+94	NA (silicate)	34.416	0.025	 MB	11.08	n.a.	10145091	
+n.a.	Squalene	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+95	NA (silicate)	34.851	0.021	BMB	8.64	1.12	15351565	
+96	NA (silicate)	35.164	0.022	BMB	1.47	0.88	14446422	
+97		35.222	0.025	BMB	3.10	1.47	11373269	
+98	NA (silicate)	35.348	0.023	BMB	10.25	1.16	12748774	
+99	NA (silicate)	35.766	0.025	BMB	9.73	1.68	11461031	
+100	NA (silicate)	36.208	0.029	BMB	2.62	1.31	8783624	
+101		36.341	0.031	BMB	8.39	1.09	7669471	
+102		36.821	0.037	BMB	9.09	2.08	5615764	
+103	NA (silicate)	37.416	0.041	BMB	n.a.	1.44	4674704	
