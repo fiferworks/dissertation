@@ -19,39 +19,29 @@ rm(pkgs, nu_pkgs)
 # reading in master datasheet
 df <- read_csv("data/rrv_volatiles_pca_table.csv")
 
+# removing contaminant
+df <- df %>% select(-Styrene)
+
 # making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
 rrd_spme <-
   df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
 
-# qsep only
+# limiting list to top ten contributing chemicals
+cont_spme <-
+  read_csv("data/rrv_volatiles_contribution_table_pca_dat_spme.csv")
+cont_spme <- head(cont_spme %>% arrange(desc(PCA1)), n = 6)
+rrd_spme <-
+  rrd_spme %>% select(Sample, Treatment, `Injection Method`, cont_spme$Chemical)
+
+# # limiting list to top ten contributing chemicals, qsep only
 rrd_qsep <-
   df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
 
-df <- df %>% select(
-  Sample,
-  Treatment,
-  `Injection Method`,
-  `Pinene <1R-alpha->`,
-  `Pinene <alpha->`,
-  `Pinene <beta->`,
-  `Carene, <3->`,
-  `Carene <delta-3>`,
-  `Phellandrene <beta->`,
-  `p-Cymene`,
-  `D-Limonene`,
-  `Limonene oxide, trans-`,
-  `Copaene <alpha->`,
-  `Copaene <beta->`,
-  `Bourbonene <beta->`,
-  `Bergamotene <alpha-, cis->`,
-  Caryophyllene,
-  `Caryophyllene oxide`,
-  `Caryophyllene <9-epi-(E)->`,
-  `Murrolene <alpha->`,
-  `Murrolene <gamma->`,
-  `Farnesene <(E,E)-, alpha->`,
-  `Farnesene <(E)-, beta->`
-)
+cont_qsep <-
+  read_csv("data/rrv_volatiles_contribution_table_pca_dat_qsep.csv")
+cont_qsep <- head(cont_qsep %>% arrange(desc(PCA1)), n = 6)
+rrd_qsep <-
+  rrd_qsep %>% select(Sample, Treatment, `Injection Method`, cont_qsep$Chemical)
 
 # averaging the baseline plants from the data,
 # they overwhelm components from rrv plants
@@ -91,7 +81,7 @@ make_main_umap <- function(y) {
           ".png",
           sep = "")
   umapd <-
-    y %>% select(-Sample, -Treatment, -`Injection Method`) %>%
+    y %>% select(-Sample,-Treatment,-`Injection Method`) %>%
     as.matrix() %>%
     umap(config = custom.config)
   
@@ -101,7 +91,7 @@ make_main_umap <- function(y) {
               scale = FALSE) %>%
     mutate(UMAP1 = umapd$layout[, 1], UMAP2 = umapd$layout[, 2]) %>%
     pivot_longer(
-      c(-UMAP1,-UMAP2,-Sample,-Treatment,-`Injection Method`),
+      c(-UMAP1, -UMAP2, -Sample, -Treatment, -`Injection Method`),
       names_to = 'Variable',
       values_to = 'Value'
     )
@@ -143,7 +133,7 @@ umap_n_save_graph <- function(x) {
           ".png",
           sep = "")
   umapped <-
-    x %>% select(-Sample, -Treatment, -`Injection Method`) %>%
+    x %>% select(-Sample,-Treatment,-`Injection Method`) %>%
     as.matrix() %>%
     umap(config = custom.config)
   
@@ -153,14 +143,14 @@ umap_n_save_graph <- function(x) {
               scale = FALSE) %>%
     mutate(UMAP1 = umapped$layout[, 1], UMAP2 = umapped$layout[, 2]) %>%
     pivot_longer(
-      c(-UMAP1,-UMAP2,-Sample,-Treatment,-`Injection Method`),
+      c(-UMAP1, -UMAP2, -Sample, -Treatment, -`Injection Method`),
       names_to = 'Variable',
       values_to = 'Value'
     )
   
   ggplot(tib_vols_umap, aes(UMAP1, UMAP2, col = Value, shape = Treatment)) +
     ggtitle(paste(deparse(substitute(x)))) +
-    facet_wrap( ~ Variable) +
+    facet_wrap(~ Variable) +
     geom_point(size = 3) +
     scale_color_viridis_b(begin = 1,
                           end = 0,

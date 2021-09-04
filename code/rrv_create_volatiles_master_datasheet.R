@@ -242,7 +242,7 @@ gc_data$Treatment <-
 gc_data$Treatment <-
   sub("clean_site*", "untreated", gc_data$Treatment)
 gc_data$Treatment <-
-  sub("clean_actigard*", "actigard", gc_data$Treatment)
+  sub("actigard_untreated*", "actigard", gc_data$Treatment)
 gc_data$Treatment <- sub("rrv_site*", "rrv", gc_data$Treatment)
 gc_data$Treatment <-
   sub("clean_greenhouse*", "untreated", gc_data$Treatment)
