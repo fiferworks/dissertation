@@ -103,7 +103,7 @@ Georgia collaborators will be collecting flower samples from all roses once befo
   
 The site at Athens, GA has space for five blocks: A, B, C, D and E. Each block is a 3 $\times$ 6 plot with 18 plants, with three plants in each treatment. The experiments will be run for 12 weeks. We will be sampling flower cuttings from two rows each week, starting with the top rows (1-15 and 16-30 for week one) of each block and rotating to the next row each week (31-45 and 46-60 on week 2) continuing until all rows have been sampled three times. In order to avoid confusion, each rose pot will be labeled with a stake that has the plant number and treatment abbreviation: (W, A, K, M, N, +) written on it. Applications will be done on the same day each week, weather permitting, preferably at the beginning of the week.
 
-```{r}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", out.width="75%"}
 knitr::include_graphics('figure/rrv_ipm_plot_map_2019_athens.png')
 ```
 
