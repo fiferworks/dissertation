@@ -38,9 +38,16 @@ knitr::include_graphics('figure/reed.jpg')
 
 `r fig_nums(name = "asm_2018", caption = "Field design for testing the potential of Acibenzolar-S-Methyl to reduce populations of *P. fructiphilus* by inducing Systemic Acquired Resistance in Pink Double Knock Out® roses. Trials were conducted for three months from August to October 2018 in Griffin, GA. Four treatments were applied weekly for 12 weeks: Blue = Water Red = Actigard50WG 100 mg/L (High rate),  Pink = Actigard50WG 100 mg/L (Half rate) Turquoise = Kontos (Label rate). Flower cuttings were be taken weekly to record *P. fructiphilus* numbers.")`
 
+**Plot Design - 2018**
+```{r}
+knitr::include_graphics('figure/rrv_asm_plot_2018_griffin.png')
+```
+
+`r fig_nums(name = "asm_2018", caption = "Field design for testing the potential of Acibenzolar-S-Methyl to reduce populations of *P. fructiphilus* by inducing Systemic Acquired Resistance in Pink Double Knock Out® roses. Trials were conducted for three months from September to December 2019 in Griffin, GA. Four treatments were applied weekly fo 12 weeks: Blue = Water Red = Actigard50WG 100 mg/L (High rate),  Pink = Actigard50WG 100 mg/L (Half rate) Turquoise = Kontos (Label rate). Flower cuttings were be taken weekly to record *P. fructiphilus* numbers.")`
+
 **Plot Design - 2019**
 ```{r}
-knitr::include_graphics('figure/reed.jpg')
+knitr::include_graphics('figure/rrv_asm_plot_2019_griffin.png')
 ```
 
 `r fig_nums(name = "asm_2019", caption = "Field design for testing the potential of Acibenzolar-S-Methyl to reduce populations of *P. fructiphilus* by inducing Systemic Acquired Resistance in Pink Double Knock Out® roses. Trials were conducted for three months from September to December 2019 in Griffin, GA. Four treatments were applied weekly fo 12 weeks: Blue = Water Red = Actigard50WG 100 mg/L (High rate),  Pink = Actigard50WG 100 mg/L (Half rate) Turquoise = Kontos (Label rate). Flower cuttings were be taken weekly to record *P. fructiphilus* numbers.")`
@@ -97,20 +104,26 @@ Georgia collaborators will be collecting flower samples from all roses once befo
 The site at Athens, GA has space for five blocks: A, B, C, D and E. Each block is a 3 $\times$ 6 plot with 18 plants, with three plants in each treatment. The experiments will be run for 12 weeks. We will be sampling flower cuttings from two rows each week, starting with the top rows (1-15 and 16-30 for week one) of each block and rotating to the next row each week (31-45 and 46-60 on week 2) continuing until all rows have been sampled three times. In order to avoid confusion, each rose pot will be labeled with a stake that has the plant number and treatment abbreviation: (W, A, K, M, N, +) written on it. Applications will be done on the same day each week, weather permitting, preferably at the beginning of the week.
 
 ```{r}
-knitr::include_graphics('figure/reed.jpg')
+knitr::include_graphics('figure/rrv_ipm_plot_map_2019_athens.png')
 ```
 
-`r fig_nums(name = "ipm_athens", caption = "Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control *P. fructiphilus* in Athens, GA with five treatments. W = Water A = Actigard50WG, K = Kontos, M = *A. swirkii* predatory mite sachets, N = SP2700 (Trade name: Ninja, SePro), + = *A. swirskii* + Ninja combined treatments. All products will be applied at their label rates for 12 weeks. Flower cuttings will be taken weekly to record *P. fructiphilus* numbers.")`
+`r fig_nums(name = "ipm_athens", caption = "Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control *P. fructiphilus* in Athens, GA with five treatments. W = Water A = Actigard50WG, K = Kontos, M = *A. swirkii* predatory mite sachets, N = SP2700 (Trade name: Ninja, SePro), + = *A. swirskii* + Ninja combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record *P. fructiphilus* numbers.")`
 
 **Plot Design - Griffin**
   
-The site at Griffin, GA has space for three blocks: X, Y, and Z. Each block is a 3 $\times$ 6 plot with 18 plants, with three plants in each treatment. This experiment will be run for 12 weeks as well. We will be sampling flower cuttings from two rows each week, starting with the top rows (1-9 and 10-18 for week one) of each block and rotating to the next row each week (19-27 and 28-36 on week 2) continuing until all rows have been sampled three times. Labels and applications will be conducted in the same manner as previously described.
+The site at Griffin, GA has space for three blocks: X, Y, and Z. Each block is a 3 $\times$ 6 plot with 18 plants, with three plants in each treatment. This experiment was run for 12 weeks as well. We will be sampling flower cuttings from two rows each week, starting with the top rows (1-9 and 10-18 for week one) of each block and rotating to the next row each week (19-27 and 28-36 on week 2) continuing until all rows have been sampled three times. Labels and applications were conducted in the same manner as previously described.
 
 ```{r}
-knitr::include_graphics('figure/reed.jpg')
+knitr::include_graphics('figure/rrv_ipm_plot_map_2019_griffin.png')
 ```
 
-`r fig_nums(name = "ipm_griffin", caption = "Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control *P. fructiphilus* in Griffin, GA with five treatments. W = Water A = Actigard50WG, K = Kontos, M = *A. swirkii* predatory mite sachets, N = SP2700 (Trade name: Ninja, SePro), + = *A. swirskii* + Ninja combined treatments. All products will be applied at their label rates for 12 weeks. Flower cuttings will be taken weekly to record *P. fructiphilus* numbers.")`
+`r fig_nums(name = "ipm_griffin", caption = "Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control *P. fructiphilus* in Griffin, GA with five treatments. W = Water A = Actigard50WG, K = Kontos, M = *A. swirkii* predatory mite sachets, N = SP2700 (Trade name: Ninja, SePro), + = *A. swirskii* + Ninja combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record *P. fructiphilus* numbers.")`
+
+```{r}
+knitr::include_graphics('figure/rrv_ipm_plot_map_2019_griffin.png')
+```
+
+`r fig_nums(name = "ipm_tally", caption = "Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control *P. fructiphilus* in Tallahassee, FL with five treatments: Water, Actigard50WG, Kontos, *Amblyseius swirkii* predatory mite sachets, and *A. swirskii* + Actigard combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record *P. fructiphilus* numbers.")`
 
 ```{r, echo=FALSE}
 knitr::include_graphics('figure/reed.jpg')
