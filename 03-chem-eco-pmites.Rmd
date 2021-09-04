@@ -53,7 +53,7 @@ Treatments will be the following:
 
 A group of 20 plants will be isolated. Volatiles from the 20 plants will be collected as a baseline (already collected). Then half of the plants will be SAR inducted by bi-weekly spray applications of Acibenzolar-S-Methyl. Subsequently half of the remaining plants (5 control and 5 SAR-induced plants) will be grafted with RRV-infected buds to innoculate them with the virus [@Doudrick1987]. Volatiles will be collected bi-monthly following SAR-induction and RRV application.  
 
-```{r test-vols, fig.height=8, fig.width=10.5, fig.align="center", out.width="75%"}
+```{r test-vols, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%"}
 grid::grid.raster(tiff::readTIFF("figure/vol-extract-trap-filter.tif"))
 ```
 
