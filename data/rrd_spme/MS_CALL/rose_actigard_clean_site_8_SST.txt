@@ -1,0 +1,43 @@
+Chromatogram and SST Results						
+						
+Injection Details						
+Injection Name:		rose_actigard_clean_site_8		Run Time (min):	34.96	
+Vial Number:		39		Injection Volume:	20.00	
+Injection Type:		Unknown		Channel:	MS_F1_[93.00, 500 MMU]]	
+Calibration Level:				Wavelength:	n.a.	
+Instrument Method:		SPME OFV		Bandwidth:	n.a.	
+Processing Method:		3D Qualitative		Dilution Factor:	1.0000	
+Injection Date/Time:		03/Sep/21 12:30		Sample Weight:	1.0000	
+						
+Chromatogram						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+SST Results						
+No. 	Name 	Inj.Condition 	Peak 	Test Result 	Injection 	
+n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+n.a.	n.a.	n.a.	n.a.	n.a.	n.a.	
+	Number of executed test cases: 	n.a.	Total Result: 	Passed		

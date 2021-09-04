@@ -1,0 +1,51 @@
+Summary							
+							
+Sequence Details							
+Name:		rrd_spme			Created On:	20/Feb/21 05:10:37	
+Directory:		Austin			Created By:	ISQ1710520	
+Data Vault:		ChromeleonLocal			Updated On:	03/Sep/21 16:22:28	
+No. of Injections:		37			Updated By:	ISQ1710520	
+							
+By Component		Pinene <1R-alpha->					
+							
+No. 	Injection Name	Ret.Time	Area	Height	Amount	Rel.Area 	Peak Type 
+		min	counts*min	counts		%	
+		MS_F1_[93.00, 500 MMU]]	MS_F1_[93.00, 500 MMU]]	MS_F1_[93.00, 500 MMU]]	MS_F1_[93.00, 500 MMU]]	MS_F1_[93.00, 500 MMU]]	MS_F1_[93.00, 500 MMU]]
+		Pinene <1R-alpha->	Pinene <1R-alpha->	Pinene <1R-alpha->	Pinene <1R-alpha->	Pinene <1R-alpha->	Pinene <1R-alpha->
+1	blank_no_fiber_1	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
+2	blank_fiber_1	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
+3	blank_bag_1ul_nonyl_acetate	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
+4	rose_1ul_nonyl_acetate	8.186	913161.689	15974237.330	n.a.	10.48	BMB
+5	rose_rrv_site_4-1	8.139	2006962.857	39968584.415	n.a.	26.02	 MB
+6	rose_rrv_site_3-1	8.198	3363949.248	72684886.171	n.a.	13.51	BM 
+7	rose_rrv_site_3-2	8.220	363062.211	7587601.368	n.a.	9.17	BMB
+8	rose_rrv_site_3-3	8.227	1775955.321	36678306.301	n.a.	23.13	 MB
+9	rose_rrv_site_2-1	8.207	1811679.041	36390742.793	n.a.	15.38	 MB
+10	rose_rrv_site_2-2	8.217	290859.478	6270692.238	n.a.	5.63	BMB
+11	rose_rrv_site_2-3	8.214	210382.128	4679762.286	n.a.	2.54	BMB
+12	rose_rrv_site_1-1	8.207	275029.289	5657053.893	n.a.	14.33	BMB
+13	rose_rrv_site_1-2	8.217	205119.742	4341663.517	n.a.	4.69	BMB
+14	rose_rrv_site_1-3	8.210	1168053.647	25037782.163	n.a.	15.95	BMB
+15	rose_rrv_site_1-4	8.224	275624.712	6208455.276	n.a.	13.58	BMB
+16	rose_clean_site_11	8.166	5284531.111	109301025.314	n.a.	39.48	BM 
+17	rose_clean_site_12	8.173	318310.312	6825983.232	n.a.	3.15	BMB
+18	rose_clean_site_13	8.197	1464696.488	29155551.900	n.a.	32.57	BMB
+19	rose_clean_site_14	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
+20	rose_clean_site_15	8.217	3023232.478	63048526.686	n.a.	22.63	BMB
+21	rose_clean_site_16	8.190	1155546.545	24146541.246	n.a.	19.38	BMB
+22	rose_clean_site_17	8.224	1380672.711	27777534.111	n.a.	21.74	 MB
+23	rose_clean_site_18	8.237	1943210.185	39346182.217	n.a.	23.36	 MB
+24	rose_clean_site_19	8.234	451080.013	8369669.518	n.a.	13.93	BMB
+25	rose_clean_site_20	8.238	1428992.931	27799344.502	n.a.	30.89	BMB
+26	rose_actigard_clean_site_1	8.197	656399.982	13578475.968	n.a.	56.56	BMB
+27	blank_fiber_2	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
+28	blank_fiber_3	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
+29	blank_bag_1ul_nonyl_acetate_field	n.a.	n.a.	n.a.	n.a.	n.a.	n.a.
+30	rose_actigard_clean_site_2	8.227	546655.618	10852810.263	n.a.	41.10	BMB
+31	rose_actigard_clean_site_3	8.224	539817.245	10880008.867	n.a.	55.90	BMB
+32	rose_actigard_clean_site_4	8.221	274914.974	5407006.509	n.a.	37.25	BMB
+33	rose_actigard_clean_site_5	8.224	297143.899	6255936.808	n.a.	26.98	BMB
+34	rose_actigard_clean_site_6	8.224	899137.129	17682381.483	n.a.	39.62	BMB
+35	rose_actigard_clean_site_7	8.231	371468.479	8031095.261	n.a.	27.37	BMB
+36	rose_actigard_clean_site_8	8.214	1929041.355	38905120.558	n.a.	22.60	BMB
+37	rose_clean_site_21	8.221	2492476.522	53379777.156	n.a.	18.93	BMB

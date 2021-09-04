@@ -3,7 +3,7 @@ Chromatogram and SST Results
 Injection Details						
 Injection Name:		rose_rrv_site_1-1		Run Time (min):	37.96	
 Vial Number:		11		Injection Volume:	20.00	
-Injection Type:		Unknown		Channel:	MS_[93.00, 500 MMU]]	
+Injection Type:		Unknown		Channel:	MS_F1_[93.00, 500 MMU]]	
 Calibration Level:				Wavelength:	n.a.	
 Instrument Method:		SPME OFV		Bandwidth:	n.a.	
 Processing Method:		3D Qualitative		Dilution Factor:	1.0000	

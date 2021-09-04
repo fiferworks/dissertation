@@ -3,7 +3,7 @@ Chromatogram and SST Results
 Injection Details						
 Injection Name:		blank_fiber_3		Run Time (min):	34.96	
 Vial Number:		27		Injection Volume:	20.00	
-Injection Type:		Blank		Channel:	MS_[93.00, 500 MMU]]	
+Injection Type:		Blank		Channel:	MS_F1_[93.00, 500 MMU]]	
 Calibration Level:				Wavelength:	n.a.	
 Instrument Method:		SPME OFV		Bandwidth:	n.a.	
 Processing Method:		3D Qualitative		Dilution Factor:	1.0000	
