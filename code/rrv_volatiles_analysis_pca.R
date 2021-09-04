@@ -18,39 +18,15 @@ rm(pkgs, nu_pkgs)
 # reading in master datasheet
 df <- read_csv("data/rrv_volatiles_pca_table.csv")
 
+df <- df %>% select(-Styrene)
+
 # making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
 rrd_spme <-
-  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
+  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if( ~ any(. > 0))
 
 # qsep only
 rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
-
-df <- df %>% select(
-  Sample,
-  Treatment,
-  `Injection Method`,
-  `Pinene <1R-alpha->`,
-  `Pinene <alpha->`,
-  `Pinene <beta->`,
-  `Carene, <3->`,
-  `Carene <delta-3>`,
-  `Phellandrene <beta->`,
-  `p-Cymene`,
-  `D-Limonene`,
-  `Limonene oxide, trans-`,
-  `Copaene <alpha->`,
-  `Copaene <beta->`,
-  `Bourbonene <beta->`,
-  `Bergamotene <alpha-, cis->`,
-  Caryophyllene,
-  `Caryophyllene oxide`,
-  `Caryophyllene <9-epi-(E)->`,
-  `Murrolene <alpha->`,
-  `Murrolene <gamma->`,
-  `Farnesene <(E,E)-, alpha->`,
-  `Farnesene <(E)-, beta->`
-)
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
 
 # averaging the baseline plants from the data,
 # they overwhelm components from rrv plants
@@ -69,14 +45,11 @@ df <- bind_rows(df, avg_clean_rose_qsep)
 df <- df %>%
   filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
-df <- df %>%
-  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
-
 ####PRINCIPAL COMPONENT ANALYSIS####
 # prcomp uses singular value decomposition (SVD)
 # quick helper function to run for each dataframe
 run_pca <- function(data) {
-  data %>% select(-Sample, -Treatment,-`Injection Method`) %>%
+  data %>% select(-Sample,-Treatment, -`Injection Method`) %>%
     prcomp(center = TRUE, scale = FALSE)
 }
 
