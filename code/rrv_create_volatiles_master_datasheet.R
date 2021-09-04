@@ -83,7 +83,7 @@ for (file in gcfiles) {
     gc_data_temp <- gc_data_temp %>% slice(-(1:2))
     
     # dropping unnecessary columns
-    gc_data_temp <- select(gc_data_temp, -'X9', -'Amount')
+    gc_data_temp <- select(gc_data_temp,-'...9',-'Amount')
     
     # grabs the file name of the file being processed
     path_name <- file
@@ -302,41 +302,42 @@ Peaks <- gc_data %>%
   group_by(Sample)
 
 #list of unique samples
-sample_list <- unique(IntStds$Sample)
+sample_list <- IntStds$Sample
+#unique(IntStds$Sample)
 
 # making a dataframe for the following loop
 tbl_colnames <-
   c(
-    'Sample',
-    'Treatment',
+    'Path',
     'Peak No.',
     'Peak Name',
     'Retention Time (min)',
-    'IS Relative Area (%)',
     'Area (counts*min)',
     'Height (counts)',
     'Relative Area (%)',
     'Relative Height (%)',
     'Injection Method',
     'Injection Type',
+    'Sample',
+    'Treatment',
     'Channel',
     'Location',
-    'Path'
+    'IS Relative Area (%)'
   )
 df <-
   read_csv("\n",
            col_names = tbl_colnames,
-           col_types = "ccdcddddddccccc")
+           col_types = "cdcdddddccccccd")
 
 # loop to calculate area relative to the internal standard of each sample
 for (i in 1:length(sample_list)) {
   if (exists("df")) {
-    filtered_peaks <- Peaks[Peaks$Sample == sample_list[i],]
-    filtered_is <- IntStds[IntStds$Sample == sample_list[i],]
+    filtered_peaks <- Peaks[Peaks$Sample == sample_list[i], ]
+    filtered_is <- IntStds[IntStds$Sample == sample_list[i], ]
     tmp <-
       mutate(
         filtered_peaks,
-        `IS Relative Area (%)` =  filtered_peaks$`Area (counts*min)` / filtered_is$`Area (counts*min)`
+        `IS Relative Area (%)` =  filtered_peaks$`Area (counts*min)` / filtered_is$`Area (counts*min)`[1]
       )
     df <- bind_rows(df, tmp)
   }
