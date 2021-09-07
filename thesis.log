@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  3 SEP 2021 23:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  7 SEP 2021 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,18 +745,6 @@ Overfull \hbox (2.20506pt too wide) in paragraph at lines 45--45
  \TU/lmr/m/n/12 ment treatments including predatory mites to reduce pop- 
  []
 
-
-Overfull \hbox (25.02515pt too wide) in paragraph at lines 47--47
- [][] [][][]\TU/lmr/m/n/12 First report of the \TU/lmr/m/it/12 Brevipalpus\TU/l
-mr/m/n/12 -transmitted (Trombidiformes: Tenuipalp- 
- []
-
-
-Overfull \hbox (2.82912pt too wide) in paragraph at lines 47--47
- \TU/lmr/m/n/12 idae) \TU/lmr/m/it/12 Orchid fleck dichorhavirus \TU/lmr/m/n/12
- infecting three ornamentals in Florida[][] [][]  
- []
-
 )
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
@@ -954,89 +942,94 @@ File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
 [51]
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
-[52]
-Overfull \hbox (1.88098pt too wide) in paragraph at lines 601--601
-[]\TU/lmr/bx/n/12 First report of the \TU/lmr/bx/it/12 Brevipalpus\TU/lmr/bx/n/
-12 -transmitted (Trombidiformes: Tenuipalp- 
+[52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67]
+
+Overfull \hbox (2.01302pt too wide) in paragraph at lines 763--765
+\TU/lmr/m/n/12 servation. Trends in Ecology & Evolution. 22: 148–155, DOI:[][]1
+0.1016/j.tree.2006.11.004[][].  
  []
 
-[53] [54] [55] [56] [57] [58] [59] [60] [61] [62]
-Overfull \hbox (4.33514pt too wide) in alignment at lines 703--707
+[68] [69] [70] [71] [72] [73]
+Overfull \hbox (54.39302pt too wide) in paragraph at lines 919--921
+\TU/lmr/m/n/12 duction of systemic acquired resistance. Science. 261: 754–756, 
+DOI:[][]10.1126/science.261.5122.754[][].  
+ []
+
+[74]
+Overfull \hbox (18.78905pt too wide) in paragraph at lines 946--948
+\TU/lmr/m/n/12 their relationships with \TU/lmr/m/it/12 Tetranychus urticae\TU/
+lmr/m/n/12 . Phytopathology. 64: 494, DOI:[][]10.1094/phyto- 
+ []
+
+
+Overfull \hbox (50.42104pt too wide) in paragraph at lines 949--951
+\TU/lmr/m/n/12 and gene-for-gene defense response. Plant Physiology. 142: 809–8
+11, DOI:[][]10.1104/pp.106.900207[][].  
+ []
+
+[75] [76] [77] [78] [79] [80]
+Overfull \hbox (12.445pt too wide) in paragraph at lines 1087--1089
+\TU/lmr/m/n/12 American Society for Horticultural Science. 128: 575–577, DOI:[]
+[]10.21273/jashs.128.4.0575[][].  
+ []
+
+[81] [82] [83] [84] [85]
+Overfull \hbox (41.81702pt too wide) in paragraph at lines 1222--1224
+\TU/lmr/m/n/12 sequences. Bulletin of Entomological Research. 100: 263–272, DOI
+:[][]10.1017/s0007485309990216[][].  
+ []
+
+[86]
+LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 1
+244.
+(c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
+File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
+) [87] [88] [89]
+Overfull \hbox (4.33514pt too wide) in alignment at lines 1319--1323
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.33514pt too wide) in alignment at lines 707--712
+Overfull \hbox (4.33514pt too wide) in alignment at lines 1323--1328
  [] [] [] [] 
  []
 
-[63] [64]
+[90]
 File: thesis_files/figure-latex/fig_1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig_1-1.pdf>
 
-Overfull \hbox (420.95488pt too wide) in paragraph at lines 729--730
+Overfull \hbox (420.95488pt too wide) in paragraph at lines 1343--1344
 [][]  
  []
 
+[91]
 File: thesis_files/figure-latex/fig_2-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig_2-1.pdf>
-[65]
+[92]
 File: thesis_files/figure-latex/fig_3-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig_3-1.pdf>
-[66]
-File: thesis_files/figure-latex/fig_4-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/fig_4-1.pdf>
-[67] [68] [69
-
-] [70]
-Overfull \hbox (44.0428pt too wide) in paragraph at lines 802--804
- \TU/lmr/m/n/12 predation of their offspring. Plant Science. 252: 300–310, DOI:
-[][]10.1016/j.plantsci.2016.08.004[][].  
- []
-
-[71] [72] [73]
-Overfull \hbox (13.1908pt too wide) in paragraph at lines 856--858
- \TU/lmr/m/n/12 volatiles. Entomologia Experimentalis et Applicata. 110: 181–18
-9, DOI:[][]10.1111/j.0013- 
- []
-
-[74] [75] [76] [77] [78] [79] [80]
-Overfull \hbox (33.2908pt too wide) in paragraph at lines 1000--1002
- \TU/lmr/m/it/12 chorhavirus\TU/lmr/m/n/12 ). Journal of Economic Entomology. 1
-13: 1628–1634, DOI:[][]10.1093/jee/toaa070[][].  
- []
-
-[81] [82] [83] [84] [85] [86] [87] [88]
-Overfull \hbox (26.89877pt too wide) in paragraph at lines 1183--1185
- \TU/lmr/m/n/12 American Society for Horticultural Science. 128: 575–577, DOI:[
-][]10.21273/jashs.128.4.0575[][].  
- []
-
-[89] [90] [91] [92] [93] [94] [95]
-LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 1
-343.
-(c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
-File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
-) [96] [97] [98]
+[93] [94]
 No file thesis.bbl.
-[99] [100
+[95
+
+] [96
 
 
 ] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B30804191AAB6BBBB12E8ED4DA0B3894;17400.
+(rerunfilecheck)             Checksum: 30D246344E155C08108FFE7B67252198;17133.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 162 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18157 strings out of 476533
- 334115 string characters out of 5821544
- 638789 words of memory out of 5000000
- 38247 multiletter control sequences out of 15000+600000
+ 18150 strings out of 476533
+ 333738 string characters out of 5821544
+ 644291 words of memory out of 5000000
+ 38241 multiletter control sequences out of 15000+600000
  409505 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,17n,81p,3835b,1034s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,17n,81p,8461b,1034s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (100 pages).
+Output written on thesis.pdf (96 pages).

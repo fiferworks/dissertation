@@ -44,15 +44,16 @@
 \contentsline {subsubsection}{\numberline {5.2.0.1}4.2.1 Problem Statement}{47}{subsubsection.5.2.0.1}%
 \contentsline {subsubsection}{\numberline {5.2.0.2}4.2.2 Proposal: We propose testing various pest management treatments including predatory mites to reduce populations of \emph {Phyllocoptes fructiphilus}}{47}{subsubsection.5.2.0.2}%
 \contentsline {subsubsection}{\numberline {5.2.0.3}4.2.3 Materials \& Methods}{48}{subsubsection.5.2.0.3}%
-\contentsline {subsection}{\numberline {5.2.1}First report of the \emph {Brevipalpus}-transmitted (Trombidiformes: Tenuipalpidae) \emph {Orchid fleck dichorhavirus} infecting three ornamentals in Florida}{53}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}\emph {Brevipalpus}-transmitted orchid fleck virus infecting three new ornamental hosts in Florida}{53}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Abstract}{55}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Keywords:}{56}{subsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Virus Detection}{57}{subsubsection.5.2.3.1}%
-\contentsline {subsubsection}{\numberline {5.2.3.2}Mite Description}{59}{subsubsection.5.2.3.2}%
-\contentsline {subsection}{\numberline {5.2.4}Acknowledgements}{63}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}References}{63}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Table 1: List of Asparagaceae (Nolinoidaea) species with verified cases of \emph {Orchid fleck dichorhavirus}, collected from the landscape of northern Florida}{63}{subsection.5.2.6}%
-\contentsline {subsection}{\numberline {5.2.7}Figure captions}{64}{subsection.5.2.7}%
-\contentsline {subsection}{\numberline {5.2.8}Figures}{65}{subsection.5.2.8}%
-\contentsline {chapter}{REFERENCES}{69}{chapter*.4}%
-\contentsline {extrachapter}{BIOGRAPHICAL SKETCH}{100}{chapter*.5}%
+\contentsline {subsection}{\numberline {5.2.3}Resumen}{55}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Keywords:}{56}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}Virus Detection}{57}{subsubsection.5.2.4.1}%
+\contentsline {subsubsection}{\numberline {5.2.4.2}Mite Description}{59}{subsubsection.5.2.4.2}%
+\contentsline {subsection}{\numberline {5.2.5}Acknowledgements}{62}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}References}{63}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Table 1: List of Asparagaceae (Nolinoidaea) species infected with orchid fleck virus, collected from the landscape of northern Florida}{90}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.8}Figure captions}{91}{subsection.5.2.8}%
+\contentsline {subsection}{\numberline {5.2.9}Figures}{92}{subsection.5.2.9}%
+\contentsline {chapter}{REFERENCES}{95}{chapter*.4}%
+\contentsline {extrachapter}{BIOGRAPHICAL SKETCH}{96}{chapter*.5}%
