@@ -54,6 +54,10 @@ knitr::include_graphics('figure/reed.jpg')
 
 ## Integrated Pest Management (IPM) {#ipm}
 <!-- Describe what it is -->
+Integrated Pest Management (IPM) is a philosophy of pest control based on integrating as many different types of control to keep pest populations underneath their economic injury level (EIL). The EIL is where the cost of controlling pest damage exceeds the costs of crop production. This EIL is informed by the economic threshold, a point where a pest density has been exceeded, and crop losses will occur without intervention. These thresholds 
+
+
+biological, cultural, environmental and chemical
 
 <!-- Cecidomyiidae feed on *Phyllocoptruta oleivora* [@Villanueva2006] -->
 
@@ -84,6 +88,7 @@ Plant cross-talk during the induction of plant defenses is put under pressure wh
 
 ## Predatory mites
 <!-- Predatory mites have potential to control *Brevipalpus* mites [@Argolo2020] -->
+The most popular species of predatory mites is the Phytoseiidae, which are commonly used to control many different pest species. Phytoseiid mites have been commercially mass-reared for their release in greenhouses.
 
 
 ### Amblyseius swirskii
