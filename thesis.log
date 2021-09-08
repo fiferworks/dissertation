@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  7 SEP 2021 21:25
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  7 SEP 2021 22:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -768,13 +768,13 @@ File: thesis_files/figure-latex/symptoms-1.pdf Graphic file (type pdf)
 [15]
 File: figure/mite-pfruct-hide.png Graphic file (type bmp)
 <figure/mite-pfruct-hide.png>
-[16] [17] [18] [19] [20]
+[16] [17] [18] [19] [20] [21]
 ***************************
 CHAPTER 2.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 254.
+(hyperref)                removing `\uppercase' on input line 256.
 
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf>
@@ -784,7 +784,7 @@ File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 1>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 1>
-[21
+[22
 
 ]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
@@ -793,79 +793,79 @@ File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 1>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 1>
-[22]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
 [23]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
+<use pubs/pfruct-report.pdf, page 2>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
+<use pubs/pfruct-report.pdf, page 2>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
+<use pubs/pfruct-report.pdf, page 2>
 [24]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 [25]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
+<use pubs/pfruct-report.pdf, page 4>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
+<use pubs/pfruct-report.pdf, page 4>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
+<use pubs/pfruct-report.pdf, page 4>
 [26]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+[27]
 ***************************
 CHAPTER 3.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 259.
+(hyperref)                removing `\uppercase' on input line 261.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 265.
+(hyperref)                than one, level fixed on input line 267.
 
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
-[27
+[28
 
 ]
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
-[28] [29]
+[29] [30]
 Missing character: There is no α (U+03B1) in font [lmroman12-regular]:mapping=t
 ex-text;!
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
-[30]
+[31]
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
-[31] [32] [33] [34] [35]
+[32] [33] [34] [35] [36]
 ***************************
 CHAPTER 4.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 356.
+(hyperref)                removing `\uppercase' on input line 358.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 362.
+(hyperref)                than one, level fixed on input line 364.
 
-[36
+[37
 
 ]
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
-[37]
+[38]
 Missing character: There is no χ (U+03C7) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no χ (U+03C7) in font [lmroman12-regular]:mapping=t
@@ -874,15 +874,15 @@ Missing character: There is no χ (U+03C7) in font [lmroman12-regular]:mapping=t
 ex-text;!
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 387.
+(hyperref)                than one, level fixed on input line 389.
 
-[38]
+[39]
 File: thesis_files/figure-latex/test-vols-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/test-vols-1.pdf>
-[39] [40]
+[40] [41]
 Missing character: There is no χ (U+03C7) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[41]
+[42]
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
 Missing character: There is no μ (U+03BC) in font [lmroman12-regular]:mapping=t
@@ -893,124 +893,130 @@ Missing character: There is no χ (U+03C7) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no χ (U+03C7) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[42] [43]
+[43] [44]
 ***************************
 CHAPTER 5.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 475.
+(hyperref)                removing `\uppercase' on input line 477.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 478.
+(hyperref)                than one, level fixed on input line 480.
 
-[44
+[45
 
-] [45]
+] [46]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 500.
+(hyperref)                than one, level fixed on input line 502.
 
-[46]
+[47]
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
-[47]
+[48]
 File: figure/rrv_asm_plot_2018_griffin.png Graphic file (type bmp)
 <figure/rrv_asm_plot_2018_griffin.png>
-[48]
+[49]
 File: figure/rrv_asm_plot_2019_griffin.png Graphic file (type bmp)
 <figure/rrv_asm_plot_2019_griffin.png>
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 535.
+(hyperref)                than one, level fixed on input line 537.
 
 
-Overfull \hbox (0.16501pt too wide) in paragraph at lines 538--538
+Overfull \hbox (0.16501pt too wide) in paragraph at lines 540--540
 \TU/lmr/bx/n/12 ments including predatory mites to reduce populations of \TU/lm
 r/bx/it/12 Phyllocoptes 
  []
 
-[49] [50] [51]
+[50] [51] [52]
 File: figure/rrv_ipm_plot_map_2019_athens.png Graphic file (type bmp)
 <figure/rrv_ipm_plot_map_2019_athens.png>
-[52]
-File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
-<figure/rrv_ipm_plot_map_2019_griffin.png>
-File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
-<figure/rrv_ipm_plot_map_2019_griffin.png>
 [53]
+File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
+<figure/rrv_ipm_plot_map_2019_griffin.png>
+File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
+<figure/rrv_ipm_plot_map_2019_griffin.png>
+[54]
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
-[54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64]
-Overfull \hbox (4.33514pt too wide) in alignment at lines 674--678
+[55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65]
+Overfull \hbox (4.33514pt too wide) in alignment at lines 676--680
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.33514pt too wide) in alignment at lines 678--683
+Overfull \hbox (4.33514pt too wide) in alignment at lines 680--685
  [] [] [] [] 
- []
-
-[65]
-File: thesis_files/figure-latex/fig_1-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/fig_1-1.pdf>
-
-Overfull \hbox (420.95488pt too wide) in paragraph at lines 698--699
-[][]  
  []
 
 [66]
+File: thesis_files/figure-latex/fig_1-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/fig_1-1.pdf>
+
+Overfull \hbox (420.95488pt too wide) in paragraph at lines 700--701
+[][]  
+ []
+
+[67]
 File: thesis_files/figure-latex/fig_2-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig_2-1.pdf>
-[67]
+[68]
 File: thesis_files/figure-latex/fig_3-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig_3-1.pdf>
-[68] [69] [70
+[69] [70] [71
 
-] [71] [72]
-Overfull \hbox (44.0428pt too wide) in paragraph at lines 772--774
+] [72] [73]
+Overfull \hbox (44.0428pt too wide) in paragraph at lines 774--776
  \TU/lmr/m/n/12 predation of their offspring. Plant Science. 252: 300–310, DOI:
 [][]10.1016/j.plantsci.2016.08.004[][].  
  []
 
-[73] [74]
-Overfull \hbox (13.1908pt too wide) in paragraph at lines 826--828
+[74] [75]
+Overfull \hbox (13.1908pt too wide) in paragraph at lines 831--833
  \TU/lmr/m/n/12 volatiles. Entomologia Experimentalis et Applicata. 110: 181–18
 9, DOI:[][]10.1111/j.0013- 
  []
 
-[75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89]
-Overfull \hbox (26.89877pt too wide) in paragraph at lines 1156--1158
+[76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87]
+Overfull \hbox (6.66678pt too wide) in paragraph at lines 1092--1094
+ \TU/lmr/m/n/12 and future prospects. Acta Horticulturae. 13–18, DOI:[][]10.176
+60/actahortic.2009.816.1[][].  
+ []
+
+[88] [89] [90] [91]
+Overfull \hbox (26.89877pt too wide) in paragraph at lines 1185--1187
  \TU/lmr/m/n/12 American Society for Horticultural Science. 128: 575–577, DOI:[
 ][]10.21273/jashs.128.4.0575[][].  
  []
 
-[90] [91] [92] [93] [94] [95] [96] [97]
+[92] [93] [94] [95] [96] [97] [98] [99]
 LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 1
-328.
+357.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
 File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
-) [98] [99]
+) [100] [101] [102]
 No file thesis.bbl.
-[100] [101] [102
+[103] [104
 
 
 ] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E8AE02532EAD19DE15A35C654DED7D13;17021.
+(rerunfilecheck)             Checksum: FEBA005D9FC7F6ECCAF611B6EEDBE601;17021.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 162 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18177 strings out of 476533
- 334715 string characters out of 5821544
- 644126 words of memory out of 5000000
- 38266 multiletter control sequences out of 15000+600000
+ 18176 strings out of 476533
+ 334702 string characters out of 5821544
+ 644123 words of memory out of 5000000
+ 38265 multiletter control sequences out of 15000+600000
  409505 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,17n,81p,8461b,1036s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (102 pages).
+Output written on thesis.pdf (104 pages).
