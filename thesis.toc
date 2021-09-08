@@ -3,14 +3,13 @@
 \addvspace {10pt}\noindent {CHAPTER}\hfill \par 
 \contentsline {chapter}{\numberline {1}\uppercase {Literature Review}}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}A small introduction to some herbivorous Acari}{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Coevolved Plant Specialists: The Eriophyoidea \{erios-litrev\}}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Coevolved Plant Specialists: The Eriophyoidea}{11}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}\emph {P. fructiphilus} acts as the vector of Rose Rosette Virus, the causal agent of Rose Rosette Disease}{12}{subsection.1.2.1}%
 \contentsline {section}{\numberline {1.3}Integrated Pest Management (IPM): best practices for modern agriculture}{15}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Current Management of Rose Rosette Disease is not effective}{17}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Phytoseiids mites: good options for biological control \{ipm-preds-litrev\}}{18}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}\emph {Amblyseius swirskii} (Acari: Parasitiformes: Mesostigmata: Ascoidea: Phytoseiidae) for biocontrol}{19}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Plant defenses and Systemic Acquires Resistance (SAR) \{sar-litrev\}}{19}{section.1.4}%
-\contentsline {section}{\numberline {1.5}A second mite-plant-pathogen system: \emph {Brevipalpus californicus} and Orchid fleck virus}{21}{section.1.5}%
+\contentsline {subsection}{\numberline {1.3.2}Phytoseiids mites: good options for biological control of RRD?}{18}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Plant defenses and Systemic Acquires Resistance (SAR)}{20}{section.1.4}%
+\contentsline {section}{\numberline {1.5}A second mite-plant-pathogen system: \emph {Brevipalpus californicus} and Orchid fleck virus}{22}{section.1.5}%
 \contentsline {chapter}{\numberline {2}\uppercase {First report of \emph {Phyllocoptes fructiphilus} in Florida}}{23}{chapter.2}%
 \contentsline {chapter}{\numberline {3}\uppercase {2. Objective 1: Survey for the invasive mite \emph {Phyllocoptes fructiphilus}, Rose Rosette Virus (RRV), and wild predatory mites in northern Florida}}{29}{chapter.3}%
 \contentsline {section}{\numberline {3.1}2.1 \emph {P. fructiphilus} detection in Northern Florida}{29}{section.3.1}%
@@ -56,4 +55,4 @@
 \contentsline {subsection}{\numberline {5.2.7}Figure captions}{85}{subsection.5.2.7}%
 \contentsline {subsection}{\numberline {5.2.8}Figures}{86}{subsection.5.2.8}%
 \contentsline {chapter}{REFERENCES}{89}{chapter*.4}%
-\contentsline {extrachapter}{BIOGRAPHICAL SKETCH}{125}{chapter*.5}%
+\contentsline {extrachapter}{BIOGRAPHICAL SKETCH}{128}{chapter*.5}%

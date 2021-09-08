@@ -24,7 +24,7 @@ As part of the efforts to develop novel mite management methods, our lab has lev
 
 While testing the compatibility of our rose system with various commercially-available predatory mites, we were excited to observe that *Amblyseius swirskii* Athias-Henriot (Mesostigmata: Phytoseiidae) mites were attracted towards roses which were infected with RRD (see *`r citef("rose_vols")`*). This was encouraging because *A. swirskii* are generalist predators which feed on other common agricultural pests such as whiteflies [@Bolckmans2005], spider mites [@McMurtry1970], and thrips [@Wimmer2008], so there is good cause to believe that these mites could feed on eriophyid mites. *A. swirskii* can also persist on pollen [@Loughner2011; @Delisle2015] and other arthropods even when the pest of concern is absent [@Janssen2015]. This allows *A. swirskii*  to be released as a preventative measure instead of reacting to an outbreak [@Kutuk2011]. Furthermore, phytoseiid mites integrate well into pest management programs and are compatible with certain pesticides [@Trumble1993; @Nicetic2001; @Fernandez2017] and other bio-control agents [@Midthassel2016]. Lastly, predatory mites are able to locate their prey in tight areas when other predators might be too big. These features make *A. swirskii* an interesting option for managing *P. fructiphilus*, where conventional methods are undesireable or unavailable.
 
-```{r}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%"}
 knitr::include_graphics('figure/rose_graph.png')
 ```
 
@@ -36,7 +36,7 @@ The most interesting part about discovering these low levels of Methyl Salicylat
 
 In light of this knowledge, we collaborated with the University of Georgia in to test how SAR-induction might protect roses from *P. fructiphilus* and/or RRD. Acibenzolar-S-methyl (ASM) is a SAR-inducing chemical which works like Salicylic Acid to induce plant defenses against viruses and bacteria [@Takeshita2013, @Cole1999, @Ziadi2001; @Tripathi2010]. ASM application also has shown chitinase activity in roses [@Suo2001], which may interfere with feeding by herbivorous mites. We tested its efficacy against mites in field trials conducted at Griffin and Athens, GA, sites with low and high *P. fructiphilus* pest pressure, respectively. We tested ASM alongside a different a SAR-inducer (SP2700, Trade name 'Ninja', SePro) and combined one of the SAR-inducers with predatory mites to observe any synergistic effects. We used a miticide as a negative control and water as a positive control. (see *`r citef("ipm")`*). Combining predatory mites with a SAR-inducer was as effective as the miticide alone, and controlled herbivorous mite populations more than either SAR-induction or predatory mites alone (see *`r citef("ipm")`*).
 
-```{r}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%"}
 knitr::include_graphics('figure/ipm_graph.png')
 ```
 

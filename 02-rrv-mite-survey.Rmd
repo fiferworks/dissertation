@@ -3,6 +3,8 @@
 ## 2.1 *P. fructiphilus* detection in Northern Florida {#survey-nfl}
 
 #### 2.1.1 Problem Statement
+<!-- Phytoseiid mites require expert identification, and many species have been misidentified [@Demard2021] -->
+
 Rose Rosette Virus (RRV), the casual agent of Rose Rosette Disease (RRD) and *P. fructiphilus* Kiefer invaded the southeastern United States on the multiflora rose, *R. multiflora* (Thunb) as it spread its range towards the coast [@Amrine2002; @Otero-Colina2018]. RRD is present throughout the US, including Decatur County, GA, near the Florida border (*`r citef("eddmaps")`*), [@EDDMapS2019].
 ```{r, echo=FALSE}
 knitr::include_graphics('figure/reed.jpg')
