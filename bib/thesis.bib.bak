@@ -40,6 +40,63 @@
   publisher = {University of Chicago Press},
 }
 
+@Book{Agrios2004,
+  author    = {Agrios, George N.},
+  publisher = {Academic Press},
+  title     = {Plant pathology},
+  year      = {2004},
+  isbn      = {0120445654},
+  month     = dec,
+  abstract  = {This fifth edition of the classic textbook in plant pathology outlines how to recognize, treat, and prevent plant diseases. It provides extensive coverage of abiotic, fungal, viral, bacterial, nematode and other plant diseases and their associated epidemiology. It also covers the genetics of resistance and modern management on plant disease.
+
+Plant Pathology, Fifth Edition, is the most comprehensive resource and textbook that professionals, faculty and students can consult for well-organized, essential information. This thoroughly revised edition is 45% larger, covering new discoveries and developments in plant pathology and enhanced by hundreds of new color photographs and illustrations.
+
+Key Features
+The latest information on molecular techniques and biological control in plant diseases
+Comprehensive in coverage
+Numerous excellent diagrams and photographs
+A large variety of disease examples for instructors to choose for their course
+Readership
+Students in senior undergraduate and postgraduate level plant pathology courses, in departments of plant science, crop science, botany, forestry and related agricultural sciences
+
+Table of Contents
+1. GENERAL ASPECTS
+
+2. PARASITISM AND DISEASE DEVELOPMENT
+
+3. EFFECTS OF PATHOGENS ON PLANT PHYSIOLOGICAL FUNCTIONS
+
+4. GENETICS OF PLANT DISEASE
+
+5. HOW PATHOGENS ATTACK PLANTS
+
+6. HOW PLANTS DEFEND THEMSELVES AGAINST PATHOGENS
+
+7. ENVIRONMENTAL EFFECTS ON THE DEVELOPMENT OF PLANT DISEASE
+
+8. PLANT DISEASE EPIDEMIOLOGY
+
+9. CONTROL OF PLANT DISEASES
+
+10. ENVIRONMENTAL FACTORS THAT CAUSE PLANT DISEASES
+
+11. PLANT DISEASES CAUSED BY FUNGI
+
+12. PLANT DISEASES CAUSED BY PROKARYOTES: BACTERIA AND MOLLICUTES
+
+13. PLANT DISEASES CAUSED BY PARASITIC HIGHER PLANTS,
+INVASIVE HIGHER PLANTS, AND PARASITIC GREEN PLANTS.
+
+14. PLANT DISEASES CAUSED BY VIRUSES
+
+15. PLANT DISEASES CAUSED BY NEMATODES
+
+16. PLANT DISEASES CAUSED BY FLAGELLATE PROTOZOA},
+  ean       = {9780120445653},
+  pagetotal = {952},
+  url       = {https://www.ebook.de/de/product/3267675/george_n_agrios_plant_pathology.html},
+}
+
 @Article{Akyazi2017,
   author    = {Akyazi, Rana and Ueckermann, Eddie A. and Liburd, Oscar E.},
   journal   = {Florida Entomologist},
@@ -2013,10 +2070,23 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   volume  = {103},
 }
 
+@Book{Flint1981,
+  author    = {Flint, Mary Louise and van den Bosch, Robert},
+  publisher = {Springer {US}},
+  title     = {Introduction to integrated pest management},
+  year      = {1981},
+  isbn      = {9781461592129},
+  month     = dec,
+  doi       = {10.1007/978-1-4615-9212-9},
+  ean       = {9781461592129},
+  pagetotal = {256},
+  url       = {https://www.ebook.de/de/product/25445730/m_l_flint_r_van_den_bosch_introduction_to_integrated_pest_management.html},
+}
+
 @Article{Francl2001,
   author    = {Francl, L. J.},
-  title     = {The Disease Triangle: A Plant Pathological Paradigm Revisited.},
   journal   = {The Plant Health Instructor},
+  title     = {The disease triangle: a plant pathological paradigm revisited.},
   year      = {2001},
   doi       = {10.1094/phi-t-2001-0517-01},
   publisher = {Scientific Societies},
@@ -2174,6 +2244,16 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   volume    = {97},
   doi       = {10.1094/pdis-12-12-1143-re},
   publisher = {Scientific Societies},
+}
+
+@Book{Gaeumann1950,
+  author    = {G{\"{a}}umann, Ernst Albert},
+  publisher = {Hafner Publishing Company},
+  title     = {Principles of plant infection : a text-book of general plant pathology for biologists, agriculturists, foresters and plant breeders},
+  year      = {1950},
+  address   = {New York},
+  abstract  = {Sections: Introduction. Infection (mechanisms, environment, pathways). Infection Chains (sources, saphrophytes, transmission, epidemiology). The Parasitic Adaptation of Pathogens (innate constitutional differences in the parasitic adaptation of pathogens). The Disease Proneness of the Host (axeny, resistance, penetration, spread, defense reations, induced tolerance, induced tolerance, passive immunization, the inheritance of disease proneness, changes in disease proneness due to environmental conditions). The Disease (morphological, anatomical and physiological manifestations). The Control of Infectious Diseases of Plants. Literature Cited. Appendix.},
+  comment   = {Book that goes into depth on the three way interactions between host, environment and pathogen for disease to occur},
 }
 
 @Misc{GBIF2019,
@@ -2460,7 +2540,7 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   publisher = {Systematic and Applied Acarology Society},
 }
 
-@Book{Helle1985,
+@InBook{Helle1985,
   author    = {Helle, W.},
   publisher = {Elsevier Distributors for the United States and Canada, Elsevier Science Pub. Co},
   title     = {Spider mites : their biology, natural enemies, and control},
@@ -3596,6 +3676,18 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   publisher = {{FapUNIFESP} ({SciELO})},
 }
 
+@InBook{Marquina2010,
+  author    = {Marquina, Julio C{\'{e}}sar Tello and Ferre, Francisco Camacho},
+  chapter   = {Producci{\'{o}}n integrada en {Andaluc{\'{i}}a:} cultivos hort{\'{i}}culas protegidos},
+  editor    = {Marquina, Julio C{\'{e}}sar Tello and Camacho-Ferre, Francisco and Torres-Vila, Luis Miguel},
+  pages     = {15--43},
+  publisher = {Fundaci{\'{o}}n Cajamar},
+  title     = {Organismos para el control de pat{\'{o}}genos en los cultivos protegidos : pr{\'{a}}cticas culturales para una agricultura sostenible},
+  year      = {2010},
+  address   = {Almer{\'{i}}a},
+  isbn      = {9788493775902},
+}
+
 @Article{Masiero2020,
   author    = {Masiero, Eva and Banik, Dipanwita and Abson, John and Greene, Paul and Slater, Adrian and Sgamma, Tiziana},
   journal   = {Plants},
@@ -3673,6 +3765,17 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   month     = dec,
   doi       = {10.3733/hilg.v40n11p331},
   publisher = {University of California Agriculture and Natural Resources ({UC} {ANR})},
+}
+
+@InBook{McNew1960,
+  author    = {McNew, G. L.},
+  editor    = {Dimond, Albert Eugene and Horsfall, James Gordon},
+  pages     = {19--69},
+  publisher = {Academic Press},
+  title     = {Plant pathology, an advanced treatise},
+  year      = {1960},
+  address   = {New York},
+  volume    = {3},
 }
 
 @Article{Mei2016,
@@ -3849,6 +3952,17 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   volume    = {48},
   doi       = {10.1093/jee/48.4.432},
   publisher = {Oxford University Press ({OUP})},
+}
+
+@InBook{Stevens1960,
+  author    = {N},
+  editor    = {Dimond, Albert Eugene and Horsfall, James Gordon},
+  pages     = {357--429},
+  publisher = {Academic Press},
+  title     = {Plant pathology, an advanced treatise},
+  year      = {1960},
+  address   = {New York},
+  volume    = {3},
 }
 
 @Article{Nachappa2013,
@@ -5054,6 +5168,19 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   publisher = {Wiley},
 }
 
+@Article{Scholthof2006,
+  author    = {Scholthof, Karen-Beth G.},
+  journal   = {Nature Reviews Microbiology},
+  title     = {The disease triangle: pathogens, the environment and society},
+  year      = {2006},
+  month     = dec,
+  number    = {2},
+  pages     = {152--156},
+  volume    = {5},
+  doi       = {10.1038/nrmicro1596},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Article{Scott2013,
   author    = {Scott, Jeffrey G. and Michel, Kristin and Bartholomay, Lyric C. and Siegfried, Blair D. and Hunter, Wayne B. and Smagghe, Guy and Zhu, Kun Yan and Douglas, Angela E.},
   journal   = {Journal of Insect Physiology},
@@ -5393,6 +5520,19 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   volume    = {45},
   doi       = {10.1111/j.1365-313x.2005.02612.x},
   publisher = {Wiley},
+}
+
+@Article{Thomma2001,
+  author    = {Thomma, Bart P. H. J. and Penninckx, Iris A. M. A. and Cammue, Bruno P. A. and Broekaert, Willem F.},
+  journal   = {Current Opinion in Immunology},
+  title     = {The complexity of disease signaling in {\textit{Arabidopsis}}},
+  year      = {2001},
+  month     = feb,
+  number    = {1},
+  pages     = {63--68},
+  volume    = {13},
+  doi       = {10.1016/s0952-7915(00)00183-7},
+  publisher = {Elsevier {BV}},
 }
 
 @Book{Thompson2009,
@@ -5954,6 +6094,15 @@ general and T. ludeni population forecast and precise timing of pest management 
   url       = {https://www.ebook.de/de/product/6740472/general_concepts_in_integrated_pest_and_disease_management.html},
 }
 
+@Book{Marquina2010,
+  editor    = {Marquina, Julio C{\'{e}}sar Tello and Camacho-Ferre, Francisco and Torres-Vila, Luis Miguel},
+  publisher = {Fundaci{\'{o}}n Cajamar},
+  title     = {Organismos para el control de pat{\'{o}}genos en los cultivos protegidos : pr{\'{a}}cticas culturales para una agricultura sostenible},
+  year      = {2010},
+  address   = {Almer{\'{i}}a},
+  isbn      = {9788493775902},
+}
+
 @Book{Ueckermann2010,
   title     = {Eriophyoid mites: progress and prognoses},
   publisher = {Springer-Verlag GmbH},
@@ -5983,6 +6132,18 @@ general and T. ludeni population forecast and precise timing of pest management 
   date      = {2015-04-30},
   ean       = {9783319150420},
   url       = {https://www.ebook.de/de/product/25040570/prospects_for_biological_control_of_plant_feeding_mites_and_other_harmful_organisms.html},
+}
+
+@Book{Bradley2018,
+  editor    = {Bradley, Lucy K. and Moore, Kathleen A.},
+  publisher = {University of {North Carolina} press},
+  title     = {{North Carolina} extension gardener handbook},
+  year      = {2018},
+  isbn      = {1469641259},
+  month     = apr,
+  ean       = {9781469641256},
+  pagetotal = {728},
+  url       = {https://www.ebook.de/de/product/32731736/north_carolina_extension_gardener_handbook.html},
 }
 
 @Article{UGA2018,
