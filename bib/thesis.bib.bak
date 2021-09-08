@@ -4657,6 +4657,15 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Book{Perez2010,
+  author    = {P{\'{e}}rez, Francisco Farragut and Moreno, Ignacio P{\'{e}}rez and Calvo, V{\'{i}}ctor M. Iraola and Colomar, L. Adriana Escudero},
+  publisher = {Ediciones Agrot{\'{e}}cnicas},
+  title     = {{\'{A}}caros depredadores de la familia {Phytoseiidae} en las plantas cultivadas},
+  year      = {2010},
+  address   = {Madrid},
+  isbn      = {9788487480539},
+}
+
 @InCollection{Petanovic2010,
   author    = {Petanovi{\'{c}}, Radmila and Kielkiewicz, Malgorzata},
   booktitle = {Eriophyoid Mites: Progress and Prognoses},
@@ -4877,6 +4886,12 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   doi       = {10.1093/jee/toz258},
   editor    = {Dong H Cha},
   publisher = {Oxford University Press ({OUP})},
+}
+
+@Article{Riley1874,
+  author = {Riley, C. V.},
+  title  = {6\textsuperscript{th} annual report on noxious, beneficial and other insects of the state of {Missouri}},
+  year   = {1874},
 }
 
 @Article{Robertson1988,
@@ -5200,10 +5215,10 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
 }
 
 @Book{Sarwar2017,
-  title     = {Predatory Mites ({Acari}: {Phytoseiidae}) Culturing for their Releasing},
-  publisher = {LAP Lambert Academic Publishing},
-  year      = {2017},
   author    = {Sarwar, Muhammad},
+  publisher = {LAP Lambert Academic Publishing},
+  title     = {Predatory mites ({Acari}: {Phytoseiidae}) culturing for their releasing},
+  year      = {2017},
   isbn      = {3330345950},
   date      = {2017-08-06},
   ean       = {9783330345959},
@@ -6203,7 +6218,7 @@ general and T. ludeni population forecast and precise timing of pest management 
 }
 
 @Book{Carrillo2015,
-  editor    = {Carrillo, Daniel and de Moraes Gilberto Jos{\'{e}} and Pe{\~{n}}a Jorge, E.},
+  editor    = {Carrillo, Daniel and de Moraes, Gilberto Jos{\'{e}} and Pe{\~{n}}a, Jorge E.},
   publisher = {Springer-Verlag GmbH},
   title     = {Prospects for biological control of plant feeding mites and other harmful organisms},
   year      = {2015},
