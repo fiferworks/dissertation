@@ -41,23 +41,36 @@ Rose Rosette Virus (RRV), the casual agent of Rose Rosette Disease (RRD) and *P.
 Currently, all roses are known to host *P. fructiphilus*, and few roses show signs of resistance to RRV [@Bello2017]. Nursery managers tentatively control the disease by removing sick plants and spraying acaracides. Acaricide applications are expensive, and eriophyid mites may develop resistance to acaricides with increased applications [@Omoto1995]. In addition, to date there is limited information regarding the toxicity and effectiveness of acaricides used to combat *P. fructiphilus*. Pesticide applications are further complicated by the biology of the mite: *P. fructiphilus* are a refuge seeking species of eriophyoids which prefer to feed on the small plant hairs on the sepals, underneath the petals [@Otero-Colina2018; @Lillo2018; @Jesse2006; @Amrine1994]. The petals help shield the mites from conventional pesticide treatments. Furthermore, a single mite is potentially enough to transmit the virus [@Bello2017], which can infect a rose in less than an hour, yet plants can remain sick and symptomless for months to years [@Amrine1996; @Bello2017]. This slow onset of disease symptoms creates an additional challenge for management [@Bello2017], because by the time the disease is noticed, the mites may have already spread to the whole garden. Disease detection is also difficult: Symptoms can appear similar to natural plant growth or herbicide damage, making it hard to diagnose in the field [@Hong2012]. Molecular methods for testing RRV are becoming readily available [@Babu2016; @Babu2017a; @Babu2017b, @Babu2018, @Bello2017], and newer technologies, such as Raman spectroscopy [@Farber2019] are being developed to test for RRV, but it remains to be seen if these methods are capable of identifying asymptomatic infections or if these tests are suitable for disease monitoring on larger scales. Overall, rose growers need better methods to combat *P. fructiphilus* and RRV.
 
 ```{r symptoms}
-knitr::include_graphics('figure/reed.jpg')
+grid::grid.raster(tiff::readTIFF("figure/symp-rrd.tif"))
 ```
 
 `r fig_nums(name = "symptoms", caption = "Typical symptoms of Rose Rosette Disease (RRD), caused by Rose Rosette Virus: clusters of deformed flowers known as rosettes/witches' brooms, increased thorniness, elongated shoots, reddened leaves and stems. RRD ultimately kills the rose host.")`
 
 ```{r hiding}
-knitr::include_graphics('figure/reed.jpg')
+knitr::include_graphics('figure/mite-pfruct-hide.PNG')
 ```
 
 `r fig_nums(name = "hiding", caption = "Illustration of the typical location of *Phyllocoptes fructiphilus* on roses. *P. fructiphilus* are difficult to manage with pesticides due to the protection offered by the sepals.")`
 
 ## Integrated Pest Management (IPM) {#ipm}
 <!-- Describe what it is -->
-Integrated Pest Management (IPM) is a philosophy of pest control based on integrating as many different types of control to keep pest populations underneath their economic injury level (EIL). The EIL is where the cost of controlling pest damage exceeds the costs of crop production. This EIL is informed by the economic threshold, a point where a pest density has been exceeded, and crop losses will occur without intervention. These thresholds 
+Integrated Pest Management (IPM) is a philosophy of pest control based on integrating as many different types of control to keep pest populations underneath their economic injury level (EIL) [@Flint1981; @Stern1959]. The EIL is a breaking point, where the cost of controlling the damage from pests exceeds the costs of crop production [@Stern1959]. This EIL is informed by an economic threshold, a point where a specific pest density has been exceeded, and interventions are required to prevent the crop from reaching the EIL [@Stern1959]. A useful framework for controlling plant pathogens has been developed in the concept of the disease triangle. For a long time, plant pathologists have recognized the importance of pathogen, environment and host on disease proliferation [@Gaeumann1950], and all of these factors must be present in sufficient quantity and quality for disease to occur [@Agrios2004; @McNew1960; @Stevens1960]. Extensions of the basic disease triangle have been considered, including adding extra dimensions to account for more variables [@Francl2001], or applying it to different systems [@Scholthof2006], but the basic concept is that removing of one of these main factors of disease gives a point of attack for control efforts: Management may focus on removing a suitable host by crop rotation, or by using cultivars resistant/tolerant to pests and/or pathogens. Pathogens can be excluded from the crop via sanitation measures such as insect screens, tissue culture, seed certification programs, or by growing crops in a greenhouse. Environment can also be manipulated by growing crops in areas where the pest/pathogen isn't present or can't survive under normal conditions. The IPM philosophy would then encourage the combination of as many of these methods as possible for improved pest control. 
 
 
-biological, cultural, environmental and chemical
+Although there is some overlap in the technologies and terminologies used, pest management traditionally divides pest interventions into four main categories: chemical, mechanical, cultural (environmental), and biological control methods [@Bradley2018].
+
+
+Chemical controls are some of the 
+
+
+
+There are other considerations with the use of pesticides besides expense: they may pose a risk to the applicator, harm beneficial insects/pollinators, they sometimes leave residues on crops meant for consumption, and they can harm the environment through runoff/drift, polluting surface and groundwater [@Marquina2010; @Bradley2018]. Pesticides also can create secondary pest outbreaks, while encouraging pesticide resistance in surviving pest populations [@Dutcher2007; @Marquina2010; @Bradley2018; @Ciancio2007].
+
+
+Mechanical control is the physical manipulation of plants to prevent pests and pathogens. Physical controls include pruning, raking, tilling, removing pests and infected plants (roguing) by hand, creating physical barriers such as raised beds, insect screens, organic or plastic/reflective mulch, solarizing/heating the soil, sticky traps/barriers, and etc. [@Bradley2018; @Ciancio2007]. Cultural control has some overlap with mechanical control methods, but cultural controls tend to refer to controlling the environment of your crops to exclude pests. Some examples include: selecting resistant cultivars, cultivating and planting in healthy soil, managing weeds, interplanting/trap cropping, aerating the soil, choosing appropriate planting dates, rotating crops, letting the field lie fallow, and etc. [@Bradley2018; @Ciancio2007].
+
+
+
 
 <!-- Cecidomyiidae feed on *Phyllocoptruta oleivora* [@Villanueva2006] -->
 
