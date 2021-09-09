@@ -6,7 +6,7 @@
 <!-- Phytoseiid mites require expert identification, and many species have been misidentified [@Demard2021] -->
 
 Rose Rosette Virus (RRV), the casual agent of Rose Rosette Disease (RRD) and *P. fructiphilus* Kiefer invaded the southeastern United States on the multiflora rose, *R. multiflora* (Thunb) as it spread its range towards the coast [@Amrine2002; @Otero-Colina2018]. RRD is present throughout the US, including Decatur County, GA, near the Florida border (*`r citef("eddmaps")`*), [@EDDMapS2019].
-```{r, echo=FALSE}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/reed.jpg')
 ```
 
@@ -14,7 +14,7 @@ knitr::include_graphics('figure/reed.jpg')
 
 In 2018, a group of researchers conducted a series of surveys for *P. fructiphilus* and RRD in the southeastern United States [@Solo2018]. They encountered *P. fructiphilus* in Thomas County and Lowndes County, (*`r citef("Solo2018")`*), [@Solo2018], less than 20 miles from the northern border of Florida.
 
-```{r, echo=FALSE}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/reed.jpg')
 ```
 
@@ -60,14 +60,14 @@ On July 16th we conducted an additional survey of 33 roses near the initial site
 
 This is the first record for *P. fructiphilus* in Florida. More importantly, RRV is currently not established in Florida. None of the mite-infested roses had symptoms of RRD and none were positive for RRV. However, the presence of *P. fructiphilus*, along with past detections of RRV in Florida warrants increased monitoring for the mite and virus in Florida. There is a critical need to develop methods to manage *P. fructiphilus* and RRV, or the US rose industry stands to lose millions on mite control.
 
-```{r, surveymaps, echo=FALSE}
+```{r, surveymaps, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/reed.jpg')
 ```
 
 `r fig_nums(name = "sidemaps", caption = "Presence of *Phyllocoptes fructiphilus* in Leon County, Florida in (A) Feburary 2019 and (B) July 2019. Orange dots indicate sites sampled which had *P. fructiphilus*. Gray areas indicate previously surveyed areas where no *P. fructiphilus* were found.")`
 
 
-```{r, graphs, echo=FALSE}
+```{r, graphs, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/reed.jpg')
 ```
 

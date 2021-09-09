@@ -7,6 +7,11 @@
 <!-- source('code/rrv_pred_mite_graphs.R') -->
 <!-- ``` -->
 
+<!-- Phytoseiids rely heavily on VOCs to orient themselves towards their prey and potential mates, while avoiding predators [@Gnanvossou2003]. -->
+
+<!-- Phytoseiids also attracted to synthetic MeSA in lab [@Gadino2011], But lures had mixed results @Gadino2012 -->
+
+
 ## 3.1 *A. swirskii* attraction to RRV-infected roses {#swirskii-roses}
 
 Rose Rosette Virus (RRV), the casual agent of Rose Rosette Disease (RRD) and *P. fructiphilus* Kiefer invaded the southeastern United States on the multiflora rose, *R. multiflora* (Thunb) as it spread its range towards the coast [@Amrine2002; @Otero-Colina2018]. RRD is present throughout the US, including Decatur County, GA, near the Florida border (*`r citef("eddmaps")`*), [@EDDMapS2019].
@@ -50,7 +55,7 @@ Predatory mites do not feed on the plants they live on, so they shouldn't be har
 
 Preliminary tests with *A. swirskii* show attraction towards compounds from RRV-infected roses. The lab has tested some of these compounds with Y-tube choice tests to determine their role in attracting *A. swirskii* to the infected roses. Other chemicals remain to be tested. Understanding which chemicals are responsible for attracting *A. swirskii* to RRV-infected roses is a preliminary part of determining if *A. swirskii* will search for *P. fructiphilus* when on a rose.
 
-```{r}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/reed.jpg')
 ```
 
@@ -78,7 +83,7 @@ Treatments will be the following:
 
 A group of 20 plants will be isolated. Volatiles from the 20 plants will be collected as a baseline (already collected). Then half of the plants will be SAR inducted by bi-weekly spray applications of Acibenzolar-S-Methyl. Subsequently half of the remaining plants (5 control and 5 SAR-induced plants) will be grafted with RRV-infected buds to innoculate them with the virus [@Doudrick1987]. Volatiles will be collected bi-monthly following SAR-induction and RRV application.  
 
-```{r test-vols, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%"}
+```{r test-vols, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
 grid::grid.raster(tiff::readTIFF("figure/vol-extract-trap-filter.tif"))
 ```
 
@@ -116,7 +121,7 @@ We propose observing the behavior of *A. swirskii* with Y-tube choice tests to t
 
 *A. swirskii* are compatible with some pesticides and existing bio-control methods. *A. swirskii* feed on other pests as well, so they can integrate with existing pest management programs. Developing a bio-control option for RRD can increase profitability for rose growers, reduces losses from RRV-infection, and reduce the number of pesticide applications required. Reduced reliance on pesticides promotes the health and safety of growers as well as protecting the environment. Reducing pesticide usage can also prevent *P. fructiphilus* from developing pesticide resistance and decrease risks for pollinators which frequent roses. Predatory mites are low-maintenance to rear and deploy. Mites subsist in the environment without decreasing sustainability in other areas. Overall, predatory mites represent great value for sustainable agriculture.
 
-```{r, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%"}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/tests_graph.png')
 ```
 
@@ -125,7 +130,7 @@ knitr::include_graphics('figure/tests_graph.png')
 
 Volatiles from 20 roses will be collected before treatments as a baseline (already collected). Then half of the plants will be SAR-induced by bi-weekly spray applications of Acibenzolar-S-Methyl. Subsequently, half of the remaining plants (5 control and 5 SAR-induced plants) will be grafted with RRV-infected buds to innoculate them with the virus [@Doudrick1987]. Volatiles will be collected bi-monthly following SAR-induction and RRV application.  
 
-```{r voc-trap, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%"}
+```{r voc-trap, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
 grid::grid.raster(tiff::readTIFF('figure/vol-extract-trap-filter.tif'))
 ```
 
