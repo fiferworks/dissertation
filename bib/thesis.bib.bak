@@ -1194,6 +1194,20 @@ identification and acceptance process},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Article{Carrillo2011b,
+  author    = {Carrillo, Daniel and Navia, Denise and Ferragut, Francisco and Pe{\~{n}}a, Jorge E.},
+  journal   = {Florida Entomologist},
+  title     = {First report of {\textit{Raoiella indica}} ({Acari}: {Tenuipalpidae}) in {Colombia}},
+  year      = {2011},
+  month     = jun,
+  number    = {2},
+  pages     = {370--371},
+  volume    = {94},
+  abstract  = {In January 2010, high populations of Raoiella indica were reported for the first time in Colombia attacking coconut, banana, and heliconia plants in the Tayrona National Park. The predatory mite, Amblyseius largoensis, was found associated with R. indica in Los Naranjos, Magdalena. Strict sanitary strategies and other management tactics should be implemented to minimize the damage caused by R. indica in the Americas.},
+  doi       = {10.1653/024.094.0241},
+  publisher = {Florida Entomological Society},
+}
+
 @Article{Carrillo2011,
   author    = {Carrillo, Daniel and Pe{\~{n}}a, Jorge E.},
   journal   = {Experimental and Applied Acarology},
@@ -1963,6 +1977,20 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   year    = {1987},
 }
 
+@Article{Dowling2011,
+  author    = {Dowling, A. P. G. and Ochoa, R. and Beard, J. J. and Welbourn, W. C. and Ueckermann, E. A.},
+  journal   = {Experimental and Applied Acarology},
+  title     = {Phylogenetic investigation of the genus {\textit{Raoiella}} ({Prostigmata}: {Tenuipalpidae}): diversity, distribution, and world invasions},
+  year      = {2011},
+  month     = sep,
+  number    = {3-4},
+  pages     = {257--269},
+  volume    = {57},
+  abstract  = {The genus Raoiella is best known because of the red palm mite, R. indica, a major pest of palms spreading aggressively throughout the Americas. Not much was known about the biology, geographic origins, or evolutionary history of the genus when R. indica emerged as a major invasive pest. This paper attempts to address some of the basic historical questions regarding the palm mite as well as the genus. Molecular characters from COI and 28S regions were used to produce a phylogenetic hypothesis for the genus in an effort to understand its geographic origin. It also uses COI barcode data to delimit several potentially new species discovered by the authors in Australia. Results show a basal split between R. indica and all other Raoiella species, which indicates Africa or the Middle East as the most probable origin of the genus. Additionally, COI data suggests that at least eight new species are represented among the 20 Australian populations included in this study.},
+  doi       = {10.1007/s10493-011-9483-z},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Book{Driesche2007,
   author    = {van Driesche, Roy G. and Hoddle, Mark S. and Center, Ted D.},
   editor    = {Cacino, Enrique Ruiz and Coronada, Juanita Blanca and Alvarez, Juan Manuel},
@@ -2109,6 +2137,19 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   number    = {2},
   pages     = {92--101},
   publisher = {Am Phytopath Society},
+}
+
+@Article{Etienne2006,
+  author    = {Etienne, Jean and Flechtmann, Carlos H. W.},
+  journal   = {International Journal of Acarology},
+  title     = {First record of {\textit{Raoiella indica}} ({Hirst}, 1924) ({Acari}: {Tenuipalpidae}) in {Guadeloupe} and {Saint Martin}, {West Indies}},
+  year      = {2006},
+  month     = sep,
+  number    = {3},
+  pages     = {331--332},
+  volume    = {32},
+  doi       = {10.1080/01647950608684476},
+  publisher = {Informa {UK} Limited},
 }
 
 @Book{Evans1992,
@@ -2788,6 +2829,7 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   number    = {3-4},
   pages     = {257--271},
   volume    = {39},
+  abstract  = {Bacterial symbionts that manipulate the reproduction of their host to increase their own transmission are widespread. Most of these bacteria are Wolbachia, but recently a new bacterium, named Cardinium, was discovered that is capable of the same manipulations. In the host species Brevipalpus phoenicis (Acari: Tenuipalpidae) this bacterium induces thelytoky by feminizing unfertilized haploid eggs. The related species B. obovatus and B. californicus are thelytokous too, suggesting that they reproduce in the same remarkable way as B. phoenicis. Here we investigated the mode of thelytokous reproduction in these three species. Isofemale lines were created of all three species and 19 lines were selected based on variation in mitochondrial COI sequences. All B. phoenicis and B. californicus lines (10 and 4 lines, respectively) produced males under laboratory conditions up to 6.7%. In contrast, males were absent from all B. obovatus lines (5 lines). Additional experiments with two B. phoenicis isofemale lines showed that males can be produced by very young females only, while older females produce daughters exclusively. For most lines it was shown that they are indeed feminized by a bacterium as treatment with antibiotics resulted in increased numbers of males up to 13.5%. Amplification and identification of specific gyrB sequences confirmed that those lines were infected with Cardinium. Three out of the five B. obovatus lines did not produce males after treatments with antibiotics, nor did they contain Cardinium or any other bacterium that might induce thelytoky. In these lines thelytoky is probably a genetic property of the mite itself. Despite the different causes of thelytoky, flow cytometry revealed that all 19 lines were haploid. Finally, the taxonomic inferences based on the mitochondrial COI sequences were incongruent with the classical taxonomy based on morphology, suggesting that a taxonomic revision of this group is necessary.},
   doi       = {10.1007/s10493-006-9019-0},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -2801,6 +2843,7 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   number    = {3},
   pages     = {165--176},
   volume    = {36},
+  abstract  = {Because asexual species lack recombination, they have little opportunity to produce genetically variable offspring and cannot adapt to changes in their environment. However, a number of asexual species are very successful and appear to contradict this general view. One such species is the phytophagous mite Brevipalpus phoenicis (Geijskes), a species that is found in a wide range of environments. There are two general explanations for this pattern, the General Purpose Genotype (GPG) and Frozen Niche Variation (FNV). According to the GPG model, an asexual species consists of clones that can all survive and reproduce in all the different niches. Alternatively, the FNV model postulates that different clones are specialized to different niches. We have performed a test to distinguish between these models in B. phoenicis. Mites from three populations from three different host plant species (citrus, hibiscus and acerola) were transplanted to their own and the two alternative host plants and mite survival and egg production were measured. Additionally, the mite populations were genotyped using microsatellites. Fitness was seriously reduced when mites were transplanted to the alternative host plant species, except when the alternative host was acerola. We concluded that B. phoenicis clones are specialized to different niches and thus the FNV best describes the broad ecological niche of this species but that there is also some evidence for host plant generalization. This conclusion was strengthened by the observations that on each host plant species the native mite population performed better than the introduced ones, and that three microsatellite markers showed that the mite populations are genetically distinct.},
   doi       = {10.1007/s10493-005-3360-6},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -3107,6 +3150,20 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   volume    = {6},
   pages     = {34498},
   publisher = {Nature Publishing Group},
+}
+
+@Article{Kane2012,
+  author    = {Kane, Ethan C. and Ochoa, Ronald and Mathurin, Guy and Erbe, Eric F. and Beard, Jennifer J.},
+  journal   = {Experimental and Applied Acarology},
+  title     = {{\textit{Raoiella indica}} ({Acari}: {Tenuipalpidae}): an exploding mite pest in the neotropics},
+  year      = {2012},
+  month     = mar,
+  number    = {3-4},
+  pages     = {215--225},
+  volume    = {57},
+  abstract  = {Major infestations of the flat mite species Raoiella indica Hirst affecting bananas, palms and other ornamental plants have been reported from the Caribbean islands, Mexico, FL (USA), Venezuela, Colombia and Brazil. Specimens from these localities were examined using traditional light microscopy and low-temperature scanning electron microscopy techniques. While little is known about the biology of this mite, its recent appearance in the Americas in both commercial coconut and banana plantations has raised concerns about its economic impact as an invasive pest},
+  doi       = {10.1007/s10493-012-9541-1},
+  publisher = {Springer Science and Business Media {LLC}},
 }
 
 @Article{Kang2007,
@@ -5072,6 +5129,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {American Society for Horticultural Science},
 }
 
+@Article{Pena2012,
+  author    = {Pe{\~{n}}a, Jorge E. and Bruin, Jan and Sabelis, Maurice W.},
+  journal   = {Experimental and Applied Acarology},
+  title     = {Biology and control of the red palm mite, {\textit{Raoiella indica}}: an introduction},
+  year      = {2012},
+  month     = may,
+  number    = {3-4},
+  pages     = {211--213},
+  volume    = {57},
+  abstract  = {The plant-feeding mite family Tenuipalpidae comprises ca. 35 genera and 900+ species (Mesa et al. 2009; Beard et al. 2012). Brevipalpus and Tenuipalpus are recognized as the genera that harbour species causing most economic damage, to a great variety of crops. This special issue of Experimental and Applied Acarology focuses on Raoiella, a genus of Tenuipalpidae that has gained economical importance in recent years and now poses new challenges to pest control. This genus should be included in the list of economically important Tenuipalpidae, especially because of the damage it inflicts on coconut palms, being a source of nutrition and income for people inhabiting the tropical world.},
+  doi       = {10.1007/s10493-012-9569-2},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Article{Pena2015,
   author    = {Pe{\~{n}}a, Jorge E. and Santos, Katia and Baez, Ignacio and Carrillo, Daniel},
   journal   = {The Florida Entomologist},
@@ -5286,6 +5357,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Wiley},
 }
 
+@Article{Ramirez2020,
+  author    = {Ram{\'{\i}}rez, Mar{\'{\i}}a Bernarda and Sarubbi, Humberto Jorge and Arias, Osmar and de Azevedo, Let{\'{\i}}cia Henrique and Flechtmann, Carlos Holger Wenzel},
+  journal   = {Journal of Plant Diseases and Protection},
+  title     = {First report of {\textit{Raoiella indica}} {Hirst} ({Acari}: {Tenuipalpidae}) in {Paraguay}},
+  year      = {2020},
+  month     = mar,
+  number    = {5},
+  pages     = {715--717},
+  volume    = {127},
+  abstract  = {The mites, introduced through ornamentals, go unnoticed by the inspectors who are not specialists, can present a risk for the dispersion to different regions. In March 2018, in the Central Department of Asunci{\'{o}}n, Paraguay, in a nursery of plants was detected for the first time damage and presence of the red palm mite Raoiella indica Hirst (Acari: Tenuipalpidae) on leaves of Dypsis madagascariensis (Becc.) Beentje & J. Dransf., Arecaceae. It is likely that the presence of the pest is restricted yet, because this plant was imported from Brazil for garden ornamentation. Visual observations were made in other nurseries of the same locality; however, the red mite has not been detected. Therefore, it is necessary to permanently monitor the host plants, also in banana plantations in order to verify the occurrence of the red mite, and implement integrated management and prevent its spread. The mite is a threat to the production of bananas; a sector of great economic importance which benefits the small producer, it is the most consumed fruit in the country and besides it is exported.},
+  doi       = {10.1007/s41348-020-00312-2},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Article{Ranabhat2018,
   author    = {Ranabhat, Nar B. and Seipel, Tim and Lehnhoff, Erik A. and Miller, Zach J. and Owen, Karl E. and Menalled, Fabian D. and Burrows, Mary E.},
   journal   = {Plant Disease},
@@ -5365,6 +5450,17 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Wiley},
 }
 
+@Article{Roda2008,
+  author   = {Roda, Amy and Dowling, Ashley and Welbourn, Cal and Pena, Jorge and Rodrigues, Jose Carlos V. and Hoy, Marjorie A. and Ochoa, Ronald and Duncan, Russell A. and Chi, Wayne De},
+  journal  = {Proceedings of the Caribbean Food Crops Society},
+  title    = {Red palm mite situation in the {Caribbean} and {Florida}},
+  year     = {2008},
+  number   = {1},
+  pages    = {80--174},
+  volume   = {44},
+  abstract = {The red palm mite (Raoiella indica Hirst Tenuipalpidae), a pest of coconuts and ornamental palms in Asia and Africa, was reported in the Caribbean in 2004. By 2008, it spread to at least twelve islands, to two counties in Florida and to Venezuela. Red palm mite causes yellowing and leaf necrosis with severe reduction of leaf stomatal conductance. Growers are reporting > 70% reduction in coconut yield. Genetic studies of red palm mite collected from multiple regions in Asia, Africa and the Caribbean revealed several distinct haplotypes. All Caribbean samples have the same haplotype, which matches samples from coconut in R{\'{e}}union and areca palms in India. The populations from coconut in India exhibited a different haplotype. Biological control and pesticide options are being studied to manage the pest. The efficacy of acaricides against red palm mite was tested to provide palm, banana and ornamental nursery growers with an updated list of acaricides with good control potential. Natural enemy studies in the Caribbean have shown that thrips, phytoseiid, lacewing, and coccinelid predators attack red palm mites. Fungal infections have been reported in Puerto Rico, Dominica and Trinidad. Predatory mite numbers, especially in the Phytoseiidae, increase in response to higher numbers of red palm mites. However, these local predators are apparently not controlling red palm mite outbreaks. Foreign exploration for natural enemies is being conducted in Mauritius and India. A phytoseiid predator is currently being evaluated in quarantine in Gainesville, Florida.},
+}
+
 @Article{Rodrigues2008,
   author    = {Rodrigues, Jos{\'{e}} Carlos V. and Antony, Lucille M. K. and Salaroli, Renato B. and Kitajima, Elliot W.},
   journal   = {Tropical Plant Pathology},
@@ -5400,6 +5496,7 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   number    = {9},
   pages     = {627},
   volume    = {11},
+  abstract  = {Red palm mites (Raoiella indica Hirst, Acari: Tenuipalpidae) were first observed in the western hemisphere on the islands and countries surrounding the Caribbean Sea, infesting the coconut palm (Cocos nucifera L.). Detection of invasive pests usually relies upon changes in vegetation properties as result of the pest activity. These changes may be visible in time series of satellite data records, such as Landsat satellites, which have been available with a 16-day repeat cycle at a spatial resolution of 30 m since 1982. Typical red palm mite infestations result in the yellowing of the lower leaves of the palm crown; remote sensing model simulations have indicated that this feature may be better detected using the green normalized difference vegetation index (GNDVI). Using the Google Earth Engine programming environment, a time series of Landsat 5 Thematic Mapper, Landsat 7 Enhanced Thematic Mapper Plus and Landsat 8 Operational Land Imager data was generated for plantations in northern and northeast Brazil, El Salvador, and Trinidad-Tobago. Considering the available studied plantations, there were little or no differences of GNDVI before and after the dates when red palm mites were first revealed at each location. A discussion of possible alternative approaches are discussed related to the limitations of the current satellite platforms.},
   doi       = {10.3390/insects11090627},
   publisher = {{MDPI} {AG}},
 }
@@ -5454,6 +5551,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   pages     = {391--395},
   volume    = {26},
   publisher = {SciELO Brasil},
+}
+
+@Article{Rodrigues2007,
+  author    = {Rodrigues, Jos{\'{e}} C. V. and Ochoa, Ronald and Kane, Ethan C.},
+  journal   = {International Journal of Acarology},
+  title     = {First report of {\textit{Raoiella indica}} {Hirst} ({Acari}: {Tenuipalpidae}) and its damage to coconut palms in {Puerto Rico} and {Culebra Island}},
+  year      = {2007},
+  month     = mar,
+  number    = {1},
+  pages     = {3--5},
+  volume    = {33},
+  abstract  = {This is the first report of the occurrence of the red palm mite, Raoiella indica Hirst, and its damage in Puerto Rico and Culebra Island. Raoiella indica is a new invasive pest threatening ornamental palm, coconut, and banana plantations. The mite was observed in eastern Puerto Rico and on Culebra Island infesting and causing damage to coconut, Cocos nucifera L., and Veitchia merrillii L.},
+  doi       = {10.1080/01647950708684493},
+  publisher = {Informa {UK} Limited},
 }
 
 @InCollection{Rodrigues2019,
@@ -6293,6 +6404,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   volume    = {11},
   doi       = {10.1890/120126},
   publisher = {Wiley},
+}
+
+@Article{Vasquez2008,
+  author    = {V{\'{a}}squez, Carlos and de Magally Quir{\'{o}}s, G. and Aponte, Orlando and Sandoval, D. Mar{\'{\i}}a F.},
+  journal   = {Neotropical Entomology},
+  title     = {First report of {\textit{Raoiella indica}} {Hirst} ({Acari}: {Tenuipalpidae}) in {South} {America}},
+  year      = {2008},
+  month     = dec,
+  number    = {6},
+  pages     = {739--740},
+  volume    = {37},
+  abstract  = {The presence of the red palm mite, Raoiella indica Hirst is recorded for the first time in South America. High populations and severe damages caused by this new invasive mite were found on coconut and banana leaves in Sucre (10{$^{\circ}$} 27' 47" N and 64{$^{\circ}$}10' 38" W) and Monagas (9{\textordmasculine}46'60" N and 63{\textordmasculine}12'0" W) states in northeastern Venezuela.},
+  doi       = {10.1590/s1519-566x2008000600019},
+  publisher = {Springer Science and Business Media {LLC}},
 }
 
 @Article{Vechia2018,
