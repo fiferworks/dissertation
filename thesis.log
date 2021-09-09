@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  8 SEP 2021 21:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  8 SEP 2021 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -771,7 +771,7 @@ CHAPTER 2.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 236.
+(hyperref)                removing `\uppercase' on input line 234.
 
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf>
@@ -824,11 +824,11 @@ CHAPTER 3.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 241.
+(hyperref)                removing `\uppercase' on input line 239.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 247.
+(hyperref)                than one, level fixed on input line 245.
 
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
@@ -867,28 +867,28 @@ CHAPTER 4.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 351.
+(hyperref)                removing `\uppercase' on input line 349.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 361.
+(hyperref)                than one, level fixed on input line 359.
 
 [44
 
 ] [45] [46]
-Overfull \hbox (11.62503pt too wide) in paragraph at lines 400--402
+Overfull \hbox (11.62503pt too wide) in paragraph at lines 398--400
 \TU/lmr/m/n/12 tity and determine the types of volatiles released using (\TU/lm
 r/bx/n/12 appropiatestaticalmethod?\TU/lmr/m/n/12 ) 
  []
 
 
-Overfull \hbox (49.18501pt too wide) in paragraph at lines 404--406
+Overfull \hbox (49.18501pt too wide) in paragraph at lines 402--404
 \TU/lmr/m/n/12 filtered air) with four-arm olfactometer assays analyzed using (
 \TU/lmr/bx/n/12 appropiatestaticalmethod?\TU/lmr/m/n/12 ).  
  []
 
 
-Overfull \hbox (16.80902pt too wide) in paragraph at lines 406--407
+Overfull \hbox (16.80902pt too wide) in paragraph at lines 404--405
 \TU/lmr/m/n/12 lures to controls without lures and analyzing data with (\TU/lmr
 /bx/n/12 appropiatestaticalmethod?\TU/lmr/m/n/12 ).  
  []
@@ -905,7 +905,7 @@ Missing character: There is no χ (U+03C7) in font [lmroman12-regular]:mapping=t
 ex-text;!
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 427.
+(hyperref)                than one, level fixed on input line 425.
 
 [49]
 File: thesis_files/figure-latex/test-vols-1.pdf Graphic file (type pdf)
@@ -941,11 +941,11 @@ CHAPTER 5.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 528.
+(hyperref)                removing `\uppercase' on input line 526.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 531.
+(hyperref)                than one, level fixed on input line 529.
 
 [57
 
@@ -964,7 +964,7 @@ File: figure/ipm_graph.png Graphic file (type bmp)
 [62] [63] [64] [65]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 605.
+(hyperref)                than one, level fixed on input line 603.
 
 [66]
 File: figure/reed.jpg Graphic file (type bmp)
@@ -978,10 +978,10 @@ File: figure/rrv_asm_plot_2019_griffin.png Graphic file (type bmp)
 [69]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 639.
+(hyperref)                than one, level fixed on input line 637.
 
 
-Overfull \hbox (0.16501pt too wide) in paragraph at lines 642--642
+Overfull \hbox (0.16501pt too wide) in paragraph at lines 640--640
 \TU/lmr/bx/n/12 ments including predatory mites to reduce populations of \TU/lm
 r/bx/it/12 Phyllocoptes 
  []
@@ -998,12 +998,12 @@ File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
 [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85]
-Overfull \hbox (4.33514pt too wide) in alignment at lines 777--781
+Overfull \hbox (4.33514pt too wide) in alignment at lines 775--779
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.33514pt too wide) in alignment at lines 781--786
+Overfull \hbox (4.33514pt too wide) in alignment at lines 779--784
  [] [] [] [] 
  []
 
@@ -1018,50 +1018,50 @@ File: thesis_files/figure-latex/fig_3-1.pdf Graphic file (type pdf)
 [88] [89] [90
 
 ] [91] [92]
-Overfull \hbox (44.0428pt too wide) in paragraph at lines 878--880
+Overfull \hbox (44.0428pt too wide) in paragraph at lines 876--878
  \TU/lmr/m/n/12 predation of their offspring. Plant Science. 252: 300–310, DOI:
 [][]10.1016/j.plantsci.2016.08.004[][].  
  []
 
 [93] [94] [95]
-Overfull \hbox (13.1908pt too wide) in paragraph at lines 938--940
+Overfull \hbox (13.1908pt too wide) in paragraph at lines 936--938
  \TU/lmr/m/n/12 volatiles. Entomologia Experimentalis et Applicata. 110: 181–18
 9, DOI:[][]10.1111/j.0013- 
  []
 
 [96] [97] [98] [99]
-Overfull \hbox (77.6308pt too wide) in paragraph at lines 1034--1036
+Overfull \hbox (77.6308pt too wide) in paragraph at lines 1032--1034
  \TU/lmr/m/n/12 mites. Experimental and Applied Acarology. 30: 29–105, DOI:[][]
 10.1023/b:appa.0000006544.10072.01[][].  
  []
 
 [100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111]
-Overfull \hbox (6.66678pt too wide) in paragraph at lines 1298--1300
+Overfull \hbox (6.66678pt too wide) in paragraph at lines 1296--1298
  \TU/lmr/m/n/12 and future prospects. Acta Horticulturae. 13–18, DOI:[][]10.176
 60/actahortic.2009.816.1[][].  
  []
 
 [112] [113] [114] [115] [116]
-Overfull \hbox (26.89877pt too wide) in paragraph at lines 1418--1420
+Overfull \hbox (26.89877pt too wide) in paragraph at lines 1416--1418
  \TU/lmr/m/n/12 American Society for Horticultural Science. 128: 575–577, DOI:[
 ][]10.21273/jashs.128.4.0575[][].  
  []
 
 [117] [118] [119] [120] [121] [122] [123] [124]
-Overfull \hbox (80.95479pt too wide) in paragraph at lines 1586--1588
+Overfull \hbox (80.95479pt too wide) in paragraph at lines 1584--1586
  \TU/lmr/m/n/12 cases. Experimental and Applied Acarology. 30: 135–160, DOI:[][
 ]10.1023/b:appa.0000006546.55305.e3[][].  
  []
 
 [125] [126]
-Overfull \hbox (6.0868pt too wide) in paragraph at lines 1622--1624
+Overfull \hbox (6.0868pt too wide) in paragraph at lines 1620--1622
  \TU/lmr/m/n/12 salicylate in plant pathogen resistance. Nature. 385: 718–721, 
 DOI:[][]10.1038/385718a0[][].  
  []
 
 [127]
 LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 1
-653.
+651.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
 File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
 ) [128] [129] [130] [131]
