@@ -4,55 +4,55 @@
 \contentsline {chapter}{\numberline {1}\uppercase {Literature Review}}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}A small introduction to some herbivorous Acari}{9}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Coevolved Plant Specialists: The Eriophyoidea}{11}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}\emph {P. fructiphilus} acts as the vector of Rose Rosette Virus, the causal agent of Rose Rosette Disease}{12}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.1}\emph {Phyllocoptes fructiphilus}: the vector of Rose Rosette Virus, the causal agent of Rose Rosette Disease}{12}{subsection.1.2.1}%
 \contentsline {section}{\numberline {1.3}Integrated Pest Management (IPM): best practices for modern agriculture}{15}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Current Management of Rose Rosette Disease is not effective}{17}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Phytoseiids mites: good options for biological control of RRD?}{18}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Plant defenses and Systemic Acquires Resistance (SAR)}{20}{section.1.4}%
-\contentsline {section}{\numberline {1.5}A second mite-plant-pathogen system: \emph {Brevipalpus californicus} and Orchid fleck virus}{22}{section.1.5}%
-\contentsline {chapter}{\numberline {2}\uppercase {First report of \emph {Phyllocoptes fructiphilus} in Florida}}{23}{chapter.2}%
-\contentsline {chapter}{\numberline {3}\uppercase {2. Objective 1: Survey for the invasive mite \emph {Phyllocoptes fructiphilus}, Rose Rosette Virus (RRV), and wild predatory mites in northern Florida}}{29}{chapter.3}%
-\contentsline {section}{\numberline {3.1}2.1 \emph {P. fructiphilus} detection in Northern Florida}{29}{section.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.0.1}2.1.1 Problem Statement}{29}{subsubsection.3.1.0.1}%
-\contentsline {subsubsection}{\numberline {3.1.0.2}2.1.2 First report of \emph {Phyllocoptes fructiphilus} in Florida}{30}{subsubsection.3.1.0.2}%
-\contentsline {subsubsection}{\numberline {3.1.0.3}2.1.3 Proposal: a series of surveys for \emph {P. fructiphilus} and Rose Rosette Disease in northern Florida}{36}{subsubsection.3.1.0.3}%
-\contentsline {subsubsection}{\numberline {3.1.0.4}2.1.4 Materials \& Methods}{36}{subsubsection.3.1.0.4}%
-\contentsline {subsubsection}{\numberline {3.1.0.5}2.1.5 Potential benefits}{38}{subsubsection.3.1.0.5}%
-\contentsline {subsubsection}{\numberline {3.1.0.6}2.1.6 Expected outcomes}{38}{subsubsection.3.1.0.6}%
-\contentsline {chapter}{\numberline {4}\uppercase {3. Objective 2: Potential of the predatory mite \emph {Amblyseius swirskii} to control \emph {Phyllocoptes fructiphilus}}}{40}{chapter.4}%
-\contentsline {section}{\numberline {4.1}3.1 \emph {A. swirskii} attraction to RRV-infected roses}{40}{section.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.0.1}Statement of Problem, Rationale and Justification}{41}{subsubsection.4.1.0.1}%
-\contentsline {subsubsection}{\numberline {4.1.0.2}Project Relevance to Sustainable Agriculture}{41}{subsubsection.4.1.0.2}%
-\contentsline {subsubsection}{\numberline {4.1.0.3}Objectives}{42}{subsubsection.4.1.0.3}%
-\contentsline {subsubsection}{\numberline {4.1.0.4}Approach and Methods}{43}{subsubsection.4.1.0.4}%
-\contentsline {subsubsection}{\numberline {4.1.0.5}3.1.1 Problem Statement}{43}{subsubsection.4.1.0.5}%
-\contentsline {subsubsection}{\numberline {4.1.0.6}3.1.2 Preliminary Data}{44}{subsubsection.4.1.0.6}%
-\contentsline {section}{\numberline {4.2}3.2 Volatile changes in Rose Rosette Virus-infected Plants Treated with Acibenzolar-S-Methyl, a functional analog of Salicylic Acid}{45}{section.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.0.1}3.2.1 Problem Statement}{45}{subsubsection.4.2.0.1}%
-\contentsline {subsubsection}{\numberline {4.2.0.2}3.2.2 Materials \& Methods}{46}{subsubsection.4.2.0.2}%
-\contentsline {subsubsection}{\numberline {4.2.0.3}3.2.3 Potential benefits}{47}{subsubsection.4.2.0.3}%
-\contentsline {subsubsection}{\numberline {4.2.0.4}3.2.4 Expected outcomes}{48}{subsubsection.4.2.0.4}%
-\contentsline {subsubsection}{\numberline {4.2.0.5}3.3.1 Proposal: a series of behavioral tests to determine which compounds from RRV-infected Pink Double Knock Out® roses are attractive to \emph {A. swirskii}}{48}{subsubsection.4.2.0.5}%
-\contentsline {subsubsection}{\numberline {4.2.0.6}3.3.2 Materials \& Methods}{48}{subsubsection.4.2.0.6}%
-\contentsline {subsubsection}{\numberline {4.2.0.7}3.3.3 Potential benefits}{49}{subsubsection.4.2.0.7}%
-\contentsline {subsubsection}{\numberline {4.2.0.8}3.3.4 Expected outcomes}{51}{subsubsection.4.2.0.8}%
-\contentsline {chapter}{\numberline {5}\uppercase {Integrated Pest Management of \emph {Phyllocoptes fructiphilus}}}{53}{chapter.5}%
-\contentsline {subsection}{\numberline {5.0.1}Introduction}{53}{subsection.5.0.1}%
-\contentsline {section}{\numberline {5.1}Inducing Systemic Acquired Resistance with Acibenzolar-S-Methyl to reduce populations of \emph {Phyllocoptes fructiphilus}}{64}{section.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.0.1}4.1.4 Materials \& Methods}{65}{subsubsection.5.1.0.1}%
-\contentsline {section}{\numberline {5.2}4.2 Integrating Pest Management Methods to control \emph {Phyllocoptes fructiphilus}}{68}{section.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.0.1}4.2.1 Problem Statement}{68}{subsubsection.5.2.0.1}%
-\contentsline {subsubsection}{\numberline {5.2.0.2}4.2.2 Proposal: We propose testing various pest management treatments including predatory mites to reduce populations of \emph {Phyllocoptes fructiphilus}}{68}{subsubsection.5.2.0.2}%
-\contentsline {subsubsection}{\numberline {5.2.0.3}4.2.3 Materials \& Methods}{69}{subsubsection.5.2.0.3}%
-\contentsline {subsection}{\numberline {5.2.1}\emph {Brevipalpus}-transmitted orchid fleck virus infecting three new ornamental hosts in Florida}{74}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Abstract}{76}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Resumen}{76}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Keywords:}{77}{subsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.4.1}Virus Detection}{78}{subsubsection.5.2.4.1}%
-\contentsline {subsubsection}{\numberline {5.2.4.2}Mite Description}{80}{subsubsection.5.2.4.2}%
-\contentsline {subsection}{\numberline {5.2.5}Acknowledgements}{83}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Table 1: List of Asparagaceae (Nolinoidaea) species infected with orchid fleck virus, collected from the landscape of northern Florida}{84}{subsection.5.2.6}%
-\contentsline {subsection}{\numberline {5.2.7}Figure captions}{85}{subsection.5.2.7}%
-\contentsline {subsection}{\numberline {5.2.8}Figures}{86}{subsection.5.2.8}%
-\contentsline {chapter}{REFERENCES}{89}{chapter*.4}%
-\contentsline {extrachapter}{BIOGRAPHICAL SKETCH}{128}{chapter*.5}%
+\contentsline {section}{\numberline {1.4}Plant defenses and Systemic Acquires Resistance (SAR)}{22}{section.1.4}%
+\contentsline {section}{\numberline {1.5}A second mite-plant-pathogen system: \emph {Brevipalpus californicus} and Orchid fleck virus}{24}{section.1.5}%
+\contentsline {chapter}{\numberline {2}\uppercase {First report of \emph {Phyllocoptes fructiphilus} in Florida}}{26}{chapter.2}%
+\contentsline {chapter}{\numberline {3}\uppercase {2. Objective 1: Survey for the invasive mite \emph {Phyllocoptes fructiphilus}, Rose Rosette Virus (RRV), and wild predatory mites in northern Florida}}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}2.1 \emph {P. fructiphilus} detection in Northern Florida}{32}{section.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.0.1}2.1.1 Problem Statement}{32}{subsubsection.3.1.0.1}%
+\contentsline {subsubsection}{\numberline {3.1.0.2}2.1.2 First report of \emph {Phyllocoptes fructiphilus} in Florida}{34}{subsubsection.3.1.0.2}%
+\contentsline {subsubsection}{\numberline {3.1.0.3}2.1.3 Proposal: a series of surveys for \emph {P. fructiphilus} and Rose Rosette Disease in northern Florida}{39}{subsubsection.3.1.0.3}%
+\contentsline {subsubsection}{\numberline {3.1.0.4}2.1.4 Materials \& Methods}{40}{subsubsection.3.1.0.4}%
+\contentsline {subsubsection}{\numberline {3.1.0.5}2.1.5 Potential benefits}{42}{subsubsection.3.1.0.5}%
+\contentsline {subsubsection}{\numberline {3.1.0.6}2.1.6 Expected outcomes}{42}{subsubsection.3.1.0.6}%
+\contentsline {chapter}{\numberline {4}\uppercase {3. Objective 2: Potential of the predatory mite \emph {Amblyseius swirskii} to control \emph {Phyllocoptes fructiphilus}}}{44}{chapter.4}%
+\contentsline {section}{\numberline {4.1}3.1 \emph {A. swirskii} attraction to RRV-infected roses}{44}{section.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.0.1}Statement of Problem, Rationale and Justification}{45}{subsubsection.4.1.0.1}%
+\contentsline {subsubsection}{\numberline {4.1.0.2}Project Relevance to Sustainable Agriculture}{45}{subsubsection.4.1.0.2}%
+\contentsline {subsubsection}{\numberline {4.1.0.3}Objectives}{46}{subsubsection.4.1.0.3}%
+\contentsline {subsubsection}{\numberline {4.1.0.4}Approach and Methods}{47}{subsubsection.4.1.0.4}%
+\contentsline {subsubsection}{\numberline {4.1.0.5}3.1.1 Problem Statement}{47}{subsubsection.4.1.0.5}%
+\contentsline {subsubsection}{\numberline {4.1.0.6}3.1.2 Preliminary Data}{48}{subsubsection.4.1.0.6}%
+\contentsline {section}{\numberline {4.2}3.2 Volatile changes in Rose Rosette Virus-infected Plants Treated with Acibenzolar-S-Methyl, a functional analog of Salicylic Acid}{49}{section.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.0.1}3.2.1 Problem Statement}{49}{subsubsection.4.2.0.1}%
+\contentsline {subsubsection}{\numberline {4.2.0.2}3.2.2 Materials \& Methods}{50}{subsubsection.4.2.0.2}%
+\contentsline {subsubsection}{\numberline {4.2.0.3}3.2.3 Potential benefits}{51}{subsubsection.4.2.0.3}%
+\contentsline {subsubsection}{\numberline {4.2.0.4}3.2.4 Expected outcomes}{52}{subsubsection.4.2.0.4}%
+\contentsline {subsubsection}{\numberline {4.2.0.5}3.3.1 Proposal: a series of behavioral tests to determine which compounds from RRV-infected Pink Double Knock Out® roses are attractive to \emph {A. swirskii}}{52}{subsubsection.4.2.0.5}%
+\contentsline {subsubsection}{\numberline {4.2.0.6}3.3.2 Materials \& Methods}{52}{subsubsection.4.2.0.6}%
+\contentsline {subsubsection}{\numberline {4.2.0.7}3.3.3 Potential benefits}{53}{subsubsection.4.2.0.7}%
+\contentsline {subsubsection}{\numberline {4.2.0.8}3.3.4 Expected outcomes}{55}{subsubsection.4.2.0.8}%
+\contentsline {chapter}{\numberline {5}\uppercase {Integrated Pest Management of \emph {Phyllocoptes fructiphilus}}}{57}{chapter.5}%
+\contentsline {subsection}{\numberline {5.0.1}Introduction}{57}{subsection.5.0.1}%
+\contentsline {section}{\numberline {5.1}Inducing Systemic Acquired Resistance with Acibenzolar-S-Methyl to reduce populations of \emph {Phyllocoptes fructiphilus}}{66}{section.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.0.1}4.1.4 Materials \& Methods}{67}{subsubsection.5.1.0.1}%
+\contentsline {section}{\numberline {5.2}4.2 Integrating Pest Management Methods to control \emph {Phyllocoptes fructiphilus}}{70}{section.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.0.1}4.2.1 Problem Statement}{70}{subsubsection.5.2.0.1}%
+\contentsline {subsubsection}{\numberline {5.2.0.2}4.2.2 Proposal: We propose testing various pest management treatments including predatory mites to reduce populations of \emph {Phyllocoptes fructiphilus}}{70}{subsubsection.5.2.0.2}%
+\contentsline {subsubsection}{\numberline {5.2.0.3}4.2.3 Materials \& Methods}{71}{subsubsection.5.2.0.3}%
+\contentsline {subsection}{\numberline {5.2.1}\emph {Brevipalpus}-transmitted orchid fleck virus infecting three new ornamental hosts in Florida}{76}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Abstract}{78}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Resumen}{78}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Keywords:}{79}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}Virus Detection}{80}{subsubsection.5.2.4.1}%
+\contentsline {subsubsection}{\numberline {5.2.4.2}Mite Description}{82}{subsubsection.5.2.4.2}%
+\contentsline {subsection}{\numberline {5.2.5}Acknowledgements}{85}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Table 1: List of Asparagaceae (Nolinoidaea) species infected with orchid fleck virus, collected from the landscape of northern Florida}{86}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Figure captions}{87}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.8}Figures}{87}{subsection.5.2.8}%
+\contentsline {chapter}{REFERENCES}{90}{chapter*.4}%
+\contentsline {extrachapter}{BIOGRAPHICAL SKETCH}{131}{chapter*.5}%
