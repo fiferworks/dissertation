@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  8 SEP 2021 21:23
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  8 SEP 2021 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,38 +1030,38 @@ Overfull \hbox (13.1908pt too wide) in paragraph at lines 938--940
  []
 
 [96] [97] [98] [99]
-Overfull \hbox (77.6308pt too wide) in paragraph at lines 1031--1033
+Overfull \hbox (77.6308pt too wide) in paragraph at lines 1034--1036
  \TU/lmr/m/n/12 mites. Experimental and Applied Acarology. 30: 29–105, DOI:[][]
 10.1023/b:appa.0000006544.10072.01[][].  
  []
 
-[100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110]
-Overfull \hbox (6.66678pt too wide) in paragraph at lines 1295--1297
+[100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111]
+Overfull \hbox (6.66678pt too wide) in paragraph at lines 1298--1300
  \TU/lmr/m/n/12 and future prospects. Acta Horticulturae. 13–18, DOI:[][]10.176
 60/actahortic.2009.816.1[][].  
  []
 
-[111] [112] [113] [114] [115] [116]
-Overfull \hbox (26.89877pt too wide) in paragraph at lines 1415--1417
+[112] [113] [114] [115] [116]
+Overfull \hbox (26.89877pt too wide) in paragraph at lines 1418--1420
  \TU/lmr/m/n/12 American Society for Horticultural Science. 128: 575–577, DOI:[
 ][]10.21273/jashs.128.4.0575[][].  
  []
 
 [117] [118] [119] [120] [121] [122] [123] [124]
-Overfull \hbox (80.95479pt too wide) in paragraph at lines 1583--1585
+Overfull \hbox (80.95479pt too wide) in paragraph at lines 1586--1588
  \TU/lmr/m/n/12 cases. Experimental and Applied Acarology. 30: 135–160, DOI:[][
 ]10.1023/b:appa.0000006546.55305.e3[][].  
  []
 
-[125]
-Overfull \hbox (6.0868pt too wide) in paragraph at lines 1619--1621
+[125] [126]
+Overfull \hbox (6.0868pt too wide) in paragraph at lines 1622--1624
  \TU/lmr/m/n/12 salicylate in plant pathogen resistance. Nature. 385: 718–721, 
 DOI:[][]10.1038/385718a0[][].  
  []
 
-[126] [127]
+[127]
 LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 1
-647.
+653.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
 File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
 ) [128] [129] [130] [131]
