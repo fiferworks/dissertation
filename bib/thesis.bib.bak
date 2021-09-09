@@ -1189,6 +1189,7 @@ identification and acceptance process},
   number    = {3-4},
   pages     = {347--360},
   volume    = {57},
+  comment   = {A review of all the available information about the natural enemies reported in association with the red palm mite, Raoiella indica is presented. Twenty-eight species of predatory arthropods, including mites and insects, have been reported in association with R. indica in Asia, Africa and the Neotropics. In addition, pathogenic fungi associated with R. indica in the Caribbean have been reported. The available literature indicates that each site has a different natural enemy complex with only one predator species, Amblyseius largoensis (Acari: Phytoseiidae), present in all the geographical areas. The phytoseiids, Amblyseius caudatus Berlese, Amblyseius channabasavanni Gupta and A. largoensis, were regarded as important natural enemies of R. indica, and their predatory efficiency was studied in some detail. Among the predatory insects the coccinellids Stethorus keralicus Kapur and Telsimia ephippiger Chapin were reported as major predators of R. indica. The known distribution, abundance and relative importance of each species reported in association with R. indica are discussed.},
   doi       = {10.1007/s10493-011-9499-4},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -6505,6 +6506,18 @@ general and T. ludeni population forecast and precise timing of pest management 
   comment   = {Population size and density are correlated; mother mites produce more daughters when populations are smaller and less dense},
   doi       = {10.11158/saa.25.11.11},
   publisher = {Systematic and Applied Acarology Society},
+}
+
+@Article{Welbourn2003,
+  author    = {Welbourn, W. Calvin and Ochoa, Ronald and Kane, Ethan C. and Erbe, Eric F.},
+  journal   = {Experimental and Applied Acarology},
+  title     = {Morphological observations on {\textit{Brevipalpus phoenicis}} ({Acari}: {Tenuipalpidae}) including comparisons with {\textit{B. Californicus}} and {\textit{b. Obovatus}}},
+  year      = {2003},
+  number    = {1-3},
+  pages     = {107--133},
+  volume    = {30},
+  doi       = {10.1023/b:appa.0000006545.40017.a0},
+  publisher = {Springer Science and Business Media {LLC}},
 }
 
 @Article{Wergin2006,
