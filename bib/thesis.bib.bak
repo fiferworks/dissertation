@@ -700,6 +700,7 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   number    = {10},
   pages     = {1092--1096},
   volume    = {96},
+  abstract  = {The genetic inheritance of resistance to leprosis, the most important viral disease of citrus in Brazil, was characterized through the phenotypic assessment of 143 hybrids resulting from crosses between tangor {\textquoteleft}Murcott{\textquoteright} (Citrus sinensis $\times$ C. reticulata) and sweet orange {\textquoteleft}P{\^{e}}ra{\textquoteright} (C. sinensis), considered to be resistant and susceptible to the disease, respectively. All plants were grafted onto Rangpur lime (C. limonia) and inoculated with Citrus leprosis virus, cytoplasmic type through the infestation with viruliferous mites, Brevipalpus phoenicis. The experiments were arranged in a completely randomized block design with 10 replicates. Incidence and severity of the disease in leaves and stems as well as plant growth parameters (plant height and stem diameter) were recorded for 3 years after the infestation with the viruliferous mites. The average values of all variables were analyzed using principal component analysis, discriminant factorial analysis, estimation of the clonal repeatability coefficients, and frequency of the distributions of the average values for each measured variable. The principal component analysis resulted in the identification of at least two groups with resistance and susceptibility to leprosis, respectively. About 99% of all hybrids were correctly classified according to the discriminant factorial analysis. The broad-sense heritability coefficients for characteristics associated with incidence and severity of leprosis ranged from 0.88 to 0.96. The data suggest that the inheritance of resistance to leprosis may be controlled by only a few genes.},
   doi       = {10.1094/phyto-96-1092},
   publisher = {Scientific Societies},
 }
@@ -1283,6 +1284,7 @@ Impressions: Cryptic spp. make this model overestimate, also: humans primary sou
 @Article{Cedola2001,
   author    = {C{\'{e}}dola, Claudia V. and S{\'{a}}nchez, Norma E. and Liljesthr{\"{o}}m, Gerardo G.},
   journal   = {Experimental and Applied Acarology},
+  title     = {Effect of tomato leaf hairiness on functional and numerical response of {\textit{Neoseiulus californicus}} ({Acari}: {Phytoseiidae})},
   year      = {2001},
   number    = {10/11},
   pages     = {819--831},
@@ -1619,6 +1621,7 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   number    = {1-3},
   pages     = {181--202},
   volume    = {30},
+  abstract  = {According to published reports from 1906 to 1968, leprosis nearly destroyed the Florida citrus industry prior to 1925. This was supported with photographs showing typical leprosis symptoms on citrus leaves, fruit, and twigs. Support for the past occurrence of citrus leprosis in Florida includes: (1) presence of twig lesions in affected orange blocks in addition to lesions on fruits and leaves and corresponding absence of similar lesions on grapefruit; (2) yield reduction and die-back on infected trees; and (3) spread of the disease between 1906 and 1925. Transmission electron microscopy (TEM) examination of tissue samples from leprosis-like injuries to orange and grapefruit leaves from Florida in 1997, and fruits from grapefruit and sweet orange varieties from Texas in 1999 and 2000 did not contain leprosis-like viral particles or viroplasm inclusions. In contrast, leprosis viroplasm inclusions were readily identified by TEM within green non-senescent tissues surrounding leprosis lesions in two of every three orange leaf samples and half of the fruit samples obtained from Piracicaba, Brazil. Symptoms of leprosis were not seen in any of the 24,555 orange trees examined across Florida during 2001 and 2002. The authors conclude that citrus leprosis no longer exists in Florida nor occurs in Texas citrus based on: (1) lack of leprosis symptoms on leaves, fruit, and twigs of sweet orange citrus varieties surveyed in Florida; (2) failure to find virus particles or viroplasm inclusion bodies in suspect samples from both Florida and Texas examined by TEM; (3) absence of documented reports by others on the presence of characteristic leprosis symptoms in Florida; (4) lack of its documented occurrence in dooryard trees or abandoned or minimal pesticide citrus orchard sites in Florida. In view of the serious threat to citrus in the U.S., every effort must be taken to quarantine the importation of both citrus and woody ornamental plants that serve as hosts for Brevipalpus phoenicis (Geijskes), B. californicus (Banks), and B. obovatus Donnadieu (Acari: Tenuipalpidae) from countries where citrus leprosis occurs.},
   doi       = {10.1023/b:appa.0000006548.01625.72},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -2561,6 +2564,7 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   number    = {1},
   pages     = {69--77},
   volume    = {43},
+  abstract  = {Two groups of viruses cause the citrus disease complex known as leprosis: the cytoplasmic type, of the genera Cilevirus and Higrevirus, and the nuclear type, of the genus Dichorhavirus. It has been shown that the cilevirus Citrus leprosis virus C (CiLV-C) is transmitted by Brevipalpus yothersi. Within the genus Dichorhavirus, CiLV-N is a recently described and distinct species present in Brazil and transmitted by B. phoenicis sensu stricto, whereas the species found in Mexico and Colombia are strains of Orchid fleck virus (OFV-citrus), suspected to be vectored by B. californicus. A study was conducted to determine whether B. californicus and B. yothersi can acquire and inoculate Mexican isolates of CiLV-C and OFV-citrus to sweet and acid citrus species (sweet orange, mandarin, grapefruit, sour orange, Persian lime and Mexican lime) in experiments set up in areas in Mexico with prevalence of the respective viruses. Brevipalpus californicus acquired OFV-citrus and transmitted it to all the citrus cultivars included in the experiment, while B. yothersi acquired CiLV-C and transmitted it only to sweet citrus cultivars (sweet orange, mandarin, and grapefruit). Both mite species were able to become established and reproduce in the experimental plants for nearly a year. This study represents the first experimental evidence of OFV-citrus transmission by B. californicus, as well as evidence that B. yothersi cannot transmit this virus.},
   doi       = {10.1007/s40858-017-0195-8},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -2921,6 +2925,7 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   number    = {9},
   pages     = {1277--1284},
   volume    = {105},
+  abstract  = {Leprosis refers to two diseases of citrus that present similar necrotic local lesions, often surrounded by chlorotic haloes on citrus. Two distinct viruses are associated with this disease, one that produces particles primarily in the nucleus of infected plant cells (Citrus leprosis virus nuclear type [CiLV-N]; Dichorhavirus) and another type that produces particles in the cytoplasm of infected plant cells (Citrus leprosis virus cytoplasmic type [CiLV-C]; Cilevirus). Both forms are transmitted by Brevipalpid mites and have bipartite, single-stranded, RNA genomes. CiLV-C and CiLV-N are present in South and Central America and as far north as parts of Mexico. Although leprosis disease was originally described from Florida, it disappeared from there in the 1960s. The United States Department of Agriculture--Agricultural Research Service maintains preserved citrus specimens identified at inspection stations 50 or more years ago with symptoms of citrus leprosis. We isolated RNA from these samples and performed degradome sequencing. We obtained nearly full-length genome sequences of both a typical CiLV-C isolate intercepted from Argentina in 1967 and a distinct CiLV-N isolate obtained in Florida in 1948. The latter is a novel form of CiLV-N, not known to exist anywhere in the world today. We have also documented the previously unreported presence of CiLV-N in Mexico in the mid-20\textsuperscript{th} century.},
   doi       = {10.1094/phyto-03-15-0064-r},
   publisher = {Scientific Societies},
 }
@@ -5377,6 +5382,7 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   number    = {8},
   pages     = {963--976},
   volume    = {107},
+  abstract  = {Citrus leprosis (CL) is a viral disease endemic to the Western Hemisphere that produces local necrotic and chlorotic lesions on leaves, branches, and fruit and causes serious yield reduction in citrus orchards. Samples of sweet orange (Citrus $\times$ sinensis) trees showing CL symptoms were collected during a survey in noncommercial citrus areas in the southeast region of Brazil in 2013 to 2016. Transmission electron microscopy analyses of foliar lesions confirmed the presence of rod-like viral particles commonly associated with CL in the nucleus and cytoplasm of infected cells. However, every attempt to identify these particles by reverse-transcription polymerase chain reaction tests failed, even though all described primers for the detection of known CL-causing cileviruses and dichorhaviruses were used. Next-generation sequencing of total RNA extracts from three symptomatic samples revealed the genome of distinct, although highly related (>92% nucleotide sequence identity), viruses whose genetic organization is similar to that of dichorhaviruses. The genome sequence of these viruses showed 62% nucleotide sequence identity with those of orchid fleck virus and coffee ringspot virus. Globally, the deduced amino acid sequences of the open reading frames they encode share 32.7 to 63.8% identity with the proteins of the dichorhavirids. Mites collected from both the naturally infected citrus trees and those used for the transmission of one of the characterized isolates to Arabidopsis plants were anatomically recognized as Brevipalpus phoenicis sensu stricto. Molecular and biological features indicate that the identified viruses belong to a new species of CL-associated dichorhavirus, which we propose to call Citrus leprosis N dichorhavirus. Our results, while emphasizing the increasing diversity of viruses causing CL disease, lead to a reevaluation of the nomenclature of those viruses assigned to the genus Dichorhavirus. In this regard, a comprehensive discussion is presented.},
   doi       = {10.1094/phyto-02-17-0042-r},
   publisher = {Scientific Societies},
 }
@@ -5636,6 +5642,19 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   abstract  = {Evidence suggests that certain taxonomic groups are more thoroughly studied than others across a wide range of biological disciplines. Such taxonomic biases have the potential to define our understanding of theory, and limit the generality of our insights. To assess the distribution of taxonomic representation in current and historical animal behaviour research, we constructed a data set containing article metrics and taxonomic information for all research articles published in the journal Animal Behaviour between 1953 and 2015. We found significant taxonomic bias, with chordate papers making up 70% of all publications in the past 15 years, despite accounting for less than 7% of all animal species. Within chordates, Animal Behaviour content is biased towards endotherms, with birds and mammals comprising more than 50% of all publications. In sum, six animal orders account for more than half of all publications, with the most commonly published order, Passeriformes, representing one in five articles. Our findings confirm that a relatively narrow group of {\textquoteleft}model{\textquoteright} taxa represent the vast majority of articles, and may have a disproportionate influence on our understanding of behavioural patterns and processes. Furthermore, we find evidence of a citation bias, with chordate studies receiving on average four citations more per paper than arthropod studies. While historical trends suggest that the publication gap between arthropods and chordates has been shrinking for the past 45 years, our findings show that a considerable bias still remains. These biases may originate from human preferences for certain animal types, but we argue that they are likely maintained by a mixture of taxonomic prejudices, cultural aspects of behavioural ecology as a field, and of academia in general. We suggest that the patterns are clear and their implications serious, and that it is time that both researchers and journals give serious consideration to addressing them.},
   doi       = {10.1016/j.anbehav.2017.02.017},
   publisher = {Elsevier {BV}},
+}
+
+@Article{RossiZalaf2006,
+  author    = {Rossi-Zalaf, Luciana Savoi and Alves, S{\'{e}}rgio Batista},
+  journal   = {Experimental and Applied Acarology},
+  title     = {Susceptibility of {\textit{Brevipalpus phoenicis}} to entomopathogenic fungi},
+  year      = {2006},
+  month     = sep,
+  number    = {1},
+  pages     = {37--47},
+  volume    = {40},
+  doi       = {10.1007/s10493-006-9024-3},
+  publisher = {Springer Science and Business Media {LLC}},
 }
 
 @Article{RossiZalaf2008,
