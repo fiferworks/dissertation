@@ -1005,6 +1005,20 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   publisher    = {USDA Forest Service Publication Forest Health Technology Enterprise Team},
 }
 
+@Article{Boller2009,
+  author    = {Thomas Boller and Georg Felix},
+  journal   = {Annual Review of Plant Biology},
+  title     = {A renaissance of elicitors: perception of microbe-associated molecular patterns and danger signals by pattern-recognition receptors},
+  year      = {2009},
+  month     = jun,
+  number    = {1},
+  pages     = {379--406},
+  volume    = {60},
+  abstract  = {Microbe-associated molecular patterns (MAMPs) are molecular signatures typical of whole classes of microbes, and their recognition plays a key role in innate immunity. Endogenous elicitors are similarly recognized as damage-associated molecular patterns (DAMPs). This review focuses on the diversity of MAMPs/DAMPs and on progress to identify the corresponding pattern recognition receptors (PRRs) in plants. The two best-characterized MAMP/PRR pairs, flagellin/FLS2 and EF-Tu/EFR, are discussed in detail and put into a phylogenetic perspective. Both FLS2 and EFR are leucine-rich repeat receptor kinases (LRR-RKs). Upon treatment with flagellin, FLS2 forms a heteromeric complex with BAK1, an LRR-RK that also acts as coreceptor for the brassinolide receptor BRI1. The importance of MAMP/PRR signaling for plant immunity is highlighted by the finding that plant pathogens use effectors to inhibit PRR complexes or downstream signaling events. Current evidence indicates that MAMPs, DAMPs, and effectors are all perceived as danger signals and induce a stereotypic defense response.},
+  doi       = {10.1146/annurev.arplant.57.032905.105346},
+  publisher = {Annual Reviews},
+}
+
 @Article{Bolques2014,
   author  = {Bolques, Alejandro and Paret, Mathews and Knox, Gary and Babu, Binoy and Dankers, Hank and Schubert, Tim},
   title   = {{Rose rosette disease} alert},
@@ -3338,6 +3352,7 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   number    = {7117},
   pages     = {323--329},
   volume    = {444},
+  abstract  = {Many plant-associated microbes are pathogens that impair plant growth and reproduction. Plants respond to infection using a two-branched innate immune system. The first branch recognizes and responds to molecules common to many classes of microbes, including non-pathogens. The second responds to pathogen virulence factors, either directly or through their effects on host targets. These plant immune systems, and the pathogen molecules to which they respond, provide extraordinary insights into molecular recognition, cell biology and evolution across biological kingdoms. A detailed understanding of plant immune function will underpin crop improvement for food, fibre and biofuels production.},
   doi       = {10.1038/nature05286},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -4742,6 +4757,51 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   volume    = {23},
   doi       = {10.1094/mpmi-04-10-0097},
   publisher = {Scientific Societies},
+}
+
+@Article{Mithoefer2008,
+  author    = {Mith{\"{o}}fer, Axel and Boland, Wilhelm},
+  journal   = {Plant Physiology},
+  title     = {Recognition of herbivory-associated molecular patterns},
+  year      = {2008},
+  month     = mar,
+  number    = {3},
+  pages     = {825--831},
+  volume    = {146},
+  abstract  = {During their long, approximately 350 million-year period of coexistence, plants, insects, and other arthropods
+evolved a variety of different interactions (Gatehouse,
+2002). Some interactions can be beneficial for the plant,
+as in the case of insect-mediated pollination or seed
+dispersion, and others are deleterious, as in the case of
+attack by herbivorous insects (Fig. 1). To successfully
+combat aggressors, plants must be equipped with a
+sophisticated sensory system to perceive signals fast
+and efficiently from their environment and thereby detect potential enemies and subsequently translate and
+integrate such signals into appropriate biochemical and
+physiological responses. Thus, upon attack, a number of
+reactions are detectable in plant cells, including changes
+in ion flux and protein phosphorylation, formation of
+reactive oxygen species and oxylipins, as well as initiation of various defense reactions in the host plant (Kessler
+and Baldwin, 2002; Maffei et al., 2007b). Intriguing
+questions arising from these observations are how
+plants recognize the particular herbivores, what kinds
+of signals are involved, how such signals are perceived,
+and how they are converted into downstream signaling
+pathways involved in plant defense activation. Signal
+perception in the plant cell may rely on the presence of
+specific receptors for chemical signals or on general
+recognition processes based on localized tissue injuries.
+In principle, the feeding process combines two sites of
+the same coin: mechanical wounding of the infested tissue and introduction of oral secretions that are delivered
+from the feeding organism into the wounded tissue (i.e.
+the attacked plant is challenged by both a mechanical
+as well as a chemical stimulus). This Update introduces
+herbivore-derived metabolites, which represent serious candidates for signaling compounds; we will also
+discuss advances in herbivore recognition, namely, the
+perception of insect-derived signals by specific binding
+proteins. The properties of these binding proteins suggest their involvement in signal perception.},
+  doi       = {10.1104/pp.107.113118},
+  publisher = {Oxford University Press ({OUP})},
 }
 
 @article{Monfreda2007,
@@ -6497,6 +6557,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   volume    = {4},
   doi       = {10.1186/1742-9994-4-6},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Stahl2017,
+  author    = {Stahl, Elia and Hilfiker, Olivier and Reymond, Philippe},
+  journal   = {The Plant Journal},
+  title     = {Plant-arthropod interactions: who is the winner?},
+  year      = {2017},
+  month     = dec,
+  number    = {4},
+  pages     = {703--728},
+  volume    = {93},
+  abstract  = {Herbivorous arthropods have interacted with plants for millions of years. During feeding they release chemical cues that allow plants to detect the attack and mount an efficient defense response. A signaling cascade triggers the expression of hundreds of genes, which encode defensive proteins and enzymes for synthesis of toxic metabolites. This direct defense is often complemented by emission of volatiles that attract beneficial parasitoids. In return, arthropods have evolved strategies to interfere with plant defenses, either by producing effectors to inhibit detection and downstream signaling steps, or by adapting to their detrimental effect. In this review, we address the current knowledge on the molecular and chemical dialog between plants and herbivores, with an emphasis on co-evolutionary aspects.},
+  doi       = {10.1111/tpj.13773},
+  publisher = {Wiley},
 }
 
 @InCollection{Steppuhn2008,
