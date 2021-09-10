@@ -456,6 +456,7 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   year      = {2016},
   month     = nov,
   volume    = {7},
+  abstract  = {Leprosis is a serious disease of citrus caused by Citrus leprosis virus C (CiLV-C, genus Cilevirus) whose transmission is mediated by false spider mites of the genus Brevipalpus. CiLV-C infection does not systemically spread in any of its known host plants, thus remaining restricted to local lesions around the feeding sites of viruliferous mites. To get insight into this unusual pathosystem, we evaluated the expression profiles of genes involved in defense mechanisms of Arabidopsis thaliana and Citrus sinensis upon infestation with non-viruliferous and viruliferous mites by using reverse-transcription qPCR. These results were analyzed together with the production of reactive oxygen species (ROS) and the appearance of dead cells as assessed by histochemical assays. After interaction with non-viruliferous mites, plants locally accumulated ROS and triggered the salicylic acid (SA) and jasmonate/ethylene (JA/ET) pathways. ERF branch of the JA/ET pathways was highly activated. In contrast, JA pathway genes were markedly suppressed upon the CiLV-C infection mediated by viruliferous mites. Viral infection also intensified the ROS burst and cell death, and enhanced the expression of genes involved in the RNA silencing mechanism and SA pathway. After 13 days of infestation of two sets of Arabidopsis plants with non-viruliferous and viruliferous mites, the number of mites in the CiLV-C infected Arabidopsis plants was significantly higher than in those infested with the non-viruliferous ones. Oviposition of the viruliferous mites occurred preferentially in the CiLV-C infected leaves. Based on these results, we postulated the first model of plant/Brevipalpus mite/cilevirus interaction in which cells surrounding the feeding sites of viruliferous mites typify the outcome of a hypersensitive-like response, whereas viral infection induces changes in the behavior of its vector.},
   doi       = {10.3389/fpls.2016.01757},
   publisher = {Frontiers Media {SA}},
 }
@@ -467,6 +468,7 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   year      = {2018},
   month     = aug,
   volume    = {9},
+  abstract  = {False-spider mites of the genus Brevipalpus are highly polyphagous pests that attack hundreds of plant species of distinct families worldwide. Besides causing direct damage, these mites may also act as vectors of many plant viruses that threaten high-value ornamental plants like orchids and economically important crops such as citrus and coffee. To better understand the molecular mechanisms behind plant-mite interaction we used an RNA-Seq approach to assess the global response of Arabidopsis thaliana (Arabidopsis) plants along the course of the infestation with Brevipalpus yothersi, the main vector species within the genus. Mite infestation triggered a drastic transcriptome reprogramming soon at the beginning of the interaction and throughout the time course, deregulating 1755, 3069 and 2680 genes at 6 hours after infestation (hai), 2 days after infestation (dai), and 6 dai, respectively. Gene set enrichment analysis revealed a clear modulation of processes related to the plant immune system. Co-expressed genes correlated with specific classes of transcription factors regulating defense pathways and developmental processes. Up-regulation of defensive responses correlated with the down-regulation of growth-related processes, suggesting the triggering of the growth-defense crosstalk to optimize plant fitness. Biological processes (BPs) enriched at all time points were markedly related to defense against herbivores and other biotic stresses involving the defense hormones salicylic acid (SA) and jasmonic acid (JA). Levels of both hormones were higher in plants challenged with mites than in the non-infested ones, supporting the simultaneous induction of genes from both pathways. To further clarify the functional relevance of the plant hormonal pathways on the interaction, we evaluated the mite performance on Arabidopsis mutants impaired in SA- or JA-mediated response. Mite oviposition was lower on mutants defective in SA biosynthesis (sid2) and signaling (npr1), showing a function for SA pathway in improving the mite reproduction, an unusual mechanism compared to closely-related spider mites. Here we provide the first report on the global and dynamic plant transcriptome triggered by Brevipalpus feeding, extending our knowledge on plant-mite interaction. Furthermore, our results suggest that Brevipalpus mites manipulate the plant defensive response to render the plant more susceptible to their colonization by inducing the SA-mediated pathway.},
   comment   = {Mites are able to modulate plant defenses to improve their survival on their hosts},
   doi       = {10.3389/fpls.2018.01147},
   publisher = {Frontiers Media {SA}},
@@ -520,6 +522,7 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   month     = nov,
   pages     = {300--310},
   volume    = {252},
+  abstract  = {Inducible anti-herbivore defenses in plants are predominantly regulated by jasmonic acid (JA). On tomato plants, most genotypes of the herbivorous generalist spider mite Tetranychus urticae induce JA defenses and perform poorly on it, whereas the Solanaceae specialist Tetranychus evansi, who suppresses JA defenses, performs well on it. We asked to which extent these spider mites and the predatory mite Phytoseiulus longipes preying on these spider mites eggs are affected by induced JA-defenses. By artificially inducing the JA-response of the tomato JA-biosynthesis mutant def-1 using exogenous JA and isoleucine (Ile), we first established the relationship between endogenous JA-Ile-levels and the reproductive performance of spider mites. For both mite species we observed that they produced more eggs when levels of JA-Ile were low. Subsequently, we allowed predatory mites to prey on spider mite-eggs derived from wild-type tomato plants, def-1 and JA-Ile-treated def-1 and observed that they preferred, and consumed more, eggs produced on tomato plants with weak JA defenses. However, predatory mite oviposition was similar across treatments. Our results show that induced JA-responses negatively affect spider mite performance, but positively affect the survival of their offspring by constraining egg-predation.},
   doi       = {10.1016/j.plantsci.2016.08.004},
   publisher = {Elsevier {BV}},
 }
@@ -1035,6 +1038,20 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   month     = dec,
   doi       = {10.1079/ber2002193},
   publisher = {Cambridge University Press ({CUP})},
+}
+
+@Article{Boom2004,
+  author    = {Boom, Cindy E. M. Van Den and Beek, Teris A. Van and Posthumus, Maarten A. and Groot, Aede De and Dicke, Marcel},
+  journal   = {Journal of Chemical Ecology},
+  title     = {Qualitative and quantitative variation among volatile profiles induced by {\textit{Tetranychus urticae}} feeding on plants from various families},
+  year      = {2004},
+  month     = jan,
+  number    = {1},
+  pages     = {69--89},
+  volume    = {30},
+  abstract  = {Many plant species are known to emit herbivore-induced volatiles in response to herbivory. The spider mite Tetranychus urticae Koch is a generalist that can feed on several hundreds of host plant species. Volatiles emitted by T. urticae-infested plants of 11 species were compared: soybean (Glycine max), golden chain (Laburnum anagyroides), black locust (Robinia pseudo-acacia), cowpea (Vigna unguiculata), tobacco (Nicotiana tabacum), eggplant (Solanum melalonga), thorn apple (Datura stramonium), sweet pepper (Capsicum annuum), hop (Humulus lupulus), grapevine (Vitis vinifera), and ginkgo (Ginkgo biloba). The degree to which the plant species produced novel compounds was analyzed when compared to the odors of mechanically damaged leaves. Almost all of the investigated plant species produced novel compounds that dominated the volatile blend, such as methyl salicylate, terpenes, oximes, and nitriles. Only spider mite-infested eggplant and tobacco emitted a blend that was merely quantitatively different from the blend emitted by mechanically damaged or clean leaves. We hypothesized that plant species with a low degree of direct defense would produce more novel compounds. However, although plant species with a low direct defense level do use indirect defense to defend themselves, they do not always emit novel compounds. Plant species with a high level of direct defense seem to invest in the production of novel compounds. When plant species of the Fabaceae were compared to plant species of the Solanaceae, qualitative differences in spider mite-induced volatile blends seemed to be more prominent in the Fabaceae than in the Solanaceae.},
+  doi       = {10.1023/b:joec.0000013183.72915.99},
+  publisher = {Springer Science and Business Media {LLC}},
 }
 
 @Article{Bouagga2018,
@@ -1926,6 +1943,17 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   doi       = {10.1007/978-3-030-17265-7_1},
 }
 
+@InCollection{Degenhardt2008,
+  author    = {J{\"{o}}rg Degenhardt},
+  booktitle = {Induced Plant Resistance to Herbivory},
+  publisher = {Springer Netherlands},
+  title     = {Induced defenses and the cost-benefit paradigm},
+  year      = {2008},
+  editor    = {Schaller, Andreas},
+  pages     = {433--442},
+  doi       = {10.1007/978-1-4020-8182-8_3},
+}
+
 @Article{Delisle2015,
   author    = {Delisle, J. F. and Shipp, L. and Brodeur, J.},
   title     = {Apple pollen as a supplemental food source for the control of {Western flower thrips} by two predatory mites, {\textit{Amblyseius swirskii}} and {\textit{Neoseiulus cucumeris}} {({Acari}: {Phytoseiidae})}, on potted chrysanthemum},
@@ -1992,6 +2020,8 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   publisher = {Elsevier},
   title     = {Dichorhaviruses in their host plants and mite vectors},
   year      = {2018},
+  isbn      = {978-0-12-815194-5},
+  volume    = {102},
   booktitle = {Advances in Virus Research},
   doi       = {10.1016/bs.aivir.2018.06.001},
   pages     = {119--148},
@@ -2520,6 +2550,15 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   publisher = {Scientific Societies},
 }
 
+@Book{Fraser1987,
+  author    = {Fraser, R. S. S.},
+  publisher = {Research Studies Press Wiley},
+  title     = {Biochemistry of virus-infected plants},
+  year      = {1987},
+  address   = {Letchworth, Hertfordshire, England New York},
+  isbn      = {0863800467},
+}
+
 @Article{Freitas2021,
   author    = {de Freitas, Giselle Santos and de Ara{\'{u}}jo Lira, Vanessa and Jumbo, Luis Oswaldo Viteri and dos Santos, Francisco Jos{\'{e}} and R{\^{e}}go, Adriano Soares and Teodoro, Adenir Vieira},
   journal   = {Crop Protection},
@@ -2905,6 +2944,15 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   publisher = {Public Library of Science ({PLoS})},
 }
 
+@Book{Goodman1994,
+  author    = {Goodman, R. N. and Novacky, A. J.},
+  publisher = {APS Press},
+  title     = {The hypersensitive reaction in plants to pathogens : a resistance phenomenon},
+  year      = {1994},
+  address   = {St. Paul, Minn},
+  isbn      = {0890541655},
+}
+
 @Article{Goy1992,
   author    = {Goy, P. Ahl and Felix, G. and M{\'{e}}traux, J. P. and Meins, F.},
   journal   = {Physiological and Molecular Plant Pathology},
@@ -3022,6 +3070,20 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   ean       = {9781107668249},
   pagetotal = {454},
   url       = {https://www.ebook.de/de/product/31183605/ann_e_hajek_joergen_eilenberg_natural_enemies.html},
+}
+
+@Article{Halitschke2007,
+  author    = {Halitschke, Rayko and Stenberg, Johan A. and Kessler, Danny and Kessler, Andr{\'{e}} and Baldwin, Ian T.},
+  journal   = {Ecology Letters},
+  title     = {Shared signals {\textendash}`alarm calls' from plants increase apparency to herbivores and their enemies in nature},
+  year      = {2007},
+  month     = oct,
+  number    = {0},
+  pages     = {071026235140001--???},
+  volume    = {0},
+  abstract  = {The attraction of natural enemies of herbivores by volatile organic compounds as an induced indirect defence has been studied in several plant systems. The evidence for their defensive function originates mainly from laboratory studies with trained parasitoids and predators; the defensive function of these emissions for plants in natural settings has been rarely demonstrated. In native populations and laboratory Y-tube choice experiments with transgenic Nicotiana attenuata plants unable to release particular volatiles, we demonstrate that predatory bugs use terpenoids and green leaf volatiles (GLVs) to locate their prey on herbivore-attacked plants. By attracting predators with volatile signals, this native plant reduces its herbivore load -- demonstrating the defensive function of herbivore-induced volatile emissions. However, plants producing GLVs are also damaged more by flea beetles. The implications of these conflicting ecological effects for the evolution of induced volatile emissions and for the development of sustainable agricultural practices are discussed.},
+  doi       = {10.1111/j.1461-0248.2007.01123.x},
+  publisher = {Wiley},
 }
 
 @Article{Hardy2017,
@@ -3377,6 +3439,7 @@ Conclusions Herbivores have evolved diverse strategies, which are not mutually e
   number    = {1633},
   pages     = {443--452},
   volume    = {275},
+  abstract  = {Plants and herbivores are thought to be engaged in a coevolutionary arms race: rising frequencies of plants with anti-herbivore defences exert pressure on herbivores to resist or circumvent these defences and vice versa. Owing to its frequency-dependent character, the arms race hypothesis predicts that herbivores exhibit genetic variation for traits that determine how they deal with the defences of a given host plant phenotype. Here, we show the existence of distinct variation within a single herbivore species, the spider mite Tetranychus urticae, in traits that lead to resistance or susceptibility to jasmonate (JA)-dependent defences of a host plant but also in traits responsible for induction or repression of JA defences. We characterized three distinct lines of T. urticae that differentially induced JA-related defence genes and metabolites while feeding on tomato plants (Solanum lycopersicum). These lines were also differently affected by induced JA defences. The first line, which induced JA-dependent tomato defences, was susceptible to those defences; the second line also induced JA defences but was resistant to them; and the third, although susceptible to JA defences, repressed induction. We hypothesize that such intraspecific variation is common among herbivores living in environments with a diversity of plants that impose diverse selection pressure.},
   doi       = {10.1098/rspb.2007.1277},
   publisher = {The Royal Society},
 }
@@ -3411,6 +3474,34 @@ Conclusions Herbivores have evolved diverse strategies, which are not mutually e
   volume    = {101},
   doi       = {10.1099/jgv.0.001418},
   publisher = {Microbiology Society},
+}
+
+@Article{Kessler2001,
+  author    = {Kessler, Andr{\'{e}} and Baldwin, Ian T.},
+  journal   = {Science},
+  title     = {Defensive function of herbivore-induced plant volatile emissions in nature},
+  year      = {2001},
+  month     = mar,
+  number    = {5511},
+  pages     = {2141--2144},
+  volume    = {291},
+  abstract  = {Herbivore attack is known to increase the emission of volatiles, which attract predators to herbivore-damaged plants in the laboratory and agricultural systems. We quantified volatile emissions fromNicotiana attenuata plants growing in natural populations during attack by three species of leaf-feeding herbivores and mimicked the release of five commonly emitted volatiles individually. Three compounds (cis-3-hexen-1-ol, linalool, and cis-$\alpha$-bergamotene) increased egg predation rates by a generalist predator; linalool and the complete blend decreased lepidopteran oviposition rates. As a consequence, a plant could reduce the number of herbivores by more than 90% by releasing volatiles. These results confirm that indirect defenses can operate in nature.},
+  doi       = {10.1126/science.291.5511.2141},
+  publisher = {American Association for the Advancement of Science ({AAAS})},
+}
+
+@Article{Kessler2004,
+  author    = {Kessler, Andr{\'{e}} and Halitschke, Ayko and Baldwin, Ian T.},
+  journal   = {Science},
+  title     = {Silencing the jasmonate cascade: induced plant defenses and insect populations},
+  year      = {2004},
+  month     = jul,
+  number    = {5684},
+  pages     = {665--668},
+  volume    = {305},
+  abstract  = {We transformed the native tobacco, Nicotiana attenuata, to silence its lipoxygenase, hydroperoxide lyase, and allene oxide synthase genes in order to inhibit oxylipin signaling, known to mediate the plant's direct and indirect defenses. When planted into native habitats, lipoxygenase-deficient plants were more vulnerable to N. attenuata's adapted herbivores but also attracted novel herbivore species, which fed and reproduced successfully. In addition to highlighting the value of genetically silencing plants to study ecological interactions in nature, these results show that lipoxygenase-dependent signaling determines host selection for opportunistic herbivores and that induced defenses influence herbivore community composition.},
+  doi       = {10.1126/science.1096931},
+  publisher = {American Association for the Advancement of Science ({AAAS})},
 }
 
 @Article{Khalaf2020,
@@ -4311,16 +4402,6 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   publisher = {Wiley},
 }
 
-@Book{Tollrian1999,
-  author    = {M},
-  editor    = {Tollrain, Ralph and Harvell, C. Drew},
-  publisher = {Princeton University Press},
-  title     = {The ecology and evolution of inducible defenses},
-  year      = {1999},
-  address   = {Princeton, N.J},
-  isbn      = {9780691012216},
-}
-
 @Article{Maeda1998,
   author  = {Maeda, T.},
   journal = {Abstr., 7\textsuperscript{th} Int. Cong. Plant Pathol.},
@@ -4671,6 +4752,20 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   number={1},
   pages={35--43},
   year={2007}
+}
+
+@Article{Moraes2001,
+  author    = {Moraes, Consuelo M. De and Mescher, Mark C. and Tumlinson, James H.},
+  journal   = {Nature},
+  title     = {Caterpillar-induced nocturnal plant volatiles repel conspecific females},
+  year      = {2001},
+  month     = mar,
+  number    = {6828},
+  pages     = {577--580},
+  volume    = {410},
+  abstract  = {Plants respond to insect herbivory by synthesizing and releasing complex blends of volatile compounds, which provide important host-location cues for insects that are natural enemies of herbivores1,2,3. The effects of these volatile blends on herbivore behaviour have been investigated to only a limited extent4,5, in part because of the assumption that herbivore-induced volatile emissions occur mainly during the light phase of the photoperiod6,7. Because many moths---whose larvae are some of the most important insect herbivores---are nocturnal, herbivore-induced plant volatiles have not hitherto been considered to be temporally available as host-location cues for ovipositing females. Here we present chemical and behavioural assays showing that tobacco plants (Nicotiana tabacum) release herbivore-induced volatiles during both night and day. Moreover, several volatile compounds are released exclusively at night and are highly repellent to female moths (Heliothis virescens). The demonstration that tobacco plants release temporally different volatile blends and that lepidopteran herbivores use induced plant signals released during the dark phase to choose sites for oviposition adds a new dimension to our understanding of the role of chemical cues in mediating tritrophic interactions.},
+  doi       = {10.1038/35069058},
+  publisher = {Springer Science and Business Media {LLC}},
 }
 
 @InBook{Brattsten1986,
@@ -5244,6 +5339,16 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Book{Palukaitis2018,
+  author    = {Palukaitis, Peter and Roossinck, Marilyn J.},
+  publisher = {Academic Press is an imprint of Elsevier},
+  title     = {Advances in virus research},
+  year      = {2018},
+  address   = {Cambridge, MA},
+  isbn      = {9780128151945},
+  volume    = {102},
+}
+
 @Article{Pang2019,
   author    = {Pang, Mingxiong and Gayral, Mathieu and Lyle, Kelsey and Shires, Madalyn K. and Ong, Kevin and Byrne, David and Verchot, Jeanmarie},
   title     = {Infectious {DNA} clone technology and inoculation strategy for {Rose rosette virus} that includes all seven segments of the negative-strand {RNA} genome},
@@ -5262,6 +5367,7 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   number    = {9},
   pages     = {1780--1788},
   volume    = {73},
+  abstract  = {Biological control is an important ecosystem service delivered by natural enemies. Together with breeding for plant defence, it constitutes one of the most promising alternatives to pesticides for controlling herbivores in sustainable crop production. Especially induced plant defences may be promising targets in plant breeding for resistance against arthropod pests. Because they are activated upon herbivore damage, costs are only incurred when defence is needed. Moreover, they can be more specific than constitutive defences. Nevertheless, inducible defence traits that are harming plant pest organisms may interfere with biological control agents, such as predators and parasitoids. Despite the vast fundamental knowledge on plant defence mechanisms and their effects on natural enemies, our understanding of the feasibility of combining biological control with induced plant defence in practice is relatively poor. In this review, we focus on arthropod pest control and present the most important features of biological control with natural enemies and of induced plant defence. Furthermore, we show potential synergies and conflicts among them and, finally, identify gaps and list opportunities for their combined use in crop protection. We suggest that breeders should focus on inducible resistance traits that are compatible with the natural enemies of arthropod pests, specifically traits that help communities of natural enemies to build up.},
   doi       = {10.1002/ps.4587},
   publisher = {Wiley},
 }
@@ -5521,6 +5627,17 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   month     = jan,
   doi       = {10.1146/annurev.ento.43.1.153},
   publisher = {Annual Reviews},
+}
+
+@InCollection{Qualley2008,
+  author    = {Qualley, Anthony V. and Dudareva, Natalia},
+  booktitle = {Induced Plant Resistance to Herbivory},
+  publisher = {Springer Netherlands},
+  title     = {Aromatic volatiles and their involvement in plant defense},
+  year      = {2008},
+  editor    = {Schaller, Andreas},
+  pages     = {409--432},
+  doi       = {10.1007/978-1-4020-8182-8_3},
 }
 
 @Article{Raguso1998,
@@ -6040,6 +6157,33 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Public Library of Science ({PLoS})},
 }
 
+@Article{Santamaria2020,
+  author    = {M. Estrella Santamaria and Ana Arnaiz and Irene Rosa-Diaz and Pablo Gonz{\'{a}}lez-Melendi and Gara Romero-Hernandez and Dairon A. Ojeda-Martinez and Alejandro Garcia and Estefania Contreras and Manuel Martinez and Isabel Diaz},
+  journal   = {Plants},
+  title     = {Plant defenses against {\textit{Tetranychus urticae}}: mind the gaps},
+  year      = {2020},
+  month     = apr,
+  number    = {4},
+  pages     = {464},
+  volume    = {9},
+  doi       = {10.3390/plants9040464},
+  publisher = {{MDPI} {AG}},
+}
+
+@Article{Sarmento2011,
+  author    = {Renato Almeida Sarmento and Felipe Lemos and Petra M. Bleeker and Robert C. Schuurink and Angelo Pallini and Maria Goreti Almeida Oliveira and Eraldo R. Lima and Merijn Kant and Maurice W. Sabelis and Arne Janssen},
+  journal   = {Ecology Letters},
+  title     = {A herbivore that manipulates plant defence},
+  year      = {2011},
+  month     = feb,
+  number    = {3},
+  pages     = {229--236},
+  volume    = {14},
+  abstract  = {Phytopathogens and herbivores induce plant defences. Whereas there is evidence that some pathogens suppress these defences by interfering with signalling pathways involved in the defence, such evidence is scarce for herbivores. We found that the invasive spider mite Tetranychus evansi suppresses the induction of the salicylic acid and jasmonic acid signalling routes involved in induced plant defences in tomato. This was reflected in the levels of inducible defence compounds, such as proteinase inhibitors, which in mite-infested plants were reduced to even lower levels than the constitutive levels in herbivore-free plants. Additionally, the spider mite suppressed the release of inducible volatiles, which are implicated in plant defence. Consequently, the mites performed much better on previously attacked plants than on non-attacked plants. These findings provide a new perspective on plant--herbivore interactions, plant protection and plant resistance to invasive species.},
+  doi       = {10.1111/j.1461-0248.2010.01575.x},
+  publisher = {Wiley},
+}
+
 @Book{Sarwar2017,
   author    = {Sarwar, Muhammad},
   publisher = {LAP Lambert Academic Publishing},
@@ -6113,6 +6257,15 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   volume    = {5},
   doi       = {10.1038/nrmicro1596},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Book{Schoonhoven2005,
+  author    = {Schoonhoven, Louis M. and van Loon, Joop J. A. and Dicke, Marcel},
+  publisher = {Oxford University Press},
+  title     = {Insect-plant biology},
+  year      = {2005},
+  address   = {Oxford New York},
+  isbn      = {9780198525950},
 }
 
 @Article{Scott2013,
@@ -6344,6 +6497,17 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   volume    = {4},
   doi       = {10.1186/1742-9994-4-6},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@InCollection{Steppuhn2008,
+  author    = {Steppuhn, Anke and Baldwin, Ian T.},
+  booktitle = {Induced Plant Resistance to Herbivory},
+  publisher = {Springer Netherlands},
+  title     = {Induced defenses and the cost-benefit paradigm},
+  year      = {2008},
+  editor    = {Schaller, Andreas},
+  pages     = {61--83},
+  doi       = {10.1007/978-1-4020-8182-8_3},
 }
 
 @Article{Stern1959,
@@ -6675,6 +6839,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Wiley},
 }
 
+@Article{Vancanneyt2001,
+  author    = {Vancanneyt, G. and Sanz, C. and Farmaki, T. and Paneque, M. and Ortego, F. and Castanera, P. and Sanchez-Serrano, J. J.},
+  journal   = {Proceedings of the National Academy of Sciences},
+  title     = {Hydroperoxide lyase depletion in transgenic potato plants leads to an increase in aphid performance},
+  year      = {2001},
+  month     = jun,
+  number    = {14},
+  pages     = {8139--8144},
+  volume    = {98},
+  abstract  = {Hydroperoxide lyases (HPLs) catalyze the cleavage of fatty acid hydroperoxides to aldehydes and oxoacids. These volatile aldehydes play a major role in forming the aroma of many plant fruits and flowers. In addition, they have antimicrobial activity in vitro and thus are thought to be involved in the plant defense response against pest and pathogen attack. An HPL activity present in potato leaves has been characterized and shown to cleave specifically 13-hydroperoxides of both linoleic and linolenic acids to yield hexanal and 3-hexenal, respectively, and 12-oxo-dodecenoic acid. A cDNA encoding this HPL has been isolated and used to monitor gene expression in healthy and mechanically damaged potato plants. HPL gene expression is subject to developmental control, being high in young leaves and attenuated in older ones, and it is induced weakly by wounding. HPL enzymatic activity, nevertheless, remains constant in leaves of different ages and also after wounding, suggesting that posttranscriptional mechanisms may regulate its activity levels. Antisense-mediated HPL depletion in transgenic potato plants has identified this enzyme as a major route of 13-fatty acid hydroperoxide degradation in the leaves. Although these transgenic plants have highly reduced levels of both hexanal and 3-hexenal, they show no phenotypic differences compared with wild-type ones, particularly in regard to the expression of wound-induced genes. However, aphids feeding on the HPL-depleted plants display approximately a two-fold increase in fecundity above those feeding on nontransformed plants, consistent with the hypothesis that HPL-derived products have a negative impact on aphid performance. Thus, HPL-catalyzed production of C6 aldehydes may be a key step of a built-in resistance mechanism of plants against some sucking insect pests.},
+  doi       = {10.1073/pnas.141079498},
+  publisher = {Proceedings of the National Academy of Sciences},
+}
+
 @Article{Vasquez2008,
   author    = {V{\'{a}}squez, Carlos and de Magally Quir{\'{o}}s, G. and Aponte, Orlando and Sandoval, D. Mar{\'{\i}}a F.},
   journal   = {Neotropical Entomology},
@@ -6968,6 +7146,20 @@ general and T. ludeni population forecast and precise timing of pest management 
   publisher = {Wiley},
 }
 
+@Article{Westphal1991,
+  author    = {E. Westphal and F. Dreger and R. Bronner},
+  journal   = {Experimental {\&} Applied Acarology},
+  title     = {Induced resistance in {\textit{Solanum dulcamara}} triggered by the gall mite {\textit{Aceria cladophthirus}} ({Acari}: {Eriophyoidea})},
+  year      = {1991},
+  month     = sep,
+  number    = {1-2},
+  pages     = {111--118},
+  volume    = {12},
+  abstract  = {After infestation ofSolanum dulcamara leaves by the eriophyoid gall miteAceria cladophthirus (Nalepa), induced resistance became operative against subsequent eriophyoid attacks. The protective effect, manifested by reduction in plant damage and/or mite proliferation, lasted up to 40 days. When the challenger wasA. cladophthirus, the number and size of lesions decreased significantly but mite mortality was not enhanced. When the rust miteThamnacus solani was used as challenger, both russeting symptoms and mite survival rate were strongly reduced. AsA. cladophthirus-induced resistance is relatively permanent, it opens new prospects for eriophyoid control in the field.},
+  doi       = {10.1007/bf01204404},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @InBook{Westphal1996,
   author    = {Westphal, E. and Manson, D. C. M.},
   chapter   = {Stylar feeding injury and control of eriophyoid mites in citrus},
@@ -7172,6 +7364,24 @@ general and T. ludeni population forecast and precise timing of pest management 
   volume    = {6},
 }
 
+@Book{Agrawal1999a,
+  editor    = {Agrawal, Anurag A. and Tuzun, Sadik and Bent, Elizabeth},
+  publisher = {APS Press},
+  title     = {Induced plant defenses against pathogens and herbivores : biochemistry, ecology, and agriculture},
+  year      = {1999},
+  address   = {St. Paul, Minn},
+  isbn      = {0890542422},
+}
+
+@Book{Tollrian1999,
+  editor    = {Tollrain, Ralph and Harvell, C. Drew},
+  publisher = {Princeton University Press},
+  title     = {The ecology and evolution of inducible defenses},
+  year      = {1999},
+  address   = {Princeton, N.J},
+  isbn      = {9780691012216},
+}
+
 @Book{Raman2005,
   editor    = {Raman, Anantanarayanan and Schaefer, Carl Walter and Withers, Toni M.},
   publisher = {Science Publishers Enfield},
@@ -7190,6 +7400,39 @@ general and T. ludeni population forecast and precise timing of pest management 
   ean       = {9781402060601},
   pagetotal = {376},
   url       = {https://www.ebook.de/de/product/6740472/general_concepts_in_integrated_pest_and_disease_management.html},
+}
+
+@Book{Schaller2008,
+  editor    = {Schaller, Andreas},
+  publisher = {Springer-Verlag GmbH},
+  title     = {Induced plant resistance to herbivory},
+  year      = {2008},
+  isbn      = {1402081812},
+  month     = mar,
+  ean       = {9781402081811},
+  url       = {https://www.ebook.de/de/product/7085303/induced_plant_resistance_to_herbivory.html},
+}
+
+@Book{Carr2010,
+  editor    = {Carr, John P. and Loebenstein, Gad},
+  publisher = {Elsevier Academic},
+  title     = {Natural and engineered resistance to plant viruses, part {II}},
+  year      = {2010},
+  address   = {Amsterdam etc},
+  isbn      = {9780123745255},
+  volume    = {76},
+  booktitle = {Advances in virus research},
+}
+
+@Book{Loebenstein2010,
+  editor    = {Loebenstein, Gad and Carr, John P.},
+  publisher = {Elsevier Academic},
+  title     = {Natural and engineered resistance to plant viruses},
+  year      = {2010},
+  address   = {Amsterdam etc},
+  isbn      = {978-0-12-381397-8},
+  volume    = {75},
+  booktitle = {Advances in virus research},
 }
 
 @Book{Marquina2010,
