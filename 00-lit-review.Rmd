@@ -52,28 +52,77 @@ grid::grid.raster(tiff::readTIFF("figure/p_persimilis.tif"))
 
 
 ## Plant defenses and Systemic Acquires Resistance (SAR) {#sar-litrev}
+Plants are primarily sessile organisms which aren't able to run or hide when an herbivorous mite attacks it. Instead, plants rely heavily on their ability to protect themselves in-situ, via a myriad of different physical and chemical defenses [@Walling2000]. These defenses are categorized as either constitutive defenses or induced defenses [@Farmer2016]. Constitutive defenses are always 'on', being produced by the plant constantly, such as tannins and latex, while inducible defenses rely on some sort of signal before the plant will produce them. Physical defenses of herbivory includes spines, prickles, thorns, glandular trichomes, latex, sclereids, epicuticular wax, bark, thick cell walls, and compensatory growth to prevent tissue damage while increasing wear on herbivore mouthparts [@Farmer2016]. In addition to these physical barriers to herbivory, plants are also efficient chemical factories which produce a bevy of secondary plant metabolites, including inhibitory proteins, enzymes, and toxins which reduce palatability of plant tissues, prevent uptake of essential amino acids, or kill the herbivore outright [@Farmer2016]. 
 
-<!-- Coevolution of secondary plant metabolites with herbivores [@Ehrlich1964] -->
+The hypotheses surrounding inducible defenses vary, from considering the costs of resource allocation (Optimal Defense Theory) [@Adler1994] 
 
-Plants are primarily sessile organisms which aren't able to run or hide when an herbivorous mite attacks it. Instead, plants rely heavily on their ability to protect themselves in-situ, via a myriad of different physical and chemical defenses [@Walling2000]. These defenses are categorized as either constitutive defenses or induced defenses [@Farmer2016]. Constitutive defenses are always 'on', being produced by the plant constantly, such as tannins and latex, while inducible defenses rely on some sort of signal before the plant will produce them. Physical defenses of herbivory includes spines, prickles, thorns, glandular trichomes, latex, sclereids, epicuticular wax, bark, thick cell walls, and compensatory growth to prevent tissue damage while increasing wear on herbivore mouthparts [@Farmer2016]. In addition to these physical barriers to herbivory, plants are also efficient chemical factories which produce a bevy of secondary plant metabolites, including inhibitory proteins, enzymes, and toxins which reduce palatability of plant tissues, prevent uptake of essential amino acids, or kill the herbivore outright [@Farmer2016]. The hypotheses surrounding inducible defenses vary, from considering the costs of resource allocation (Optimal Defense Theory) [@Adler1994] The majority of chemical defenses are inducible in nature [@citation], which permits them to be exploited for laboratory studies and pest management.
+The majority of chemical defenses are inducible in nature [@citation], which permits them to be exploited for laboratory studies and pest management.
 
-There are a number of hypotheses about plant defenses,  to be a trade-off between growth and defense
+
+It is hypothesized that effective inducible defenses must have evolved in response to threats that were sporadic in nature, but strong enough to necessitate a response [@Tollrian1999; @EdelsteinKeshet1989]. The idea is that inducible defenses allow plants a type of cost-saving for their limited resources, otherwise constitutive defenses would have evolved instead [@Jaeremo1999; @Karban1989]. A corollary of this idea is that inducible defenses should have cues that trigger dependably, accurately and be an effective deterrent once activated, so as to avoid opportunity costs [@Jaeremo1999; @Berenbaum1999].
+
+Chemical defenses are thought to have an added benefit of being faster and less costly for plants to produce than other types of defense [@Jaeremo1999; @Berenbaum1999].
+
+Chemical defenses still have drawbacks in allocation costs: plants investing energy into defenses are not using those resources for growth or reproduction [@Berenbaum1999].
+Besides allocation costs, there are likely genetic tradeoffs to keep inducible costs active rather than other essential plant functions, and there are possibly ecological defenses as well: adaptation to one form of defense may preclude the use of another [@Berenbaum1999]. 
+
+
+@Jaeremo1999 considered the development of systemic responses to be more probable if plant defenses required larger doses for deterrence, and posited that localized responses to herbivory are benefit the plant when small amounts of initial damage are a reliable cues of larger damage to come.
+
+This framework readily considers the feeding activities of stylet feeders like mites, whose initial damages are minimal, but quickly accelerate due to mites' fast population growth rates and the possibility of pathogen introduction from mite feeding.
+
+Some specialist herbivores are attracted to the plant VOCs released during the defense response [@Agrawal1999].
+
+Applying SA directly to damaged leaf tissues inhibits propagation of the JA signalling pathways in *Nicotiana* [@Baldwin1997].
+
+Induction of SAR has been shown to activate defense genes [@Ward1991; @Ward1991a] increasing levels of \textbeta-1,3-glucanase and chitinases, which prevent fungal disease development [@Suo2001; @Narusaka1999; @Xue1998; @Goy1992].
+
+
+@Bronner1991; @Bronner1991a observed that eriophyid mite feeding triggered the hypersensitive response on *Solanum dulcamara*, producing chitinase and \textbeta-1,3-glucanase activity, which suggested that these may have a role in plant defenses against mite feeding.
+
+@Westphal1991 found that they could trigger a SAR response by introducing *S. dulcamara* leaves to an eriophyoid gall mite, *Aceria cladophthirus* (Nalepa), which produced long lasting protection from subsequent colonization by more *A. cladophthirus* or another eriophyid, *Thamnacus solani* Boczek and Michalska, a rust mite.
+
+Unfortunately, future research demonstrated that these induced response was not enough not protect the plant from *Tetranychus urticae* Koch, but instead increased their fecundity [@Westphal1992]. This suggests that when plants are challenged by a pathogen, it leaves them vulnerable to herbivory [@Agrawal1999].
+
+<!-- This is because *T. urticae* induces the JA pathway [@citation]?-->
+
+
+JA helped increase resistance to *T. urticae*, but JA and ASM together were less effective than JA alone, due to SA interference with JA pathways [@Warabieda2020]
+
+Although this may be plant dependent: SA induction was shown to reduce the numbers of *T. urticae* on strawberries. [@Favaro2019]
+
+
+<!-- Spider mites suppress tomato defenses downstream of jasmonate and salicylate independently of hormonal crosstalk [@Alba2014]. -->
+
+<!-- Why Do Herbivorous Mites Suppress Plant Defenses? -->
+<!-- [@Blaazer2018] -->
+
+<!-- Mechanisms and ecological consequences of plant defence induction and suppression in herbivore communities -->
+<!-- [@Kant2015] -->
+
+<!-- Can plant defence mechanisms provide new approaches for the sustainable control of the two-spotted spider mite *Tetranychus urticae*? -->
+<!-- [@Agut2018] -->
+
+<!-- Plant Defenses Against *Tetranychus urticae*: Mind the Gaps -->
+<!-- [@Santamaria2020] -->
+
 
 <!-- Citation describing how SA and JA induction decreased mite numbers [@Khederi2018] -->
-
+<!-- Coevolution of secondary plant metabolites with herbivores [@Ehrlich1964] -->
 
 Induction of plant defenses can have negative consequences for the herbivores as well as the predators [@Pappas2017]: @Ataide2016 observed that inducing a plant JA pathway reduces phytophagous mite performance, but also negatively affected ovophagy by predatory mites. Also, the predatory mites preferred eggs from herbivorous mites unaffected by the induced plant defenses [@Ataide2016]. This reduction in predation allowed the resurgence of the pest mite later [@Ataide2016].
 
 @Kant2007 found examples of interspecific variation of *T. urticae*'s ability to induce--and resist--JA defenses.
 
-The interaction of SA and JA varies by species, and exhibit negative cross-talk in some plant systems
-*Aculops lycopersici* induce SA defenses while suppressing JA pathways, not via antagonistic cross-talk between the responses, but by suppressing downstream accumulation of JA [@Glas2014]. *T. urticae* feeding induces both JA and SA pathways, but when both mites were introduced to the same plant, the JA response plummeted and SA doubled [@Glas2014]. When the mites feed on the same plant, *T. urticae* populations benefit from the reduction of JA caused by *A. lycopersici*, but *A. lycopersici* populations suffer [@Glas2014]. Meanwhile, the effects of increased SA from eriophyid mite feeding prevented a secondary bacterial infection.
+*T. urticae* and *Brevipalpus* suppress plant defenses [@Alba2014; @Arena2018]
 
 When a plant is attacked by an herbivore and a plant pathogen at the same time, it creates pressure on the plant to defend on two fronts, which is further complicated by the negative cross-talk which sometimes occurs when defenses are induced [@Belliure2010]. This struggle has clear benefits for vectors of plant pathogens [@Belliure2010].
 
-*T. urticae* and *Brevipalpus* suppress plant defenses [@Alba2014; @Arena2018]
+The interaction of SA and JA varies by species, and exhibit negative cross-talk in some plant systems
 
-Plant cross-talk during the induction of plant defenses is put under pressure when mites and viruses team up? [@Belliure2010]
+*Aculops lycopersici* induce SA defenses while suppressing JA pathways, not via antagonistic cross-talk between the responses, but by suppressing downstream accumulation of JA [@Glas2014]. *T. urticae* feeding induces both JA and SA pathways, but when both mites were introduced to the same plant, the JA response plummeted and SA doubled [@Glas2014]. When the mites feed on the same plant, *T. urticae* populations benefit from the reduction of JA caused by *A. lycopersici*, but *A. lycopersici* populations suffer [@Glas2014]. Meanwhile, the effects of increased SA from eriophyid mite feeding prevented a secondary bacterial infection.
+
+
 
 ## A second mite-plant-pathogen system: *Brevipalpus californicus* and Orchid fleck virus {#bcali-litrev}
 The most important superfamily of herbivorous mites is the Tetranychoidea. The Tetranychoidea are comprised of 2,000 species divided into 5 families [@Krantz2009], two of which have economic significance, Tetranychidae--the spider mites--and Tenuipalpidae. Tenuipalpidae are known colloquially as the false spider mites, or flat mites due to their flattened character and superficial similarity to the Tetranychidae. In contrast to tetranychids, tenuipalpids do not spin webs and are considered to be a pest of reduced severity: @Krantz2009 places them as the 'third most important family of phytophagous mites'. Flat mites are considered to be a tropical to subtropical group of mites [@Gerson2008], the majority of which are not of economic significance [@Hoy2011]. Consequently, tenuipalpids have been studied much less than the Tetranychidae [@Jeppson1975; @Gerson2008; @Childers2003b], but flat mites from the genus *Brevipalpus* have been gaining importance in recent years as vectors of plant viruses [@Dietzgen2018; @ChabiJesus2018; @RamosGonzalez2017; @Rodrigues2013; @Rodrigues2003a; @Melzer2013; @Kitajima2010; @Kitajima2008 ;@Kitajima2003b; @Chagas2003; @Childers2011; @Childers2003a; @Childers2003c]. Another major pest of modern concern is *Raoiella indica* (Hirst), a pest of palms (Arecaceae), ginger (Zingiberaceae), bananas (Musaceae), and bird of paradise plants (Strelitziaceae) [@Beard2012a; @Hoy2011; @Jeppson1975; @Etienne2006], which has been invading the Neotropics since their introduction to the Caribbean [@Amaro2021; @Ramirez2020; @Rodrigues2020; @Alcivar2020; @EscobarGarcia2020; @Kane2012; @Pena2012; @Carrillo2011b; @Dowling2011; @Vasquez2008; @Roda2008; @Rodrigues2007; @Etienne2006]. Flat mites are typically small (200 to 300 \si{\micro\metre}) red or green, and move slowly [@Hoy2011; @Jeppson1975]. Tenuipalpids feeding is typically restricted to a few hosts, and mites can usually be found on the underside of leaves, often along leaf veins or the midrib [@Hoy2011; @Jeppson1975]. Some species feed on grass, bark, flower heads, leaf sheaths, or form galls [@Hoy2011; @Jeppson1975].  Flat mites have egg, larva, protonymph, deutonymph and adult forms over an average of 3-4 weeks [@Hoy2011]. A few species have only six legs as adults. Tenuipalpid mites can be difficult to classify correctly with light microscopy, due to distortions during mounting of characters used in species identification [@Welbourn2003]. Furthermore, flat mites are thelytokous parthenogenic: Males are seldom encountered, due to infections with the feminizing bacteria *Candidatus* Cardinium (Cytophaga–Flavobacterium–Bacteroides phylum) [@Groot2006; @Groot2005 @Chigira2005]. This has caused some concern that some *Brevipalpus* species are actually isofemale lines specialized on their specific hosts [@Groot2005], an idea which is further complicated by the occurrence of cryptic species in these groups [@Navia2013; @Skoracka2015]. Few methods of pest management have been reported from past reviews of tenuipalpids [@Hoy2011; @Gerson2008; @Jeppson1975]: a number of different mite predators have been tested for their efficacy, as well as the pathogenic fungi *Hirsutella thompsonii* and *Metarhizium anisopliae* [@Gerson2008; @RossiZalaf2006]. @Zheng2012 tested the ability of water and phytoseiids to reduce populations of *B. obovatus*. *Beauveria bassiana* has been tested to control *R. indica*, and is potentially compatible with the previously-tested phytoseiid species *Amblyseius largoensis* and *Typhlodromus ornatus* [@Freitas2021; @Carrillo2011]. Chemical applications are typically used to control tenuipalpids [@Childers1994], but some species have begun to develop chemical resistance to the more common applications [@Rocha2021; @Campos2002].
