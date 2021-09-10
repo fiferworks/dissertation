@@ -1757,6 +1757,7 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   number    = {4},
   pages     = {803--814},
   volume    = {124},
+  abstract  = {The evolution of the plant immune response has culminated in a highly effective defense system that is able to resist potential attack by microbial pathogens. The primary immune response is referred to as PAMP-triggered immunity (PTI) and has evolved to recognize common features of microbial pathogens. In the coevolution of host-microbe interactions, pathogens acquired the ability to deliver effector proteins to the plant cell to suppress PTI, allowing pathogen growth and disease. In response to the delivery of pathogen effector proteins, plants acquired surveillance proteins (R proteins) to either directly or indirectly monitor the presence of the pathogen effector proteins. In this review, taking an evolutionary perspective, we highlight important discoveries over the last decade about the plant immune response.},
   doi       = {10.1016/j.cell.2006.02.008},
   publisher = {Elsevier {BV}},
 }
