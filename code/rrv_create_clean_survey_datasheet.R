@@ -49,9 +49,6 @@ df <-
 #total mite samples
 df <- df %>%  mutate(total_mites = other_mites + eriophyoids, .after = other_mites)
 
-#filters out samples without observations
-df <- df %>% filter(total_mites >= 0)
-
 #labels sites with eriophyoids as p_fructiphilus (we haven't found any other spp so far)
 df$p_fructiphilus <-
   if_else(df$eriophyoids >= 1,
