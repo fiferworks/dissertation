@@ -121,6 +121,28 @@ map_mites_fl <-
 #saves the map
 mapshot(map_mites_fl, file = 'figure/rrv_survey_map_fl_pf.png')
 
+map_other_mites_fl <-
+  mapview(
+    df_fl,
+    col.regions = viridis(
+      51,
+      option = 'E',
+      begin = 0.5,
+      end = 1
+    ),
+    homebutton = FALSE,
+    cex = 'other_mites',
+    na.color = c("gray50"),
+    alpha.regions = 0.8,
+    zcol = 'other_mites',
+    layer.name = 'Other mites found on roses',
+    map.types = 'Stamen.TonerLite'
+  )
+
+#saves the map
+mapshot(map_other_mites_fl, file = 'figure/rrv_survey_map_fl_other.png')
+
+
 # ####COMPARING MITE HOTSPOTS OVER TIME#####
 # #subsetting the data for different months to compare trends
 # fl_jan <- filter(df_fl, month == 'January')
@@ -232,6 +254,58 @@ map_gg_pf_fl <-
   )
 ggsave(
   'figure/rrv_survey_map_gg_pf_fl.png',
+  plot = last_plot(),
+  type = "cairo",
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
+#plots points on the map
+map_gg_other_fl <-
+  ggplot() +
+  geom_sf(data = fl) +
+  geom_sf(data = df_fl,
+          aes(cex = other_mites),
+          show.legend = T) +
+  scale_color_viridis_d(
+    na.value = 'gray50',
+    option = 'E',
+    begin = 0.1,
+    end = 1
+  ) +
+  theme_tufte(base_size = 30, base_family = "gill_sans") +
+  ggtitle(expression(
+    'Other mites found with ' ~ italic(P.fructiphilus) ~ ' in Florida 2017-2021'
+  )) +
+  theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
+  theme(
+    plot.title = element_text(
+      size = 100,
+      face = "bold",
+      family = "garamond"
+    ),
+    axis.text.x = element_text(
+      color = "grey20",
+      size = 50,
+      angle = 0,
+      hjust = .5,
+      vjust = .5,
+      face = "plain"
+    ),
+    axis.text.y = element_text(
+      color = "grey20",
+      size = 50,
+      angle = 0,
+      hjust = 1,
+      vjust = 0,
+      face = "bold"
+    )
+  )
+
+ggsave(
+  'figure/rrv_survey_map_gg_other_fl.png',
   plot = last_plot(),
   type = "cairo",
   width = 16,
