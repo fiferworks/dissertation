@@ -42,6 +42,5 @@ Overall, we believe that the various objectives of this proposal will answer fun
 
 ## Discussion
 
-## Publication: First report of *Phyllocoptes fructiphilus* in Florida
 <!-- this imports my publication -->
-\includepdf[pages={-}]{pubs/pfruct-report.pdf}
+\includepdf[pages={-}, pagecommand={\phantomsection  \addcontentsline{toc}{section}{Publication: First report of \textit{Phyllocoptes fructiphilus} in Florida}}]{pubs/pfruct-report.pdf}
