@@ -1902,6 +1902,29 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   publisher = {Informa {UK} Limited},
 }
 
+@Article{Couto2016,
+  author    = {Daniel Couto and Cyril Zipfel},
+  journal   = {Nature Reviews Immunology},
+  title     = {Regulation of pattern recognition receptor signalling in plants},
+  year      = {2016},
+  month     = aug,
+  number    = {9},
+  pages     = {537--552},
+  volume    = {16},
+  abstract  = {Recognition of pathogen-derived molecules by pattern recognition receptors (PRRs) is a common feature of both animal and plant innate immune systems. In plants, PRR signalling is initiated at the cell surface by kinase complexes, resulting in the activation of immune responses that ward off microorganisms. However, the activation and amplitude of innate immune responses must be tightly controlled. In this Review, we summarize our knowledge of the early signalling events that follow PRR activation and describe the mechanisms that fine-tune immune signalling to maintain immune homeostasis. We also illustrate the mechanisms used by pathogens to inhibit innate immune signalling and discuss how the innate ability of plant cells to monitor the integrity of key immune components can lead to autoimmune phenotypes following genetic or pathogen-induced perturbations of these components.},
+  comment   = {Plants rely on a cell-autonomous innate immune system to detect the presence of microorganisms and activate immune responses that deter infection. Recognition of conserved microbial features occurs essentially at the cell surface by means of transmembrane pattern recognition receptors (PRRs).
+
+PRRs are part of multimeric protein complexes at the plasma membrane, differentially recruiting cytoplasmic kinases that connect PRR complexes to downstream signalling components.
+
+Ligand binding initiates a series of phosphorylation events within PRR complexes that activates cellular immune signalling, which includes bursts of intracellular reactive oxygen species and calcium, activation of cytoplasmic kinase cascades, and transcriptional reprogramming.
+
+As in mammals, excessive activation of plant immune responses can have detrimental consequences. Thus, a complex negative regulatory system controls different immune components to maintain cellular homeostasis.
+
+Bacterial pathogens are able to subvert the plant immune system by secreting molecules, such as effectors, that often mimic the mode-of-action of host negative regulators of immune signalling.},
+  doi       = {10.1038/nri.2016.77},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Article{Croft1988,
   author    = {Croft, B. A. and Baan, H. E. Van De},
   journal   = {Experimental {\&} Applied Acarology},
@@ -2972,6 +2995,19 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   volume    = {135},
   abstract  = {Carnivorous arthropods exhibit complex intraspecific and interspecific behaviour among themselves when they share the same niche or habitat and food resources. They should simultaneously search for adequate food for themselves and their offspring and in the meantime avoid becoming food for other organisms. This behaviour is of great ecological interest in conditions of low prey availability. We examined by means of an olfactometer, how volatile chemicals from prey patches with conspecific or heterospecific predators might contribute to shaping the structure of predator guilds. To test this, we used the exotic predatory mites Typhlodromalus manihoti and T. aripo, and the native predatory mite Euseius fustis, with Mononychellus tanajoa as the common prey species for the three predatory mite species. We used as odour sources M. tanajoa-infested cassava leaves or apices with or without predators. T. manihoti avoided patches inhabited by the heterospecifics T. aripo and E. fustis or by conspecifics when tested against a patch without predators. Similarly, both T. aripo and E. fustis females avoided patches with con- or heterospecifics when tested against a patch without predators. When one patch contained T. aripo and the other T. manihoti, females of the latter preferred the patch with T. aripo. Thus, T. manihoti is able to discriminate between odours from patches with con- and heterospecifics. Our results show that the three predatory mite species are able to assess prey patch profitability using volatiles. Under natural conditions, particularly when their food sources are scarce, the three predatory mite species might be involved in interspecific and/or intraspecific interactions that can substantially affect population dynamics of the predators and their prey.},
   doi       = {10.1007/s00442-002-1120-4},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Godinho2015,
+  author    = {Godinho, Diogo P. and Janssen, Arne and Dias, Teresa and Cruz, Cristina and Magalh{\~{a}}es, Sara},
+  journal   = {Oecologia},
+  title     = {Down-regulation of plant defence in a resident spider mite species and its effect upon con- and heterospecifics},
+  year      = {2015},
+  month     = sep,
+  number    = {1},
+  pages     = {161--167},
+  volume    = {180},
+  doi       = {10.1007/s00442-015-3434-z},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
@@ -6771,6 +6807,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   volume    = {66},
   doi       = {10.1590/s1519-69842006000500016},
   publisher = {{FapUNIFESP} ({SciELO})},
+}
+
+@Article{Thaler2012,
+  author    = {Thaler, Jennifer S. and Humphrey, Parris T. and Whiteman, Noah K.},
+  journal   = {Trends in Plant Science},
+  title     = {Evolution of jasmonate and salicylate signal crosstalk},
+  year      = {2012},
+  month     = may,
+  number    = {5},
+  pages     = {260--270},
+  volume    = {17},
+  abstract  = {The evolution of land plants approximately 470 million years ago created a new adaptive zone for natural enemies (attackers) of plants. In response to attack, plants evolved highly effective, inducible defense systems. Two plant hormones modulating inducible defenses are salicylic acid (SA) and jasmonic acid (JA). Current thinking is that SA induces resistance against biotrophic pathogens and some phloem feeding insects and JA induces resistance against necrotrophic pathogens, some phloem feeding insects and chewing herbivores. Signaling crosstalk between SA and JA commonly manifests as a reciprocal antagonism and may be adaptive, but this remains speculative. We examine evidence for and against adaptive explanations for antagonistic crosstalk, trace its phylogenetic origins and provide a hypothesis-testing framework for future research on the adaptive significance of SA--JA crosstalk.},
+  doi       = {10.1016/j.tplants.2012.02.010},
+  publisher = {Elsevier {BV}},
 }
 
 @Article{Thaler2001,
