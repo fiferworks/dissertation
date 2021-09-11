@@ -4976,6 +4976,14 @@ proteins. The properties of these binding proteins suggest their involvement in 
   publisher = {Oxford University Press ({OUP})},
 }
 
+@TechReport{Muma1970,
+  author      = {Muma, Martin H. and Denmark, Harold A.},
+  institution = {Florida department of agriculture and consumer services},
+  title       = {Arthropods of {Florida} and neighboring land areas, volume 6, {Phytoseiidae} of {Florida}},
+  year        = {1970},
+  url         = {https://ufdc.ufl.edu/AA00000576/00001},
+}
+
 @InBook{Stevens1960,
   author    = {N},
   editor    = {Dimond, Albert Eugene and Horsfall, James Gordon},
