@@ -59,7 +59,7 @@ df$p_fructiphilus <-
           df$p_fructiphilus <- 'No')
 
 #saving both files
-write_csv(df, 'rrv_survey_clean_datasheet.csv')
+write_csv(df, 'data/rrv_survey_clean_datasheet.csv')
 
 #cleanup
 rm(list = ls())
