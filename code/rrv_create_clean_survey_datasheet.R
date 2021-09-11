@@ -47,7 +47,8 @@ df <-
   )
 
 #total mite samples
-df <- df %>%  mutate(total_mites = other_mites + eriophyoids, .after = other_mites)
+df <-
+  df %>%  mutate(total_mites = other_mites + eriophyoids, .after = other_mites)
 
 #labels sites with eriophyoids as p_fructiphilus (we haven't found any other spp so far)
 df$p_fructiphilus <-
@@ -57,6 +58,22 @@ df$p_fructiphilus <-
 
 #saving both files
 write_csv(df, 'data/rrv_survey_clean_datasheet.csv')
+
+#getting summary statistics for tables
+df_fl <- df %>%  filter(state == 'FL')
+
+
+df_fl <- df_fl %>% group_by(city) %>% summarize(
+  pfruct = sum(eriophyoids, na.rm = TRUE),
+  other = sum(other_mites, na.rm = TRUE),
+  totals = sum(total_mites, na.rm = TRUE),
+  samples = n()
+)
+
+df_fl <-
+  df_fl %>% mutate(pfuct_per = pfruct / samples, .after = samples)
+
+write_csv(df_fl, 'data/rrv_survey_fl_table.csv')
 
 #cleanup
 rm(list = ls())
