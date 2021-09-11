@@ -1,15 +1,19 @@
 ####PACKAGES####
 pkgs <- c('tidyverse', 'lme4', 'car', 'multcomp', 'readxl')
 
-# #installs the packages if you don't have them already installed
-# lapply(pkgs, install.packages, character.only = T)
+#installs the packages if you don't have them already installed
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
 
-lapply(pkgs, library, character.only = T)
+#loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
 
 ####MITE SURVEY ANALYSIS####
 
 ####READING IN THE REQUIRED FILES####
-df <- read_xlsx('all_mites_survey.xlsx')
+df <- read_csv('data/rrv_survey_clean_datasheet.csv')
 
 #making sure certain columns are considered as factors
 df$p_fructiphilus <- as.factor(df$p_fructiphilus)
