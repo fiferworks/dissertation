@@ -486,6 +486,20 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   publisher = {Elsevier {BV}},
 }
 
+@Article{Arimura2011,
+  author    = {Arimura, Gen-Ichiro and Ozawa, Rika and Maffei, Massimo E.},
+  journal   = {International Journal of Molecular Sciences},
+  title     = {Recent advances in plant early signaling in response to herbivory},
+  year      = {2011},
+  month     = jun,
+  number    = {6},
+  pages     = {3723--3739},
+  volume    = {12},
+  abstract  = {Plants are frequently attacked by herbivores and pathogens and therefore have acquired constitutive and induced defenses during the course of their evolution. Here we review recent progress in the study of the early signal transduction pathways in host plants in response to herbivory. The sophisticated signaling network for plant defense responses is elicited and driven by both herbivore-induced factors (e.g., elicitors, effectors, and wounding) and plant signaling (e.g., phytohormone and plant volatiles) in response to arthropod factors. We describe significant findings, illuminating the scenario by providing broad insights into plant signaling involved in several arthropod-host interactions},
+  doi       = {10.3390/ijms12063723},
+  publisher = {{MDPI} {AG}},
+}
+
 @Article{Armstrong2005,
   author    = {Armstrong, K. F. and Ball, S. L.},
   journal   = {Philosophical Transactions of the Royal Society B: Biological Sciences},
@@ -1834,6 +1848,20 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   year    = {1941},
 }
 
+@Article{Conrath2006,
+  author    = {Conrath, Uwe and Beckers, Gerold J. M. and Flors, Victor and Garc{\'{\i}}a-Agust{\'{\i}}n, Pilar and Jakab, G{\'{a}}bor and Mauch, Felix and Newman, Mari-Anne and Pieterse, Corn{\'{e}} M. J. and Poinssot, Benoit and Pozo, Mar{\'{\i}}a J. and Pugin, Alain and Schaffrath, Ulrich and Ton, Jurriaan and Wendehenne, David and Zimmerli, Laurent and Mauch-Mani, Brigitte},
+  journal   = {Molecular Plant-Microbe Interactions{\textregistered}},
+  title     = {Priming: getting ready for battle},
+  year      = {2006},
+  month     = oct,
+  number    = {10},
+  pages     = {1062--1071},
+  volume    = {19},
+  abstract  = {Infection of plants by necrotizing pathogens or colonization of plant roots with certain beneficial microbes causes the induction of a unique physiological state called {\textquotedblleft} priming{\textquotedblright}. The primed state can also be induced by treatment of plants with various natural and synthetic compounds. Primed plants display either faster, stronger, or both activation of the various cellular defense responses that are induced following attack by either pathogens or insects or in response to abiotic stress. Although the phenomenon has been known for decades, most progress in our understanding of priming has been made over the past few years. Here, we summarize the current knowledge of priming in various induced-resistance phenomena in plants.},
+  doi       = {10.1094/mpmi-19-1062},
+  publisher = {Scientific Societies},
+}
+
 @Article{Cook2019,
   author    = {Cook, Glynnis and Kirkman, Wayne and Clase, Rochelle and Steyn, Chanel and Basson, Elaine and Fourie, Paul H. and Moore, Sean D. and Grout, Tim G. and Carstens, Elma and Hattingh, Vaughan},
   journal   = {European Journal of Plant Pathology},
@@ -2459,6 +2487,20 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   url       = {https://www.ebook.de/de/product/28782938/edward_e_farmer_leaf_defence.html},
 }
 
+@Article{Farmer2003,
+  author    = {Farmer, Edward E. and Alm{\'{e}}ras, Emmanuelle and Krishnamurthy, Venkatesh},
+  journal   = {Current Opinion in Plant Biology},
+  title     = {Jasmonates and related oxylipins in plant responses to pathogenesis and herbivory},
+  year      = {2003},
+  month     = aug,
+  number    = {4},
+  pages     = {372--378},
+  volume    = {6},
+  abstract  = {The vigorous production of oxygenated fatty acids (oxylipins) is a characteristic response to pathogenesis and herbivory, and is often accompanied by the substantial release of small and reactive lipid-fragmentation products. Some oxylipins, most notably those of the jasmonate family, have key roles as potent regulators. Recent advances have been made in understanding oxylipin-regulated signal transduction in response to attack. Much jasmonate signaling takes place via a genetically defined signal network that is linked to the ethylene, auxin, and salicylic acid signal pathways, but a second aspect of jasmonate signaling is emerging. Some jasmonates and several newly discovered cyclopentenone lipids can activate or repress gene expression through the activities of a conserved electrophilic atom group.},
+  doi       = {10.1016/s1369-5266(03)00045-1},
+  publisher = {Elsevier {BV}},
+}
+
 @Book{Farragut2010,
   author    = {Farragut, Francisco and Moreno, Ignacio P{\'{e}}rez and Calvo, V{\'{i}}ctor M. Iraola and Colomar, L. Adriana Escudero},
   publisher = {Ediciones Agrot{\'{e}}cnicas},
@@ -2905,6 +2947,20 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   publisher = {Springer Nature},
 }
 
+@Article{Glazebrook2005,
+  author    = {Jane Glazebrook},
+  journal   = {Annual Review of Phytopathology},
+  title     = {Contrasting mechanisms of defense against biotrophic and necrotrophic pathogens},
+  year      = {2005},
+  month     = sep,
+  number    = {1},
+  pages     = {205--227},
+  volume    = {43},
+  abstract  = {It has been suggested that effective defense against biotrophic pathogens is largely due to programmed cell death in the host, and to associated activation of defense responses regulated by the salicylic acid--dependent pathway. In contrast, necrotrophic pathogens benefit from host cell death, so they are not limited by cell death and salicylic acid--dependent defenses, but rather by a different set of defense responses activated by jasmonic acid and ethylene signaling. This review summarizes results from Arabidopsis-pathogen systems regarding the contributions of various defense responses to resistance to several biotrophic and necrotrophic pathogens. While the model above seems generally correct, there are exceptions and additional complexities.},
+  doi       = {10.1146/annurev.phyto.43.040204.135923},
+  publisher = {Annual Reviews},
+}
+
 @Article{Gnanvossou2003,
   author    = {Gnanvossou, D{\'{e}}sir{\'{e}} and Hanna, Rachid and Dicke, Marcel},
   journal   = {Oecologia},
@@ -3075,6 +3131,20 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Article{Guo2004,
+  author    = {Guo, Hongwei and Ecker, Joseph R.},
+  journal   = {Current Opinion in Plant Biology},
+  title     = {The ethylene signaling pathway: new insights},
+  year      = {2004},
+  month     = feb,
+  number    = {1},
+  pages     = {40--49},
+  volume    = {7},
+  abstract  = {During the past decade, molecular genetic studies on the reference plant Arabidopsis have established a largely linear signal transduction pathway for the response to ethylene gas. The biochemical modes of action of many of the signaling components are still unresolved. During the past year, however, progress in several areas has been made on several fronts. The different approaches used have included a functional study of the activity of the receptor His kinase, the determination of the ethylene receptor signaling complex at the endoplasmic reticulum and of the regulation of CONSTITUTIVE TRIPLE RESPONSE1 (CTR1) activity by these receptors, the identification of a unique MITOGEN-ACTIVATED PROTEIN KINASE (MAPK) cascade, the cloning and characterization of numerous ETHYLENE INSENSITIVE3 (EIN3)/EIN3-like (EIL) transcription factors from many plant species, and the integration of the ethylene and jasmonate response pathways via the ETHYLENE RESPONSE FACTOR (ERF) family of transcription factors. The elucidation of the biochemical mechanisms of ethylene signal transduction and the identification of new components in the ethylene response pathway in Arabidopsis are providing a framework for understanding how all plants sense and respond to ethylene.},
+  doi       = {10.1016/j.pbi.2003.11.011},
+  publisher = {Elsevier {BV}},
+}
+
 @Book{Hajek2019,
   author    = {Hajek, Ann E. and Eilenberg, J{\o}rgen},
   publisher = {Cambridge University Press},
@@ -3234,6 +3304,20 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   year    = {1945},
   volume  = {35},
   pages   = {655},
+}
+
+@Article{Howe2008,
+  author    = {Howe, Gregg A. and Jander, Georg},
+  journal   = {Annual Review of Plant Biology},
+  title     = {Plant immunity to insect herbivores},
+  year      = {2008},
+  month     = jun,
+  number    = {1},
+  pages     = {41--66},
+  volume    = {59},
+  abstract  = {Herbivorous insects use diverse feeding strategies to obtain nutrients from their host plants. Rather than acting as passive victims in these interactions, plants respond to herbivory with the production of toxins and defensive proteins that target physiological processes in the insect. Herbivore-challenged plants also emit volatiles that attract insect predators and bolster resistance to future threats. This highly dynamic form of immunity is initiated by the recognition of insect oral secretions and signals from injured plant cells. These initial cues are transmitted within the plant by signal transduction pathways that include calcium ion fluxes, phosphorylation cascades, and, in particular, the jasmonate pathway, which plays a central and conserved role in promoting resistance to a broad spectrum of insects. A detailed understanding of plant immunity to arthropod herbivores will provide new insights into basic mechanisms of chemical communication and plant-animal coevolution and may also facilitate new approaches to crop protection and improvement.},
+  doi       = {10.1146/annurev.arplant.59.032607.092825},
+  publisher = {Annual Reviews},
 }
 
 @Book{Hoy2011,
@@ -6991,6 +7075,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Wiley},
 }
 
+@Article{Vincent2017,
+  author    = {Thomas R. Vincent and Marieta Avramova and James Canham and Peter Higgins and Natasha Bilkey and Sam T. Mugford and Marco Pitino and Masatsugu Toyota and Simon Gilroy and Anthony J. Miller and Saskia A. Hogenhout and Dale Sanders},
+  journal   = {The Plant Cell},
+  title     = {Interplay of plasma membrane and vacuolar ion channels, together with {BAK}1, elicits rapid cytosolic calcium elevations in {\textit{Arabidopsis}} during aphid feeding},
+  year      = {2017},
+  month     = may,
+  number    = {6},
+  pages     = {1460--1479},
+  volume    = {29},
+  abstract  = {A transient rise in cytosolic calcium ion concentration is one of the main signals used by plants in perception of their environment. The role of calcium in the detection of abiotic stress is well documented; however, its role during biotic interactions remains unclear. Here, we use a fluorescent calcium biosensor (GCaMP3) in combination with the green peach aphid (Myzus persicae) as a tool to study Arabidopsis thaliana calcium dynamics in vivo and in real time during a live biotic interaction. We demonstrate rapid and highly localized plant calcium elevations around the feeding sites of M. persicae, and by monitoring aphid feeding behavior electrophysiologically, we demonstrate that these elevations correlate with aphid probing of epidermal and mesophyll cells. Furthermore, we dissect the molecular mechanisms involved, showing that interplay between the plant defense coreceptor BRASSINOSTEROID INSENSITIVE-ASSOCIATED KINASE1 (BAK1), the plasma membrane ion channels GLUTAMATE RECEPTOR-LIKE 3.3 and 3.6 (GLR3.3 and GLR3.6), and the vacuolar ion channel TWO-PORE CHANNEL1 (TPC1) mediate these calcium elevations. Consequently, we identify a link between plant perception of biotic threats by BAK1, cellular calcium entry mediated by GLRs, and intracellular calcium release by TPC1 during a biologically relevant interaction.},
+  doi       = {10.1105/tpc.17.00136},
+  publisher = {Oxford University Press ({OUP})},
+}
+
 @TechReport{Vislobokov2014,
   author       = {Vislobokov, N. A.},
   title        = {Notes on the reproductive biology and systematics of genus {\textit{Aspidistra}} {Ker Gawl}. ({Asparagaceae})},
@@ -7012,6 +7110,20 @@ It has been observed that the flowers of A. phanluongii Vislobokov are visited b
   volume    = {32},
   doi       = {10.1111/1442-1984.12175},
   publisher = {Wiley},
+}
+
+@Article{Vlot2009,
+  author    = {Vlot, A. Corina and Dempsey, D'Maris Amick and Klessig, Daniel F.},
+  journal   = {Annual Review of Phytopathology},
+  title     = {Salicylic acid, a multifaceted hormone to combat disease},
+  year      = {2009},
+  month     = sep,
+  number    = {1},
+  pages     = {177--206},
+  volume    = {47},
+  abstract  = {For more than 200 years, the plant hormone salicylic acid (SA) has been studied for its medicinal use in humans. However, its extensive signaling role in plants, particularly in defense against pathogens, has only become evident during the past 20 years. This review surveys how SA in plants regulates both local disease resistance mechanisms, including host cell death and defense gene expression, and systemic acquired resistance (SAR). Genetic studies reveal an increasingly complex network of proteins required for SA-mediated defense signaling, and this process is amplified by several regulatory feedback loops. The interaction between the SA signaling pathway and those regulated by other plant hormones and/or defense signals is also discussed.},
+  doi       = {10.1146/annurev.phyto.050908.135202},
+  publisher = {Annual Reviews},
 }
 
 @Article{Waite1992,
@@ -7344,6 +7456,47 @@ general and T. ludeni population forecast and precise timing of pest management 
   month     = aug,
   doi       = {10.1007/s00705-007-1034-x},
   publisher = {Springer Nature},
+}
+
+@Article{Zarate2006,
+  author    = {Zarate, Sonia I. and Kempema, Louisa A. and Walling, Linda L.},
+  journal   = {Plant Physiology},
+  title     = {Silverleaf whitefly induces salicylic acid defenses and suppresses effectual jasmonic acid defenses},
+  year      = {2006},
+  month     = dec,
+  number    = {2},
+  pages     = {866--875},
+  volume    = {143},
+  abstract  = {The basal defenses important in curtailing the development of the phloem-feeding silverleaf whitefly (Bemisia tabaci type B; SLWF) on Arabidopsis (Arabidopsis thaliana) were investigated. Sentinel defense gene RNAs were monitored in SLWF-infested and control plants. Salicylic acid (SA)-responsive gene transcripts accumulated locally (PR1, BGL2, PR5, SID2, EDS5, PAD4) and systemically (PR1, BGL2, PR5) during SLWF nymph feeding. In contrast, jasmonic acid (JA)- and ethylene-dependent RNAs (PDF1.2, VSP1, HEL, THI2.1, FAD3, ERS1, ERF1) were repressed or not modulated in SLWF-infested leaves. To test for a role of SA and JA pathways in basal defense, SLWF development on mutant and transgenic lines that constitutively activate or impair defense pathways was determined. By monitoring the percentage of SLWF nymphs in each instar, we show that mutants that activate SA defenses (cim10) or impair JA defenses (coi1) accelerated SLWF nymphal development. Reciprocally, mutants that activate JA defenses (cev1) or impair SA defenses (npr1, NahG) slowed SLWF nymphal development. Furthermore, when npr1 plants, which do not activate downstream SA defenses, were treated with methyl jasmonate, a dramatic delay in nymph development was observed. Collectively, these results showed that SLWF-repressed, JA-regulated defenses were associated with basal defense to the SLWF.},
+  doi       = {10.1104/pp.106.090035},
+  publisher = {Oxford University Press ({OUP})},
+}
+
+@Article{Zhang2010,
+  author    = {Jiyu Zhang and Xiaoli Du and Qingju Wang and Xiukong Chen and Dong Lv and Kuanyong Xu and Shenchun Qu and Zhen Zhang},
+  journal   = {{BMC} Research Notes},
+  title     = {Expression of pathogenesis related genes in response to salicylic acid, methyl jasmonate and 1-aminocyclopropane-1-carboxylic acid in {\textit{Malus hupehensis}} ({Pamp.}) {Rehd}},
+  year      = {2010},
+  month     = jul,
+  number    = {1},
+  volume    = {3},
+  abstract  = {Many studies have been done to find out the molecular mechanism of systemic acquired resistance (SAR) in plants in the past several decades. Numbers of researches have been carried out in the model plants such as arabidopsis, tobacco, rice and so on, however, with little work done in woody plants especially in fruit trees such as apple. Components of the pathway of SAR seem to be extremely conserved in the variety of species. Malus hupehensis, which is origin in China, is strong resistance with rootstock. In the study, we attempted to make the expression pattern of pathogenesis related (PR) genes which were downstream components of the SAR pathway in response to salicylic acid(SA), methyl jasmonate(MeJA) and 1-aminocyclopropane-1-carboxylic acid(ACC) in Malus hupehensis.},
+  doi       = {10.1186/1756-0500-3-208},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Zhang2009,
+  author    = {Zhang, Peng-Jun and Zheng, Si-Jun and van Loon, Joop J. A. and Boland, Wilhelm and David, Anja and Mumm, Roland and Dicke, Marcel},
+  journal   = {Proceedings of the National Academy of Sciences},
+  title     = {Whiteflies interfere with indirect plant defense against spider mites in lima bean},
+  year      = {2009},
+  month     = nov,
+  number    = {50},
+  pages     = {21202--21207},
+  volume    = {106},
+  abstract  = {Plants under herbivore attack are able to initiate indirect defense by synthesizing and releasing complex blends of volatiles that attract natural enemies of the herbivore. However, little is known about how plants respond to infestation by multiple herbivores, particularly if these belong to different feeding guilds. Here, we report the interference by a phloem-feeding insect, the whitefly Bemisia tabaci, with indirect plant defenses induced by spider mites (Tetranychus urticae) in Lima bean (Phaseolus lunatus) plants. Additional whitefly infestation of spider-mite infested plants resulted in a reduced attraction of predatory mites (Phytoseiulus persimilis) compared to attraction to plants infested by spider mites only. This interference is shown to result from the reduction in (E)-$\beta$-ocimene emission from plants infested by both spider mites and whiteflies. When using exogenous salicylic acid (SA) application to mimic B. tabaci infestation, we observed similar results in behavioral and chemical analyses. Phytohormone and gene-expression analyses revealed that B. tabaci infestation, as well as SA application, inhibited spider mite-induced jasmonic acid (JA) production and reduced the expression of two JA-regulated genes, one of which encodes for the P. lunatus enzyme $\beta$-ocimene synthase that catalyzes the synthesis of (E)-$\beta$-ocimene. Remarkably, B. tabaci infestation concurrently inhibited SA production induced by spider mites. We therefore conclude that in dual-infested Lima bean plants the suppression of the JA signaling pathway by whitefly feeding is not due to enhanced SA levels.},
+  doi       = {10.1073/pnas.0907890106},
+  publisher = {Proceedings of the National Academy of Sciences},
 }
 
 @Article{Zhao1997b,
