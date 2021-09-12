@@ -66,8 +66,8 @@ df_fl <- df %>%  filter(state == 'FL')
 df_fl <- df_fl %>% group_by(city) %>% summarize(
   pfruct = sum(eriophyoids, na.rm = TRUE),
   other = sum(other_mites, na.rm = TRUE),
-  totals = sum(total_mites, na.rm = TRUE),
-  samples = n()
+  samples = n(),
+  totals = sum(total_mites, na.rm = TRUE)
 )
 
 df_fl <-
