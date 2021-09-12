@@ -17,12 +17,7 @@ A key part of *P. fructiphilus* control is vector and disease monitoring. Previo
 A survey of roses in the landscape was conducted following a transect of northern Florida from west to east, Pensacola to Jacksonville. Cities with populations over 1,000 were visited along this route and cuttings were taken from various roses in each city. Rose cultivar/species, sun exposure and GPS coordinates were recorded to map out sites which had predatory mites, eriophyoid mites, or possibly symptoms of RRD. Rose tissue samples were taken from the periphery of various roses in the landscape; sampling was focused on the flowering tips of roses and included a mixture of flowers, fruits, buds, and short lengths of rose cane. Samples were trimmed with bypass pruners which were routinely sanitized with 70% ethanol between cuts. Samples were stored in 500 \si{\milli\liter} Nalgene™ Wide-Mouth Polypropylene Copolymer bottles (ThermoFisher Scientific, Waltham, MA, USA) with ~10 \si{\milli\liter} of 95\% ethanol. The rose samples then were gently shaken to coat the rose tissues sampled with ethanol. Doing so made sure that the sampled mites were killed and acted to preserve both mites and rose tissues until samples could be processed further and checked for mites. Samples were processed using a washing method derived from @Monfreda2007 used to detect eriophyoid mites such as *P. fructiphilius*: The sampling bottles with ethanol and rose tissues were vigorously shaken to dislodge any mites, then the ethanol in the container was poured over a stack of sieves with decreasing screen sizes: 180 \si{\micro\metre}, 53 \si{\micro\metre}, and 25 \si{\micro\metre}. The bottle and rose pieces were then further rinsed with 95\% ethanol over the sieve stack to dislodge any remaining mites. The 53 \si{\micro\metre} and 25 \si{\micro\metre} sieves were processed separately; the 53 \si{\micro\metre} sieve retained larger mites while the 25 \si{\micro\metre} sieve retained smaller mites, including *P. fructiphilus*. The sieves were then backwashed from the underside of their screen with a 95\% ethanol-filled wash bottle, starting from the highest point of a sieve and working to the bottom to flush any trapped debris and mites into a 50 \si{\milli\liter} centrifuge tube for storage and future observations. The ethanol solutions of mites and plant debris were stained with a derivative of McBride's acid fuchsin stain to enhance contrast [@Backus1988]. Solutions were allowed to settle until excess ethanol could be siphoned off, making it possible to then pour this concentrated plant-mite mixture into a thin, small petri dishes or a glass plate for observation under a dissecting microscope. Mites found among the plant debris were counted, then siphoned off with a glass pipette and subsequently stored in micro-centrifuge containers with 95% ethanol as a preservative. 5-10 unstained specimens from each sample were made into prepared microscope slides: Mites were cleared and mounted using the methods of @Faraji2008: mites were simultaneously cleared and stained with Faraji and Bakker's modified clearing solution and heated on a hot plate until the specimens were clear. Subsequently, these mites were moved with an eyelash tool into an iodine-modified Hoyer’s slide mounting media (Hempstead Halide®, Inc., Galveston, Texas, USA), underneath a 12 m\si{\milli\metre} glass coverslip. The prepared slide was then dried at 90&deg;C before sealing the slide by painting a ring of alkyd insulating enamel (Red Glyptal® 1201, Chelsea, MA, USA) over the edges of the coverslip to seal the slide, to protect it from damage by air incursion and moisture. These slides could then be observed under a compound microscope with phase-contrast objectives to identify the mite families and species if necessary. After mite quantities and species were recorded, a representative sample of eriophyoids putatively identified as *P. fructiphilus* had their identity verified with the acarologist, Dr. Sam Bolton of the Florida Department of Agriculture and Consumer Services, Division of Plant Industry (FDACS-DPI) to ensure accuracy. Roses which appeared to show symptoms of RRD, or which had populations of *P. fructiphilus* present were tested by the Plant Disease Diagnostic Clinic at the NFREC. Plant tissues were tested for RRV by Dr. Fanny Iriarte using the currently accepted molecular methods described in @Babu2016, @Babu2017a, and/or @Babu2017b. 
 
 ## Results
-
-Eriophyoid mites were detected in *Phyllocoptes fructiphilus*
-
-No RRD was observed in northern Florida
-
-Various mites were collected, including a number of predatory mites. 
+425 samples were taken from 33 cites from an east to west transect along the border northern Florida. *P. fructiphilus* mites were recovered in rose samples from six cities: Baldwin, Defuniak Springs, Gainesville, Jacksonville and Tallahassee. Other mites were collected from 68\% of the cities visited. *P. fructiphilus* per sample were low on average, but abundant in individual samples. No evidence of RRD was observed in northern Florida. Many other mites were collected, including a number of predatory mites which await identification.
 
 
 ```{r survey_map_1, fig.height=8, fig.width=10.5, fig.align="center", out.width="85%", warning=FALSE}
@@ -39,6 +34,8 @@ knitr::include_graphics('figure/rrv_survey_map_fl_other.png')
 ```{r survey_table_1, echo = FALSE, warning = FALSE}
 df_fl <- read_csv('data/rrv_survey_fl_table.csv', show_col_types = FALSE)
 df_fl$pfuct_per <- round(df_fl$pfuct_per, digits = 1)
+df_fl$se_pfruct <- round(df_fl$se_pfruct, digits = 2)
+df_fl$se_other <- round(df_fl$se_other, digits = 2)
 df_fl <- df_fl %>%
   bind_rows(summarise(.,
                       across(where(is.numeric), sum),
@@ -46,7 +43,9 @@ df_fl <- df_fl %>%
 df_fl <- df_fl %>% rename(
   'City' = city,
   'P. fructiphilus' = pfruct,
+  'Std. Error' = se_pfruct,
   'Other Mites' = other,
+  'Std Error' = se_other,
   'Samples per site' = samples,
   'P. fructiphilus per sample' = pfuct_per,
   'Totals' = totals
@@ -62,7 +61,7 @@ row_spec(nrow(df_fl), bold = TRUE)
 
 *P. fructiphilus* have been found in northern Florida.
 
-Although a large number of other mites have been collected, it is beyond our expertise to identify them to species. Phytoseiid mites require expert identification, and many species have been misidentified [@Demard2021].
+Although a large number of other mites have been collected, it is beyond our ability to identify them to species. Phytoseiid mites require expert identification, and many species have been misidentified [@Demard2021].
 
 <!-- this imports my publication -->
 \includepdf[pages={-}, pagecommand={\phantomsection  \addcontentsline{toc}{section}{Publication: First report of \textit{Phyllocoptes fructiphilus} in Florida}}]{pubs/pfruct-report.pdf}
