@@ -1,34 +1,34 @@
-city,pfruct,other,samples,pfuct_per,totals
-Baldwin,27,324,6,4.5,351
-Bradfordville,0,0,2,0,0
-Branford,0,12,1,0,12
-Crawfordville,0,0,7,0,0
-Defuniak Springs,20,29,6,3.3333333333333335,49
-Ferry Pass,0,0,2,0,0
-Gainesville,25,61,22,1.1363636363636365,86
-Grand Ridge,0,30,2,0,30
-Greensboro,0,0,5,0,0
-Greenville,0,356,1,0,356
-Greenwood,0,200,1,0,200
-Gretna,0,5,4,0,5
-Havana,0,49,14,0,49
-Hilliardville,0,0,7,0,0
-Jacksonville,66,53,11,6,119
-Lake City,49,472,5,9.8,521
-Live Oak,0,376,2,0,376
-Macclenny,0,400,1,0,400
-Madison,0,14,1,0,14
-Marianna,0,11,1,0,11
-Mayo,0,32,1,0,32
-Miccosukee,0,0,1,0,0
-Midway,0,0,2,0,0
-Milton,0,0,1,0,0
-Monticello,0,20,8,0,20
-Orange Park,0,363,3,0,363
-Orlando,0,0,4,0,0
-Perry,0,3,1,0,3
-Quincy,0,9,8,0,9
-Sanderson,0,78,1,0,78
-Sneads,0,1,1,0,1
-South Apopka,0,0,5,0,0
-Tallahassee,8492,1776,288,29.48611111111111,10268
+city,pfruct,se_pfruct,other,se_other,samples,pfuct_per,totals
+Baldwin,27,1.6482313753434823,324,49.21720566360237,6,4.5,351
+Bradfordville,0,NA,0,NA,2,0,0
+Branford,0,NA,12,NA,1,0,12
+Crawfordville,0,NA,0,NA,7,0,0
+Defuniak Springs,20,2.060204952048326,29,0.7031674369909663,6,3.3333333333333335,49
+Ferry Pass,0,NA,0,NA,2,0,0
+Gainesville,25,2.3836564731139807,61,3.5815182154042895,22,1.1363636363636365,86
+Grand Ridge,0,0,30,10.999999999999998,2,0,30
+Greensboro,0,NA,0,NA,5,0,0
+Greenville,0,NA,356,NA,1,0,356
+Greenwood,0,NA,200,NA,1,0,200
+Gretna,0,0,5,1.7677669529663689,4,0,5
+Havana,0,0,49,3.6321972885372213,14,0,49
+Hilliardville,0,0,0,0,7,0,0
+Jacksonville,66,1.4142135623730951,53,1.3539046684459248,11,6,119
+Lake City,49,9.799999999999999,472,77.71782292370264,5,9.8,521
+Live Oak,0,0,376,181.99999999999997,2,0,376
+Macclenny,0,NA,400,NA,1,0,400
+Madison,0,NA,14,NA,1,0,14
+Marianna,0,NA,11,NA,1,0,11
+Mayo,0,NA,32,NA,1,0,32
+Miccosukee,0,NA,0,NA,1,0,0
+Midway,0,0,0,0,2,0,0
+Milton,0,NA,0,NA,1,0,0
+Monticello,0,NA,20,NA,8,0,20
+Orange Park,0,0,363,90.27919657004782,3,0,363
+Orlando,0,NA,0,NA,4,0,0
+Perry,0,NA,3,NA,1,0,3
+Quincy,0,0,9,1.055033287671644,8,0,9
+Sanderson,0,NA,78,NA,1,0,78
+Sneads,0,NA,1,NA,1,0,1
+South Apopka,0,0,0,0,5,0,0
+Tallahassee,8492,4.045994450189649,1776,0.9779917800762911,288,29.48611111111111,10268
