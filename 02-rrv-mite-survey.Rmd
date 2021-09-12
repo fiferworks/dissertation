@@ -25,12 +25,12 @@ No RRD was observed in northern Florida
 Various mites were collected, including a number of predatory mites. 
 
 
-```{r survey_map_1, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
+```{r survey_map_1, fig.height=8, fig.width=10.5, fig.align="center", out.width="85%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_fl_pf.png')
 ```
 `r fig_nums(name = "survey_map_1", caption = "*P. fructiphilus* mites recovered during surveys of roses in Florida, 2017-2021.")`
 
-```{r survey_map_2, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
+```{r survey_map_2, fig.height=8, fig.width=10.5, fig.align="center", out.width="85%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_fl_other.png')
 ```
 `r fig_nums(name = "survey_map_2", caption = "Other mites recovered during surveys of roses in Florida, 2017-2021.")`
