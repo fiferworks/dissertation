@@ -1,34 +1,34 @@
-city,pfruct,other,totals,samples,pfuct_per
-Baldwin,27,324,351,6,4.5
-Bradfordville,0,0,0,2,0
-Branford,0,12,12,1,0
-Crawfordville,0,0,0,7,0
-Defuniak Springs,20,29,49,6,3.3333333333333335
-Ferry Pass,0,0,0,2,0
-Gainesville,25,61,86,22,1.1363636363636365
-Grand Ridge,0,30,30,2,0
-Greensboro,0,0,0,5,0
-Greenville,0,356,356,1,0
-Greenwood,0,200,200,1,0
-Gretna,0,5,5,4,0
-Havana,0,49,49,14,0
-Hilliardville,0,0,0,7,0
-Jacksonville,66,53,119,11,6
-Lake City,49,472,521,5,9.8
-Live Oak,0,376,376,2,0
-Macclenny,0,400,400,1,0
-Madison,0,14,14,1,0
-Marianna,0,11,11,1,0
-Mayo,0,32,32,1,0
-Miccosukee,0,0,0,1,0
-Midway,0,0,0,2,0
-Milton,0,0,0,1,0
-Monticello,0,20,20,8,0
-Orange Park,0,363,363,3,0
-Orlando,0,0,0,4,0
-Perry,0,3,3,1,0
-Quincy,0,9,9,8,0
-Sanderson,0,78,78,1,0
-Sneads,0,1,1,1,0
-South Apopka,0,0,0,5,0
-Tallahassee,8492,1776,10268,288,29.48611111111111
+city,pfruct,other,samples,pfuct_per,totals
+Baldwin,27,324,6,4.5,351
+Bradfordville,0,0,2,0,0
+Branford,0,12,1,0,12
+Crawfordville,0,0,7,0,0
+Defuniak Springs,20,29,6,3.3333333333333335,49
+Ferry Pass,0,0,2,0,0
+Gainesville,25,61,22,1.1363636363636365,86
+Grand Ridge,0,30,2,0,30
+Greensboro,0,0,5,0,0
+Greenville,0,356,1,0,356
+Greenwood,0,200,1,0,200
+Gretna,0,5,4,0,5
+Havana,0,49,14,0,49
+Hilliardville,0,0,7,0,0
+Jacksonville,66,53,11,6,119
+Lake City,49,472,5,9.8,521
+Live Oak,0,376,2,0,376
+Macclenny,0,400,1,0,400
+Madison,0,14,1,0,14
+Marianna,0,11,1,0,11
+Mayo,0,32,1,0,32
+Miccosukee,0,0,1,0,0
+Midway,0,0,2,0,0
+Milton,0,0,1,0,0
+Monticello,0,20,8,0,20
+Orange Park,0,363,3,0,363
+Orlando,0,0,4,0,0
+Perry,0,3,1,0,3
+Quincy,0,9,8,0,9
+Sanderson,0,78,1,0,78
+Sneads,0,1,1,0,1
+South Apopka,0,0,5,0,0
+Tallahassee,8492,1776,288,29.48611111111111,10268
