@@ -132,6 +132,7 @@ pkgs <-
     "ggplot2",
     "leaflet",
     "leafsync",
+    "kableExtra",
     "dplyr",
     "ggthemes",
     "showtext",
