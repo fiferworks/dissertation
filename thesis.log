@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  11 SEP 2021 22:26
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.30)  13 SEP 2021 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -242,24 +242,31 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@dimlist=\toks31
 ) (c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+) (c:/texlive/2021/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count279
+\float@exts=\toks32
+\float@box=\box57
+\@float@everytoks=\toks33
+\@floatcapt=\box58
 ) (c:/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \LTleft=\skip95
 \LTright=\skip96
 \LTpre=\skip97
 \LTpost=\skip98
-\LTchunksize=\count279
+\LTchunksize=\count280
 \LTcapwidth=\dimen168
-\LT@head=\box57
-\LT@firsthead=\box58
-\LT@foot=\box59
-\LT@lastfoot=\box60
-\LT@gbox=\box61
-\LT@cols=\count280
-\LT@rows=\count281
-\c@LT@tables=\count282
-\c@LT@chunks=\count283
-\LT@p@ftn=\toks32
+\LT@head=\box59
+\LT@firsthead=\box60
+\LT@foot=\box61
+\LT@lastfoot=\box62
+\LT@gbox=\box63
+\LT@cols=\count281
+\LT@rows=\count282
+\c@LT@tables=\count283
+\c@LT@chunks=\count284
+\LT@p@ftn=\toks34
 ) (c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -268,10 +275,10 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package xcolor Info: Driver file: xetex.def on input line 225.
 (c:/texlive/2021/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks33
+\everycr=\toks35
 \minrowclearance=\skip99
 )
-\rownum=\count284
+\rownum=\count285
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
@@ -301,12 +308,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen176
 \cmidrulekern=\dimen177
 \defaultaddspace=\dimen178
-\@cmidla=\count285
-\@cmidlb=\count286
+\@cmidla=\count286
+\@cmidlb=\count287
 \@aboverulesep=\dimen179
 \@belowrulesep=\dimen180
-\@thisruleclass=\count287
-\@lastruleclass=\count288
+\@thisruleclass=\count288
+\@lastruleclass=\count289
 \@thisrulewidth=\dimen181
 ) (c:/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
@@ -316,10 +323,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip102
 \subfigcapmargin=\dimen183
 \subfiglabelskip=\skip103
-\c@subfigure=\count289
-\c@lofdepth=\count290
-\c@subtable=\count291
-\c@lotdepth=\count292
+\c@subfigure=\count290
+\c@lofdepth=\count291
+\c@subtable=\count292
+\c@lotdepth=\count293
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
@@ -328,22 +335,22 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@bottom=\skip105
 ) (c:/texlive/2021/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count293
+\c@r@tfl@t=\count294
 \rotFPtop=\skip106
 \rotFPbot=\skip107
-\rot@float@box=\box62
-\rot@mess@toks=\toks34
+\rot@float@box=\box64
+\rot@mess@toks=\toks36
 ) (c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count294
-\calc@Bcount=\count295
+\calc@Acount=\count295
+\calc@Bcount=\count296
 \calc@Adimen=\dimen184
 \calc@Bdimen=\dimen185
 \calc@Askip=\skip108
 \calc@Bskip=\skip109
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count296
+\calc@Ccount=\count297
 \calc@Cskip=\skip110
 ) (c:/texlive/2021/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -382,8 +389,9 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen258
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count297
-\c@continuedfloat=\count298
+\c@caption@flags=\count298
+\c@continuedfloat=\count299
+Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 (c:/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
@@ -395,19 +403,19 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip111
 \bibsep=\skip112
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count299
+\c@NAT@ctr=\count300
 ) (c:/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2021-09-06 v3.0.29 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen259
-\l__siunitx_angle_marker_box=\box63
-\l__siunitx_angle_unit_box=\box64
-\l__siunitx_compound_count_int=\count300
+\l__siunitx_angle_marker_box=\box65
+\l__siunitx_angle_unit_box=\box66
+\l__siunitx_compound_count_int=\count301
 (c:/texlive/2021/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2021/01/17 v1.10a internationalization of LaTeX2e package
 s (CN)
 (c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count301
+\etb@tempcnta=\count302
 ) (c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -420,37 +428,37 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 ))
-\l__siunitx_number_exponent_fixed_int=\count302
-\l__siunitx_number_min_decimal_int=\count303
-\l__siunitx_number_min_integer_int=\count304
-\l__siunitx_number_round_precision_int=\count305
-\l__siunitx_number_group_minimum_int=\count306
-\l__siunitx_table_tmp_box=\box65
+\l__siunitx_number_exponent_fixed_int=\count303
+\l__siunitx_number_min_decimal_int=\count304
+\l__siunitx_number_min_integer_int=\count305
+\l__siunitx_number_round_precision_int=\count306
+\l__siunitx_number_group_minimum_int=\count307
+\l__siunitx_table_tmp_box=\box67
 \l__siunitx_table_tmp_dim=\dimen260
 \l__siunitx_table_column_width_dim=\dimen261
-\l__siunitx_table_integer_box=\box66
-\l__siunitx_table_decimal_box=\box67
-\l__siunitx_table_before_box=\box68
-\l__siunitx_table_after_box=\box69
+\l__siunitx_table_integer_box=\box68
+\l__siunitx_table_decimal_box=\box69
+\l__siunitx_table_before_box=\box70
+\l__siunitx_table_after_box=\box71
 \l__siunitx_table_before_dim=\dimen262
 \l__siunitx_table_carry_dim=\dimen263
-\l__siunitx_unit_tmp_int=\count307
-\l__siunitx_unit_position_int=\count308
-\l__siunitx_unit_total_int=\count309
+\l__siunitx_unit_tmp_int=\count308
+\l__siunitx_unit_position_int=\count309
+\l__siunitx_unit_total_int=\count310
 (c:/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (c:/texl
 ive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-08-27 L3 programming layer (loader) 
 (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2021-08-04 L3 backend support: XeTeX
 (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count310
-\l__color_backend_stack_int=\count311
-\g__color_backend_stack_int=\count312
-\g__graphics_track_int=\count313
-\l__pdf_internal_box=\box70
-\g__pdf_backend_object_int=\count314
-\g__pdf_backend_annotation_int=\count315
-\g__pdf_backend_link_int=\count316
+\c__kernel_sys_dvipdfmx_version_int=\count311
+\l__color_backend_stack_int=\count312
+\g__color_backend_stack_int=\count313
+\g__graphics_track_int=\count314
+\l__pdf_internal_box=\box72
+\g__pdf_backend_object_int=\count315
+\g__pdf_backend_annotation_int=\count316
+\g__pdf_backend_link_int=\count317
 ))
 Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
 )) (c:/texlive/2021/texmf-dist/tex/latex/textgreek/textgreek.sty
@@ -477,13 +485,13 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 (c:/texlive/2021/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2021/03/06 v0.5t Pdfpages driver for XeTeX (AM)
 )
-\pdfpages@includegraphics@status=\count317
-\AM@pagebox=\box71
-\AM@global@opts=\toks35
-\AM@pagecnt=\count318
-\AM@toc@title=\toks36
-\c@AM@survey=\count319
-\AM@templatesizebox=\box72
+\pdfpages@includegraphics@status=\count318
+\AM@pagebox=\box73
+\AM@global@opts=\toks37
+\AM@pagecnt=\count319
+\AM@toc@title=\toks38
+\c@AM@survey=\count320
+\AM@templatesizebox=\box74
 ) (c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 (c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
@@ -502,8 +510,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen269
-\Hy@linkcounter=\count320
-\Hy@pagecounter=\count321
+\Hy@linkcounter=\count321
+\Hy@pagecounter=\count322
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 ) (c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
@@ -514,7 +522,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count322
+\Hy@SavedSpaceFactor=\count323
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc-greekbasic.def
@@ -529,7 +537,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count323
+\c@Hy@tempcnt=\count324
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen270
 (c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
@@ -538,7 +546,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count324
+\Fld@menulength=\count325
 \Field@Width=\dimen271
 \Fld@charsize=\dimen272
 Package hyperref Info: Hyper figures OFF on input line 6076.
@@ -554,9 +562,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count325
-\c@Item=\count326
-\c@Hfootnote=\count327
+\Hy@abspage=\count326
+\c@Item=\count327
+\c@Hfootnote=\count328
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -565,11 +573,11 @@ File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box73
-\c@Hy@AnnotLevel=\count328
-\HyField@AnnotCount=\count329
-\Fld@listcount=\count330
-\c@bookmark@seq@number=\count331
+\pdfm@box=\box75
+\c@Hy@AnnotLevel=\count329
+\HyField@AnnotCount=\count330
+\Fld@listcount=\count331
+\c@bookmark@seq@number=\count332
 (c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 (c:/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -584,46 +592,46 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip113
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 78.
+Package hyperref Info: Option `colorlinks' set `true' on input line 79.
 \csllabelwidth=\skip114
 \cslhangindent=\skip115
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 128.
+h' as default language. on input line 129.
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 129.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-28.
+29.
 (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 129.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
-28.
+29.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
 **************************************
 * Executing Begin Document Statement *
 **************************************
@@ -671,13 +679,13 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 128.
+or `english'. on input line 129.
 (c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
 )
-Package hyperref Info: Link coloring ON on input line 128.
+Package hyperref Info: Link coloring ON on input line 129.
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -685,11 +693,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count332
+\c@section@level=\count333
 )
-LaTeX Info: Redefining \ref on input line 128.
-LaTeX Info: Redefining \pageref on input line 128.
-LaTeX Info: Redefining \nameref on input line 128.
+LaTeX Info: Redefining \ref on input line 129.
+LaTeX Info: Redefining \pageref on input line 129.
+LaTeX Info: Redefining \nameref on input line 129.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
@@ -764,7 +772,7 @@ CHAPTER 1.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 165.
+(hyperref)                removing `\uppercase' on input line 166.
 
 [9
 
@@ -782,7 +790,7 @@ File: thesis_files/figure-latex/persim-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/persim-1.pdf>
 [23] [24] [25]
 LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 2
-17.
+18.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
 File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
 ) [26] [27] [28] [29] [30]
@@ -797,7 +805,7 @@ CHAPTER 2.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 233.
+(hyperref)                removing `\uppercase' on input line 234.
 
 File: thesis_files/figure-latex/solo_maps-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/solo_maps-1.pdf>
@@ -809,81 +817,81 @@ File: figure/rrv_survey_map_fl_pf.png Graphic file (type bmp)
 [40]
 File: figure/rrv_survey_map_fl_other.png Graphic file (type bmp)
 <figure/rrv_survey_map_fl_other.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [41]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 1>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 1>
+Overfull \vbox (22.97581pt too high) has occurred while \output is active []
+
 [42]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 1>
+<use pubs/pfruct-report.pdf>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 1>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 1>
 [43]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
+<use pubs/pfruct-report.pdf, page 1>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
+<use pubs/pfruct-report.pdf, page 1>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
+<use pubs/pfruct-report.pdf, page 1>
 [44]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
+<use pubs/pfruct-report.pdf, page 2>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
+<use pubs/pfruct-report.pdf, page 2>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
+<use pubs/pfruct-report.pdf, page 2>
 [45]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 [46]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
+<use pubs/pfruct-report.pdf, page 4>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+[47]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 5>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 5>
-[47] [48]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+[48]
 ***************************
 CHAPTER 3.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 325.
+(hyperref)                removing `\uppercase' on input line 340.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 335.
+(hyperref)                than one, level fixed on input line 350.
 
 [49
 
 ] [50] [51]
-Overfull \hbox (11.62503pt too wide) in paragraph at lines 374--376
+Overfull \hbox (11.62503pt too wide) in paragraph at lines 389--391
 \TU/lmr/m/n/12 tity and determine the types of volatiles released using (\TU/lm
 r/bx/n/12 appropiatestaticalmethod?\TU/lmr/m/n/12 ) 
  []
 
 
-Overfull \hbox (49.18501pt too wide) in paragraph at lines 378--380
+Overfull \hbox (49.18501pt too wide) in paragraph at lines 393--395
 \TU/lmr/m/n/12 filtered air) with four-arm olfactometer assays analyzed using (
 \TU/lmr/bx/n/12 appropiatestaticalmethod?\TU/lmr/m/n/12 ).  
  []
 
 
-Overfull \hbox (16.80902pt too wide) in paragraph at lines 380--381
+Overfull \hbox (16.80902pt too wide) in paragraph at lines 395--396
 \TU/lmr/m/n/12 lures to controls without lures and analyzing data with (\TU/lmr
 /bx/n/12 appropiatestaticalmethod?\TU/lmr/m/n/12 ).  
  []
@@ -900,7 +908,7 @@ Missing character: There is no χ (U+03C7) in font [lmroman12-regular]:mapping=t
 ex-text;!
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 401.
+(hyperref)                than one, level fixed on input line 416.
 
 [54]
 File: thesis_files/figure-latex/test-vols-1.pdf Graphic file (type pdf)
@@ -936,11 +944,11 @@ CHAPTER 4.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 502.
+(hyperref)                removing `\uppercase' on input line 517.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 505.
+(hyperref)                than one, level fixed on input line 520.
 
 [62
 
@@ -959,7 +967,7 @@ File: figure/ipm_graph.png Graphic file (type bmp)
 [67] [68] [69] [70]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 579.
+(hyperref)                than one, level fixed on input line 594.
 
 [71]
 File: figure/reed.jpg Graphic file (type bmp)
@@ -973,10 +981,10 @@ File: figure/rrv_asm_plot_2019_griffin.png Graphic file (type bmp)
 [74]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 613.
+(hyperref)                than one, level fixed on input line 628.
 
 
-Overfull \hbox (0.16501pt too wide) in paragraph at lines 616--616
+Overfull \hbox (0.16501pt too wide) in paragraph at lines 631--631
 \TU/lmr/bx/n/12 ments including predatory mites to reduce populations of \TU/lm
 r/bx/it/12 Phyllocoptes 
  []
@@ -993,12 +1001,12 @@ File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
 File: figure/reed.jpg Graphic file (type bmp)
 <figure/reed.jpg>
 [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90]
-Overfull \hbox (4.33514pt too wide) in alignment at lines 751--755
+Overfull \hbox (4.33514pt too wide) in alignment at lines 766--770
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.33514pt too wide) in alignment at lines 755--760
+Overfull \hbox (4.33514pt too wide) in alignment at lines 770--775
  [] [] [] [] 
  []
 
@@ -1013,61 +1021,61 @@ File: thesis_files/figure-latex/fig_3-1.pdf Graphic file (type pdf)
 [93] [94] [95
 
 ] [96] [97]
-Overfull \hbox (44.0428pt too wide) in paragraph at lines 867--869
+Overfull \hbox (44.0428pt too wide) in paragraph at lines 882--884
  \TU/lmr/m/n/12 predation of their offspring. Plant Science. 252: 300–310, DOI:
 [][]10.1016/j.plantsci.2016.08.004[][].  
  []
 
 [98] [99] [100] [101]
-Overfull \hbox (13.1908pt too wide) in paragraph at lines 945--947
+Overfull \hbox (13.1908pt too wide) in paragraph at lines 960--962
  \TU/lmr/m/n/12 volatiles. Entomologia Experimentalis et Applicata. 110: 181–18
 9, DOI:[][]10.1111/j.0013- 
  []
 
 [102]
-Overfull \hbox (51.46278pt too wide) in paragraph at lines 954--956
+Overfull \hbox (51.46278pt too wide) in paragraph at lines 969--971
  \TU/lmr/m/n/12 Annual Review of Plant Biology. 60: 379–406, DOI:[][]10.1146/an
 nurev.arplant.57.032905.105346[][].  
  []
 
 [103] [104] [105] [106] [107]
-Overfull \hbox (77.6308pt too wide) in paragraph at lines 1059--1061
+Overfull \hbox (77.6308pt too wide) in paragraph at lines 1074--1076
  \TU/lmr/m/n/12 mites. Experimental and Applied Acarology. 30: 29–105, DOI:[][]
 10.1023/b:appa.0000006544.10072.01[][].  
  []
 
 [108] [109]
-Overfull \hbox (8.7748pt too wide) in paragraph at lines 1089--1091
+Overfull \hbox (8.7748pt too wide) in paragraph at lines 1104--1106
  \TU/lmr/m/n/12 nalling in plants. Nature Reviews Immunology. 16: 537–552, DOI:
 [][]10.1038/nri.2016.77[][].  
  []
 
 
-Overfull \hbox (0.13876pt too wide) in paragraph at lines 1104--1106
+Overfull \hbox (0.13876pt too wide) in paragraph at lines 1119--1121
  \TU/lmr/m/n/12 Florida citrus groves. PLOS ONE. 16: e0255455, DOI:[][]10.1371/
 journal.pone.0255455[][].  
  []
 
 [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120] [121]
-Overfull \hbox (56.4148pt too wide) in paragraph at lines 1383--1385
+Overfull \hbox (56.4148pt too wide) in paragraph at lines 1398--1400
  \TU/lmr/m/n/12 plant volatile emissions in nature. Science. 291: 2141–2144, DO
 I:[][]10.1126/science.291.5511.2141[][].  
  []
 
 
-Overfull \hbox (27.6028pt too wide) in paragraph at lines 1389--1391
+Overfull \hbox (27.6028pt too wide) in paragraph at lines 1404--1406
  \TU/lmr/m/n/12 grapevine cultivars. Systematic and Applied Acarology. 23: 405,
  DOI:[][]10.11158/saa.23.3.1[][].  
  []
 
 
-Overfull \hbox (6.66678pt too wide) in paragraph at lines 1395--1397
+Overfull \hbox (6.66678pt too wide) in paragraph at lines 1410--1412
  \TU/lmr/m/n/12 and future prospects. Acta Horticulturae. 13–18, DOI:[][]10.176
 60/actahortic.2009.816.1[][].  
  []
 
 [122] [123] [124] [125] [126] [127] [128]
-Overfull \hbox (26.89877pt too wide) in paragraph at lines 1527--1529
+Overfull \hbox (26.89877pt too wide) in paragraph at lines 1542--1544
  \TU/lmr/m/n/12 American Society for Horticultural Science. 128: 575–577, DOI:[
 ][]10.21273/jashs.128.4.0575[][].  
  []
@@ -1076,19 +1084,19 @@ Overfull \hbox (26.89877pt too wide) in paragraph at lines 1527--1529
 Missing character: There is no ʻ (U+02BB) in font [lmroman12-regular]:mapping=t
 ex-text;!
 [132] [133] [134] [135] [136] [137]
-Overfull \hbox (80.95479pt too wide) in paragraph at lines 1737--1739
+Overfull \hbox (80.95479pt too wide) in paragraph at lines 1752--1754
  \TU/lmr/m/n/12 cases. Experimental and Applied Acarology. 30: 135–160, DOI:[][
 ]10.1023/b:appa.0000006546.55305.e3[][].  
  []
 
 [138] [139] [140]
-Overfull \hbox (6.0868pt too wide) in paragraph at lines 1794--1796
+Overfull \hbox (6.0868pt too wide) in paragraph at lines 1809--1811
  \TU/lmr/m/n/12 salicylate in plant pathogen resistance. Nature. 385: 718–721, 
 DOI:[][]10.1038/385718a0[][].  
  []
 
 [141] [142] [143] [144] [145] [146] [147]
-Overfull \hbox (11.11478pt too wide) in paragraph at lines 1944--1946
+Overfull \hbox (11.11478pt too wide) in paragraph at lines 1959--1961
  \TU/lmr/m/it/12 Rhizoctonia \TU/lmr/m/n/12 species. Phytopathology®. 88: 359–3
 65, DOI:[][]10.1094/phyto.1998.88.4.359[][].  
  []
@@ -1104,13 +1112,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 163 ({)
+### simple group (level 1) entered at line 164 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18778 strings out of 476533
- 345203 string characters out of 5821544
- 667264 words of memory out of 5000000
- 38851 multiletter control sequences out of 15000+600000
+ 18831 strings out of 476533
+ 345929 string characters out of 5821544
+ 694617 words of memory out of 5000000
+ 38900 multiletter control sequences out of 15000+600000
  409497 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,17n,81p,8463b,1039s stack positions out of 5000i,500n,10000p,200000b,80000s
