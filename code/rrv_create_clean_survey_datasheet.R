@@ -65,17 +65,20 @@ df_fl <- df %>%  filter(state == 'FL')
 #here I am averaging the coordinate positions and other information to compare
 #mite populations between years
 df_fl <- df_fl %>% group_by(city, year) %>% summarize(
-  pfruct = sum(eriophyoids, na.rm = TRUE),
-  se_pfruct = sd(eriophyoids, na.rm = TRUE) / sqrt(n()),
+  erios = sum(eriophyoids, na.rm = TRUE),
+  se_erios = sd(eriophyoids, na.rm = TRUE) / sqrt(n()),
   other = sum(other_mites, na.rm = TRUE),
   se_other = sd(other_mites, na.rm = TRUE) / sqrt(n()),
   samples = n(),
-  totals = sum(total_mites, na.rm = TRUE),lon = mean(lon, na.rm = TRUE),
+  totals = sum(total_mites, na.rm = TRUE),
+  lon = mean(lon, na.rm = TRUE),
   lat = mean(lat, na.rm = TRUE)
 )
 
 df_fl <-
-  df_fl %>% mutate(pfuct_per = pfruct / samples, .after = samples)
+  df_fl %>% mutate(erios_per = erios / samples,
+                   .after = samples,
+                   pfruct = erios > 0)
 
 write_csv(df_fl, 'data/rrv_survey_fl_table.csv')
 
