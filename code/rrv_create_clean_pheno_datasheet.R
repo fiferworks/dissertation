@@ -59,7 +59,7 @@ gps <- gps %>% dplyr::select(-lat, -lon, -lon_lat)
 
 gps <- left_join(gps, avgs)
 
-####Reading in the RRV Survey Master Datasheet####
+####Reading in Phenology Data####
 df <- read_excel('data/rrv_pheno_jessie_datasheet.xlsx')
 
 #making id a factor for sorting
