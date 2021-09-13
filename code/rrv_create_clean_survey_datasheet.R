@@ -1,5 +1,5 @@
 #a list of packages used for this script
-pkgs <- c('tidyverse', 'readxl', 'lubridate')
+pkgs <- c('tidyverse', 'readxl', 'lubridate', 'sf')
 
 #installs the packages if you don't have them already installed
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -62,14 +62,16 @@ write_csv(df, 'data/rrv_survey_clean_datasheet.csv')
 #getting summary statistics for tables
 df_fl <- df %>%  filter(state == 'FL')
 
-
-df_fl <- df_fl %>% group_by(city) %>% summarize(
+#here I am averaging the coordinate positions and other information to compare
+#mite populations between years
+df_fl <- df_fl %>% group_by(city, year) %>% summarize(
   pfruct = sum(eriophyoids, na.rm = TRUE),
   se_pfruct = sd(eriophyoids, na.rm = TRUE) / sqrt(n()),
   other = sum(other_mites, na.rm = TRUE),
   se_other = sd(other_mites, na.rm = TRUE) / sqrt(n()),
   samples = n(),
-  totals = sum(total_mites, na.rm = TRUE)
+  totals = sum(total_mites, na.rm = TRUE),lon = mean(lon, na.rm = TRUE),
+  lat = mean(lat, na.rm = TRUE)
 )
 
 df_fl <-
