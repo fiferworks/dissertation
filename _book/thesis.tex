@@ -45,6 +45,7 @@
 \usepackage[letterpaper,hmargin=1in,vmargin=1in]{geometry}
 \usepackage{lscape}
 %\usepackage{hanging}
+\usepackage{float}
 \usepackage{longtable}
 \usepackage[table]{xcolor}
 \usepackage{amsfonts}
@@ -260,54 +261,68 @@
   \begin{center}\includegraphics[width=0.85\linewidth]{figure/rrv_survey_map_fl_other} \end{center}
 
   Figure 9: Other mites recovered during surveys of roses in Florida, 2017-2021.
-  \begin{table}[!h]
+  \begin{table}[H]
   \centering
   \resizebox{\linewidth}{!}{
-  \begin{tabular}{lrrrrrrr}
+  \begin{tabular}{lrrrrrrrrrr}
   \toprule
-  City & P. fructiphilus & Std. Error & Other Mites & Std Error & Samples per site & P. fructiphilus per sample & Totals\\
+  City & Year & Eriophyoids & Std. Error & Other Mites & Std Error & Samples per city & Eriophyoids per sample & Totals & Longitude & Latitude\\
   \midrule
-  \cellcolor{gray!6}{Baldwin} & \cellcolor{gray!6}{27} & \cellcolor{gray!6}{1.65} & \cellcolor{gray!6}{324} & \cellcolor{gray!6}{49.22} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{4.5} & \cellcolor{gray!6}{351}\\
-  Bradfordville & 0 & NA & 0 & NA & 2 & 0.0 & 0\\
-  \cellcolor{gray!6}{Branford} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{12}\\
-  Crawfordville & 0 & NA & 0 & NA & 7 & 0.0 & 0\\
-  \cellcolor{gray!6}{Defuniak Springs} & \cellcolor{gray!6}{20} & \cellcolor{gray!6}{2.06} & \cellcolor{gray!6}{29} & \cellcolor{gray!6}{0.70} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{3.3} & \cellcolor{gray!6}{49}\\
+  \cellcolor{gray!6}{Hilliardville} & \cellcolor{gray!6}{2017} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{7} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{-84.39651} & \cellcolor{gray!6}{30.28456}\\
+  South Apopka & 2017 & 0 & 0.00 & 0 & 0.00 & 5 & 0.0 & 0 & -81.50615 & 28.64082\\
+  \cellcolor{gray!6}{Tallahassee} & \cellcolor{gray!6}{2017} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{21} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{-84.27686} & \cellcolor{gray!6}{30.49619}\\
+  Havana & 2018 & 0 & NA & 0 & NA & 9 & 0.0 & 0 & -84.41461 & 30.62618\\
+  \cellcolor{gray!6}{Miccosukee} & \cellcolor{gray!6}{2018} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{-84.03900} & \cellcolor{gray!6}{30.59406}\\
   \addlinespace
-  Ferry Pass & 0 & NA & 0 & NA & 2 & 0.0 & 0\\
-  \cellcolor{gray!6}{Gainesville} & \cellcolor{gray!6}{25} & \cellcolor{gray!6}{2.38} & \cellcolor{gray!6}{61} & \cellcolor{gray!6}{3.58} & \cellcolor{gray!6}{22} & \cellcolor{gray!6}{1.1} & \cellcolor{gray!6}{86}\\
-  Grand Ridge & 0 & 0.00 & 30 & 11.00 & 2 & 0.0 & 30\\
-  \cellcolor{gray!6}{Greensboro} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{5} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0}\\
-  Greenville & 0 & NA & 356 & NA & 1 & 0.0 & 356\\
+  Tallahassee & 2018 & 0 & NA & 0 & NA & 7 & 0.0 & 0 & -84.29692 & 30.44227\\
+  \cellcolor{gray!6}{Bradfordville} & \cellcolor{gray!6}{2019} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{2} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{-84.21892} & \cellcolor{gray!6}{30.54678}\\
+  Crawfordville & 2019 & 0 & NA & 0 & NA & 7 & 0.0 & 0 & -84.35288 & 30.12877\\
+  \cellcolor{gray!6}{Greensboro} & \cellcolor{gray!6}{2019} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{5} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{-84.74333} & \cellcolor{gray!6}{30.56824}\\
+  Gretna & 2019 & 0 & 0.00 & 5 & 1.77 & 4 & 0.0 & 5 & -84.66470 & 30.55817\\
   \addlinespace
-  \cellcolor{gray!6}{Greenwood} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{200} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{200}\\
-  Gretna & 0 & 0.00 & 5 & 1.77 & 4 & 0.0 & 5\\
-  \cellcolor{gray!6}{Havana} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{49} & \cellcolor{gray!6}{3.63} & \cellcolor{gray!6}{14} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{49}\\
-  Hilliardville & 0 & 0.00 & 0 & 0.00 & 7 & 0.0 & 0\\
-  \cellcolor{gray!6}{Jacksonville} & \cellcolor{gray!6}{66} & \cellcolor{gray!6}{1.41} & \cellcolor{gray!6}{53} & \cellcolor{gray!6}{1.35} & \cellcolor{gray!6}{11} & \cellcolor{gray!6}{6.0} & \cellcolor{gray!6}{119}\\
+  \cellcolor{gray!6}{Havana} & \cellcolor{gray!6}{2019} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{49} & \cellcolor{gray!6}{6.08} & \cellcolor{gray!6}{5} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{49} & \cellcolor{gray!6}{-84.41501} & \cellcolor{gray!6}{30.62601}\\
+  Midway & 2019 & 0 & 0.00 & 0 & 0.00 & 2 & 0.0 & 0 & -84.32201 & 30.44610\\
+  \cellcolor{gray!6}{Monticello} & \cellcolor{gray!6}{2019} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{7} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{-83.87824} & \cellcolor{gray!6}{30.54454}\\
+  Quincy & 2019 & 0 & 0.00 & 9 & 1.13 & 7 & 0.0 & 9 & -84.60175 & 30.56986\\
+  \cellcolor{gray!6}{Tallahassee} & \cellcolor{gray!6}{2019} & \cellcolor{gray!6}{4704} & \cellcolor{gray!6}{9.86} & \cellcolor{gray!6}{47} & \cellcolor{gray!6}{0.29} & \cellcolor{gray!6}{79} & \cellcolor{gray!6}{59.5} & \cellcolor{gray!6}{4751} & \cellcolor{gray!6}{-84.30902} & \cellcolor{gray!6}{30.44618}\\
   \addlinespace
-  Lake City & 49 & 9.80 & 472 & 77.72 & 5 & 9.8 & 521\\
-  \cellcolor{gray!6}{Live Oak} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{376} & \cellcolor{gray!6}{182.00} & \cellcolor{gray!6}{2} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{376}\\
-  Macclenny & 0 & NA & 400 & NA & 1 & 0.0 & 400\\
-  \cellcolor{gray!6}{Madison} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{14} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{14}\\
-  Marianna & 0 & NA & 11 & NA & 1 & 0.0 & 11\\
+  Baldwin & 2020 & 27 & 1.31 & 15 & 1.55 & 4 & 6.8 & 42 & -81.97352 & 30.30268\\
+  \cellcolor{gray!6}{Defuniak Springs} & \cellcolor{gray!6}{2020} & \cellcolor{gray!6}{20} & \cellcolor{gray!6}{2.06} & \cellcolor{gray!6}{29} & \cellcolor{gray!6}{0.70} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{3.3} & \cellcolor{gray!6}{49} & \cellcolor{gray!6}{-86.12718} & \cellcolor{gray!6}{30.72614}\\
+  Ferry Pass & 2020 & 0 & NA & 0 & NA & 2 & 0.0 & 0 & -87.21893 & 30.54415\\
+  \cellcolor{gray!6}{Gainesville} & \cellcolor{gray!6}{2020} & \cellcolor{gray!6}{25} & \cellcolor{gray!6}{3.23} & \cellcolor{gray!6}{55} & \cellcolor{gray!6}{4.60} & \cellcolor{gray!6}{20} & \cellcolor{gray!6}{1.2} & \cellcolor{gray!6}{80} & \cellcolor{gray!6}{-82.36118} & \cellcolor{gray!6}{29.64316}\\
+  Jacksonville & 2020 & 66 & 1.13 & 41 & 1.67 & 8 & 8.2 & 107 & -81.68811 & 30.39848\\
   \addlinespace
-  \cellcolor{gray!6}{Mayo} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{32} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{32}\\
-  Miccosukee & 0 & NA & 0 & NA & 1 & 0.0 & 0\\
-  \cellcolor{gray!6}{Midway} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{2} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0}\\
-  Milton & 0 & NA & 0 & NA & 1 & 0.0 & 0\\
-  \cellcolor{gray!6}{Monticello} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{20} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{8} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{20}\\
+  \cellcolor{gray!6}{Milton} & \cellcolor{gray!6}{2020} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{-87.07610} & \cellcolor{gray!6}{30.60700}\\
+  Orlando & 2020 & 0 & NA & 0 & NA & 4 & 0.0 & 0 & -81.51605 & 28.50670\\
+  \cellcolor{gray!6}{Quincy} & \cellcolor{gray!6}{2020} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{-84.57331} & \cellcolor{gray!6}{30.55638}\\
+  Tallahassee & 2020 & 3364 & 4.82 & 1150 & 0.79 & 157 & 21.4 & 4514 & -84.30878 & 30.44297\\
+  \cellcolor{gray!6}{Baldwin} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{309} & \cellcolor{gray!6}{145.50} & \cellcolor{gray!6}{2} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{309} & \cellcolor{gray!6}{-81.97613} & \cellcolor{gray!6}{30.30260}\\
   \addlinespace
-  Orange Park & 0 & 0.00 & 363 & 90.28 & 3 & 0.0 & 363\\
-  \cellcolor{gray!6}{Orlando} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{4} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{0}\\
-  Perry & 0 & NA & 3 & NA & 1 & 0.0 & 3\\
-  \cellcolor{gray!6}{Quincy} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{9} & \cellcolor{gray!6}{1.06} & \cellcolor{gray!6}{8} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{9}\\
-  Sanderson & 0 & NA & 78 & NA & 1 & 0.0 & 78\\
+  Branford & 2021 & 0 & NA & 12 & NA & 1 & 0.0 & 12 & -82.92316 & 29.95685\\
+  \cellcolor{gray!6}{Gainesville} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{1.00} & \cellcolor{gray!6}{2} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{-82.36566} & \cellcolor{gray!6}{29.63691}\\
+  Grand Ridge & 2021 & 0 & 0.00 & 30 & 11.00 & 2 & 0.0 & 30 & -85.04182 & 30.71944\\
+  \cellcolor{gray!6}{Greenville} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{356} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{356} & \cellcolor{gray!6}{-83.63092} & \cellcolor{gray!6}{30.46842}\\
+  Greenwood & 2021 & 0 & NA & 200 & NA & 1 & 0.0 & 200 & -82.57149 & 28.00751\\
   \addlinespace
-  \cellcolor{gray!6}{Sneads} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{1}\\
-  South Apopka & 0 & 0.00 & 0 & 0.00 & 5 & 0.0 & 0\\
-  \cellcolor{gray!6}{Tallahassee} & \cellcolor{gray!6}{8492} & \cellcolor{gray!6}{4.05} & \cellcolor{gray!6}{1776} & \cellcolor{gray!6}{0.98} & \cellcolor{gray!6}{288} & \cellcolor{gray!6}{29.5} & \cellcolor{gray!6}{10268}\\
-  \textbf{Grand Totals} & \textbf{8679} & \textbf{NA} & \textbf{4674} & \textbf{NA} & \textbf{425} & \textbf{54.2} & \textbf{13353}\\
+  \cellcolor{gray!6}{Jacksonville} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{2.65} & \cellcolor{gray!6}{3} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{-81.59286} & \cellcolor{gray!6}{30.21992}\\
+  Lake City & 2021 & 49 & 9.80 & 472 & 77.72 & 5 & 9.8 & 521 & -82.67590 & 30.12273\\
+  \cellcolor{gray!6}{Live Oak} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{376} & \cellcolor{gray!6}{182.00} & \cellcolor{gray!6}{2} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{376} & \cellcolor{gray!6}{-82.99862} & \cellcolor{gray!6}{30.30259}\\
+  Macclenny & 2021 & 0 & NA & 400 & NA & 1 & 0.0 & 400 & -82.11797 & 30.28349\\
+  \cellcolor{gray!6}{Madison} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{14} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{14} & \cellcolor{gray!6}{-83.46405} & \cellcolor{gray!6}{30.48829}\\
+  \addlinespace
+  Marianna & 2021 & 0 & NA & 11 & NA & 1 & 0.0 & 11 & -85.20554 & 30.76829\\
+  \cellcolor{gray!6}{Mayo} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{32} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{32} & \cellcolor{gray!6}{-83.18075} & \cellcolor{gray!6}{30.05482}\\
+  Monticello & 2021 & 0 & NA & 20 & NA & 1 & 0.0 & 20 & -83.87114 & 30.54514\\
+  \cellcolor{gray!6}{Orange Park} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{363} & \cellcolor{gray!6}{90.28} & \cellcolor{gray!6}{3} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{363} & \cellcolor{gray!6}{-81.70203} & \cellcolor{gray!6}{30.18646}\\
+  Perry & 2021 & 0 & NA & 3 & NA & 1 & 0.0 & 3 & -83.57833 & 30.11150\\
+  \addlinespace
+  \cellcolor{gray!6}{Sanderson} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{78} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.0} & \cellcolor{gray!6}{78} & \cellcolor{gray!6}{-82.29722} & \cellcolor{gray!6}{30.24098}\\
+  Sneads & 2021 & 0 & NA & 1 & NA & 1 & 0.0 & 1 & -84.91279 & 30.71067\\
+  \cellcolor{gray!6}{Tallahassee} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{424} & \cellcolor{gray!6}{2.78} & \cellcolor{gray!6}{579} & \cellcolor{gray!6}{8.68} & \cellcolor{gray!6}{24} & \cellcolor{gray!6}{17.7} & \cellcolor{gray!6}{1003} & \cellcolor{gray!6}{-84.30731} & \cellcolor{gray!6}{30.44491}\\
+  \textbf{NA} & \textbf{86855} & \textbf{8679} & \textbf{NA} & \textbf{4674} & \textbf{NA} & \textbf{425} & \textbf{127.9} & \textbf{13353} & \textbf{-83.71379} & \textbf{30.25158}\\
   \bottomrule
+  \multicolumn{11}{l}{\rule{0pt}{1em}\textit{Note: }}\\
+  \multicolumn{11}{l}{\rule{0pt}{1em}Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.}\\
   \end{tabular}}
   \end{table}
   Table 1: Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.
