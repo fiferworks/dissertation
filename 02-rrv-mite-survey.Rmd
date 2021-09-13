@@ -32,27 +32,39 @@ knitr::include_graphics('figure/rrv_survey_map_fl_other.png')
 
 
 ```{r survey_table_1, echo = FALSE, warning = FALSE}
-df_fl <- read_csv('data/rrv_survey_fl_table.csv', show_col_types = FALSE)
-df_fl$pfuct_per <- round(df_fl$pfuct_per, digits = 1)
-df_fl$se_pfruct <- round(df_fl$se_pfruct, digits = 2)
+df_fl <-
+  read_csv('data/rrv_survey_fl_table.csv', show_col_types = FALSE)
+df_fl$erios_per <- round(df_fl$erios_per, digits = 1)
+df_fl$se_erios <- round(df_fl$se_erios, digits = 2)
 df_fl$se_other <- round(df_fl$se_other, digits = 2)
-df_fl <- df_fl %>%
-  bind_rows(summarise(.,
-                      across(where(is.numeric), sum),
-                      across(where(is.character), ~ "Grand Totals")))
+df_fl$lat <- round(df_fl$lat, digits = 5)
+df_fl$lon <- round(df_fl$lon, digits = 5)
+tots  <-
+  df_fl %>% summarise(., across(where(is.numeric), sum), across(where(is.character), ~ "Grand Totals"))
+tots$lat <- round(tots$lat / length(df_fl$lat), digits = 5)
+tots$lon <- round(tots$lon / length(df_fl$lon), digits = 5)
+tots[, 11] <- NA
+df_fl <- bind_rows(df_fl, tots)
 df_fl <- df_fl %>% rename(
   'City' = city,
-  'P. fructiphilus' = pfruct,
-  'Std. Error' = se_pfruct,
+  'Eriophyoids' = erios,
+  'Std. Error' = se_erios,
   'Other Mites' = other,
   'Std Error' = se_other,
-  'Samples per site' = samples,
-  'P. fructiphilus per sample' = pfuct_per,
-  'Totals' = totals
+  'Samples per city' = samples,
+  'Eriophyoids per sample' = erios_per,
+  'Totals' = totals,
+  "Latitude" = lat,
+  "Longitude" = lon,
+  'Year' = year
 )
-knitr::kable(df_fl, format="latex", booktabs=TRUE) %>%
-  kable_styling(latex_options= c("striped", "hold_position", "scale_down")) %>% 
-row_spec(nrow(df_fl), bold = TRUE)
+df_fl <- df_fl %>% select(-pfruct)
+df_fl <- df_fl %>% group_by(Year) %>% arrange(.by_group = TRUE)
+knitr::kable(df_fl, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("striped", "HOLD_position", "scale_down")) %>%
+  row_spec(nrow(df_fl), bold = TRUE)
+# %>%
+#   footnote(general = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")
 
 ```
 `r tab_nums(name = "survey_table_1", caption = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")`
