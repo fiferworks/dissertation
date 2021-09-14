@@ -4,6 +4,31 @@
 
 <!-- slow release sachets which are sheltered and provided with felt patches and and moisture in the form of water-absorbant sodium polyacrylate gels had better release of predators [@Shimoda2018] -->
 
+## Materials and Methods:
+
+Spray applications done weekly for 12 weeks, on the same day each week, weather permitting.
+The site had divided into two blocks, with ten plots of roses in each block. Each plot was @lengthwidth, with approximately 12 roses, the six roses at the center of the plot were treated, while the adjacent roses on either side was left as a buffer between plots to avoid treatment drift.
+
+Five treatments were applied: tap water as a positive control, Kontos (Spirotetramat) Bayer - High rate as a negative control, Actigard 50 WG (Acibenzolar-S-methyl) Syngenta - 100 \si{\milli\gram}/\si{\liter}, *Amblyseius swirskii* (Predatory Mite) Arbico Organics - two sachets per rose in treated plot, and a combined treatment of Actigard - 100 \si{\milli\gram}/\si{\liter} + *A. swirskii* - two sachets per rose in treated plot
+
+- 95\% Ethanol
+- 500 mL Nalgene Bottles (labeled with date, plot # and treatment)
+- Pruners/Secateurs
+
+The two sachets of *A. swirskii* mites were applied to each of the six treated roses on the 1st, 5th and 9th week of the experiment, following the application instructions from the supplying company. These sachets contain live colonies of *A. swirskii* and a mite which they consume for food. There is a small hole at the bottom of the sachet where the mites are able to leave and climb on the roses searching for food, accordingly, the sachet was hung from rose canes in the center of each rose. The *A. swirskii* plots were also treated with water weekly in order to keep conditions similar to other treatments.
+
+Flower cuttings were taken weekly from from each of the six roses in the center of each plot.
+
+
+Three flowers (buds if no flowers present) from each of the six flagged roses, for a total of 18 flowers/buds per bottle for each plots. **Make sure to collect 18 flowers/buds from any rose in the untreated plots 11-14 for the phenology study as well.** Place the flowers/buds into the ethanol-filled bottles provided, make sure the lid is tight, then shake the bottle vigorously for a few seconds to coat the rose tissue with ethanol and help dislodge any mites. 
+
+- Use the sieves to separate mites from the plant tissues. (see *name of protocol sheet* for more information).
+
+- Dry plant tissues in the appropriately labeled, high-tech *paper bag* and put into the oven until dry (~48 hrs at 50 &deg;C), then weigh the rose tissue and record the dry weight (remember to tare the scale with a paper bag for slightly improved accuracy).
+
+
+### Jenna-beef
+
 Integrated Pest Management (IPM) is the combination of science-informed best practices designed to keep the cost of pest control below the value of the crop damages which would occur without intervention (i.e. economic injury level) [@USDA2018]. In practice, IPM is informed by an understanding of the pest's biology and the judicious use of chemical controls, natural predators (biological controls), plant breeding, plant immune systems and physical (cultural) controls as needed to control pests as efficiently as possible.
 
 *Phyllocoptes fructiphilus* Keifer (Trombidiformes: Eriophyidae) is a microscopic plant-feeding arachnid known as an eriophyid mite. *P. fructiphilus* is host specific, only feeding on plants in the genus *Rosa*, and normally cause little damage by itself. Unfortunately, *P. fructiphilus* has become infamous due to Rose Rosette Virus (RRV), a pathogen which the mite transmits while feeding. RRV infection creates the following symptoms: witches' brooms/rosetting, deformed flowers, increased prickle density, elongated shoots, reddened leaves and stems, and increased die-back which ultimately kills the rose host. This disease is known as Rose Rosette Disease (RRD) and is widely considered the most serious disease of roses in the US. RRD and the mite have invaded the southeastern US as they followed the range expansion of the non-native *Rosa multiflora* (Thunb) towards the coast [@Amrine2002; @Otero-Colina2018]. RRD afflicts a passionate group from different sections of the US rose industry, including homeowners, commercial landscapers, nurseries, conservationists, and rosarians, all of whom stand to lose millions of dollars and many established roses plantings in the coming years. Florida, as the nation's largest producer of roses, has a special interest developing methods to better control *P. fructiphilus* and RRD.
