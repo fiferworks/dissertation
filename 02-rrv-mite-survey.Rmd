@@ -25,7 +25,7 @@ A survey of roses in the landscape was conducted following a transect of norther
 Rose cuttings were collected periodically from four plots in the landscape of a church in Leon County, FL from 2020-2021: The site had two plantings of 2-3 years old Double Pink Knockout roses, with open sun exposure, @spacing, and natural watering. Blocks were divided into 24 plots of ~@lengthwidth, with approximately 12 roses per plot. Samples were processed as previously described in \@ref(mm-survey). After washing, plant tissues were placed into in paper bags and put into a drying oven for ~48 hrs at 50 &deg;C, after which dry weight was recorded. Mites were counted and recorded to track changes in the mite populations. Roses were pruned once on the beginning of July 2020 by a professional landscaping crew.
 
 ## Results {#results-survey-pheno}
-425 samples were taken from 33 cites from an east to west transect along the border northern Florida. Eriophyoid mites were recovered in rose samples from six cities: Baldwin, Defuniak Springs, Gainesville, Jacksonville and Tallahassee. Other mites were collected from 68\% of the cities visited. Eriophyoids per sample were low on average, but abundant in individual samples. No evidence of RRD was observed in northern Florida, even in areas with abundant *P. fructiphilus*. Many other mites were collected, including a small number of predatory mites which await identification.
+425 samples were taken from 33 cites from an east to west transect along the border northern Florida. Eriophyoid mites were recovered in rose samples from six cities: Baldwin, Defuniak Springs, Gainesville, Jacksonville and Tallahassee. Other mites were collected from 68\% of the cities visited. Eriophyoids per sample were low on average, but abundant in individual samples. No evidence of RRD was observed in northern Florida, even in areas with abundant *P. fructiphilus*. Many other mites were collected, including a small number of predatory mites which await identification. 
 
 
 ```{r survey_map_1, fig.height=8, fig.width=10.5, fig.align="center", out.width="85%", warning=FALSE}
@@ -40,15 +40,15 @@ knitr::include_graphics('figure/rrv_survey_map_fl_other.png')
 
 \pagebreak
 
-```{r survey_map_3, fig.height=8, fig.width=10.5, fig.align="center", out.width="85%", warning=FALSE}
+```{r survey_map_3, fig.height=8, fig.width=10.5, fig.align="center", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_years_pf.png')
 ```
-`r fig_nums(name = "survey_map_3", caption = "*P. fructiphilus* recovered during surveys of roses in Florida.")`
+`r fig_nums(name = "survey_map_3", caption = "Location of populations of eriophyoid mites found on roses in northern Florida 2018-2021.")`
 
-```{r survey_map_4, fig.height=8, fig.width=10.5, fig.align="center", out.width="85%", warning=FALSE}
+```{r survey_map_4, fig.height=8, fig.width=10.5, fig.align="center", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_years_others.png')
 ```
-`r fig_nums(name = "survey_map_4", caption = "Other mites recovered during surveys of roses in Florida.")`
+`r fig_nums(name = "survey_map_4", caption = "Locations of other mites recovered during surveys of roses in Florida, 2018-2021.")`
 
 \pagebreak
 
