@@ -34,7 +34,7 @@ output:
 # If you are creating a PDF you'll need to write your preliminary content here or
 # use code similar to line 20 for the files.  If you are producing in a different
 # format than PDF, you can delete or ignore lines 20-31 in this YAML header.
-abstract: '`r paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`' 
+abstract: '`r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collapse = "\n  ")`' 
 
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
@@ -183,7 +183,7 @@ knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE)
 The acknowledgments, preface, dedication, and abstract are added into the PDF
 version automatically by inputting them in the YAML at the top of this file.
 Alternatively, you can put that content in files like 00--prelim.Rmd and
-00-abstract.Rmd like done below.
+00--abstract.Rmd like done below.
 -->
 
 ```{r prelims, eval=!knitr::is_latex_output(), child=here::here("prelims", "00--prelim.Rmd")}
