@@ -90,11 +90,22 @@ knitr::kable(df_fl, format = "latex", booktabs = TRUE) %>%
 ```
 `r tab_nums(name = "survey_table_1", caption = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")`
 
+
+\pagebreak
+
+```{r pheno_graphs, fig.height=8, fig.width=10.5, fig.align="center", out.width="100%", warning=FALSE}
+knitr::include_graphics('figure/rrv_pheno_bargraph.png')
+```
+`r fig_nums(name = "pheno_graphs", caption = "Phenology of *P. fructiphilus* mite populations on roses in Leon County, Florida 2020-2021. Roses were pruned back heavily on July 9, 2020.")`
+
+
 ## Discussion {#dis-survey-pheno}
 
 *P. fructiphilus* have been found in northern Florida.
 
 Although a large number of other mites have been collected, it is beyond our ability to identify them to species. Phytoseiid mites require expert identification, and many species have been misidentified [@Demard2021].
+
+Heavy pruning seems to work to reduce the number of mites
 
 <!-- this imports my publication -->
 \includepdf[pages={-}, pagecommand={\phantomsection  \addcontentsline{toc}{section}{Publication: First report of \textit{Phyllocoptes fructiphilus} in Florida}}]{pubs/pfruct-report.pdf}
