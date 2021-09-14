@@ -50,30 +50,18 @@ showtext_auto()
 df <- read_csv('data/rrv_pheno_clean_datasheet.csv')
 
 #making sure months are interpreted correctly
-df$month <- month(df$date, label = T, abbr = FALSE)
+df$month <- month(df$date, label = T, abbr = TRUE)
 
 #adding year column
 df$year <- year(df$date)
 
-df1 <- df %>% filter(Study == 'Phenology')
-
-# df1 <- df1 %>% filter(id == 'Pheno 11' |
-#                         id == 'Pheno 12' |
-#                         id == 'Pheno 13' | id == 'Pheno 14')
+df <- df %>% filter(Study == 'Phenology' | id == 'Pheno 11' |
+                      id == 'Pheno 12' |
+                      id == 'Pheno 13' | id == 'Pheno 14')
 
 ####SUMMARY STATS####
-df1 <- df1 %>% group_by(month) %>% mutate(
-  totals = sum(eriophyoids),
-  per_plant = mean(eriophyoids),
-  sd = sd(eriophyoids),
-  se = sd(eriophyoids) / sqrt(n()),
-  log_xformed = log(mean(eriophyoids)),
-  se_xformed = log(sd(eriophyoids) / sqrt(n())),
-) %>%
-  ungroup()
-
 #makes a list of totals for each month to display on the graphs
-pheno <- df1 %>% group_by(month) %>% summarize(
+pheno <- df %>% group_by(month, year) %>% summarize(
   totals = sum(eriophyoids, na.rm = TRUE),
   tot_per_g = mean(`erios/g`, na.rm = TRUE),
   per_plant = mean(eriophyoids, na.rm = TRUE),
@@ -84,38 +72,23 @@ pheno <- df1 %>% group_by(month) %>% summarize(
   log_xformed = log(mean(eriophyoids, na.rm = TRUE)),
   se_xformed = log(sd(eriophyoids, na.rm = TRUE) / sqrt(n())),
   n_samples = n()
-) %>%
+) %>% arrange(year) %>%
   ungroup()
+
 
 ####GRAPHS####
 #average pf per plant
-ggplot(data = pheno,
-       mapping = aes(x = month, y = tot_per_g, fill = month)) +
+pheno_graph <- ggplot(data = pheno,
+                      mapping = aes(x = month, y = tot_per_g, fill = month)) +
   geom_bar(stat = 'identity') +
-  geom_segment(
-    data = pheno,
-    mapping = aes(
-      x = 2.5,
-      y = 40,
-      xend = 2.5,
-      yend = 0
-    ),
-    size = 2,
-    color = "red"
-  ) +
+  facet_grid(. ~ year) +
   geom_errorbar(
     aes(ymin = tot_per_g - se_per_g, ymax = tot_per_g + se_per_g),
     width = 0.5,
     size = 2.5,
     position = position_dodge(.9)
   ) +
-  coord_cartesian(ylim = c(-2, 45), clip = "off") +
-  geom_text(
-    aes(month, totals, label = paste0("n = ", totals), fill = NULL),
-    size = 25,
-    position = position_fill(),
-    vjust = 2
-  ) +
+  coord_cartesian(ylim = c(-2, 60), clip = "off") +
   geom_text(
     aes(
       month,
@@ -132,7 +105,11 @@ ggplot(data = pheno,
     'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'collected per gram of rose dry weight'
   )) +
   ylab("mites/g") +
-  theme(axis.title.x = element_blank(), axis.text = element_blank()) +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text = element_blank(),
+    strip.text.x = element_text(size = 80, face = "bold")
+  ) +
   theme(legend.position = "none") +
   theme(
     plot.title = element_text(
@@ -166,15 +143,35 @@ ggplot(data = pheno,
       vjust = 0.5,
       face = "bold"
     )
-  ) +
-  annotate(
-    geom = "text",
-    size = 25,
-    x = 2.5,
-    y = 42,
-    label = "Pruned",
+  )
+
+
+dat_text <- data.frame(
+  label = c("Pruned"),
+  month   = c("Jul"),
+  year = c(2020)
+)
+
+pheno_graph <- pheno_graph + geom_text(
+  data    = dat_text,
+  mapping = aes(x = 4.2, y = 50, label = label),
+  color = "red",
+  size = 25,
+  hjust   = -0.1,
+  vjust   = -1
+) +
+  geom_segment(
+    data = dat_text,
+    mapping = aes(
+      x = 5,
+      y = 50,
+      xend = 5,
+      yend = 0
+    ),
+    size = 2,
     color = "red"
   )
+
 
 #saving the file
 ggsave(
