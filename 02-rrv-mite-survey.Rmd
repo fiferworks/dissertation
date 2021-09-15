@@ -1,4 +1,4 @@
-# Survey and phenology of natural populations of the invasive mite *Phyllocoptes fructiphilus* in northern Florida {#survey-pheno}
+# SURVEY AND PHENOLOGY OF NATURAL POPULATIONS OF THE INVASIVE MITE *PHYLLOCOPTES FRUCTIPHILUS* IN NORTHERN FLORIDA {#survey-pheno}
 
 ## Introduction {#intro-survey-pheno}
 *Phyllocoptes fructiphilus* is a microscopic plant-feeding eriophyid mite. Eriophyoid mites are very host specific [@Skoracka2009; @Oldfield1996c] and *P. fructiphilus* only feeds on plants in the genus *Rosa* [@Amrine1996]. *P. fructiphilus* is the vector of Rose Rosette Virus (RRV). RRV infection is commonly associated with the following symptoms: witches’ brooms/rosetting, deformed flowers, increased prickle density, elongated shoots, reddened leaves and stems, and increased die-back which ultimately kills the rose host [@Amrine1996]. This disease is known as Rose Rosette Disease (RRD). and is the most serious disease of roses. Florida is the largest producer of roses with a total value exceeding $30 million, and stands to lose millions of dollars if RRD and *P. fructiphilus* become established. There are few options available to control RRD, prevention of disease spread by quarantine and rouging infected roses is key to controlling the spread of this disease into Florida. Rose Rosette Disease and the mite have invaded the southeastern united states as they followed the range expansion of the non-native *Rosa multiflora* (Thunb) towards the coast [@Amrine2002; @Otero-Colina2018]. In 2018, a group of researchers conducted a series of surveys for *P. fructiphilus* and RRD in the southeastern United States [@Solo2020; @Solo2018]. They encountered *P. fructiphilus* in Thomas County and Lowndes County, GA (*`r citef("solo_maps")`*), less than 20 miles from the northern border of Florida. RRD has been detected in previously in southern [@Babu2014], no mites were detected at that time, and no disease spread has been documented in those areas since.
@@ -52,6 +52,7 @@ knitr::include_graphics('figure/rrv_survey_map_years_others.png')
 
 \pagebreak
 
+`r tab_nums(name = "survey_table_1", caption = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")`
 ```{r survey_table_1, echo = FALSE, warning = FALSE}
 df_fl <-
   read_csv('data/rrv_survey_fl_table.csv', show_col_types = FALSE)
@@ -88,7 +89,6 @@ knitr::kable(df_fl, format = "latex", booktabs = TRUE) %>%
 #   footnote(general = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")
 
 ```
-`r tab_nums(name = "survey_table_1", caption = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")`
 
 
 \pagebreak

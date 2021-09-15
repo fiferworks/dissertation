@@ -1,4 +1,4 @@
-# Changes in headspace volatiles for RRD-infected roses {#chemeco}
+# CHANGES IN HEADSPACE VOLATILES FOR RRD-INFECTED ROSES {#chemeco}
 
 <!-- Uncomment and run code chunk to update values after changing R files: -->
 <!-- ```{r} -->
