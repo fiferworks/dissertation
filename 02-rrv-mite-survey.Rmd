@@ -1,13 +1,11 @@
 # SURVEY AND PHENOLOGY OF NATURAL POPULATIONS OF THE INVASIVE MITE *PHYLLOCOPTES FRUCTIPHILUS* IN NORTHERN FLORIDA {#survey-pheno}
 
 ## Introduction {#intro-survey-pheno}
-*Phyllocoptes fructiphilus* is a microscopic plant-feeding eriophyid mite. Eriophyoid mites are very host specific [@Skoracka2009; @Oldfield1996c] and *P. fructiphilus* only feeds on plants in the genus *Rosa* [@Amrine1996]. *P. fructiphilus* is the vector of Rose Rosette Virus (RRV). RRV infection is commonly associated with the following symptoms: witches’ brooms/rosetting, deformed flowers, increased prickle density, elongated shoots, reddened leaves and stems, and increased die-back which ultimately kills the rose host [@Amrine1996]. This disease is known as Rose Rosette Disease (RRD). and is the most serious disease of roses. Florida is the largest producer of roses with a total value exceeding $30 million, and stands to lose millions of dollars if RRD and *P. fructiphilus* become established. There are few options available to control RRD, prevention of disease spread by quarantine and rouging infected roses is key to controlling the spread of this disease into Florida. Rose Rosette Disease and the mite have invaded the southeastern united states as they followed the range expansion of the non-native *Rosa multiflora* (Thunb) towards the coast [@Amrine2002; @Otero-Colina2018]. In 2018, a group of researchers conducted a series of surveys for *P. fructiphilus* and RRD in the southeastern United States [@Solo2020; @Solo2018]. They encountered *P. fructiphilus* in Thomas County and Lowndes County, GA (*`r citef("solo_maps")`*), less than 20 miles from the northern border of Florida. RRD has been detected in previously in southern [@Babu2014], no mites were detected at that time, and no disease spread has been documented in those areas since.
+*Phyllocoptes fructiphilus* is a microscopic plant-feeding eriophyid mite. Eriophyoid mites are very host specific [@Skoracka2009; @Oldfield1996c] and *P. fructiphilus* only feeds on plants in the genus *Rosa* [@Amrine1996]. *P. fructiphilus* is the vector of Rose Rosette Virus (RRV). RRV infection is commonly associated with the following symptoms: witches’ brooms/rosetting, deformed flowers, increased prickle density, elongated shoots, reddened leaves and stems, and increased die-back which ultimately kills the rose host [@Amrine1996]. This disease is known as Rose Rosette Disease (RRD). and is the most serious disease of roses. Florida is the largest producer of roses with a total value exceeding $30 million, and stands to lose millions of dollars if RRD and *P. fructiphilus* become established. There are few options available to control RRD, prevention of disease spread by quarantine and rouging infected roses is key to controlling the spread of this disease into Florida. Rose Rosette Disease and the mite have invaded the southeastern united states as they followed the range expansion of the non-native *Rosa multiflora* (Thunb) towards the coast [@Amrine2002; @Otero-Colina2018]. In 2018, a group of researchers conducted a series of surveys for *P. fructiphilus* and RRD in the southeastern United States [@Solo2020; @Solo2018]. They encountered *P. fructiphilus* in Thomas County and Lowndes County, GA (*\@ref(fig:solo_maps)*), less than 20 miles from the northern border of Florida. RRD has been detected in previously in southern [@Babu2014], no mites were detected at that time, and no disease spread has been documented in those areas since.
 
-```{r solo_maps, fig.height=8, fig.width=10.5, fig.align="center", out.width="80%", warning=FALSE}
+```{r solo_maps, fig.height=8, fig.width=10.5, fig.align="center", fig.cap="From @Solo2020: a) 'Map of the southern incidence line of Rose rosette virus (RRV) and eriophyid mites in Alabama, Georgia, and Mississippi in 2017. Plant hardiness Zone 7b is in pink, Zone 8a is brown, Zone 8b is blue, and Zone 9a is in gray. Note that there are five locations in which two mite species were found on the same rose sample' b) 'Map of the southern incidence line of Rose rosette virus (RRV), southern distribution of Phyllocoptes fructiphilus and Eriophyes eremus, and the population densities of eriophyid mites found on rose samples in Alabama, Georgia, and Mississippi in 2017. The larger the circle, the more mites found in the sample.' Citation: HortScience horts 55, 8; 10.21273/HORTSCI14653-20", out.width="80%", warning=FALSE}
 grid::grid.raster(tiff::readTIFF("figure/solo_maps.tif"))
 ```
-
-`r fig_nums(name = "solo_maps", caption = "From @Solo2020: a) 'Map of the southern incidence line of Rose rosette virus (RRV) and eriophyid mites in Alabama, Georgia, and Mississippi in 2017. Plant hardiness Zone 7b is in pink, Zone 8a is brown, Zone 8b is blue, and Zone 9a is in gray. Note that there are five locations in which two mite species were found on the same rose sample' b) 'Map of the southern incidence line of Rose rosette virus (RRV), southern distribution of Phyllocoptes fructiphilus and Eriophyes eremus, and the population densities of eriophyid mites found on rose samples in Alabama, Georgia, and Mississippi in 2017. The larger the circle, the more mites found in the sample.' Citation: HortScience horts 55, 8; 10.21273/HORTSCI14653-20")`
 
 ## Surveying for *P. fructiphilus*, RRD and predatory mites in northern Florida {#intro-survey}
 A key part of *P. fructiphilus* control is vector and disease monitoring. Previous surveys of the southeastern United States did not survey for *P. fructiphilus* in Florida, so it is possible that *P. fructiphilus* and/or RRV are present in other parts of the state. In 2017, the entomology lab at the North Florida Research and Education Center (NFREC) in Quincy, FL, began a series of surveys of roses along the borders of northern Florida and southern Georgia. Our purpose was to estimate the distribution and populations levels of *P. fructiphilus*, as well as recording any RRD incidence in northern Florida. An additional goal of the rose surveys was to detect other predatory mites present on roses: there are many species of predatory phytoseiid mites present in Florida with potential to control agricultural pests such as *P. fructiphilus* [@Muma1970]. Encountering predatory mites native to the Florida landscape may help in the development of biological control methods for *P. fructiphilus*: native predatory mites sometimes have an advantage for bio-control because native mites have adapted to the environment where they will be released [@Gerson2014]. Our results should help identify areas with greater risk for invasion of *P. fructiphilus* and/or RRD.
@@ -25,35 +23,33 @@ A survey of roses in the landscape was conducted following a transect of norther
 Rose cuttings were collected periodically from four plots in the landscape of a church in Leon County, FL from 2020-2021: The site had two plantings of 2-3 years old Double Pink Knockout roses, with open sun exposure, @spacing, and natural watering. Blocks were divided into 24 plots of ~@lengthwidth, with approximately 12 roses per plot. Samples were processed as previously described in \@ref(mm-survey). After washing, plant tissues were placed into in paper bags and put into a drying oven for ~48 hrs at 50 &deg;C, after which dry weight was recorded. Mites were counted and recorded to track changes in the mite populations. Roses were pruned once on the beginning of July 2020 by a professional landscaping crew.
 
 ## Results {#results-survey-pheno}
-425 samples were taken from 33 cites from an east to west transect along the border northern Florida. Eriophyoid mites were recovered in rose samples from six cities: Baldwin, Defuniak Springs, Gainesville, Jacksonville and Tallahassee. Other mites were collected from 68\% of the cities visited. Eriophyoids per sample were low on average, but abundant in individual samples. No evidence of RRD was observed in northern Florida, even in areas with abundant *P. fructiphilus*. Many other mites were collected, including a small number of predatory mites which await identification. 
+425 samples were taken from 33 sites from an east to west transect along the border northern Florida. Eriophyoid mites were recovered in rose samples from six cities: Baldwin, Defuniak Springs, Gainesville, Jacksonville and Tallahassee. Other mites were collected from 68\% of the cities visited. Eriophyoids per sample were low on average, but abundant in individual samples. No evidence of RRD was observed in northern Florida, even in areas with abundant *P. fructiphilus*. Many other mites were collected, including a small number of predatory mites which await identification. 
 
 
-```{r survey_map_1, fig.height=8, fig.width=10.5, fig.align="center", out.width="85%", warning=FALSE}
+```{r survey_map_1, fig.height=8, fig.width=10.5, fig.align="center", fig.cap = "*P. fructiphilus* mites recovered during surveys of roses in Florida, 2017-2021.", out.width="85%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_fl_pf.png')
 ```
-`r fig_nums(name = "survey_map_1", caption = "*P. fructiphilus* mites recovered during surveys of roses in Florida, 2017-2021.")`
 
-```{r survey_map_2, fig.height=8, fig.width=10.5, fig.align="center", out.width="85%", warning=FALSE}
+
+```{r survey_map_2, fig.height=8, fig.width=10.5, fig.align="center", fig.cap= "Other mites recovered during surveys of roses in Florida, 2017-2021.", out.width="85%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_fl_other.png')
 ```
-`r fig_nums(name = "survey_map_2", caption = "Other mites recovered during surveys of roses in Florida, 2017-2021.")`
+
 
 \pagebreak
 
-```{r survey_map_3, fig.height=8, fig.width=10.5, fig.align="center", out.width="100%", warning=FALSE}
+```{r survey_map_3, fig.height=8, fig.width=10.5, fig.align="center", fig.cap="Location of populations of eriophyoid mites found on roses in northern Florida 2018-2021.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_years_pf.png')
 ```
-`r fig_nums(name = "survey_map_3", caption = "Location of populations of eriophyoid mites found on roses in northern Florida 2018-2021.")`
 
-```{r survey_map_4, fig.height=8, fig.width=10.5, fig.align="center", out.width="100%", warning=FALSE}
+
+```{r survey_map_4, fig.height=8, fig.width=10.5, fig.align="center", fig.cap="Locations of other mites recovered during surveys of roses in Florida, 2018-2021.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_years_others.png')
 ```
-`r fig_nums(name = "survey_map_4", caption = "Locations of other mites recovered during surveys of roses in Florida, 2018-2021.")`
 
 \pagebreak
 
-`r tab_nums(name = "survey_table_1", caption = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")`
-```{r survey_table_1, echo = FALSE, warning = FALSE}
+```{r survey_table_1, echo = FALSE, warning = FALSE, caption = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021."}
 df_fl <-
   read_csv('data/rrv_survey_fl_table.csv', show_col_types = FALSE)
 df_fl$erios_per <- round(df_fl$erios_per, digits = 1)
@@ -93,10 +89,9 @@ knitr::kable(df_fl, format = "latex", booktabs = TRUE) %>%
 
 \pagebreak
 
-```{r pheno_graphs, fig.height=8, fig.width=10.5, fig.align="center", out.width="100%", warning=FALSE}
+```{r pheno_graphs, fig.height=8, fig.width=10.5, fig.align="center", fig.cap="Phenology of *P. fructiphilus* mite populations on roses in Leon County, Florida 2020-2021. Roses were pruned back heavily on July 9, 2020.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_pheno_bargraph.png')
 ```
-`r fig_nums(name = "pheno_graphs", caption = "Phenology of *P. fructiphilus* mite populations on roses in Leon County, Florida 2020-2021. Roses were pruned back heavily on July 9, 2020.")`
 
 
 ## Discussion {#dis-survey-pheno}
