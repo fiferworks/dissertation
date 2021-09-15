@@ -50,7 +50,8 @@
 \usepackage[table]{xcolor}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-%\usepackage[cmbright]{sfmath} % Comment this line to use Times New Roman Math Typeface
+%\usepackage[cmbright]{sfmath} % Comment this line to use Times New Roman Math Typeface\\
+\usepackage[nottoc]{tocbibind}
 \usepackage{booktabs}
 \usepackage{subfigure}
 \usepackage{rotating}
@@ -151,15 +152,9 @@ $endif$
 %The list shown below gives a brief description of the major mathematical symbols defined in this work. For each
 %symbol, the page number corresponds to the place where the symbol is first used.} %
 \tableofcontents %
-
-$if(listtables)$
-  \listoftables
-$endif$
-
-$if(listfigures)$
-  \listoffigures
+\listoftables
+\listoffigures
   %\setcounter{lofdepth}{2}
-$endif$
 
 % Produced list of abbreviations or symbols
 % These commands don't work now, the TOC used to be preserved as a separate tex file
