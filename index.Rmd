@@ -40,13 +40,14 @@ abstract: '`r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collap
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
 acknowledgements: |
-  Acknowledgments must be written in complete sentences. Do not use direct address. For example, instead of Thanks, Mom and Dad!, you should say I thank my parents.
+  '`r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collapse = "\n  ")`'
 dedication: |
   For Liz, Violet, Juniper and Fifes to come
 
 #Use this section for your biography
 preface: |
-  This section is for your biographical sketch. It should be in third person, past tense. Do not put personal details such as your birthday here. Again, to make a full paragraph you must write at least three sentences.
+  Austin N. Fife received his B.S. degree in Biology - Zoology Emphasis at Brigham Young University - Idaho at Rexburg, a M.S. in Entomology at the University of Idaho at Moscow, and a Ph.D. in Entomology at the University of Florida, Gainesville, where he specialized in acarology, biological control, chemical ecology, vector biology and plant-pathogen-arthropod interactions. He loves to spend time outdoors with his wife Liz and his two daughters Violet and Juniper.
+
   
 keywords: keywords #this isn't implemented yet
 subject: subject #also not implemented
@@ -144,15 +145,14 @@ knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE)
 <!--
 The acknowledgments, preface, dedication, and abstract are added into the PDF
 version automatically by inputting them in the YAML at the top of this file.
-Alternatively, you can put that content in files like 00--prelim.Rmd and
-00--abstract.Rmd like done below.
+The following code chunks do not work.
 -->
 
-```{r prelims, eval=!knitr::is_latex_output(), child=here::here("prelims", "00--prelim.Rmd")}
-```
+<!-- ```{r prelims, eval=!knitr::is_latex_output(), child=here::here("prelims", "00--prelim.Rmd")} -->
+<!-- ``` -->
 
-```{r abstract, eval=!knitr::is_latex_output(), child=here::here("prelims", "00--abstract.Rmd")}
-```
+<!-- ```{r abstract, eval=!knitr::is_latex_output(), child=here::here("prelims", "00--abstract.Rmd")} -->
+<!-- ``` -->
 
 <!-- The {.unnumbered} option here means that the introduction will be 
 "Chapter 0." You can also use {-} for no numbers on chapters.
