@@ -624,6 +624,20 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   doi     = {10.1016/j.jviromet.2016.11.014},
 }
 
+@Article{Backus1988,
+  author    = {Backus, Elaine A. and Hunter, Wayne B. and Arne, Christopher N.},
+  journal   = {Journal of Economic Entomology},
+  title     = {Technique for staining leafhopper ({Homoptera}: {Cicadellidae}) salivary sheaths and eggs within unsectioned plant tissue},
+  year      = {1988},
+  month     = dec,
+  number    = {6},
+  pages     = {1819--1823},
+  volume    = {81},
+  abstract  = {A technique that allows the staining and observation of whole leafhopper salivary sheaths left behind in plant tissue is described. A derivation of McBride{\textquoteright}s acid fuchsin stain for fungal hyphae was used, followed by clearing of the plant tissue for observation under a dissecting microscope. Data gathered included the shape and location of sheaths, and the orientation of sheaths to veins. The technique simultaneously stained eggs present ill the plant tissue. Thus, measures of both feeding and oviposition were acquired from the same plant. This method is reliable in recovering known sheaths and is applicable to several hemipteran sheath-feeders. The method should be useful to researchers studying host plant resistance and other aspects of the feeding of haustellate insects.},
+  doi       = {10.1093/jee/81.6.1819},
+  publisher = {Oxford University Press ({OUP})},
+}
+
 @Article{Baker1949,
   author    = {Baker, Edward W.},
   journal   = {American Midland Naturalist},
