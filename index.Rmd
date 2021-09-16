@@ -34,7 +34,8 @@ output:
 # If you are creating a PDF you'll need to write your preliminary content here or
 # use code similar to line 20 for the files.  If you are producing in a different
 # format than PDF, you can delete or ignore lines 20-31 in this YAML header.
-abstract: '`r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collapse = "\n  ")`' 
+abstract: |
+  '`r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collapse = "\n  ")`' 
 
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
@@ -62,14 +63,15 @@ csl: csl/entsoc.csl
 # space_between_paragraphs: true
 ---
 
-<!--
-Above is the YAML (YAML Ain't Markup Language) header that includes a lot of 
-metadata used to produce the document.  Be careful with spacing in this header!
-If you'd prefer to not include a Dedication, for example, simply delete the section entirely, or silence them (add # before each line). 
-If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
-If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
-If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
--->
+<!-- Above is the YAML (YAML Ain't Markup Language) header that includes a lot
+of metadata used to produce the document.  Be careful with spacing in this
+header! If you'd prefer to not include a Dedication, for example, simply delete
+the section entirely, or silence them (add # before each line). If you have
+other LaTeX packages you would like to include, delete the # before
+header-includes and list the packages after hyphens on new lines. If you'd like
+to include a comment that won't be produced in your resulting file enclose it in
+a block like this. If you receive a duplicate label error after knitting, make
+sure to delete the index.Rmd file and then knit again. -->
 
 ```{r include_packages, include=FALSE}
 # This chunk ensures that the thesisdown package is
@@ -146,11 +148,3 @@ knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE, cache = TRUE, cach
 The acknowledgments, preface, dedication, and abstract are added into the PDF
 version automatically by inputting them in the YAML at the top of this file.
 -->
-\nocite{Broussard2007}
-\nocite{Baker1987}
-\nocite{Beard2015}
-\nocite{Fantz2008b}
-\nocite{Fantz2009}
-\nocite{Fantz2015}
-\nocite{Wang2014}
-\nocite{Masiero2020}
