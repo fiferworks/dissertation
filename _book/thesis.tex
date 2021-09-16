@@ -138,10 +138,20 @@
 	\makecopyright
 
 %this creates and formats your dedication page using the data supplied from your yaml header
-	\dedication{For Liz, Violet, Juniper and Fifes to come}
+	\dedication{}
 
 %this creates and formats your acknowledgements using the data supplied from your yaml header
-	\acknowledge{Acknowledgments must be written in complete sentences. Do not use direct address. For example, instead of Thanks, Mom and Dad!, you should say I thank my parents.}
+	\acknowledge{'\# Acknowledgements \{-\}
+
+I want to thank a few people.
+
+\hypertarget{dedication}{%
+\section*{Dedication}\label{dedication}}
+\addcontentsline{toc}{section}{Dedication}
+
+For Liz, Violet, Juniper and Fifes to come
+
+\texttt{r\ if(!knitr:::is\_latex\_output())\ \textquotesingle{}\#\#\ Abstract\ \{-\}\textquotesingle{}}'}
 
 %The list shown below gives a brief description of the major mathematical symbols defined in this work. For each
 %symbol, the page number corresponds to the place where the symbol is first used.} %
@@ -749,7 +759,7 @@
 
   }
 
-  \caption{Field design for testing the potential of Acibenzolar-S-Methyl to reduce populations of \textit{P. fructiphilus} by inducing Systemic Acquired Resistance in Pink Double Knock Out® roses. Trials were conducted for three months from September to December 2019 in Griffin, GA. Four treatments were applied weekly fo 12 weeks: Blue = Water Red = Actigard50WG 100 \si{\milli\gram}/L (High rate),  Pink = Actigard50WG \si{\milli\gram}/L (Half rate) Turquoise = Kontos (Label rate). Flower cuttings were be taken weekly to record *P. fructiphilus* numbers.}\label{fig:unnamed-chunk-1}
+  \caption{Field design for testing the potential of Acibenzolar-S-Methyl to reduce populations of \textit{P. fructiphilus} by inducing Systemic Acquired Resistance in Pink Double Knock Out® roses. Trials were conducted for three months from September to December 2019 in Griffin, GA. Four treatments were applied weekly fo 12 weeks: Blue = Water Red = Actigard50WG 100 \si{\milli\gram}/L (High rate),  Pink = Actigard50WG \si{\milli\gram}/L (Half rate) Turquoise = Kontos (Label rate). Flower cuttings were be taken weekly to record \textit{P. fructiphilus} numbers.}\label{fig:unnamed-chunk-1}
   \end{figure}
   \textbf{Plot Design - 2019}
   \begin{figure}
@@ -842,7 +852,7 @@
 
   }
 
-  \caption{Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control *P. fructiphilus* in Tallahassee, FL with five treatments: Water, Actigard50WG, Kontos, *Amblyseius swirkii* predatory mite sachets, and *A. swirskii* + Actigard combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record *P. fructiphilus* numbers.}\label{fig:unnamed-chunk-3}
+  \caption{Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control \textit{P. fructiphilus} in Tallahassee, FL with five treatments: Water, Actigard50WG, Kontos, \textit{Amblyseius swirkii} predatory mite sachets, and \textit{A. swirskii} + Actigard combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record \textit{P. fructiphilus} numbers.}\label{fig:unnamed-chunk-3}
   \end{figure}
   \begin{figure}
 
@@ -926,16 +936,16 @@
   \toprule
   Scientific Name & Common Names & County & Strains Detected\\
   \midrule
-  \cellcolor{gray!6}{\textit{Liriope muscari} cv. Gigantea\textsuperscript{*} (Decaisne) Bailey} & \cellcolor{gray!6}{Lilyturf, Orchardgrass, Monkeygrass} & \cellcolor{gray!6}{Alachua \& Leon} & \cellcolor{gray!6}{OFV-Orc1 \& OFV-Orc2}\\
+  \cellcolor{gray!6}{\textit{Liriope muscari} cv. Gigantea\textsuperscript{*} (Decaisne) Bailey} & \cellcolor{gray!6}{Lilyturf, Orchardgrass, Monkeygrass} & \cellcolor{gray!6}{Leon \& Alachua} & \cellcolor{gray!6}{OFV-Orc1 \& OFV-Orc2}\\
   \textit{Ophiopogon intermedius}\textsuperscript{\dag} Don & Aztec Grass, Argenteomarginatus & Leon & OFV-Orc1 \& OFV-Orc2\\
   \cellcolor{gray!6}{\textit{Aspidistra elatior} Blume} & \cellcolor{gray!6}{Cast Iron Plant, Bar-room Plant} & \cellcolor{gray!6}{Leon} & \cellcolor{gray!6}{OFV-Orc1 \& OFV-Orc2}\\
   \bottomrule
   \end{tabular}
-  \begin{tablenotes}[para]
+  \begin{tablenotes}
   \item \textit{Note: } 
   \item Both OFV-Orc1 and OFV-Orc2 were detected in each species tested, many plants were coinfected with both strains, see '\ref{tab:tab-1}'.
-  \item[*]    extit{L. muscari} cv. 'Gigantea' has been traditionally classified as textit{L. gigantea} Hume by @Broussard2007 and @Fantz2015, although this distinction has been challenged by @Wang2014 and @Masiero2020.
-  \item[\dag] textit{O. intermedius} is sometimes misclassified as textit{L. muscari} ‘Variegated Evergreen Giant’ [@Fantz2008b, @Fantz2009] or ‘Grandiflora White’ [@Fantz2009].
+  \item[*] textit{L. muscari} cv. 'Gigantea' has been traditionally classified as textit{L. gigantea} Hume by Broussard 2007 and Fantz2015 et al. 2015, although this distinction has been challenged by Wang et al. 2014 and Masiero et al. 2020.
+  \item[\dag] textit{O. intermedius} is sometimes misclassified as textit{L. muscari} ‘Variegated Evergreen Giant’ or ‘Grandiflora White’ (Fantz 2008b, 2009).
   \end{tablenotes}
   \end{threeparttable}}
   \end{table}
@@ -943,7 +953,7 @@
   \subsection{Figures}\label{figures}}
   \begin{figure}
 
-  {\centering \includegraphics[width=0.9\linewidth]{thesis_files/figure-latex/fig-1-1} 
+  {\centering \includegraphics[width=1\linewidth]{thesis_files/figure-latex/fig-1-1} 
 
   }
 
@@ -963,7 +973,7 @@
 
   }
 
-  \caption{Cryo-SEM images of \textit{Brevipalpus californicus} \textit{sensu lato} displaying various characters used for identification [@Baker1987; @Beard2015] (a) Dorsum  (b) Lateral view (c) Venter (d) Close up of distal end of leg 2, with arrows indicating paired solenidia, characteristic of the genus *Brevipalpus* (e) Enlargement of the microplates of the mite cerotegument (f) Dorsal view of the distal portion of mite abdomen (g) Dorsal view of the mite rostrum (h) Ventral view of mite rostrum, observe 3 distal setae.}\label{fig:fig-3}
+  \caption{Cryo-SEM images of \textit{Brevipalpus californicus} \textit{sensu lato} displaying various characters used for identification (Baker and Tuttle 1987, Beard et al. 2015) (a) Dorsum  (b) Lateral view (c) Venter (d) Close up of distal end of leg 2, with arrows indicating paired solenidia, characteristic of the genus \textit{Brevipalpus} (e) Enlargement of the microplates of the mite cerotegument (f) Dorsal view of the distal portion of mite abdomen (g) Dorsal view of the mite rostrum (h) Ventral view of mite rostrum, observe 3 distal setae.}\label{fig:fig-3}
   \end{figure}
   \hypertarget{references}{%
   \chapter*{REFERENCES}\label{references}}
@@ -2143,7 +2153,7 @@
 
 %this takes the 'preface:' field from your yaml header and uses it as the biography
 %removes the dependency on the .tex file
-  \biography{This section is for your biographical sketch. It should be in third person, past tense. Do not put personal details such as your birthday here. Again, to make a full paragraph you must write at least three sentences.}
+  \biography{Austin N. Fife received his B.S. degree in Biology - Zoology Emphasis at Brigham Young University - Idaho at Rexburg, a M.S. in Entomology at the University of Idaho at Moscow, and a Ph.D.~in Entomology at the University of Florida, Gainesville, where he specialized in acarology, biological control, chemical ecology, vector biology and plant-pathogen-arthropod interactions. He loves to spend time outdoors with his wife Liz and his two daughters Violet and Juniper.}
 
 \end{document}
 %------------------------------------------------------------------------------%
