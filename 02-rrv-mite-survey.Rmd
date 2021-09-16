@@ -51,7 +51,7 @@ knitr::include_graphics('figure/rrv_survey_map_years_others.png')
 
 \newpage
 
-```{r survey-table-1, echo = FALSE, warning = FALSE}
+```{r survey-table-1, echo = FALSE, warning = FALSE, caption = "\\label{tab:survey-table-1}"}
 df_fl <-
   read_csv('data/rrv_survey_fl_table.csv', show_col_types = FALSE)
 df_fl$erios_per <- round(df_fl$erios_per, digits = 1)
@@ -80,7 +80,7 @@ df_fl <- df_fl %>% rename(
 )
 df_fl %>% select(-pfruct) %>% 
 filter(Year != 2017) %>% group_by(Year) %>% arrange(.by_group = TRUE) %>% 
-knitr::kable(format = "latex", booktabs = TRUE, caption = "\\label{tab:survey-table-1}Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.") %>%
+knitr::kable(format = "latex", booktabs = TRUE, caption = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.") %>%
   kable_styling(latex_options = c("striped", "HOLD_position", "scale_down")) %>%
   row_spec(nrow(df_fl), bold = TRUE)
 # %>%
