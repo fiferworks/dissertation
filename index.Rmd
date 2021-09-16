@@ -138,7 +138,7 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs)
 
 # R global options
-knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE)
+knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE, cache = TRUE, cache.comments = FALSE)
 ```
 
  
@@ -146,3 +146,11 @@ knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE)
 The acknowledgments, preface, dedication, and abstract are added into the PDF
 version automatically by inputting them in the YAML at the top of this file.
 -->
+\nocite{Broussard2007}
+\nocite{Baker1987}
+\nocite{Beard2015}
+\nocite{Fantz2008b}
+\nocite{Fantz2009}
+\nocite{Fantz2015}
+\nocite{Wang2014}
+\nocite{Masiero2020}
