@@ -63,29 +63,28 @@ We would like to give special thanks for the Tallahassee Museum and their patien
 ### Table 1: List of Asparagaceae (Nolinoidaea) species infected with orchid fleck virus, collected from the landscape of northern Florida
 ```{r tab-1, echo = FALSE, warning = FALSE, caption = "\\label{tab:tab-1}"}
 tribble(~'Scientific Name', ~'Common Names', ~'County', ~'Strains Detected',
-        "\\textit{Liriope muscari} cv. Gigantea\\textsuperscript{*} (Decaisne) Bailey", "Lilyturf, Orchardgrass, Monkeygrass", "Alachua & Leon", "OFV-Orc1 & OFV-Orc2",
-        "\\textit{Ophiopogon intermedius}\\textsuperscript{\\dag} Don", "Aztec Grass, Argenteomarginatus", "Leon", "OFV-Orc1 & OFV-Orc2",
-        "\\textit{Aspidistra elatior Blume}", "Cast Iron Plant, Bar-room Plant", "Leon", "OFV-Orc1 & OFV-Orc2") %>% 
+        "\\textit{Liriope muscari} cv. Gigantea\\textsuperscript{*} (Decaisne) Bailey", "Lilyturf, Orchardgrass, Monkeygrass", "Alachua \\& Leon", "OFV-Orc1 \\& OFV-Orc2",
+        "\\textit{Ophiopogon intermedius}\\textsuperscript{\\dag} Don", "Aztec Grass, Argenteomarginatus", "Leon", "OFV-Orc1 \\& OFV-Orc2",
+        "\\textit{Aspidistra elatior} Blume", "Cast Iron Plant, Bar-room Plant", "Leon", "OFV-Orc1 \\& OFV-Orc2") %>% 
   knitr::kable(format = "latex",
                booktabs = TRUE,
                 escape = F,
                caption = "List of Asparagaceae (Nolinoidaea) species infected with orchid fleck virus, collected from the landscape of northern Florida.") %>%
-  kable_styling(latex_options = c("striped", "HOLD_position")) %>%
+  kable_styling(latex_options = c("striped", "HOLD_position", "scale_down", full_width = TRUE)) %>% 
   footnote(
+    threeparttable = TRUE,
+    escape = F,
     general = c(
       "Both OFV-Orc1 and OFV-Orc2 were detected in each species tested, many plants were coinfected with both strains, see '\\@ref(tab:tab-1)'."
     ),
     symbol = c(
       "\\textit{L. muscari} cv. 'Gigantea' has been traditionally classified as \\textit{L. gigantea} Hume by @Broussard2007 and @Fantz2015, although this distinction has been challenged by @Wang2014 and @Masiero2020.",
       "\\textit{O. intermedius} is sometimes misclassified as \\textit{L. muscari} ‘Variegated Evergreen Giant’ [@Fantz2008b, @Fantz2009] or ‘Grandiflora White’ [@Fantz2009]."
-    ),
-    footnote_as_chunk = T
-  )
+    ))
 ```
 
-
 ### Figures
-```{r, fig-1, fig.height=8, fig.width=10.5, fig.align="center", fig.cap = "Variety of symptoms seen on \\textit{Liriope} spp. infected with orchid fleck virus (OFV): (a) symptoms on \\textit{Liriope muscari} cv. 'Gigantea' (b-c) Details of symptoms on \\textit{L. muscari} cv. `Gigantea` (d) rust colored spots on \\textit{Ophiopogon intermedius}", out.width="80%", warning=FALSE}
+```{r, fig-1, fig.height=8, fig.width=10.5, fig.align="center", fig.cap = "Variety of symptoms seen on \\textit{Liriope} spp. infected with orchid fleck virus (OFV): (a) symptoms on \\textit{Liriope muscari} cv. 'Gigantea' (b-c) Details of symptoms on \\textit{L. muscari} cv. `Gigantea` (d) rust colored spots on \\textit{Ophiopogon intermedius}", out.width="100%", warning=FALSE}
 grid::grid.raster(tiff::readTIFF("figure/symp-ofv-lir.tif"))
 ```
 
