@@ -101,21 +101,6 @@ library(thesisdown)
 # Set how wide the R output will go
 options(width = 70)
 
-# loading package to use python scripts
-if (!require(reticulate)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    install.packages("reticulate", repos = "https://cran.rstudio.com")
-  } else {
-    stop(
-      paste('You need to run install.packages("remotes")",
-            "first in the Console.')
-    )
-  }
-}
-
-if(!require(captioner))
-  devtools::install_github("adletaw/captioner")
-
 #installs the required phantomjs for the maps
 if(!require(webshot))
   webshot::install_phantomjs()
