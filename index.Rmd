@@ -40,9 +40,9 @@ abstract: '`r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collap
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
 acknowledgements: |
-  '`r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collapse = "\n  ")`'
+  '`r paste(readLines(here::here("prelims", "00--acknowledgments.Rmd")), collapse = "\n  ")`'
 dedication: |
-  For Liz, Violet, Juniper and Fifes to come
+  '`r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`'
 
 #Use this section for your biography
 preface: |
@@ -145,15 +145,4 @@ knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE)
 <!--
 The acknowledgments, preface, dedication, and abstract are added into the PDF
 version automatically by inputting them in the YAML at the top of this file.
-The following code chunks do not work.
--->
-
-<!-- ```{r prelims, eval=!knitr::is_latex_output(), child=here::here("prelims", "00--prelim.Rmd")} -->
-<!-- ``` -->
-
-<!-- ```{r abstract, eval=!knitr::is_latex_output(), child=here::here("prelims", "00--abstract.Rmd")} -->
-<!-- ``` -->
-
-<!-- The {.unnumbered} option here means that the introduction will be 
-"Chapter 0." You can also use {-} for no numbers on chapters.
 -->
