@@ -122,7 +122,7 @@ We will be applying the Acibenzolar-S-methyl (ASM) based Actigard50WG® (Syngent
 Rose/rosebud cuttings ~10 cm will be taken from each plant before the first treatment to determine the initial populations of *P. fructiphilus* on the roses. We will then take a subset of samples from each rose treatment weekly, rotating samples until each rose plant has been sampled three times. We will also collect samples from all roses at the end of the trial. This experiment will be repeated for two seasons. Rose samples will be placed in 50 mL centrifuge tubes and refrigerated or frozen until floral samples can be processed. Samples will be processed using the washing methods of @Monfreda2007, eriophyoid mites will be counted and identified as previously described.
 
 **Plot Design - 2018**
-```{r, fig.height=8, fig.width=10.5, fig.align="center", fig.cap= "Field design for testing the potential of Acibenzolar-S-Methyl to reduce populations of \\textit{P. fructiphilus} by inducing Systemic Acquired Resistance in Pink Double Knock Out® roses. Trials were conducted for three months from September to December 2019 in Griffin, GA. Four treatments were applied weekly fo 12 weeks: Blue = Water Red = Actigard50WG 100 \\si{\\milli\\gram}/L (High rate),  Pink = Actigard50WG \\si{\\milli\\gram}/L (Half rate) Turquoise = Kontos (Label rate). Flower cuttings were be taken weekly to record *P. fructiphilus* numbers.", out.width="80%", warning=FALSE}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", fig.cap= "Field design for testing the potential of Acibenzolar-S-Methyl to reduce populations of \\textit{P. fructiphilus} by inducing Systemic Acquired Resistance in Pink Double Knock Out® roses. Trials were conducted for three months from September to December 2019 in Griffin, GA. Four treatments were applied weekly fo 12 weeks: Blue = Water Red = Actigard50WG 100 \\si{\\milli\\gram}/L (High rate),  Pink = Actigard50WG \\si{\\milli\\gram}/L (Half rate) Turquoise = Kontos (Label rate). Flower cuttings were be taken weekly to record \\textit{P. fructiphilus} numbers.", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/rrv_asm_plot_2018_griffin.png')
 ```
 
@@ -195,7 +195,7 @@ The site at Griffin, GA has space for three blocks: X, Y, and Z. Each block is a
 knitr::include_graphics('figure/rrv_ipm_plot_map_2019_griffin.png')
 ```
 
-```{r, fig.height=8, fig.width=10.5, fig.align="center", fig.cap = "Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control *P. fructiphilus* in Tallahassee, FL with five treatments: Water, Actigard50WG, Kontos, *Amblyseius swirkii* predatory mite sachets, and *A. swirskii* + Actigard combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record *P. fructiphilus* numbers.", out.width="80%", warning=FALSE}
+```{r, fig.height=8, fig.width=10.5, fig.align="center", fig.cap = "Field design for Integrated Pest Management trials on Pink Double Knock Out® roses to control \\textit{P. fructiphilus} in Tallahassee, FL with five treatments: Water, Actigard50WG, Kontos, \\textit{Amblyseius swirkii} predatory mite sachets, and \\textit{A. swirskii} + Actigard combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record \\textit{P. fructiphilus} numbers.", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/rrv_ipm_plot_map_2019_griffin.png')
 ```
 
