@@ -154,6 +154,7 @@ fl_locs %>% filter(fl_locs$erios > 0)
 fl_locs <- st_as_sf(fl_locs,
                     coords = c("lon", "lat"),
                     crs = 4326)
+
 #making vector into factors and reordering so 'Yes' appears first in the legend:
 fl_locs$'Eriophyoids' <- fl_locs$pfruct
 fl_locs$Eriophyoids <-
