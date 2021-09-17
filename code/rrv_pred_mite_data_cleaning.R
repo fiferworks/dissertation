@@ -1,6 +1,14 @@
-#loading packages
-load_pkgs <- c("tidyverse", "readxl", "lubridate")
-lapply(load_pkgs, library, character.only = T)
+#a list of packages used for this script
+pkgs <-  c("tidyverse", "readxl", "lubridate")
+
+#installs missing packages
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
+
+#loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
 
 #reading in each sheet into a dataframe
 prelim <-
