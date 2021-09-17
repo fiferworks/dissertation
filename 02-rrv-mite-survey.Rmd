@@ -78,7 +78,7 @@ df_fl <- df_fl %>% rename(
 df_fl %>% select(-pfruct) %>% 
 filter(Year != 2017) %>% group_by(Year) %>% arrange(.by_group = TRUE) %>% 
 knitr::kable(format = "latex", booktabs = TRUE, caption = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.") %>%
-  kable_styling(latex_options = c("striped", "hold_position")) %>%
+  kable_styling(latex_options = c("striped", "hold_position", "scale_down", full_width = TRUE)) %>%
   row_spec(nrow(df_fl), bold = TRUE)
 # %>%
 #   footnote(general = "Eriophyids and other mites recovered during surveys of roses in Florida, 2018-2021.")
