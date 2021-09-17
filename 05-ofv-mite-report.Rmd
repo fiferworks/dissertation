@@ -31,7 +31,7 @@ tribble(~'Scientific Name', ~'Common Names', ~'County', ~'Strains Detected',
     threeparttable = TRUE,
     escape = F,
     general = c(
-      "Both OFV-Orc1 and OFV-Orc2 were detected in each species tested, many plants were coinfected with both strains, see '\\@ref(tab:tab-1)'."
+      "Both OFV-Orc1 and OFV-Orc2 were detected in each species tested, many plants were coinfected with both strains'."
     ),
     symbol = c(
       "\\\\textit{L. muscari} cv. ‘Gigantea’ has been traditionally classified as \\\\textit{L. gigantea} Hume by Broussard 2007 and Fantz et al. 2015, although this distinction has been challenged by Wang et al. 2014 and Masiero et al. 2020.",
