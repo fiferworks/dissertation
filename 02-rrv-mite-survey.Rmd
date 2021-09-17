@@ -84,7 +84,7 @@ knitr::kable(format = "latex", booktabs = TRUE, caption = "Eriophyids and other 
   kable_styling(latex_options = c("striped", "hold_position", "scale_down")) %>%
   row_spec(nrow(df_fl), bold = TRUE)
 # %>%
-#   footnote(general = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")
+#   footnote(general = "Eriophyids and other mites recovered during surveys of roses in Florida, 2018-2021.")
 
 ```
 \newpage
