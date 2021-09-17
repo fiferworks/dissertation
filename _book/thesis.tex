@@ -55,6 +55,8 @@
 \usepackage{booktabs}
 \usepackage{threeparttable}
 \usepackage{subfigure}
+\usepackage{flafter}
+\usepackage{placeins}
 \usepackage{rotating}
 \usepackage{calc}
 \usepackage{setspace}
@@ -304,6 +306,8 @@
   \subsection{Survey}\label{results-survey}}
 
   425 samples were taken from 33 sites from an east to west transect along the border northern Florida. Eriophyoid mites were recovered in rose samples from six cities. The first samples of \emph{P. fructiphilus} were first encountered in Tallahassee during 2019; subsequent sampling efforts found in more eriophyoids in Jacksonville, Baldwin, Gainesville and Defuniak Springs in 2020, and Lake City in 2021. Other mites were collected from 68\% of the cities visited. The largest populations of \emph{P. fructiphilus} were seen in Tallahassee, with over 8,400 eriophyoid mites from 260 samples collected during 2019-2021 (\emph{see \ref{tab:survey-table-1}}). No evidence of RRD was observed in northern Florida during the surveys, even in areas where abundant \emph{P. fructiphilus} were found. Over 4,600 non-eriophyoid mites were collected from various cities during 2019-2021 \emph{\ref{tab:survey-table-1}}. Other non-eriophyoid mites collected primarily belong to the family Tetranychidae, but a small number of phytoseiidae and other predatory mites were recovered as well. These other mites currently await curation and expert identification.
+
+  \FloatBarrier
   \begin{figure}[p]
 
   {\centering \includegraphics[width=1\linewidth]{figure/rrv_survey_map_fl_pf} 
@@ -340,7 +344,6 @@
 
   \caption{\label{tab:survey-table-1}Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.}
   \centering
-  \resizebox{\linewidth}{!}{
   \begin{tabular}[t]{lrrrrrrrrrr}
   \toprule
   City & Year & Eriophyoids & Std. Error & Other Mites & Std Error & Samples per city & Eriophyoids per sample & Totals & Longitude & Latitude\\
@@ -395,7 +398,7 @@
   \addlinespace
   \cellcolor{gray!6}{Grand Totals} & \cellcolor{gray!6}{2021} & \cellcolor{gray!6}{8679} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{4674} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{425} & \cellcolor{gray!6}{127.9} & \cellcolor{gray!6}{13353} & \cellcolor{gray!6}{-83.71379} & \cellcolor{gray!6}{30.25158}\\
   \bottomrule
-  \end{tabular}}
+  \end{tabular}
   \end{table}
   \begin{figure}[h]
 
@@ -405,6 +408,8 @@
 
   \caption{Phenology of \textit{P. fructiphilus} mite populations on roses in Leon County, Florida 2020-2021. Roses were pruned back heavily on July 9, 2020.}\label{fig:pheno-graphs}
   \end{figure}
+  \FloatBarrier
+
   \hypertarget{results-pheno}{%
   \subsection{Phenology}\label{results-pheno}}
 
@@ -415,22 +420,27 @@
 
   The presence of \emph{P. fructiphilus} in northern Florida over multiple years and seasons provides evidence against a putative southern limit for the species (Solo et al. 2020). Our survey efforts were severely hampered by the COVID-19 pandemic, which limited opportunities to travel and collect mites. We expect that further investigations of roses in other Florida cities will reveal more site with \emph{P. fructiphilus}. The arrival of a competent vector is not a guarantee that its associated disease will follow suit, but it does provide a necessary component of the disease triangle: if the environmental conditions are suitable, and the rose host is sufficiently abundant, there is potential for disease to occur (Francl 2001). We did not see any signs of RRD in roses in northern Florida, but it is important to note that the delayed onset and difficulty of identifying symptoms makes it likely to miss detection until late stages of the disease. It is not known how \emph{P. fructiphilus} have arrived in northern Florida, and unfortunately our observations are not sufficient to describe a mechanism of invasion. Eriophyoid mites are known to disperse in a variety of ways: they may be windblown, transported with infected plants, move on contaminated equipment or clothes, or rarely, through phoresy (Sabelis and Bruin 1996). The short distances between mite infested roses in Georgia, Alabama and Florida suggest the possibility of multiple routes of introduction, but the mechanisms of dispersal require further investigation for \emph{P. fructiphilus}. In addition, the movements of plant pathogens such as RRD is thought to be partially driven by socioeconomic factors and the movement of plants by people (Nelson and Bone 2015). Inspections and quarantines of mite-infested roses by wholesalers and larger growers is predicted to slow the spread of plant pathogen epidemics (Nelson and Bone 2015). A large number of other non-eriophyoid mites have been collected as well, but it is beyond our ability to identify many of them. Phytoseiid and other predatory mites require expert identification by mite taxonomists, and many species have been misidentified by amateurs either through carelessness or ignorance (Demard et al. 2021). The large reductions of \emph{P. fructiphilus} seen post pruning suggests its potential as a method of cultural mite control. It may be possible to combine pruning with acaricide treatments for improved control of \emph{P. fructiphilus}, but this hypothesis requires further study. Tracking populations for longer periods of time with additional climatic data could be used to determine the best times to prune to reduce mite numbers. The presence of \emph{P. fructiphilus} in Florida necessitates the development of mite control practices to prevent mite populations from surging, and to hopefully prevent the spread of RRD.
 
+  \clearpage
+
   \includepdf[pages={-}, pagecommand={\phantomsection  \addcontentsline{toc}{section}{Publication: First report of \textit{Phyllocoptes fructiphilus} in Florida}}]{pubs/pfruct-report.pdf}
 
   \hypertarget{chemeco}{%
   \chapter{CHANGES IN HEADSPACE VOLATILES FOR RRD-INFECTED ROSES}\label{chemeco}}
 
-  \hypertarget{chemeco-swirskii}{%
-  \section{\texorpdfstring{\emph{Amblyseius swirskii} attraction to RRD-infected roses}{Amblyseius swirskii attraction to RRD-infected roses}}\label{chemeco-swirskii}}
+  \hypertarget{intro-chemeco-swirskii}{%
+  \section{Introduction}\label{intro-chemeco-swirskii}}
 
-  Rose Rosette Virus (RRV), the casual agent of Rose Rosette Disease (RRD) and \emph{P. fructiphilus} Kiefer invaded the southeastern United States on the multiflora rose, \emph{R. multiflora} (Thunb) as it spread its range towards the coast (Amrine Jr 2002, Otero-Colina et al. 2018). RRD is present throughout the US, including Decatur County, GA, near the Florida border (figure?), (EDDMapS 2019).
+  Rose Rosette Virus (RRV), the casual agent of Rose Rosette Disease (RRD) and \emph{P. fructiphilus} Kiefer invaded the southeastern United States on the multiflora rose, \emph{R. multiflora} (Thunb) as it spread its range towards the coast (Amrine Jr 2002, Otero-Colina et al. 2018). RRD is present throughout the US, and has been recently detected in Florida (Fife et al. (2020), see \emph{\ref{survey-map-3}}).
 
-  Rose Rosette Virus (genus \emph{Emaraviridae}) is the most devastating disease of roses. Rose Rosette Virus creates witches' brooms, rosetting, deforms flowers, increases prickle density, elongates shoots, reddens of plant tissues, causes dieback and ultimately plant death. Rose Rosette Virus is spread by a microscopic eriophyid mite known as \emph{Phyllocoptes fructiphilus} Keifer (Trombidiformes: Eriophyidae). Few management options are available: Current mite control is achieved by removing infected roses and frequent pesticide applications. Growers are interested in alternative and less expensive management options to combat \emph{P. fructiphilus} and Rose Rosette Virus. Predatory mites have potential to fulfill this need: Mites from the family Phytoseiidae are being investigated as biocontrol agents for the management of \emph{P. fructiphilus}. Preliminary data suggest that the phytoseiid mite \emph{Amblyseius swirskii} Athias-Henriot (Mesostigmata: Phytoseiidae) orients itself towards volatiles of Rose Rosette-infected roses. This attraction may have synergistic effects for \emph{P. fructiphilus} control. \emph{A. swirskii} and three other commercially-available phytoseiid mites will be tested in olfactometer choice tests to identify specific volatile compounds which may be causing this behavior. Findings will help to develop chemical lures and promote depredation on \emph{P. fructiphilus} in Rose Rosette-infected roses. This research will contribute a biocontrol option for the management of \emph{P. fructiphilus} in southern Georgia and northern Florida.
+  Rose Rosette Virus (RRV) (genus \emph{Emaraviridae}) causes Rose Rosette Disease (RRD), the most devastating disease of roses. Infection with RRD creates witches' brooms, rosetting, deforms flowers, increases prickle density, elongates shoots, reddens of plant tissues, causes dieback and ultimately plant death. RRD is spread by a microscopic eriophyid mite known as \emph{Phyllocoptes fructiphilus} Keifer (Trombidiformes: Eriophyidae). Few management options are available to manage \emph{P. fructiphilous}: Current mite control is achieved by removing infected roses and frequent pesticide applications. Growers are interested in alternative and less expensive management options to combat \emph{P. fructiphilus} and RRD. Predatory mites have potential to fulfill this need: Mites from the family Phytoseiidae are being investigated as biocontrol agents for the management of \emph{P. fructiphilus}. Preliminary data suggest that the phytoseiid mite \emph{Amblyseius swirskii} Athias-Henriot (Mesostigmata: Phytoseiidae) orients itself towards volatiles of Rose Rosette-infected roses. This attraction may have synergistic effects for \emph{P. fructiphilus} control. \emph{A. swirskii} and three other commercially-available phytoseiid mites will be tested in olfactometer choice tests to identify specific volatile compounds which may be causing this behavior. Findings will help to develop chemical lures and promote depredation on \emph{P. fructiphilus} in Rose Rosette-infected roses. This research will contribute a biocontrol option for the management of \emph{P. fructiphilus} in southern Georgia and northern Florida.
 
   \hypertarget{statement-of-problem-rationale-and-justification}{%
   \subsubsection{Statement of Problem, Rationale and Justification}\label{statement-of-problem-rationale-and-justification}}
 
   The purpose of this project is to investigate the predatory persistence of four commercially-available mites for management of \emph{P. fructiphilus} and RRV in southern Georgia and northern Florida. Specifically, this project will determine which compounds released from Rose Rosette Virus (RRV) infected Double Knock Out® roses encourage recruitment, lengthen search time or improve depredation of phytoseiid mites on \emph{Phyllocoptes fructiphilus} Keifer (Trombidiformes: Eriophyidae).
+
+  \hypertarget{chemeco-swirskii}{%
+  \section{\texorpdfstring{\emph{Amblyseius swirskii} attraction to RRD-infected roses}{Amblyseius swirskii attraction to RRD-infected roses}}\label{chemeco-swirskii}}
 
   Phytoseiid mites have no eyes, instead relying on plant volatiles such as Methyl Salicylate to guide them to their prey (Boer and Dicke 2004a). Methyl Salicylate is also released when a plant is attacked by herbivores or pathogens (Shulaev et al. 1997, Boer and Dicke 2004a), so when preliminary tests with \emph{A. swirskii} showed attraction to RRV-infected roses, coupled Gas Chromatography-Mass Spectroscopy analysis was expected to reveal high levels of Methyl Salicylate. Contrary to expectation, RRV-infected roses had low levels of Methyl Salicylate compared to healthy plants. This suggests that phytoseiid attraction may be attributed to volatiles besides Methyl Salicylate. This is important because such volatiles may be used to lure phytoseiids to eriophyid-infested areas, encouraging feeding and enhancing pest control (Boer and Dicke 2004a, 2004b). Understanding which volatiles are responsible for phytoseiid attraction to RRV-infected roses will provide preliminary research which impacts management options for \emph{P. fructiphilus} in southern Georgia/northern Florida as well as other \emph{P. fructiphilus} \& RRV-infested regions.
 
@@ -684,7 +694,7 @@
 
   }
 
-  \caption{Integrated Pest Management trials on Pink Double Knock Out® roses to control *Phyllocoptes fructiphilus* in Athens and Griffin, GA with five treatments. water = Water Control, actigard = Actigard 50WG, Acibenzolar-S-methyl (Syngenta),  kontos = Kontos Miticide Insecticide (Bayer), mites = \textit{Amblyseius swirkii} predatory mite mini sachets on hooks (Arbico-organics), ninja = SP2700 (Trade name: Ninja, SePro), mites + ninja = \textit{A. swirskii} + Ninja combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were be taken weekly to record the numbers of herbivorous mites.}\label{fig:ipm}
+  \caption{Integrated Pest Management trials on Pink Double Knock Out® roses to control \textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA with five treatments. water = Water Control, actigard = Actigard 50WG, Acibenzolar-S-methyl (Syngenta),  kontos = Kontos Miticide Insecticide (Bayer), mites = \textit{Amblyseius swirkii} predatory mite mini sachets on hooks (Arbico-organics), ninja = SP2700 (Trade name: Ninja, SePro), mites + ninja = \textit{A. swirskii} + Ninja combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were be taken weekly to record the numbers of herbivorous mites.}\label{fig:ipm}
   \end{figure}
   Our results suggest that SAR-induced plant defenses have the potential to manage populations of \emph{P. fructiphilus}, especially when integrating SAR-induction with predatory mites. A remaining concern is the effect that SAR-induction has on predatory mite releases: although predatory mites do not feed directly on plants, they may still be harmed via direct and indirect effects of SAR-induction Pappas et al. (2017). We assert that this less-explored area merits further research in order to optimize the integration of predatory mites with SAR.
 
@@ -1282,9 +1292,6 @@
 
   \leavevmode\vadjust pre{\hypertarget{ref-Dutcher2007}{}}%
   \textbf{Dutcher, J. D.} \textbf{2007}. General concepts in integrated pest and disease management, pp. 26--43. \emph{In} Ciancio, A., Mukerji, K.G. (eds.),. Springer Netherlands.
-
-  \leavevmode\vadjust pre{\hypertarget{ref-EDDMapS2019}{}}%
-  \textbf{EDDMapS}. \textbf{2019}. Early detection \& distribution mapping system. The University of Georgia - Center for Invasive Species; Ecosystem Health.
 
   \leavevmode\vadjust pre{\hypertarget{ref-EdelsteinKeshet1989}{}}%
   \textbf{Edelstein-Keshet, L., and M. D. Rausher}. \textbf{1989}. The effects of inducible plant defenses on herbivore populations. 1. Mobile herbivores in continuous time. The American Naturalist. 133: 787--810, DOI:\href{https://doi.org/10.1086/284953}{10.1086/284953}.
