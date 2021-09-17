@@ -1,5 +1,5 @@
 #a list of packages used for this script
-pkgs <-  c("tidyverse", "readxl", "lubridate")
+pkgs <-  c("tidyverse", "readxl")
 
 #installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -12,7 +12,7 @@ rm(pkgs, nu_pkgs)
 
 #reading in each sheet into a dataframe
 prelim <-
-  read_xlsx("data/rrv_olfactometer_martini_data.xlsx", sheet = 1)
+  read_xlsx("data/rrv_olfactometer_martini_data.xlsx", sheet = 1) %>% add_column(recorder = 'Xavier Martini')
 sht_1 <-
   read_xlsx("data/rrv_olfactometer_fife_data.xlsx", sheet = 1)
 sht_2 <-
@@ -25,21 +25,18 @@ ben <-
   read_xlsx("data/rrv_olfactometer_ben_data.xlsx", sheet = 1)
 
 #dropping unused columns)
-sht_1 <- select(sht_1, -c(notes, time_mins))
-sht_2 <- select(sht_2, -c(notes, time_mins))
-sht_3 <- select(sht_3, -c(notes, time_mins))
-sht_4 <- select(sht_4, -c(notes, time_mins))
-ben <- select(ben, -c(notes, time_mins))
+sht_1 <-
+  select(sht_1,-c(notes, time_mins)) %>% add_column(recorder = 'Austin Fife')
+sht_2 <-
+  select(sht_2,-c(notes, time_mins)) %>% add_column(recorder = 'Austin Fife')
+sht_3 <-
+  select(sht_3,-c(notes, time_mins)) %>% add_column(recorder = 'Austin Fife')
+sht_4 <-
+  select(sht_4,-c(notes, time_mins)) %>% add_column(recorder = 'Austin Fife')
+ben <-
+  select(ben,-c(notes, time_mins)) %>% add_column(recorder = 'Ben Reimer')
 
-#fixing dates
-sht_1$date <- lubridate::as_date(sht_1$date)
-sht_2$date <- lubridate::as_date(sht_2$date)
-sht_3$date <- lubridate::as_date(sht_3$date)
-sht_4$date <- lubridate::as_date(sht_4$date)
-ben$date <- lubridate::as_date(ben$date)
-
-
-#combining datasheets
+#combining datasheets without dropping columns that some datasheets don't have
 df <- full_join(prelim, sht_1)
 df <- full_join(df, sht_2)
 df <- full_join(df, sht_3)
@@ -58,13 +55,15 @@ df <-
     'choice',
     'trial',
     'date',
-  'experiment',
+    'experiment',
     'control',
     'no_response',
     'concentration',
     'rose_label',
-    'RRV'
-  )
+    'RRV',
+    'recorder'
+  ) %>%
+  rename(rrv = RRV)
 
 #replacing the mite_no with its column number (no mite was tested more than once)
 df$mite_no <- 1:nrow(df)
