@@ -3,6 +3,16 @@ pkgs <-
   c('tidyverse', 'ggthemes', 'showtext', 'extrafont', 'Cairo')
 lapply(pkgs, library, character.only = T)
 
+#installs missing packages
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
+
+#loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
+
+
 ####GETTING REQUIRED FONTS####
 #telling R the path where the fonts are located
 font_paths('fonts')
@@ -34,9 +44,10 @@ showtext_auto()
 ####GRAPHS OF OLFACTOMETER DATA####
 #reading in olfactometer data, making sure R knows df are factors
 df <-
-  read_csv('data/rrv_all_olfactometer_flat.csv', col_types = cols(choice = col_factor(c(
-    'no choice', 'control', 'experiment'
-  ))))
+  read_csv('data/rrv_all_olfactometer_flat.csv',
+           col_types = cols(choice = col_factor(c(
+             'no choice', 'control', 'experiment'
+           ))))
 
 df$trial <- sub('rose', 'Healthy Rose', df$trial)
 df$trial <- sub('MeSA', 'Methyl Salicylate', df$trial)
@@ -111,41 +122,22 @@ ggplot(data = rose_df,
   annotate(
     geom = "text",
     size = 30,
-    x = 1,
-    y = 50,
-    label = "90",
-    color = "black"
-  ) +
-  annotate(
-    geom = "text",
-    size = 30,
-    x = 1,
-    y = -50,
-    label = "81",
+    x = 2,
+    y = -100,
+    label = pvals$`observed.no choice`[2],
     color = "black"
   ) +
   annotate(
     geom = "text",
     size = 25,
     x = 2,
-    y = -100,
-    label = paste0("n = ", sum(pvals$`observed.no choice`[2] + pvals$observed.control[2] + pvals$observed.experiment[2])),
-    color = "black"
-  ) +
-  annotate(
-    geom = "text",
-    size = 25,
-    x = 1,
-    y = -100,
-    label = "n = 200",
-    color = "black"
-  ) +
-  annotate(
-    geom = "text",
-    size = 25,
-    x = 0.8,
-    y = 110,
-    label = "p = 0.49",
+    y = 0,
+    label = paste0(
+      "n = ",
+      sum(
+        pvals$`observed.no choice`[2] + pvals$observed.control[2] + pvals$observed.experiment[2]
+      )
+    ),
     color = "black"
   ) +
   annotate(
@@ -153,15 +145,7 @@ ggplot(data = rose_df,
     size = 25,
     x = 1.8,
     y = 110,
-    label = paste0("n = ", signif(pvals$p.value[2], digits = 3)),
-    color = "black"
-  ) +
-  annotate(
-    geom = "text",
-    size = 25,
-    x = 1,
-    y = 110,
-    label = "N.S.",
+    label = paste0("p = ", signif(pvals$p.value[2], digits = 3)),
     color = "black"
   ) +
   annotate(
@@ -170,6 +154,59 @@ ggplot(data = rose_df,
     x = 2,
     y = 110,
     label = "***",
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 30,
+    x = 1,
+    y = 50,
+    label = pvals$observed.experiment[3],
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 30,
+    x = 1,
+    y = -50,
+    label = pvals$observed.control[3],
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 30,
+    x = 1,
+    y = -100,
+    label = pvals$`observed.no choice`[3],
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 25,
+    x = 1,
+    y = 0,
+    label = paste0(
+      "n = ",
+      sum(
+        pvals$`observed.no choice`[3] + pvals$observed.control[3] + pvals$observed.experiment[3]
+      )
+    ),
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 50,
+    x = 1,
+    y = 110,
+    label = "***",
+    color = "black"
+  ) +
+    annotate(
+    geom = "text",
+    size = 25,
+    x = 0.8,
+    y = 110,
+    label = paste0("p = ", signif(pvals$p.value[3], digits = 3)),
     color = "black"
   ) +
   annotate(
@@ -204,11 +241,19 @@ ggplot(data = rose_df,
     label = 'Healthy Rose',
     color = "black"
   ) +
+  annotate(
+    geom = "text",
+    size = 25,
+    x = 2.53,
+    y = -100,
+    label = 'No Choice',
+    color = "black"
+  ) +
   scale_y_reverse()
 
 #saving the file
 ggsave(
-  'figure/rose_graph.png',
+  'figure/rrv_graph_olfact_rose.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
@@ -248,21 +293,66 @@ ggplot(data = tests_df,
       face = "bold"
     )
   ) +
-  ggtitle(expression(italic(A. ~ swirskii) ~ 'attraction to VOCs From roses')) +
+  ggtitle(expression(italic(A. ~ swirskii) ~ 'attraction to VOCs from roses')) +
   theme(legend.title = element_blank()) +
   theme(legend.position = "none") +
   labs(fill = 'Choice:') +
-  geom_hline(yintercept = seq(-50, 0, 50),
+  geom_hline(yintercept = seq(-60, 0, 60),
              col = 'white',
              lwd = 1) +
-  coord_flip(ylim = c(-50, 50)) +
+  coord_flip(ylim = c(-60, 60)) +
   scale_fill_manual(values = c("#B1B3B6", "#E28F41")) +
   annotate(
     geom = "text",
     size = 30,
     x = 2,
     y = -20,
-    label = "34",
+    label = pvals$observed.control[4],
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 30,
+    x = 2,
+    y = 20,
+    label = pvals$observed.experiment[4],
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 30,
+    x = 2,
+    y = -55,
+    label = pvals$`observed.no choice`[4],
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 25,
+    x = 2,
+    y = -0,
+    label = paste0(
+      "n = ",
+      sum(
+        pvals$`observed.no choice`[4] + pvals$observed.control[4] + pvals$observed.experiment[4]
+      )
+    ),
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 25,
+    x = 1.8,
+    y = 55,
+    label = paste0("p = ", signif(pvals$p.value[4], digits = 3)),
+    color = "black"
+  ) +
+  annotate(
+    geom = "text",
+    size = 25,
+    x = 2,
+    y = 55,
+    label = "N.S.",
     color = "black"
   ) +
   annotate(
@@ -270,15 +360,7 @@ ggplot(data = tests_df,
     size = 30,
     x = 1,
     y = -20,
-    label = "22",
-    color = "black"
-  ) +
-  annotate(
-    geom = "text",
-    size = 30,
-    x = 2,
-    y = 20,
-    label = "40",
+    label = pvals$observed.control[5],
     color = "black"
   ) +
   annotate(
@@ -286,55 +368,52 @@ ggplot(data = tests_df,
     size = 30,
     x = 1,
     y = 20,
-    label = "16",
+    label = pvals$observed.experiment[5],
     color = "black"
   ) +
   annotate(
     geom = "text",
-    size = 25,
-    x = 2,
-    y = -45,
-    label = "n = 100",
+    size = 30,
+    x = 1,
+    y = -55,
+    label = pvals$`observed.no choice`[5],
     color = "black"
   ) +
   annotate(
     geom = "text",
     size = 25,
     x = 1,
-    y = -45,
-    label = "n = 40",
+    y = -0,
+    label = paste0(
+      "n = ",
+      sum(
+        pvals$`observed.no choice`[5] + pvals$observed.control[5] + pvals$observed.experiment[5]
+      )
+    ),
     color = "black"
   ) +
   annotate(
     geom = "text",
     size = 25,
     x = .8,
-    y = 42,
-    label = "p = 0.33",
+    y = 55,
+    label = paste0("p = ", signif(pvals$p.value[5], digits = 3)),
     color = "black"
   ) +
   annotate(
     geom = "text",
-    size = 25,
-    x = 1.8,
-    y = 42,
-    label = "p = 0.48",
-    color = "black"
-  ) +
-  annotate(
-    geom = "text",
-    size = 25,
+    size = 50,
     x = 1,
-    y = 42,
-    label = "N.S.",
+    y = 55,
+    label = "***",
     color = "black"
   ) +
   annotate(
     geom = "text",
     size = 25,
-    x = 2,
-    y = 42,
-    label = "N.S.",
+    x = 2.53,
+    y = -55,
+    label = "No Choice",
     color = "black"
   ) +
   annotate(
@@ -358,7 +437,7 @@ ggplot(data = tests_df,
 
 #saving the file
 ggsave(
-  'figure/tests_graph.png',
+  'figure/rrv_graph_olfact_vocs.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
