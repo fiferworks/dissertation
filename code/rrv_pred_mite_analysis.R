@@ -1,14 +1,23 @@
 #loading packages
-load_pkgs <- c('tidyverse')
-lapply(load_pkgs, library, character.only = T)
+pkgs <- c('tidyverse')
+
+#installs missing packages
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
+
+#loading required packages
+lapply(pkgs, library, character.only = TRUE)
+rm(pkgs, nu_pkgs)
 
 #reading in olfactometer data, making sure R knows df are factors
 df <-
-  read_csv('data/rrv_all_olfactometer_flat.csv', col_types = cols(choice = col_factor(c(
-    'no choice', 'control', 'experiment'
-  ))))
+  read_csv('data/rrv_all_olfactometer_flat.csv',
+           col_types = cols(choice = col_factor(c(
+             'no choice', 'control', 'experiment'
+           ))))
 
-#filtering trials into thier respective groups
+#filtering trials into their respective groups
 air_mites <- filter(df, df$trial == 'air')
 rrv_mites <- filter(df, df$trial == 'rrv')
 rose_mites <- filter(df, df$trial == 'rose')
