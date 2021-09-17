@@ -12,7 +12,7 @@ A key part of *P. fructiphilus* control is vector and disease monitoring. Previo
 
 
 ### Phenology of natural populations of *P. fructiphilus* in northern Florida {#intro-pheno}
-As a result of these surveys, populations of eriophyoid mites suspected to be *P. fructiphilius* were encountered on roses in Tallahassee, Leon County, Florida, on February 14, 2019 [@Fife2020]. Accordingly, the NFREC reported the find to the Florida Department of Agriculture and Consumer Services, who were able to confirm the mite species as *P. fructiphilius*. Researchers at the NFREC monitored the phenology of *P. fructiphilus* in that area from 2020-2021. Our results show seasonal fluctuations in populations of *P. fructiphilius* and population growth after rose pruning took place. None of the mite-infested roses have shown symptoms of RRD to date.
+As a result of these surveys, populations of eriophyoid mites suspected to be *P. fructiphilius* were encountered on roses in Tallahassee, Leon County, Florida, on February 14, 2019 [@Fife2020]. Accordingly, the NFREC reported the find to the Florida Department of Agriculture and Consumer Services, who were able to confirm the mite species as *P. fructiphilius*. Researchers at the NFREC monitored the phenology of *P. fructiphilus* in that area from 2020-2021.
 
 
 ## Materials & Methods
@@ -23,8 +23,8 @@ A survey of roses in the landscape was conducted following a transect of norther
 Rose cuttings were collected periodically from four plots in the landscape of a church in Leon County, FL from 2020-2021: The site had two plantings of 2-3 years old Double Pink Knockout roses, with open sun exposure, @spacing, and natural watering. Blocks were divided into 24 plots of ~@lengthwidth, with approximately 12 roses per plot. Samples were processed as previously described in \@ref(mm-survey). After washing, plant tissues were placed into in paper bags and put into a drying oven for ~48 hrs at 50 &deg;C, after which dry weight was recorded. Mites were counted and recorded to track changes in the mite populations. Roses were pruned once on the beginning of July 2020 by a professional landscaping crew.
 
 ## Results {#results-survey-pheno}
-425 samples were taken from 33 sites from an east to west transect along the border northern Florida. Eriophyoid mites were recovered in rose samples from six cities: Baldwin, Defuniak Springs, Gainesville, Jacksonville and Tallahassee. Other mites were collected from 68\% of the cities visited. Eriophyoids per sample were low on average, but abundant in individual samples. No evidence of RRD was observed in northern Florida, even in areas with abundant *P. fructiphilus*. Many other mites were collected, including a small number of predatory mites which await identification. 
-
+### Survey {#results-survey}
+425 samples were taken from 33 sites from an east to west transect along the border northern Florida. Eriophyoid mites were recovered in rose samples from six cities. The first samples of *P. fructiphilus* were first encountered in Tallahassee during 2019; subsequent sampling efforts found in more eriophyoids in Jacksonville, Baldwin, Gainesville and Defuniak Springs in 2020, and Lake City in 2021. Other mites were collected from 68\% of the cities visited. The largest populations of *P. fructiphilus* were seen in Tallahassee, with over 8,400 eriophyoid mites from 260 samples collected during 2019-2021 (*see \@ref(tab:survey-table-1*). No evidence of RRD was observed in northern Florida during the surveys, even in areas where abundant *P. fructiphilus* were found. Over 4,600 non-eriophyoid mites were collected from various cities during 2019-2021 \@ref(tab:survey-table-1*). Other non-eriophyoid mites collected primarily belong to the family Tetranychidae, but a small number of phytoseiidae and other predatory mites were recovered as well. These other mites currently await curation and expert identification.
 
 ```{r survey-map-1, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_survey_map_fl_pf.png'), fig.cap = "\\textit{P. fructiphilus} mites recovered during surveys of roses in Florida, 2017-2021.", out.width="85%", warning=FALSE}
 knitr::include_graphics('figure/rrv_survey_map_fl_pf.png')
@@ -87,9 +87,10 @@ knitr::kable(format = "latex", booktabs = TRUE, caption = "Eriophyids and other 
 #   footnote(general = "Eriophyids and other mites recovered during surveys of roses in Florida, 2017-2021.")
 
 ```
-
-
 \newpage
+
+### Phenology {#results-pheno}
+Populations of *P. fructiphilius* showed seasonal fluctuations in mite numbers, with highest populations achieved during June 2020. Rose pruning reduced the numbers of *P, fructiphilus* until populations began to recover that November. Mite numbers remained relatively lower during 2021 compared to the previous year. None of the mite-infested roses have shown symptoms of RRD to date.
 
 ```{r pheno-graphs, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_pheno_bargraph.png'), fig.cap="Phenology of \\textit{P. fructiphilus} mite populations on roses in Leon County, Florida 2020-2021. Roses were pruned back heavily on July 9, 2020.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_pheno_bargraph.png')
@@ -97,12 +98,11 @@ knitr::include_graphics('figure/rrv_pheno_bargraph.png')
 
 
 ## Discussion {#dis-survey-pheno}
+The presence of *P. fructiphilus* in northern Florida over multiple years and seasons provides evidence against a putative southern limit for the species [@Solo2020].
 
-*P. fructiphilus* have been found in northern Florida.
+Although a large number of other mites have been collected, it is beyond our ability to identify them many of them to species. Phytoseiid mites require expert identification, and many species have been misidentified either through carelessness or ignorance of the identifier [@Demard2021].
 
-Although a large number of other mites have been collected, it is beyond our ability to identify them to species. Phytoseiid mites require expert identification, and many species have been misidentified [@Demard2021].
-
-Heavy pruning seems to work to reduce the number of mites
+The large reductions of *P. fructiphilus* seen post pruning suggests its potential as a method of cultural mite control.
 
 <!-- this imports my publication -->
 \includepdf[pages={-}, pagecommand={\phantomsection  \addcontentsline{toc}{section}{Publication: First report of \textit{Phyllocoptes fructiphilus} in Florida}}]{pubs/pfruct-report.pdf}
