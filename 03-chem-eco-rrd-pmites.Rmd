@@ -1,27 +1,17 @@
 # CHANGES IN HEADSPACE VOLATILES FOR RRD-INFECTED ROSES {#chemeco}
-
-<!-- Uncomment and run code chunk to update values after changing R files: -->
-<!-- ```{r} -->
-<!-- source('code/rrv_pred_mite_data_cleaning.R') -->
-<!-- source('code/rrv_pred_mite_analysis.R') -->
-<!-- source('code/rrv_pred_mite_graphs.R') -->
-<!-- ``` -->
-
-<!-- Phytoseiids rely heavily on VOCs to orient themselves towards their prey and potential mates, while avoiding predators [@Gnanvossou2003]. -->
-
-<!-- Phytoseiids also attracted to synthetic MeSA in lab [@Gadino2011], But lures had mixed results @Gadino2012 -->
-
 ## Introduction {#intro-chemeco-swirskii}
 Rose Rosette Virus (RRV) genus *Emaraviridae* is the the casual agent of Rose Rosette Disease (RRD), the most severe disease of roses [@Laney2011]. RRD is thought to have invaded the southeastern United States by the movement of its vector, the eriophyid mite, *Phyllocoptes fructiphilus* Kiefer (Trombidiformes: Eriophyidae), on multiflora rose (*Rosa multiflora* (Thunb)), as these organisms expanded their range from the US northwest, south and east towards the coast [@Amrine2002; @Otero-Colina2018; @Solo2020]. RRD is currently present throughout the US, and has been recently detected in Florida (@Fife2020, see *\@ref(survey-map-3)*). Infection with RRD creates witches’ brooms, rosetting, deforms flowers, increases prickle density, elongates shoots, reddens of plant tissues, causes dieback and ultimately plant death. Few management options are available to manage *P. fructiphilous*: Current mite control is achieved by removing infected roses and frequent pesticide applications [@UGA2018; @Olson2017; @Hong2012]. Growers are interested in alternative management options to combat *P. fructiphilus* and RRD. Predatory mites have potential to fulfill this need: Mites from the family Phytoseiidae 
 
 
-are being investigated as biocontrol agents for the management of *P. fructiphilus*. 
-
-Preliminary data suggest that the phytoseiid mite *Amblyseius swirskii* Athias-Henriot (Mesostigmata: Phytoseiidae) is attracted towards volatiles of RRD-infected plants.
-
 Nursery managers are interested in alternative and less expensive management options to combat *P. fructiphilus* and Rose Rosette Virus. Predatory mites have potential to fulfill this need: Mites from the family Phytoseiidae are being investigated as biocontrol agents for the management of *P. fructiphilus*. Preliminary data suggest that the phytoseiid mite *A. swirskii* is attracted to volatiles of Rose Rosette-infected roses. This attraction may have synergistic effects for *P. fructiphilus* control. *A. swirskii*  This research will contribute testing the suitability of *A. swirskii* as a biocontrol option for the management of *P. fructiphilus*.
 
 ## *Amblyseius swirskii* attraction to RRD-infected roses {#intro-swirskii}
+
+Phytoseiids rely heavily on VOCs to orient themselves towards their prey and potential mates, while avoiding predators [@Gnanvossou2003].
+
+Preliminary data suggest that the phytoseiid mite *Amblyseius swirskii* Athias-Henriot (Mesostigmata: Phytoseiidae) is attracted towards volatiles of RRD-infected plants.
+
+<!-- Phytoseiids also attracted to synthetic MeSA in lab [@Gadino2011], But lures had mixed results @Gadino2012 -->
 
 Phytoseiid mites have no eyes, instead relying on plant volatiles such as Methyl Salicylate to guide them to their prey [@Boer2004a]. Methyl Salicylate is also released when a plant is attacked by herbivores or pathogens [@Boer2004a; @Shulaev1997], so when preliminary tests with *A. swirskii* showed attraction to RRV-infected roses, coupled Gas Chromatography-Mass Spectroscopy analysis was expected to reveal high levels of Methyl Salicylate. Contrary to expectation, RRV-infected roses had low levels of Methyl Salicylate compared to healthy plants. This suggests that phytoseiid attraction may be attributed to volatiles besides Methyl Salicylate. This is important because such volatiles may be used to lure phytoseiids to eriophyid-infested areas, encouraging feeding and enhancing pest control [@Boer2004a; @Boer2004b]. Understanding which volatiles are responsible for phytoseiid attraction to RRV-infected roses will provide preliminary research which impacts management options for *P. fructiphilus* in southern Georgia/northern Florida as well as other *P. fructiphilus* & RRV-infested regions. 
 
@@ -102,13 +92,13 @@ grid::grid.raster(tiff::readTIFF('figure/vol-extract-trap-filter.tif'))
 ## Results {#results-vocs-olfact}
 ### Volatile differences between infected, healthy and induced roses {#results-vocs}
 
-### *A. swirskii* attraction to VOCs {#results-vocs}
-```{r aswir-mesa-lim, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/tests_graph.png'), fig.cap="\\textit{Amblyseius swirskii*} attraction to Methyl Salicylate (MeSA) and D-L Limonene vs Filtered Air at concentrations of 1 g/\\si{\\micro\\liter}. 100 \\si{\\micro\\liter}s of chemical was applied to 3 cm of dental wick inside of erlenmeyer flasks inline with the filtered air from the olfactometer. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. MeSA vs Air: $\\chi^2 = 0.48649$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.4855$. D-L Limonene vs Air: $\\chi^2 = 0.94737$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.3304$.", out.width="80%", warning=FALSE}
-knitr::include_graphics('figure/tests_graph.png')
+### *A. swirskii* attraction to VOCs {#results-olfact}
+```{r aswir-mesa-lim, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_graph_olfact_vocs.png'), fig.cap="\\textit{Amblyseius swirskii*} attraction to Methyl Salicylate (MeSA) and D-L Limonene vs Filtered Air at concentrations of 1 g/\\si{\\micro\\liter}. 100 \\si{\\micro\\liter}s of chemical was applied to 3 cm of dental wick inside of erlenmeyer flasks inline with the filtered air from the olfactometer. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. MeSA vs Air: $\\chi^2 = 0.48649$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.4855$. D-L Limonene vs Air: $\\chi^2 = 0.94737$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.3304$.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_graph_olfact_vocs.png')
 ```
 
 ```{r aswir-rrd, fig.height=8, fig.width=10.5, fig.align="center", fig.cap = "\\textit{Amblyseius swirskii} attraction to healthy and Rose Rosette Virus-infected Pink Double Knock Out® roses. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. RRV-infected vs Healthy Rose: $\\chi^2 = 9.33$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.002$. Filtered Air vs Healthy Rose: $\\chi^2 = 0.47$, df $=$ 1, $\\alpha = 0.05$, $p-value = 0.4913$.", out.width="80%", warning=FALSE}
-knitr::include_graphics('figure/reed.jpg')
+knitr::include_graphics('figure/rrv_graph_olfact_rose.png')
 ```
 
 
