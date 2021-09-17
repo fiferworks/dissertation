@@ -19,14 +19,14 @@ grid::grid.raster(tiff::readTIFF("figure/symp-ofv-asp.tif"))
 
 ```{r tab-1, echo = FALSE, warning = FALSE, caption = "\\label{tab:tab-1}"}
 tribble(~'Scientific Name', ~'Common Names', ~'County', ~'Strains Detected',
-        "\\textit{Liriope muscari} cv. Gigantea\\textsuperscript{*} (Decaisne) Bailey", "Lilyturf, Orchardgrass, Monkeygrass", "Leon \\& Alachua", "OFV-Orc1 \\& OFV-Orc2",
+        "\\textit{Liriope muscari} cv. ‘Gigantea’\\textsuperscript{*} (Decaisne) Bailey", "Lilyturf, Orchardgrass, Monkeygrass", "Leon \\& Alachua", "OFV-Orc1 \\& OFV-Orc2",
         "\\textit{Ophiopogon intermedius}\\textsuperscript{\\dag} Don", "Aztec Grass, Argenteomarginatus", "Leon", "OFV-Orc1 \\& OFV-Orc2",
         "\\textit{Aspidistra elatior} Blume", "Cast Iron Plant, Bar-room Plant", "Leon", "OFV-Orc1 \\& OFV-Orc2") %>% 
   knitr::kable(format = "latex",
                booktabs = TRUE,
                 escape = F,
                caption = "List of Asparagaceae (Nolinoidaea) species infected with orchid fleck virus, collected from the landscape of northern Florida.") %>%
-  kable_styling(latex_options = c("striped", "HOLD_position", "scale_down", full_width = TRUE)) %>% 
+  kable_styling(latex_options = c("striped", "HOLD_position", "scale_down", "protect_latex", full_width = TRUE)) %>% 
   footnote(
     threeparttable = TRUE,
     escape = F,
@@ -34,8 +34,8 @@ tribble(~'Scientific Name', ~'Common Names', ~'County', ~'Strains Detected',
       "Both OFV-Orc1 and OFV-Orc2 were detected in each species tested, many plants were coinfected with both strains, see '\\@ref(tab:tab-1)'."
     ),
     symbol = c(
-      "\\textit{L. muscari} cv. 'Gigantea' has been traditionally classified as \\textit{L. gigantea} Hume by Broussard 2007 and Fantz et al. 2015, although this distinction has been challenged by Wang et al. 2014 and Masiero et al. 2020.",
-      "\\textit{O. intermedius} is sometimes misclassified as \\textit{L. muscari} ‘Variegated Evergreen Giant’ or ‘Grandiflora White’ (Fantz 2008b, 2009)."
+      "\\\\textit{L. muscari} cv. ‘Gigantea’ has been traditionally classified as \\\\textit{L. gigantea} Hume by Broussard 2007 and Fantz et al. 2015, although this distinction has been challenged by Wang et al. 2014 and Masiero et al. 2020.",
+      "\\\\textit{O. intermedius} is sometimes misclassified as \\\\textit{L. muscari} ‘Variegated Evergreen Giant’ or ‘Grandiflora White’ (Fantz 2008b, 2009)."
     ))
 ```
 
