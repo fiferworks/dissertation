@@ -1,62 +1,15 @@
 # CHANGES IN HEADSPACE VOLATILES FOR RRD-INFECTED ROSES {#chemeco}
-## Introduction {#intro-chemeco-swirskii}
-Rose Rosette Virus (RRV) genus *Emaraviridae* is the the casual agent of Rose Rosette Disease (RRD), the most severe disease of roses [@Laney2011]. RRD is thought to have invaded the southeastern United States by the movement of its vector, the eriophyid mite, *Phyllocoptes fructiphilus* Kiefer (Trombidiformes: Eriophyidae), on multiflora rose (*Rosa multiflora* (Thunb)), as these organisms expanded their range from the US northwest, south and east towards the coast [@Amrine2002; @Otero-Colina2018; @Solo2020]. RRD is currently present throughout the US, and has been recently detected in Florida (@Fife2020, see *\@ref(survey-map-3)*). Infection with RRD creates witches’ brooms, rosetting, deforms flowers, increases prickle density, elongates shoots, reddens of plant tissues, causes dieback and ultimately plant death. Few management options are available to manage *P. fructiphilous*: Current mite control is achieved by removing infected roses and frequent pesticide applications [@UGA2018; @Olson2017; @Hong2012]. Growers are interested in alternative management options to combat *P. fructiphilus* and RRD. Predatory mites have potential to fulfill this need: Mites from the family Phytoseiidae 
-
-
-Nursery managers are interested in alternative and less expensive management options to combat *P. fructiphilus* and Rose Rosette Virus. Predatory mites have potential to fulfill this need: Mites from the family Phytoseiidae are being investigated as biocontrol agents for the management of *P. fructiphilus*. Preliminary data suggest that the phytoseiid mite *A. swirskii* is attracted to volatiles of Rose Rosette-infected roses. This attraction may have synergistic effects for *P. fructiphilus* control. *A. swirskii*  This research will contribute testing the suitability of *A. swirskii* as a biocontrol option for the management of *P. fructiphilus*.
-
-## *Amblyseius swirskii* attraction to RRD-infected roses {#intro-swirskii}
-
-Phytoseiids rely heavily on VOCs to orient themselves towards their prey and potential mates, while avoiding predators [@Gnanvossou2003].
-
-Preliminary data suggest that the phytoseiid mite *Amblyseius swirskii* Athias-Henriot (Mesostigmata: Phytoseiidae) is attracted towards volatiles of RRD-infected plants.
-
-<!-- Phytoseiids also attracted to synthetic MeSA in lab [@Gadino2011], But lures had mixed results @Gadino2012 -->
-
-Phytoseiid mites have no eyes, instead relying on plant volatiles such as Methyl Salicylate to guide them to their prey [@Boer2004a]. Methyl Salicylate is also released when a plant is attacked by herbivores or pathogens [@Boer2004a; @Shulaev1997], so when preliminary tests with *A. swirskii* showed attraction to RRV-infected roses, coupled Gas Chromatography-Mass Spectroscopy analysis was expected to reveal high levels of Methyl Salicylate. Contrary to expectation, RRV-infected roses had low levels of Methyl Salicylate compared to healthy plants. This suggests that phytoseiid attraction may be attributed to volatiles besides Methyl Salicylate. This is important because such volatiles may be used to lure phytoseiids to eriophyid-infested areas, encouraging feeding and enhancing pest control [@Boer2004a; @Boer2004b]. Understanding which volatiles are responsible for phytoseiid attraction to RRV-infected roses will provide preliminary research which impacts management options for *P. fructiphilus* in southern Georgia/northern Florida as well as other *P. fructiphilus* & RRV-infested regions. 
-
-
-When under attack by pathogens or herbivores, plants release volatile organic chemicals (VOCs) into their environment
-
-Predatory mites react to plant volatiles in various ways: VOCs can increasing prey-seeking behaviors and sometimes help to lure predators to their prey [@Boer2004a; @Boer2004b]. Chemical lures such as Methyl Salicylate (MeSA) can also encourage local recruitment of nearby mites and other natural predators [@Boer2004a; @Boer2004b], which can contribute to control of other pests of roses. Predatory mites are not considered to be environmentally-damaging or a health concern. Phytoseiid mites are compatible with some pesticides and other biocontrol methods, and feed on many different agricultural pests as well, so they can integrate well with existing pest management programs. Developing a biocontrol option for RRV can also increase profitability for rose growers not only by reducing losses from RRV-infection, but by reducing the number of pesticides which need to be applied. Reducing grower's reliance on pesticides has multiple benefits, promoting the health and safety of growers as well as protecting the environment. Reducing pesticide usage can also prevent *P. fructiphilus* from developing pesticide resistance and decrease risks for pollinators which frequent roses. Predatory mites are low-maintenance to rear and deploy and subsist in the environment without decreasing sustainability in other areas. Overall, predatory mites represent great value for sustainable agriculture.
-
-*A. swirskii* are compatible with some pesticides and existing bio-control methods. *A. swirskii* feed on other pests as well, so they can integrate with existing pest management programs. Developing a bio-control option for RRD can increase profitability for rose growers, reduces losses from RRV-infection, and reduce the number of pesticide applications required. Reduced reliance on pesticides promotes the health and safety of growers as well as protecting the environment. Reducing pesticide usage can also prevent *P. fructiphilus* from developing pesticide resistance and decrease risks for pollinators which frequent roses. Predatory mites are low-maintenance to rear and deploy. Mites subsist in the environment without decreasing sustainability in other areas. Overall, predatory mites represent great value for sustainable agriculture.
-
-
-Salicylic Acid plays a role in activating a plant's immune system and helps protect the plant from pests, bacteria, fungus or viruses [@Gozzo2013]. We are collaborating with the University of Georgia to test how activating plant defensive compounds might protect roses from *P. fructiphilus* and/or RRD. We applied Acibenzolar-S-methyl (ASM), a chemical which works like Salicylic Acid to activate plant defenses [@Ziadi2001; @Tripathi2010] at a high and a low rate, as well as a miticide and water as controls. These data suggest that activated plant defenses may work to control *P. fructiphilus*.
-
-Some mites orient themselves towards volatiles of their prey or the host plant of their prey. We intend to investigate differences between RRV-infected and uninfected Pink Double Knock Out® roses and their volatiles, as well as the effects of SAR-induction on rose volatiles. The results will help inform future assays involving predatory mites and their *P. fructiphilus*-seeking behaviors in relation to rose RRV-infection status and the use of SAR-inducers for biological control.
-
-Predatory mites do not feed on the plants they live on, so they shouldn't be harmed by activated plant defensive compounds. In natural systems, predatory mites learn to follow plant defensive chemicals to find their prey [@Boer2004a]. This suggests that combining ASM-activated plant defenses with predatory mites may enhance the ability of predatory mites to find their prey, but this combination hasn't been tested yet.
-
-We plan on collecting plant volatiles from Double Knock Out® roses and comparing the differences between RRV-infected and uninfected roses, using a push-pull volatile collection system as illustrated in *\@ref(fig:vol-extract)*. Filtered air fills an oven bag sealed over rose canes to trap leaf volatiles. Volatiles are then drawn through a clean collection filter by a vaccuum. The chemicals on the filter are eluted with 150 \si{\micro\liter} of dichloromethane, then 5 \si{\micro\liter} of nonyl acetate are added as an internal standard to the extraction. The extractions then are injected into a GC-MS and their spectra are analyzed. Compounds are identified by comparison to mass spectra databases as well as synthetic standards for confirmation.
-
-By determining which chemicals change during infection or with SAR-induction, we can gain insight into the physiological changes occuring during RRV-infection and SAR-induction in roses. Testing headspace volatiles can also give us insight into what VOCs predators like *A. swirskii* may encounter on infected or SAR-induced roses.
-
-- Determine which headspace VOCs are different between RRV-infected and healthy roses
-
-- Determine what effects SAR-induction has on RRV-infected and healthy roses
-
-- Creates a starting point for volatile testing for future olfactometer studies with *A. swirskii*
-
-Knowing which VOCs affect the host-seeking abilities of a predatory mite like *A. swirskii* is part of preliminary work for determining the compatibility of *A. swirskii* as a predator of *P. fructiphilus*.
-
-Volatiles from 20 roses will be collected before treatments as a baseline (already collected). Then half of the plants will be SAR-induced by bi-weekly spray applications of Acibenzolar-S-Methyl. Subsequently, half of the remaining plants (5 control and 5 SAR-induced plants) will be grafted with RRV-infected buds to innoculate them with the virus [@Doudrick1987]. Volatiles will be collected bi-monthly following SAR-induction and RRV application.  
-
-
-There will be differences in Methyl Salicylate between each group of roses: SAR-induced plants will have the most, RRV-infected roses will have the least, indicating changes in plant chemistry during RRV-infection. Other chemicals, particularly those associated with plant defenses, follow similar trends, and vary from group to group, but we have little preliminary data on this. By determining which chemicals change during infection or with SAR-induction, we can gain insight into the physiological changes occuring during RRV-infection and SAR-induction in roses. Testing headspace volatiles can also give us insight into what VOCs predators like *A. swirskii* may encounter on infected or SAR-induced roses.
-
-- Determine which headspace VOCs are different between RRV-infected and healthy roses
-
-- Determine what effects SAR-induction has on RRV-infected and healthy roses
-
-- Creates a starting point for volatile testing for future olfactometer studies with *A. swirskii* and predatory mites
-
-- Knowing which VOCs affect the host-seeking abilities of a predatory mite like *A. swirskii* is part of preliminary work for determining the compatibility of predatory mites for control of *P. fructiphilus*.
+## Introduction {#intro-swirskii-vocs}
+### Rose Rosette Disease, Predatory mites and Plant Defensese: Why are *Amblyseius swirskii* attracted to infected roses? {#intro-swirskii}
+Rose Rosette Virus (RRV) genus *Emaraviridae* is the the casual agent of Rose Rosette Disease (RRD), the most severe disease of roses [@Laney2011]. RRD is thought to have invaded the southeastern United States by the movement of its vector, the eriophyid mite, *Phyllocoptes fructiphilus* Kiefer (Trombidiformes: Eriophyidae), on multiflora rose (*Rosa multiflora* (Thunb)), as these organisms expanded their range from the US northwest, south and east towards the coast [@Amrine2002; @Otero-Colina2018; @Solo2020]. RRD is currently present throughout the US, and has been recently detected in Florida (@Fife2020, see *\@ref(survey-map-3)*). Infection with RRD creates witches’ brooms, rosetting, deforms flowers, increases prickle density, elongates shoots, reddens of plant tissues, causes die-back and ultimately plant death. Few management options are available to manage *P. fructiphilus*: Current mite control is achieved by removing infected roses and frequent pesticide applications [@UGA2018; @Olson2017; @Hong2012]. Nursery managers are interested in alternative and less expensive management options to combat *P. fructiphilus* and RRD. Predatory mites may have potential to fulfill this need [@Gerson2014; @Carrillo2015; @Farragut2010; @Gerson2003]: Many predatory mites species have been successfully integrated into pest management programs along with other biocontrol agents [@Freitas2021; @Bouagga2018; @Chow2010; @Midthassel2016], and certain pesticides [@Trumble1993; @Nicetic2001; @Fernandez2017]. Predatory mites from the family phytoseiidae live in close association with their host plants and are effective predators of many pest species [@Carrillo2015; @Farragut2010; @Gerson2003]. One of the most popular species of commercially-available phytoseiid mites is *Amblyseius swirskii* Athias-Henriot (Mesostigmata: Phytoseiidae)[@Calvo2014]. *A. swirskii* are considered to be a generalist species which feed on a variety of different arthropod pests [@McMurtry1997], including eriophyoid mites [@Park2010; @Park2011]. *A. swirskii* are able to be purchased in slow release sachets and safely shipped to growers that need them [@Calvo2014; @Lopez2016a; @Buitenhuis2014]. They are commonly used in biological control programs [@Calvo2014], partially because of their ability to survive on alternative food sources when pests are not present [@Nguyen2013]. They are also able to be released before pests arrive [@Kutuk2011], surviving on banker and native plants in the environment until pest populations increase [@Xiao2012]. This intimate relation with plants extends into the realm of chemical communications: Phytoseiid like *A. swirskii* have no eyes, instead relying on plant Volatile Organic Compounds (VOCs) to guide them to their prey [@Nomikou2005; @Boer2004a; @Gananvossou2003]. Many plant VOCs are released when a plant is attacked by herbivores or pathogens [@Halitschke2007; @Sabelis1999; @Shulaev1997], the composition of which varies, depending on the plant species and type of damage/infection [@Maeda2006; @Qualley2008; @Boom2004; @Sabelis1999]. Methyl Salicylate (MeSA) is a VOC commonly produced under many types of pathogen attack [@Arimura2011; @Park2007]. This plant volatile is derived from Salicylic Acid (SA), an important plant hormone involved in activating the hypersensitive response to pathogens [@Vlot2009; @Park2007; @Gaffney1993; @Goodman1994]. Volatilized MeSA can initiate the the signalling pathway which primes a plant's immune system against attacks by pathogens [@Conrath2006; @Tieman2010; @Shulaev1997; @Gozzo2013]. Activation of these plant defenses creates long term resistance against future pathogen attack throughout the plant, through a mechanism known as systemic acquired resistance (SAR) [@Zhang2010; @Boller2009; @Vlot2009]. These same pathways can be induced in a plant by chemical analogues to SA, such as the benzothiadiazoles, including acibenzolar-S-methyl (ASM) [@Darolt2020; @Ziadi2001; @Tripathi2010; @Narusaka1999]. Inducing SAR can have various positive effects on disease prevention: SAR induction is often used to combat fungal diseases [@Suo2001; @Narusaka1999; @Xue1998; @Goy1992], and some studies have found that SAR induction and the hypersensitive response can disrupt the establishment of eriophyoid mites [@Bronner1991; @Bronner1991a; @Westphal1991]. Infested plants produced \textbeta-1,3-glucanase and chitinases, which were hypothesized to contribute to defenses against these eriophyoid mites [@Bronner1991a; @Ward1991a]. Similar increases in \textbeta-1,3-glucanase and chitinase activity was seen in roses treated with ASM, restricting the growth of a fungal pathogen [@Suo2001]. This suggests that SAR-induction in roses may have biological activity against eriophyoid mites, including *P. fructiphilus*. Unfortunately, inducing SAR can have negative effects on herbivores as well as predators [@Pappas2017; @Ataide2016; @Kant2015], which necessitates careful study of all organisms involved to create a successful pest management program. Our study was designed to investigate some of the interactions between plant volatiles and their effects on predatory mites: Preliminary data suggest that *A. swirskii* are attracted towards volatiles of RRD-infected plants. Similarly, MeSA has been reported to attract phytoseiid mites towards their prey to varying degrees of success [@James2004; @Boer2004a; @Boer2004b; @Gadino2011; @Gadino2012]. We hypothesized that infection with RRD was triggering the release of MeSA, creating *A. swirskii*'s attraction to the infected plants. Our studies were designed to investigate differences between RRV-infected and uninfected Pink Double Knock Out® roses and their volatiles, as well as the effects of SAR-induction on rose volatiles. The results will help inform future assays involving predatory mites and their prey-seeking behaviors in relation to rose RRV-infection status and the use of SAR-inducers for biological control of *P. fructiphilus*.
 
 
 ## Materials & Methods {#mm-vocs-olfact}
 ### Collection of headspace volatiles from roses {#mm-vocs}
+
+Headspace VOCs were collected from from Double Knock Out® roses using a push-pull volatile collection system as illustrated in *\@ref(fig:vol-extract)*. Filtered air fills an oven bag sealed over rose canes to trap leaf volatiles. Volatiles are then drawn through a clean collection filter by a vacuum. The chemicals on the filter are eluted with 150 \si{\micro\liter} of dichloromethane, then 5 \si{\micro\liter} of Nonyl Acetate are added as an internal standard to the extraction. The extractions then are injected into a paired Gas Chromatography-Mass Spectrometer and their spectra were analyzed. Compounds are identified by comparison to mass spectra databases as well as synthetic standards for confirmation. 
+
+
 Treatments will be the following:
 
 1.	Uninfected Pink Double Knock Out® roses
@@ -67,9 +20,14 @@ Treatments will be the following:
 A group of 20 plants will be isolated. Volatiles from the 20 plants will be collected as a baseline (already collected). Then half of the plants will be SAR inducted by bi-weekly spray applications of Acibenzolar-S-Methyl. Subsequently half of the remaining plants (5 control and 5 SAR-induced plants) will be grafted with RRV-infected buds to inoculate them with the virus [@Doudrick1987]. Volatiles will be collected bi-monthly following SAR-induction and RRV application.  
 
 
-```{r voc-trap, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/vol-extract-trap-filter.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. The exterior end of the filter is attached to a vacuum airline set to allow for constant static pressure on the bag from inflation. The rose is then left for 24 hours, the filter is eluted with Dichloromethane into a gas chromatography vial, 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled Gas Chromatography - Mass Spectrometer (GC-MS) for chemical identification.", out.width="80%", warning=FALSE}
-grid::grid.raster(tiff::readTIFF('figure/vol-extract-trap-filter.tif'))
+```{r voc-qsep, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/vol-extract-qsep.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. The exterior end of the filter is attached to a vacuum airline set to allow for constant static pressure on the bag from inflation. The rose is then left for 24 hours, the filter is eluted with Dichloromethane into a gas chromatography vial, 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled Gas Chromatography - Mass Spectrometer (GC-MS) for chemical identification.", out.width="80%", warning=FALSE}
+grid::grid.raster(tiff::readTIFF('figure/vol-extract-qsep.tif'))
 ```
+
+```{r voc-spme, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/vol-extract-spme.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled GC-MS for chemical identification.", out.width="80%", warning=FALSE}
+grid::grid.raster(tiff::readTIFF('figure/vol-extract-spme.tif'))
+```
+
 
 
 ### Two arm olfactometer assays {#mm-olfact}
@@ -91,6 +49,48 @@ grid::grid.raster(tiff::readTIFF('figure/vol-extract-trap-filter.tif'))
 
 ## Results {#results-vocs-olfact}
 ### Volatile differences between infected, healthy and induced roses {#results-vocs}
+```{r qsep-vocs, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_qsep.png')
+```
+
+```{r qsep-vocs-compares, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_qsep.png')
+```
+
+```{r qsep-vocs-scree, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_qsep.png')
+```
+
+
+```{r spme-vocs, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_spme.png')
+```
+
+```{r spme-vocs-compares, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_spme.png')
+```
+
+```{r spme-vocs-scree, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_spme.png')
+```
+
+```{r qsep-vocs-umap, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_umap_rrd_qsep.png')
+```
+
+```{r spme-vocs-umap, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_umap_rrd_spme.png')
+```
+
+
+```{r qsep-vocs-umap-chems, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_umap_chems_rrd_qsep.png')
+```
+
+```{r spme-vocs-umap-chems, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+knitr::include_graphics('figure/rrv_volatiles_umap_chems_rrd_spme.png')
+```
+
 
 ### *A. swirskii* attraction to VOCs {#results-olfact}
 ```{r aswir-mesa-lim, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_graph_olfact_vocs.png'), fig.cap="\\textit{Amblyseius swirskii*} attraction to Methyl Salicylate (MeSA) and D-L Limonene vs Filtered Air at concentrations of 1 g/\\si{\\micro\\liter}. 100 \\si{\\micro\\liter}s of chemical was applied to 3 cm of dental wick inside of erlenmeyer flasks inline with the filtered air from the olfactometer. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. MeSA vs Air: $\\chi^2 = 0.48649$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.4855$. D-L Limonene vs Air: $\\chi^2 = 0.94737$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.3304$.", out.width="80%", warning=FALSE}
@@ -105,3 +105,5 @@ knitr::include_graphics('figure/rrv_graph_olfact_rose.png')
 - Identify which RRV-infected rose compounds are attracting *A. swirskii*
 
 ## Discussion {#dis-vocs-olfact}
+
+Olfactometers are considered a useful way to determine predatory mite attraction to different prey items [@Janssen1990]
