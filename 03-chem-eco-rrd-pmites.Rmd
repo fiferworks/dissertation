@@ -24,7 +24,7 @@ A group of 20 plants will be isolated. Volatiles from the 20 plants will be coll
 grid::grid.raster(tiff::readTIFF('figure/vol-extract-qsep.tif'))
 ```
 
-```{r voc-spme, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/vol-extract-spme.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled GC-MS for chemical identification.", out.width="80%", warning=FALSE}
+```{r voc-spme, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/vol-extract-spme.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled GC-MS for chemical identification.", out.width="70%", warning=FALSE}
 grid::grid.raster(tiff::readTIFF('figure/vol-extract-spme.tif'))
 ```
 
@@ -49,55 +49,55 @@ grid::grid.raster(tiff::readTIFF('figure/vol-extract-spme.tif'))
 
 ## Results {#results-vocs-olfact}
 ### Volatile differences between infected, healthy and induced roses {#results-vocs}
-```{r qsep-vocs, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r qsep-vocs, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_qsep.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_qsep.png')
 ```
 
-```{r qsep-vocs-compares, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r qsep-vocs-compares, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_qsep.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_qsep.png')
 ```
 
-```{r qsep-vocs-scree, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r qsep-vocs-scree, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_qsep.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_qsep.png')
 ```
 
 
-```{r spme-vocs, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r spme-vocs, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_spme.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_spme.png')
 ```
 
-```{r spme-vocs-compares, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r spme-vocs-compares, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_spme.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_spme.png')
 ```
 
-```{r spme-vocs-scree, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r spme-vocs-scree, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_spme.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_spme.png')
 ```
 
-```{r qsep-vocs-umap, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r qsep-vocs-umap, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_qsep.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_rrd_qsep.png')
 ```
 
-```{r spme-vocs-umap, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r spme-vocs-umap, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_spme.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_rrd_spme.png')
 ```
 
 
-```{r qsep-vocs-umap-chems, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_qsep.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r qsep-vocs-umap-chems, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_qsep.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_chems_rrd_qsep.png')
 ```
 
-```{r spme-vocs-umap-chems, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_spme.png'), fig.cap="beans.", out.width="80%", warning=FALSE}
+```{r spme-vocs-umap-chems, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_spme.png'), fig.cap="beans.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_chems_rrd_spme.png')
 ```
 
 
 ### *A. swirskii* attraction to VOCs {#results-olfact}
-```{r aswir-mesa-lim, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_graph_olfact_vocs.png'), fig.cap="\\textit{Amblyseius swirskii*} attraction to Methyl Salicylate (MeSA) and D-L Limonene vs Filtered Air at concentrations of 1 g/\\si{\\micro\\liter}. 100 \\si{\\micro\\liter}s of chemical was applied to 3 cm of dental wick inside of erlenmeyer flasks inline with the filtered air from the olfactometer. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. MeSA vs Air: $\\chi^2 = 0.48649$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.4855$. D-L Limonene vs Air: $\\chi^2 = 0.94737$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.3304$.", out.width="80%", warning=FALSE}
+```{r aswir-mesa-lim, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_graph_olfact_vocs.png'), fig.cap="\\textit{Amblyseius swirskii*} attraction to Methyl Salicylate (MeSA) and D-L Limonene vs Filtered Air at concentrations of 1 g/\\si{\\micro\\liter}. 100 \\si{\\micro\\liter}s of chemical was applied to 3 cm of dental wick inside of erlenmeyer flasks inline with the filtered air from the olfactometer. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. MeSA vs Air: $\\chi^2 = 0.48649$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.4855$. D-L Limonene vs Air: $\\chi^2 = 0.94737$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.3304$.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_graph_olfact_vocs.png')
 ```
 
-```{r aswir-rrd, fig.height=8, fig.width=10.5, fig.align="center", fig.cap = "\\textit{Amblyseius swirskii} attraction to healthy and Rose Rosette Virus-infected Pink Double Knock Out® roses. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. RRV-infected vs Healthy Rose: $\\chi^2 = 9.33$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.002$. Filtered Air vs Healthy Rose: $\\chi^2 = 0.47$, df $=$ 1, $\\alpha = 0.05$, $p-value = 0.4913$.", out.width="80%", warning=FALSE}
+```{r aswir-rrd, fig.height=8, fig.width=10.5, fig.align="center", fig.cap = "\\textit{Amblyseius swirskii} attraction to healthy and Rose Rosette Virus-infected Pink Double Knock Out® roses. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. RRV-infected vs Healthy Rose: $\\chi^2 = 9.33$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.002$. Filtered Air vs Healthy Rose: $\\chi^2 = 0.47$, df $=$ 1, $\\alpha = 0.05$, $p-value = 0.4913$.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_graph_olfact_rose.png')
 ```
 
