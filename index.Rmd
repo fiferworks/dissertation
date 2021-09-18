@@ -133,11 +133,14 @@ pkgs <-
     "tiff"
     )
 
-# install.packages(pkgs, character.only = TRUE, ask = FALSE)
+#installs the packages if you don't have them already installed
+nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
+if (length(nu_pkgs))
+  install.packages(nu_pkgs)
 
+#loading required packages
 lapply(pkgs, library, character.only = TRUE)
-
-rm(pkgs)
+rm(pkgs, nu_pkgs)
 
 # R global options
 knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE, cache.comments = FALSE)
