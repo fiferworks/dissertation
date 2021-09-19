@@ -159,11 +159,13 @@ save_table <- function(tab) {
       PCA2 = Dim.2,
       PCA3 = Dim.3
     )
+  x <- x %>% arrange(desc(PCA1))
   filename <-
     paste("data/rrv_volatiles_correlation_table_",
           deparse(substitute(tab)),
           ".csv",
           sep = "")
+  
   write_csv(x, filename)
   
   x <- data.frame(tab$contrib, check.names = FALSE)
@@ -176,6 +178,7 @@ save_table <- function(tab) {
       PCA2 = Dim.2,
       PCA3 = Dim.3
     )
+  x <- x %>% arrange(desc(PCA1))
   filename2 <-
     paste("data/rrv_volatiles_contribution_table_",
           deparse(substitute(tab)),
