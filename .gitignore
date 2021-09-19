@@ -1,7 +1,11 @@
 .Rproj.user
 .Rhistory
 .RData
+.Rdata
 .Ruserdata
 thesis.log
 _bookdown_files
 desktop.ini
+.httr-oauth
+.DS_Store
+
