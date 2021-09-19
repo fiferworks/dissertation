@@ -50,6 +50,7 @@
 \usepackage[table]{xcolor}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{textcomp}
 %\usepackage[cmbright]{sfmath} % Comment this line to use Times New Roman Math Typeface\\
 \usepackage[nottoc]{tocbibind}
 \usepackage{booktabs}
@@ -297,7 +298,7 @@
   \hypertarget{mm-pheno}{%
   \subsection{Phenology}\label{mm-pheno}}
 
-  Rose cuttings were collected periodically from four plots in the landscape of a church in Leon County, FL from 2020-2021: The site had two plantings of 2-3 years old Double Pink Knockout roses, with open sun exposure, \textasciitilde0.3 \si{\metre} spacing, and natural watering. Blocks were divided into 24 plots of \textasciitilde3 \si{\metre}\(^2\), with approximately 12 roses per plot. Samples were processed as previously described in \ref{mm-survey}. After washing, plant tissues were placed into in paper bags and put into a drying oven for \textasciitilde48 hrs at 50 °C, after which dry weight was recorded. Mites were counted and recorded to track changes in the mite populations. Roses were pruned once on the beginning of July 2020 by a professional landscaping crew.
+  Rose cuttings were collected periodically from four plots in the landscape of a church in Leon County, FL from 2020-2021: The site had two plantings of 2-3 years old Double Pink Knockout roses, with open sun exposure, \textasciitilde0.3 \si{\metre} spacing, and natural watering. Blocks were divided into 24 plots of \textasciitilde3 \si{\metre}\(^2\), with approximately 12 roses per plot. Samples were processed as previously described in \ref{mm-survey}. After washing, plant tissues were placed into in paper bags and put into a drying oven for \textasciitilde48 hrs at 50 °C, after which dry weight was recorded. Mites were counted and recorded to track changes in the mite populations. Roses were pruned once on the beginning of July 2020 by a professional landscaping crew. About \textasciitilde5\% of early samples collected were missing dry weights, missing data was imputted using Multivariate Imputation by Chained Equations via the mice package (Buuren and Groothuis-Oudshoorn 2011) using R version 4.1.1 (R Core Team 2021).
 
   \hypertarget{results-survey-pheno}{%
   \section{Results}\label{results-survey-pheno}}
@@ -447,12 +448,12 @@
   \hypertarget{mm-vct}{%
   \subsubsection{Volatile Collection Trap Method}\label{mm-vct}}
 
-  The VCT method of collecting VOCs was based on a push-pull volatile collection method as illustrated in \emph{\ref{fig:voc-qsep}}. Filtered air was provided by a 4-Port Positive Pressure Flow Out/Dual Y-Tubes \& Volatile Collection System (Sigma Scientific, Micanopy, FL USA) at 0.2 \si{\litre}s/min. Air was blown through a teflon tube into a nylon oven bag (GoBeGreen Turkey Oven Bags, GoBeGreen, Los Angeles, CA, USA.) that had been dried in an over at 50 °C overnight. The bag would be sealed over the end of a flowering rose cane from from Pink Double Knock Out® roses. Bags were allowed to inflate in order to detect excessive leaks, if no large leaks were detected, the corner of the bag would be cut and a VCT would be inserted. Traps were 3.5'' with 28 ± 5 \si{\milli\gram} 80/100 mesh with HayeSep® Q adsorbent (Sigma Scientific, Micanopy, FL USA). Headspace volatiles were drawn through the filter by a vacuum line operating at 0.1 \si{\litre}s/min. Bags were left at positive pressure during volatile collection for 24 hours. The VOCs adsorbed inside the VCT filter were then eluted with 150 \si{\micro\litre}s of dichloromethane into a glass headspace vial, then 5 \si{\micro\liter} of 1 \si{\micro\liter}/\si{\gram} Nonyl Acetate were added to each solution as an internal standard. A baseline of 53 headspace VOC extractions were collected from 20 mite-free, one-year-old, uninfected Pink Double Knock Out® roses growing in 3 gallon buckets, 16:8 Light:Dark cycles. 4 extractions were completed from graft-inoculated RRD-positive roses (Doudrick et al. 1987), grown in a quarantine greenhouse under similar parameters. Headspace samples of the RRD-infected roses were taken prior to the quarantine measures requested by federal agencies. Samples were taken at \textasciitilde20 °C and RH 50-66\%.
+  The VCT method of collecting VOCs was based on a push-pull volatile collection method as illustrated in \emph{\ref{fig:voc-qsep}}. Filtered air was provided by a 4-Port Positive Pressure Flow Out/Dual Y-Tubes \& Volatile Collection System (Sigma Scientific, Micanopy, FL USA) at 0.2 \si{\litre}s/min. Air was blown through a teflon tube into a nylon oven bag (GoBeGreen Turkey Oven Bags, GoBeGreen, Los Angeles, CA, USA.) that had been dried in an over at 50 °C overnight. The bag would be sealed over the end of a flowering rose cane from from Pink Double Knock Out® roses. Bags were allowed to inflate in order to detect excessive leaks, if no large leaks were detected, the corner of the bag would be cut and a VCT would be inserted. Traps were 3.5'' with 28 ± 5 \si{\milli\gram} 80/100 mesh with HayeSep® Q adsorbent (Sigma Scientific, Micanopy, FL USA). Headspace volatiles were drawn through the filter by a vacuum line operating at 0.1 \si{\litre}/min. Bags were left at positive pressure during volatile collection for 24 hours. The VOCs adsorbed inside the VCT filter were then eluted with 150 \si{\micro\litre}s of dichloromethane into a glass headspace vial, then 5 \si{\micro\liter} of 1 \si{\micro\liter}/\si{\gram} Nonyl Acetate were added to each solution as an internal standard. A baseline of 53 headspace VOC extractions were collected from 20 mite-free, one-year-old, uninfected Pink Double Knock Out® roses growing in 3 gallon buckets, 16:8 Light:Dark cycles. 4 extractions were completed from graft-inoculated RRD-positive roses (Doudrick et al. 1987), grown in a quarantine greenhouse under similar parameters. Headspace samples of the RRD-infected roses were taken prior to the quarantine measures requested by federal agencies. Samples were taken at \textasciitilde20 °C and RH 50-66\%.
 
   \hypertarget{mm-spme}{%
   \subsubsection{Solid Phase Micro Extraction Method}\label{mm-spme}}
 
-  The SPME field 90 method was created to overcome a specific study limitation: shortly after the detection of \emph{P. fructiphilus} in Florida, NFREC researchers were restricted from working with RRD-infected plants by state agencies to prevent the introduction of the virus to the mites found in the region. In order to obtain VOCs from RRD-infected roses, extractions were taken \emph{in situ} from roses in the landscape of Athens, GA \emph{\ref{fig:voc-spme}}. The SPME procedure was similar to the VCT method with a few exceptions: Oven bags were left over rose canes and flowers for an hour before extraction would begin. Filtered air was provided by a Kobalt 24v cordless high-volume inflator (Lowe's, Mooresville, NC, USA) attached to a inline carbon block filter (Clear\(_2\)O® RV and Marine Inline Water Filter - CRV2006, Miramar, FL, USA). Air flow was adjusted to 0.2 \si{\litre}s/min with a variable flow meter (Sho-Rate™ Series Glass Tube Variable Area Flow Meter, model 1350CB1F, Brooks Instruments, Hatfield, PA, USA) and blown through a teflon tube into an oven bag surrounding the rose flowers and canes to agitate the headspace VOCs. An edge of the oven bag was removed and a disposable air filter/check valve inserted to prevent the oven bag from bursting due to over pressure. Once the bag was in place, an aluminum rod with burette holder/clamps was driven into the ground near the rose to be sampled, and the manual SPME injector (Supelco, Inc, Sigma-Aldrich, Bellefonte, PA, USA) clamped so that the needle of the fiber holder could pierce the inflated bag. Before VOC extraction, 1 \si{\micro\liter} of Nonyl Acetate was added to the bag as an internal standard. Extractions were done for 20 minutes. Injections were done using 24 Ga Stableflex SPME fibers with 50/30 \si{\micro\meter} DVB/CAR/PDMS coatings (Supelco, Inc, Sigma-Aldrich, Bellefonte, PA, USA). For SPME sampling, headspace VOCs were collected from 11 untreated roses from \emph{P.fructiphilus}-infested roses in the landscape of Tallahassee, FL. 8 roses from the same location were treated with ASM 100 \si{\milli\gram}/\si{\liter} for 12 weeks before sampling, and 11 RRD-infected roses were sampled from three locations in Athens, GA on May 28th, 2021. Plants were of unknown age, growing in full sun, with symptoms of RRD. The daily temperature of the day of extractions ranged from 24-31 °C, RH 46-74\%.
+  The SPME field 90 method was created to overcome a specific study limitation: shortly after the detection of \emph{P. fructiphilus} in Florida, NFREC researchers were restricted from working with RRD-infected plants by state agencies to prevent the introduction of the virus to the mites found in the region. In order to obtain VOCs from RRD-infected roses, extractions were taken \emph{in situ} from roses in the landscape of Athens, GA \emph{\ref{fig:voc-spme}}. The SPME procedure was similar to the VCT method with a few exceptions: Oven bags were left over rose canes and flowers for an hour before extraction would begin. Filtered air was provided by a Kobalt 24v cordless high-volume inflator (Lowe's, Mooresville, NC, USA) attached to a inline carbon block filter (Clear\(_2\)O® RV and Marine Inline Water Filter - CRV2006, Miramar, FL, USA). Air flow was adjusted to 0.2 \si{\litre}/min with a variable flow meter (Sho-Rate™ Series Glass Tube Variable Area Flow Meter, model 1350CB1F, Brooks Instruments, Hatfield, PA, USA) and blown through a teflon tube into an oven bag surrounding the rose flowers and canes to agitate the headspace VOCs. An edge of the oven bag was removed and a disposable air filter/check valve inserted to prevent the oven bag from bursting due to over pressure. Once the bag was in place, an aluminum rod with burette holder/clamps was driven into the ground near the rose to be sampled, and the manual SPME injector (Supelco, Inc, Sigma-Aldrich, Bellefonte, PA, USA) clamped so that the needle of the fiber holder could pierce the inflated bag. Before VOC extraction, 1 \si{\micro\liter} of Nonyl Acetate was added to the bag as an internal standard. Extractions were done for 20 minutes. Injections were done using 24 Ga Stableflex SPME fibers with 50/30 \si{\micro\meter} DVB/CAR/PDMS coatings (Supelco, Inc, Sigma-Aldrich, Bellefonte, PA, USA). For SPME sampling, headspace VOCs were collected from 11 untreated roses from \emph{P.fructiphilus}-infested roses in the landscape of Tallahassee, FL. 8 roses from the same location were treated with Actigard® 50WG (Syngenta, Greensboro, NC, USA), (ASM) 100 \si{\milli\gram}/\si{\liter} for 12 weeks before sampling, and 11 RRD-infected roses were sampled from three locations in Athens, GA on May 28th, 2021. Plants were of unknown age, growing in full sun, with symptoms of RRD. The daily temperature of the day of extractions ranged from 24-31 °C, RH 46-74\%.
 
   \hypertarget{mm-voc-analyze}{%
   \subsubsection{Analysis of Headspace Data}\label{mm-voc-analyze}}
@@ -479,36 +480,38 @@
 
   \emph{A. swirskii} mites were purchased online as mini sachets with hooks (Ambly-S, Arbico Organics, Oro Valley, AZ, USA). Sachets would be emptied into a plastic container before assays in order to facilitate finding mites. The mite colony was fed every 2 days with bee/pine pollen. Filtered air was provided by a 4-Port Positive Pressure Flow Out/Dual Y-Tubes \& Volatile Collection System (Sigma Scientific, Micanopy, FL USA) at 0.3 \si{\litre}s/min for each arm of the Y-tube olfactometer. Air was humidified by passing air through a gas washing bubbler flask filled with water. The bubbler flasks were placed inline before volatile sources and the arms of the Y-tube. The olfactometer was held vertically with a lab stand, and illuminated with a 60 watt household 5000K white LED lightbulb. One arm of the Y-tube would be labelled as the experiment side, and the other arm would be the control chemical. Air lines would be switched after every 5 assays to avoid side bias in the Y-tube. After every 10 assays, the Y-tube was switched for a clean one. Individual \emph{A. swirksii} mites were transferred to the mouth of the Y-tube olfactometer using a fine tipped paintbrush. Assays were recorded for 5 minutes. If a mite entered midway into the arm of an olfactometer, the time and label of the tube would be recorded, the mite removed, and the assay would end. Mites which failed to do so were considered to have made `no choice' and were removed. Assays with roses involved bagging the roses as previously described, but with outlet air lines connected to the inlet of one arm of the Y-tube. In this manner, comparisons were made between an empty bag of air and a healthy rose, as well as uninfected roses to RRD-infected roses. Synthetic volatiles were selected from the top ten chemicals seen in the contributions table from the PCA analysis (\emph{\ref{tab:spme-contrib-table}, \ref{tab:qsep-contrib-table}}). Assays of synthetic volatiles were conducted by a selected VOC with dicholoromethane. The solution was then applied to a 3 \si{\centi\metre} dental wick. Dental wicks were placed in otherwise empty inline gas washing bubbler flasks, and left for 5 minutes before beginning an assay. The synthetic VOCs MeSA and DL-Limonene at were tested, at a concentration of 1 \si{\micro\gram}/\si{\micro\liter}. 100 \si{\micro\litre} of dicholoromethane was used as a control.
 
-  Responses of \emph{A. swirkii} were compared with \(\chi^2\) tests using R version 4.1.1 (R Core Team (2021)).
+  Responses of \emph{A. swirkii} were compared with \(\chi^2\) tests using R version 4.1.1 (R Core Team 2021).
 
   \hypertarget{results-vocs-olfact}{%
   \section{Results}\label{results-vocs-olfact}}
 
   \hypertarget{results-vocs}{%
   \subsection{Volatile differences between infected, healthy and induced roses}\label{results-vocs}}
+
+  The top six contributing VOCs for VCT were \textgamma-Murrolene, \textbeta-Ocimene, (E,E)-\textalpha-Farnesene, \textbeta-Caryophyllene, Methyl Salicylate and \textbeta-Pinene (\emph{\ref{tab:qsep-contrib-table}}). The top six contributing chemicals for SPME were \textgamma-Murrolene, \textbeta-Caryophyllene 1R-\textalpha-Pinene, Mesitylene, \textbeta-Pinene and m-Xylene (\emph{\ref{tab:spme-contrib-table}}). Roses infected with RRD were generally similar to uninfected roses for both VCT and SPME methods, but did (\emph{\ref(fig:qsep-vocs-compares) \ref(fig:spme-vocs-compares), @ref(fig:rrv\_volatiles\_umap\_rrd\_qsep.png), @ref(fig:rrv\_volatiles\_umap\_rrd\_spme.png)}), but ASM-treated roses had less chemical variance than either group (\emph{\ref(fig:spme-vocs-compares), @ref(fig:rrv\_volatiles\_umap\_rrd\_spme.png)}). For VCT samples, \textgamma-Murrolene explained most of the variance in uninfected roses, while SPME samples showed the opposite:\textgamma-Murrolene and \textbeta-Caryophyllene were primarily found in infected roses.
   \begin{figure}
 
   {\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_biplot_var_pca_qsep} 
 
   }
 
-  \caption{beans.}\label{fig:qsep-vocs}
+  \caption{PCA biplot of volatiles collected with VCT method.}\label{fig:qsep-vocs}
   \end{figure}
-  \begin{figure}
+  \textbackslash begin\{figure\}
 
-  {\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_comparison_pca_comp_qsep} 
+  \{\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_comparison_pca_comp_qsep}
 
-  }
+  \}
 
-  \caption{beans.}\label{fig:qsep-vocs-compares}
-  \end{figure}
+  \textbackslash caption\{Comparison of VCT Principal Components. Ellipses represent 95\% confidence intervals.\}\label{fig:qsep-vocs-compares}
+  \textbackslash end\{figure\}
   \begin{figure}
 
   {\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_screeplot_pca_qsep} 
 
   }
 
-  \caption{beans.}\label{fig:qsep-vocs-scree}
+  \caption{Scree plot of VCT Principal Components}\label{fig:qsep-vocs-scree}
   \end{figure}
   \begin{figure}
 
@@ -516,7 +519,7 @@
 
   }
 
-  \caption{beans.}\label{fig:qsep-vocs-umap}
+  \caption{Uniform Manifold Approximation and Projection (UMAP) of VCT samples.}\label{fig:qsep-vocs-umap}
   \end{figure}
   \begin{figure}
 
@@ -524,7 +527,7 @@
 
   }
 
-  \caption{beans.}\label{fig:qsep-vocs-umap-chems}
+  \caption{Uniform Manifold Approximation and Projection (UMAP) of VCT method's six largest contributions to volatile compositions.}\label{fig:qsep-vocs-umap-chems}
   \end{figure}
   \begin{table}[!h]
 
@@ -535,49 +538,39 @@
   \toprule
   Chemical & PCA1 & PCA2 & PCA3\\
   \midrule
-  \cellcolor{gray!6}{Murrolene <gamma->} & \cellcolor{gray!6}{60.0223193} & \cellcolor{gray!6}{20.9895749} & \cellcolor{gray!6}{4.1733132}\\
-  Ocimene, <beta-> & 18.8235293 & 13.8418984 & 40.3566205\\
-  \cellcolor{gray!6}{Farnesene <(E,E)-, alpha->} & \cellcolor{gray!6}{7.5722877} & \cellcolor{gray!6}{27.9010360} & \cellcolor{gray!6}{0.0709556}\\
-  Caryophyllene & 6.4116781 & 2.3874539 & 4.0714170\\
-  \cellcolor{gray!6}{Methyl Salicylate} & \cellcolor{gray!6}{1.2448799} & \cellcolor{gray!6}{18.7961147} & \cellcolor{gray!6}{30.5190695}\\
+  \cellcolor{gray!6}{Murrolene <gamma->} & \cellcolor{gray!6}{73.7200281} & \cellcolor{gray!6}{2.0505736} & \cellcolor{gray!6}{0.0590805}\\
+  Caryophyllene <beta-> & 11.4442072 & 6.3932415 & 1.6136116\\
+  \cellcolor{gray!6}{3-Hexen-1-ol Acetate (Z)-} & \cellcolor{gray!6}{4.1088721} & \cellcolor{gray!6}{4.3938742} & \cellcolor{gray!6}{0.0543187}\\
+  Farnesene <(E,E)-, alpha-> & 2.1748819 & 0.6870580 & 1.2212043\\
+  \cellcolor{gray!6}{Pinene <alpha->} & \cellcolor{gray!6}{1.9893868} & \cellcolor{gray!6}{7.6247823} & \cellcolor{gray!6}{1.5809223}\\
   \addlinespace
-  Pinene <beta-> & 1.1356898 & 0.2611554 & 0.0298264\\
-  \cellcolor{gray!6}{Ocimene, <trans-beta->} & \cellcolor{gray!6}{1.0210935} & \cellcolor{gray!6}{1.1137689} & \cellcolor{gray!6}{2.4829900}\\
-  Pinene <alpha-> & 0.8378403 & 0.2783615 & 0.0245384\\
-  \cellcolor{gray!6}{3-Hexen-1-ol Acetate (Z)-} & \cellcolor{gray!6}{0.8304336} & \cellcolor{gray!6}{5.5633958} & \cellcolor{gray!6}{4.4799026}\\
-  D-Limonene & 0.5276378 & 0.0025988 & 0.8757500\\
+  Ocimene, <beta-> & 1.8922159 & 12.1385950 & 3.3711482\\
+  \cellcolor{gray!6}{Pinene <beta->} & \cellcolor{gray!6}{1.2158051} & \cellcolor{gray!6}{3.0295147} & \cellcolor{gray!6}{1.3808570}\\
+  Germacrene D & 0.7637065 & 0.0169593 & 0.0005140\\
+  \cellcolor{gray!6}{D-Limonene} & \cellcolor{gray!6}{0.6934082} & \cellcolor{gray!6}{48.5442320} & \cellcolor{gray!6}{4.7360377}\\
+  Methyl Salicylate & 0.6511928 & 12.4348187 & 84.5744765\\
   \addlinespace
-  \cellcolor{gray!6}{2,4,6-Octatriene, 2,6-dimethyl-, (E,Z)-} & \cellcolor{gray!6}{0.3313271} & \cellcolor{gray!6}{0.2081643} & \cellcolor{gray!6}{0.7126559}\\
-  Germacrene D & 0.3214702 & 0.0108133 & 0.0968208\\
-  \cellcolor{gray!6}{Nona-1,3,7-triene <4-8-dimethyl-, (E)->} & \cellcolor{gray!6}{0.2515069} & \cellcolor{gray!6}{4.8339061} & \cellcolor{gray!6}{5.5267018}\\
-  Caryophyllene <9-epi-(E)-> & 0.2105783 & 0.0056334 & 0.0170818\\
-  \cellcolor{gray!6}{Copaene <beta->} & \cellcolor{gray!6}{0.1466439} & \cellcolor{gray!6}{0.0028449} & \cellcolor{gray!6}{0.0011738}\\
+  \cellcolor{gray!6}{3-Hexen-1-ol, (Z)-} & \cellcolor{gray!6}{0.4892346} & \cellcolor{gray!6}{0.9571750} & \cellcolor{gray!6}{0.1575944}\\
+  Cadinene <delta-> & 0.1804902 & 0.1066432 & 0.2043152\\
+  \cellcolor{gray!6}{Nona-1,3,7-triene <4-8-dimethyl-, (E)->} & \cellcolor{gray!6}{0.1485550} & \cellcolor{gray!6}{0.0001213} & \cellcolor{gray!6}{0.0034408}\\
+  2-Hexenal & 0.1396463 & 0.0379478 & 0.0191767\\
+  \cellcolor{gray!6}{Copaene <beta->} & \cellcolor{gray!6}{0.1250792} & \cellcolor{gray!6}{0.0000533} & \cellcolor{gray!6}{0.0895675}\\
   \addlinespace
-  3-Hexen-1-ol, (Z)- & 0.0766063 & 0.2290728 & 0.5625994\\
-  \cellcolor{gray!6}{Cadinene <delta->} & \cellcolor{gray!6}{0.0432165} & \cellcolor{gray!6}{0.0450829} & \cellcolor{gray!6}{0.3523451}\\
-  Humulene & 0.0333387 & 0.0073311 & 0.0063230\\
-  \cellcolor{gray!6}{Camphor} & \cellcolor{gray!6}{0.0236808} & \cellcolor{gray!6}{0.5104347} & \cellcolor{gray!6}{0.2188024}\\
-  2-Hexen-1-ol, acetate, (E)- & 0.0227382 & 0.1298482 & 0.0925199\\
+  Humulene & 0.0717575 & 0.0196316 & 0.0003570\\
+  \cellcolor{gray!6}{Aromadendrene} & \cellcolor{gray!6}{0.0486886} & \cellcolor{gray!6}{0.1419599} & \cellcolor{gray!6}{0.2551968}\\
+  2,4,6-Octatriene, 2,6-dimethyl-, (E,Z)- & 0.0352002 & 0.0348526 & 0.0458192\\
+  \cellcolor{gray!6}{Calamenene} & \cellcolor{gray!6}{0.0292478} & \cellcolor{gray!6}{0.1013612} & \cellcolor{gray!6}{0.3343829}\\
+  Caryophyllene <9-epi-(E)-> & 0.0238007 & 0.1026956 & 0.0680314\\
   \addlinespace
-  \cellcolor{gray!6}{Myrcene <beta->} & \cellcolor{gray!6}{0.0218859} & \cellcolor{gray!6}{0.0342635} & \cellcolor{gray!6}{0.0992522}\\
-  2-Hexenal & 0.0217362 & 0.0353055 & 0.1636720\\
-  \cellcolor{gray!6}{Farnesene <(E)-, beta->} & \cellcolor{gray!6}{0.0154770} & \cellcolor{gray!6}{0.0995043} & \cellcolor{gray!6}{0.6602571}\\
-  Pentane, 3-ethyl-2,2-dimethyl- & 0.0137434 & 0.0514737 & 0.1150423\\
-  \cellcolor{gray!6}{unknown} & \cellcolor{gray!6}{0.0119415} & \cellcolor{gray!6}{1.8673223} & \cellcolor{gray!6}{3.0535956}\\
+  \cellcolor{gray!6}{Ocimene, <trans-beta->} & \cellcolor{gray!6}{0.0200925} & \cellcolor{gray!6}{0.0135288} & \cellcolor{gray!6}{0.0222477}\\
+  Nerolidol & 0.0126271 & 0.0034313 & 0.0017340\\
+  \cellcolor{gray!6}{2-Hexen-1-ol, acetate, (E)-} & \cellcolor{gray!6}{0.0093561} & \cellcolor{gray!6}{0.0819047} & \cellcolor{gray!6}{0.0016911}\\
+  Pentane, 3-ethyl-2,2-dimethyl- & 0.0051438 & 0.0121933 & 0.0941394\\
+  \cellcolor{gray!6}{Myrcene <beta->} & \cellcolor{gray!6}{0.0029627} & \cellcolor{gray!6}{0.1348161} & \cellcolor{gray!6}{0.0120437}\\
   \addlinespace
-  Benzaldehyde <para-ethyl-> & 0.0071898 & 0.1983519 & 0.1338722\\
-  \cellcolor{gray!6}{Copaene <alpha->} & \cellcolor{gray!6}{0.0060390} & \cellcolor{gray!6}{0.0245219} & \cellcolor{gray!6}{0.0025282}\\
-  Nerolidol & 0.0058151 & 0.1084033 & 0.0350643\\
-  \cellcolor{gray!6}{Elemene <beta->} & \cellcolor{gray!6}{0.0056700} & \cellcolor{gray!6}{0.4016219} & \cellcolor{gray!6}{0.9946676}\\
-  Cadina-1,4-diene <trans-> & 0.0005467 & 0.0000396 & 0.0037227\\
-  \addlinespace
-  \cellcolor{gray!6}{Acetic acid, hexyl ester} & \cellcolor{gray!6}{0.0005037} & \cellcolor{gray!6}{0.0030921} & \cellcolor{gray!6}{0.0026862}\\
-  Calamenene & 0.0004714 & 0.0387465 & 0.0361081\\
-  \cellcolor{gray!6}{2-Thujene} & \cellcolor{gray!6}{0.0002300} & \cellcolor{gray!6}{0.0165581} & \cellcolor{gray!6}{0.0153140}\\
-  Aromadendrene & 0.0002091 & 0.0022141 & 0.0000037\\
-  \cellcolor{gray!6}{Trivertal} & \cellcolor{gray!6}{0.0000421} & \cellcolor{gray!6}{0.0000792} & \cellcolor{gray!6}{0.0056229}\\
-  \addlinespace
-  5-Hepten-2-one, <6-methyl-> & 0.0000026 & 0.0000125 & 0.0071841\\
+  Trivertal & 0.0027171 & 0.2966634 & 0.0007833\\
+  \cellcolor{gray!6}{2-Thujene} & \cellcolor{gray!6}{0.0013261} & \cellcolor{gray!6}{0.0817092} & \cellcolor{gray!6}{0.0081560}\\
+  5-Hepten-2-one, <6-methyl-> & 0.0003697 & 0.5596623 & 0.0891524\\
   \bottomrule
   \end{tabular}}
   \end{table}
@@ -590,49 +583,39 @@
   \toprule
   Chemical & PCA1 & PCA2 & PCA3\\
   \midrule
-  \cellcolor{gray!6}{Camphor} & \cellcolor{gray!6}{0.0618986} & \cellcolor{gray!6}{-0.0774504} & \cellcolor{gray!6}{-0.0424284}\\
-  2-Thujene & 0.0061002 & -0.0139495 & -0.0112247\\
-  \cellcolor{gray!6}{Aromadendrene} & \cellcolor{gray!6}{0.0058168} & \cellcolor{gray!6}{0.0051009} & \cellcolor{gray!6}{-0.0001754}\\
-  Trivertal & 0.0026097 & 0.0009648 & 0.0068016\\
-  \cellcolor{gray!6}{5-Hepten-2-one, <6-methyl->} & \cellcolor{gray!6}{-0.0006514} & \cellcolor{gray!6}{0.0003831} & \cellcolor{gray!6}{0.0076880}\\
+  \cellcolor{gray!6}{D-Limonene} & \cellcolor{gray!6}{0.1385033} & \cellcolor{gray!6}{0.7135872} & \cellcolor{gray!6}{0.1383390}\\
+  Methyl Salicylate & 0.1342210 & -0.3611586 & 0.5845971\\
+  \cellcolor{gray!6}{Calamenene} & \cellcolor{gray!6}{0.0284454} & \cellcolor{gray!6}{0.0326072} & \cellcolor{gray!6}{0.0367586}\\
+  2-Hexen-1-ol, acetate, (E)- & 0.0160884 & 0.0293111 & 0.0026141\\
+  \cellcolor{gray!6}{Pentane, 3-ethyl-2,2-dimethyl-} & \cellcolor{gray!6}{0.0119291} & \cellcolor{gray!6}{-0.0113094} & \cellcolor{gray!6}{-0.0195040}\\
   \addlinespace
-  Calamenene & -0.0087330 & 0.0213388 & -0.0172358\\
-  \cellcolor{gray!6}{Acetic acid, hexyl ester} & \cellcolor{gray!6}{-0.0090278} & \cellcolor{gray!6}{-0.0060281} & \cellcolor{gray!6}{0.0047011}\\
-  Cadina-1,4-diene <trans-> & -0.0094052 & -0.0006818 & 0.0055343\\
-  \cellcolor{gray!6}{Elemene <beta->} & \cellcolor{gray!6}{-0.0302881} & \cellcolor{gray!6}{-0.0687009} & \cellcolor{gray!6}{-0.0904627}\\
-  Nerolidol & -0.0306734 & -0.0356923 & -0.0169849\\
+  Myrcene <beta-> & 0.0090533 & 0.0376053 & 0.0069762\\
+  \cellcolor{gray!6}{Trivertal} & \cellcolor{gray!6}{0.0086701} & \cellcolor{gray!6}{0.0557841} & \cellcolor{gray!6}{0.0017791}\\
+  2-Thujene & 0.0060570 & 0.0292761 & 0.0057408\\
+  \cellcolor{gray!6}{5-Hepten-2-one, <6-methyl->} & \cellcolor{gray!6}{0.0031980} & \cellcolor{gray!6}{0.0766198} & \cellcolor{gray!6}{0.0189803}\\
+  Nerolidol & -0.0186904 & -0.0059994 & 0.0026470\\
   \addlinespace
-  \cellcolor{gray!6}{Copaene <alpha->} & \cellcolor{gray!6}{-0.0312584} & \cellcolor{gray!6}{-0.0169758} & \cellcolor{gray!6}{-0.0045608}\\
-  Benzaldehyde <para-ethyl-> & -0.0341069 & -0.0482805 & -0.0331876\\
-  \cellcolor{gray!6}{unknown} & \cellcolor{gray!6}{-0.0439553} & \cellcolor{gray!6}{-0.1481370} & \cellcolor{gray!6}{-0.1585025}\\
-  Pentane, 3-ethyl-2,2-dimethyl- & -0.0471553 & -0.0245950 & 0.0307652\\
-  \cellcolor{gray!6}{Farnesene <(E)-, beta->} & \cellcolor{gray!6}{-0.0500410} & \cellcolor{gray!6}{0.0341959} & \cellcolor{gray!6}{-0.0737033}\\
+  \cellcolor{gray!6}{Ocimene, <trans-beta->} & \cellcolor{gray!6}{-0.0235766} & \cellcolor{gray!6}{0.0119126} & \cellcolor{gray!6}{0.0094815}\\
+  Caryophyllene <9-epi-(E)-> & -0.0256602 & 0.0328212 & 0.0165803\\
+  \cellcolor{gray!6}{2,4,6-Octatriene, 2,6-dimethyl-, (E,Z)-} & \cellcolor{gray!6}{-0.0312060} & \cellcolor{gray!6}{0.0191204} & \cellcolor{gray!6}{0.0136069}\\
+  Aromadendrene & -0.0367011 & -0.0385888 & -0.0321125\\
+  \cellcolor{gray!6}{Humulene} & \cellcolor{gray!6}{-0.0445553} & \cellcolor{gray!6}{0.0143501} & \cellcolor{gray!6}{-0.0012011}\\
   \addlinespace
-  2-Hexenal & -0.0593027 & -0.0203692 & 0.0366959\\
-  \cellcolor{gray!6}{Myrcene <beta->} & \cellcolor{gray!6}{-0.0595066} & \cellcolor{gray!6}{-0.0200664} & \cellcolor{gray!6}{0.0285759}\\
-  2-Hexen-1-ol, acetate, (E)- & -0.0606541 & -0.0390635 & 0.0275898\\
-  \cellcolor{gray!6}{Humulene} & \cellcolor{gray!6}{-0.0734441} & \cellcolor{gray!6}{0.0092819} & \cellcolor{gray!6}{-0.0072126}\\
-  Cadinene <delta-> & -0.0836194 & -0.0230176 & 0.0538412\\
+  Copaene <beta-> & -0.0588245 & 0.0007475 & -0.0190245\\
+  \cellcolor{gray!6}{2-Hexenal} & \cellcolor{gray!6}{-0.0621556} & \cellcolor{gray!6}{-0.0199513} & \cellcolor{gray!6}{0.0088029}\\
+  Nona-1,3,7-triene <4-8-dimethyl-, (E)-> & -0.0641076 & -0.0011280 & -0.0037288\\
+  \cellcolor{gray!6}{Cadinene <delta->} & \cellcolor{gray!6}{-0.0706630} & \cellcolor{gray!6}{-0.0334461} & \cellcolor{gray!6}{-0.0287334}\\
+  3-Hexen-1-ol, (Z)- & -0.1163387 & -0.1002014 & -0.0252352\\
   \addlinespace
-  \cellcolor{gray!6}{3-Hexen-1-ol, (Z)-} & \cellcolor{gray!6}{-0.1113306} & \cellcolor{gray!6}{-0.0518849} & \cellcolor{gray!6}{0.0680346}\\
-  Copaene <beta-> & -0.1540332 & 0.0057821 & 0.0031076\\
-  \cellcolor{gray!6}{Caryophyllene <9-epi-(E)->} & \cellcolor{gray!6}{-0.1845819} & \cellcolor{gray!6}{0.0081366} & \cellcolor{gray!6}{-0.0118549}\\
-  Nona-1,3,7-triene <4-8-dimethyl-, (E)-> & -0.2017239 & -0.2383433 & -0.2132375\\
-  \cellcolor{gray!6}{Germacrene D} & \cellcolor{gray!6}{-0.2280619} & \cellcolor{gray!6}{0.0112728} & \cellcolor{gray!6}{0.0282238}\\
+  \cellcolor{gray!6}{Germacrene D} & \cellcolor{gray!6}{-0.1453546} & \cellcolor{gray!6}{0.0133377} & \cellcolor{gray!6}{-0.0014412}\\
+  Pinene <beta-> & -0.1833992 & 0.1782645 & 0.0746984\\
+  \cellcolor{gray!6}{Ocimene, <beta->} & \cellcolor{gray!6}{-0.2287973} & \cellcolor{gray!6}{0.3568309} & \cellcolor{gray!6}{0.1167148}\\
+  Pinene <alpha-> & -0.2345985 & 0.2828082 & 0.0799268\\
+  \cellcolor{gray!6}{Farnesene <(E,E)-, alpha->} & \cellcolor{gray!6}{-0.2452920} & \cellcolor{gray!6}{0.0848936} & \cellcolor{gray!6}{0.0702475}\\
   \addlinespace
-  2,4,6-Octatriene, 2,6-dimethyl-, (E,Z)- & -0.2315319 & -0.0494603 & 0.0765721\\
-  \cellcolor{gray!6}{D-Limonene} & \cellcolor{gray!6}{-0.2921799} & \cellcolor{gray!6}{-0.0055264} & \cellcolor{gray!6}{0.0848830}\\
-  3-Hexen-1-ol Acetate (Z)- & -0.3665513 & -0.2556959 & -0.1919839\\
-  \cellcolor{gray!6}{Pinene <alpha->} & \cellcolor{gray!6}{-0.3681823} & \cellcolor{gray!6}{0.0571950} & \cellcolor{gray!6}{0.0142087}\\
-  Ocimene, <trans-beta-> & -0.4064575 & -0.1144067 & 0.1429282\\
-  \addlinespace
-  \cellcolor{gray!6}{Pinene <beta->} & \cellcolor{gray!6}{-0.4286593} & \cellcolor{gray!6}{0.0553992} & \cellcolor{gray!6}{0.0156650}\\
-  Methyl Salicylate & -0.4487930 & -0.4699892 & -0.5010904\\
-  \cellcolor{gray!6}{Caryophyllene} & \cellcolor{gray!6}{-1.0185168} & \cellcolor{gray!6}{0.1675025} & \cellcolor{gray!6}{-0.1830220}\\
-  Farnesene <(E,E)-, alpha-> & -1.1068682 & -0.5726166 & -0.0241615\\
-  \cellcolor{gray!6}{Ocimene, <beta->} & \cellcolor{gray!6}{-1.7451504} & \cellcolor{gray!6}{-0.4033217} & \cellcolor{gray!6}{0.5762194}\\
-  \addlinespace
-  Murrolene <gamma-> & -3.1162962 & 0.4966559 & -0.1852981\\
+  3-Hexen-1-ol Acetate (Z)- & -0.3371529 & -0.2146852 & 0.0148153\\
+  \cellcolor{gray!6}{Caryophyllene <beta->} & \cellcolor{gray!6}{-0.5626760} & \cellcolor{gray!6}{0.2589637} & \cellcolor{gray!6}{0.0807489}\\
+  Murrolene <gamma-> & -1.4280990 & -0.1466614 & -0.0154511\\
   \bottomrule
   \end{tabular}}
   \end{table}
@@ -642,23 +625,23 @@
 
   }
 
-  \caption{beans.}\label{fig:spme-vocs}
+  \caption{PCA biplot of volatiles collected with SPME method.}\label{fig:spme-vocs}
   \end{figure}
-  \begin{figure}
+  \textbackslash begin\{figure\}
 
-  {\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_comparison_pca_comp_spme} 
+  \{\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_comparison_pca_comp_spme}
 
-  }
+  \}
 
-  \caption{beans.}\label{fig:spme-vocs-compares}
-  \end{figure}
+  \textbackslash caption\{Comparison of SPME Principal Components. Ellipses represent 95\% confidence intervals.\}\label{fig:spme-vocs-compares}
+  \textbackslash end\{figure\}
   \begin{figure}
 
   {\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_screeplot_pca_spme} 
 
   }
 
-  \caption{beans.}\label{fig:spme-vocs-scree}
+  \caption{Scree plot of SPME Principal Components}\label{fig:spme-vocs-scree}
   \end{figure}
   \begin{figure}
 
@@ -666,7 +649,7 @@
 
   }
 
-  \caption{beans.}\label{fig:spme-vocs-umap}
+  \caption{Uniform Manifold Approximation and Projection (UMAP) of SPME method volatiles.}\label{fig:spme-vocs-umap}
   \end{figure}
   \begin{figure}
 
@@ -674,7 +657,7 @@
 
   }
 
-  \caption{beans.}\label{fig:spme-vocs-umap-chems}
+  \caption{Uniform Manifold Approximation and Projection (UMAP) of SPME method's six largest contributions to volatile compositions.}\label{fig:spme-vocs-umap-chems}
   \end{figure}
   \begin{table}[!h]
 
@@ -770,6 +753,210 @@
   \bottomrule
   \end{tabular}}
   \end{table}
+  \begin{figure}
+
+  {\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_biplot_var_pca_df} 
+
+  }
+
+  \caption{PCA biplot of volatiles collected with VCT+SPME methods.}\label{fig:all-vocs}
+  \end{figure}
+  \textbackslash begin\{figure\}
+
+  \{\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_comparison_labeled_pca_comp_df}
+
+  \}
+
+  \textbackslash caption\{Comparison of VCT+SPME Principal Components. Ellipses represent 95\% confidence intervals.\}\label{fig:all-vocs-compares}
+  \textbackslash end\{figure\}
+  \begin{figure}
+
+  {\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_screeplot_pca_df} 
+
+  }
+
+  \caption{Scree plot of VCT+SPME Principal Components.}\label{fig:all-vocs-scree}
+  \end{figure}
+  \begin{figure}
+
+  {\centering \includegraphics[width=1\linewidth,angle=90]{figure/rrv_volatiles_umap_chems_df} 
+
+  }
+
+  \caption{Uniform Manifold Approximation and Projection (UMAP) of all VCT+SPME volatiles.}\label{fig:all-vocs-umap}
+  \end{figure}
+  \begin{table}[!h]
+
+  \caption{\label{tab:all-contrib-table}Contribution table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses.}
+  \centering
+  \resizebox{\linewidth}{!}{
+  \begin{tabular}[t]{lrrr}
+  \toprule
+  Chemical & PCA1 & PCA2 & PCA3\\
+  \midrule
+  \cellcolor{gray!6}{Murrolene <gamma->} & \cellcolor{gray!6}{72.0312150} & \cellcolor{gray!6}{14.8458386} & \cellcolor{gray!6}{2.2559910}\\
+  Caryophyllene <beta-> & 10.7352857 & 5.8896031 & 0.8573628\\
+  \cellcolor{gray!6}{3-Hexen-1-ol Acetate (Z)-} & \cellcolor{gray!6}{5.4873502} & \cellcolor{gray!6}{2.4907075} & \cellcolor{gray!6}{15.1134127}\\
+  Ocimene, <beta-> & 2.9063582 & 12.6409633 & 0.4596114\\
+  \cellcolor{gray!6}{Pinene <alpha->} & \cellcolor{gray!6}{2.2118248} & \cellcolor{gray!6}{10.8381397} & \cellcolor{gray!6}{0.3605728}\\
+  \addlinespace
+  Farnesene <(E,E)-, alpha-> & 2.0526949 & 0.8704001 & 0.2158671\\
+  \cellcolor{gray!6}{Pinene <beta->} & \cellcolor{gray!6}{1.3622616} & \cellcolor{gray!6}{3.8858693} & \cellcolor{gray!6}{0.3120422}\\
+  Methyl Salicylate & 1.0705440 & 0.1803856 & 44.7435245\\
+  \cellcolor{gray!6}{D-Limonene} & \cellcolor{gray!6}{0.4783855} & \cellcolor{gray!6}{42.7586741} & \cellcolor{gray!6}{6.7797188}\\
+  Germacrene D & 0.3878739 & 0.0496878 & 0.0054492\\
+  \addlinespace
+  \cellcolor{gray!6}{Nona-1,3,7-triene <4-8-dimethyl-, (E)->} & \cellcolor{gray!6}{0.2421617} & \cellcolor{gray!6}{0.0465500} & \cellcolor{gray!6}{0.1880732}\\
+  3-Hexen-1-ol, (Z)- & 0.2309602 & 0.0253246 & 0.8083669\\
+  \cellcolor{gray!6}{Benzaldehyde} & \cellcolor{gray!6}{0.2290871} & \cellcolor{gray!6}{2.8464099} & \cellcolor{gray!6}{21.0212998}\\
+  Copaene <beta-> & 0.0890619 & 0.0051737 & 0.0022856\\
+  \cellcolor{gray!6}{Xylene <m->} & \cellcolor{gray!6}{0.0773006} & \cellcolor{gray!6}{0.4316211} & \cellcolor{gray!6}{5.6984868}\\
+  \addlinespace
+  Cadinene <delta-> & 0.0722424 & 0.0269341 & 0.0053198\\
+  \cellcolor{gray!6}{Calamenene} & \cellcolor{gray!6}{0.0527682} & \cellcolor{gray!6}{0.5593544} & \cellcolor{gray!6}{0.1657161}\\
+  Humulene & 0.0452563 & 0.0316314 & 0.0031415\\
+  \cellcolor{gray!6}{Aromadendrene} & \cellcolor{gray!6}{0.0383456} & \cellcolor{gray!6}{0.0126573} & \cellcolor{gray!6}{0.0399404}\\
+  Ocimene, <trans-beta-> & 0.0312297 & 0.0108197 & 0.0054715\\
+  \addlinespace
+  \cellcolor{gray!6}{2-Hexenal} & \cellcolor{gray!6}{0.0304577} & \cellcolor{gray!6}{0.0046560} & \cellcolor{gray!6}{0.0224511}\\
+  Caryophyllene <9-epi-(E)-> & 0.0298231 & 0.0631881 & 0.0059091\\
+  \cellcolor{gray!6}{2,4,6-Octatriene, 2,6-dimethyl-, (E,Z)-} & \cellcolor{gray!6}{0.0233474} & \cellcolor{gray!6}{0.0270255} & \cellcolor{gray!6}{0.0009908}\\
+  unknown & 0.0232887 & 0.0000441 & 0.0406786\\
+  \cellcolor{gray!6}{Camphor} & \cellcolor{gray!6}{0.0107637} & \cellcolor{gray!6}{0.0000204} & \cellcolor{gray!6}{0.0188011}\\
+  \addlinespace
+  Nerolidol & 0.0082779 & 0.0004926 & 0.0092053\\
+  \cellcolor{gray!6}{Farnesene <(E)-, beta->} & \cellcolor{gray!6}{0.0079276} & \cellcolor{gray!6}{0.0000150} & \cellcolor{gray!6}{0.0138472}\\
+  5-Hepten-2-one, <6-methyl-> & 0.0076194 & 0.4623979 & 0.0993761\\
+  \cellcolor{gray!6}{Trivertal} & \cellcolor{gray!6}{0.0060998} & \cellcolor{gray!6}{0.3219597} & \cellcolor{gray!6}{0.0388516}\\
+  Copaene <alpha-> & 0.0038213 & 0.0005826 & 0.0031106\\
+  \addlinespace
+  \cellcolor{gray!6}{Mesitylene} & \cellcolor{gray!6}{0.0036797} & \cellcolor{gray!6}{0.0431734} & \cellcolor{gray!6}{0.0303253}\\
+  Elemene <beta-> & 0.0028054 & 0.0000053 & 0.0049003\\
+  \cellcolor{gray!6}{Benzaldehyde <para-ethyl->} & \cellcolor{gray!6}{0.0021270} & \cellcolor{gray!6}{0.0000040} & \cellcolor{gray!6}{0.0037366}\\
+  Myrcene <beta-> & 0.0017155 & 0.1178053 & 0.0151776\\
+  \cellcolor{gray!6}{2-Thujene} & \cellcolor{gray!6}{0.0016199} & \cellcolor{gray!6}{0.0705489} & \cellcolor{gray!6}{0.0080563}\\
+  \addlinespace
+  Murrolene <alpha-> & 0.0013953 & 0.0209536 & 0.0153921\\
+  \cellcolor{gray!6}{2-Hexen-1-ol, acetate, (E)-} & \cellcolor{gray!6}{0.0009637} & \cellcolor{gray!6}{0.0778123} & \cellcolor{gray!6}{0.0032888}\\
+  Pinene <1R-alpha-> & 0.0005408 & 0.3041847 & 0.5552174\\
+  \cellcolor{gray!6}{Decanal} & \cellcolor{gray!6}{0.0004416} & \cellcolor{gray!6}{0.0358075} & \cellcolor{gray!6}{0.0548420}\\
+  Sulindac sulfide & 0.0003181 & 0.0001405 & 0.0004729\\
+  \addlinespace
+  \cellcolor{gray!6}{p-Cymene} & \cellcolor{gray!6}{0.0002002} & \cellcolor{gray!6}{0.0000645} & \cellcolor{gray!6}{0.0002396}\\
+  Squalene & 0.0001963 & 0.0000575 & 0.0000007\\
+  \cellcolor{gray!6}{Nonanal} & \cellcolor{gray!6}{0.0001381} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000506}\\
+  Pentane, 3-ethyl-2,2-dimethyl- & 0.0001346 & 0.0000093 & 0.0118856\\
+  \cellcolor{gray!6}{Carene <delta-3>} & \cellcolor{gray!6}{0.0000350} & \cellcolor{gray!6}{0.0008066} & \cellcolor{gray!6}{0.0002344}\\
+  \addlinespace
+  Bourbonene <beta-> & 0.0000233 & 0.0013823 & 0.0011959\\
+  \cellcolor{gray!6}{Cadina-1,4-diene <trans->} & \cellcolor{gray!6}{0.0000136} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000238}\\
+  Pentadecane & 0.0000111 & 0.0000122 & 0.0000332\\
+  \cellcolor{gray!6}{Acetic acid, hexyl ester} & \cellcolor{gray!6}{0.0000026} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000045}\\
+  Dodecane & 0.0000023 & 0.0000000 & 0.0000053\\
+  \addlinespace
+  \cellcolor{gray!6}{Cubebene <beta->} & \cellcolor{gray!6}{0.0000015} & \cellcolor{gray!6}{0.0000606} & \cellcolor{gray!6}{0.0000145}\\
+  Caryophyllene oxide & 0.0000003 & 0.0000261 & 0.0000035\\
+  \cellcolor{gray!6}{Zonarene} & \cellcolor{gray!6}{0.0000002} & \cellcolor{gray!6}{0.0000075} & \cellcolor{gray!6}{0.0000036}\\
+  Hexadecane, 1-bromo- & 0.0000001 & 0.0000000 & 0.0000003\\
+  \cellcolor{gray!6}{Bergamotene <alpha-, cis->} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000001} & \cellcolor{gray!6}{0.0000004}\\
+  \addlinespace
+  Phellandrene <beta-> & 0.0000000 & 0.0000102 & 0.0000194\\
+  \cellcolor{gray!6}{Terpineol <alpha->} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000000}\\
+  Limonene oxide, trans- & 0.0000000 & 0.0000000 & 0.0000000\\
+  \cellcolor{gray!6}{Undecane} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000000}\\
+  Hexanal <n-> & 0.0000000 & 0.0000000 & 0.0000000\\
+  \addlinespace
+  \cellcolor{gray!6}{Napthlene, 1,6-dimethyl-4-1-methylethyl)-)} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000000}\\
+  Toulene & 0.0000000 & 0.0000000 & 0.0000000\\
+  \bottomrule
+  \end{tabular}}
+  \end{table}
+  \begin{table}[!h]
+
+  \caption{\label{tab:all-corr-table}Correlation table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses.}
+  \centering
+  \resizebox{\linewidth}{!}{
+  \begin{tabular}[t]{lrrr}
+  \toprule
+  Chemical & PCA1 & PCA2 & PCA3\\
+  \midrule
+  \cellcolor{gray!6}{Benzaldehyde} & \cellcolor{gray!6}{0.0569214} & \cellcolor{gray!6}{-0.0777897} & \cellcolor{gray!6}{-0.1680448}\\
+  Xylene <m-> & 0.0330649 & -0.0302918 & -0.0874933\\
+  \cellcolor{gray!6}{Sulindac sulfide} & \cellcolor{gray!6}{0.0021211} & \cellcolor{gray!6}{-0.0005466} & \cellcolor{gray!6}{-0.0007970}\\
+  p-Cymene & 0.0016826 & -0.0003702 & -0.0005673\\
+  \cellcolor{gray!6}{Squalene} & \cellcolor{gray!6}{0.0016661} & \cellcolor{gray!6}{-0.0003497} & \cellcolor{gray!6}{0.0000317}\\
+  \addlinespace
+  Nonanal & 0.0013973 & 0.0000050 & 0.0002608\\
+  \cellcolor{gray!6}{Pentadecane} & \cellcolor{gray!6}{0.0003956} & \cellcolor{gray!6}{-0.0001613} & \cellcolor{gray!6}{-0.0002113}\\
+  Dodecane & 0.0001816 & -0.0000086 & 0.0000845\\
+  \cellcolor{gray!6}{Hexadecane, 1-bromo-} & \cellcolor{gray!6}{0.0000403} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000200}\\
+  Bergamotene <alpha-, cis-> & 0.0000165 & -0.0000132 & -0.0000235\\
+  \addlinespace
+  \cellcolor{gray!6}{Terpineol <alpha->} & \cellcolor{gray!6}{0.0000036} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000002}\\
+  Limonene oxide, trans- & 0.0000022 & -0.0000041 & -0.0000010\\
+  \cellcolor{gray!6}{Undecane} & \cellcolor{gray!6}{0.0000016} & \cellcolor{gray!6}{-0.0000065} & \cellcolor{gray!6}{-0.0000002}\\
+  Hexanal <n-> & 0.0000000 & 0.0000000 & 0.0000000\\
+  \cellcolor{gray!6}{Napthlene, 1,6-dimethyl-4-1-methylethyl)-)} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000000} & \cellcolor{gray!6}{0.0000000}\\
+  \addlinespace
+  Toulene & 0.0000000 & 0.0000000 & 0.0000000\\
+  \cellcolor{gray!6}{Phellandrene <beta->} & \cellcolor{gray!6}{-0.0000091} & \cellcolor{gray!6}{-0.0001475} & \cellcolor{gray!6}{-0.0001614}\\
+  Zonarene & -0.0000499 & -0.0001263 & -0.0000693\\
+  \cellcolor{gray!6}{Caryophyllene oxide} & \cellcolor{gray!6}{-0.0000610} & \cellcolor{gray!6}{-0.0002356} & \cellcolor{gray!6}{-0.0000683}\\
+  Cubebene <beta-> & -0.0001444 & -0.0003589 & -0.0001396\\
+  \addlinespace
+  \cellcolor{gray!6}{Acetic acid, hexyl ester} & \cellcolor{gray!6}{-0.0001900} & \cellcolor{gray!6}{-0.0000032} & \cellcolor{gray!6}{0.0000774}\\
+  Cadina-1,4-diene <trans-> & -0.0004390 & -0.0000074 & 0.0001788\\
+  \cellcolor{gray!6}{Bourbonene <beta->} & \cellcolor{gray!6}{-0.0005735} & \cellcolor{gray!6}{-0.0017143} & \cellcolor{gray!6}{-0.0012675}\\
+  Carene <delta-3> & -0.0007037 & -0.0013095 & -0.0005611\\
+  \cellcolor{gray!6}{Pentane, 3-ethyl-2,2-dimethyl-} & \cellcolor{gray!6}{-0.0013798} & \cellcolor{gray!6}{0.0001407} & \cellcolor{gray!6}{0.0039958}\\
+  \addlinespace
+  Decanal & -0.0024992 & -0.0087249 & -0.0085833\\
+  \cellcolor{gray!6}{Pinene <1R-alpha->} & \cellcolor{gray!6}{-0.0027658} & \cellcolor{gray!6}{-0.0254298} & \cellcolor{gray!6}{-0.0273103}\\
+  2-Hexen-1-ol, acetate, (E)- & -0.0036919 & 0.0128617 & -0.0021019\\
+  \cellcolor{gray!6}{Murrolene <alpha->} & \cellcolor{gray!6}{-0.0044423} & \cellcolor{gray!6}{-0.0066743} & \cellcolor{gray!6}{-0.0045472}\\
+  2-Thujene & -0.0047865 & 0.0122467 & -0.0032897\\
+  \addlinespace
+  \cellcolor{gray!6}{Myrcene <beta->} & \cellcolor{gray!6}{-0.0049257} & \cellcolor{gray!6}{0.0158254} & \cellcolor{gray!6}{-0.0045154}\\
+  Benzaldehyde <para-ethyl-> & -0.0054848 & -0.0000920 & 0.0022404\\
+  \cellcolor{gray!6}{Elemene <beta->} & \cellcolor{gray!6}{-0.0062990} & \cellcolor{gray!6}{-0.0001063} & \cellcolor{gray!6}{0.0025657}\\
+  Mesitylene & -0.0072141 & -0.0095804 & -0.0063826\\
+  \cellcolor{gray!6}{Copaene <alpha->} & \cellcolor{gray!6}{-0.0073516} & \cellcolor{gray!6}{-0.0011129} & \cellcolor{gray!6}{0.0020442}\\
+  \addlinespace
+  Trivertal & -0.0092882 & 0.0261622 & -0.0072244\\
+  \cellcolor{gray!6}{5-Hepten-2-one, <6-methyl->} & \cellcolor{gray!6}{-0.0103809} & \cellcolor{gray!6}{0.0313532} & \cellcolor{gray!6}{-0.0115541}\\
+  Farnesene <(E)-, beta-> & -0.0105888 & -0.0001787 & 0.0043130\\
+  \cellcolor{gray!6}{Nerolidol} & \cellcolor{gray!6}{-0.0108202} & \cellcolor{gray!6}{-0.0010233} & \cellcolor{gray!6}{0.0035165}\\
+  Camphor & -0.0123383 & -0.0002083 & 0.0050256\\
+  \addlinespace
+  \cellcolor{gray!6}{unknown} & \cellcolor{gray!6}{-0.0181488} & \cellcolor{gray!6}{-0.0003063} & \cellcolor{gray!6}{0.0073923}\\
+  2,4,6-Octatriene, 2,6-dimethyl-, (E,Z)- & -0.0181717 & 0.0075798 & -0.0011537\\
+  \cellcolor{gray!6}{Caryophyllene <9-epi-(E)->} & \cellcolor{gray!6}{-0.0205377} & \cellcolor{gray!6}{0.0115902} & \cellcolor{gray!6}{-0.0028174}\\
+  2-Hexenal & -0.0207550 & -0.0031461 & 0.0054918\\
+  \cellcolor{gray!6}{Ocimene, <trans-beta->} & \cellcolor{gray!6}{-0.0210164} & \cellcolor{gray!6}{0.0047960} & \cellcolor{gray!6}{0.0027111}\\
+  \addlinespace
+  Aromadendrene & -0.0232880 & -0.0051873 & 0.0073249\\
+  \cellcolor{gray!6}{Humulene} & \cellcolor{gray!6}{-0.0252997} & \cellcolor{gray!6}{0.0082004} & \cellcolor{gray!6}{-0.0020543}\\
+  Calamenene & -0.0273188 & 0.0344840 & 0.0149203\\
+  \cellcolor{gray!6}{Cadinene <delta->} & \cellcolor{gray!6}{-0.0319648} & \cellcolor{gray!6}{-0.0075670} & \cellcolor{gray!6}{0.0026733}\\
+  Copaene <beta-> & -0.0354912 & 0.0033165 & -0.0017522\\
+  \addlinespace
+  \cellcolor{gray!6}{3-Hexen-1-ol, (Z)-} & \cellcolor{gray!6}{-0.0571536} & \cellcolor{gray!6}{-0.0073374} & \cellcolor{gray!6}{0.0329533}\\
+  Nona-1,3,7-triene <4-8-dimethyl-, (E)-> & -0.0585232 & 0.0099479 & 0.0158949\\
+  \cellcolor{gray!6}{Germacrene D} & \cellcolor{gray!6}{-0.0740663} & \cellcolor{gray!6}{0.0102778} & \cellcolor{gray!6}{-0.0027056}\\
+  D-Limonene & -0.0822554 & 0.3014989 & -0.0954335\\
+  \cellcolor{gray!6}{Methyl Salicylate} & \cellcolor{gray!6}{-0.1230488} & \cellcolor{gray!6}{0.0195828} & \cellcolor{gray!6}{0.2451660}\\
+  \addlinespace
+  Pinene <beta-> & -0.1388051 & 0.0908903 & -0.0204740\\
+  \cellcolor{gray!6}{Farnesene <(E,E)-, alpha->} & \cellcolor{gray!6}{-0.1703874} & \cellcolor{gray!6}{0.0430163} & \cellcolor{gray!6}{0.0170290}\\
+  Pinene <alpha-> & -0.1768686 & 0.1517927 & -0.0220086\\
+  \cellcolor{gray!6}{Ocimene, <beta->} & \cellcolor{gray!6}{-0.2027449} & \cellcolor{gray!6}{0.1639320} & \cellcolor{gray!6}{-0.0248480}\\
+  3-Hexen-1-ol Acetate (Z)- & -0.2785843 & 0.0727671 & 0.1424874\\
+  \addlinespace
+  \cellcolor{gray!6}{Caryophyllene <beta->} & \cellcolor{gray!6}{-0.3896566} & \cellcolor{gray!6}{0.1118965} & \cellcolor{gray!6}{-0.0339373}\\
+  Murrolene <gamma-> & -1.0093357 & -0.1776544 & -0.0550508\\
+  \bottomrule
+  \end{tabular}}
+  \end{table}
   \hypertarget{results-olfact}{%
   \subsection{\texorpdfstring{\emph{A. swirskii} attraction to VOCs}{A. swirskii attraction to VOCs}}\label{results-olfact}}
   \begin{figure}
@@ -788,11 +975,6 @@
 
   \caption{\textit{Amblyseius swirskii} attraction to healthy and Rose Rosette Virus-infected Pink Double Knock Out® roses. Asterisks represent significant differences as calculated by $\chi^2$ contingency table tests for given probabilities. N.S. = not significant. RRV-infected vs Healthy Rose: $\chi^2 = 9.33$, $df = 1$, $\alpha = 0.05$, $p-value = 0.002$. Filtered Air vs Healthy Rose: $\chi^2 = 0.47$, df $=$ 1, $\alpha = 0.05$, $p-value = 0.4913$.}\label{fig:aswir-rrd}
   \end{figure}
-  \begin{itemize}
-  \tightlist
-  \item
-    Identify which RRV-infected rose compounds are attracting \emph{A. swirskii}
-  \end{itemize}
   \hypertarget{dis-vocs-olfact}{%
   \section{Discussion}\label{dis-vocs-olfact}}
 
@@ -804,13 +986,12 @@
   \hypertarget{introduction}{%
   \subsection{Introduction}\label{introduction}}
 
-  \hypertarget{materials-and-methods}{%
-  \section{Materials and Methods:}\label{materials-and-methods}}
-
   Spray applications done weekly for 12 weeks, on the same day each week, weather permitting.
-  The site had divided into two blocks, with ten plots of roses in each block. Each plot was (\textbf{lengthwidth?}), with approximately 12 roses, the six roses at the center of the plot were treated, while the adjacent roses on either side was left as a buffer between plots to avoid treatment drift.
+  The site had divided into two blocks, with ten plots of roses in each block. Each plot was 3 \si{m}\(^2\) with approximately 12 roses, the six roses at the center of the plot were treated, while the adjacent roses on either side was left as a buffer between plots to avoid treatment drift.
 
-  Five treatments were applied: tap water as a positive control, Kontos (Spirotetramat) Bayer - High rate as a negative control, Actigard 50 WG (acibenzolar-S-methyl) Syngenta - 100 \si{\milli\gram}/\si{\liter}, \emph{Amblyseius swirskii} (Predatory Mite) Arbico Organics - two sachets per rose in treated plot, and a combined treatment of Actigard - 100 \si{\milli\gram}/\si{\liter} + \emph{A. swirskii} - two sachets per rose in treated plot
+  Five treatments were applied: tap water as a positive control, Kontos (Spirotetramat) Bayer - High rate as a negative control, Actigard 50 WG (acibenzolar-S-methyl) Syngenta - 100 \si{\milli\gram}/\si{\liter}, \emph{Amblyseius swirskii} mini sachets with hooks (Ambly-S, Arbico Organics, Oro Valley, AZ, USA) - two sachets per rose in treated plot, and a combined treatment of Actigard - 100 \si{\milli\gram}/\si{\liter} + \emph{A. swirskii} - two sachets per rose in treated plot.
+
+  Samples were collected and processed using the same methods as previously described in \ref{mm-survey}.
   \begin{itemize}
   \tightlist
   \item
@@ -865,7 +1046,7 @@
 
   }
 
-  \caption{Integrated Pest Management trials on Pink Double Knock Out® roses to control \textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA with five treatments. water = Water Control, actigard = Actigard 50WG, Acibenzolar-S-methyl (Syngenta),  kontos = Kontos Miticide Insecticide (Bayer), mites = \textit{Amblyseius swirkii} predatory mite mini sachets on hooks (Arbico-organics), ninja = SP2700 (Trade name: Ninja, SePro), mites + ninja = \textit{A. swirskii} + Ninja combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were be taken weekly to record the numbers of herbivorous mites.}\label{fig:ipm}
+  \caption{Integrated Pest Management trials on Pink Double Knock Out® roses to control \textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA with five treatments. water = Water Control, actigard = Actigard® 50WG (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM),  kontos = Kontos® Miticide Insecticide (Bayer Corporation, Whippany, New Jersey, USA), Spirotetramat, mites = \textit{Amblyseius swirkii} predatory mite mini sachets on hooks (Ambly-S, Arbico Organics, Oro Valley, AZ, USA), ninja = SP2700 (Trade name: Ninja\texttrademark, SePro, Carmel, IN, USA), mites + ninja = \textit{A. swirskii} + Ninja combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were be taken weekly to record the numbers of herbivorous mites.}\label{fig:ipm}
   \end{figure}
   Our results suggest that SAR-induced plant defenses have the potential to manage populations of \emph{P. fructiphilus}, especially when integrating SAR-induction with predatory mites. A remaining concern is the effect that SAR-induction has on predatory mite releases: although predatory mites do not feed directly on plants, they may still be harmed via direct and indirect effects of SAR-induction Pappas et al. (2017). We assert that this less-explored area merits further research in order to optimize the integration of predatory mites with SAR.
 
@@ -1304,6 +1485,9 @@
 
   \leavevmode\vadjust pre{\hypertarget{ref-Buitenhuis2013}{}}%
   \textbf{Buitenhuis, R., L. Shipp, C. Scott-Dupree, A. Brommit, and W. Lee}. \textbf{2013}. Host plant effects on the behaviour and performance of {\emph{Amblyseius swirskii}} ({Acari}: {Phytoseiidae}). Experimental and Applied Acarology. 62: 171--180, DOI:\href{https://doi.org/10.1007/s10493-013-9735-1}{10.1007/s10493-013-9735-1}.
+
+  \leavevmode\vadjust pre{\hypertarget{ref-vanBuuren2011}{}}%
+  \textbf{Buuren, S. van, and K. Groothuis-Oudshoorn}. \textbf{2011}. {mice}: {Multivariate} {Imputation} by {Chained} {Equations} in {R}. Journal of Statistical Software. 45: 1--67.
 
   \leavevmode\vadjust pre{\hypertarget{ref-Byrne2019}{}}%
   \textbf{Byrne, D. H., P. E. Klein, C. Hall, M. Windham, F. M. Ochoa-Corona, J. Olson, M. Paret, B. Babu, G. Knox, R. Jordan, J. Hammond, K. Ong, R. Ochoa, G. B. Bauchan, T. Evans, A. Windham, F. Hale, M. A. Palma, L. Ribera, and H. B. Pemberton}. \textbf{2019}. Combating {Rose rosette disease} {US} national project. Acta Horticulturae. 203--212, DOI:\href{https://doi.org/10.17660/actahortic.2019.1232.30}{10.17660/actahortic.2019.1232.30}.
