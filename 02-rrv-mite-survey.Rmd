@@ -85,7 +85,7 @@ knitr::kable(format = "latex", booktabs = TRUE, caption = "Eriophyids and other 
 
 ```
 
-```{r pheno-graphs, fig.height=8, fig.width=10.5, fig.align="center", out.extra='angle=90', cache = TRUE, cache.extra = file.mtime('figure/rrv_pheno_bargraph.png'), fig.pos = 'h', fig.cap="Phenology of \\textit{P. fructiphilus} mite populations on roses in Leon County, Florida 2020-2021. Roses were pruned back heavily on July 9, 2020.", out.width="100%", warning=FALSE}
+```{r pheno-graphs, fig.height=8, fig.width=10.5, fig.align="center", cache = TRUE, cache.extra = file.mtime('figure/rrv_pheno_bargraph.png'), fig.pos = 'h', fig.cap="Phenology of \\textit{P. fructiphilus} mite populations on roses in Leon County, Florida 2020-2021. Roses were pruned back heavily on July 9, 2020.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_pheno_bargraph.png')
 ```
 
