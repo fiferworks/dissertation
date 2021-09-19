@@ -48,7 +48,7 @@ knitr::include_graphics('figure/rrv_survey_map_years_others.png')
 ```
 
 
-```{r survey-table-1, echo = FALSE, warning = FALSE, caption = "\\label{tab:survey-table-1}"}
+```{r survey-table-1, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_survey_fl_table.csv'), caption = "\\label{tab:survey-table-1}"}
 df_fl <-
   read_csv('data/rrv_survey_fl_table.csv', show_col_types = FALSE)
 df_fl$erios_per <- round(df_fl$erios_per, digits = 1)
