@@ -83,7 +83,7 @@ for (file in gcfiles) {
     gc_data_temp <- gc_data_temp %>% slice(-(1:2))
     
     # dropping unnecessary columns
-    gc_data_temp <- select(gc_data_temp,-'...9',-'Amount')
+    gc_data_temp <- select(gc_data_temp, -'...9', -'Amount')
     
     # grabs the file name of the file being processed
     path_name <- file
@@ -287,6 +287,11 @@ gc_data$`Peak Name` <- sub("NA .*$", NA, gc_data$`Peak Name`)
 gc_data$`Peak Name` <-
   ifelse(as.character(gc_data$`Peak Name`) != "", gc_data$`Peak Name`, NA)
 
+####FIXING MISNAMED CHEMICAL####
+gc_data$`Peak Name` <-
+  sub("^Caryophyllene$",
+      "Caryophyllene <beta->",
+      gc_data$`Peak Name`)
 
 ####MAKE COLUMN THAT DIVIDES AREA OF EACH CHEMICAL BY THE INTERNAL STANDARD ####
 # tibble of internal standards
@@ -332,8 +337,8 @@ df <-
 # loop to calculate area relative to the internal standard of each sample
 for (i in 1:length(sample_list)) {
   if (exists("df")) {
-    filtered_peaks <- Peaks[Peaks$Sample == sample_list[i], ]
-    filtered_is <- IntStds[IntStds$Sample == sample_list[i], ]
+    filtered_peaks <- Peaks[Peaks$Sample == sample_list[i],]
+    filtered_is <- IntStds[IntStds$Sample == sample_list[i],]
     tmp <-
       mutate(
         filtered_peaks,
