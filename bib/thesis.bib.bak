@@ -1182,7 +1182,7 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
 @Article{Buitenhuis2014,
   author    = {Rosemarije Buitenhuis and Erik Glemser and Angela Brommit},
   journal   = {Biocontrol Science and Technology},
-  title     = {Practical placement improves the performance of slow release sachets {ofNeoseiulus} cucumeris},
+  title     = {Practical placement improves the performance of slow release sachets of {\textit{Neoseiulus cucumeris}}},
   year      = {2014},
   month     = jul,
   number    = {10},
@@ -3607,6 +3607,14 @@ Conclusions Herbivores have evolved diverse strategies, which are not mutually e
   publisher = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
 }
 
+@Manual{Kassambara2020,
+  title  = {{factoextra}: extract and visualize the results of multivariate data analyses},
+  author = {Alboukadel Kassambara and Fabian Mundt},
+  note   = {R package version 1.0.7},
+  year   = {2020},
+  url    = {https://CRAN.R-project.org/package=factoextra},
+}
+
 @Article{Kassar1990,
   author  = {Kassar, A. and Amrine Jr, J. W.},
   title   = {Rearing and development of {\textit{Phyllocoptes fructiphilus}} ({Acari}: {Eriophyidae})},
@@ -3971,6 +3979,14 @@ Conclusions Herbivores have evolved diverse strategies, which are not mutually e
   volume    = {452-453},
   doi       = {10.1016/j.virol.2014.01.007},
   publisher = {Elsevier {BV}},
+}
+
+@Manual{Konopka2020,
+  title  = {{umap}: {Uniform} {Manifold} {Approximation} and {Projection}},
+  author = {Tomasz Konopka},
+  note   = {R package version 0.2.7.0},
+  year   = {2020},
+  url    = {https://CRAN.R-project.org/package=umap},
 }
 
 @Book{Krantz2009,
@@ -6869,6 +6885,15 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {American Society for Microbiology},
 }
 
+@Manual{RCT2021,
+  title        = {R: a language and environment for statistical computing},
+  address      = {Vienna, Austria},
+  author       = {{R Core Team}},
+  organization = {R Foundation for Statistical Computing},
+  year         = {2021},
+  url          = {https://www.R-project.org/},
+}
+
 @Article{Teodoro2006,
   author    = {Teodoro, A. V. and Reis, P. R.},
   journal   = {Brazilian Journal of Biology},
@@ -7053,6 +7078,14 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   volume    = {39},
   doi       = {10.1071/ea99028},
   publisher = {{CSIRO} Publishing},
+}
+
+@Manual{Urbanek2020,
+  title  = {Cairo: {R} graphics device using cairo graphics library for creating high-quality bitmap ({PNG}, {JPEG}, {TIFF}), vector ({PDF}, {SVG}, {PostScript}) and display ({X11} and {Win32}) output},
+  author = {Simon Urbanek and Jeffrey Horner},
+  note   = {R package version 1.5-12.2},
+  year   = {2020},
+  url    = {https://CRAN.R-project.org/package=Cairo},
 }
 
 @TechReport{NASS2019,
