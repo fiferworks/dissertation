@@ -21,14 +21,6 @@ df <- read_csv("data/rrv_volatiles_pca_table.csv")
 # removing contaminant
 df <- df %>% select(-Styrene)
 
-# making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
-rrd_spme <-
-  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
-
-# qsep only
-rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
-
 # averaging the baseline plants from the data,
 # they overwhelm components from rrv plants
 avg_clean_rose_qsep <- df %>%
@@ -46,11 +38,19 @@ df <- bind_rows(df, avg_clean_rose_qsep)
 df <- df %>%
   filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
+# making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
+rrd_spme <-
+  df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if( ~ any(. > 0))
+
+# qsep only
+rrd_qsep <-
+  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if( ~ any(. > 0))
+
 ####PRINCIPAL COMPONENT ANALYSIS####
 # prcomp uses singular value decomposition (SVD)
 # quick helper function to run for each dataframe
 run_pca <- function(data) {
-  data %>% select(-Sample, -Treatment,-`Injection Method`) %>%
+  data %>% select(-Sample,-Treatment, -`Injection Method`) %>%
     prcomp(center = TRUE, scale = FALSE)
 }
 

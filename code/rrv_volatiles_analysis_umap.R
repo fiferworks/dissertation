@@ -22,6 +22,27 @@ df <- read_csv("data/rrv_volatiles_pca_table.csv")
 # removing contaminant
 df <- df %>% select(-Styrene)
 
+# averaging the baseline plants from the data,
+# they overwhelm components from rrv plants
+avg_clean_rose_qsep <- df %>%
+  filter(str_detect(Sample, "rose_clean_greenhouse*"))
+
+avg_clean_rose_qsep <-
+  avg_clean_rose_qsep %>% summarise(across(is.numeric, mean))
+
+# there is no injection method, it is an average of the baseline roses
+avg_clean_rose_qsep <-
+  avg_clean_rose_qsep %>% add_column('Sample' = 'avg_clean_rose_qsep', 'Treatment' = 'untreated')
+
+df <- bind_rows(df, avg_clean_rose_qsep)
+
+df <- df %>%
+  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
+
+df <- df %>%
+  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
+
+
 # making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
 rrd_spme <-
   df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
@@ -43,25 +64,12 @@ cont_qsep <- head(cont_qsep %>% arrange(desc(PCA1)), n = 6)
 rrd_qsep <-
   rrd_qsep %>% select(Sample, Treatment, `Injection Method`, cont_qsep$Chemical)
 
-# averaging the baseline plants from the data,
-# they overwhelm components from rrv plants
-avg_clean_rose_qsep <- df %>%
-  filter(str_detect(Sample, "rose_clean_greenhouse*"))
-
-avg_clean_rose_qsep <-
-  avg_clean_rose_qsep %>% summarise(across(is.numeric, mean))
-
-# there is no injection method, it is an average of the baseline roses
-avg_clean_rose_qsep <-
-  avg_clean_rose_qsep %>% add_column('Sample' = 'avg_clean_rose_qsep', 'Treatment' = 'untreated')
-
-df <- bind_rows(df, avg_clean_rose_qsep)
-
-df <- df %>%
-  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
-
-df <- df %>%
-  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
+# for all volatiles
+cont_all <-
+  read_csv("data/rrv_volatiles_contribution_table_pca_dat.csv")
+cont_all <- head(cont_all %>% arrange(desc(PCA1)), n = 6)
+df <-
+  df %>% select(Sample, Treatment, `Injection Method`, cont_all$Chemical)
 
 # setting up parameters for UMAP
 custom.config = umap.defaults
