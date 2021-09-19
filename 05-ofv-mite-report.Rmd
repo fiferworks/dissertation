@@ -17,7 +17,7 @@ grid::grid.raster(tiff::readTIFF("figure/symp-ofv-asp.tif"))
 ```
 
 
-```{r tab-1, echo = FALSE, warning = FALSE, caption = "\\label{tab:tab-1}"}
+```{r tab-1, echo = FALSE, warning = FALSE, cache = TRUE, caption = "\\label{tab:tab-1}"}
 tribble(~'Scientific Name', ~'Common Names', ~'County', ~'Strains Detected',
         "\\textit{Liriope muscari} cv. ‘Gigantea’\\textsuperscript{*} (Decaisne) Bailey", "Lilyturf, Orchardgrass, Monkeygrass", "Leon \\& Alachua", "OFV-Orc1 \\& OFV-Orc2",
         "\\textit{Ophiopogon intermedius}\\textsuperscript{\\dag} Don", "Aztec Grass, Argenteomarginatus", "Leon", "OFV-Orc1 \\& OFV-Orc2",
