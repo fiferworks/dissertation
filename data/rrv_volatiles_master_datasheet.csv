@@ -14077,7 +14077,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/bag_blank_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_01,NA,TIC,blank,NA
 ./data/rrd_qsep/TIC/bag_blank_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_01,NA,TIC,blank,NA
 ./data/rrd_qsep/TIC/bag_blank_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_01,NA,TIC,blank,NA
-./data/rrd_qsep/TIC/bag_blank_01_Integration.txt,NA,Caryophyllene,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_01,NA,TIC,blank,NA
+./data/rrd_qsep/TIC/bag_blank_01_Integration.txt,NA,Caryophyllene <beta->,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_01,NA,TIC,blank,NA
 ./data/rrd_qsep/TIC/bag_blank_01_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_01,NA,TIC,blank,NA
 ./data/rrd_qsep/TIC/bag_blank_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_01,NA,TIC,blank,NA
 ./data/rrd_qsep/TIC/bag_blank_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_01,NA,TIC,blank,NA
@@ -14203,7 +14203,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/bag_blank_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_02,NA,TIC,blank,NA
 ./data/rrd_qsep/TIC/bag_blank_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_02,NA,TIC,blank,NA
 ./data/rrd_qsep/TIC/bag_blank_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_02,NA,TIC,blank,NA
-./data/rrd_qsep/TIC/bag_blank_02_Integration.txt,32,Caryophyllene,13.816,7593671.946,212508057.793,0.36,0.63,rrd_qsep,blank,bag_blank_02,NA,TIC,blank,0.17993212257064115
+./data/rrd_qsep/TIC/bag_blank_02_Integration.txt,32,Caryophyllene <beta->,13.816,7593671.946,212508057.793,0.36,0.63,rrd_qsep,blank,bag_blank_02,NA,TIC,blank,0.17993212257064115
 ./data/rrd_qsep/TIC/bag_blank_02_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_02,NA,TIC,blank,NA
 ./data/rrd_qsep/TIC/bag_blank_02_Integration.txt,33,NA,14.003,3779610.999,167392325.845,0.18,0.5,rrd_qsep,blank,bag_blank_02,NA,TIC,blank,0.0895579153771112
 ./data/rrd_qsep/TIC/bag_blank_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,blank,bag_blank_02,NA,TIC,blank,NA
@@ -14328,7 +14328,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt,13,Caryophyllene,13.819,35256559.03,1213491669.812,7.3,8.89,rrd_qsep,rose,rose_clean_greenhouse_01-1,untreated,TIC,greenhouse,1.1949645557137463
+./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt,13,Caryophyllene <beta->,13.819,35256559.03,1213491669.812,7.3,8.89,rrd_qsep,rose,rose_clean_greenhouse_01-1,untreated,TIC,greenhouse,1.1949645557137463
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt,14,Copaene <beta->,13.918,5605318.574,192862588.8,1.16,1.41,rrd_qsep,rose,rose_clean_greenhouse_01-1,untreated,TIC,greenhouse,0.18998328832131406
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-1,untreated,TIC,greenhouse,NA
@@ -14452,7 +14452,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt,6,Caryophyllene,13.807,2305419.213,90350659.79,3.84,3.68,rrd_qsep,rose,rose_clean_greenhouse_01-2,untreated,TIC,greenhouse,0.05758842992700038
+./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt,6,Caryophyllene <beta->,13.807,2305419.213,90350659.79,3.84,3.68,rrd_qsep,rose,rose_clean_greenhouse_01-2,untreated,TIC,greenhouse,0.05758842992700038
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt,7,Copaene <beta->,13.909,191094.937,7297175.515,0.32,0.3,rrd_qsep,rose,rose_clean_greenhouse_01-2,untreated,TIC,greenhouse,0.00477347344325661
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_01-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_01-2,untreated,TIC,greenhouse,NA
@@ -14576,7 +14576,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt,NA,Caryophyllene,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-1,untreated,TIC,greenhouse,NA
+./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt,NA,Caryophyllene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-1,untreated,TIC,greenhouse,NA
@@ -14701,7 +14701,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt,17,Caryophyllene,13.814,35481140.267,1285923405.351,7.35,8.31,rrd_qsep,rose,rose_clean_greenhouse_02-2,untreated,TIC,greenhouse,0.9085834225599093
+./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt,17,Caryophyllene <beta->,13.814,35481140.267,1285923405.351,7.35,8.31,rrd_qsep,rose,rose_clean_greenhouse_02-2,untreated,TIC,greenhouse,0.9085834225599093
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt,18,Copaene <beta->,13.913,3993559.683,151427614.648,0.83,0.98,rrd_qsep,rose,rose_clean_greenhouse_02-2,untreated,TIC,greenhouse,0.10226509344605689
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-2,untreated,TIC,greenhouse,NA
@@ -14825,7 +14825,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt,15,Caryophyllene,13.815,39673122.838,1394445905.525,7.31,9.48,rrd_qsep,rose,rose_clean_greenhouse_02-3,untreated,TIC,greenhouse,1.1194204429158996
+./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt,15,Caryophyllene <beta->,13.815,39673122.838,1394445905.525,7.31,9.48,rrd_qsep,rose,rose_clean_greenhouse_02-3,untreated,TIC,greenhouse,1.1194204429158996
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt,16,Copaene <beta->,13.913,5777764.61,222283233.502,1.06,1.51,rrd_qsep,rose,rose_clean_greenhouse_02-3,untreated,TIC,greenhouse,0.16302593181787609
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_02-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_02-3,untreated,TIC,greenhouse,NA
@@ -14950,7 +14950,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt,9,Caryophyllene,13.813,13360083.194,499989560.05,3.75,4.27,rrd_qsep,rose,rose_clean_greenhouse_03-1,untreated,TIC,greenhouse,0.5844381263165589
+./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt,9,Caryophyllene <beta->,13.813,13360083.194,499989560.05,3.75,4.27,rrd_qsep,rose,rose_clean_greenhouse_03-1,untreated,TIC,greenhouse,0.5844381263165589
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-1,untreated,TIC,greenhouse,NA
@@ -15074,7 +15074,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt,7,Caryophyllene,13.806,8298714.964,312426950.057,6.34,6.44,rrd_qsep,rose,rose_clean_greenhouse_03-2,untreated,TIC,greenhouse,0.3503394470045432
+./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt,7,Caryophyllene <beta->,13.806,8298714.964,312426950.057,6.34,6.44,rrd_qsep,rose,rose_clean_greenhouse_03-2,untreated,TIC,greenhouse,0.3503394470045432
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt,8,Copaene <beta->,13.908,983794.406,39193975.798,0.75,0.81,rrd_qsep,rose,rose_clean_greenhouse_03-2,untreated,TIC,greenhouse,0.04153197087252111
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_03-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_03-2,untreated,TIC,greenhouse,NA
@@ -15199,7 +15199,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt,9,Caryophyllene,13.818,23816936.542,892607034.489,8.2,9.47,rrd_qsep,rose,rose_clean_greenhouse_04-1,untreated,TIC,greenhouse,0.7219409361099488
+./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt,9,Caryophyllene <beta->,13.818,23816936.542,892607034.489,8.2,9.47,rrd_qsep,rose,rose_clean_greenhouse_04-1,untreated,TIC,greenhouse,0.7219409361099488
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-1,untreated,TIC,greenhouse,NA
@@ -15325,7 +15325,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt,18,Caryophyllene,13.816,49766481.662,1779814550.995,9.47,12.42,rrd_qsep,rose,rose_clean_greenhouse_04-2,untreated,TIC,greenhouse,1.4479874004118927
+./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt,18,Caryophyllene <beta->,13.816,49766481.662,1779814550.995,9.47,12.42,rrd_qsep,rose,rose_clean_greenhouse_04-2,untreated,TIC,greenhouse,1.4479874004118927
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt,19,Copaene <beta->,13.915,6581730.166,260089390.935,1.25,1.81,rrd_qsep,rose,rose_clean_greenhouse_04-2,untreated,TIC,greenhouse,0.19149962052784336
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_04-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_04-2,untreated,TIC,greenhouse,NA
@@ -15449,7 +15449,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt,15,Caryophyllene,13.842,130771070.784,3647772373.468,12.25,13.72,rrd_qsep,rose,rose_clean_greenhouse_05-1,untreated,TIC,greenhouse,2.4779901341956285
+./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt,15,Caryophyllene <beta->,13.842,130771070.784,3647772373.468,12.25,13.72,rrd_qsep,rose,rose_clean_greenhouse_05-1,untreated,TIC,greenhouse,2.4779901341956285
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt,16,Copaene <beta->,13.927,15902165.3,561137825.43,1.49,2.11,rrd_qsep,rose,rose_clean_greenhouse_05-1,untreated,TIC,greenhouse,0.3013312385492019
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-1,untreated,TIC,greenhouse,NA
@@ -15574,7 +15574,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt,14,Caryophyllene,13.809,28832049.799,1076878572.725,9.59,11.34,rrd_qsep,rose,rose_clean_greenhouse_05-2,untreated,TIC,greenhouse,0.8924357776595215
+./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt,14,Caryophyllene <beta->,13.809,28832049.799,1076878572.725,9.59,11.34,rrd_qsep,rose,rose_clean_greenhouse_05-2,untreated,TIC,greenhouse,0.8924357776595215
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt,15,Copaene <beta->,13.911,2660152.888,111783360.582,0.88,1.18,rrd_qsep,rose,rose_clean_greenhouse_05-2,untreated,TIC,greenhouse,0.08233946694202234
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_05-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_05-2,untreated,TIC,greenhouse,NA
@@ -15699,7 +15699,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt,10,Caryophyllene,13.826,59265268.323,2115818505.499,11.53,14.37,rrd_qsep,rose,rose_clean_greenhouse_06-1,untreated,TIC,greenhouse,1.5881934564909257
+./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt,10,Caryophyllene <beta->,13.826,59265268.323,2115818505.499,11.53,14.37,rrd_qsep,rose,rose_clean_greenhouse_06-1,untreated,TIC,greenhouse,1.5881934564909257
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-1,untreated,TIC,greenhouse,NA
@@ -15824,7 +15824,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt,22,Caryophyllene,13.819,59435163.803,2004800685.153,6.73,9.25,rrd_qsep,rose,rose_clean_greenhouse_06-2,untreated,TIC,greenhouse,4.948181328750789
+./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt,22,Caryophyllene <beta->,13.819,59435163.803,2004800685.153,6.73,9.25,rrd_qsep,rose,rose_clean_greenhouse_06-2,untreated,TIC,greenhouse,4.948181328750789
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt,23,Copaene <beta->,13.915,10326821.403,399473730.481,1.17,1.84,rrd_qsep,rose,rose_clean_greenhouse_06-2,untreated,TIC,greenhouse,0.8597433166170463
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_06-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_06-2,untreated,TIC,greenhouse,NA
@@ -15949,7 +15949,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_07-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_07-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_07-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt,12,Caryophyllene,13.813,5321566.698,197438176.191,4.31,4.48,rrd_qsep,rose,rose_clean_greenhouse_07-1,untreated,TIC,greenhouse,0.16094002273910396
+./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt,12,Caryophyllene <beta->,13.813,5321566.698,197438176.191,4.31,4.48,rrd_qsep,rose,rose_clean_greenhouse_07-1,untreated,TIC,greenhouse,0.16094002273910396
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_07-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_07-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_07-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_07-1,untreated,TIC,greenhouse,NA
@@ -16073,7 +16073,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt,12,Caryophyllene,13.815,16142150.324,613366455.545,9.28,10.45,rrd_qsep,rose,rose_clean_greenhouse_08-1,untreated,TIC,greenhouse,0.8547740599495331
+./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt,12,Caryophyllene <beta->,13.815,16142150.324,613366455.545,9.28,10.45,rrd_qsep,rose,rose_clean_greenhouse_08-1,untreated,TIC,greenhouse,0.8547740599495331
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt,13,Copaene <beta->,13.917,1268307.836,49620831.283,0.73,0.85,rrd_qsep,rose,rose_clean_greenhouse_08-1,untreated,TIC,greenhouse,0.06716060849908403
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-1,untreated,TIC,greenhouse,NA
@@ -16199,7 +16199,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt,17,Caryophyllene,13.813,34605903.602,1270963943.228,10.11,11.69,rrd_qsep,rose,rose_clean_greenhouse_08-2,untreated,TIC,greenhouse,0.9431972649021385
+./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt,17,Caryophyllene <beta->,13.813,34605903.602,1270963943.228,10.11,11.69,rrd_qsep,rose,rose_clean_greenhouse_08-2,untreated,TIC,greenhouse,0.9431972649021385
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt,18,Copaene <beta->,13.912,2835851.643,109833295.813,0.83,1.01,rrd_qsep,rose,rose_clean_greenhouse_08-2,untreated,TIC,greenhouse,0.07729223152523755
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-2,untreated,TIC,greenhouse,NA
@@ -16323,7 +16323,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt,13,Caryophyllene,13.806,7185009.04,262761278.88,6.1,6.66,rrd_qsep,rose,rose_clean_greenhouse_08-3,untreated,TIC,greenhouse,0.2283944095298154
+./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt,13,Caryophyllene <beta->,13.806,7185009.04,262761278.88,6.1,6.66,rrd_qsep,rose,rose_clean_greenhouse_08-3,untreated,TIC,greenhouse,0.2283944095298154
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt,14,Copaene <beta->,13.911,733822.828,27615686.477,0.62,0.7,rrd_qsep,rose,rose_clean_greenhouse_08-3,untreated,TIC,greenhouse,0.023326488605303033
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_08-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_08-3,untreated,TIC,greenhouse,NA
@@ -16448,7 +16448,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt,12,Caryophyllene,13.817,6792225.11,247979330.766,1.66,1.98,rrd_qsep,rose,rose_clean_greenhouse_09-1,untreated,TIC,greenhouse,0.23582153815229945
+./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt,12,Caryophyllene <beta->,13.817,6792225.11,247979330.766,1.66,1.98,rrd_qsep,rose,rose_clean_greenhouse_09-1,untreated,TIC,greenhouse,0.23582153815229945
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-1,untreated,TIC,greenhouse,NA
@@ -16572,7 +16572,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt,10,Caryophyllene,13.802,2357923.107,95255348.941,3.6,4.24,rrd_qsep,rose,rose_clean_greenhouse_09-2,untreated,TIC,greenhouse,0.0915286998055887
+./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt,10,Caryophyllene <beta->,13.802,2357923.107,95255348.941,3.6,4.24,rrd_qsep,rose,rose_clean_greenhouse_09-2,untreated,TIC,greenhouse,0.0915286998055887
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_09-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_09-2,untreated,TIC,greenhouse,NA
@@ -16696,7 +16696,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt,15,Caryophyllene,13.822,46206943.044,1581311899.641,13.1,15.12,rrd_qsep,rose,rose_clean_greenhouse_10-1,untreated,TIC,greenhouse,1.7076493167186917
+./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt,15,Caryophyllene <beta->,13.822,46206943.044,1581311899.641,13.1,15.12,rrd_qsep,rose,rose_clean_greenhouse_10-1,untreated,TIC,greenhouse,1.7076493167186917
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt,16,Copaene <beta->,13.92,4420531.641,163596248.492,1.25,1.56,rrd_qsep,rose,rose_clean_greenhouse_10-1,untreated,TIC,greenhouse,0.16336760969231034
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-1,untreated,TIC,greenhouse,NA
@@ -16822,7 +16822,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt,16,Caryophyllene,13.813,40542567.977,1489944525.077,10.34,13.26,rrd_qsep,rose,rose_clean_greenhouse_10-2,untreated,TIC,greenhouse,1.0944971041266722
+./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt,16,Caryophyllene <beta->,13.813,40542567.977,1489944525.077,10.34,13.26,rrd_qsep,rose,rose_clean_greenhouse_10-2,untreated,TIC,greenhouse,1.0944971041266722
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt,17,Copaene <beta->,13.908,4965244.011,191518481.374,1.27,1.7,rrd_qsep,rose,rose_clean_greenhouse_10-2,untreated,TIC,greenhouse,0.13404294455163251
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-2,untreated,TIC,greenhouse,NA
@@ -16948,7 +16948,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt,11,Caryophyllene,13.81,22905018.817,855106868.432,7.11,8.12,rrd_qsep,rose,rose_clean_greenhouse_10-3,untreated,TIC,greenhouse,0.5267270395829806
+./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt,11,Caryophyllene <beta->,13.81,22905018.817,855106868.432,7.11,8.12,rrd_qsep,rose,rose_clean_greenhouse_10-3,untreated,TIC,greenhouse,0.5267270395829806
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt,12,Copaene <beta->,13.909,2033864.438,79534289.92,0.63,0.76,rrd_qsep,rose,rose_clean_greenhouse_10-3,untreated,TIC,greenhouse,0.046771033147797944
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_10-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_10-3,untreated,TIC,greenhouse,NA
@@ -17072,7 +17072,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt,12,Caryophyllene,13.813,6862944.449,257354221.156,2.51,2.8,rrd_qsep,rose,rose_clean_greenhouse_11-1,untreated,TIC,greenhouse,0.21829602528470418
+./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt,12,Caryophyllene <beta->,13.813,6862944.449,257354221.156,2.51,2.8,rrd_qsep,rose,rose_clean_greenhouse_11-1,untreated,TIC,greenhouse,0.21829602528470418
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-1,untreated,TIC,greenhouse,NA
@@ -17199,7 +17199,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt,18,Caryophyllene,13.813,42626526.354,1526872332.257,10.14,12.56,rrd_qsep,rose,rose_clean_greenhouse_11-2,untreated,TIC,greenhouse,1.3464536901359958
+./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt,18,Caryophyllene <beta->,13.813,42626526.354,1526872332.257,10.14,12.56,rrd_qsep,rose,rose_clean_greenhouse_11-2,untreated,TIC,greenhouse,1.3464536901359958
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt,19,Copaene <beta->,13.912,4228337.421,165361557.392,1.01,1.36,rrd_qsep,rose,rose_clean_greenhouse_11-2,untreated,TIC,greenhouse,0.13356144660638816
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-2,untreated,TIC,greenhouse,NA
@@ -17323,7 +17323,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt,15,Caryophyllene,13.813,42672367.09,1519429116.611,11.7,13.75,rrd_qsep,rose,rose_clean_greenhouse_11-3,untreated,TIC,greenhouse,1.319571279986385
+./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt,15,Caryophyllene <beta->,13.813,42672367.09,1519429116.611,11.7,13.75,rrd_qsep,rose,rose_clean_greenhouse_11-3,untreated,TIC,greenhouse,1.319571279986385
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt,16,Copaene <beta->,13.911,3654641.961,145536111.156,1,1.32,rrd_qsep,rose,rose_clean_greenhouse_11-3,untreated,TIC,greenhouse,0.11301366432749071
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_11-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_11-3,untreated,TIC,greenhouse,NA
@@ -17447,7 +17447,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt,11,Caryophyllene,13.815,18585858.97,684978510.431,6.84,7.56,rrd_qsep,rose,rose_clean_greenhouse_12-1,untreated,TIC,greenhouse,0.9749658300158095
+./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt,11,Caryophyllene <beta->,13.815,18585858.97,684978510.431,6.84,7.56,rrd_qsep,rose,rose_clean_greenhouse_12-1,untreated,TIC,greenhouse,0.9749658300158095
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt,12,Copaene <beta->,13.917,2353440.694,92150035.171,0.87,1.02,rrd_qsep,rose,rose_clean_greenhouse_12-1,untreated,TIC,greenhouse,0.123455378808284
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-1,untreated,TIC,greenhouse,NA
@@ -17572,7 +17572,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt,12,Caryophyllene,13.808,13668507.227,492713552.823,6.42,7.08,rrd_qsep,rose,rose_clean_greenhouse_12-2,untreated,TIC,greenhouse,0.36743514167133245
+./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt,12,Caryophyllene <beta->,13.808,13668507.227,492713552.823,6.42,7.08,rrd_qsep,rose,rose_clean_greenhouse_12-2,untreated,TIC,greenhouse,0.36743514167133245
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt,13,Copaene <beta->,13.91,1424077.81,49299544.698,0.67,0.71,rrd_qsep,rose,rose_clean_greenhouse_12-2,untreated,TIC,greenhouse,0.038281885737656854
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-2,untreated,TIC,greenhouse,NA
@@ -17696,7 +17696,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt,18,Caryophyllene,13.816,61468999.378,2099249497.931,9.79,12.4,rrd_qsep,rose,rose_clean_greenhouse_12-3,untreated,TIC,greenhouse,1.4814948964871164
+./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt,18,Caryophyllene <beta->,13.816,61468999.378,2099249497.931,9.79,12.4,rrd_qsep,rose,rose_clean_greenhouse_12-3,untreated,TIC,greenhouse,1.4814948964871164
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt,19,Copaene <beta->,13.911,8850592.64,346471825.154,1.41,2.05,rrd_qsep,rose,rose_clean_greenhouse_12-3,untreated,TIC,greenhouse,0.21331253086477459
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_12-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_12-3,untreated,TIC,greenhouse,NA
@@ -17821,7 +17821,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt,7,Caryophyllene,13.813,3558582.472,157181252.953,1.8,2.28,rrd_qsep,rose,rose_clean_greenhouse_13-1,untreated,TIC,greenhouse,0.10868668828252827
+./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt,7,Caryophyllene <beta->,13.813,3558582.472,157181252.953,1.8,2.28,rrd_qsep,rose,rose_clean_greenhouse_13-1,untreated,TIC,greenhouse,0.10868668828252827
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-1,untreated,TIC,greenhouse,NA
@@ -17945,7 +17945,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt,14,Caryophyllene,13.807,25137763.6,927695851.086,10.16,12.73,rrd_qsep,rose,rose_clean_greenhouse_13-2,untreated,TIC,greenhouse,0.8264676968472842
+./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt,14,Caryophyllene <beta->,13.807,25137763.6,927695851.086,10.16,12.73,rrd_qsep,rose,rose_clean_greenhouse_13-2,untreated,TIC,greenhouse,0.8264676968472842
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt,15,Copaene <beta->,13.905,2744026.847,109173894.322,1.11,1.5,rrd_qsep,rose,rose_clean_greenhouse_13-2,untreated,TIC,greenhouse,0.09021683807732224
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-2,untreated,TIC,greenhouse,NA
@@ -18071,7 +18071,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt,17,Caryophyllene,13.81,39818619.185,1448149658.86,11.09,13.83,rrd_qsep,rose,rose_clean_greenhouse_13-3,untreated,TIC,greenhouse,1.7186305341016808
+./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt,17,Caryophyllene <beta->,13.81,39818619.185,1448149658.86,11.09,13.83,rrd_qsep,rose,rose_clean_greenhouse_13-3,untreated,TIC,greenhouse,1.7186305341016808
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt,18,Copaene <beta->,13.909,4448577.416,179428259.289,1.24,1.71,rrd_qsep,rose,rose_clean_greenhouse_13-3,untreated,TIC,greenhouse,0.1920071850038653
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_13-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_13-3,untreated,TIC,greenhouse,NA
@@ -18196,7 +18196,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt,11,Caryophyllene,13.814,3561290.041,137974291.205,1.65,2.01,rrd_qsep,rose,rose_clean_greenhouse_14-1,untreated,TIC,greenhouse,0.12514015523990263
+./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt,11,Caryophyllene <beta->,13.814,3561290.041,137974291.205,1.65,2.01,rrd_qsep,rose,rose_clean_greenhouse_14-1,untreated,TIC,greenhouse,0.12514015523990263
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-1,untreated,TIC,greenhouse,NA
@@ -18322,7 +18322,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt,19,Caryophyllene,13.814,51283925.385,1793611771.529,11.49,14.31,rrd_qsep,rose,rose_clean_greenhouse_14-2,untreated,TIC,greenhouse,0.9699262366986379
+./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt,19,Caryophyllene <beta->,13.814,51283925.385,1793611771.529,11.49,14.31,rrd_qsep,rose,rose_clean_greenhouse_14-2,untreated,TIC,greenhouse,0.9699262366986379
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt,20,Copaene <beta->,13.909,5489094.472,211716427.574,1.23,1.69,rrd_qsep,rose,rose_clean_greenhouse_14-2,untreated,TIC,greenhouse,0.10381453260727727
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-2,untreated,TIC,greenhouse,NA
@@ -18446,7 +18446,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt,6,Caryophyllene,13.799,2025485.397,82289870.578,2.49,2.69,rrd_qsep,rose,rose_clean_greenhouse_14-3,untreated,TIC,greenhouse,0.05651184869178658
+./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt,6,Caryophyllene <beta->,13.799,2025485.397,82289870.578,2.49,2.69,rrd_qsep,rose,rose_clean_greenhouse_14-3,untreated,TIC,greenhouse,0.05651184869178658
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_14-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_14-3,untreated,TIC,greenhouse,NA
@@ -18571,7 +18571,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt,17,Caryophyllene,13.843,162641410.867,3806457247.455,11.38,11.21,rrd_qsep,rose,rose_clean_greenhouse_15-1,untreated,TIC,greenhouse,4.715319236059229
+./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt,17,Caryophyllene <beta->,13.843,162641410.867,3806457247.455,11.38,11.21,rrd_qsep,rose,rose_clean_greenhouse_15-1,untreated,TIC,greenhouse,4.715319236059229
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt,18,Copaene <beta->,13.925,25143201.642,986827015.807,1.76,2.91,rrd_qsep,rose,rose_clean_greenhouse_15-1,untreated,TIC,greenhouse,0.728954709176678
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-1,untreated,TIC,greenhouse,NA
@@ -18695,7 +18695,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt,15,Caryophyllene,13.806,31449982.596,1161978573.268,7.07,8.87,rrd_qsep,rose,rose_clean_greenhouse_15-2,untreated,TIC,greenhouse,0.9150108546887115
+./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt,15,Caryophyllene <beta->,13.806,31449982.596,1161978573.268,7.07,8.87,rrd_qsep,rose,rose_clean_greenhouse_15-2,untreated,TIC,greenhouse,0.9150108546887115
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt,16,Copaene <beta->,13.905,3218793.856,131210279.605,0.72,1,rrd_qsep,rose,rose_clean_greenhouse_15-2,untreated,TIC,greenhouse,0.09364810642597703
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_15-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_15-2,untreated,TIC,greenhouse,NA
@@ -18820,7 +18820,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt,10,Caryophyllene,13.813,9449934.925,361600650.297,5.01,5.97,rrd_qsep,rose,rose_clean_greenhouse_16-1,untreated,TIC,greenhouse,0.2767406518374908
+./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt,10,Caryophyllene <beta->,13.813,9449934.925,361600650.297,5.01,5.97,rrd_qsep,rose,rose_clean_greenhouse_16-1,untreated,TIC,greenhouse,0.2767406518374908
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt,11,NA,13.867,1397707.536,59789912.612,0.74,0.99,rrd_qsep,rose,rose_clean_greenhouse_16-1,untreated,TIC,greenhouse,0.04093176277516145
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-1,untreated,TIC,greenhouse,NA
@@ -18945,7 +18945,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt,10,Caryophyllene,13.803,12440172.54,440120417.519,5.18,5.59,rrd_qsep,rose,rose_clean_greenhouse_16-2,untreated,TIC,greenhouse,0.34689108249941486
+./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt,10,Caryophyllene <beta->,13.803,12440172.54,440120417.519,5.18,5.59,rrd_qsep,rose,rose_clean_greenhouse_16-2,untreated,TIC,greenhouse,0.34689108249941486
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt,11,Copaene <beta->,13.905,1230099.5,40896559.325,0.51,0.52,rrd_qsep,rose,rose_clean_greenhouse_16-2,untreated,TIC,greenhouse,0.03430101518005063
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-2,untreated,TIC,greenhouse,NA
@@ -19069,7 +19069,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt,16,Caryophyllene,13.806,13972075.877,489338257.767,2.3,2.76,rrd_qsep,rose,rose_clean_greenhouse_16-3,untreated,TIC,greenhouse,0.3349520327179549
+./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt,16,Caryophyllene <beta->,13.806,13972075.877,489338257.767,2.3,2.76,rrd_qsep,rose,rose_clean_greenhouse_16-3,untreated,TIC,greenhouse,0.3349520327179549
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_16-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_16-3,untreated,TIC,greenhouse,NA
@@ -19193,7 +19193,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt,10,Caryophyllene,13.814,8904320.908,351282642.602,3.71,4.27,rrd_qsep,rose,rose_clean_greenhouse_17-1,untreated,TIC,greenhouse,0.29657344964112714
+./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt,10,Caryophyllene <beta->,13.814,8904320.908,351282642.602,3.71,4.27,rrd_qsep,rose,rose_clean_greenhouse_17-1,untreated,TIC,greenhouse,0.29657344964112714
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-1,untreated,TIC,greenhouse,NA
@@ -19317,7 +19317,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt,13,Caryophyllene,13.808,21174142.105,698535111.982,8.45,8.64,rrd_qsep,rose,rose_clean_greenhouse_17-2,untreated,TIC,greenhouse,0.5832109557566166
+./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt,13,Caryophyllene <beta->,13.808,21174142.105,698535111.982,8.45,8.64,rrd_qsep,rose,rose_clean_greenhouse_17-2,untreated,TIC,greenhouse,0.5832109557566166
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt,14,Copaene <beta->,13.906,2281478.758,81369295.581,0.91,1.01,rrd_qsep,rose,rose_clean_greenhouse_17-2,untreated,TIC,greenhouse,0.06284001497644613
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_17-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_17-2,untreated,TIC,greenhouse,NA
@@ -19443,7 +19443,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt,15,Caryophyllene,13.819,46320164.005,1632310781.219,11.61,14.53,rrd_qsep,rose,rose_clean_greenhouse_18-1,untreated,TIC,greenhouse,5.164845693180071
+./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt,15,Caryophyllene <beta->,13.819,46320164.005,1632310781.219,11.61,14.53,rrd_qsep,rose,rose_clean_greenhouse_18-1,untreated,TIC,greenhouse,5.164845693180071
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt,16,Copaene <beta->,13.918,4743882.647,193739579.491,1.19,1.72,rrd_qsep,rose,rose_clean_greenhouse_18-1,untreated,TIC,greenhouse,0.5289580117994581
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-1,untreated,TIC,greenhouse,NA
@@ -19567,7 +19567,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt,13,Caryophyllene,13.805,22914995.223,796187267.636,8.31,8.91,rrd_qsep,rose,rose_clean_greenhouse_18-2,untreated,TIC,greenhouse,0.669175579100461
+./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt,13,Caryophyllene <beta->,13.805,22914995.223,796187267.636,8.31,8.91,rrd_qsep,rose,rose_clean_greenhouse_18-2,untreated,TIC,greenhouse,0.669175579100461
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt,14,Copaene <beta->,13.907,2057353.509,78695525.056,0.75,0.88,rrd_qsep,rose,rose_clean_greenhouse_18-2,untreated,TIC,greenhouse,0.060079904551653705
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-2,untreated,TIC,greenhouse,NA
@@ -19691,7 +19691,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt,11,Caryophyllene,13.806,27649614.44,1029550500.232,7.1,8.23,rrd_qsep,rose,rose_clean_greenhouse_18-3,untreated,TIC,greenhouse,0.8034845908697562
+./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt,11,Caryophyllene <beta->,13.806,27649614.44,1029550500.232,7.1,8.23,rrd_qsep,rose,rose_clean_greenhouse_18-3,untreated,TIC,greenhouse,0.8034845908697562
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt,12,Copaene <beta->,13.905,2266413.027,90707123.081,0.58,0.72,rrd_qsep,rose,rose_clean_greenhouse_18-3,untreated,TIC,greenhouse,0.06586088018307211
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_18-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_18-3,untreated,TIC,greenhouse,NA
@@ -19817,7 +19817,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt,16,Caryophyllene,13.817,31570106.603,1093169846.945,6.97,7.87,rrd_qsep,rose,rose_clean_greenhouse_19-1,untreated,TIC,greenhouse,1.1173873449408194
+./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt,16,Caryophyllene <beta->,13.817,31570106.603,1093169846.945,6.97,7.87,rrd_qsep,rose,rose_clean_greenhouse_19-1,untreated,TIC,greenhouse,1.1173873449408194
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt,17,Copaene <beta->,13.916,3167029.502,124400089.145,0.7,0.9,rrd_qsep,rose,rose_clean_greenhouse_19-1,untreated,TIC,greenhouse,0.11209333978785949
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-1,untreated,TIC,greenhouse,NA
@@ -19941,7 +19941,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt,13,Caryophyllene,13.803,15523514.902,530874545.203,5.31,5.56,rrd_qsep,rose,rose_clean_greenhouse_19-2,untreated,TIC,greenhouse,0.31970353785013317
+./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt,13,Caryophyllene <beta->,13.803,15523514.902,530874545.203,5.31,5.56,rrd_qsep,rose,rose_clean_greenhouse_19-2,untreated,TIC,greenhouse,0.31970353785013317
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt,14,Copaene <beta->,13.901,1316922.403,43251093.401,0.45,0.45,rrd_qsep,rose,rose_clean_greenhouse_19-2,untreated,TIC,greenhouse,0.027121741047122987
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-2,untreated,TIC,greenhouse,NA
@@ -20066,7 +20066,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt,11,Caryophyllene,13.8,4318244.651,162140636.08,1.9,2.21,rrd_qsep,rose,rose_clean_greenhouse_19-3,untreated,TIC,greenhouse,0.12200405642245053
+./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt,11,Caryophyllene <beta->,13.8,4318244.651,162140636.08,1.9,2.21,rrd_qsep,rose,rose_clean_greenhouse_19-3,untreated,TIC,greenhouse,0.12200405642245053
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_19-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_19-3,untreated,TIC,greenhouse,NA
@@ -20191,7 +20191,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-1,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt,15,Caryophyllene,13.827,83259480.085,2620677573.964,7.32,9.09,rrd_qsep,rose,rose_clean_greenhouse_20-1,untreated,TIC,greenhouse,1.8512976581812564
+./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt,15,Caryophyllene <beta->,13.827,83259480.085,2620677573.964,7.32,9.09,rrd_qsep,rose,rose_clean_greenhouse_20-1,untreated,TIC,greenhouse,1.8512976581812564
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt,16,Copaene <beta->,13.919,11878270.873,457006909.026,1.04,1.59,rrd_qsep,rose,rose_clean_greenhouse_20-1,untreated,TIC,greenhouse,0.2641166510765815
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-1,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-1_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-1,untreated,TIC,greenhouse,NA
@@ -20315,7 +20315,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-2,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt,13,Caryophyllene,13.804,24696968.662,925960817.263,11.41,13.19,rrd_qsep,rose,rose_clean_greenhouse_20-2,untreated,TIC,greenhouse,0.6750328687490128
+./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt,13,Caryophyllene <beta->,13.804,24696968.662,925960817.263,11.41,13.19,rrd_qsep,rose,rose_clean_greenhouse_20-2,untreated,TIC,greenhouse,0.6750328687490128
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt,14,Copaene <beta->,13.906,1790674.691,78835148.542,0.83,1.12,rrd_qsep,rose,rose_clean_greenhouse_20-2,untreated,TIC,greenhouse,0.04894383153677673
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-2,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-2_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-2,untreated,TIC,greenhouse,NA
@@ -20440,7 +20440,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-3,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt,11,Caryophyllene,13.804,15297487.443,592430494.565,5.78,6.44,rrd_qsep,rose,rose_clean_greenhouse_20-3,untreated,TIC,greenhouse,0.4176938332142306
+./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt,11,Caryophyllene <beta->,13.804,15297487.443,592430494.565,5.78,6.44,rrd_qsep,rose,rose_clean_greenhouse_20-3,untreated,TIC,greenhouse,0.4176938332142306
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt,12,Copaene <beta->,13.902,1025761.87,42116644.029,0.39,0.46,rrd_qsep,rose,rose_clean_greenhouse_20-3,untreated,TIC,greenhouse,0.028008155525001223
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-3,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_greenhouse_20-3_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_greenhouse_20-3,untreated,TIC,greenhouse,NA
@@ -20564,7 +20564,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_01,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_01,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_01,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt,13,Caryophyllene,13.806,6656521.132,245380572.224,11.46,13.36,rrd_qsep,rose,rose_clean_test_greenhouse_01,untreated,TIC,greenhouse,1.5758776991897743
+./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt,13,Caryophyllene <beta->,13.806,6656521.132,245380572.224,11.46,13.36,rrd_qsep,rose,rose_clean_test_greenhouse_01,untreated,TIC,greenhouse,1.5758776991897743
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt,14,Copaene <beta->,13.908,580634.758,24472156.827,1,1.33,rrd_qsep,rose,rose_clean_test_greenhouse_01,untreated,TIC,greenhouse,0.13746059666330995
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_01,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_01,untreated,TIC,greenhouse,NA
@@ -20689,7 +20689,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_02,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_02,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_02,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt,9,Caryophyllene,13.796,249880.741,10153954.96,1.97,2.17,rrd_qsep,rose,rose_clean_test_greenhouse_02,untreated,TIC,greenhouse,0.08817689548867949
+./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt,9,Caryophyllene <beta->,13.796,249880.741,10153954.96,1.97,2.17,rrd_qsep,rose,rose_clean_test_greenhouse_02,untreated,TIC,greenhouse,0.08817689548867949
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_02,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_02,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_02,untreated,TIC,greenhouse,NA
@@ -20813,7 +20813,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_03,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_03,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_03,untreated,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt,9,Caryophyllene,13.802,4661274.432,171534689.675,6.03,7.78,rrd_qsep,rose,rose_clean_test_greenhouse_03,untreated,TIC,greenhouse,0.5637425005307966
+./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt,9,Caryophyllene <beta->,13.802,4661274.432,171534689.675,6.03,7.78,rrd_qsep,rose,rose_clean_test_greenhouse_03,untreated,TIC,greenhouse,0.5637425005307966
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_03,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_03,untreated,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_clean_test_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_clean_test_greenhouse_03,untreated,TIC,greenhouse,NA
@@ -20938,7 +20938,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_01,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_01,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt,8,NA,13.769,51391.402,5317940.293,0.05,0.2,rrd_qsep,rose,rose_rrv_greenhouse_01,rrv,TIC,greenhouse,0.0023644549456215986
-./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt,9,Caryophyllene,13.803,12004531.529,392414829.697,12.17,14.48,rrd_qsep,rose,rose_rrv_greenhouse_01,rrv,TIC,greenhouse,0.5523136719176187
+./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt,9,Caryophyllene <beta->,13.803,12004531.529,392414829.697,12.17,14.48,rrd_qsep,rose,rose_rrv_greenhouse_01,rrv,TIC,greenhouse,0.5523136719176187
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt,10,Copaene <beta->,13.905,4392167.044,171149150.419,4.45,6.31,rrd_qsep,rose,rose_rrv_greenhouse_01,rrv,TIC,greenhouse,0.20207818205041372
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_01,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_01_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_01,rrv,TIC,greenhouse,NA
@@ -21062,7 +21062,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_02,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_02,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_02,rrv,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt,9,Caryophyllene,13.799,1987576.761,74421311.384,4.41,5.31,rrd_qsep,rose,rose_rrv_greenhouse_02,rrv,TIC,greenhouse,0.16044768649513486
+./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt,9,Caryophyllene <beta->,13.799,1987576.761,74421311.384,4.41,5.31,rrd_qsep,rose,rose_rrv_greenhouse_02,rrv,TIC,greenhouse,0.16044768649513486
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt,10,Copaene <beta->,13.901,349719.794,13384664.623,0.78,0.95,rrd_qsep,rose,rose_rrv_greenhouse_02,rrv,TIC,greenhouse,0.028231227578161017
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_02,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_02_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_02,rrv,TIC,greenhouse,NA
@@ -21187,7 +21187,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_03,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_03,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_03,rrv,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt,18,Caryophyllene,13.813,18440274.615,616845246.531,10.11,12.66,rrd_qsep,rose,rose_rrv_greenhouse_03,rrv,TIC,greenhouse,1.6404870597101153
+./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt,18,Caryophyllene <beta->,13.813,18440274.615,616845246.531,10.11,12.66,rrd_qsep,rose,rose_rrv_greenhouse_03,rrv,TIC,greenhouse,1.6404870597101153
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt,19,Copaene <beta->,13.911,1734482.846,66366112.344,0.95,1.36,rrd_qsep,rose,rose_rrv_greenhouse_03,rrv,TIC,greenhouse,0.15430337798969773
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_03,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_03_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_03,rrv,TIC,greenhouse,NA
@@ -21311,7 +21311,7 @@ Path,Peak No.,Peak Name,Retention Time (min),Area (counts*min),Height (counts),R
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_04,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_04,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_04,rrv,TIC,greenhouse,NA
-./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt,14,Caryophyllene,13.803,6742510.731,254526015.029,5.93,9.04,rrd_qsep,rose,rose_rrv_greenhouse_04,rrv,TIC,greenhouse,0.6434015586579823
+./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt,14,Caryophyllene <beta->,13.803,6742510.731,254526015.029,5.93,9.04,rrd_qsep,rose,rose_rrv_greenhouse_04,rrv,TIC,greenhouse,0.6434015586579823
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt,NA,Copaene <beta->,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_04,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_04,rrv,TIC,greenhouse,NA
 ./data/rrd_qsep/TIC/rose_rrv_greenhouse_04_Integration.txt,NA,NA,NA,NA,NA,NA,NA,rrd_qsep,rose,rose_rrv_greenhouse_04,rrv,TIC,greenhouse,NA
