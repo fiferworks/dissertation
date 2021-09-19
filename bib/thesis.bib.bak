@@ -1217,6 +1217,17 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Article{vanBuuren2011,
+  author  = {van Buuren, Stef and Groothuis-Oudshoorn, Karin},
+  journal = {Journal of Statistical Software},
+  title   = {{mice}: {Multivariate} {Imputation} by {Chained} {Equations} in {R}},
+  year    = {2011},
+  number  = {3},
+  pages   = {1--67},
+  volume  = {45},
+  url     = {https://www.jstatsoft.org/v45/i03/},
+}
+
 @Article{Byrne2018,
   author    = {Byrne, David H. and Klein, Patricia and Yan, Muqing and Young, Ellen and Lau, Jeekin and Ong, Kevin and Shires, Madalyn and Olson, Jennifer and Windham, Mark and Evans, Tom and Novick, Danielle},
   title     = {Challenges of breeding {Rose rosette}-resistant roses},
