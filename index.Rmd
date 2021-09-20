@@ -7,7 +7,7 @@ division: 'College of Agriculture and Life Sciences'
 advisor: 'Xavier Martini'
 # If you have more two advisors, un-silence line 9:
 altadvisor: 'Mathews Paret'
-department: 'See your Editorial Document Management record for your exact major'
+department: 'Entomology and Nematology'
 degree: 'Doctor of Philosophy'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
