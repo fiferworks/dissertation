@@ -19,11 +19,11 @@ Headspace extractions from VCT and SPME were injected into a paired Gas Chromato
 <!-- The first three samples of VCT uninfected rose data was averaged for the comparison to the four infected rose samples in order to balance the data. -->
 
 
-```{r voc-qsep, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/vol-extract-qsep.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. The exterior end of the filter is attached to a vacuum airline set to allow for constant static pressure on the bag from inflation. The rose is then left for 24 hours, the filter is eluted with Dichloromethane into a gas chromatography vial, 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled Gas Chromatography - Mass Spectrometer (GC-MS) for chemical identification.", out.width="80%", warning=FALSE}
+```{r voc-qsep, cache = TRUE, cache.extra = file.mtime('figure/vol-extract-qsep.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. The exterior end of the filter is attached to a vacuum airline set to allow for constant static pressure on the bag from inflation. The rose is then left for 24 hours, the filter is eluted with Dichloromethane into a gas chromatography vial, 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled Gas Chromatography - Mass Spectrometer (GC-MS) for chemical identification.", out.width="80%", warning=FALSE}
 grid::grid.raster(tiff::readTIFF('figure/vol-extract-qsep.tif'))
 ```
 
-```{r voc-spme, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/vol-extract-spme.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled GC-MS for chemical identification.", out.width="70%", warning=FALSE}
+```{r voc-spme, cache = TRUE, cache.extra = file.mtime('figure/vol-extract-spme.tif'), fig.cap="Volatile collection system for rose headspace sampling. An inert nylon bag is placed around the canes of interest, an air inlet is inserted and sealed at the base with a zip-tie to form a relatively air-tight seal around the base of the rose canes. Once the bag begins to inflate, a small hole is cut in the corner of the bag and a filter inserted and sealed with a zip-tie to form a second seal. 1 \\si{\\micro\\liter} of Nonyl Acetate is added as an internal standard, and then the sample is processed using a coupled GC-MS for chemical identification.", out.width="70%", warning=FALSE}
 grid::grid.raster(tiff::readTIFF('figure/vol-extract-spme.tif'))
 ```
 
@@ -41,23 +41,23 @@ The top six contributing VOCs for VCT were \textgamma-Murrolene, \textbeta-Ocime
 
 
 <!-- ####QSEP#### -->
-```{r qsep-vocs, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_qsep.png'), fig.cap="PCA biplot of volatiles collected with VCT method.", out.width="100%", warning=FALSE}
+```{r qsep-vocs, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_qsep.png'), fig.cap="PCA biplot of volatiles collected with VCT method.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_qsep.png')
 ```
 
-```{r qsep-vocs-compares, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_qsep.png'), fig.cap="Comparison of VCT Principal Components. Ellipses represent 95\\% confidence intervals.", out.width="100%", warning=FALSE}
+```{r qsep-vocs-compares, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_qsep.png'), fig.cap="Comparison of VCT Principal Components. Ellipses represent 95\\% confidence intervals.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_qsep.png')
 ```
 
-```{r qsep-vocs-scree, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_qsep.png'), fig.cap="Scree plot of VCT Principal Components", out.width="100%", warning=FALSE}
+```{r qsep-vocs-scree, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_qsep.png'), fig.cap="Scree plot of VCT Principal Components", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_qsep.png')
 ```
 
-```{r qsep-vocs-umap, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_qsep.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of VCT samples.", out.width="100%", warning=FALSE}
+```{r qsep-vocs-umap, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_qsep.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of VCT samples.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_rrd_qsep.png')
 ```
 
-```{r qsep-vocs-umap-chems, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_qsep.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of VCT method's six largest contributions to volatile compositions.", out.width="100%", warning=FALSE}
+```{r qsep-vocs-umap-chems, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_qsep.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of VCT method's six largest contributions to volatile compositions.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_chems_rrd_qsep.png')
 ```
 
@@ -81,23 +81,23 @@ knitr::kable(format = "latex", booktabs = TRUE, caption = "Correlation table for
 
 
 <!-- ####SPME#### -->
-```{r spme-vocs, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_spme.png'), fig.cap="PCA biplot of volatiles collected with SPME method.", out.width="100%", warning=FALSE}
+```{r spme-vocs, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_spme.png'), fig.cap="PCA biplot of volatiles collected with SPME method.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_spme.png')
 ```
 
-```{r spme-vocs-compares, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_spme.png'), fig.cap="Comparison of SPME Principal Components. Ellipses represent 95\\% confidence intervals.", out.width="100%", warning=FALSE}
+```{r spme-vocs-compares, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_spme.png'), fig.cap="Comparison of SPME Principal Components. Ellipses represent 95\\% confidence intervals.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_spme.png')
 ```
 
-```{r spme-vocs-scree, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_spme.png'), fig.cap="Scree plot of SPME Principal Components", out.width="100%", warning=FALSE}
+```{r spme-vocs-scree, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_spme.png'), fig.cap="Scree plot of SPME Principal Components", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_spme.png')
 ```
 
-```{r spme-vocs-umap, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_spme.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of SPME method volatiles.", out.width="100%", warning=FALSE}
+```{r spme-vocs-umap, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_rrd_spme.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of SPME method volatiles.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_rrd_spme.png')
 ```
 
-```{r spme-vocs-umap-chems, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_spme.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of SPME method's six largest contributions to volatile compositions.", out.width="100%", warning=FALSE}
+```{r spme-vocs-umap-chems, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_rrd_spme.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of SPME method's six largest contributions to volatile compositions.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_chems_rrd_spme.png')
 ```
 
@@ -121,19 +121,19 @@ knitr::kable(format = "latex", booktabs = TRUE, caption = "Correlation table for
 
 
 <!-- ####BOTH#### -->
-```{r all-vocs, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_df.png'), fig.cap="PCA biplot of volatiles collected with VCT+SPME methods.", out.width="100%", warning=FALSE}
+```{r all-vocs, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_df.png'), fig.cap="PCA biplot of volatiles collected with VCT+SPME methods.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_df.png')
 ```
 
-```{r all-vocs-compares, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_df.png'), fig.cap="Comparison of VCT+SPME Principal Components. Ellipses represent 95\\% confidence intervals.", out.width="100%", warning=FALSE}
+```{r all-vocs-compares, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_df.png'), fig.cap="Comparison of VCT+SPME Principal Components. Ellipses represent 95\\% confidence intervals.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_df.png')
 ```
 
-```{r all-vocs-scree, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_df.png'), fig.cap="Scree plot of VCT+SPME Principal Components.", out.width="100%", warning=FALSE}
+```{r all-vocs-scree, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_df.png'), fig.cap="Scree plot of VCT+SPME Principal Components.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_df.png')
 ```
 
-```{r all-vocs-umap, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_df.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of all VCT+SPME volatiles.", out.width="100%", warning=FALSE}
+```{r all-vocs-umap, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_df.png'), fig.cap="Uniform Manifold Approximation and Projection (UMAP) of all VCT+SPME volatiles.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_volatiles_umap_chems_df.png')
 ```
 
@@ -159,11 +159,11 @@ knitr::kable(format = "latex", booktabs = TRUE, caption = "Correlation table for
 ### *A. swirskii* attraction to VOCs {#results-olfact}
 *A. swirskii* were not significantly selective for MeSA at the concentrations we used, but mites were significantly more likely to make choices when testing with roses. DL-Limonene created more choices than other treatments. (*\@ref(fig:aswir-mesa-lim)*). Choices for DL-Limonene vs. control and Filtered Air vs. Healthy Roses were not significantly different, but *A. swirskii* mites were significantly more attracted to RRV-infected roses.
 
-```{r aswir-rrd, fig.height=8, fig.width=10.5, fig.cap = "\\textit{Amblyseius swirskii} attraction to healthy and Rose Rosette Virus-infected Pink Double Knock Out® roses. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. RRV-infected vs Healthy Rose: $\\chi^2 = 9.33$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.002$. Filtered Air vs Healthy Rose: $\\chi^2 = 0.47$, df $=$ 1, $\\alpha = 0.05$, $p-value = 0.4913$.", out.width="100%", warning=FALSE}
+```{r aswir-rrd, fig.cap = "\\textit{Amblyseius swirskii} attraction to healthy and Rose Rosette Virus-infected Pink Double Knock Out® roses. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. RRV-infected vs Healthy Rose: $\\chi^2 = 9.33$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.002$. Filtered Air vs Healthy Rose: $\\chi^2 = 0.47$, df $=$ 1, $\\alpha = 0.05$, $p-value = 0.4913$.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_graph_olfact_rose.png')
 ```
 
-```{r aswir-mesa-lim, fig.height=8, fig.width=10.5, cache = TRUE, cache.extra = file.mtime('figure/rrv_graph_olfact_vocs.png'), fig.cap="\\textit{Amblyseius swirskii} attraction to Methyl Salicylate (MeSA) and D-L Limonene vs Filtered Air at concentrations of 1 g/\\si{\\micro\\liter}. 100 \\si{\\micro\\liter}s of chemical was applied to 3 cm of dental wick inside of erlenmeyer flasks inline with the filtered air from the olfactometer. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. MeSA vs Air: $\\chi^2 = 0.48649$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.4855$. D-L Limonene vs Air: $\\chi^2 = 0.94737$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.3304$.", out.width="100%", warning=FALSE}
+```{r aswir-mesa-lim, cache = TRUE, cache.extra = file.mtime('figure/rrv_graph_olfact_vocs.png'), fig.cap="\\textit{Amblyseius swirskii} attraction to Methyl Salicylate (MeSA) and D-L Limonene vs Filtered Air at concentrations of 1 g/\\si{\\micro\\liter}. 100 \\si{\\micro\\liter}s of chemical was applied to 3 cm of dental wick inside of erlenmeyer flasks inline with the filtered air from the olfactometer. Asterisks represent significant differences as calculated by $\\chi^2$ contingency table tests for given probabilities. N.S. = not significant. MeSA vs Air: $\\chi^2 = 0.48649$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.4855$. D-L Limonene vs Air: $\\chi^2 = 0.94737$, $df = 1$, $\\alpha = 0.05$, $p-value = 0.3304$.", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_graph_olfact_vocs.png')
 ```
 
