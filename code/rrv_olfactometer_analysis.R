@@ -1,5 +1,5 @@
 #loading packages
-pkgs <- c('tidyverse')
+pkgs <- c('tidyverse', 'lme4')
 
 #installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -56,6 +56,19 @@ rrv_olfact_chisq_tests <-
   rrv_olfact_chisq_tests %>%  select(-data.name)
 
 write_csv(rrv_olfact_chisq_tests, "data/rrv_olfact_chisq_tests.csv")
+
+# # preparing data for glmer model
+# df$outcome <- if_else(df$choice == 'experiment', 1, 0)
+# 
+# m <- glmer(time_sec ~ experiment + (1 | mite_no),
+#         family = "poisson",
+#         data = df)
+# 
+# m2 <- glmer(outcome ~ experiment + (1 | mite_no),
+#       family = "binomial",
+#       data = df)
+# 
+# summary(m)
 
 #cleaning up
 rm(list = ls())
