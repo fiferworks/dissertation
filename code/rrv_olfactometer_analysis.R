@@ -1,5 +1,5 @@
 #loading packages
-pkgs <- c('tidyverse', 'lme4')
+pkgs <- c('tidyverse', 'lme4', 'car', 'multcomp', 'emmeans')
 
 #installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -53,22 +53,44 @@ for (i in seq_along(trial_list)) {
 }
 
 rrv_olfact_chisq_tests <-
-  rrv_olfact_chisq_tests %>%  select(-data.name)
+  rrv_olfact_chisq_tests %>%  dplyr::select(-data.name)
 
 write_csv(rrv_olfact_chisq_tests, "data/rrv_olfact_chisq_tests.csv")
 
-# # preparing data for glmer model
-# df$outcome <- if_else(df$choice == 'experiment', 1, 0)
-# 
-# m <- glmer(time_sec ~ experiment + (1 | mite_no),
-#         family = "poisson",
-#         data = df)
-# 
-# m2 <- glmer(outcome ~ experiment + (1 | mite_no),
-#       family = "binomial",
-#       data = df)
-# 
-# summary(m)
+# preparing data for glmer model
+df$outcome <- if_else(df$choice == 'experiment', 1, 0)
+
+#generalized linear mixed models with individual mites as the random factor
+choice_model <- glmer(outcome ~ trial + (1 | mite_no),
+                      family = "binomial",
+                      data = df)
+
+time_2_choice_model <- glmer(time_sec ~ trial + (1 | mite_no),
+                             family = "poisson",
+                             data = df)
+
+#model summaries
+summary(choice_model)
+summary(time_2_choice_model)
+
+#ANOVAs
+Anova(choice_model)
+Anova(time_2_choice_model)
+
+#Simultaneous Tests for General Linear Hypotheses Multiple Comparisons of Means:
+#Tukey Contrasts
+summary(glht(choice_model, linfct = mcp(trial = 'Tukey')), test = adjusted("holm"))
+summary(glht(time_2_choice_model, linfct = mcp(trial = 'Tukey')), test = adjusted("holm"))
+
+
+#making a compact letter display for each treatment
+sink(file = 'data/rrv_olfact_cld_choice_model.txt')
+cld(emmeans(choice_model, "trial"))
+sink()
+
+sink(file = 'data/rrv_olfact_cld_time_2_choice_model.txt')
+cld(emmeans(time_2_choice_model, "trial"))
+sink()
 
 #cleaning up
 rm(list = ls())
