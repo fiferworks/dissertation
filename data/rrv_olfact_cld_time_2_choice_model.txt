@@ -1,0 +1,13 @@
+ trial    emmean     SE  df asymp.LCL asymp.UCL .group
+ limonene   4.10 0.0876 Inf      3.93      4.27  1    
+ rose       4.34 0.0617 Inf      4.22      4.46  12   
+ air        4.65 0.1738 Inf      4.31      5.00   23  
+ MeSA       4.74 0.0869 Inf      4.57      4.91    3  
+
+Results are given on the log (not the response) scale. 
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+significance level used: alpha = 0.05 
+NOTE: Compact letter displays can be misleading
+      because they show NON-findings rather than findings.
+      Consider using 'pairs()', 'pwpp()', or 'pwpm()' instead. 
