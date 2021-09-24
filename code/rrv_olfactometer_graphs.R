@@ -201,7 +201,7 @@ ggplot(data = rose_df,
     label = "***",
     color = "black"
   ) +
-    annotate(
+  annotate(
     geom = "text",
     size = 25,
     x = 0.8,
@@ -438,6 +438,184 @@ ggplot(data = tests_df,
 #saving the file
 ggsave(
   'figure/rrv_graph_olfact_vocs.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
+#####graphs times to choice####
+#reading in difference letters from emmeans tests
+times_letters <-
+  read_table("data/rrv_olfact_cld_time_2_choice_model.txt", n_max = 4)
+
+times_letters$trial <-
+  gsub('limonene', 'Limonene', times_letters$trial)
+times_letters$trial <-
+  gsub('MeSA', 'Methyl Salicylate', times_letters$trial)
+
+times_choice <-
+  tests_df %>% group_by(trial) %>% summarize(
+    'Mean Response Time' = mean(time_sec, na.rm = TRUE),
+    sd = sd(time_sec, na.rm = TRUE),
+    se = sd(time_sec, na.rm = TRUE) / sqrt(n()),
+    n = n()
+  ) %>%
+  ungroup()
+
+times_choice <- full_join(times_choice, times_letters)
+
+ggplot(data = tests_df,
+       mapping = aes(x = trial, y = time_sec, fill = choice)) +
+  geom_boxplot(lwd = 3) +
+  theme_tufte(base_size = 20, base_family = "gill_sans") +
+  theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
+  theme(legend.position = "none") +
+  theme(
+    plot.title = element_text(
+      size = 100,
+      face = "bold",
+      color = "grey20",
+      family = "garamond"
+    ),
+    axis.text.x = element_text(
+      color = "grey20",
+      size = 80,
+      angle = 0,
+      hjust = .5,
+      vjust = .5,
+      face = "plain"
+    ),
+    axis.text.y = element_text(
+      color = "grey20",
+      size = 80,
+      angle = 0,
+      hjust = 1,
+      vjust = 0,
+      face = "bold"
+    )
+  ) +
+  ggtitle(expression(
+    italic(A. ~ swirskii) ~ 'attraction to VOCs from roses - time to choice'
+  )) +
+  theme(legend.title = element_blank()) +
+  labs(fill = 'Choice:') +
+  scale_fill_manual(values = c("#B1B3B6", "#E28F41"))
+
+
+# annotate(
+#   geom = "text",
+#   size = 30,
+#   x = 2,
+#   y = -20,
+#   label = times_choice$observed.control[4],
+#   color = "black"
+# ) +
+#   annotate(
+#     geom = "text",
+#     size = 30,
+#     x = 2,
+#     y = 20,
+#     label = times_choice$observed.experiment[4],
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 30,
+#     x = 2,
+#     y = -55,
+#     label = times_choice$`observed.no choice`[4],
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 25,
+#     x = 2,
+#     y = -0,
+#     label = paste0(
+#       "n = ",
+#       sum(
+#         pvals$`observed.no choice`[4] + pvals$observed.control[4] + pvals$observed.experiment[4] #values are for MeSA
+#       )
+#     ),
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 25,
+#     x = 1.8,
+#     y = 55,
+#     label = paste0("p = ", signif(times_choice$p.value[4], digits = 3)),
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 25,
+#     x = 2,
+#     y = 55,
+#     label = "N.S.",
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 25,
+#     x = 1,
+#     y = -0,
+#     label = paste0(
+#       "n = ",
+#       sum(
+#         times_choice$`observed.no choice`[5] + times_choice$observed.control[5] + times_choice$observed.experiment[5]
+#       )
+#     ),
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 25,
+#     x = .8,
+#     y = 55,
+#     label = paste0("p = ", signif(times_choice$p.value[5], digits = 3)),
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 50,
+#     x = 1,
+#     y = 55,
+#     label = "***",
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 25,
+#     x = 2.53,
+#     y = -55,
+#     label = "No Choice",
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 25,
+#     x = 2.53,
+#     y = -15,
+#     label = "Filtered Air",
+#     color = "black"
+#   ) +
+#   annotate(
+#     geom = "text",
+#     size = 25,
+#     x = 2.53,
+#     y = 20,
+#     label = '100 μm of 1 g/ml',
+#     color = "black"
+#   )
+
+
+#saving the file
+ggsave(
+  'figure/rrv_graph_olfact_vocs_time_choice.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
