@@ -9,6 +9,7 @@ if (length(nu_pkgs))
 # loading required packages
 lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
+
 ####GRIFFIN DATA####
 #reading in file, data from Griffin 2018 actigard trial
 q1 <- read_excel(
