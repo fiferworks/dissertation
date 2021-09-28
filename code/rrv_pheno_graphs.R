@@ -5,8 +5,7 @@ pkgs <-
     'showtext',
     'extrafont',
     'Cairo',
-    'lubridate',
-    'scales')
+    'lubridate')
 
 #installs the packages if you don't have them already installed
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
