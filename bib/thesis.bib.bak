@@ -5744,6 +5744,14 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Manual{Ottolinger2019,
+  title  = {{bib2df}: parse a {BibTeX} file to a data frame},
+  author = {Ottolinger, Philipp},
+  note   = {R package version 1.1.1},
+  year   = {2019},
+  url    = {https://CRAN.R-project.org/package=bib2df},
+}
+
 @Article{Ozman2005,
   author    = {Ozman, Sebahat K. and Goolsby, John A.},
   title     = {Biology and phenology of the eriophyid mite, {\textit{Floracarus perrepae}}, on its native host in {{Australia},} {Old world climbing fern}, {\textit{Lygodium microphyllum}}},
@@ -8225,9 +8233,6 @@ general and T. ludeni population forecast and precise timing of pest management 
   year    = {2018},
   month   = oct,
   url     = {roserosette.org/control/},
-}
-
-@Article{,
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
