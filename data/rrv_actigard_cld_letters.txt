@@ -1,2 +1,2 @@
-    water      high       low    kontos untreated 
+    Water      High       Low    Kontos Untreated 
       "a"       "b"       "c"       "c"     "abc" 

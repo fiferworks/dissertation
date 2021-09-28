@@ -1,5 +1,5 @@
 ####PACKAGES####
-pkgs <- c('tidyverse', 'readxl')
+pkgs <- c('tidyverse', 'readxl', 'tools')
 
 # installs missing packages
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -12,7 +12,7 @@ rm(pkgs, nu_pkgs)
 
 ####GRIFFIN DATA####
 #reading in file, data from Griffin 2018 actigard trial
-q1 <- read_excel(
+griff_2018 <- read_excel(
   'data/rrv_actigard_trial_2018_griffin.xlsx',
   sheet = 1,
   col_types = c(
@@ -29,7 +29,7 @@ q1 <- read_excel(
 )
 
 #reading in file, data from Griffin 2019 actigard trial
-q2 <- read_excel(
+griff_2019 <- read_excel(
   'data/rrv_actigard_trial_2019_griffin.xlsx',
   sheet = 1,
   col_types = c('guess',
@@ -38,136 +38,104 @@ q2 <- read_excel(
                 'guess')
 )
 
-
-
-
 #splitting plant and block into different columns
-q1 <- separate(q1, `Plant & Block`, c('Plant', 'Block'), sep = 1)
-q2 <- separate(q2, `Plant & Block`, c('Plant', 'Block'), sep = 1)
+griff_2018 <-
+  separate(griff_2018, `Plant & Block`, c('Plant', 'Block'), sep = 1)
+griff_2019 <-
+  separate(griff_2019, `Plant & Block`, c('Plant', 'Block'), sep = 1)
 
 #adding a treatment column by duplicating the 'Plant' column
-q2$Treatment <- q2$Plant
+griff_2019$Treatment <- griff_2019$Plant
 
 #this works because each letter was assigned a specific treatment)
-q2$Treatment[q2$Treatment == 'A'] <- "Water"
-q2$Treatment[q2$Treatment == 'B'] <- "Actigard 100"
-q2$Treatment[q2$Treatment == 'C'] <- "Actigard 50"
-q2$Treatment[q2$Treatment == 'D'] <- "Kontos"
+griff_2019$Treatment[griff_2019$Treatment == 'A'] <- "Water"
+griff_2019$Treatment[griff_2019$Treatment == 'B'] <- "Actigard 100"
+griff_2019$Treatment[griff_2019$Treatment == 'C'] <- "Actigard 50"
+griff_2019$Treatment[griff_2019$Treatment == 'D'] <- "Kontos"
 
 #combining the datasets from both years
-q1 <- bind_rows(q1, q2)
+griffin_trials <- bind_rows(griff_2018, griff_2019)
 
-#dropping unused columns
-q1 <-
-  select(q1, 'Plant', 'Block', 'Treatment', 'Date', 'Mite Count')
+#we never ended up counting the number of flowers, droppping
+griffin_trials <-
+  select(griffin_trials,
+         'Plant',
+         'Block',
+         'Treatment',
+         'Date',
+         'Mite Count')
 
-#making things lowercase for ease of use when coding
-q1 <- rename(
-  q1,
-  'plant' = 'Plant',
-  'block' = 'Block',
-  'treat' = 'Treatment',
-  'date' = 'Date',
-  'mites' = 'Mite Count'
-)
+griffin_trials <- rename(griffin_trials,
+                         'Mites' = 'Mite Count')
 
 #adding column for field site
-q1$field <- 'griffin'
-
-#forcing date to be read as a character to avoid errors
-q1$date <- as.character(q1$date)
-
-#making sure all variables are lowercase
-q1$plant <- tolower(q1$plant)
-q1$block <- tolower(q1$block)
-q1$treat <- tolower(q1$treat)
+griffin_trials$Field <- 'Griffin'
 
 #standardizing treatment labels
-q1$treat <- sub('actigard 100', 'high', q1$treat)
-q1$treat <- sub('actigard 50', 'low', q1$treat)
+griffin_trials$Treatment <-
+  sub('Actigard 100', 'High', griffin_trials$Treatment)
+griffin_trials$Treatment <-
+  sub('Actigard 50', 'Low', griffin_trials$Treatment)
 
 #removing incomplete records
-q1 <- q1 %>% drop_na
-
-df <- q1
+griffin_trials <- griffin_trials %>% drop_na
 
 ####ATHENS DATA####
 #getting Athens data from 2018 cleaned up
-q3 <-
+athns_2018 <-
   read_excel(
     "data/rrv_actigard_trial_2018_athens.xlsx",
     sheet = 1,
     col_types = c("guess", "guess", "guess", "guess", "guess", "guess", "guess")
   )
-q3 <- separate(q3, Grid, c('Plant', 'Block'), sep = '-')
-q3 <- select(q3, 'Plant', 'Block', 'trt', 'Target Mites')
+athns_2018 <-
+  separate(athns_2018, Grid, c('Plant', 'Block'), sep = '-')
+athns_2018 <-
+  select(athns_2018, 'Plant', 'Block', 'trt', 'Target Mites')
 
 #adding recording date
-q3$date <- c("2018-12-21")
+athns_2018$date <- lubridate::ymd("2018-12-21", tz = "UTC")
 
 #fixing names
-q3 <- rename(
-  q3,
-  'plant' = 'Plant',
-  'block' = 'Block',
-  'treat' = 'trt',
-  'date' = 'date',
-  'mites' = 'Target Mites'
+athns_2018 <- rename(
+  athns_2018,
+  'Treatment' = 'trt',
+  'Date' = 'date',
+  'Mites' = 'Target Mites'
 )
 
 #adding in field column to Athens trials
-q3$field <- 'athens'
+athns_2018$Field <- 'Athens'
 
 #making all variables lowercase
-q3$plant <- tolower(q3$plant)
-q3$block <- tolower(q3$block)
-q3$treat <- tolower(q3$treat)
+athns_2018$Plant <- toTitleCase(athns_2018$Plant)
+athns_2018$Block <- toTitleCase(athns_2018$Block)
+athns_2018$Treatment <- toTitleCase(athns_2018$Treatment)
 
 #standardizing treatment labels
-q3$treat <- sub('control', 'untreated', q3$treat)
+athns_2018$Treatment <-
+  sub('Control', 'Untreated', athns_2018$Treatment)
 
 #removing incomplete records
-q3 <- q3 %>% drop_na()
+athns_2018 <- athns_2018 %>% drop_na()
 
 ####COMBINING DATASETS####
 #uncomment the following line this if you want to include the Athens 2018 trial
-df <- bind_rows(q1, q3)
+df <- bind_rows(griffin_trials, athns_2018)
 
 #adding combined id for plants
-df$id <- paste(df$plant, df$block, sep = '')
-
-#getting summary stats for each treatment group
-df <-
-  df %>% group_by(treat) %>% mutate(
-    per_plant = mean(mites),
-    totals = sum(mites),
-    sd = sd(mites),
-    se = sd(mites) / sqrt(n()),
-    log_xformed = log(mean(mites)),
-    se_xformed = log(sd(mites) / sqrt(n())),
-    n_samples = n()
-  ) %>%
-  ungroup()
+df$ID <- paste(df$Plant, df$Block, sep = '')
 
 #rearranging columns
 df <-
-  select(
-    df,
-    'mites',
-    'totals',
-    'per_plant',
-    'sd',
-    'se',
-    'log_xformed',
-    'se_xformed',
-    'treat',
-    'id',
-    'plant',
-    'block',
-    'field',
-    'date',
-    'n_samples'
-  )
+  select(df,
+         'ID',
+         'Mites',
+         'Treatment',
+         'Plant',
+         'Block',
+         'Field',
+         'Date')
 
 #saving output
 write_csv(df, 'data/rrv_actigard_master_datasheet.csv')
