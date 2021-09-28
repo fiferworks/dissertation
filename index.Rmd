@@ -25,7 +25,18 @@ output:
     fig_caption: yes
 #  thesisdown::thesis_gitbook: default         
 #  thesisdown::thesis_word: default
+# word_document:
+#   reference_docx: uf-formatting-guide-jis.docx
 #  thesisdown::thesis_epub: default
+
+# Specify the location of the bibliography below
+bibliography: bib/thesis.bib
+citation_package: biblatex
+biblio-style: apalike
+link-citations: true
+
+# Download your specific csl file and refer to it in the line below.
+csl: csl/entsoc.csl
 
 # If you are creating a PDF you'll need to write your preliminary content 
 # (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
@@ -52,14 +63,6 @@ preface: |
   
 # keywords: keywords #this isn't implemented yet
 # subject: subject #also not implemented
-
-# Specify the location of the bibliography below
-bibliography: bib/thesis.bib
-citation_package: natbib
-biblio-style: apalike
-
-# Download your specific csl file and refer to it in the line below.
-csl: csl/entsoc.csl
 # space_between_paragraphs: true
 ---
 
