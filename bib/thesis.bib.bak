@@ -437,6 +437,22 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   publisher = {Elsevier {BV}},
 }
 
+@Manual{Appelhans2021a,
+  title  = {{mapview}: interactive viewing of spatial data in {R}},
+  author = {Appelhans, Tim and Detsch, Florian and Reudenbach, Christoph and Woellauer, Stefan},
+  note   = {R package version 2.10.0},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=mapview},
+}
+
+@Manual{Appelhans2019a,
+  title  = {{leafsync}: small multiples for leaflet web maps},
+  author = {Appelhans, Tim and Russell, Kenton},
+  note   = {R package version 0.1.0},
+  year   = {2019},
+  url    = {https://CRAN.R-project.org/package=leafsync},
+}
+
 @Article{Arena2017,
   author    = {Arena, Gabriella Dias and Ramos-Gonz{\'{a}}lez, Pedro Luis and Nunes, Maria Andr{\'{e}}ia and Jesus, Camila Chabi and Calegario, Renata Faier and Kitajima, Elliot Watanabe and Novelli, Valdenice Moreira and Freitas-Ast{\'{u}}a, Juliana},
   journal   = {Scientia Agricola},
@@ -513,6 +529,14 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   abstract  = {Biosecurity encompasses protecting against any risk through {\textquoteleft}biological harm{\textquoteright}, not least being the economic impact from the spread of pest insects. Molecular diagnostic tools provide valuable support for the rapid and accurate identification of morphologically indistinct alien species. However, these tools currently lack standardization. They are not conducive to adaptation by multiple sectors or countries, or to coping with changing pest priorities. The data presented here identifies DNA barcodes as a very promising opportunity to address this. DNA of tussock moth and fruit fly specimens intercepted at the New Zealand border over the last decade were reanalysed using the cox1 sequence barcode approach. Species identifications were compared with the historical dataset obtained by PCR--RFLP of nuclear rDNA. There was 90 and 96% agreement between the methods for these species, respectively. Improvements included previous tussock moth {\textquoteleft}unknowns{\textquoteright} being placed to family, genera or species and further resolution within fruit fly species complexes. The analyses highlight several advantages of DNA barcodes, especially their adaptability and predictive value. This approach is a realistic platform on which to build a much more flexible system, with the potential to be adopted globally for the rapid and accurate identification of invasive alien species.},
   doi       = {10.1098/rstb.2005.1713},
   publisher = {The Royal Society},
+}
+
+@Manual{Arnold2021a,
+  title  = {{ggthemes}: extra themes, scales and geoms for 'ggplot2'},
+  author = {Arnold, Jeffrey B.},
+  note   = {R package version 4.2.4},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=ggthemes},
 }
 
 @Article{Arthur2011,
@@ -781,6 +805,17 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   publisher = {Scientific Societies},
 }
 
+@Article{Bates2015,
+  author  = {Bates, Douglas and M{\"a}chler, Martin and Bolker, Ben and Walker, Steve},
+  journal = {Journal of Statistical Software},
+  title   = {Fitting linear mixed-effects models using {lme4}},
+  year    = {2015},
+  number  = {1},
+  pages   = {1--48},
+  volume  = {67},
+  doi     = {10.18637/jss.v067.i01},
+}
+
 @Article{Bauchan2019,
   author    = {Bauchan, G. B. and Otero-Colina, G. and Hammond, J. and Jordan, R. and Ochoa, R.},
   journal   = {Acta Horticulturae},
@@ -956,6 +991,17 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   month     = mar,
   doi       = {10.1111/j.1570-7458.2008.00821.x},
   publisher = {Wiley},
+}
+
+@Article{Bischl2016,
+  author  = {Bischl, Bernd and Lang, Michel and Kotthoff, Lars and Schiffner, Julia and Richter, Jakob and Studerus, Erich and Casalicchio, Giuseppe and Jones, Zachary M.},
+  journal = {Journal of Machine Learning Research},
+  title   = {{mlr}: machine learning in {R}},
+  year    = {2016},
+  number  = {170},
+  pages   = {1--5},
+  volume  = {17},
+  url     = {https://jmlr.org/papers/v17/15-066.html},
 }
 
 @Article{Blaazer2018,
@@ -1215,6 +1261,17 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   volume    = {62},
   doi       = {10.1007/s10493-013-9735-1},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Buuren2011,
+  author  = {van Buuren, Stef and Groothuis-Oudshoorn, Karin},
+  journal = {Journal of Statistical Software},
+  title   = {{mice}: multivariate imputation by chained equations in {R}},
+  year    = {2011},
+  number  = {3},
+  pages   = {1--67},
+  volume  = {45},
+  url     = {https://www.jstatsoft.org/v45/i03/},
 }
 
 @Article{vanBuuren2011,
@@ -1525,6 +1582,22 @@ Impressions: Cryptic spp. make this model overestimate, also: humans primary sou
   publisher = {The Phytopathological Society of Japan},
 }
 
+@Manual{Chang2014,
+  title  = {{extrafont}: tools for using fonts},
+  author = {Winston Chang},
+  note   = {R package version 0.17},
+  year   = {2014},
+  url    = {https://CRAN.R-project.org/package=extrafont},
+}
+
+@Manual{Chang2019,
+  title  = {{webshot:} take screenshots of web pages},
+  author = {Chang, Winston},
+  note   = {R package version 0.5.2},
+  year   = {2019},
+  url    = {https://CRAN.R-project.org/package=webshot},
+}
+
 @Article{Chapman2017,
   author    = {Chapman, Daniel and Purse, Bethan V. and Roy, Helen E. and Bullock, James M.},
   journal   = {Global Ecology and Biogeography},
@@ -1562,6 +1635,14 @@ Impressions: Cryptic spp. make this model overestimate, also: humans primary sou
   volume    = {16},
   doi       = {10.1080/09583150600700172},
   publisher = {Informa {UK} Limited},
+}
+
+@Manual{Cheng2021a,
+  title  = {{leaflet}: create interactive web maps with the {JavaScript} 'leaflet' library},
+  author = {Cheng, Joe and Karambelkar, Bhaskar and Xie, Yihui},
+  note   = {R package version 2.0.4.1},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=leaflet},
 }
 
 @Article{Chetverikov2019,
@@ -2256,6 +2337,14 @@ Bacterial pathogens are able to subvert the plant immune system by secreting mol
   publisher = {The Royal Society},
 }
 
+@Manual{Dunnington2021a,
+  title  = {{exifr}: {EXIF} image data in {R}},
+  author = {Dunnington, Dewey and Harvey, Phil},
+  note   = {R package version 0.3.2},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=exifr},
+}
+
 @InBook{Dutcher2007,
   author    = {James D. Dutcher},
   chapter   = {A review of resurgence and replacement causing pest outbreaks in {IPM}},
@@ -2269,6 +2358,17 @@ Bacterial pathogens are able to subvert the plant immune system by secreting mol
   ean       = {9781402060601},
   pagetotal = {376},
   url       = {https://www.ebook.de/de/product/6740472/general_concepts_in_integrated_pest_and_disease_management.html},
+}
+
+@Article{Eddelbuettel2018,
+  author  = {Eddelbuettel, Dirk and Balamuta, James Joseph},
+  journal = {The American Statistician},
+  title   = {{Extending \textit{R} with \textit{C++}: A Brief Introduction to \textit{Rcpp}}},
+  year    = {2018},
+  number  = {1},
+  pages   = {28--36},
+  volume  = {72},
+  doi     = {10.1080/00031305.2017.1375990},
 }
 
 @TechReport{EDDMapS2019,
@@ -2573,6 +2673,18 @@ Bacterial pathogens are able to subvert the plant immune system by secreting mol
   publisher = {{FapUNIFESP} ({SciELO})},
 }
 
+@Article{Feinerer2008,
+  author  = {Feinerer, Ingo and Hornik, Kurt and Meyer, David},
+  journal = {Journal of Statistical Software},
+  title   = {Text mining infrastructure in {R}},
+  year    = {2008},
+  month   = mar,
+  number  = {5},
+  pages   = {1--54},
+  volume  = {25},
+  url     = {https://www.jstatsoft.org/v25/i05/},
+}
+
 @Article{Fenner2013,
   author    = {Fenner, K. and Canonica, S. and Wackett, L. P. and Elsner, M.},
   journal   = {Science},
@@ -2645,6 +2757,16 @@ Bacterial pathogens are able to subvert the plant immune system by secreting mol
   ean       = {9781461592129},
   pagetotal = {256},
   url       = {https://www.ebook.de/de/product/25445730/m_l_flint_r_van_den_bosch_introduction_to_integrated_pest_management.html},
+}
+
+@Book{Fox2019,
+  author    = {Fox, John and Weisberg, Sanford},
+  publisher = {Sage},
+  title     = {An {R} companion to applied regression},
+  year      = {2019},
+  address   = {Thousand Oaks {CA}},
+  edition   = {Third},
+  url       = {https://socialsciences.mcmaster.ca/jfox/Books/Companion/},
 }
 
 @Article{Francl2001,
@@ -2832,6 +2954,15 @@ Bacterial pathogens are able to subvert the plant immune system by secreting mol
   volume    = {97},
   doi       = {10.1094/pdis-12-12-1143-re},
   publisher = {Scientific Societies},
+}
+
+@Manual{Garnier2021a,
+  title  = {{viridis} - colorblind-friendly color maps for {R}},
+  author = {Garnier and Simon and Ross and Noam and Rudis and Robert and Camargo and Pedro, Ant{\^{o}}nio and Sciaini and Marco and Scherer and C{\'{e}}dric},
+  note   = {R package version 0.4.0},
+  year   = {2021},
+  doi    = {10.5281/zenodo.4679424},
+  url    = {https://sjmgarnier.github.io/viridis/},
 }
 
 @Book{Gaeumann1950,
@@ -3153,6 +3284,17 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   publisher = {Wiley},
 }
 
+@Article{Grolemund2011,
+  author  = {Grolemund, Garrett and Wickham, Hadley},
+  journal = {Journal of Statistical Software},
+  title   = {Dates and times made easy with {lubridate}},
+  year    = {2011},
+  number  = {3},
+  pages   = {1--25},
+  volume  = {40},
+  url     = {https://www.jstatsoft.org/v40/i03/},
+}
+
 @Article{Groot2006,
   author    = {Groot, Thomas V. M. and Breeuwer, Johannes A. J.},
   journal   = {Experimental and Applied Acarology},
@@ -3338,6 +3480,14 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   doi       = {10.1016/s1572-4379(96)80050-9},
 }
 
+@Manual{Henry2021,
+  title  = {{tidyselect:} select from a set of strings},
+  author = {Henry, Lionel and Wickham, Hadley},
+  note   = {R package version 1.1.1},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=tidyselect},
+}
+
 @Article{Hindal1988,
   author    = {Hindal, Dale F. and Amrine, James W. and Williams, Robert L. and Stasny, Terry A.},
   title     = {{Rose rosette disease} on {Multiflora rose} ({\textit{Rosa multiflora}}) in {Indiana} and {Kentucky}},
@@ -3369,6 +3519,16 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   pages   = {655},
 }
 
+@Article{Hothorn2008,
+  author  = {Hothorn, Torsten and Bretz, Frank and Westfall, Peter},
+  journal = {Biometrical Journal},
+  title   = {Simultaneous inference in general parametric models},
+  year    = {2008},
+  number  = {3},
+  pages   = {346--363},
+  volume  = {50},
+}
+
 @Article{Howe2008,
   author    = {Howe, Gregg A. and Jander, Georg},
   journal   = {Annual Review of Plant Biology},
@@ -3390,6 +3550,13 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   year      = {2011},
   address   = {Boca Raton},
   isbn      = {9781439817513},
+}
+
+@Manual{Ismay2021a,
+  title  = {{thesisdown}: an updated {R} markdown thesis template using the bookdown package},
+  author = {Ismay, Chester and Solomon, Nick},
+  note   = {R package version 0.2.0.9000},
+  year   = {2021},
 }
 
 @Article{Jackson2005,
@@ -3618,9 +3785,9 @@ Conclusions Herbivores have evolved diverse strategies, which are not mutually e
   publisher = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
 }
 
-@Manual{Kassambara2020,
+@Manual{Kassambara2020a,
   title  = {{factoextra}: extract and visualize the results of multivariate data analyses},
-  author = {Alboukadel Kassambara and Fabian Mundt},
+  author = {Kassambara, Alboukadel and Mundt, Fabian},
   note   = {R package version 1.0.7},
   year   = {2020},
   url    = {https://CRAN.R-project.org/package=factoextra},
@@ -3992,9 +4159,9 @@ Conclusions Herbivores have evolved diverse strategies, which are not mutually e
   publisher = {Elsevier {BV}},
 }
 
-@Manual{Konopka2020,
-  title  = {{umap}: {Uniform} {Manifold} {Approximation} and {Projection}},
-  author = {Tomasz Konopka},
+@Manual{Konopka2020a,
+  title  = {{umap}: uniform manifold approximation and projection},
+  author = {Konopka, Tomasz},
   note   = {R package version 0.2.7.0},
   year   = {2020},
   url    = {https://CRAN.R-project.org/package=umap},
@@ -4333,6 +4500,14 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   volume    = {51},
   doi       = {10.1007/s10493-009-9312-9},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Manual{Lenth2021,
+  title  = {{emmeans}: estimated marginal means, aka least-squares means},
+  author = {Lenth, Russell V.},
+  note   = {R package version 1.6.3},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=emmeans},
 }
 
 @Article{Leon2010,
@@ -4992,6 +5167,14 @@ proteins. The properties of these binding proteins suggest their involvement in 
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Manual{Mueller2021,
+  title  = {{tibble}: simple data frames},
+  author = {M{\"{u}}ller, Kirill and Wickham, Hadley},
+  note   = {R package version 3.1.4},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=tibble},
+}
+
 @InBook{Brattsten1986,
   author    = {Christopher A. Mullin},
   chapter   = {Adaptive divergence of chewing and sucking arthropods to plant allelochemicals},
@@ -5145,6 +5328,14 @@ proteins. The properties of these binding proteins suggest their involvement in 
   year    = {2010},
   pages   = {1--31},
   volume  = {56},
+}
+
+@Manual{Neuwirth2014,
+  title  = {{RColorBrewer}: colorbrewer palettes},
+  author = {Neuwirth, Erich},
+  note   = {R package version 1.1-2},
+  year   = {2014},
+  url    = {https://CRAN.R-project.org/package=RColorBrewer},
 }
 
 @Article{Ng2004,
@@ -5511,6 +5702,14 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Oxford University Press ({OUP})},
 }
 
+@Manual{Ooms2021a,
+  title  = {{writexl}: export data frames to {Excel} 'xlsx' format},
+  author = {Ooms, Jeroen},
+  note   = {R package version 1.4.0},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=writexl},
+}
+
 @Article{Osakabe2021,
   author    = {Osakabe, Masahiro},
   journal   = {Applied Entomology and Zoology},
@@ -5730,6 +5929,17 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Wiley},
 }
 
+@Article{Pebesma2018a,
+  author  = {Pebesma, Edzer},
+  journal = {{The R Journal}},
+  title   = {Simple features for {R}: standardized support for spatial vector data},
+  year    = {2018},
+  number  = {1},
+  pages   = {439--446},
+  volume  = {10},
+  doi     = {10.32614/RJ-2018-009},
+}
+
 @Article{Pemberton2018,
   author    = {Pemberton, H. Brent and Ong, Kevin and Windham, Mark and Olson, Jennifer and Byrne, David H.},
   title     = {What is {Rose rosette disease}?},
@@ -5884,6 +6094,14 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Annual Reviews},
 }
 
+@Manual{Qiu2021a,
+  title  = {{showtext}: using fonts more easily in {R} graphs},
+  author = {Qiu, Yixuan and authors/contributors of the included software. See file AUTHORS for details.},
+  note   = {R package version 0.9-4},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=showtext},
+}
+
 @InCollection{Qualley2008,
   author    = {Qualley, Anthony V. and Dudareva, Natalia},
   booktitle = {Induced Plant Resistance to Herbivory},
@@ -5906,6 +6124,14 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   month     = mar,
   doi       = {10.2307/3547045},
   publisher = {{JSTOR}},
+}
+
+@Manual{Ram2018a,
+  title  = {{wesanderson}: a {Wes Anderson} palette generator},
+  author = {Ram, Karthik and Wickham, Hadley},
+  note   = {R package version 0.3.6},
+  year   = {2018},
+  url    = {https://CRAN.R-project.org/package=wesanderson},
 }
 
 @Article{Ramalho2014,
@@ -6513,6 +6739,14 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Wiley},
 }
 
+@Manual{Schloerke2021,
+  title  = {{GGally}: extension to 'ggplot2'},
+  author = {Schloerke, Barret and Cook, Di and Larmarange, Joseph and Briatte, Francois and Marbach, Moritz and Thoen, Edwin and Elberg, Amos and Crowley, Jason},
+  note   = {R package version 2.1.2},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=GGally},
+}
+
 @Article{Schmidt2013,
   author    = {Schmidt, Rebecca A.},
   journal   = {Experimental and Applied Acarology},
@@ -6905,6 +7139,17 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   url          = {https://www.R-project.org/},
 }
 
+@Article{Tennekes2018,
+  author  = {Tennekes, Martijn},
+  journal = {Journal of Statistical Software},
+  title   = {{tmap}: thematic maps in {R}},
+  year    = {2018},
+  number  = {6},
+  pages   = {1--39},
+  volume  = {84},
+  doi     = {10.18637/jss.v084.i06},
+}
+
 @Article{Teodoro2006,
   author    = {Teodoro, A. V. and Reis, P. R.},
   journal   = {Brazilian Journal of Biology},
@@ -7000,6 +7245,14 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {Wiley},
 }
 
+@Manual{Tierney2021,
+  title  = {Naniar: data structures, summaries, and visualisations for missing data},
+  author = {Tierney, Nicholas and Cook, Di and McBain, Miles and Fay, Colin},
+  note   = {R package version 0.6.1},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=naniar},
+}
+
 @Article{Tipping2000,
   author    = {Tipping, P. W. and Sindermann, A. B.},
   title     = {Natural and augmented spread of {Rose rosette disease} of multiflora rose in {Maryland}},
@@ -7091,12 +7344,20 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   publisher = {{CSIRO} Publishing},
 }
 
-@Manual{Urbanek2020,
+@Manual{Urbanek2020a,
   title  = {Cairo: {R} graphics device using cairo graphics library for creating high-quality bitmap ({PNG}, {JPEG}, {TIFF}), vector ({PDF}, {SVG}, {PostScript}) and display ({X11} and {Win32}) output},
-  author = {Simon Urbanek and Jeffrey Horner},
+  author = {Urbanek, Simon and Horner, Jeffrey},
   note   = {R package version 1.5-12.2},
   year   = {2020},
   url    = {https://CRAN.R-project.org/package=Cairo},
+}
+
+@Manual{Urbanek2021a,
+  title  = {{tiff}: read and write {TIFF} images},
+  author = {Urbanek, Simon and Johnson, Kent},
+  note   = {R package version 0.1-8},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=tiff},
 }
 
 @TechReport{NASS2019,
@@ -7137,6 +7398,14 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   ean       = {9781845939946},
   pagetotal = {832},
   url       = {https://www.ebook.de/de/product/24216869/vincenzo_vacante_handbook_of_mites_of_economic_plants_identification_bio_ecology_and_control.html},
+}
+
+@Manual{Vaidyanathan2020a,
+  title  = {{htmlwidgets}: html widgets for {R}},
+  author = {Vaidyanathan, Ramnath and Xie, Yihui and Allaire, J. J. and Cheng, Joe and Sievert, Carson and Russell, Kenton},
+  note   = {R package version 1.5.3},
+  year   = {2020},
+  url    = {https://CRAN.R-project.org/package=htmlwidgets},
 }
 
 @Article{Valenzano2019,
@@ -7554,6 +7823,66 @@ general and T. ludeni population forecast and precise timing of pest management 
   publisher = {Oxford University Press ({OUP})},
 }
 
+@Book{Wickham2016a,
+  author    = {Wickham, Hadley},
+  publisher = {Springer-Verlag New York},
+  title     = {{ggplot2}: elegant graphics for data analysis},
+  year      = {2016},
+  isbn      = {978-3-319-24277-4},
+  url       = {https://ggplot2.tidyverse.org},
+}
+
+@Manual{Wickham2019b,
+  title  = {{stringr}: simple, consistent wrappers for common string operations},
+  author = {Wickham, Hadley},
+  note   = {R package version 1.4.0},
+  year   = {2019},
+  url    = {https://CRAN.R-project.org/package=stringr},
+}
+
+@Manual{Wickham2021d,
+  title  = {{pryr}: tools for computing on the language},
+  author = {Wickham, Hadley},
+  note   = {R package version 0.1.5},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=pryr},
+}
+
+@Article{Wickham2019c,
+  author  = {Wickham, Hadley and Averick, Mara and Bryan, Jennifer and Chang, Winston and McGowan, Lucy D'Agostino and Fran{\c{c}}ois, Romain and Grolemund, Garrett and Hayes, Alex and Henry, Lionel and Hester, Jim and Kuhn, Max and Pedersen, Thomas Lin and Miller, Evan and Bache, Stephan Milton and M{\"{u}}ller, Kirill and Ooms, Jeroen and Robinson, David and Seidel, Dana Paige and Spinu, Vitalie and Takahashi, Kohske and Vaughan, Davis and Wilke, Claus and Woo, Kara and Yutani, Hiroaki},
+  journal = {Journal of Open Source Software},
+  title   = {Welcome to the {tidyverse}},
+  year    = {2019},
+  number  = {43},
+  pages   = {1686},
+  volume  = {4},
+  doi     = {10.21105/joss.01686},
+}
+
+@Manual{Wickham2019d,
+  title  = {{readxl}: read {Excel} files},
+  author = {Wickham, Hadley and Bryan, Jennifer},
+  note   = {R package version 1.3.1},
+  year   = {2019},
+  url    = {https://CRAN.R-project.org/package=readxl},
+}
+
+@Manual{Wickham2021c,
+  title  = {{dplyr}: a grammar of data manipulation},
+  author = {Wickham, Hadley and Fran{\c{c}}ois, Romain and Henry, Lionel and M{\"{u}}ller, Kirill},
+  note   = {R package version 1.0.7},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=dplyr},
+}
+
+@Manual{Wickham2021b,
+  title  = {{devtools}: tools to make developing {R} packages easier},
+  author = {Wickham, Hadley and Hester, Jim and Chang, Winston},
+  note   = {R package version 2.4.2},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=devtools},
+}
+
 @Article{Wimmer2008,
   author    = {Wimmer, D. and Hoffmann, D. and Schausberger, P.},
   title     = {Prey suitability of {Western flower thrips}, {\textit{Frankliniella occidentalis}}, and {Onion thrips}, {\textit{Thrips tabaci}}, for the predatory mite {\textit{Amblyseius swirskii}}},
@@ -7596,6 +7925,24 @@ general and T. ludeni population forecast and precise timing of pest management 
   abstract  = {Silverleaf whitefly, Bemisia tabaci biotype B (Gennadius) (Hemiptera: Aleyrodidae), western flower thrips, Frankliniella occidentalis (Pergande), and chilli thrips, Scirtothrips dorsalis Hood (Thysanoptera: Thripidae), are key pests of vegetable crops in the US. The present study established ornamental peppers as banker plants supporting Amblyseius swirskii (Acari: Phytoseiidae) against the three pests. Specifically, this study (a) evaluated survival and population buildup of A. swirskii on three ornamental pepper varieties, Masquerade (MA), Red Missile (RM), and Explosive Ember (EE) in both laboratory and greenhouses and (b) determined the predation of A. swirskii reared on ornamental pepper plants to the targeted pests under greenhouse conditions. The results showed that the three pepper varieties were excellent banker plants and able to support at least $\sim$1000 of all stages of A. swirskii per plant in greenhouse conditions and allow them to complete their life cycle. A. swirskii dispersed or released from the banker plants to target plants, resulting in significant suppression of the three pests, i.e., after 14 d post-release, a significantly lower average of 2.75 B. tabaci and 13.4 all stages of thrips (chilli thrips and western flower thrips) were found per bean plant, respectively, compared to 379.5 B. tabaci and 235.4 all stages of thrips per plant in the control. Furthermore, our experiment observed that the sweet pepper seedlings closed to banker plants were healthy, whereas those without banker plants were heavily infested by chilli thrips; their growth seriously stunted or died. This is the first report of ornamental pepper as banker plants supporting A. swirskii against three notorious pests. This established banker plant system could be a new addition to the integrated pest management programs for sustainable control of these three pests in greenhouse vegetables.},
   doi       = {10.1016/j.biocontrol.2012.09.007},
   publisher = {Elsevier {BV}},
+}
+
+@Book{Xie2016a,
+  author    = {Xie, Yihui},
+  publisher = {Chapman and Hall/CRC},
+  title     = {Bookdown: authoring books and technical documents with {R} markdown},
+  year      = {2016},
+  address   = {Boca Raton, Florida},
+  note      = {ISBN 978-1138700109},
+  url       = {https://bookdown.org/yihui/bookdown},
+}
+
+@Manual{Xie2021a,
+  title  = {Bookdown: authoring books and technical documents with {R} markdown},
+  author = {Xie, Yihui},
+  note   = {R package version 0.23},
+  year   = {2021},
+  url    = {https://github.com/rstudio/bookdown},
 }
 
 @Article{Xue1998,
@@ -7718,6 +8065,14 @@ general and T. ludeni population forecast and precise timing of pest management 
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Manual{Zhu2021a,
+  title  = {{kableExtra}: construct complex table with 'kable' and pipe syntax},
+  author = {Zhu, Hao},
+  note   = {R package version 1.3.4},
+  year   = {2021},
+  url    = {https://CRAN.R-project.org/package=kableExtra},
+}
+
 @Article{Ziadi2001,
   author    = {Ziadi, Sma{\i{\"{}}}l and Poupard, Pascal and Brisset, Marie-no{\"{e}}lle and Paulin, Jean-Pierre and Simoneau, Philippe},
   title     = {Characterization in apple leaves of two subclasses of {PR}-10 transcripts inducible by acibenzolar-{S}-methyl, a functional analogue of salicylic acid},
@@ -7729,15 +8084,6 @@ general and T. ludeni population forecast and precise timing of pest management 
   month     = jul,
   doi       = {10.1006/pmpp.2001.0343},
   publisher = {Elsevier {BV}},
-}
-
-@Book{Brattsten1986,
-  editor    = {Brattsten, Lena and Ahmad, Samai},
-  publisher = {Plenum Press},
-  title     = {Molecular aspects of insect-plant associations},
-  year      = {1986},
-  address   = {New York},
-  isbn      = {9781461318651},
 }
 
 @Book{Schuster1991,
@@ -7830,15 +8176,6 @@ general and T. ludeni population forecast and precise timing of pest management 
   booktitle = {Advances in virus research},
 }
 
-@Book{Marquina2010,
-  editor    = {Marquina, Julio C{\'{e}}sar Tello and Camacho-Ferre, Francisco and Torres-Vila, Luis Miguel},
-  publisher = {Fundaci{\'{o}}n Cajamar},
-  title     = {Organismos para el control de pat{\'{o}}genos en los cultivos protegidos : pr{\'{a}}cticas culturales para una agricultura sostenible},
-  year      = {2010},
-  address   = {Almer{\'{i}}a},
-  isbn      = {9788493775902},
-}
-
 @Book{Ueckermann2010,
   title     = {Eriophyoid mites: progress and prognoses},
   publisher = {Springer-Verlag GmbH},
@@ -7888,6 +8225,9 @@ general and T. ludeni population forecast and precise timing of pest management 
   year    = {2018},
   month   = oct,
   url     = {roserosette.org/control/},
+}
+
+@Article{,
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
