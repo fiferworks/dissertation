@@ -10,5 +10,6 @@ if (length(nu_pkgs))
 lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
-df <- bib2df(file = 'bib/r_citations.bib')
+df <- bib2df(file = 'bib/thesis.bib')
+
 
