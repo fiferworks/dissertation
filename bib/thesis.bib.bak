@@ -3368,9 +3368,9 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   title     = {Shared signals {\textendash}`alarm calls' from plants increase apparency to herbivores and their enemies in nature},
   year      = {2007},
   month     = oct,
-  number    = {0},
-  pages     = {071026235140001--???},
-  volume    = {0},
+  number    = {11},
+  pages     = {24--34},
+  volume    = {1},
   abstract  = {The attraction of natural enemies of herbivores by volatile organic compounds as an induced indirect defence has been studied in several plant systems. The evidence for their defensive function originates mainly from laboratory studies with trained parasitoids and predators; the defensive function of these emissions for plants in natural settings has been rarely demonstrated. In native populations and laboratory Y-tube choice experiments with transgenic Nicotiana attenuata plants unable to release particular volatiles, we demonstrate that predatory bugs use terpenoids and green leaf volatiles (GLVs) to locate their prey on herbivore-attacked plants. By attracting predators with volatile signals, this native plant reduces its herbivore load -- demonstrating the defensive function of herbivore-induced volatile emissions. However, plants producing GLVs are also damaged more by flea beetles. The implications of these conflicting ecological effects for the evolution of induced volatile emissions and for the development of sustainable agricultural practices are discussed.},
   doi       = {10.1111/j.1461-0248.2007.01123.x},
   publisher = {Wiley},
@@ -5143,7 +5143,7 @@ proteins. The properties of these binding proteins suggest their involvement in 
   publisher = {Oxford University Press ({OUP})},
 }
 
-@article{Monfreda2007,
+@Article{Monfreda2007,
   title={Detection, extraction, and collection of eriophyoid mites},
   author={Monfreda, Rosita and Nuzzaci, Giorgio and De Lillo, Enrico},
   journal={Zootaxa},
@@ -5476,7 +5476,27 @@ An earlier study showed that 87% of all whiteflies released in a set-up as used 
   journal   = {Entomologica},
   title     = {Perspectives on eriophyoid mite research},
   year      = {1996},
-  pages     = {Vol 30 (1996)--},
+  issn      = {2611-8041},
+  pages     = {73--91},
+  volume    = {30},
+  abstract  = {The authors deal briefly with the current status of knowledge on Eriophyoidea (Acari, Prostigmata), which are obligatory phytophagous mites and attack many crops of economic value, and focus their attention on some points that they consider valuable guidelines for future scienti- fic progress.
+
+Key words: Acarology, gall making, vagrants, morphology, anatomy, physiology, life history and reproductive strategies, ecology, plant pathogen transmission, taxonomy and systematics.
+
+PROSPETTIVE DI RICERCA SUGLI ACARI ERIOPHYOIDEA
+
+Gli autori riportano in breve lo stato attuale delle conoscenze sugli Eriophyoidea (Acari, Prostigmata), acari fitofagi obbligati che attaccano molte colture di interesse economico.
+
+Aspetti che richiedono ulteriori approfondimenti di ricerca sono:
+
+1) l{\textquoteright}anatomia della maggior parte degli organi nei diversi stadi di sviluppo, e le differenze tra le forme svernanti (deutogine) e le forme primaverili estive (protogine);
+
+2) le modalit{\`{a}} di induzione delle malformazioni sulle piante, la definizione del ciclo biologico in moltissime specie e l{\textquoteright}attitudine alla trasmissione dei virus e micoplasmi;
+
+3) l{\textquoteright}efficacia di utilizzazione degli eriofidi nella lotta contro le piante infestanti; 4) il ruolo degli eriofidi nelle catene alimentari di acari predatori;
+5) l{\textquoteright}organizzazione di un archivio su supporto ad uso informatico.
+
+Parole chiave: Acarologia, galligeni, vaganti, morfologia, anatomia, fisiologia, strategie rirpoduttive, ciclo vitale, ecologia, trasmissione di patogeni vegetali, tassonomia e sistematica.},
   doi       = {10.15162/0425-1016/673},
   language  = {en},
   publisher = {Entomologica},
