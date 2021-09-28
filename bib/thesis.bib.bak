@@ -3559,6 +3559,16 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   year   = {2021},
 }
 
+@Manual{Jackman2020,
+  title        = {{pscl}: classes and methods for {R} developed in the political science computational laboratory},
+  address      = {Sydney, New South Wales, Australia},
+  author       = {Jackman, Simon},
+  note         = {R package version 1.5.5},
+  organization = {United States Studies Centre, University of Sydney},
+  year         = {2020},
+  url          = {https://github.com/atahk/pscl/},
+}
+
 @Article{Jackson2005,
   author    = {Jackson, Andrew O. and Dietzgen, Ralf G. and Goodin, Michael M. and Bragg, Jennifer N. and Deng, Min},
   journal   = {Annual Review of Phytopathology},
