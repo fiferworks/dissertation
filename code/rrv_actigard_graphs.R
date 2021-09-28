@@ -52,6 +52,7 @@ df  <-
 
 #reading in the difference letters
 abc <- read_table("data/rrv_actigard_cld_letters.txt")
+abc <- abc %>%  select('water', 'high', 'low', 'kontos', 'untreated')
 
 #rows to columns
 abc <- abc %>% gather(key = 'treat')
