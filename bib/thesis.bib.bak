@@ -8014,6 +8014,25 @@ general and T. ludeni population forecast and precise timing of pest management 
   publisher = {Oxford University Press ({OUP})},
 }
 
+@Article{Zeileis2008,
+  author  = {Zeileis, Achim and Kleiber, Christian and Jackman, Simon},
+  journal = {Journal of Statistical Software},
+  title   = {Regression models for count data in {R}},
+  year    = {2008},
+  number  = {8},
+  volume  = {27},
+  url     = {http://www.jstatsoft.org/v27/i08/},
+}
+  @Article{,
+    title = {Regression Models for Count Data in {R}},
+    author = {Achim Zeileis and Christian Kleiber and Simon Jackman},
+    journal = {Journal of Statistical Software},
+    year = {2008},
+    volume = {27},
+    number = {8},
+    url = {http://www.jstatsoft.org/v27/i08/},
+  }
+
 @Article{Zhang2010,
   author    = {Jiyu Zhang and Xiaoli Du and Qingju Wang and Xiukong Chen and Dong Lv and Kuanyong Xu and Shenchun Qu and Zhen Zhang},
   journal   = {{BMC} Research Notes},
