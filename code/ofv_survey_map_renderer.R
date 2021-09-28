@@ -7,12 +7,10 @@ pkgs <-
     'ggmap',
     'ggplot2',
     'ggthemes',
-    'mapproj',
     'extrafont',
     'showtext',
     'leaflet',
     'dplyr',
-    'maps',
     'mapview',
     'htmlwidgets',
     'viridis',
@@ -177,16 +175,17 @@ gg_ofv_map <-
       vjust = 0,
       face = "bold"
     )
-  ) +
-  ggsave(
-    'figure/gg_asp_map_ofv.png',
-    plot = last_plot(),
-    type = "cairo",
-    width = 16,
-    height = 9,
-    scale = 1,
-    dpi = 300
   )
+
+ggsave(
+  'figure/gg_asp_map_ofv.png',
+  plot = last_plot(),
+  type = "cairo",
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
 
 ####CLEANUP####
 rm(list = ls())
