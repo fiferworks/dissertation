@@ -36,6 +36,7 @@
 % here you define all the packages you wish to use in your paper, the ones shown are not all necessary,
 % but all have purpose and can be very useful, so leave these as default and add packages as necassary
 \usepackage{graphicx}
+\usepackage{microtype}
 %\usepackage[dvipdfmx]{graphicx}
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -155,12 +156,15 @@ $endif$
 
 %The list shown below gives a brief description of the major mathematical symbols defined in this work. For each
 %symbol, the page number corresponds to the place where the symbol is first used.} %
+\microtypesetup{protrusion=false}
 \tableofcontents
 
 \listoftables % comment out if you don't have tables
+\microtypesetup{protrusion=false}
 
 \listoffigures % comment out if you don't have figures
   %\setcounter{lofdepth}{2}
+\microtypesetup{protrusion=true}
 
 % Produced list of abbreviations or symbols
 % These commands don't work now, the TOC used to be preserved as a separate tex file
