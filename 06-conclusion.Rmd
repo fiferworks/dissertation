@@ -1,7 +1,17 @@
 # CONCLUSIONS: INVASIVE MITES ARE AN INCREASINGLY LARGE PROBLEM FOR FLORIDA
 
-mites are small but cause big problems
+The principal findings of these trials are: 
+
+1. *Phyllocoptes fructiphilus* is present in multiple cities in northern Florida
+1. *P. fructiphilus* populations may be reduced by heavy pruning
+1. The predatory mite *Amblyseius swirskii* is attracted to roses infected with Rose Rosette Disease (RRD)
+1. Infected roses have higher levels of defense-related terpenes, including \textgamma-Muurolene, \textbeta-Caryophyllene, and D-Limonene
+1. ASM-treated plants had similar more profiles to one another than to the Volatile Organic Compounds (VOCs) released from healthy or RRD-infected plants
+1. Systemic Acquired Resistance (SAR) via acibenzolar-S-methyl (ASM) does not appear to significantly reduce populations of *P. fructiphilus*
+1. The integrated pest management treatments we tested were not very efficient for controlling populations of *P. fructiphilus*
+1. Orchid Fleck Virus (OFV) is present in ornamental groundcover plants in Florida. the vector of OFV (*Brevipalpus californicus*) is present as well
+
 
 ## Invasive mites are a problem in Florida
 
-more invasives are likely to become introduced over the years
+We encountered two invasive mite species associated with plant viruses in the last three years. This is likely an unfortunate byproduct of the plant trade.
