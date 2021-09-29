@@ -11,11 +11,10 @@ Integrated Pest Management (IPM) is the combination of science-informed best pra
 We tested the efficacy of SAR-induction against mites in field trials during 12 weeks, from August to October at Griffin and Athens, GA. Griffin and Athens sites had low and high *P. fructiphilus* pest pressure, respectively. 
 
 **Mites**
-*P. fructiphilus* are present in the landscape of Georgia. Putatively mite-infested canes from RRD-infected roses were placed onto potted roses during the first week and 5th week of the experiment.
+Potted plants were inoculated with putatively *P.fructiphilus*-infested canes from nearby RRD-infected roses in the landscape. Rose canes were placed onto potted roses during the first and fifth weeks of the experiment.
 
 **Roses**
 Field sites had 48 Pink Double Knock Out® Roses (Star Roses and Plants, West Grove, PA, USA) planted in 1 gallon buckets filled with potting soil and mixed with a granular slow-release fertilizer. Pots were placed on black plastic mulch and watered weekly with overhead impact sprinklers.
-
 
 **Treatments**
 Actigard50WG® (Syngenta AG, Basel, Switzerland), (acibenzolar-S-methyl, ASM) was applied at two different rates: 50 \si{\milli\gram}/\si{\liter} (Half rate) and 100 \si{\milli\gram}/\si{\liter} (High rate) to observe the effects of inducing Systemic Acquired Resistance (SAR) on *P. fructiphilus* 
@@ -123,8 +122,18 @@ grid::grid.raster(tiff::readTIFF('figure/rrv_ipm_plot_map_2021_talla.tif'))
 ## Results {#results-asm-ipm}
 Combining predatory mites with a SAR-inducer was as effective as the miticide alone, and controlled herbivorous mite populations more than either SAR-induction or predatory mites alone (see *\@ref(fig:ipm)*).
 
-```{r asm, cache = TRUE, cache.extra = file.mtime('figure/actigard_graph.png'), fig.cap="SAR-induction trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. water = Water Control, High = 100 \\si{\\milli\\gram}/\\si{\\liter} Actigard® 50WG (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), low = 50 \\si{\\milli\\gram}/\\si{\\liter} Actigard® 50WG (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), kontos = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), untreated = No treatment. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record the numbers of herbivorous mites.", out.width="80%", warning=FALSE}
+```{r asm-graph, cache = TRUE, cache.extra = file.mtime('figure/actigard_graph.png'), fig.cap="SAR-induction trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. water = Water Control, High = 100 \\si{\\milli\\gram}/\\si{\\liter} Actigard® 50WG (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), low = 50 \\si{\\milli\\gram}/\\si{\\liter} Actigard® 50WG (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), kontos = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), untreated = No treatment. All products were applied for 12 weeks. Flower cuttings were taken weekly to record the numbers of herbivorous mites.", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/actigard_graph.png')
+```
+
+```{r asm-athns-2018-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_athens_disease_progress_2018.csv'), caption = "\\label{tab:asm-athns-2018-table}", out.width="100%"}
+read_csv('data/rrv_athens_disease_progress_2018.csv',
+         show_col_types = FALSE) %>%
+  knitr::kable(format = "latex",
+               booktabs = TRUE,
+               caption = "Progression of RRD on SAR-induced Pink Double Knock Out® roses in Athens, GA 2018.") %>%
+  kable_styling(latex_options = c("striped", "scale_down", full_width = TRUE))
+
 ```
 
 ```{r ipm, cache = TRUE, cache.extra = file.mtime('figure/ipm_graph.png'), fig.cap="Integrated Pest Management trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA with five treatments. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. water = Water Control, actigard = Actigard® 50WG (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), kontos = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), mites = \\textit{Amblyseius swirkii} predatory mite mini sachets on hooks (Ambly-S, Arbico Organics, Oro Valley, AZ, USA), ninja = SP2700 (Trade name: Ninja\\texttrademark, SePro, Carmel, IN, USA), mites + ninja = \\textit{A. swirskii} + Ninja combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record the numbers of herbivorous mites.", out.width="80%", warning=FALSE}
