@@ -8,16 +8,19 @@ Integrated Pest Management (IPM) is the combination of science-informed best pra
 
 ## Materials & Methods {#mm-asm-ipm}
 ### SAR-induction with ASM to reduce populations of *P. fructiphilus* {#ipm-actigard}
-We tested the efficacy of SAR-induction against mites in field trials conducted at Griffin and Athens, GA, sites with low and high *P. fructiphilus* pest pressure, respectively. 
-**Roses**
-This will be a 12-week experiment conducted from August to October simultaneously in Griffin, GA and Athens, GA.
-Each site will be given 48 Pink Double Knock Out® Roses (Star Roses and Plants, West Grove, PA, USA) which will be planted in 1 gallon buckets filled with potting soil and mixed with granular slow-release fertilizer. Plants will be placed on black plastic mulch and be watered weekly with overhead impact sprinklers.
+We tested the efficacy of SAR-induction against mites in field trials during 12 weeks, from August to October at Griffin and Athens, GA. Griffin and Athens sites had low and high *P. fructiphilus* pest pressure, respectively. 
 
 **Mites**
-*Phyllocoptes fructiphilus* are present in the landscape of Georgia. Tissue from RRD-infected roses will be placed onto roses during the first week and 5th week
+*P. fructiphilus* are present in the landscape of Georgia. Putatively mite-infested canes from RRD-infected roses were placed onto potted roses during the first week and 5th week of the experiment.
 
-**Spray rates**
-We will be applying the Acibenzolar-S-methyl (ASM) based Actigard50WG® (Syngenta AG, Basel, Switzerland), at two different rates: 50 mg/L (Half rate) and 100 mg/L (High rate) to observe the effects of inducing Systemic Acquired Resistance (SAR) on *Phyllocoptes fructiphilus* Kiefer. We will have two field sites in Georgia with local populations of *P. fructiphilus*: Griffin GA and Athens, GA. The tests in Griffin will have two controls for chemical applications in this experiment: The first will be the miticide Kontos (Bayer CropScience LP, Cary, NC, USA), at the label rate as a positive control and the second will be water as a negative control. The tests in Athens will have a control of untreated roses as well as water as a negative control.
+**Roses**
+Field sites had 48 Pink Double Knock Out® Roses (Star Roses and Plants, West Grove, PA, USA) planted in 1 gallon buckets filled with potting soil and mixed with a granular slow-release fertilizer. Pots were placed on black plastic mulch and watered weekly with overhead impact sprinklers.
+
+
+**Treatments**
+Actigard50WG® (Syngenta AG, Basel, Switzerland), (acibenzolar-S-methyl, ASM) was applied at two different rates: 50 \si{\milli\gram}/\si{\liter} (Half rate) and 100 \si{\milli\gram}/\si{\liter} (High rate) to observe the effects of inducing Systemic Acquired Resistance (SAR) on *P. fructiphilus* 
+
+Trials in Griffin had two controls for chemical applications: The miticide Kontos (Bayer Crop Science LP, Cary, NC, USA), at the label rate as a negative control and tap water as a positive control. Trials in Athens had untreated roses and water as negative controls.
 
 **Data Collection**
 Rose/rosebud cuttings ~10 cm will be taken from each plant before the first treatment to determine the initial populations of *P. fructiphilus* on the roses. We will then take a subset of samples from each rose treatment weekly, rotating samples until each rose plant has been sampled three times. We will also collect samples from all roses at the end of the trial. This experiment will be repeated for two seasons. Rose samples will be placed in 50 mL centrifuge tubes and refrigerated or frozen until floral samples can be processed. Samples will be processed using the washing methods of @Monfreda2007, eriophyoid mites will be counted and identified as previously described.
