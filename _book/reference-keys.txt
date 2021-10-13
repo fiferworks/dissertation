@@ -34,7 +34,7 @@ fig:unnamed-chunk-2
 fig:ipm-athens
 fig:ipm-griff
 fig:unnamed-chunk-3
-fig:asm
+fig:asm-graph
 fig:ipm
 fig:ipm-talla-erios
 fig:ipm-talla-erios-week
@@ -88,5 +88,5 @@ dis-asm-ipm
 brevipalpus-transmitted-orchid-fleck-virus-infecting-three-new-ornamental-hosts-in-florida
 virus-detection
 a-comment-on-the-the-status-of-brevipalpus-in-florida
-invasive-mites-in-florida---an-increasingly-large-problem
+conclusions-invasive-mites-are-an-increasingly-large-problem-for-florida
 invasive-mites-are-a-problem-in-florida
