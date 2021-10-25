@@ -255,7 +255,7 @@
     }%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%   Formattin Section Headings                   %
+%%   Formatting Section Headings                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ifthenelse{\boolean{RS@BfSet}}%
 {\sectionfont{\normalsize\normalfont\singlespace\centering\bfseries}%
