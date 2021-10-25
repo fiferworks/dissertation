@@ -420,7 +420,7 @@
       \noindent\phantom{Table}\hfill\uline{page}\par%
       \@starttoc{toc}%
     \end{simpleenv}%
-    \setboolean{SetDSpace}{true}}%
+    \setboolean{SetDSpace}{false}}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%        List of Tables                           %
@@ -436,7 +436,7 @@
       \noindent\uline{Table}\hfill\uline{page}\par%
       \@starttoc{lot}%
     \end{simpleenv}%
-    \setboolean{SetDSpace}{true}}%
+    \setboolean{SetDSpace}{false}}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%        List of Figures                          %
@@ -452,7 +452,7 @@
       \noindent\uline{Figure}\hfill\uline{page}\par%
       \@starttoc{lof}%
     \end{simpleenv}%
-    \setboolean{SetDSpace}{true}}%
+    \setboolean{SetDSpace}{false}}%
 \renewcommand{\appendix}{\par
   \setcounter{chapter}{0}%
   \setcounter{section}{0}%
@@ -470,7 +470,7 @@
       \setboolean{SetDSpace}{false}%
       \chapter*{\bibname}%
       \addcontentsline{toc}{extrachapter}{\bibname}%
-      \setboolean{SetDSpace}{true}%
+      \setboolean{SetDSpace}{false}%
       \list{\@biblabel{\@arabic\c@enumiv}}%
            {\settowidth\labelwidth{\@biblabel{#1}}%
             \setlength{\parsep}{\BaseDiff\baselineskip}%
