@@ -2,6 +2,7 @@
 title: 'Mite-Virus-Plant Complexes of Importance for Florida Agriculture: Early Detection, Chemical Ecology and Biocontrol of *Phyllocoptes fructiphilus* and *Brevipalpus californicus*'
 author: 'Austin Nathaniel Fife'
 date: '2021'
+month: 'December'
 institution: 'The University of Florida'
 division: 'College of Agriculture and Life Sciences'
 advisor: 'Xavier Martini'
@@ -45,19 +46,19 @@ csl: csl/entsoc.csl
 # use code similar to line 20 for the files.  If you are producing in a different
 # format than PDF, you can delete or ignore lines 20-31 in this YAML header.
 abstract: |
-  '`r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collapse = "\n  ")`' 
+  `r paste(readLines(here::here("prelims", "00--abstract.Rmd")), collapse = "\n  ")` 
 
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
 acknowledgements: |
-  '`r paste(readLines(here::here("prelims", "00--acknowledgments.Rmd")), collapse = "\n  ")`'
+  `r paste(readLines(here::here("prelims", "00--acknowledgments.Rmd")), collapse = "\n  ")`
 dedication: |
-  '`r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`'
+  `r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`
 
 #Use this section for your biography
 preface: |
-  Austin N. Fife received his B.S. degree in Biology - Zoology Emphasis at Brigham Young University - Idaho at Rexburg, a M.S. in Entomology at the University of Idaho at Moscow, and a Ph.D. in Entomology at the University of Florida, Gainesville, where he specialized in acarology, biological control, chemical ecology, vector biology and plant-pathogen-arthropod interactions. He loves to spend time outdoors with his wife Liz and his two lovely daughters Violet and Juniper.
+  Austin N. Fife received his B.S. degree in biology - zoology emphasis at Brigham Young University - Idaho at Rexburg, a M.S. in entomology at the University of Idaho at Moscow, and a Ph.D. in entomology and nematology at the University of Florida, Gainesville, where he specialized in acarology, biological control, chemical ecology, vector biology and plant-pathogen-arthropod interactions. He loves to spend time outdoors with his wife Liz and his two lovely daughters Violet and Juniper.
 
   
 # keywords: keywords #this isn't implemented yet
