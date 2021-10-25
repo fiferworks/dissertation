@@ -1,0 +1,3 @@
+# APPENDIX {#appendix}
+<!-- this imports my publication -->
+\includepdf[pages={-}, pagecommand={\phantomsection}]{pubs/pfruct-report.pdf}

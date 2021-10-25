@@ -1,4 +1,4 @@
 book_filename: "thesis"
 chapter_name: "Chapter "
-rmd_files: ["index.Rmd", "01-lit-review.Rmd", "02-rrv-mite-survey.Rmd", "03-chem-eco-rrd-pmites.Rmd", "04-asm-ipm-trials.Rmd", "05-ofv-mite-report.Rmd", "06-conclusion.Rmd", "99-references.Rmd"]
+rmd_files: ["index.Rmd", "01-lit-review.Rmd", "02-rrv-mite-survey.Rmd", "03-chem-eco-rrd-pmites.Rmd", "04-asm-ipm-trials.Rmd", "05-ofv-mite-report.Rmd", "06-conclusion.Rmd", "07-appendix.Rmd", "99-references.Rmd"]
 download: [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]]
