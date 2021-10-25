@@ -87,10 +87,10 @@ mapviewOptions(fgb = FALSE)
 map_pf_mites <-
   mapview(
     df,
-    col.regions = c("yellow", "gray50"),
+    col.regions = c("orange", "lightgray"),
     homebutton = FALSE,
     cex = 'eriophyoids',
-    na.color = c("gray50"),
+    na.color = c("lightgray"),
     alpha.regions = 0.8,
     zcol = 'p_fructiphilus',
     layer.name = 'P. fructiphilus Present',
@@ -110,10 +110,10 @@ df_fl <-
 map_mites_fl <-
   mapview(
     df_fl,
-    col.regions = c("yellow", "gray50"),
+    col.regions = c("orange", "lightgray"),
     homebutton = FALSE,
     cex = 'eriophyoids',
-    na.color = c("gray50"),
+    na.color = c("lightgray"),
     alpha.regions = 0.8,
     zcol = 'p_fructiphilus',
     layer.name = 'P. fructiphilus Present',
@@ -134,7 +134,7 @@ map_other_mites_fl <-
     ),
     homebutton = FALSE,
     cex = 'other_mites',
-    na.color = c("gray50"),
+    na.color = c("lightgray"),
     alpha.regions = 0.8,
     zcol = 'other_mites',
     layer.name = 'Other mites found on roses',
