@@ -625,6 +625,16 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   publisher = {Elsevier {BV}},
 }
 
+@Article{Babu2021,
+  author    = {Babu, Binoy and Paret, Mathews L. and Martini, Xavier and Knox, Gary and Riddle, Barron and Ritchie, Laura and Aldrich, Jim and Kalischuk, Melanie and da Silva, Susannah},
+  title     = {Impact of foliar application of acibenzolar s-methyl on rose rosette disease and rose plant quality},
+  year      = {2021},
+  month     = oct,
+  abstract  = {Rose rosette disease (RRD) caused by rose rosette emaravirus (RRV) is a major issue in the U.S. rose industry with no effective method for its management. This study evaluated the effect of foliar application of Acibenzolar S-methyl (ASM), a plant systemic acquired resistance inducer in reducing RRD disease severity on Rosa species cv. Radtkopink (Pink Double Knock Out{\textregistered}) under greenhouse condition, and the effect of ASM on plant growth under commercial nursery production conditions. ASM at 50 or 100 mg/L at weekly intervals significantly reduced RRD severity compared to the untreated control in two of the three greenhouse trials (P  0.05). The plants in these trials were subsequently pruned and observed for symptoms, which further indicated that application of ASM at 50 or 100 mg/L lowered disease severity compared to the untreated control (P  0.05) in these two trials. Plants treated with ASM at 50 or 100 mg/L had delayed incidence of RRD compared to the non-treated controls. Plants treated with ASM at 50 or 100 mg/L rate in all three trials either did not have RRV present or the virus was present in fewer leaf samples than untreated controls as indicated by RT-qPCR analysis. Overall, plants treated with ASM at 50 mg/L had 36-43% reduced RRD incidence compared to the water control. The treatment of two cultivars of rose, {\textquoteleft}Radtkopink{\textquoteright} and {\textquoteleft}Meijocos{\textquoteright} (Pink Drift{\textregistered}), with weekly foliar applications of ASM at three rates (0.5, 0.75 and 1.0 oz/A) indicated that ASM had no negative effect on flowering or plant growth at even the highest rate.},
+  doi       = {10.1094/pdis-01-21-0131-re},
+  publisher = {Scientific Societies},
+}
+
 @Article{Babu2017a,
   author    = {Babu, Binoy and Washburn, Brian K. and Ertek, T{\"{u}}lin Sarig{\"{u}}l and Miller, Steven H. and Riddle, Charles B. and Knox, Gary W. and Ochoa-Corona, Francisco M. and Olson, Jennifer and Kat{\i}rc{\i}o{\u{g}}lu, Yakup Zekai and Paret, Mathews L.},
   title     = {A field based detection method for {Rose rosette virus} using isothermal probe-based reverse transcription-recombinase polymerase amplification assay},
@@ -840,6 +850,17 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
 }
 
 @Electronic{Beard2012a,
+  address      = {{Fort Collins}, {CO}},
+  author       = {Beard, J. J. and Ochoa, R. and Bauchan G., R. and Trice M., D. and Redford A., J. and Walters T., W. and Mitter, C.},
+  howpublished = {Online},
+  note         = {Acessed: 2021-02-24},
+  organization = {Identification technology program, {CPHST}, {PPQ}, {APHIS}, {USDA}},
+  title        = {Flat mites of the world edition 2},
+  url          = {http://idtools.org/id/mites/flatmites/},
+  year         = {2012},
+}
+
+@Electronic{Beard2012b,
   address      = {{Fort Collins}, {CO}},
   author       = {Beard, J. J. and Ochoa, R. and Bauchan G., R. and Trice M., D. and Redford A., J. and Walters T., W. and Mitter, C.},
   howpublished = {Online},
@@ -3753,6 +3774,14 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   year         = {2006},
 }
 
+@Electronic{Kane2006b,
+  author       = {Ethan C. Kane and Ronald Ochoa},
+  organization = {The Uniuted States Department of Agriculture - Agricultural Research Service},
+  title        = {Detection & identification of the red palm mite {\textit{Raoiella indica}} {Hirst} ({Acari}: {Tenuipalpidae})},
+  url          = {https://www.sel.barc.usda.gov/acari/PDF/indicaGuide.pdf},
+  year         = {2006},
+}
+
 @Article{Kane2012,
   author    = {Kane, Ethan C. and Ochoa, Ronald and Mathurin, Guy and Erbe, Eric F. and Beard, Jennifer J.},
   journal   = {Experimental and Applied Acarology},
@@ -5217,6 +5246,17 @@ proteins. The properties of these binding proteins suggest their involvement in 
   number={1},
   pages={35--43},
   year={2007}
+}
+
+@Article{Monterrosa2021,
+  author    = {Monterrosa, Alejandra and Iriarte, Fanny B. and Paret, Mathews L. and Joseph, Shimat V.},
+  title     = {Effects of relative humidity on the vector of rose rosette disease, {\textit{Phyllocoptes fructiphilus}} (eriophyidae), and incidence of disease symptoms},
+  year      = {2021},
+  month     = sep,
+  number    = {3},
+  volume    = {104},
+  doi       = {10.1653/024.104.0305},
+  publisher = {Florida Entomological Society},
 }
 
 @Article{Moraes2001,
