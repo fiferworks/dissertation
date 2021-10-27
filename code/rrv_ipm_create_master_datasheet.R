@@ -117,7 +117,7 @@ df <- bind_rows(ta_trials, ga_trials)
 df <-
   df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
 
-df <- df %>%  dplyr::select(-notes,-Plant)
+df <- df %>%  dplyr::select(-notes, -Plant)
 
 df <-
   df %>% dplyr::select(
@@ -153,6 +153,9 @@ df <- df %>% group_by(Treatment) %>% mutate(
   n_samples = n()
 ) %>%
   ungroup()
+
+df$Tetranychoids <- df$Tetranychoids %>% replace_na(0)
+df$Phytoseiids <- df$Phytoseiids %>% replace_na(0)
 
 #saving output
 write_csv(df, 'data/ipm.csv')
