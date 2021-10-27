@@ -47,7 +47,8 @@ Anova(glm_erios, type = c("III")) #treatment is significant
 q <- emmeans(glm_erios, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_all_erios.txt')
-cld(q)
+cld(q) #compact letter display
+summary(glht(glm_erios, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm")) #multiple comparisons
 sink()
 
 #########################################################
@@ -68,7 +69,8 @@ Anova(glm_other, type = c("III")) #treatment is significant
 q <- emmeans(glm_other, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_other_mites.txt')
-cld(q)
+cld(q) #compact letter display
+summary(glht(glm_other, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm")) #multiple comparisons
 sink()
 
 ####ATHENS SITES####
@@ -86,14 +88,15 @@ summary(glm_athens)
 #ANOVA
 Anova(glm_athens, type = c("III")) #treatment is significant
 
-#multiple comparisions
+#multiple comparisons
 summary(glht(glm_athens, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
 
 #making a compact letter display for each treatment
 q <- emmeans(glm_athens, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_athns.txt')
-cld(q)
+cld(q) #compact letter display
+summary(glht(glm_athens, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm")) #multiple comparisons
 sink()
 
 #####GRIFFIN SITES####
@@ -111,14 +114,15 @@ sink()
 # #ANOVA
 # Anova(glm_griffin, type = c("III")) #treatment is significant
 #
-# #multiple comparisions
+# #multiple comparisons
 # summary(glht(glm_griffin, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
 #
 # #making a compact letter display for each treatment
 # e <- emmeans(glm_griffin, "Treatment")
 #
 # sink(file = 'data/rrv_ipm_cld_grifn.txt')
-# cld(e)
+# cld(q) #compact letter display
+# summary(glht(glm_griffin, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm")) #multiple comparisons
 # sink()
 
 ####TALLAHASSEE SITES####
@@ -141,7 +145,8 @@ Anova(glm_talla_erios, type = c("III")) #treatment is significant
 q <- emmeans(glm_talla_erios, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_erios_talla.txt')
-cld(q)
+cld(q) #compact letter display
+summary(glht(glm_talla_erios, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm")) #multiple comparisons
 sink()
 
 ###############
@@ -163,7 +168,8 @@ Anova(glm_tet, type = c("III")) #treatment, eriophyoids and phytoseiids are sign
 q <- emmeans(glm_tet, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_tet_talla.txt')
-cld(q)
+cld(q) #compact letter display
+summary(glht(glm_tet, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm")) #multiple comparisons
 sink()
 
 #############
@@ -185,7 +191,8 @@ Anova(glm_pred, type = c("III")) #treatment and tetranychoids are significant
 q <- emmeans(glm_pred, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_pred_talla.txt')
-cld(q)
+cld(q) #compact letter display
+summary(glht(glm_pred, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm")) #multiple comparisons
 sink()
 
 #############
@@ -193,23 +200,24 @@ sink()
 #############
 #glmer model of other mites for all sites
 glm_talla <-
-  glmer(`Other Mites` ~ Treatment + (1 | Block),
-        family = 'poisson',
-        data = talla)
+  glmer(
+    `Other Mites` ~ Treatment + Tetranychoids + Eriophyoids + (1 |
+                                                                 Block),
+    family = 'poisson',
+    data = talla
+  )
 
 summary(glm_talla)
 
 #ANOVA
-Anova(glm_talla, type = c("III")) #treatment is significant
-
-#multiple comparisions
-summary(glht(glm_talla, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
+Anova(glm_talla, type = c("III")) #treatment and tetranychoids are significant
 
 #making a compact letter display for each treatment
 q <- emmeans(glm_talla, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_other_talla.txt')
-cld(q)
+cld(q) #compact letter display)
+summary(glht(glm_talla, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm")) #multiple comparisons
 sink()
 
 #cleanup
