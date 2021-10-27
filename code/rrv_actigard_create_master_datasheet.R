@@ -169,7 +169,7 @@ athns_summary$RRD <- sub('-', NA, athns_summary$RRD)
 #saving the output
 write_csv(athns_summary, 'data/rrv_athens_disease_progress_2018.csv')
 
-
+#TODO: Use or lose Athens data here:
 View(
   athns_audpc %>%  select(-AUDPC,-`Final disease severity (%)`) %>% pivot_longer(
     cols = c(
