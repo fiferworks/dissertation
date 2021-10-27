@@ -1,10 +1,10 @@
  Treatment        emmean    SE  df asymp.LCL asymp.UCL .group
- Kontos             1.42 0.171 Inf      1.08      1.76  1    
- Mites              1.92 0.166 Inf      1.60      2.25   2   
- Water              2.02 0.165 Inf      1.70      2.34   2   
- Mites + Actigard   2.06 0.165 Inf      1.73      2.38   2   
- Actigard           2.06 0.165 Inf      1.73      2.38   2   
- Untreated          2.36 0.226 Inf      1.92      2.80   2   
+ Kontos             1.55 0.134 Inf      1.29      1.81  1    
+ Mites              1.94 0.125 Inf      1.69      2.18   2   
+ Actigard           1.94 0.123 Inf      1.70      2.18   2   
+ Mites + Actigard   1.95 0.124 Inf      1.71      2.20   2   
+ Water              1.99 0.123 Inf      1.75      2.23   2   
+ Untreated          2.00 0.167 Inf      1.68      2.33  12   
 
 Results are given on the log (not the response) scale. 
 Confidence level used: 0.95 
@@ -13,3 +13,33 @@ significance level used: alpha = 0.05
 NOTE: Compact letter displays can be misleading
       because they show NON-findings rather than findings.
       Consider using 'pairs()', 'pwpp()', or 'pwpm()' instead. 
+
+	 Simultaneous Tests for General Linear Hypotheses
+
+Multiple Comparisons of Means: Tukey Contrasts
+
+
+Fit: glmer(formula = `Other Mites` ~ Treatment + Tetranychoids + Eriophyoids + 
+    (1 | Block), data = talla, family = "poisson")
+
+Linear Hypotheses:
+                                   Estimate Std. Error z value Pr(>|z|)    
+Water - Kontos == 0                0.438638   0.094595   4.637  5.3e-05 ***
+Mites - Kontos == 0                0.389118   0.097396   3.995 0.000776 ***
+Mites + Actigard - Kontos == 0     0.404704   0.096133   4.210 0.000332 ***
+Actigard - Kontos == 0             0.394029   0.091837   4.291 0.000250 ***
+Untreated - Kontos == 0            0.453155   0.211954   2.138 0.357700    
+Mites - Water == 0                -0.049520   0.074911  -0.661 1.000000    
+Mites + Actigard - Water == 0     -0.033934   0.072871  -0.466 1.000000    
+Actigard - Water == 0             -0.044609   0.072819  -0.613 1.000000    
+Untreated - Water == 0             0.014517   0.208441   0.070 1.000000    
+Mites + Actigard - Mites == 0      0.015586   0.074700   0.209 1.000000    
+Actigard - Mites == 0              0.004911   0.075154   0.065 1.000000    
+Untreated - Mites == 0             0.064037   0.209803   0.305 1.000000    
+Actigard - Mites + Actigard == 0  -0.010675   0.072753  -0.147 1.000000    
+Untreated - Mites + Actigard == 0  0.048451   0.208527   0.232 1.000000    
+Untreated - Actigard == 0          0.059126   0.206852   0.286 1.000000    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+(Adjusted p values reported -- holm method)
+

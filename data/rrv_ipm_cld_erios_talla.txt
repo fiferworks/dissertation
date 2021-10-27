@@ -13,3 +13,33 @@ significance level used: alpha = 0.05
 NOTE: Compact letter displays can be misleading
       because they show NON-findings rather than findings.
       Consider using 'pairs()', 'pwpp()', or 'pwpm()' instead. 
+
+	 Simultaneous Tests for General Linear Hypotheses
+
+Multiple Comparisons of Means: Tukey Contrasts
+
+
+Fit: glmer(formula = Eriophyoids ~ Treatment + Tetranychoids + Phytoseiids + 
+    (1 | Block), data = talla, family = "poisson")
+
+Linear Hypotheses:
+                                   Estimate Std. Error z value Pr(>|z|)    
+Water - Kontos == 0                2.509733   0.068500  36.638  < 2e-16 ***
+Mites - Kontos == 0                2.587921   0.068318  37.880  < 2e-16 ***
+Mites + Actigard - Kontos == 0     2.513038   0.068674  36.594  < 2e-16 ***
+Actigard - Kontos == 0             2.336903   0.069068  33.835  < 2e-16 ***
+Untreated - Kontos == 0            1.382284   0.097627  14.159  < 2e-16 ***
+Mites - Water == 0                 0.078188   0.026058   3.000  0.00809 ** 
+Mites + Actigard - Water == 0      0.003304   0.026734   0.124  0.90163    
+Actigard - Water == 0             -0.172830   0.027701  -6.239 1.76e-09 ***
+Untreated - Water == 0            -1.127449   0.074229 -15.189  < 2e-16 ***
+Mites + Actigard - Mites == 0     -0.074883   0.026215  -2.856  0.00857 ** 
+Actigard - Mites == 0             -0.251018   0.027325  -9.187  < 2e-16 ***
+Untreated - Mites == 0            -1.205637   0.074045 -16.282  < 2e-16 ***
+Actigard - Mites + Actigard == 0  -0.176135   0.027875  -6.319 1.32e-09 ***
+Untreated - Mites + Actigard == 0 -1.130754   0.074175 -15.244  < 2e-16 ***
+Untreated - Actigard == 0         -0.954619   0.074594 -12.798  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+(Adjusted p values reported -- holm method)
+
