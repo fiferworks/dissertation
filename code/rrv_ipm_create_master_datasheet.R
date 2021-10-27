@@ -59,7 +59,7 @@ ga_trials <-
     `Other Mites`,
     'Date',
     'Field'
-  )
+  ) %>% arrange(Date)
 
 #### TALLAHASSEE DATASHEET ####
 ta_trials <- read_excel('data/rrv_ipm_trial_2020-2021.xlsx')
@@ -96,7 +96,21 @@ ga_trials <- ga_trials %>% add_column(
 ta_trials <-
   ta_trials %>% group_by(Treatment) %>% mutate(N = n()) %>% ungroup()
 
-ta_trials <- ta_trials %>%  dplyr::select(-sample_no)
+ta_trials <-
+  ta_trials %>%  dplyr::select(-sample_no) %>% arrange(Date)
+
+# reading in the predatory mite data
+ta_pmites <-
+  read_excel(path = 'data/rrv_ipm_pred_mites_jessie.xlsx')
+
+ta_pmites <-
+  ta_pmites %>% rename(ID = Number,
+                       Tetranychoids = Herb,
+                       Phytoseiids = Pred)
+
+ta_pmites$ID <- paste("Pheno", ta_pmites$ID)
+
+ta_trials <- ta_trials %>% left_join(ta_pmites)
 
 df <- bind_rows(ta_trials, ga_trials)
 
@@ -105,18 +119,39 @@ df <-
 
 df <- df %>%  dplyr::select(-notes,-Plant)
 
+df <-
+  df %>% dplyr::select(
+    'ID',
+    'Date',
+    'Month',
+    `mites/g`,
+    `erios/g`,
+    'grams_dry_weight',
+    'Eriophyoids',
+    'Tetranychoids',
+    'Phytoseiids',
+    `Other Mites`,
+    'Block',
+    'Treatment',
+    'Field',
+    'N'
+  )
+
 #saving the master file
 write_csv(df, 'rrv_ipm_master_datasheet.csv')
 
 #getting summary stats for each treatment group for other mites
-df <-
-  df %>% group_by(Treatment) %>% mutate(
-    'mites/plant' = mean(`Other Mites`),
-    totals = sum(`Other Mites`),
-    sd = sd(`Other Mites`),
-    se = sd(`Other Mites`) / sqrt(n()),
-    n_samples = n()
-  ) %>%
+df <- df %>% group_by(Treatment) %>% mutate(
+  'tetranychoids/plant' = mean(Tetranychoids, na.rm = TRUE),
+  tet_totals = sum(Tetranychoids, na.rm = TRUE),
+  tet_sd = sd(Tetranychoids, na.rm = TRUE),
+  tet_se = sd(Tetranychoids, na.rm = TRUE) / sqrt(n()),
+  'phytoseiids/plant' = mean(Phytoseiids, na.rm = TRUE),
+  pred_totals = sum(Phytoseiids, na.rm = TRUE),
+  tet_sd = sd(Phytoseiids, na.rm = TRUE),
+  tet_se = sd(Phytoseiids, na.rm = TRUE) / sqrt(n()),
+  n_samples = n()
+) %>%
   ungroup()
 
 #saving output
