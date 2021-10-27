@@ -1,3 +1,5 @@
+# TODO: Add new graphs for tetranychoids and phytoseiids, respectively 
+
 ####PACKAGES####
 pkgs <- c('tidyverse',
           'viridis',
