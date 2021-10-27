@@ -44,10 +44,10 @@ summary(glm_erios)
 Anova(glm_erios, type = c("III")) #treatment is significant
 
 #making a compact letter display for each treatment
-er <- emmeans(glm_erios, "Treatment")
+q <- emmeans(glm_erios, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_all_erios.txt')
-cld(er)
+cld(q)
 sink()
 
 #########################################################
@@ -90,10 +90,10 @@ Anova(glm_athens, type = c("III")) #treatment is significant
 summary(glht(glm_athens, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
 
 #making a compact letter display for each treatment
-w <- emmeans(glm_athens, "Treatment")
+q <- emmeans(glm_athens, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_athns.txt')
-cld(w)
+cld(q)
 sink()
 
 #####GRIFFIN SITES####
@@ -126,9 +126,11 @@ sink()
 #ERIOPHYOIDS!#
 ##############
 glm_talla_erios <-
-  glmer(Eriophyoids ~ Treatment + (1 | Block),
-        family = 'poisson',
-        data = talla)
+  glmer(
+    Eriophyoids ~ Treatment + Tetranychoids + Phytoseiids + (1 | Block),
+    family = 'poisson',
+    data = talla
+  )
 
 summary(glm_talla_erios)
 
@@ -136,12 +138,59 @@ summary(glm_talla_erios)
 Anova(glm_talla_erios, type = c("III")) #treatment is significant
 
 #making a compact letter display for each treatment
-erio <- emmeans(glm_talla_erios, "Treatment")
+q <- emmeans(glm_talla_erios, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_erios_talla.txt')
-cld(erio)
+cld(q)
 sink()
 
+###############
+#TETRANYCHOIDS#
+###############
+glm_tet <-
+  glmer(
+    Tetranychoids ~ Treatment + Eriophyoids + Phytoseiids + (1 | Block),
+    family = 'poisson',
+    data = talla
+  )
+
+summary(glm_tet)
+
+#ANOVA
+Anova(glm_tet, type = c("III")) #treatment, eriophyoids and phytoseiids are significant
+
+#making a compact letter display for each treatment
+q <- emmeans(glm_tet, "Treatment")
+
+sink(file = 'data/rrv_ipm_cld_tet_talla.txt')
+cld(q)
+sink()
+
+#############
+#PHYTOSEIIDS#
+#############
+glm_pred <-
+  glmer(
+    Phytoseiids ~ Treatment + Tetranychoids + Eriophyoids + (1 | ID),
+    family = 'poisson',
+    data = talla
+  )
+
+summary(glm_pred)
+
+#ANOVA
+Anova(glm_pred, type = c("III")) #treatment and tetranychoids are significant
+
+#making a compact letter display for each treatment
+q <- emmeans(glm_pred, "Treatment")
+
+sink(file = 'data/rrv_ipm_cld_pred_talla.txt')
+cld(q)
+sink()
+
+#############
+#OTHER MITES#
+#############
 #glmer model of other mites for all sites
 glm_talla <-
   glmer(`Other Mites` ~ Treatment + (1 | Block),
@@ -157,10 +206,10 @@ Anova(glm_talla, type = c("III")) #treatment is significant
 summary(glht(glm_talla, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
 
 #making a compact letter display for each treatment
-f <- emmeans(glm_talla, "Treatment")
+q <- emmeans(glm_talla, "Treatment")
 
 sink(file = 'data/rrv_ipm_cld_other_talla.txt')
-cld(f)
+cld(q)
 sink()
 
 #cleanup

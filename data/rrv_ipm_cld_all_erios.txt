@@ -1,12 +1,12 @@
- Treatment emmean      SE  df asymp.LCL asymp.UCL .group
- Ninja     -952.3 7456540 Inf -14615503  14613598  12345
- MN         -43.9 7456540 Inf -14614595  14614507  12345
- Kontos     -15.3      15 Inf       -44        14  1    
- Untreated  -13.9      15 Inf       -43        15   2   
- Actigard   -13.0      15 Inf       -42        16    3  
- MA         -12.8      15 Inf       -42        16     4 
- Water      -12.8      15 Inf       -42        16     45
- Mites      -12.7      15 Inf       -42        16      5
+ Treatment        emmean     SE  df asymp.LCL asymp.UCL .group 
+ Ninja            -952.3 132.31 Inf   -1211.6   -693.00  1     
+ MN                -43.9 132.31 Inf    -303.2    215.45   23456
+ Kontos            -15.3   4.44 Inf     -24.0     -6.61   2    
+ Untreated         -13.9   4.44 Inf     -22.6     -5.23    3   
+ Actigard          -13.0   4.44 Inf     -21.7     -4.27     4  
+ Mites + Actigard  -12.8   4.44 Inf     -21.5     -4.11      5 
+ Water             -12.8   4.44 Inf     -21.5     -4.10      56
+ Mites             -12.7   4.44 Inf     -21.4     -4.03       6
 
 Results are given on the log (not the response) scale. 
 Confidence level used: 0.95 
