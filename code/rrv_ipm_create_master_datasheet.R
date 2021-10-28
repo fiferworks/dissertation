@@ -64,6 +64,11 @@ ga_trials <-
 #### TALLAHASSEE DATASHEET ####
 ta_trials <- read_excel('data/rrv_ipm_trial_2020-2021.xlsx')
 
+#renames treatments to more readable form
+ta_trials$Treatment[ta_trials$Treatment == 'Mites + Actigard'] <-
+  "MA"
+
+#these are from the Tallahassee field trial
 ta_trials <- ta_trials %>% add_column(Field = 'Tallahassee')
 
 # adding a column for mites/gram
@@ -117,7 +122,7 @@ df <- bind_rows(ta_trials, ga_trials)
 df <-
   df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
 
-df <- df %>%  dplyr::select(-notes,-Plant)
+df <- df %>%  dplyr::select(-notes, -Plant)
 
 df <-
   df %>% dplyr::select(
