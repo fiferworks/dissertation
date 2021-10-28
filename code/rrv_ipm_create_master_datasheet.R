@@ -122,7 +122,7 @@ df <- bind_rows(ta_trials, ga_trials)
 df <-
   df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
 
-df <- df %>%  dplyr::select(-notes, -Plant)
+df <- df %>%  dplyr::select(-notes,-Plant)
 
 df <-
   df %>% dplyr::select(
@@ -145,10 +145,12 @@ df <-
 #getting summary stats for each treatment group for other mites
 df <- df %>% group_by(Treatment) %>% mutate(
   'tetranychoids/plant' = mean(Tetranychoids, na.rm = TRUE),
+  'tet/plant/g' = mean(Tetranychoids / grams_dry_weight),
   tet_totals = sum(Tetranychoids, na.rm = TRUE),
   tet_sd = sd(Tetranychoids, na.rm = TRUE),
   tet_se = sd(Tetranychoids, na.rm = TRUE) / sqrt(n()),
   'phytoseiids/plant' = mean(Phytoseiids, na.rm = TRUE),
+  'preds/plant/g' = mean(Phytoseiids / grams_dry_weight),
   pred_totals = sum(Phytoseiids, na.rm = TRUE),
   tet_sd = sd(Phytoseiids, na.rm = TRUE),
   tet_se = sd(Phytoseiids, na.rm = TRUE) / sqrt(n()),

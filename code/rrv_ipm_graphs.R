@@ -69,11 +69,29 @@ talla <- filter(df, Field == 'Tallahassee')
 ltrs_erios_all <-
   read_table("data/rrv_ipm_cld_all_erios.txt", n_max = 8)
 
-####SUMMARY STATS OF BOTH SITES####
+####SUMMARY STATS FOR ERIOS AT ALL SITES####
 #getting summary stats for each treatment group
 ipm_erios <-
   df %>% group_by(Treatment) %>% summarize(
     'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
+    totals = sum(Eriophyoids, na.rm = TRUE),
+    sd = sd(`erios/g`, na.rm = TRUE),
+    se = sd(`erios/g`, na.rm = TRUE) / sqrt(n())
+  ) %>%
+  ungroup()
+
+#rounding for graph
+ipm_erios$'mean_erios/g' <-
+  round(ipm_erios$'mean_erios/g', digits = 2)
+
+#combining letters with dataset
+ipm_erios <- left_join(ipm_erios, ltrs_erios_all, by = 'Treatment')
+
+
+####SUMMARY STATS FOR TETRANYCHOIDS AT ALL SITES####
+ipm_tes <-
+  df %>% group_by(Treatment) %>% summarize(
+    'tetranychoids/gram' = mean(`erios/g`, na.rm = TRUE),
     totals = sum(Eriophyoids, na.rm = TRUE),
     sd = sd(`erios/g`, na.rm = TRUE),
     se = sd(`erios/g`, na.rm = TRUE) / sqrt(n())
