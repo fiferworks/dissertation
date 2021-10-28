@@ -66,53 +66,13 @@ talla <- filter(df, Field == 'Tallahassee')
 
 ####ADDING SIGNIFICANCE LETTERS TO TABLES FOR USE IN GRAPHS####
 #reading in the difference letters for all sites
-ltrs_erios_all <-
-  read_table("data/rrv_ipm_cld_all_erios.txt", n_max = 8)
-
-####SUMMARY STATS FOR ERIOS AT ALL SITES####
-#getting summary stats for each treatment group
-ipm_erios <-
-  df %>% group_by(Treatment) %>% summarize(
-    'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
-    totals = sum(Eriophyoids, na.rm = TRUE),
-    sd = sd(`erios/g`, na.rm = TRUE),
-    se = sd(`erios/g`, na.rm = TRUE) / sqrt(n())
-  ) %>%
-  ungroup()
-
-#rounding for graph
-ipm_erios$'mean_erios/g' <-
-  round(ipm_erios$'mean_erios/g', digits = 2)
-
-#combining letters with dataset
-ipm_erios <- left_join(ipm_erios, ltrs_erios_all, by = 'Treatment')
-
-
-####SUMMARY STATS FOR TETRANYCHOIDS AT ALL SITES####
-ipm_tes <-
-  df %>% group_by(Treatment) %>% summarize(
-    'tetranychoids/gram' = mean(`erios/g`, na.rm = TRUE),
-    totals = sum(Eriophyoids, na.rm = TRUE),
-    sd = sd(`erios/g`, na.rm = TRUE),
-    se = sd(`erios/g`, na.rm = TRUE) / sqrt(n())
-  ) %>%
-  ungroup()
-
-#rounding for graph
-ipm_erios$'mean_erios/g' <-
-  round(ipm_erios$'mean_erios/g', digits = 2)
-
-#combining letters with dataset
-ipm_erios <- left_join(ipm_erios, ltrs_erios_all, by = 'Treatment')
-
-
-####ALL OTHER MITES####
-ltrs_other_all <-
+ltrs_tet_all <-
   read_table("data/rrv_ipm_cld_other_mites.txt", n_max = 8)
 
-ipm_other <-
+####SUMMARY STATS FOR TETRANYCHOIDS AT ALL SITES####
+ipm_tet <-
   df %>% group_by(Treatment) %>% summarize(
-    'mean_mites/g' = mean(`mites/g`, na.rm = TRUE),
+    'tetranychoids/plant' = mean(`Other Mites`, na.rm = TRUE),
     totals = sum(`Other Mites`, na.rm = TRUE),
     sd = sd(`Other Mites`, na.rm = TRUE),
     se = sd(`Other Mites`, na.rm = TRUE) / sqrt(n())
@@ -120,20 +80,28 @@ ipm_other <-
   ungroup()
 
 #rounding for graph
-ipm_other$`mean_mites/g` <-
-  round(ipm_other$`mean_mites/g`, digits = 2)
+ipm_tet$'tetranychoids/plant' <-
+  round(ipm_tet$'tetranychoids/plant', digits = 2)
+
+#helper function to convert the cld numbers to letters
+convert_cld <- function(x) {
+  chartr("123456789", "abcdefghi", x)
+}
 
 #combining letters with dataset
-ipm_other <- left_join(ipm_other, ltrs_other_all, by = 'Treatment')
+ipm_tet <- left_join(ipm_tet, ltrs_tet_all, by = 'Treatment')
+
+#converting letters
+ipm_tet$.group <- convert_cld(ipm_tet$.group)
 
 ####ATHENS####
 #difference letters for Athens, ignore the warning
-ltrs_other_athns <-
+ltrs_tet_athns <-
   read_table("data/rrv_ipm_cld_athns.txt", n_max = 6)
 
 #getting summary stats for each treatment group
-ipm_other_athns <- athns %>% group_by(Treatment) %>% summarize(
-  'mean_mites/plant' = mean(`Other Mites`, na.rm = TRUE),
+ipm_tet_athns <- athns %>% group_by(Treatment) %>% summarize(
+  'tetranychoids/plant' = mean(`Other Mites`, na.rm = TRUE),
   totals = sum(`Other Mites`, na.rm = TRUE),
   sd = sd(`Other Mites`, na.rm = TRUE),
   se = sd(`Other Mites`, na.rm = TRUE) / sqrt(n())
@@ -141,54 +109,44 @@ ipm_other_athns <- athns %>% group_by(Treatment) %>% summarize(
   ungroup()
 
 #rounding for graph
-ipm_other_athns$'mean_mites/plant' <-
-  round(ipm_other_athns$'mean_mites/plant', digits = 2)
+ipm_tet_athns$'tetranychoids/plant' <-
+  round(ipm_tet_athns$'tetranychoids/plant', digits = 2)
 
 #combining letters with dataset
-ipm_other_athns <-
-  left_join(ipm_other_athns, ltrs_other_athns, by = 'Treatment')
+ipm_tet_athns <-
+  left_join(ipm_tet_athns, ltrs_tet_athns, by = 'Treatment')
 
+ipm_tet_athns$.group <- convert_cld(ipm_tet_athns$.group)
 
-####GRIFFIN####
-#getting summary stats for each treatment group
-ipm_other_grifn <- grifn %>% group_by(Treatment) %>% summarize(
-  'mean_mites/plant' = mean(`Other Mites`, na.rm = TRUE),
-  totals = sum(`Other Mites`, na.rm = TRUE),
-  sd = sd(`Other Mites`, na.rm = TRUE),
-  se = sd(`Other Mites`, na.rm = TRUE) / sqrt(n())
-) %>%
-  ungroup()
-
-#rounding for graph
-ipm_other_grifn$'mean_mites/plant' <-
-  round(ipm_other_grifn$'mean_mites/plant', digits = 2)
 
 ####TALLAHASSEE####
-#getting summary stats for each treatment group
-ipm_other_talla <- talla %>% group_by(Treatment) %>% summarize(
-  'mean_mites/g' = mean(`mites/g`, na.rm = TRUE),
-  totals = sum(`Other Mites`, na.rm = TRUE),
-  sd = sd(`mites/g`, na.rm = TRUE),
-  se = sd(`mites/g`, na.rm = TRUE) / sqrt(n())
+#getting summary stats for tetranychoids
+ipm_tet_talla <- talla %>% group_by(Treatment) %>% summarize(
+  'mean_tets/g' = mean(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+  totals = sum(Tetranychoids, na.rm = TRUE),
+  sd = sd(Tetranychoids, na.rm = TRUE),
+  se = sd(Tetranychoids, na.rm = TRUE) / sqrt(n())
 ) %>%
   ungroup()
 
 #rounding for graph
-ipm_other_talla$'mean_mites/g' <-
-  round(ipm_other_talla$'mean_mites/g', digits = 2)
+ipm_tet_talla$`mean_tets/g` <-
+  round(ipm_tet_talla$`mean_tets/g`, digits = 2)
 
-ltrs_other_talla <-
-  read_table("data/rrv_ipm_cld_other_talla.txt", n_max = 6)
+ltrs_tet_talla <-
+  read_table("data/rrv_ipm_cld_tet_talla.txt", n_max = 6)
 
 #combining letters with dataset
-ipm_other_talla <-
-  left_join(ipm_other_talla, ltrs_other_talla, by = 'Treatment')
+ipm_tet_talla <-
+  left_join(ipm_tet_talla, ltrs_tet_talla, by = 'Treatment')
 
-ipm_other_talla$.group <- c('a', 'b', 'b', 'b', 'b', 'b')
+#converting the numbers to letters
+ipm_tet_talla$.group <- convert_cld(ipm_tet_talla$.group)
+
 
 #now with eriophyoids
 ipm_erio_talla <- talla %>% group_by(Treatment) %>% summarize(
-  'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
+  'mean_erios/g' = mean(Eriophyoids / grams_dry_weight, na.rm = TRUE),
   totals = sum(Eriophyoids, na.rm = TRUE),
   sd = sd(`erios/g`, na.rm = TRUE),
   se = sd(`erios/g`, na.rm = TRUE) / sqrt(n())
@@ -202,29 +160,48 @@ ipm_erio_talla$'mean_erios/g' <-
 ltrs_erio_talla <-
   read_table("data/rrv_ipm_cld_erios_talla.txt", n_max = 6)
 
-ltrs_erio_talla$.group <- c('a', 'b', 'c', 'd', 'de', 'e')
-
+ltrs_erio_talla$.group <- convert_cld(ltrs_erio_talla$.group)
 
 #combining letters with dataset
 ipm_erio_talla <-
   left_join(ipm_erio_talla, ltrs_erio_talla, by = 'Treatment')
 
+
+#now with phytoseiids
+ipm_preds_talla <- talla %>% group_by(Treatment) %>% summarize(
+  `mean_phytos/g` = mean(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+  totals = sum(Phytoseiids, na.rm = TRUE),
+  sd = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+  se = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE) / sqrt(n())
+) %>%
+  ungroup()
+
+#rounding for graph
+ipm_preds_talla$`mean_phytos/g` <-
+  round(ipm_preds_talla$`mean_phytos/g`, digits = 2)
+
+ltrs_preds_talla <-
+  read_table("data/rrv_ipm_cld_pred_talla.txt", n_max = 6)
+
+ltrs_preds_talla$.group <- convert_cld(ltrs_preds_talla$.group)
+
+#combining letters with dataset
+ipm_preds_talla <-
+  left_join(ipm_preds_talla, ltrs_preds_talla, by = 'Treatment')
+
 #data is now ready to be graphed
 ####GRAPHS####
 #####GRAPH OF ALL TALLAHASSEE ERIOS####
-ggplot(
-  data = ipm_erio_talla,
-  mapping = aes(x = Treatment, y = `mean_erios/g`, fill = Treatment)
-) +
-  geom_bar(stat = 'identity') +
-  geom_errorbar(
-    aes(ymin = `mean_erios/g` - se, ymax = `mean_erios/g` + se),
-    width = 0.5,
-    size = 2.5,
-    position = position_dodge(.9)
+ggplot(data = talla,
+       mapping = aes(x = Treatment, y = `erios/g`, fill = Treatment)) +
+  geom_boxplot(
+    lwd = 2.5,
+    notch = TRUE,
+    varwidth = TRUE,
+    outlier.size = 2.5
   ) +
-  coord_cartesian(ylim = c(-0.3, 12.5), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
+  coord_cartesian(ylim = c(-0.4, 40), clip = "off") +
   ggtitle(
     expression(
       'Mean of eriophyoid mites per gram dry weight - Tallahassee IPM Trials 2020-2021'
@@ -255,35 +232,42 @@ ggplot(
       face = "bold"
     )
   ) +
+  scale_fill_manual(values = c(
+    "#CDC08C",
+    "#85D4E3",
+    "#9C964A",
+    "#C27D38",
+    "#F4B5BD",
+    "#798E87",
+    "#FAD77B"
+  )) +
   geom_text(
-    mapping = aes(x = Treatment, label = .group),
-    stat = "identity",
-    position = position_stack(1.1),
-    vjust = -3,
-    size = 30
-  ) +
-  geom_text(
-    mapping = aes(x = Treatment, label = `mean_erios/g`),
     data = ipm_erio_talla,
+    mapping = aes(x = Treatment, y = `mean_erios/g`, label = .group),
     stat = "identity",
-    position = position_stack(1.1),
-    vjust = -1.1,
+    position = position_stack(1),
+    vjust = -3,
+    hjust = 2,
     size = 30
   ) +
-  geom_text(
+geom_text(
+    data = ipm_erio_talla,
+    mapping = aes(x = Treatment, y = `mean_erios/g`, label = `mean_erios/g`),
+    stat = "identity",
+    position = position_stack(1),
+    vjust = -3,
+    hjust = -0.3,
+    size = 30
+  ) +
+geom_text(
     stat = "count",
     aes(label = paste0("n = ", ..count..), y = ..count..),
     position = 'fill',
-    vjust = 3.5,
+    vjust = 2,
     size = 25,
     data = talla
-  ) +
-  scale_fill_manual(values = viridis(
-    6,
-    begin = 0,
-    end = 1,
-    option = 'D'
-  ))
+  )
+
 
 #saving the file
 ggsave(
@@ -437,7 +421,7 @@ ggplot(
     size = 2.5,
     position = position_dodge(.9)
   ) +
-  facet_wrap(~ Month, strip.position = 'top') +
+  facet_wrap( ~ Month, strip.position = 'top') +
   coord_cartesian(ylim = c(-3, 17), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(expression(
