@@ -280,23 +280,22 @@ ggsave(
   dpi = 300
 )
 
-####GRAPH OF ALL TALLAHASSEE OTHER MITES####
-ggplot(
-  data = ipm_other_talla,
-  mapping = aes(x = Treatment, y = `mean_mites/g`, fill = Treatment)
-) +
-  geom_bar(stat = 'identity') +
-  geom_errorbar(
-    aes(ymin = `mean_mites/g` - se, ymax = `mean_mites/g` + se),
-    width = 0.5,
-    size = 2.5,
-    position = position_dodge(.9)
+####GRAPH OF ALL TALLAHASSEE TETRANYCHOIDS####
+ggplot(data = talla,
+       mapping = aes(x = Treatment, y = Tetranychoids/grams_dry_weight, fill = Treatment)) +
+  geom_boxplot(
+    lwd = 2.5,
+    notch = TRUE,
+    varwidth = TRUE,
+    outlier.size = 2.5
   ) +
-  coord_cartesian(ylim = c(-0.3, 12.5), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
-  ggtitle(expression(
-    'Mean of other mites per gram dry weight - Tallahassee IPM Trials 2020-2021'
-  )) +
+  coord_cartesian(ylim = c(-0.4, 10), clip = "off") +
+  ggtitle(
+    expression(
+      'Mean of tetranychoid mites per gram dry weight - Tallahassee IPM Trials 2020-2021'
+    )
+  ) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
   theme(legend.position = "none") +
   theme(
@@ -322,38 +321,46 @@ ggplot(
       face = "bold"
     )
   ) +
+  scale_fill_manual(values = c(
+    "#CDC08C",
+    "#85D4E3",
+    "#9C964A",
+    "#C27D38",
+    "#F4B5BD",
+    "#798E87",
+    "#FAD77B"
+  )) +
   geom_text(
-    mapping = aes(x = Treatment, label = `mean_mites/g`),
+    data = ipm_tet_talla,
+    mapping = aes(x = Treatment, y = `mean_tets/g`, label = .group),
     stat = "identity",
-    position = position_stack(1.1),
-    vjust = -1.1,
+    position = position_stack(1),
+    vjust = -1,
+    hjust = 2,
     size = 30
   ) +
   geom_text(
-    mapping = aes(x = Treatment, label = .group),
+    data = ipm_tet_talla,
+    mapping = aes(x = Treatment, y = `mean_tets/g`, label = `mean_tets/g`),
     stat = "identity",
-    position = position_stack(1.1),
-    vjust = -3,
+    position = position_stack(1),
+    vjust = -1,
+    hjust = -0.3,
     size = 30
   ) +
   geom_text(
     stat = "count",
     aes(label = paste0("n = ", ..count..), y = ..count..),
     position = 'fill',
-    vjust = 3.5,
+    vjust = 5,
     size = 25,
     data = talla
-  ) +
-  scale_fill_manual(values = viridis(
-    6,
-    begin = 0,
-    end = 1,
-    option = 'D'
-  ))
+  )
+
 
 #saving the file
 ggsave(
-  'figure/rrv_ipm_graph_other_talla.png',
+  'figure/rrv_ipm_graph_tets_talla.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
