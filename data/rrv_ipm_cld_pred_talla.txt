@@ -1,10 +1,10 @@
  Treatment        emmean    SE  df asymp.LCL asymp.UCL .group
- Kontos           -2.122 0.464 Inf     -3.03  -1.21274  1    
- Water            -1.214 0.323 Inf     -1.85  -0.58167  12   
- Actigard         -0.956 0.295 Inf     -1.53  -0.37713  12   
- Mites            -0.840 0.292 Inf     -1.41  -0.26738  12   
- Mites + Actigard -0.645 0.275 Inf     -1.18  -0.10625  12   
- Untreated        -0.539 0.278 Inf     -1.08   0.00557   2   
+ Kontos           -2.146 0.463 Inf     -3.05  -1.23738  1    
+ Water            -1.204 0.322 Inf     -1.83  -0.57347  12   
+ Actigard         -0.949 0.294 Inf     -1.53  -0.37245  12   
+ Mites            -0.829 0.291 Inf     -1.40  -0.25895  12   
+ Untreated        -0.546 0.277 Inf     -1.09  -0.00309   2   
+ Mites + Actigard -0.503 0.263 Inf     -1.02   0.01310   2   
 
 Results are given on the log (not the response) scale. 
 Confidence level used: 0.95 
@@ -24,21 +24,21 @@ Fit: glmer(formula = Phytoseiids ~ Treatment + Tetranychoids + Eriophyoids +
 
 Linear Hypotheses:
                                   Estimate Std. Error z value Pr(>|z|)  
-Water - Kontos == 0                 0.9076     0.5730   1.584   1.0000  
-Mites - Kontos == 0                 1.2818     0.5586   2.295   0.2829  
-Mites + Actigard - Kontos == 0      1.4770     0.5495   2.688   0.1006  
-Actigard - Kontos == 0              1.1663     0.5508   2.118   0.4105  
-Untreated - Kontos == 0             1.5831     0.5213   3.037   0.0359 *
-Mites - Water == 0                  0.3741     0.4273   0.876   1.0000  
-Mites + Actigard - Water == 0       0.5694     0.4164   1.367   1.0000  
-Actigard - Water == 0               0.2586     0.4308   0.600   1.0000  
-Untreated - Water == 0              0.6755     0.4295   1.573   1.0000  
-Mites + Actigard - Mites == 0       0.1953     0.3927   0.497   1.0000  
-Actigard - Mites == 0              -0.1155     0.4096  -0.282   1.0000  
-Untreated - Mites == 0              0.3014     0.4111   0.733   1.0000  
-Actigard - Mites + Actigard == 0   -0.3107     0.3978  -0.781   1.0000  
-Untreated - Mites + Actigard == 0   0.1061     0.3966   0.267   1.0000  
-Untreated - Actigard == 0           0.4168     0.3977   1.048   1.0000  
+Water - Kontos == 0                0.94139    0.57120   1.648   0.9934  
+Mites - Kontos == 0                1.31602    0.55666   2.364   0.2349  
+Mites + Actigard - Kontos == 0     1.64233    0.54248   3.027   0.0345 *
+Actigard - Kontos == 0             1.19604    0.54914   2.178   0.3528  
+Untreated - Kontos == 0            1.59957    0.52030   3.074   0.0317 *
+Mites - Water == 0                 0.37464    0.42642   0.879   1.0000  
+Mites + Actigard - Water == 0      0.70095    0.40912   1.713   0.9532  
+Actigard - Water == 0              0.25466    0.42994   0.592   1.0000  
+Untreated - Water == 0             0.65818    0.42763   1.539   1.0000  
+Mites + Actigard - Mites == 0      0.32631    0.38493   0.848   1.0000  
+Actigard - Mites == 0             -0.11998    0.40869  -0.294   1.0000  
+Untreated - Mites == 0             0.28354    0.40908   0.693   1.0000  
+Actigard - Mites + Actigard == 0  -0.44629    0.39030  -1.143   1.0000  
+Untreated - Mites + Actigard == 0 -0.04277    0.38816  -0.110   1.0000  
+Untreated - Actigard == 0          0.40352    0.39607   1.019   1.0000  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 (Adjusted p values reported -- holm method)

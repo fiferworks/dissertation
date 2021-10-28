@@ -1,12 +1,12 @@
- Treatment        emmean     SE  df asymp.LCL asymp.UCL .group 
- Ninja            -952.3 132.31 Inf   -1211.6   -693.00  1     
- MN                -43.9 132.31 Inf    -303.2    215.45   23456
- Kontos            -15.3   4.44 Inf     -24.0     -6.61   2    
- Untreated         -13.9   4.44 Inf     -22.6     -5.23    3   
- Actigard          -13.0   4.44 Inf     -21.7     -4.27     4  
- Mites + Actigard  -12.8   4.44 Inf     -21.5     -4.11      5 
- Water             -12.8   4.44 Inf     -21.5     -4.10      56
- Mites             -12.7   4.44 Inf     -21.4     -4.03       6
+ Treatment        emmean      SE  df asymp.LCL asymp.UCL .group
+ MN               -286.1 7456540 Inf -14614837  14614265  12345
+ Ninja            -170.0 7456540 Inf -14614721  14614381  12345
+ Kontos            -15.3      15 Inf       -44        14  1    
+ Untreated         -13.9      15 Inf       -43        15   2   
+ Actigard          -13.0      15 Inf       -42        16    3  
+ Mites + Actigard  -12.8      15 Inf       -42        16     4 
+ Water             -12.8      15 Inf       -42        16     45
+ Mites             -12.7      15 Inf       -42        16      5
 
 Results are given on the log (not the response) scale. 
 Confidence level used: 0.95 
@@ -26,34 +26,34 @@ Fit: glmer(formula = Eriophyoids ~ Treatment + (1 | Field), data = df,
 
 Linear Hypotheses:
                                     Estimate Std. Error z value Pr(>|z|)    
-Water - Kontos == 0                2.516e+00  6.840e-02  36.787  < 2e-16 ***
-Mites - Kontos == 0                2.587e+00  6.822e-02  37.925  < 2e-16 ***
-Mites + Actigard - Kontos == 0     2.508e+00  6.842e-02  36.652  < 2e-16 ***
-Actigard - Kontos == 0             2.343e+00  6.888e-02  34.021  < 2e-16 ***
-Untreated - Kontos == 0            1.383e+00  7.358e-02  18.796  < 2e-16 ***
-Ninja - Kontos == 0               -9.370e+02  1.322e+02  -7.088 2.13e-11 ***
-MN - Kontos == 0                  -2.855e+01  1.322e+02  -0.216 1.000000    
-Mites - Water == 0                 7.118e-02  2.599e-02   2.739 0.049268 *  
-Mites + Actigard - Water == 0     -8.419e-03  2.650e-02  -0.318 1.000000    
-Actigard - Water == 0             -1.729e-01  2.766e-02  -6.248 4.97e-09 ***
+Water - Kontos == 0                2.516e+00  6.840e-02  36.785  < 2e-16 ***
+Mites - Kontos == 0                2.587e+00  6.822e-02  37.924  < 2e-16 ***
+Mites + Actigard - Kontos == 0     2.508e+00  6.842e-02  36.651  < 2e-16 ***
+Actigard - Kontos == 0             2.343e+00  6.888e-02  34.019  < 2e-16 ***
+Untreated - Kontos == 0            1.383e+00  7.358e-02  18.795  < 2e-16 ***
+Ninja - Kontos == 0               -1.547e+02  7.457e+06   0.000   1.0000    
+MN - Kontos == 0                  -2.708e+02  7.457e+06   0.000   1.0000    
+Mites - Water == 0                 7.118e-02  2.599e-02   2.739   0.0924 .  
+Mites + Actigard - Water == 0     -8.419e-03  2.650e-02  -0.318   1.0000    
+Actigard - Water == 0             -1.729e-01  2.766e-02  -6.248 7.46e-09 ***
 Untreated - Water == 0            -1.133e+00  3.789e-02 -29.908  < 2e-16 ***
-Ninja - Water == 0                -9.395e+02  1.322e+02  -7.107 2.13e-11 ***
-MN - Water == 0                   -3.106e+01  1.322e+02  -0.235 1.000000    
-Mites + Actigard - Mites == 0     -7.960e-02  2.604e-02  -3.057 0.020153 *  
+Ninja - Water == 0                -1.572e+02  7.457e+06   0.000   1.0000    
+MN - Water == 0                   -2.733e+02  7.457e+06   0.000   1.0000    
+Mites + Actigard - Mites == 0     -7.960e-02  2.604e-02  -3.057   0.0358 *  
 Actigard - Mites == 0             -2.440e-01  2.723e-02  -8.963  < 2e-16 ***
 Untreated - Mites == 0            -1.204e+00  3.757e-02 -32.056  < 2e-16 ***
-Ninja - Mites == 0                -9.396e+02  1.322e+02  -7.107 2.13e-11 ***
-MN - Mites == 0                   -3.114e+01  1.322e+02  -0.236 1.000000    
-Actigard - Mites + Actigard == 0  -1.644e-01  2.772e-02  -5.933 3.28e-08 ***
+Ninja - Mites == 0                -1.573e+02  7.457e+06   0.000   1.0000    
+MN - Mites == 0                   -2.734e+02  7.457e+06   0.000   1.0000    
+Actigard - Mites + Actigard == 0  -1.644e-01  2.772e-02  -5.933 5.07e-08 ***
 Untreated - Mites + Actigard == 0 -1.125e+00  3.793e-02 -29.655  < 2e-16 ***
-Ninja - Mites + Actigard == 0     -9.395e+02  1.322e+02  -7.107 2.13e-11 ***
-MN - Mites + Actigard == 0        -3.106e+01  1.322e+02  -0.235 1.000000    
+Ninja - Mites + Actigard == 0     -1.572e+02  7.457e+06   0.000   1.0000    
+MN - Mites + Actigard == 0        -2.733e+02  7.457e+06   0.000   1.0000    
 Untreated - Actigard == 0         -9.603e-01  3.875e-02 -24.782  < 2e-16 ***
-Ninja - Actigard == 0             -9.393e+02  1.322e+02  -7.105 2.13e-11 ***
-MN - Actigard == 0                -3.089e+01  1.322e+02  -0.234 1.000000    
-Ninja - Untreated == 0            -9.384e+02  1.322e+02  -7.098 2.13e-11 ***
-MN - Untreated == 0               -2.993e+01  1.322e+02  -0.226 1.000000    
-MN - Ninja == 0                    9.085e+02  2.090e+02   4.346 0.000139 ***
+Ninja - Actigard == 0             -1.570e+02  7.457e+06   0.000   1.0000    
+MN - Actigard == 0                -2.731e+02  7.457e+06   0.000   1.0000    
+Ninja - Untreated == 0            -1.561e+02  7.457e+06   0.000   1.0000    
+MN - Untreated == 0               -2.722e+02  7.457e+06   0.000   1.0000    
+MN - Ninja == 0                   -1.161e+02  1.055e+07   0.000   1.0000    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 (Adjusted p values reported -- holm method)
