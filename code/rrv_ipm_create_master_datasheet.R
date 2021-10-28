@@ -117,7 +117,7 @@ df <- bind_rows(ta_trials, ga_trials)
 df <-
   df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
 
-df <- df %>%  dplyr::select(-notes, -Plant)
+df <- df %>%  dplyr::select(-notes,-Plant)
 
 df <-
   df %>% dplyr::select(
@@ -137,9 +137,6 @@ df <-
     'N'
   )
 
-#saving the master file
-write_csv(df, 'rrv_ipm_master_datasheet.csv')
-
 #getting summary stats for each treatment group for other mites
 df <- df %>% group_by(Treatment) %>% mutate(
   'tetranychoids/plant' = mean(Tetranychoids, na.rm = TRUE),
@@ -150,15 +147,25 @@ df <- df %>% group_by(Treatment) %>% mutate(
   pred_totals = sum(Phytoseiids, na.rm = TRUE),
   tet_sd = sd(Phytoseiids, na.rm = TRUE),
   tet_se = sd(Phytoseiids, na.rm = TRUE) / sqrt(n()),
+  'erios/plant' = mean(Eriophyoids, na.rm = TRUE),
+  'erios/plant/g' = mean(Eriophyoids / grams_dry_weight),
+  erio_totals = sum(Eriophyoids, na.rm = TRUE),
+  erio_sd = sd(`erios/g`, na.rm = TRUE),
+  erio_sd = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
   n_samples = n()
 ) %>%
   ungroup()
 
+#rounding for graph
+df$'erios/plant/g' <-
+  round(df$'erios/plant/g', digits = 2)
+
+df$Eriophyoids <- df$Eriophyoids %>% replace_na(0)
 df$Tetranychoids <- df$Tetranychoids %>% replace_na(0)
 df$Phytoseiids <- df$Phytoseiids %>% replace_na(0)
 
-#saving output
-write_csv(df, 'data/ipm.csv')
+#saving the master file
+write_csv(df, 'data/rrv_ipm_master_datasheet.csv')
 
 #cleanup
 rm(list = ls())

@@ -1,5 +1,3 @@
-# TODO: Add new graphs for tetranychoids and phytoseiids, respectively 
-
 ####PACKAGES####
 pkgs <- c('tidyverse',
           'viridis',
@@ -48,7 +46,7 @@ showtext_auto()
 
 ####IPM DATA ANALYSIS ACROSS ALL TRIALS####
 #reading in the data
-df <- read_csv('data/ipm.csv')
+df <- read_csv('data/rrv_ipm_master_datasheet.csv')
 
 #assigning columns as factors
 df$Treatment <- as_factor(df$Treatment)
