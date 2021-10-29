@@ -1,2 +1,2 @@
-    Water      High       Low    Kontos Untreated 
-      "a"       "b"       "c"       "c"     "abc" 
+Water   Low  High Spiro 
+  "a"   "b"  "ab"   "b" 
