@@ -190,7 +190,6 @@ ipm_preds_talla <-
   left_join(ipm_preds_talla, ltrs_preds_talla, by = 'Treatment')
 
 #data is now ready to be graphed
-####GRAPHS####
 #####GRAPH OF ALL TALLAHASSEE ERIOS####
 ggplot(data = talla,
        mapping = aes(x = Treatment, y = `erios/g`, fill = Treatment)) +
@@ -204,7 +203,7 @@ ggplot(data = talla,
   coord_cartesian(ylim = c(-0.4, 40), clip = "off") +
   ggtitle(
     expression(
-      'Mean of eriophyoid mites per gram dry weight - Tallahassee IPM Trials 2020-2021'
+      'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'Per Gram of Rose Dry Weight - Tallahassee IPM Trials 2020-2021'
     )
   ) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
@@ -250,7 +249,7 @@ ggplot(data = talla,
     hjust = 2,
     size = 30
   ) +
-geom_text(
+  geom_text(
     data = ipm_erio_talla,
     mapping = aes(x = Treatment, y = `mean_erios/g`, label = `mean_erios/g`),
     stat = "identity",
@@ -259,7 +258,7 @@ geom_text(
     hjust = -0.3,
     size = 30
   ) +
-geom_text(
+  geom_text(
     stat = "count",
     aes(label = paste0("n = ", ..count..), y = ..count..),
     position = 'fill',
@@ -281,8 +280,14 @@ ggsave(
 )
 
 ####GRAPH OF ALL TALLAHASSEE TETRANYCHOIDS####
-ggplot(data = talla,
-       mapping = aes(x = Treatment, y = Tetranychoids/grams_dry_weight, fill = Treatment)) +
+ggplot(
+  data = talla,
+  mapping = aes(
+    x = Treatment,
+    y = Tetranychoids / grams_dry_weight,
+    fill = Treatment
+  )
+) +
   geom_boxplot(
     lwd = 2.5,
     notch = TRUE,
@@ -293,7 +298,7 @@ ggplot(data = talla,
   coord_cartesian(ylim = c(-0.4, 10), clip = "off") +
   ggtitle(
     expression(
-      'Mean of tetranychoid mites per gram dry weight - Tallahassee IPM Trials 2020-2021'
+      'Mean of Tetranychoid Mites Per Gram Dry Weight - Tallahassee IPM Trials 2020-2021'
     )
   ) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
@@ -357,10 +362,93 @@ ggplot(data = talla,
     data = talla
   )
 
-
 #saving the file
 ggsave(
   'figure/rrv_ipm_graph_tets_talla.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
+####GRAPH OF ALL TALLAHASSEE PHYTOSEIIDS####
+ggplot(data = talla,
+       mapping = aes(x = Treatment, y = Phytoseiids, fill = Treatment)) +
+  geom_boxplot(
+    lwd = 2.5,
+    notch = TRUE,
+    varwidth = TRUE,
+    outlier.size = 2.5
+  ) +
+  theme_tufte(base_size = 70, base_family = "gill_sans") +
+  coord_cartesian(ylim = c(-0.4, 10), clip = "off") +
+  ggtitle(expression('Phytoseiid Mites Recovered - Tallahassee IPM Trials 2020-2021')) +
+  theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
+  theme(legend.position = "none") +
+  theme(
+    plot.title = element_text(
+      size = 100,
+      face = "bold",
+      family = "garamond"
+    ),
+    axis.text.x = element_text(
+      color = "grey20",
+      size = 80,
+      angle = 0,
+      hjust = .5,
+      vjust = .5,
+      face = "plain"
+    ),
+    axis.text.y = element_text(
+      color = "grey20",
+      size = 80,
+      angle = 0,
+      hjust = 1,
+      vjust = 0,
+      face = "bold"
+    )
+  ) +
+  scale_fill_manual(values = c(
+    "#CDC08C",
+    "#85D4E3",
+    "#9C964A",
+    "#C27D38",
+    "#F4B5BD",
+    "#798E87",
+    "#FAD77B"
+  )) +
+  geom_text(
+    data = ipm_preds_talla,
+    mapping = aes(x = Treatment, y = `mean_phytos/g`, label = .group),
+    stat = "identity",
+    position = position_stack(1),
+    vjust = -3,
+    hjust = 2,
+    size = 30
+  ) +
+  geom_text(
+    data = ipm_preds_talla,
+    mapping = aes(x = Treatment, y = `mean_phytos/g`, label = `mean_phytos/g`),
+    stat = "identity",
+    position = position_stack(1),
+    vjust = -3,
+    hjust = -0.3,
+    size = 30
+  ) +
+  geom_text(
+    stat = "count",
+    aes(label = paste0("n = ", ..count..), y = ..count..),
+    position = 'fill',
+    vjust = 4.5,
+    size = 25,
+    data = talla
+  )
+
+#saving the file
+ggsave(
+  'figure/rrv_ipm_graph_preds_talla.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
@@ -376,6 +464,14 @@ may_week <-
     totals = sum(Eriophyoids, na.rm = TRUE),
     sd = sd(`erios/g`, na.rm = TRUE),
     se = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+    'mean_tets/g' = mean(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+    tet_totals = sum(Tetranychoids, na.rm = TRUE),
+    tet_sd = sd(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+    tet_se = sd(Tetranychoids / grams_dry_weight, na.rm = TRUE) / sqrt(n()),
+    'mean_preds/g' = mean(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+    pred_totals = sum(Phytoseiids, na.rm = TRUE),
+    pred_sd = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+    pred_se = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE) / sqrt(n()),
     Treatment = Treatment,
     Month = Month
   ) %>% distinct()
@@ -386,6 +482,14 @@ jun_week <-
     totals = sum(Eriophyoids, na.rm = TRUE),
     sd = sd(`erios/g`, na.rm = TRUE),
     se = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+    'mean_tets/g' = mean(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+    tet_totals = sum(Tetranychoids, na.rm = TRUE),
+    tet_sd = sd(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+    tet_se = sd(Tetranychoids / grams_dry_weight, na.rm = TRUE) / sqrt(n()),
+    'mean_preds/g' = mean(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+    pred_totals = sum(Phytoseiids, na.rm = TRUE),
+    pred_sd = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+    pred_se = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE) / sqrt(n()),
     Treatment = Treatment,
     Month = Month
   ) %>% distinct()
@@ -396,6 +500,14 @@ jul_week <-
     totals = sum(Eriophyoids, na.rm = TRUE),
     sd = sd(`erios/g`, na.rm = TRUE),
     se = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+    'mean_tets/g' = mean(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+    tet_totals = sum(Tetranychoids, na.rm = TRUE),
+    tet_sd = sd(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+    tet_se = sd(Tetranychoids / grams_dry_weight, na.rm = TRUE) / sqrt(n()),
+    'mean_preds/g' = mean(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+    pred_totals = sum(Phytoseiids, na.rm = TRUE),
+    pred_sd = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+    pred_se = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE) / sqrt(n()),
     Treatment = Treatment,
     Month = Month
   ) %>% distinct()
@@ -406,6 +518,14 @@ aug_week <-
     totals = sum(Eriophyoids, na.rm = TRUE),
     sd = sd(`erios/g`, na.rm = TRUE),
     se = sd(`erios/g`, na.rm = TRUE) / sqrt(n()),
+    'mean_tets/g' = mean(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+    tet_totals = sum(Tetranychoids, na.rm = TRUE),
+    tet_sd = sd(Tetranychoids / grams_dry_weight, na.rm = TRUE),
+    tet_se = sd(Tetranychoids / grams_dry_weight, na.rm = TRUE) / sqrt(n()),
+    'mean_preds/g' = mean(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+    pred_totals = sum(Phytoseiids, na.rm = TRUE),
+    pred_sd = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE),
+    pred_se = sd(Phytoseiids / grams_dry_weight, na.rm = TRUE) / sqrt(n()),
     Treatment = Treatment,
     Month = Month
   ) %>% distinct()
@@ -413,27 +533,28 @@ aug_week <-
 talla_week <- bind_rows(may_week, jun_week, jul_week, aug_week)
 talla_week$`mean_erios/g` <-
   round(talla_week$`mean_erios/g`, digits = 1)
-talla_week$Treatment <-
-  gsub('Mites \\+ Actigard', 'MA', talla_week$Treatment)
+talla_week$`mean_tets/g` <-
+  round(talla_week$`mean_tets/g`, digits = 1)
+talla_week$`mean_preds/g` <-
+  round(talla_week$`mean_preds/g`, digits = 1)
 
 # plots of Eriophyoids per week
-ggplot(
-  data = talla_week,
-  mapping = aes(y = `mean_erios/g`, x = Treatment, fill = Treatment)
-) +
-  geom_bar(stat = 'identity') +
-  geom_errorbar(
-    aes(ymin = `mean_erios/g` - se, ymax = `mean_erios/g` + se),
-    width = 0.5,
-    size = 2.5,
-    position = position_dodge(.9)
+ggplot(data = talla,
+       mapping = aes(y = `erios/g`, x = Treatment, fill = Treatment)) +
+  geom_boxplot(
+    lwd = 1,
+    notch = TRUE,
+    varwidth = TRUE,
+    outlier.size = 2.5
   ) +
-  facet_wrap( ~ Month, strip.position = 'top') +
-  coord_cartesian(ylim = c(-3, 17), clip = "off") +
+  facet_wrap(~ Month, strip.position = 'top') +
+  coord_cartesian(ylim = c(-4, 35), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
-  ggtitle(expression(
-    'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'per gram of rose dry weight - IPM Tallahassee'
-  )) +
+  ggtitle(
+    expression(
+      'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'Per Gram of Rose Dry Weight - Tallahassee IPM Trials 2020-2021'
+    )
+  ) +
   theme(axis.title = element_blank(), axis.text.x = element_blank()) +
   theme(legend.position = "none") +
   theme(
@@ -461,29 +582,218 @@ ggplot(
     strip.text = element_text(size = 70)
   ) +
   geom_text(
-    mapping = aes(x = Treatment, label = `mean_erios/g`),
+    data =  talla_week,
+    mapping = aes(x = Treatment, y = `mean_erios/g`, label = `mean_erios/g`),
     stat = "identity",
     position = position_stack(1.2),
-    vjust = -1.1,
+    vjust = -3.5,
     size = 20
   ) +
   geom_text(
-    mapping = aes(x = Treatment, label = paste0("n = ", totals)),
+    data =  talla_week,
+    mapping = aes(
+      x = Treatment,
+      y = `mean_erios/g`,
+      label = paste0("n = ", totals)
+    ),
     stat = "identity",
     position = position_fill(-1),
     vjust = 1,
     size = 20
   ) +
-  scale_fill_manual(values = viridis(
-    6,
-    begin = 0,
-    end = 1,
-    option = 'D'
+  scale_fill_manual(values = c(
+    "#CDC08C",
+    "#85D4E3",
+    "#9C964A",
+    "#C27D38",
+    "#F4B5BD",
+    "#798E87",
+    "#FAD77B"
   ))
 
 #saving the file
 ggsave(
   'figure/rrv_ipm_graph_erios_talla_week.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
+# plots of Tetranychoids per week
+ggplot(
+  data = talla,
+  mapping = aes(
+    y = Tetranychoids / grams_dry_weight,
+    x = Treatment,
+    fill = Treatment
+  )
+) +
+  geom_boxplot(
+    lwd = 1,
+    notch = TRUE,
+    varwidth = TRUE,
+    outlier.size = 2.5
+  ) +
+  facet_wrap(~ Month, strip.position = 'top') +
+  coord_cartesian(ylim = c(-4, 10), clip = "off") +
+  theme_tufte(base_size = 70, base_family = "gill_sans") +
+  ggtitle(
+    expression(
+      'Mean Number of Tetranychoid Mites Per Gram of Rose Dry Weight - Tallahassee IPM Trials 2020-2021'
+    )
+  ) +
+  theme(axis.title = element_blank(), axis.text.x = element_blank()) +
+  theme(legend.position = "none") +
+  theme(
+    plot.title = element_text(
+      size = 80,
+      face = "bold",
+      family = "garamond"
+    ),
+    axis.text.x = element_text(
+      color = "grey20",
+      size = 70,
+      angle = 0,
+      hjust = .5,
+      vjust = .5,
+      face = "plain"
+    ),
+    axis.text.y = element_text(
+      color = "grey20",
+      size = 70,
+      angle = 0,
+      hjust = 1,
+      vjust = 0,
+      face = "bold"
+    ),
+    strip.text = element_text(size = 70)
+  ) +
+  geom_text(
+    data =  talla_week,
+    mapping = aes(x = Treatment, y = `mean_tets/g`, label = `mean_tets/g`),
+    stat = "identity",
+    position = position_stack(1.2),
+    vjust = -3.5,
+    size = 20
+  ) +
+  geom_text(
+    data =  talla_week,
+    mapping = aes(
+      x = Treatment,
+      y = `mean_tets/g`,
+      label = paste0("n = ", tet_totals)
+    ),
+    stat = "identity",
+    position = position_fill(-1),
+    vjust = 1,
+    size = 20
+  ) +
+  scale_fill_manual(values = c(
+    "#CDC08C",
+    "#85D4E3",
+    "#9C964A",
+    "#C27D38",
+    "#F4B5BD",
+    "#798E87",
+    "#FAD77B"
+  ))
+
+#saving the file
+ggsave(
+  'figure/rrv_ipm_graph_tets_talla_week.png',
+  plot = last_plot(),
+  type = 'cairo',
+  width = 16,
+  height = 9,
+  scale = 1,
+  dpi = 300
+)
+
+# plots of Phytoseiids per week
+ggplot(
+  data = talla,
+  mapping = aes(
+    y = Phytoseiids,
+    x = Treatment,
+    fill = Treatment
+  )
+) +
+  geom_boxplot(
+    lwd = 1,
+    notch = TRUE,
+    varwidth = TRUE,
+    outlier.size = 2.5
+  ) +
+  facet_wrap(~ Month, strip.position = 'top') +
+  coord_cartesian(ylim = c(-4, 10), clip = "off") +
+  theme_tufte(base_size = 70, base_family = "gill_sans") +
+  ggtitle(
+    expression(
+      'Number of Phytoseiid Mites Recovered - Tallahassee IPM Trials 2020-2021'
+    )
+  ) +
+  theme(axis.title = element_blank(), axis.text.x = element_blank()) +
+  theme(legend.position = "none") +
+  theme(
+    plot.title = element_text(
+      size = 80,
+      face = "bold",
+      family = "garamond"
+    ),
+    axis.text.x = element_text(
+      color = "grey20",
+      size = 70,
+      angle = 0,
+      hjust = .5,
+      vjust = .5,
+      face = "plain"
+    ),
+    axis.text.y = element_text(
+      color = "grey20",
+      size = 70,
+      angle = 0,
+      hjust = 1,
+      vjust = 0,
+      face = "bold"
+    ),
+    strip.text = element_text(size = 70)
+  ) +
+  geom_text(
+    data =  talla_week,
+    mapping = aes(x = Treatment, y = `mean_preds/g`, label = `mean_preds/g`),
+    stat = "identity",
+    position = position_stack(1.2),
+    vjust = -3.5,
+    size = 20
+  ) +
+  geom_text(
+    data =  talla_week,
+    mapping = aes(
+      x = Treatment,
+      y = pred_totals,
+      label = paste0("n = ", pred_totals)
+    ),
+    stat = "identity",
+    position = position_fill(-1),
+    vjust = 1,
+    size = 20
+  ) +
+  scale_fill_manual(values = c(
+    "#CDC08C",
+    "#85D4E3",
+    "#9C964A",
+    "#C27D38",
+    "#F4B5BD",
+    "#798E87",
+    "#FAD77B"
+  ))
+
+#saving the file
+ggsave(
+  'figure/rrv_ipm_graph_preds_talla_week.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,

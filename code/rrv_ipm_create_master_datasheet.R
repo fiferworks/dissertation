@@ -171,6 +171,10 @@ df$Eriophyoids <- df$Eriophyoids %>% replace_na(0)
 df$Tetranychoids <- df$Tetranychoids %>% replace_na(0)
 df$Phytoseiids <- df$Phytoseiids %>% replace_na(0)
 
+df$Treatment <- gsub("Kontos", "Spiro", df$Treatment)
+df$Treatment <- gsub("Actigard", "ASM", df$Treatment)
+df$Treatment <- gsub("Untreated", "NoTrt", df$Treatment)
+
 #saving the master file
 write_csv(df, 'data/rrv_ipm_master_datasheet.csv')
 
