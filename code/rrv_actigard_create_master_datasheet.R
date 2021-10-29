@@ -58,9 +58,6 @@ griff_2019$Treatment[griff_2019$Treatment == 'D'] <- "Kontos"
 #combining the datasets from both years
 griffin_trials <- bind_rows(griff_2018, griff_2019)
 
-griffin_trials$`% Disease` <-
-  replace_na(griffin_trials$`% Disease`, 0)
-
 #we never ended up counting the number of flowers, dropping
 griffin_trials <- griffin_trials %>% rename(Plant = `Plant & Block`)
 
@@ -68,13 +65,11 @@ griffin_trials <- griffin_trials %>% dplyr::select('Plant',
                                                    'Block',
                                                    'Treatment',
                                                    'Mite Count',
-                                                   'Date',
-                                                   '% Disease')
+                                                   'Date')
 
 
 griffin_trials <- rename(griffin_trials,
-                         'P.fructiphilus' = 'Mite Count',
-                         'Disease Severity (%)' = '% Disease')
+                         'P.fructiphilus' = 'Mite Count')
 
 #adding columns
 griffin_trials$Field <- 'Griffin'
@@ -91,20 +86,22 @@ griffin_trials$Treatment <-
 #removing skipped and missing samples
 griffin_trials <- griffin_trials %>% drop_na('P.fructiphilus')
 
+griffin_trials$Treatment <-
+  gsub("Kontos", "Spiro", griffin_trials$Treatment)
+
+griffin_trials$Block <- as.numeric(griffin_trials$Block)
+
 #rearranging columns
 griffin_trials <-
-  griffin_trials %>% select(
-    `Sample #`,
-    Plant,
-    Block,
-    Treatment,
-    P.fructiphilus,
-    RRD,
-    `H-B Score`,
-    `Disease Severity (%)`,
-    Date,
-    Field
-  )
+  griffin_trials %>% select(`Sample #`,
+                            Plant,
+                            Block,
+                            Treatment,
+                            P.fructiphilus,
+                            RRD,
+                            `H-B Score`,
+                            Date,
+                            Field)
 
 
 ####ATHENS DATA####
@@ -150,81 +147,89 @@ athns_audpc <-
              sheet = 2,
              skip = 1)
 
-#renaming appropriate columns for data merging
-athns_audpc <- athns_audpc %>% rename('Block' = 'Rep')
+# # looking up the dates
+# athns_dates <- read_excel(
+#   "data/rrv_actigard_trial_2018_athens.xlsx",
+#   sheet = 2,
+#   range = cell_rows(1), col_names = FALSE
+# )
+# athns_dates <- athns_dates %>% select(-1,-2)
+# athns_dates <- athns_dates %>%  pivot_longer(everything())
+# athns_dates <- athns_dates %>% select(value)
 
-#creating matching columns
+athns_audpc <- athns_audpc %>% rename(
+  '2018-08-31' = `Week 1`,
+  '2018-09-07' = `Week 2`,
+  '2018-09-14' = `Week 3`,
+  '2018-09-21' = `Week 4`,
+  '2018-09-28' = `Week 5`,
+  '2018-10-05' = `Week 6`,
+  '2018-10-12' = `Week 7`,
+  '2018-10-19' = `Week 8`,
+  '2018-10-26' = `Week 9`,
+  '2018-11-02' = `Week 10`,
+  '2018-12-19' = `Week 17`
+)
+
+#renaming appropriate columns for data merging
 athns_audpc$`Sample #` <- 1:length(athns_audpc[[1]])
+athns_audpc <- athns_audpc %>% rename('Block' = 'Rep')
 
 #making sure the treatments are the same
 athns_audpc$Treatment <-
-  sub('Non-inoc', 'Untreated', athns_audpc$Treatment)
+  sub('Non-inoc', 'NoTrt', athns_audpc$Treatment)
 
-#now only contains the summary statistics
-athns_summary <-
-  left_join(athns_2018, athns_audpc) %>% select(-`Sample #`, -Field, -Block)
+athns_2018$RRD <- sub('-', 'A', athns_2018$RRD)
 
-athns_summary$RRD <- sub('-', NA, athns_summary$RRD)
+athns_2018 <- full_join(athns_audpc, athns_2018)
 
 #saving the output
-write_csv(athns_summary, 'data/rrv_athens_disease_progress_2018.csv')
+write_csv(athns_2018, 'data/rrv_athens_disease_progress_2018.csv')
 
-#TODO: Use or lose Athens data here:
-View(
-  athns_audpc %>%  select(-AUDPC,-`Final disease severity (%)`) %>% pivot_longer(
-    cols = c(
-      `Week 1`,
-      `Week 2`,
-      `Week 3`,
-      `Week 4`,
-      `Week 5`,
-      `Week 6`,
-      `Week 7`,
-      `Week 8`,
-      `Week 9`,
-      `Week 10`,
-      `Week 17`
-    )
+athns_2018 <- athns_2018 %>% pivot_longer(
+  names_to = "Date",
+  values_to = "H-B Score",
+  cols = c(
+    '2018-08-31',
+    '2018-09-07',
+    '2018-09-14',
+    '2018-09-21',
+    '2018-09-28',
+    '2018-10-05',
+    '2018-10-12',
+    '2018-10-19',
+    '2018-10-26',
+    '2018-11-02',
+    '2018-12-19'
   )
 )
 
-
-
-
-
-
-
-# getting the dates
-athns_dates <- read_excel(
-  "data/rrv_actigard_trial_2018_athens.xlsx",
-  sheet = 2,
-  range = cell_rows(1), col_names = FALSE
-)
-athns_dates <- athns_dates %>% select(-1,-2)
-
-
-# #adding recording date
-# athns_2018$date <- lubridate::ymd("2018-12-21", tz = "UTC")
-
-
+#converting to proper format
+athns_2018$Date <- lubridate::ymd(athns_2018$Date, tz = 'UTC')
 
 ####COMBINING DATASETS####
-#uncomment the following line this if you want to include the Athens 2018 trial
 df <- bind_rows(griffin_trials, athns_2018)
 
-#adding combined id for plants
-df$ID <- paste(df$Plant, df$Block, sep = '')
+#resetting the sample order for this datasheet
+df <- df %>% arrange(Field, Date)
+df$`Sample #` <- 1:length(df[[1]])
 
 #rearranging columns
-df <-
-  select(df,
-         'ID',
-         'Mites',
-         'Treatment',
-         'Plant',
-         'Block',
-         'Field',
-         'Date')
+df <- df %>% rename(`Total P.fructiphilus` = P.fructiphilus)
+df <- df %>% select(
+  `Sample #`,
+  Treatment,
+  `Total P.fructiphilus`,
+  `Other Mites`,
+  Plant,
+  Block,
+  Field,
+  `H-B Score`,
+  RRD,
+  AUDPC,
+  `Final disease severity (%)`,
+  Date
+)
 
 #saving output
 write_csv(df, 'data/rrv_actigard_master_datasheet.csv')
