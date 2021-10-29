@@ -457,8 +457,8 @@ ggsave(
   dpi = 300
 )
 
-####TALLAHASSEE BY WEEK####
-may_week <-
+####TALLAHASSEE BY MONTH####
+may_month <-
   talla %>% filter(Month == 'May') %>% group_by(Treatment) %>% summarize(
     'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
     totals = sum(Eriophyoids, na.rm = TRUE),
@@ -476,7 +476,7 @@ may_week <-
     Month = Month
   ) %>% distinct()
 
-jun_week <-
+jun_month <-
   talla %>% filter(Month == 'June') %>% group_by(Treatment) %>% summarize(
     'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
     totals = sum(Eriophyoids, na.rm = TRUE),
@@ -494,7 +494,7 @@ jun_week <-
     Month = Month
   ) %>% distinct()
 
-jul_week <-
+jul_month <-
   talla %>% filter(Month == 'July') %>% group_by(Treatment) %>% summarize(
     'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
     totals = sum(Eriophyoids, na.rm = TRUE),
@@ -512,7 +512,7 @@ jul_week <-
     Month = Month
   ) %>% distinct()
 
-aug_week <-
+aug_month <-
   talla %>% filter(Month == 'August') %>% group_by(Treatment) %>% summarize(
     'mean_erios/g' = mean(`erios/g`, na.rm = TRUE),
     totals = sum(Eriophyoids, na.rm = TRUE),
@@ -530,15 +530,15 @@ aug_week <-
     Month = Month
   ) %>% distinct()
 
-talla_week <- bind_rows(may_week, jun_week, jul_week, aug_week)
-talla_week$`mean_erios/g` <-
-  round(talla_week$`mean_erios/g`, digits = 1)
-talla_week$`mean_tets/g` <-
-  round(talla_week$`mean_tets/g`, digits = 1)
-talla_week$`mean_preds/g` <-
-  round(talla_week$`mean_preds/g`, digits = 1)
+talla_month <- bind_rows(may_month, jun_month, jul_month, aug_month)
+talla_month$`mean_erios/g` <-
+  round(talla_month$`mean_erios/g`, digits = 1)
+talla_month$`mean_tets/g` <-
+  round(talla_month$`mean_tets/g`, digits = 1)
+talla_month$`mean_preds/g` <-
+  round(talla_month$`mean_preds/g`, digits = 1)
 
-# plots of Eriophyoids per week
+# plots of Eriophyoids per month
 ggplot(data = talla,
        mapping = aes(y = `erios/g`, x = Treatment, fill = Treatment)) +
   geom_boxplot(
@@ -547,7 +547,7 @@ ggplot(data = talla,
     varwidth = TRUE,
     outlier.size = 2.5
   ) +
-  facet_wrap(~ Month, strip.position = 'top') +
+  facet_wrap( ~ Month, strip.position = 'top') +
   coord_cartesian(ylim = c(-4, 35), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(
@@ -582,7 +582,7 @@ ggplot(data = talla,
     strip.text = element_text(size = 70)
   ) +
   geom_text(
-    data =  talla_week,
+    data =  talla_month,
     mapping = aes(x = Treatment, y = `mean_erios/g`, label = `mean_erios/g`),
     stat = "identity",
     position = position_stack(1.2),
@@ -590,7 +590,7 @@ ggplot(data = talla,
     size = 20
   ) +
   geom_text(
-    data =  talla_week,
+    data =  talla_month,
     mapping = aes(
       x = Treatment,
       y = `mean_erios/g`,
@@ -613,7 +613,7 @@ ggplot(data = talla,
 
 #saving the file
 ggsave(
-  'figure/rrv_ipm_graph_erios_talla_week.png',
+  'figure/rrv_ipm_graph_erios_talla_month.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
@@ -622,7 +622,7 @@ ggsave(
   dpi = 300
 )
 
-# plots of Tetranychoids per week
+# plots of Tetranychoids per month
 ggplot(
   data = talla,
   mapping = aes(
@@ -637,7 +637,7 @@ ggplot(
     varwidth = TRUE,
     outlier.size = 2.5
   ) +
-  facet_wrap(~ Month, strip.position = 'top') +
+  facet_wrap( ~ Month, strip.position = 'top') +
   coord_cartesian(ylim = c(-4, 10), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(
@@ -672,7 +672,7 @@ ggplot(
     strip.text = element_text(size = 70)
   ) +
   geom_text(
-    data =  talla_week,
+    data =  talla_month,
     mapping = aes(x = Treatment, y = `mean_tets/g`, label = `mean_tets/g`),
     stat = "identity",
     position = position_stack(1.2),
@@ -680,7 +680,7 @@ ggplot(
     size = 20
   ) +
   geom_text(
-    data =  talla_week,
+    data =  talla_month,
     mapping = aes(
       x = Treatment,
       y = `mean_tets/g`,
@@ -703,7 +703,7 @@ ggplot(
 
 #saving the file
 ggsave(
-  'figure/rrv_ipm_graph_tets_talla_week.png',
+  'figure/rrv_ipm_graph_tets_talla_month.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
@@ -712,29 +712,23 @@ ggsave(
   dpi = 300
 )
 
-# plots of Phytoseiids per week
-ggplot(
-  data = talla,
-  mapping = aes(
-    y = Phytoseiids,
-    x = Treatment,
-    fill = Treatment
-  )
-) +
+# plots of Phytoseiids per month
+ggplot(data = talla,
+       mapping = aes(y = Phytoseiids,
+                     x = Treatment,
+                     fill = Treatment)) +
   geom_boxplot(
     lwd = 1,
     notch = TRUE,
     varwidth = TRUE,
     outlier.size = 2.5
   ) +
-  facet_wrap(~ Month, strip.position = 'top') +
+  facet_wrap( ~ Month, strip.position = 'top') +
   coord_cartesian(ylim = c(-4, 10), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
-  ggtitle(
-    expression(
-      'Number of Phytoseiid Mites Recovered - Tallahassee IPM Trials 2020-2021'
-    )
-  ) +
+  ggtitle(expression(
+    'Number of Phytoseiid Mites Recovered - Tallahassee IPM Trials 2020-2021'
+  )) +
   theme(axis.title = element_blank(), axis.text.x = element_blank()) +
   theme(legend.position = "none") +
   theme(
@@ -762,7 +756,7 @@ ggplot(
     strip.text = element_text(size = 70)
   ) +
   geom_text(
-    data =  talla_week,
+    data =  talla_month,
     mapping = aes(x = Treatment, y = `mean_preds/g`, label = `mean_preds/g`),
     stat = "identity",
     position = position_stack(1.2),
@@ -770,7 +764,7 @@ ggplot(
     size = 20
   ) +
   geom_text(
-    data =  talla_week,
+    data =  talla_month,
     mapping = aes(
       x = Treatment,
       y = pred_totals,
@@ -793,7 +787,7 @@ ggplot(
 
 #saving the file
 ggsave(
-  'figure/rrv_ipm_graph_preds_talla_week.png',
+  'figure/rrv_ipm_graph_preds_talla_month.png',
   plot = last_plot(),
   type = 'cairo',
   width = 16,
