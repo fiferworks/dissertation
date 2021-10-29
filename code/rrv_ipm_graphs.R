@@ -203,7 +203,7 @@ ggplot(data = talla,
   coord_cartesian(ylim = c(-0.4, 40), clip = "off") +
   ggtitle(
     expression(
-      'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'Per Gram of Rose Dry Weight - Tallahassee IPM Trials 2020-2021'
+      'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'Per Gram of Rose Dry Weight - IPM Trials'
     )
   ) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
@@ -298,7 +298,7 @@ ggplot(
   coord_cartesian(ylim = c(-0.4, 10), clip = "off") +
   ggtitle(
     expression(
-      'Mean of Tetranychoid Mites Per Gram Dry Weight - Tallahassee IPM Trials 2020-2021'
+      'Mean of Tetranychoid Mites Per Gram Dry Weight - IPM Trials'
     )
   ) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
@@ -384,7 +384,7 @@ ggplot(data = talla,
   ) +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   coord_cartesian(ylim = c(-0.4, 10), clip = "off") +
-  ggtitle(expression('Phytoseiid Mites Recovered - Tallahassee IPM Trials 2020-2021')) +
+  ggtitle(expression('Phytoseiid Mites Recovered - IPM Trials')) +
   theme(axis.title = element_blank(),  axis.text.x = element_blank()) +
   theme(legend.position = "none") +
   theme(
@@ -552,7 +552,7 @@ ggplot(data = talla,
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(
     expression(
-      'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'Per Gram of Rose Dry Weight - Tallahassee IPM Trials 2020-2021'
+      'Mean Number of' ~ italic(P. ~ fructiphilus) ~ 'Per Gram of Rose Dry Weight - IPM Trials'
     )
   ) +
   theme(axis.title = element_blank(), axis.text.x = element_blank()) +
@@ -642,7 +642,7 @@ ggplot(
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(
     expression(
-      'Mean Number of Tetranychoid Mites Per Gram of Rose Dry Weight - Tallahassee IPM Trials 2020-2021'
+      'Mean Number of Tetranychoid Mites Per Gram of Rose Dry Weight - IPM Trials'
     )
   ) +
   theme(axis.title = element_blank(), axis.text.x = element_blank()) +
@@ -727,7 +727,7 @@ ggplot(data = talla,
   coord_cartesian(ylim = c(-4, 10), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(expression(
-    'Number of Phytoseiid Mites Recovered - Tallahassee IPM Trials 2020-2021'
+    'Number of Phytoseiid Mites Recovered - IPM Trials'
   )) +
   theme(axis.title = element_blank(), axis.text.x = element_blank()) +
   theme(legend.position = "none") +
