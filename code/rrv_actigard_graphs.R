@@ -48,94 +48,86 @@ showtext_auto()
 ####ACTIGARD DATA PREP####
 #reading in the data
 df  <-
-  read_csv('data/rrv_actigard_master_datasheet.csv', col_types = "dddddddfffffDf")
+  read_csv('data/rrv_actigard_master_datasheet.csv')
+
+df <- df %>% filter(Field == 'Griffin')
 
 #reading in the difference letters
 abc <- read_table("data/rrv_actigard_cld_letters.txt")
-abc <- abc %>%  select('water', 'high', 'low', 'kontos', 'untreated')
+abc <- abc %>%  dplyr::select(-X5)
 
 #rows to columns
-abc <- abc %>% gather(key = 'treat')
+abc <-
+  abc %>% pivot_longer(everything(), names_to = "Treatment", values_to = "Letters")
 
 #removing extra characters
-abc$value <- unquote(abc$value)
-abc$value <- as_factor(abc$value)
-abc$treat <- as_factor(abc$treat)
+abc$Letters <- unquote(abc$Letters)
+abc$Letters <- as_factor(abc$Letters)
+abc$Treatment <- as_factor(abc$Treatment)
 
 #combining letters with dataset
-df <- full_join(df, abc, by = 'treat')
-
-#rearranging columns
-df <-
-  dplyr::select(
-    df,
-    'mites',
-    'totals',
-    'per_plant',
-    'sd',
-    'se',
-    'log_xformed',
-    'se_xformed',
-    'treat',
-    'value',
-    'id',
-    'plant',
-    'block',
-    'field',
-    'date',
-    'n_samples'
-  )
+df <- full_join(df, abc, by = "Treatment")
 
 #getting summary stats for each treatment group
-actgrd <- df %>% group_by(treat) %>% summarize(
-  per_plant = mean(mites),
-  totals = sum(mites),
-  sd = sd(mites),
-  se = sd(mites) / sqrt(n()),
-  log_xformed = log(mean(mites)),
-  se_xformed = log(sd(mites) / sqrt(n()))
-) %>%
+actgrd_griffin <-
+  df %>% group_by(Treatment) %>% summarize(
+    per_plant = mean(`Total P.fructiphilus`, na.rm = TRUE),
+    totals = sum(`Total P.fructiphilus`, na.rm = TRUE),
+    sd = sd(`Total P.fructiphilus`, na.rm = TRUE),
+    se = sd(`Total P.fructiphilus`, na.rm = TRUE) / sqrt(n()),
+    log_xformed = log(mean(`Total P.fructiphilus`, na.rm = TRUE)),
+    se_xformed = log(sd(`Total P.fructiphilus`, na.rm = TRUE) / sqrt(n()))
+  ) %>%
   ungroup()
 
 #rounding for graph
-actgrd$per_plant <- round(actgrd$per_plant, digits = 2)
+actgrd_griffin$per_plant <-
+  round(actgrd_griffin$per_plant, digits = 2)
 
 #combining letters with dataset
-actgrd <- full_join(actgrd, abc, by = 'treat')
+actgrd_griffin <- full_join(actgrd_griffin, abc, by = "Treatment")
+
 
 ####GRAPHS####
 #####graphs of the different tests####
-ggplot(data = actgrd,
-       mapping = aes(x = treat, y = per_plant, fill = treat)) +
-  geom_bar(stat = 'identity') +
-  geom_errorbar(
-    aes(ymin = per_plant - se, ymax = per_plant + se),
-    width = 0.5,
-    size = 2.5,
-    position = position_dodge(.9)
+ggplot(
+  data = df,
+  mapping = aes(x = Treatment, y = `Total P.fructiphilus`, fill = Treatment)
+) +
+  geom_boxplot(
+    lwd = 2.5,
+    notch = TRUE,
+    varwidth = TRUE,
+    outlier.size = 2.5
   ) +
-  coord_cartesian(ylim = c(-0.1, 1.9)) +
+  coord_cartesian(ylim = c(-0.4, 60)) +
   geom_text(
-    mapping = aes(x = treat, label = value),
-    data = actgrd,
+    mapping = aes(x = Treatment, y = per_plant, label = Letters),
+    data = actgrd_griffin,
     stat = "identity",
-    position = position_stack(2.1),
-    vjust = -.5,
-    size = 40
+    position = position_stack(1),
+    vjust = -1.5,
+    size = 30
   ) +
   geom_text(
-    aes(treat, per_plant, label = per_plant, fill = NULL),
+    data = actgrd_griffin,
+    mapping = aes(
+      x = Treatment,
+      y = per_plant,
+      label = per_plant,
+      fill = NULL
+    ),
     stat = "identity",
-    position = position_stack(1.3),
-    vjust = -6,
-    size = 40
+    position = position_stack(1.5),
+    vjust = -3,
+    size = 30
   ) +
   geom_text(
     stat = "count",
     aes(label = paste0("n = ", ..count..), y = ..count..),
     position = 'fill',
-    vjust = 13,
-    size = 35,
+    vjust = 2,
+    size = 25,
     data = df
   ) +
   theme_tufte(base_size = 20, base_family = "gill_sans") +
@@ -162,15 +154,18 @@ ggplot(data = actgrd,
       color = "grey20",
       size = 80,
       angle = 0,
-      hjust = 1,
+      hjust = 0.7,
       vjust = 0,
       face = "bold"
     )
-  ) + scale_fill_manual(values = viridis(
-    5,
-    begin = 0,
-    end = 1,
-    option = 'C'
+  ) + scale_fill_manual(values = c(
+    "#CDC08C",
+    "#85D4E3",
+    "#9C964A",
+    "#C27D38",
+    "#F4B5BD",
+    "#798E87",
+    "#FAD77B"
   ))
 
 #saving the file
