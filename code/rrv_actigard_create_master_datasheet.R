@@ -137,7 +137,7 @@ athns_2018$Treatment <- toTitleCase(athns_2018$Treatment)
 
 #standardizing treatment labels
 athns_2018$Treatment <-
-  sub('Control', 'Untreated', athns_2018$Treatment)
+  sub('Control', 'NoTrt', athns_2018$Treatment)
 
 #removing incomplete records
 athns_2018 <- athns_2018 %>% drop_na()
