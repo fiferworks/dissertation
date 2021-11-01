@@ -85,12 +85,12 @@ df <-
 
 #getting summary stats for each treatment group
 actgrd <- df %>% group_by(Treatment) %>% summarize(
-  per_plant = mean(mites),
-  totals = sum(mites),
-  sd = sd(mites),
-  se = sd(mites) / sqrt(n()),
-  log_xformed = log(mean(mites)),
-  se_xformed = log(sd(mites) / sqrt(n()))
+  per_plant = mean(`Total P.fructiphilus`, na.rm = TRUE),
+  totals = sum(`Total P.fructiphilus`, na.rm = TRUE),
+  sd = sd(`Total P.fructiphilus`, na.rm = TRUE),
+  se = sd(`Total P.fructiphilus`, na.rm = TRUE) / sqrt(n()),
+  log_xformed = log(mean(`Total P.fructiphilus`, na.rm = TRUE)),
+  se_xformed = log(sd(`Total P.fructiphilus`, na.rm = TRUE) / sqrt(n()))
 ) %>%
   ungroup()
 
