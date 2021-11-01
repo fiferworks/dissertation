@@ -54,17 +54,17 @@ Anova(glm_1, type = c("III")) #treatment is significant
 summary(glht(glm_1, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
 
 
-#compute contrasts "by hand" for ZIP model: https://hypatia.math.ethz.ch/pipermail/r-help/2009-March/418679.html
-nr <- length(levels(grifn$Treatment)) + 1
-contr <- matrix(0, nrow = nr, ncol = length(coef(zip_model)))
-colnames(contr) <- names(coef(zip_model))
-rownames(contr) <-
-  paste(levels(grifn$Treatment)[c(2, 2, 3, 3, 5, 5)],
-        levels(grifn$Treatment)[c(1, 3, 5, 1, 2, 1)], sep = " - ")
-contr[, 2:4] <-
-  contrMat(numeric(nrow(contr)), type = "Tukey")[7:12, 2:4]
-glht_zip_model <- glht(zip_model, linfct = contr)
-summary(glht_zip_model)
+# #compute contrasts "by hand" for ZIP model: https://hypatia.math.ethz.ch/pipermail/r-help/2009-March/418679.html
+# nr <- length(levels(grifn$Treatment)) + 1
+# contr <- matrix(0, nrow = nr, ncol = length(coef(zip_model)))
+# colnames(contr) <- names(coef(zip_model))
+# rownames(contr) <-
+#   paste(levels(grifn$Treatment)[c(2, 2, 3, 3, 5, 5)],
+#         levels(grifn$Treatment)[c(1, 3, 5, 1, 2, 1)], sep = " - ")
+# contr[, 2:4] <-
+#   contrMat(numeric(nrow(contr)), type = "Tukey")[7:12, 2:4]
+# glht_zip_model <- glht(zip_model, linfct = contr)
+# summary(glht_zip_model)
 
 
 # data("NMES1988", package = "AER")
