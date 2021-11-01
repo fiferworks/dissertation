@@ -48,46 +48,43 @@ showtext_auto()
 ####ACTIGARD DATA PREP####
 #reading in the data
 df  <-
-  read_csv('data/rrv_actigard_master_datasheet.csv', col_types = "dddddddfffffDf")
+  read_csv('data/rrv_actigard_master_datasheet.csv')
 
 #reading in the difference letters
 abc <- read_table("data/rrv_actigard_cld_letters.txt")
-abc <- abc %>%  select('water', 'high', 'low', 'kontos', 'untreated')
+abc <- abc %>%  select('Water', 'High', 'Low', 'Spiro')
 
 #rows to columns
-abc <- abc %>% gather(key = 'treat')
+abc <- abc %>% gather(key = 'Treatment')
 
 #removing extra characters
 abc$value <- unquote(abc$value)
 abc$value <- as_factor(abc$value)
-abc$treat <- as_factor(abc$treat)
+abc$Treatment <- as_factor(abc$Treatment)
 
 #combining letters with dataset
-df <- full_join(df, abc, by = 'treat')
+df <- full_join(df, abc, by = 'Treatment')
 
 #rearranging columns
 df <-
-  dplyr::select(
-    df,
-    'mites',
-    'totals',
-    'per_plant',
-    'sd',
-    'se',
-    'log_xformed',
-    'se_xformed',
-    'treat',
-    'value',
-    'id',
-    'plant',
-    'block',
-    'field',
-    'date',
-    'n_samples'
+  df %>% dplyr::select(
+    "Sample #",
+    "Treatment",
+    "Total P.fructiphilus",
+    "Other Mites",
+    "Plant",
+    "Block",
+    "Field",
+    "H-B Score",
+    "RRD",
+    "AUDPC",
+    "Final disease severity (%)",
+    "Date",
+    "value"
   )
 
 #getting summary stats for each treatment group
-actgrd <- df %>% group_by(treat) %>% summarize(
+actgrd <- df %>% group_by(Treatment) %>% summarize(
   per_plant = mean(mites),
   totals = sum(mites),
   sd = sd(mites),
