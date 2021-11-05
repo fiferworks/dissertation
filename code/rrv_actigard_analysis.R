@@ -20,9 +20,11 @@ rm(pkgs, nu_pkgs)
 ####ACTIGARD DATA ANALYSIS####
 #reading in the data
 df <-
-  read_csv('data/rrv_actigard_master_datasheet.csv', col_types = "ffddfffdfdd?")
+  read_csv('data/rrv_actigard_master_datasheet.csv', col_types = "fcddfffdfdd?")
 
+#only Griffin site had good data
 grifn <- df %>% filter(Field == 'Griffin')
+grifn$Treatment <- as_factor(grifn$Treatment)
 
 #data is now ready to be analyzed
 ####ZIP MODEL OF GRIFFIN DATA####
@@ -50,11 +52,13 @@ summary(glm_1)
 Anova(glm_1, type = c("III")) #treatment is significant
 
 #multiple comparisons
-#glmer model suggests that both the low Actigard rate and Kontos treatments are significantly different than the water treatment
+#glmer model suggests that the low Actigard rate and Kontos treatments are
+#significantly different than the water treatment
 summary(glht(glm_1, linfct = mcp(Treatment = "Tukey")), test = adjusted("holm"))
 
 
-# #compute contrasts "by hand" for ZIP model: https://hypatia.math.ethz.ch/pipermail/r-help/2009-March/418679.html
+# #compute contrasts "by hand" for ZIP model:
+# https://hypatia.math.ethz.ch/pipermail/r-help/2009-March/418679.html
 # nr <- length(levels(grifn$Treatment)) + 1
 # contr <- matrix(0, nrow = nr, ncol = length(coef(zip_model)))
 # colnames(contr) <- names(coef(zip_model))

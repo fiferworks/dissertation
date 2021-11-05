@@ -54,7 +54,7 @@ df <- df %>% filter(Field == 'Griffin')
 
 #reading in the difference letters
 abc <- read_table("data/rrv_actigard_cld_letters.txt")
-abc <- abc %>%  select('Water', 'High', 'Low', 'Spiro')
+abc <- abc %>% dplyr::select('Water', 'High', 'Low', 'Spiro')
 
 #rows to columns
 abc <-
