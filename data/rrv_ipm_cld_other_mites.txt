@@ -1,16 +1,15 @@
  Treatment  emmean   SE  df asymp.LCL asymp.UCL .group
- MN        -1.3324 1.28 Inf     -3.85      1.18  1    
- Spiro     -0.8621 1.27 Inf     -3.35      1.63  1    
- ASM       -0.2876 1.27 Inf     -2.77      2.20   2   
+ MN        -1.3325 1.28 Inf     -3.85      1.18  1    
+ Spiro     -0.8622 1.27 Inf     -3.35      1.63  1    
+ ASM       -0.2876 1.27 Inf     -2.78      2.20   2   
  Mites     -0.2692 1.27 Inf     -2.76      2.22   2   
- MA        -0.1409 1.27 Inf     -2.63      2.35   23  
- Water     -0.0103 1.27 Inf     -2.50      2.48    34 
- NoTrt      0.1260 1.27 Inf     -2.36      2.61     4 
- Ninja      0.1672 1.27 Inf     -2.32      2.66    34 
+ MA        -0.1410 1.27 Inf     -2.63      2.35   23  
+ Water     -0.0103 1.27 Inf     -2.50      2.48    3  
+ Ninja      0.1672 1.27 Inf     -2.33      2.66    3  
 
 Results are given on the log (not the response) scale. 
 Confidence level used: 0.95 
-P value adjustment: tukey method for comparing a family of 8 estimates 
+P value adjustment: tukey method for comparing a family of 7 estimates 
 significance level used: alpha = 0.05 
 NOTE: Compact letter displays can be misleading
       because they show NON-findings rather than findings.
@@ -26,34 +25,27 @@ Fit: glmer(formula = `Other Mites` ~ Treatment + (1 | Field), data = df,
 
 Linear Hypotheses:
                    Estimate Std. Error z value Pr(>|z|)    
-Water - Spiro == 0  0.85189    0.07883  10.807  < 2e-16 ***
-Mites - Spiro == 0  0.59297    0.08225   7.209 1.35e-11 ***
+Water - Spiro == 0  0.85189    0.07882  10.807  < 2e-16 ***
+Mites - Spiro == 0  0.59297    0.08225   7.209 1.01e-11 ***
 MA - Spiro == 0     0.72121    0.08399   8.587  < 2e-16 ***
-ASM - Spiro == 0    0.57453    0.08247   6.967 7.46e-11 ***
-NoTrt - Spiro == 0  0.98811    0.08033  12.301  < 2e-16 ***
-Ninja - Spiro == 0  1.02934    0.12738   8.081 1.67e-14 ***
-MN - Spiro == 0    -0.47029    0.21731  -2.164 0.243632    
-Mites - Water == 0 -0.25892    0.06548  -3.954 0.000966 ***
-MA - Water == 0    -0.13068    0.06759  -1.934 0.265828    
-ASM - Water == 0   -0.27736    0.06575  -4.218 0.000345 ***
-NoTrt - Water == 0  0.13622    0.06297   2.163 0.243632    
-Ninja - Water == 0  0.17745    0.11745   1.511 0.392441    
-MN - Water == 0    -1.32218    0.21164  -6.247 8.36e-09 ***
-MA - Mites == 0     0.12824    0.07155   1.792 0.292369    
-ASM - Mites == 0   -0.01844    0.06982  -0.264 1.000000    
-NoTrt - Mites == 0  0.39514    0.06721   5.879 7.43e-08 ***
-Ninja - Mites == 0  0.43637    0.11977   3.643 0.002690 ** 
-MN - Mites == 0    -1.06326    0.21294  -4.993 9.50e-06 ***
-ASM - MA == 0      -0.14668    0.07183  -2.042 0.246961    
-NoTrt - MA == 0     0.26690    0.06737   3.962 0.000966 ***
-Ninja - MA == 0     0.30813    0.12600   2.445 0.130198    
-MN - MA == 0       -1.19150    0.21651  -5.503 6.34e-07 ***
-NoTrt - ASM == 0    0.41358    0.06751   6.126 1.71e-08 ***
-Ninja - ASM == 0    0.45481    0.11982   3.796 0.001619 ** 
-MN - ASM == 0      -1.04481    0.21297  -4.906 1.40e-05 ***
-Ninja - NoTrt == 0  0.04123    0.12359   0.334 1.000000    
-MN - NoTrt == 0    -1.45840    0.21511  -6.780 2.53e-10 ***
-MN - Ninja == 0    -1.49963    0.22094  -6.787 2.51e-10 ***
+ASM - Spiro == 0    0.57453    0.08247   6.967 5.51e-11 ***
+Ninja - Spiro == 0  1.02934    0.12737   8.081 1.27e-14 ***
+MN - Spiro == 0    -0.47029    0.21731  -2.164 0.182751    
+Mites - Water == 0 -0.25892    0.06548  -3.954 0.000768 ***
+MA - Water == 0    -0.13068    0.06758  -1.934 0.212635    
+ASM - Water == 0   -0.27736    0.06575  -4.218 0.000271 ***
+Ninja - Water == 0  0.17745    0.11744   1.511 0.261618    
+MN - Water == 0    -1.32217    0.21165  -6.247 6.27e-09 ***
+MA - Mites == 0     0.12824    0.07155   1.792 0.219249    
+ASM - Mites == 0   -0.01844    0.06982  -0.264 0.791698    
+Ninja - Mites == 0  0.43637    0.11977   3.643 0.002152 ** 
+MN - Mites == 0    -1.06325    0.21294  -4.993 7.72e-06 ***
+ASM - MA == 0      -0.14668    0.07183  -2.042 0.205764    
+Ninja - MA == 0     0.30813    0.12600   2.446 0.101255    
+MN - MA == 0       -1.19149    0.21651  -5.503 5.22e-07 ***
+Ninja - ASM == 0    0.45481    0.11982   3.796 0.001325 ** 
+MN - ASM == 0      -1.04481    0.21297  -4.906 1.12e-05 ***
+MN - Ninja == 0    -1.49962    0.22094  -6.787 1.83e-10 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 (Adjusted p values reported -- holm method)

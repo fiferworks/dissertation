@@ -15,6 +15,9 @@ rm(pkgs, nu_pkgs)
 #reading in the data
 df <- read_csv('data/rrv_ipm_master_datasheet.csv')
 
+#removing untreated plots
+df <- df %>% filter(Treatment != 'NoTrt')
+
 #assigning columns as factors
 df$Treatment <- as_factor(df$Treatment)
 df$ID <- as_factor(df$ID)
@@ -34,14 +37,16 @@ talla <- filter(df, Field == 'Tallahassee')
 #ERIOPHYOIDS!#
 ##############
 glm_erios <-
-  glmer(Eriophyoids ~ Treatment + (1 | Field),
-        family = 'poisson',
-        data = df)
+  glmer(
+    Eriophyoids ~ Treatment + Tetranychoids + Phytoseiids + (1 | Field),
+    family = 'poisson',
+    data = df
+  )
 
 summary(glm_erios)
 
 #ANOVA
-Anova(glm_erios, type = c("III")) #treatment is significant
+Anova(glm_erios, type = c("III")) #treatment, tetranychoids and phytoseiids are significant
 
 #making a compact letter display for each treatment
 q <- emmeans(glm_erios, "Treatment")

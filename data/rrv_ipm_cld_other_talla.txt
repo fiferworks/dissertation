@@ -1,14 +1,13 @@
- Treatment emmean    SE  df asymp.LCL asymp.UCL .group
- Spiro       1.55 0.133 Inf      1.29      1.81  1    
- Mites       1.94 0.124 Inf      1.69      2.18   2   
- ASM         1.94 0.122 Inf      1.70      2.18   2   
- MA          1.96 0.123 Inf      1.72      2.20   2   
- Water       1.99 0.123 Inf      1.75      2.23   2   
- NoTrt       2.00 0.166 Inf      1.68      2.33  12   
+ Treatment emmean     SE  df asymp.LCL asymp.UCL .group
+ Spiro       1.48 0.0948 Inf      1.29      1.66  1    
+ ASM         1.71 0.0799 Inf      1.55      1.86  12   
+ MA          1.79 0.0801 Inf      1.63      1.94   23  
+ Water       1.96 0.0771 Inf      1.81      2.12    3  
+ Mites       1.97 0.0789 Inf      1.81      2.12    3  
 
 Results are given on the log (not the response) scale. 
 Confidence level used: 0.95 
-P value adjustment: tukey method for comparing a family of 6 estimates 
+P value adjustment: tukey method for comparing a family of 5 estimates 
 significance level used: alpha = 0.05 
 NOTE: Compact letter displays can be misleading
       because they show NON-findings rather than findings.
@@ -24,21 +23,16 @@ Fit: glmer(formula = `Other Mites` ~ Treatment + Tetranychoids + Eriophyoids +
 
 Linear Hypotheses:
                     Estimate Std. Error z value Pr(>|z|)    
-Water - Spiro == 0  0.439376   0.094580   4.646 5.09e-05 ***
-Mites - Spiro == 0  0.389879   0.097377   4.004 0.000748 ***
-MA - Spiro == 0     0.408606   0.095792   4.266 0.000259 ***
-ASM - Spiro == 0    0.394754   0.091823   4.299 0.000240 ***
-NoTrt - Spiro == 0  0.453316   0.211053   2.148 0.348955    
-Mites - Water == 0 -0.049497   0.074911  -0.661 1.000000    
-MA - Water == 0    -0.030770   0.072563  -0.424 1.000000    
-ASM - Water == 0   -0.044622   0.072819  -0.613 1.000000    
-NoTrt - Water == 0  0.013940   0.207520   0.067 1.000000    
-MA - Mites == 0     0.018728   0.074403   0.252 1.000000    
-ASM - Mites == 0    0.004875   0.075152   0.065 1.000000    
-NoTrt - Mites == 0  0.063438   0.208886   0.304 1.000000    
-ASM - MA == 0      -0.013852   0.072442  -0.191 1.000000    
-NoTrt - MA == 0     0.044710   0.207466   0.216 1.000000    
-NoTrt - ASM == 0    0.058562   0.205925   0.284 1.000000    
+Water - Spiro == 0  0.487843   0.094513   5.162 2.45e-06 ***
+Mites - Spiro == 0  0.489902   0.096995   5.051 3.96e-06 ***
+MA - Spiro == 0     0.309889   0.098483   3.147  0.00991 ** 
+ASM - Spiro == 0    0.229059   0.093474   2.451  0.07133 .  
+Mites - Water == 0  0.002059   0.074968   0.027  0.97809    
+MA - Water == 0    -0.177954   0.074595  -2.386  0.07133 .  
+ASM - Water == 0   -0.258784   0.075700  -3.419  0.00504 ** 
+MA - Mites == 0    -0.180013   0.077091  -2.335  0.07133 .  
+ASM - Mites == 0   -0.260843   0.078783  -3.311  0.00651 ** 
+ASM - MA == 0      -0.080830   0.073373  -1.102  0.54124    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 (Adjusted p values reported -- holm method)
