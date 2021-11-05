@@ -22,16 +22,16 @@ rm(pkgs, nu_pkgs)
 df <-
   read_csv('data/rrv_actigard_master_datasheet.csv', col_types = "fcddfffdfdd?")
 
-#only Griffin site had good data
-grifn <- df %>% filter(Field == 'Griffin')
-grifn$Treatment <- as_factor(grifn$Treatment)
+df <- df %>% filter(Treatment != 'NoTrt')
+
+df$Treatment <- as_factor(df$Treatment)
 
 #data is now ready to be analyzed
-####ZIP MODEL OF GRIFFIN DATA####
+####ZIP MODEL OF DATA####
 zip_model <-
   zeroinfl(
     `Total P.fructiphilus` ~ Treatment,
-    data = grifn,
+    data = df,
     dist = "poisson",
     link = 'logit'
   )
@@ -44,7 +44,7 @@ glm_1 <-
   glmer(`Total P.fructiphilus` ~ Treatment + (1 |
                                                 Block),
         family = 'poisson',
-        data = grifn)
+        data = df)
 
 summary(glm_1)
 
@@ -105,6 +105,9 @@ q <- glht(glm_1, linfct = mcp(Treatment = "Tukey"))
 sink(file = 'data/rrv_actigard_cld_letters.txt')
 cld(q)
 sink()
+
+#####GRAPH OF FINAL DISEASE SEVERITY####
+# athns <- read_csv('data/rrv_athens_disease_progress_2018.csv')
 
 #cleanup
 rm(list = ls())
