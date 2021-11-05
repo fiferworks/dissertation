@@ -42,7 +42,7 @@ griff_2019 <- read_excel(
 griff_2018$Block <- griff_2018$`Plant & Block`
 griff_2018 <-
   separate(griff_2018, 'Block', c('Plant', 'Block'), sep = 1)
-griff_2018 <- griff_2018 %>% select(-Plant)
+griff_2018 <- griff_2018 %>% dplyr::select(-Plant)
 
 #adding a treatment column by duplicating the 'Plant' column
 griff_2019$Treatment <- griff_2019$`Plant & Block`
@@ -93,15 +93,15 @@ griffin_trials$Block <- as.numeric(griffin_trials$Block)
 
 #rearranging columns
 griffin_trials <-
-  griffin_trials %>% select(`Sample #`,
-                            Plant,
-                            Block,
-                            Treatment,
-                            P.fructiphilus,
-                            RRD,
-                            `H-B Score`,
-                            Date,
-                            Field)
+  griffin_trials %>% dplyr::select(`Sample #`,
+                                   Plant,
+                                   Block,
+                                   Treatment,
+                                   P.fructiphilus,
+                                   RRD,
+                                   `H-B Score`,
+                                   Date,
+                                   Field)
 
 
 ####ATHENS DATA####
@@ -119,7 +119,7 @@ athns_2018$Block <- athns_2018$Grid
 athns_2018 <- athns_2018 %>% unite("Plant", Plant:Grid, sep = "")
 
 #fixing names
-athns_2018 <- athns_2018 %>% select(-Note) %>% rename(
+athns_2018 <- athns_2018 %>% dplyr::select(-Note) %>% rename(
   'RRD' = 'Symptom',
   'Treatment' = 'trt',
   'P.fructiphilus' = 'Target Mites',
@@ -153,9 +153,9 @@ athns_audpc <-
 #   sheet = 2,
 #   range = cell_rows(1), col_names = FALSE
 # )
-# athns_dates <- athns_dates %>% select(-1,-2)
+# athns_dates <- athns_dates %>% dplyr::select(-1,-2)
 # athns_dates <- athns_dates %>%  pivot_longer(everything())
-# athns_dates <- athns_dates %>% select(value)
+# athns_dates <- athns_dates %>% dplyr::select(value)
 
 athns_audpc <- athns_audpc %>% rename(
   '2018-08-31' = `Week 1`,
@@ -206,6 +206,15 @@ athns_2018 <- athns_2018 %>% pivot_longer(
 
 #converting to proper format
 athns_2018$Date <- lubridate::ymd(athns_2018$Date, tz = 'UTC')
+athns_2018 <- athns_2018 %>% arrange(Date)
+
+#many of the values became duplicated when pivoting longer, so resetting the
+#total values to zero for all but the last observations
+athns_2018[1:(length(athns_2018$`Sample #`) - 48), ]$AUDPC <-
+  athns_2018[1:(length(athns_2018$`Sample #`) - 48), ]$`Final disease severity (%)` <-
+  athns_2018[1:(length(athns_2018$`Sample #`) - 48), ]$P.fructiphilus <-
+  athns_2018[1:(length(athns_2018$`Sample #`) - 48), ]$`Other Mites` <-
+  0
 
 ####COMBINING DATASETS####
 df <- bind_rows(griffin_trials, athns_2018)
@@ -216,7 +225,7 @@ df$`Sample #` <- 1:length(df[[1]])
 
 #rearranging columns
 df <- df %>% rename(`Total P.fructiphilus` = P.fructiphilus)
-df <- df %>% select(
+df <- df %>% dplyr::select(
   `Sample #`,
   Treatment,
   `Total P.fructiphilus`,
