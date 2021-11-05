@@ -54,7 +54,7 @@ df <- df %>% filter(Field == 'Griffin')
 
 #reading in the difference letters
 abc <- read_table("data/rrv_actigard_cld_letters.txt")
-abc <- abc %>%  dplyr::select(-X5)
+abc <- abc %>%  select('Water', 'High', 'Low', 'Spiro')
 
 #rows to columns
 abc <-
@@ -67,6 +67,24 @@ abc$Treatment <- as_factor(abc$Treatment)
 
 #combining letters with dataset
 df <- full_join(df, abc, by = "Treatment")
+
+#rearranging columns
+df <-
+  df %>% dplyr::select(
+    "Sample #",
+    "Treatment",
+    "Total P.fructiphilus",
+    "Other Mites",
+    "Plant",
+    "Block",
+    "Field",
+    "H-B Score",
+    "RRD",
+    "AUDPC",
+    "Final disease severity (%)",
+    "Date",
+    "Letters"
+  )
 
 #getting summary stats for each treatment group
 actgrd_griffin <-
