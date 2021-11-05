@@ -122,7 +122,7 @@ df <- bind_rows(ta_trials, ga_trials)
 df <-
   df %>% add_column(Month = month(df$Date, label = TRUE, abbr = FALSE))
 
-df <- df %>%  dplyr::select(-notes,-Plant)
+df <- df %>%  dplyr::select(-notes, -Plant)
 
 df <-
   df %>% dplyr::select(
@@ -174,6 +174,9 @@ df$Phytoseiids <- df$Phytoseiids %>% replace_na(0)
 df$Treatment <- gsub("Kontos", "Spiro", df$Treatment)
 df$Treatment <- gsub("Actigard", "ASM", df$Treatment)
 df$Treatment <- gsub("Untreated", "NoTrt", df$Treatment)
+
+#replacing missing value with true zero
+df$`Other Mites` <- df$`Other Mites` %>% replace_na(0)
 
 #saving the master file
 write_csv(df, 'data/rrv_ipm_master_datasheet.csv')

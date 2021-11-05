@@ -48,6 +48,9 @@ showtext_auto()
 #reading in the data
 df <- read_csv('data/rrv_ipm_master_datasheet.csv')
 
+#removing untreated plots
+df <- df %>% filter(Treatment != 'NoTrt')
+
 #assigning columns as factors
 df$Treatment <- as_factor(df$Treatment)
 df$ID <- as_factor(df$ID)
@@ -541,7 +544,7 @@ ggplot(data = talla,
     varwidth = TRUE,
     outlier.size = 2.5
   ) +
-  facet_wrap(~ Month, strip.position = 'top') +
+  facet_wrap( ~ Month, strip.position = 'top') +
   coord_cartesian(ylim = c(-4, 35), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(expression(
@@ -629,7 +632,7 @@ ggplot(
     varwidth = TRUE,
     outlier.size = 2.5
   ) +
-  facet_wrap(~ Month, strip.position = 'top') +
+  facet_wrap( ~ Month, strip.position = 'top') +
   coord_cartesian(ylim = c(-4, 10), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(expression(
@@ -713,7 +716,7 @@ ggplot(data = talla,
     varwidth = TRUE,
     outlier.size = 2.5
   ) +
-  facet_wrap(~ Month, strip.position = 'top') +
+  facet_wrap( ~ Month, strip.position = 'top') +
   coord_cartesian(ylim = c(-4, 10), clip = "off") +
   theme_tufte(base_size = 70, base_family = "gill_sans") +
   ggtitle(expression(
