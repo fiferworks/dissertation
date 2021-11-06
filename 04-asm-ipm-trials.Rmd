@@ -130,7 +130,8 @@ read_csv('data/rrv_athens_disease_progress_2018.csv',
   knitr::kable(format = "latex",
                booktabs = TRUE,
                caption = "Progression of RRD on SAR-induced Pink Double Knock Out® roses in Athens, GA 2018.") %>%
-  kable_styling(latex_options = c("striped", "scale_down", full_width = TRUE))
+  kable_styling(latex_options = c("striped", "scale_down", full_width = TRUE)) %>% 
+  landscape()
 
 ```
 
