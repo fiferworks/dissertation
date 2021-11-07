@@ -42,7 +42,6 @@
 \usepackage{amsthm}
 \usepackage{algpseudocode}
 \usepackage{tabularx}
-\PassOptionsToPackage{hyphens}{url}
 \usepackage[letterpaper,hmargin=1in,vmargin=1in]{geometry}
 \usepackage{lscape}
 %\usepackage{hanging}
@@ -77,7 +76,7 @@
 \usepackage{pdfpages}
 \widowpenalties 3 1001  1002 1003
 \raggedbottom
-\RequirePackage[linktoc=all]{hyperref}% Use this to provide intra-pdf hyperlinking and better toc
+\PassOptionsToPackage{hyphens}{url}\RequirePackage[linktoc=all]{hyperref}% Use this to provide intra-pdf hyperlinking and better toc
 \hypersetup{%               %           Setup the coloring of the links.
 %                           %           Currently the only necessary one is "colorlinks=true" and "linkcolor=blue".
     colorlinks   = true,    %           Colours links instead of ugly boxes
@@ -85,6 +84,8 @@
     linkcolor    = blue,    %           Colour of internal links
     citecolor    = blue     %           Colour of citations, could be ``red''
     }
+% If you want to break on URL numbers
+%\setcounter{biburlnumpenalty}{9000}
 % % %DO NOT PLACE ANY PACKAGES AFTER THE HYPERREF SET UP
 
 %from ismayc/thesisdown, allows for changes made to newer release of pandoc
