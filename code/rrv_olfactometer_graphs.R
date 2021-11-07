@@ -429,7 +429,7 @@ ggplot(data = tests_df,
     size = 25,
     x = 2.53,
     y = 20,
-    label = '100 μm of 1 g/ml',
+    label = '100 μl of 1 μg/μl',
     color = "black"
   ) +
   scale_y_reverse()
@@ -512,9 +512,9 @@ ggplot(data = tests_df,
   annotate(
     geom = "text",
     size = 25,
-    x = 2.53,
+    x = 1.53,
     y = 20,
-    label = '100 μm of 1 g/ml',
+    label = '100 μl of 1 μg/μl',
     color = "black"
   )
 
