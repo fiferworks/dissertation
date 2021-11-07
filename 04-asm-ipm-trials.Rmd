@@ -36,7 +36,7 @@ knitr::include_graphics('figure/rrv_asm_plot_2019_griffin.png')
 
 <!-- slow release sachets which are sheltered and provided with felt patches and and moisture in the form of water-absorbant sodium polyacrylate gels had better release of predators [@Shimoda2018] -->
 
-We tested ASM alongside a different a SAR-inducer (SP2700, Trade name 'Ninja', SePro) and combined one of the SAR-inducers with predatory mites to observe any synergistic effects. We used an acaricide as a negative control and water as a positive control. (see *\@ref(fig:ipm)*). 
+We tested ASM alongside a different a SAR-inducer (SP2700, Trade name 'Ninja', SePro) and combined one of the SAR-inducers with predatory mites to observe any synergistic effects. We used an acaricide as a negative control and water as a positive control. (see *\@ref(fig:ipm-talla-erios)*). 
 
 
 Spray applications done weekly for 12 weeks, on the same day each week, weather permitting.
@@ -91,7 +91,7 @@ The Athens site will be given 96 Pink Double Knock Out® Roses (Star Roses and P
 
 **Data Collection**
 
-Georgia collaborators will be collecting flower samples from all roses once before beginning the treatments on week 1 and once at the end of the experiment on week 12. For weeks 2 through 11, Georgia collaborators will collect flower samples starting from the top rows of each block every week, until each row has been sampled three times (see *\@ref(fig:ipm-athens)* and *\@ref(fig:ipm-griff)*). Georgia collaborators rate disease severity for each rose every week before they spray, rating roses according to the Horsfall-Barratt Scale [@Horsfall1945]. Roses displaying symptoms of RRD will have tissues sent to the Plant Disease Diagnostic Clinic at the North Florida Reasearch and Extension Center(PDC) for virus confirmation.
+Georgia collaborators will be collecting flower samples from all roses once before beginning the treatments on week 1 and once at the end of the experiment on week 12. For weeks 2 through 11, Georgia collaborators will collect flower samples starting from the top rows of each block every week, until each row has been sampled three times (see *\@ref(fig:ipm-talla-erios-athens)* and *\@ref(fig:ipm-talla-erios-griff)*). Georgia collaborators rate disease severity for each rose every week before they spray, rating roses according to the Horsfall-Barratt Scale [@Horsfall1945]. Roses displaying symptoms of RRD will have tissues sent to the Plant Disease Diagnostic Clinic at the North Florida Reasearch and Extension Center(PDC) for virus confirmation.
 
 **Sample Processing** 
 
@@ -118,7 +118,7 @@ grid::grid.raster(tiff::readTIFF('figure/rrv_ipm_plot_map_2021_talla.tif'))
 ```
 
 ## Results {#results-asm-ipm}
-Combining predatory mites with a SAR-inducer was as effective as the miticide alone, and controlled herbivorous mite populations more than either SAR-induction or predatory mites alone (see *\@ref(fig:ipm)*).
+Combining predatory mites with a SAR-inducer was as effective as the miticide alone, and controlled herbivorous mite populations more than either SAR-induction or predatory mites alone (see *\@ref(fig:ipm-talla-erios)*).
 
 ```{r asm-graph, cache = TRUE, cache.extra = file.mtime('figure/rrv_actigard_graph.png'), fig.cap="SAR-induction trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. water = Water Control, High = 100 \\si{\\milli\\gram}/\\si{\\liter} Actigard® 50WG (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), low = 50 \\si{\\milli\\gram}/\\si{\\liter} Actigard® 50WG (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), Spiro = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), All products were applied for 12 weeks. Flower cuttings were taken weekly to record the numbers of herbivorous mites.", fig.scap="SAR-induction trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/rrv_actigard_graph.png')
@@ -130,7 +130,7 @@ read_csv('data/rrv_athens_disease_progress_2018.csv',
   knitr::kable(format = "latex",
                booktabs = TRUE,
                caption = "Progression of RRD on SAR-induced Pink Double Knock Out® roses in Athens, GA 2018.") %>%
-  kable_styling(latex_options = c("striped", "scale_down", full_width = TRUE)) %>% 
+  kable_styling(latex_options = c("striped", "scale_down", full_width = TRUE)) %>%
   landscape()
 
 ```
