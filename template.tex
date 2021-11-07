@@ -74,7 +74,7 @@
 %\usepackage[utf8]{inputenc}
 \usepackage{textgreek}
 \usepackage{pdfpages}
-\widowpenalties 3 1001  1002 1003
+\usepackage[defaultlines=4,all]{nowidow}
 \raggedbottom
 \PassOptionsToPackage{hyphens}{url}\RequirePackage[linktoc=all]{hyperref}% Use this to provide intra-pdf hyperlinking and better toc
 \hypersetup{%               %           Setup the coloring of the links.
@@ -84,8 +84,9 @@
     linkcolor    = blue,    %           Colour of internal links
     citecolor    = blue     %           Colour of citations, could be ``red''
     }
-% If you want to break on URL numbers
-%\setcounter{biburlnumpenalty}{9000}
+\usepackage{letltxmacro}
+\LetLtxMacro{\oldhypertarget}{\hypertarget}
+\renewcommand{\hypertarget}[2]{\leavevmode\oldhypertarget{#1}{#2}}
 % % %DO NOT PLACE ANY PACKAGES AFTER THE HYPERREF SET UP
 
 %from ismayc/thesisdown, allows for changes made to newer release of pandoc
