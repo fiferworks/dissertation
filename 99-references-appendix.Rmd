@@ -27,7 +27,7 @@ To create a hanging indent and spacing between entries.  These three lines may n
 
 \setlength{\parindent}{-0.20in}
 \setlength{\leftskip}{0.20in}
-\setlength{\parskip}{8pt}
+\setlength{\parskip}{4pt}
 
 
 <!--
