@@ -42,7 +42,7 @@
 \usepackage{amsthm}
 \usepackage{algpseudocode}
 \usepackage{tabularx}
-\usepackage{url}
+\PassOptionsToPackage{hyphens}{url}
 \usepackage[letterpaper,hmargin=1in,vmargin=1in]{geometry}
 \usepackage{lscape}
 %\usepackage{hanging}
@@ -75,6 +75,8 @@
 %\usepackage[utf8]{inputenc}
 \usepackage{textgreek}
 \usepackage{pdfpages}
+\widowpenalties 3 1001  1002 1003
+\raggedbottom
 \RequirePackage[linktoc=all]{hyperref}% Use this to provide intra-pdf hyperlinking and better toc
 \hypersetup{%               %           Setup the coloring of the links.
 %                           %           Currently the only necessary one is "colorlinks=true" and "linkcolor=blue".
