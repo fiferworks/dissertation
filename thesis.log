@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.6)  6 NOV 2021 21:57
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.6)  6 NOV 2021 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -630,11 +630,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip113
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 86.
 \csllabelwidth=\skip114
 \cslhangindent=\skip115
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 137.
+h' as default language. on input line 138.
 (./thesis.aux
 
 LaTeX Warning: Label `tab:all-contrib-table' multiply defined.
@@ -657,46 +657,46 @@ LaTeX Warning: Label `tab:all-corr-table' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-37.
+38.
 (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 138.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
-37.
+38.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
 **************************************
 * Executing Begin Document Statement *
 **************************************
-LaTeX Info: Redefining \microtypecontext on input line 137.
-Package microtype Info: Applying patch `item' on input line 137.
-Package microtype Info: Applying patch `toc' on input line 137.
-Package microtype Info: Applying patch `eqnum' on input line 137.
-Package microtype Info: Applying patch `footnote' on input line 137.
+LaTeX Info: Redefining \microtypecontext on input line 138.
+Package microtype Info: Applying patch `item' on input line 138.
+Package microtype Info: Applying patch `toc' on input line 138.
+Package microtype Info: Applying patch `eqnum' on input line 138.
+Package microtype Info: Applying patch `footnote' on input line 138.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -750,13 +750,13 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 137.
+or `english'. on input line 138.
 (c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
 )
-Package hyperref Info: Link coloring ON on input line 137.
+Package hyperref Info: Link coloring ON on input line 138.
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -766,9 +766,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 137.
-LaTeX Info: Redefining \pageref on input line 137.
-LaTeX Info: Redefining \nameref on input line 137.
+LaTeX Info: Redefining \ref on input line 138.
+LaTeX Info: Redefining \pageref on input line 138.
+LaTeX Info: Redefining \nameref on input line 138.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
@@ -1046,7 +1046,7 @@ CHAPTER 1.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 180.
+(hyperref)                removing `\uppercase' on input line 181.
 
 [14
 
@@ -1064,7 +1064,7 @@ File: thesis_files/figure-latex/persim-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/persim-1.pdf>
 [24] [25] [26] [27] [28]
 LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 2
-48.
+49.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
 File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
 ) [29] [30] [31]
@@ -1078,7 +1078,7 @@ CHAPTER 2.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 272.
+(hyperref)                removing `\uppercase' on input line 273.
 
 File: thesis_files/figure-latex/solo-maps-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/solo-maps-1.pdf>
@@ -1109,7 +1109,7 @@ CHAPTER 3.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 432.
+(hyperref)                removing `\uppercase' on input line 433.
 
 [52
 
@@ -1142,10 +1142,10 @@ File: figure/rrv_volatiles_umap_rrd_spme.png Graphic file (type bmp)
 File: figure/rrv_volatiles_umap_chems_rrd_spme.png Graphic file (type bmp)
 <figure/rrv_volatiles_umap_chems_rrd_spme.png>
 
-LaTeX Warning: Float too large for page by 6.81659pt on input line 710.
+LaTeX Warning: Float too large for page by 6.81659pt on input line 711.
 
 
-LaTeX Warning: Float too large for page by 17.01474pt on input line 757.
+LaTeX Warning: Float too large for page by 17.01474pt on input line 758.
 
 File: figure/rrv_volatiles_biplot_var_pca_df.png Graphic file (type bmp)
 <figure/rrv_volatiles_biplot_var_pca_df.png>
@@ -1172,7 +1172,7 @@ CHAPTER 4.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 1006.
+(hyperref)                removing `\uppercase' on input line 1007.
 
 [82
 
@@ -1184,11 +1184,11 @@ File: figure/rrv_asm_plot_2019_griffin.png Graphic file (type bmp)
 [87] [88] [89] [90]
 
 LaTeX Warning: Reference `fig:ipm-talla-erios-athens' on page 91 undefined on i
-nput line 1124.
+nput line 1125.
 
 
 LaTeX Warning: Reference `fig:ipm-talla-erios-griff' on page 91 undefined on in
-put line 1124.
+put line 1125.
 
 [91]
 File: figure/rrv_ipm_plot_map_2019_athens.png Graphic file (type bmp)
@@ -1221,14 +1221,14 @@ CHAPTER 5.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 1298.
+(hyperref)                removing `\uppercase' on input line 1299.
 
 File: thesis_files/figure-latex/fig-1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig-1-1.pdf>
 File: thesis_files/figure-latex/fig-2-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig-2-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1344--1344
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1345
 []\TU/lmr/m/it/12 L. muscari \TU/lmr/m/n/12 cv. ‘Gigantea’ has been traditional
 ly classified as \TU/lmr/m/it/12 L. gigantea \TU/lmr/m/n/12 Hume by Broussard 2
 007 and Fantz et al. 2015, although
@@ -1245,86 +1245,86 @@ CHAPTER 6.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 1359.
+(hyperref)                removing `\uppercase' on input line 1360.
 
 [112
 
 ] [113
 
 ] [114] [115] [116]
-Overfull \hbox (13.60503pt too wide) in paragraph at lines 1492--1494
+Overfull \hbox (13.60503pt too wide) in paragraph at lines 1493--1495
 \TU/lmr/m/n/12 plant tissue. Journal of Economic Entomology. 81: 1819–1823, DOI
 :[][]10.1093/jee/81.6.1819[][].  
  []
 
 [117]
-Overfull \hbox (36.99301pt too wide) in paragraph at lines 1510--1512
+Overfull \hbox (36.99301pt too wide) in paragraph at lines 1511--1513
 \TU/lmr/m/n/12 effects models using lme4. Journal of Statistical Software. 67: 
 1–48, DOI:[][]10.18637/jss.v067.i01[][].  
  []
 
 [118] [119]
-Overfull \hbox (19.39302pt too wide) in paragraph at lines 1567--1569
+Overfull \hbox (19.39302pt too wide) in paragraph at lines 1568--1570
 \TU/lmr/m/n/12 nual Review of Plant Biology. 60: 379–406, DOI:[][]10.1146/annur
 ev.arplant.57.032905.105346[][].  
  []
 
 [120] [121] [122]
-Overfull \hbox (19.10103pt too wide) in paragraph at lines 1627--1629
+Overfull \hbox (19.10103pt too wide) in paragraph at lines 1628--1630
 \TU/lmr/m/n/12 seiidae). Experimental and Applied Acarology. 25: 819–831, DOI:[
 ][]10.1023/a:1020499624661[][].  
  []
 
 [123] [124]
-Overfull \hbox (10.74101pt too wide) in paragraph at lines 1675--1677
+Overfull \hbox (10.74101pt too wide) in paragraph at lines 1676--1678
 \TU/lmr/m/n/12 perimental and Applied Acarology. 30: 29–105, DOI:[][]10.1023/b:
 appa.0000006544.10072.01[][].  
  []
 
 [125] [126] [127] [128]
-Overfull \hbox (28.96501pt too wide) in paragraph at lines 1768--1770
+Overfull \hbox (28.96501pt too wide) in paragraph at lines 1769--1771
 \TU/lmr/m/n/12 duction to \TU/lmr/m/it/12 Rcpp\TU/lmr/m/n/12 . The American Sta
 tistician. 72: 28–36, DOI:[][]10.1080/00031305.2017.1375990[][].  
  []
 
 [129] [130] [131]
-Overfull \hbox (52.11302pt too wide) in paragraph at lines 1858--1860
+Overfull \hbox (52.11302pt too wide) in paragraph at lines 1859--1861
 \TU/lmr/m/n/12 duction of systemic acquired resistance. Science. 261: 754–756, 
 DOI:[][]10.1126/science.261.5122.754[][].  
  []
 
 [132] [133]
-Overfull \hbox (166.19704pt too wide) in paragraph at lines 1900--1902
+Overfull \hbox (166.19704pt too wide) in paragraph at lines 1901--1903
 \TU/lmr/m/n/12 necrotrophic pathogens. Annual Review of Phytopathology. 43: 205
 –227, DOI:[][]10.1146/annurev.phyto.43.040204.135923[][].  
  []
 
 
-Overfull \hbox (16.83305pt too wide) in paragraph at lines 1915--1917
+Overfull \hbox (16.83305pt too wide) in paragraph at lines 1916--1918
 \TU/lmr/m/n/12 their relationships with \TU/lmr/m/it/12 Tetranychus urticae\TU/
 lmr/m/n/12 . Phytopathology. 64: 494, DOI:[][]10.1094/phyto- 
  []
 
 [134] [135]
-Overfull \hbox (38.76901pt too wide) in paragraph at lines 1984--1986
+Overfull \hbox (38.76901pt too wide) in paragraph at lines 1985--1987
 \TU/lmr/m/n/12 factometer. Bulletin of Entomological Research. 80: 177–181, DOI
 :[][]10.1017/s0007485300013390[][].  
  []
 
 [136] [137]
-Overfull \hbox (9.00903pt too wide) in paragraph at lines 2032--2034
+Overfull \hbox (9.00903pt too wide) in paragraph at lines 2033--2035
 \TU/lmr/m/n/12 volatile emissions in nature. Science. 291: 2141–2144, DOI:[][]1
 0.1126/science.291.5511.2141[][].  
  []
 
 [138] [139] [140]
-Overfull \hbox (24.84897pt too wide) in paragraph at lines 2101--2103
+Overfull \hbox (24.84897pt too wide) in paragraph at lines 2102--2104
 []\TU/lmr/bx/n/12 Kuczyński, L., A. Radwańska, K. Karpicka-Ignatowska, A. Laska
 , M. Lewandowski, 
  []
 
 [141] [142]
-Overfull \hbox (53.40901pt too wide) in paragraph at lines 2152--2154
+Overfull \hbox (53.40901pt too wide) in paragraph at lines 2153--2155
 \TU/lmr/m/n/12 tions for biological control. Biological Control. 54: 255–262, D
 OI:[][]10.1016/j.biocontrol.2010.05.017[][].  
  []
@@ -1333,31 +1333,31 @@ OI:[][]10.1016/j.biocontrol.2010.05.017[][].
 Missing character: There is no ʻ (U+02BB) in font [lmroman12-regular]:mapping=t
 ex-text;!
 [148] [149] [150]
-Overfull \hbox (23.15704pt too wide) in paragraph at lines 2362--2364
+Overfull \hbox (23.15704pt too wide) in paragraph at lines 2363--2365
 \TU/lmr/m/n/12 blattfleckenkranken \TU/lmr/m/it/12 Dendrobien\TU/lmr/m/n/12 . J
 ournal of Phytopathology. 70: 43–52, DOI:[][]10.1111/j.1439- 
  []
 
 [151]
-Overfull \hbox (3.59703pt too wide) in paragraph at lines 2374--2376
+Overfull \hbox (3.59703pt too wide) in paragraph at lines 2375--2377
 \TU/lmr/m/n/12 Paraguay. Journal of Plant Diseases and Protection. 127: 715–717
 , DOI:[][]10.1007/s41348- 
  []
 
 [152]
-Overfull \hbox (30.15701pt too wide) in paragraph at lines 2410--2412
+Overfull \hbox (30.15701pt too wide) in paragraph at lines 2411--2413
 \TU/lmr/m/n/12 Experimental and Applied Acarology. 30: 135–160, DOI:[][]10.1023
 /b:appa.0000006546.55305.e3[][].  
  []
 
 
-Overfull \hbox (33.47704pt too wide) in paragraph at lines 2413--2415
+Overfull \hbox (33.47704pt too wide) in paragraph at lines 2414--2416
 \TU/lmr/m/n/12 Culebra Island. International Journal of Acarology. 33: 3–5, DOI
 :[][]10.1080/01647950708684493[][].  
  []
 
 [153] [154] [155]
-Overfull \hbox (39.53702pt too wide) in paragraph at lines 2476--2478
+Overfull \hbox (39.53702pt too wide) in paragraph at lines 2477--2479
 \TU/lmr/m/n/12 sequences. Bulletin of Entomological Research. 100: 263–272, DOI
 :[][]10.1017/s0007485309990216[][].  
  []
@@ -1374,7 +1374,7 @@ File: pubs/pfruct-report.pdf Graphic file (type pdf)
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 2>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2673
+Underfull \hbox (badness 10000) in paragraph at lines 2673--2674
   
  []
 
@@ -1425,7 +1425,7 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 178 ({)
+### simple group (level 1) entered at line 179 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  21082 strings out of 476473
