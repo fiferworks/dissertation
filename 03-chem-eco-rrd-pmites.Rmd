@@ -138,32 +138,48 @@ knitr::include_graphics('figure/rrv_volatiles_umap_chems_df.png')
 ```
 
 \clearpage
-```{r all-contrib-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_volatiles_contribution_table_pca_dat.csv'), caption = "\\label{tab:all-contrib-table}", out.width="100%"}
+```{r all-contrib-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_volatiles_contribution_table_pca_dat.csv'), out.width="100%",}
 read_csv('data/rrv_volatiles_contribution_table_pca_dat.csv',
          show_col_types = FALSE) %>%
   knitr::kable(
     format = "latex",
     booktabs = TRUE,
     longtable = TRUE,
-    caption = "Contribution table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses."
+    caption = "\\label{tab:all-contrib-table} Contribution table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses."
   ) %>%
-  kable_styling(latex_options = c("striped", "scale_down", "repeat_header", full_width = TRUE))
+  kable_styling(
+    latex_options = c(
+      "striped",
+      "repeat_header",
+      repeat_header_continued = "Continued",
+      repeat_header_method = "replace",
+      full_width = TRUE
+    )
+  )
 # %>%
 #   footnote(general = "beans.")
 
 ```
 
 \clearpage
-```{r all-corr-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_volatiles_correlation_table_pca_dat.csv'), caption = "\\label{tab:all-corr-table}", out.width="100%"}
+```{r all-corr-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_volatiles_correlation_table_pca_dat.csv'), out.width="100%"}
 read_csv('data/rrv_volatiles_correlation_table_pca_dat.csv',
          show_col_types = FALSE) %>%
   knitr::kable(
     format = "latex",
     booktabs = TRUE,
     longtable = TRUE,
-    caption = "Correlation table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses."
+    caption = "\\label{tab:all-corr-table} Correlation table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses.",
   ) %>%
-  kable_styling(latex_options = c("striped", "scale_down", "repeat_header", full_width = TRUE))
+  kable_styling(
+    latex_options = c(
+      "striped",
+      "repeat_header",
+      repeat_header_text = "\\textit{(Beans)}",
+      repeat_header_method = "replace",
+      full_width = TRUE
+    )
+  )
 # %>%
 #   footnote(general = "beans.")
 
