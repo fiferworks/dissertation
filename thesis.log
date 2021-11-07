@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.17)  6 NOV 2021 15:07
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.6)  6 NOV 2021 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-08-27> (./ufthesis.cls
+L3 programming layer <2021-10-18> (./ufthesis.cls
 Document Class: ufthesis 2002/09/20 v2.0c UF Thesis Class (Ron Smith)
 (c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
@@ -119,20 +119,27 @@ File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
 \Gin@req@height=\dimen142
 \Gin@req@width=\dimen143
 ) (c:/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
+Package: microtype 2021/10/31 v3.0 Micro-typographical refinements (RS)
+(c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count190
+)
 \MT@toks=\toks18
-\MT@count=\count190
-LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen144
-LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
-\MT@listname@count=\count191
+\MT@count=\count191
+\MT@tempbox=\box53
+\MT@leftmarginkern=\dimen144
+\MT@rightmarginkern=\dimen145
+LaTeX Info: Redefining \textls on input line 1114.
+\MT@outer@kern=\dimen146
+LaTeX Info: Redefining \textmicrotypecontext on input line 1700.
+\MT@listname@count=\count192
 (c:/texlive/2021/texmf-dist/tex/latex/microtype/microtype-xetex.def
-File: microtype-xetex.def 2021/03/14 v2.8c Definitions specific to xetex (RS)
-LaTeX Info: Redefining \lsstyle on input line 254.
+File: microtype-xetex.def 2021/10/31 v3.0 Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 250.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 (c:/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
+File: microtype.cfg 2021/10/31 v3.0 microtype main configuration file (RS)
 )) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip84
@@ -142,44 +149,44 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen145
+\ex@=\dimen147
 )) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen146
+\pmbraise@=\dimen148
 ) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count192
+\inf@bad=\count193
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count193
-\leftroot@=\count194
+\uproot@=\count194
+\leftroot@=\count195
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count195
-\DOTSCASE@=\count196
+\classnum@=\count196
+\DOTSCASE@=\count197
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
-\big@size=\dimen147
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+\big@size=\dimen149
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count197
-\c@MaxMatrixCols=\count198
+\macc@depth=\count198
+\c@MaxMatrixCols=\count199
 \dotsspace@=\muskip16
-\c@parentequation=\count199
-\dspbrk@lvl=\count266
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
 \tag@help=\toks20
-\row@=\count267
-\column@=\count268
-\maxfields@=\count269
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
 \andhelp@=\toks21
-\eqnshift@=\dimen148
-\alignsep@=\dimen149
-\tagshift@=\dimen150
-\tagwidth@=\dimen151
-\totwidth@=\dimen152
-\lineht@=\dimen153
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
 \@envbody=\toks22
 \multlinegap=\skip85
 \multlinetaggap=\skip86
@@ -202,15 +209,15 @@ Package: algpseudocode
 (c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count270
-\c@ALG@rem=\count271
-\c@ALG@nested=\count272
+\c@ALG@line=\count271
+\c@ALG@rem=\count272
+\c@ALG@nested=\count273
 \ALG@tlm=\skip90
 \ALG@thistlm=\skip91
-\c@ALG@Lnr=\count273
-\c@ALG@blocknr=\count274
-\c@ALG@storecount=\count275
-\c@ALG@tmpcounter=\count276
+\c@ALG@Lnr=\count274
+\c@ALG@blocknr=\count275
+\c@ALG@storecount=\count276
+\c@ALG@tmpcounter=\count277
 \ALG@tmplength=\skip92
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -218,24 +225,21 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 (c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
-\col@sep=\dimen154
-\ar@mcellbox=\box55
-\extrarowheight=\dimen155
+\col@sep=\dimen156
+\ar@mcellbox=\box56
+\extrarowheight=\dimen157
 \NC@list=\toks30
 \extratabsurround=\skip93
 \backup@length=\skip94
-\ar@cellbox=\box56
+\ar@cellbox=\box57
 )
-\TX@col@width=\dimen156
-\TX@old@table=\dimen157
-\TX@old@col=\dimen158
-\TX@target=\dimen159
-\TX@delta=\dimen160
-\TX@cols=\count277
+\TX@col@width=\dimen158
+\TX@old@table=\dimen159
+\TX@old@col=\dimen160
+\TX@target=\dimen161
+\TX@delta=\dimen162
+\TX@cols=\count278
 \TX@ftn=\toks31
-) (c:/texlive/2021/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -243,65 +247,65 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count278
-\Gm@cntv=\count279
-\c@Gm@tempcnt=\count280
-\Gm@bindingoffset=\dimen161
-\Gm@wd@mp=\dimen162
-\Gm@odd@mp=\dimen163
-\Gm@even@mp=\dimen164
-\Gm@layoutwidth=\dimen165
-\Gm@layoutheight=\dimen166
-\Gm@layouthoffset=\dimen167
-\Gm@layoutvoffset=\dimen168
+\Gm@cnth=\count279
+\Gm@cntv=\count280
+\c@Gm@tempcnt=\count281
+\Gm@bindingoffset=\dimen163
+\Gm@wd@mp=\dimen164
+\Gm@odd@mp=\dimen165
+\Gm@even@mp=\dimen166
+\Gm@layoutwidth=\dimen167
+\Gm@layoutheight=\dimen168
+\Gm@layouthoffset=\dimen169
+\Gm@layoutvoffset=\dimen170
 \Gm@dimlist=\toks32
 ) (c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 ) (c:/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count281
+\c@float@type=\count282
 \float@exts=\toks33
-\float@box=\box57
+\float@box=\box58
 \@float@everytoks=\toks34
-\@floatcapt=\box58
+\@floatcapt=\box59
 ) (c:/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \LTleft=\skip95
 \LTright=\skip96
 \LTpre=\skip97
 \LTpost=\skip98
-\LTchunksize=\count282
-\LTcapwidth=\dimen169
-\LT@head=\box59
-\LT@firsthead=\box60
-\LT@foot=\box61
-\LT@lastfoot=\box62
-\LT@gbox=\box63
-\LT@cols=\count283
-\LT@rows=\count284
-\c@LT@tables=\count285
-\c@LT@chunks=\count286
+\LTchunksize=\count283
+\LTcapwidth=\dimen171
+\LT@head=\box60
+\LT@firsthead=\box61
+\LT@foot=\box62
+\LT@lastfoot=\box63
+\LT@gbox=\box64
+\LT@cols=\count284
+\LT@rows=\count285
+\c@LT@tables=\count286
+\c@LT@chunks=\count287
 \LT@p@ftn=\toks35
 ) (c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 227.
 (c:/texlive/2021/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks36
 \minrowclearance=\skip99
 )
-\rownum=\count287
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+\rownum=\count288
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ) (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -321,38 +325,38 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (c:/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen170
-\lightrulewidth=\dimen171
-\cmidrulewidth=\dimen172
-\belowrulesep=\dimen173
-\belowbottomsep=\dimen174
-\aboverulesep=\dimen175
-\abovetopsep=\dimen176
-\cmidrulesep=\dimen177
-\cmidrulekern=\dimen178
-\defaultaddspace=\dimen179
-\@cmidla=\count288
-\@cmidlb=\count289
-\@aboverulesep=\dimen180
-\@belowrulesep=\dimen181
-\@thisruleclass=\count290
-\@lastruleclass=\count291
-\@thisrulewidth=\dimen182
+\heavyrulewidth=\dimen172
+\lightrulewidth=\dimen173
+\cmidrulewidth=\dimen174
+\belowrulesep=\dimen175
+\belowbottomsep=\dimen176
+\aboverulesep=\dimen177
+\abovetopsep=\dimen178
+\cmidrulesep=\dimen179
+\cmidrulekern=\dimen180
+\defaultaddspace=\dimen181
+\@cmidla=\count289
+\@cmidlb=\count290
+\@aboverulesep=\dimen182
+\@belowrulesep=\dimen183
+\@thisruleclass=\count291
+\@lastruleclass=\count292
+\@thisrulewidth=\dimen184
 ) (c:/texlive/2021/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box64
+\@tempboxb=\box65
 ) (c:/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip100
 \subfigcapskip=\skip101
-\subfigcaptopadj=\dimen183
+\subfigcaptopadj=\dimen185
 \subfigbottomskip=\skip102
-\subfigcapmargin=\dimen184
+\subfigcapmargin=\dimen186
 \subfiglabelskip=\skip103
-\c@subfigure=\count292
-\c@lofdepth=\count293
-\c@subtable=\count294
-\c@lotdepth=\count295
+\c@subfigure=\count293
+\c@lofdepth=\count294
+\c@subtable=\count295
+\c@lotdepth=\count296
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
@@ -367,22 +371,22 @@ Already applied: [0000/00/00] float order in 2-column on input line 151.
 Package: placeins 2005/04/18  v 2.2
 ) (c:/texlive/2021/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count296
+\c@r@tfl@t=\count297
 \rotFPtop=\skip106
 \rotFPbot=\skip107
-\rot@float@box=\box65
+\rot@float@box=\box66
 \rot@mess@toks=\toks37
 ) (c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count297
-\calc@Bcount=\count298
-\calc@Adimen=\dimen185
-\calc@Bdimen=\dimen186
+\calc@Acount=\count298
+\calc@Bcount=\count299
+\calc@Adimen=\dimen187
+\calc@Bdimen=\dimen188
 \calc@Askip=\skip108
 \calc@Bskip=\skip109
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count299
+\calc@Ccount=\count300
 \calc@Cskip=\skip110
 ) (c:/texlive/2021/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -392,18 +396,18 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 ) (c:/texlive/2021/texmf-dist/tex/generic/epsf/epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read2
-\epsfframemargin=\dimen187
-\epsfframethickness=\dimen188
-\epsfrsize=\dimen189
-\epsftmp=\dimen190
-\epsftsize=\dimen191
-\epsfxsize=\dimen192
-\epsfysize=\dimen193
-\pspoints=\dimen194
+\epsfframemargin=\dimen189
+\epsfframethickness=\dimen190
+\epsfrsize=\dimen191
+\epsftmp=\dimen192
+\epsftsize=\dimen193
+\epsfxsize=\dimen194
+\epsfysize=\dimen195
+\pspoints=\dimen196
 ) (c:/texlive/2021/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen195
-\epsfysize=\dimen196
+\epsfxsize=\dimen197
+\epsfysize=\dimen198
 ) (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/euscript.sty
 Package: euscript 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
@@ -412,17 +416,17 @@ LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 (c:/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen197
-\captionmargin@=\dimen198
-\captionwidth=\dimen199
-\caption@tempdima=\dimen256
-\caption@indent=\dimen257
-\caption@parindent=\dimen258
-\caption@hangindent=\dimen259
+\captionmargin=\dimen199
+\captionmargin@=\dimen256
+\captionwidth=\dimen257
+\caption@tempdima=\dimen258
+\caption@indent=\dimen259
+\caption@parindent=\dimen260
+\caption@hangindent=\dimen261
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count300
-\c@continuedfloat=\count301
+\c@caption@flags=\count301
+\c@continuedfloat=\count302
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 (c:/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -436,20 +440,17 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip111
 \bibsep=\skip112
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count302
+\c@NAT@ctr=\count303
 ) (c:/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2021-09-22 v3.0.31 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen260
-\l__siunitx_angle_marker_box=\box66
-\l__siunitx_angle_unit_box=\box67
-\l__siunitx_compound_count_int=\count303
+Package: siunitx 2021-11-03 v3.0.35 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen262
+\l__siunitx_angle_marker_box=\box67
+\l__siunitx_angle_unit_box=\box68
+\l__siunitx_compound_count_int=\count304
 (c:/texlive/2021/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2021/01/17 v1.10a internationalization of LaTeX2e package
 s (CN)
-(c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count304
-) (c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 (c:/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -466,29 +467,29 @@ Package pdftexcmds Info: \pdfdraftmode not found.
 \l__siunitx_number_min_integer_int=\count307
 \l__siunitx_number_round_precision_int=\count308
 \l__siunitx_number_group_minimum_int=\count309
-\l__siunitx_table_tmp_box=\box68
-\l__siunitx_table_tmp_dim=\dimen261
-\l__siunitx_table_column_width_dim=\dimen262
-\l__siunitx_table_integer_box=\box69
-\l__siunitx_table_decimal_box=\box70
-\l__siunitx_table_before_box=\box71
-\l__siunitx_table_after_box=\box72
-\l__siunitx_table_before_dim=\dimen263
-\l__siunitx_table_carry_dim=\dimen264
+\l__siunitx_table_tmp_box=\box69
+\l__siunitx_table_tmp_dim=\dimen263
+\l__siunitx_table_column_width_dim=\dimen264
+\l__siunitx_table_integer_box=\box70
+\l__siunitx_table_decimal_box=\box71
+\l__siunitx_table_before_box=\box72
+\l__siunitx_table_after_box=\box73
+\l__siunitx_table_before_dim=\dimen265
+\l__siunitx_table_carry_dim=\dimen266
 \l__siunitx_unit_tmp_int=\count310
 \l__siunitx_unit_position_int=\count311
 \l__siunitx_unit_total_int=\count312
 (c:/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (c:/texl
 ive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-08-27 L3 programming layer (loader) 
+Package: expl3 2021-10-18 L3 programming layer (loader) 
 (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2021-08-04 L3 backend support: XeTeX
+File: l3backend-xetex.def 2021-10-18 L3 backend support: XeTeX
 (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count313
 \l__color_backend_stack_int=\count314
 \g__color_backend_stack_int=\count315
 \g__graphics_track_int=\count316
-\l__pdf_internal_box=\box73
+\l__pdf_internal_box=\box74
 \g__pdf_backend_object_int=\count317
 \g__pdf_backend_annotation_int=\count318
 \g__pdf_backend_link_int=\count319
@@ -509,22 +510,22 @@ Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
 Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
 (c:/texlive/2021/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen265
-\ESO@tempdimb=\dimen266
+\ESO@tempdima=\dimen267
+\ESO@tempdimb=\dimen268
 )
-\AM@pagewidth=\dimen267
-\AM@pageheight=\dimen268
-\AM@fboxrule=\dimen269
+\AM@pagewidth=\dimen269
+\AM@pageheight=\dimen270
+\AM@fboxrule=\dimen271
 (c:/texlive/2021/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2021/03/06 v0.5t Pdfpages driver for XeTeX (AM)
 )
 \pdfpages@includegraphics@status=\count320
-\AM@pagebox=\box74
+\AM@pagebox=\box75
 \AM@global@opts=\toks38
 \AM@pagecnt=\count321
 \AM@toc@title=\toks39
 \c@AM@survey=\count322
-\AM@templatesizebox=\box75
+\AM@templatesizebox=\box76
 ) (c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 (c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
@@ -542,7 +543,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen270
+\@linkdim=\dimen272
 \Hy@linkcounter=\count323
 \Hy@pagecounter=\count324
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -571,8 +572,12 @@ Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count326
+(c:/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen271
+\XeTeXLinkMargin=\dimen273
 (c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
@@ -580,8 +585,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count327
-\Field@Width=\dimen272
-\Fld@charsize=\dimen273
+\Field@Width=\dimen274
+\Fld@charsize=\dimen275
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -606,7 +611,7 @@ File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box76
+\pdfm@box=\box77
 \c@Hy@AnnotLevel=\count331
 \HyField@AnnotCount=\count332
 \Fld@listcount=\count333
@@ -625,17 +630,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip113
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 85.
+Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 \csllabelwidth=\skip114
 \cslhangindent=\skip115
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 135.
+h' as default language. on input line 137.
 (./thesis.aux
 
 LaTeX Warning: Label `tab:all-contrib-table' multiply defined.
 
 
 LaTeX Warning: Label `tab:all-contrib-table' multiply defined.
+
+
+LaTeX Warning: Label `tab:all-contrib-table' multiply defined.
+
+
+LaTeX Warning: Label `tab:all-corr-table' multiply defined.
 
 
 LaTeX Warning: Label `tab:all-corr-table' multiply defined.
@@ -646,42 +657,46 @@ LaTeX Warning: Label `tab:all-corr-table' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-35.
+37.
 (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 137.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
-35.
+37.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
 **************************************
 * Executing Begin Document Statement *
 **************************************
-LaTeX Info: Redefining \microtypecontext on input line 135.
+LaTeX Info: Redefining \microtypecontext on input line 137.
+Package microtype Info: Applying patch `item' on input line 137.
+Package microtype Info: Applying patch `toc' on input line 137.
+Package microtype Info: Applying patch `eqnum' on input line 137.
+Package microtype Info: Applying patch `footnote' on input line 137.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -735,13 +750,13 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 135.
+or `english'. on input line 137.
 (c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
 )
-Package hyperref Info: Link coloring ON on input line 135.
+Package hyperref Info: Link coloring ON on input line 137.
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -751,9 +766,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 135.
-LaTeX Info: Redefining \pageref on input line 135.
-LaTeX Info: Redefining \nameref on input line 135.
+LaTeX Info: Redefining \ref on input line 137.
+LaTeX Info: Redefining \pageref on input line 137.
+LaTeX Info: Redefining \nameref on input line 137.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
@@ -829,6 +844,40 @@ E PROB-
 \openout4 = `thesis.toc'.
 
 [6] (./thesis.lot
+Overfull \vbox (8.448pt too high) detected at line 1
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 2
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 3
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 4
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 5
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 6
+ []
+
+
+Overfull \hbox (7.4491pt too wide) in paragraph at lines 7--7
+ \TU/lmr/m/n/12 Correlation table for PCA of headspace VOCs collected with VCT+
+SPME meth- 
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 7
+ []
+
+
 Overfull \hbox (7.4491pt too wide) in paragraph at lines 7--7
  [][] [][][]\TU/lmr/m/n/12 Correlation table for PCA of headspace VOCs collecte
 d with VCT+SPME meth- 
@@ -836,8 +885,22 @@ d with VCT+SPME meth-
 
 
 Overfull \hbox (2.14511pt too wide) in paragraph at lines 8--8
+ \TU/lmr/m/n/12 Progression of RRD on SAR-induced Pink Double Knock Out® roses 
+in Athens, 
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 8
+ []
+
+
+Overfull \hbox (2.14511pt too wide) in paragraph at lines 8--8
  [][] [][][]\TU/lmr/m/n/12 Progression of RRD on SAR-induced Pink Double Knock 
 Out® roses in Athens, 
+ []
+
+
+Overfull \vbox (9.0pt too high) detected at line 9
  []
 
 )
@@ -847,12 +910,62 @@ Out® roses in Athens,
 [7
 
 
-] (./thesis.lof [8
+] (./thesis.lof
+Overfull \hbox (8.4931pt too wide) in paragraph at lines 1--1
+ \TU/lmr/m/n/12 Typical symptoms of Rose Rosette Disease (RRD), caused by Rose 
+Rosette Virus 
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 7
+ []
+
+[8
 
 ]
+Overfull \vbox (8.568pt too high) detected at line 29
+ []
+
+
+Overfull \vbox (9.0pt too high) detected at line 30
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 31
+ []
+
+
+Overfull \vbox (9.0pt too high) detected at line 32
+ []
+
+
+Overfull \vbox (8.568pt too high) detected at line 33
+ []
+
+
+Overfull \hbox (8.5051pt too wide) in paragraph at lines 34--34
+ \TU/lmr/m/n/12 Field design for Integrated Pest Management (IPM) trials on Pin
+k Double Knock 
+ []
+
+
+Overfull \vbox (9.0pt too high) detected at line 34
+ []
+
+
 Overfull \hbox (8.5051pt too wide) in paragraph at lines 34--34
  [][] [][][]\TU/lmr/m/n/12 Field design for Integrated Pest Management (IPM) tr
 ials on Pink Double Knock 
+ []
+
+
+Overfull \hbox (5.9011pt too wide) in paragraph at lines 35--35
+ \TU/lmr/m/n/12 Field design for IPM trials on Pink Double Knock Out® roses to 
+control \TU/lmr/m/it/12 P. fruc- 
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 35
  []
 
 
@@ -863,11 +976,59 @@ Overfull \hbox (5.9011pt too wide) in paragraph at lines 35--35
 
 
 Overfull \hbox (5.9011pt too wide) in paragraph at lines 36--36
+ \TU/lmr/m/n/12 Field design for IPM trials on Pink Double Knock Out® roses to 
+control \TU/lmr/m/it/12 P. fruc- 
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 36
+ []
+
+
+Overfull \hbox (5.9011pt too wide) in paragraph at lines 36--36
  [][] [][][]\TU/lmr/m/n/12 Field design for IPM trials on Pink Double Knock Out
 ® roses to control \TU/lmr/m/it/12 P. fruc- 
  []
 
+
+Overfull \vbox (8.568pt too high) detected at line 37
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 38
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 39
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 40
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 41
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 42
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 43
+ []
+
 [9]
+Overfull \hbox (0.22507pt too wide) in paragraph at lines 46--46
+ \TU/lmr/m/n/12 Cryo-SEM images of \TU/lmr/m/it/12 Brevipalpus californicus sen
+su lato \TU/lmr/m/n/12 displaying various char- 
+ []
+
+
+Overfull \vbox (8.448pt too high) detected at line 46
+ []
+
+
 Overfull \hbox (0.22507pt too wide) in paragraph at lines 46--46
  [][] [][][]\TU/lmr/m/n/12 Cryo-SEM images of \TU/lmr/m/it/12 Brevipalpus calif
 ornicus sensu lato \TU/lmr/m/n/12 displaying various char- 
@@ -885,7 +1046,7 @@ CHAPTER 1.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 178.
+(hyperref)                removing `\uppercase' on input line 180.
 
 [14
 
@@ -903,7 +1064,7 @@ File: thesis_files/figure-latex/persim-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/persim-1.pdf>
 [24] [25] [26] [27] [28]
 LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 2
-46.
+48.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
 File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
 ) [29] [30] [31]
@@ -917,7 +1078,7 @@ CHAPTER 2.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 270.
+(hyperref)                removing `\uppercase' on input line 272.
 
 File: thesis_files/figure-latex/solo-maps-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/solo-maps-1.pdf>
@@ -948,7 +1109,7 @@ CHAPTER 3.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 430.
+(hyperref)                removing `\uppercase' on input line 432.
 
 [52
 
@@ -981,10 +1142,10 @@ File: figure/rrv_volatiles_umap_rrd_spme.png Graphic file (type bmp)
 File: figure/rrv_volatiles_umap_chems_rrd_spme.png Graphic file (type bmp)
 <figure/rrv_volatiles_umap_chems_rrd_spme.png>
 
-LaTeX Warning: Float too large for page by 6.81659pt on input line 708.
+LaTeX Warning: Float too large for page by 6.81659pt on input line 710.
 
 
-LaTeX Warning: Float too large for page by 17.01474pt on input line 755.
+LaTeX Warning: Float too large for page by 17.01474pt on input line 757.
 
 File: figure/rrv_volatiles_biplot_var_pca_df.png Graphic file (type bmp)
 <figure/rrv_volatiles_biplot_var_pca_df.png>
@@ -1011,7 +1172,7 @@ CHAPTER 4.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 1004.
+(hyperref)                removing `\uppercase' on input line 1006.
 
 [82
 
@@ -1020,19 +1181,22 @@ File: figure/rrv_asm_plot_2018_griffin.png Graphic file (type bmp)
 <figure/rrv_asm_plot_2018_griffin.png>
 File: figure/rrv_asm_plot_2019_griffin.png Graphic file (type bmp)
 <figure/rrv_asm_plot_2019_griffin.png>
+[87] [88] [89] [90]
 
-LaTeX Warning: Reference `fig:ipm' on page 87 undefined on input line 1057.
+LaTeX Warning: Reference `fig:ipm-talla-erios-athens' on page 91 undefined on i
+nput line 1124.
 
-[87] [88] [89] [90] [91]
+
+LaTeX Warning: Reference `fig:ipm-talla-erios-griff' on page 91 undefined on in
+put line 1124.
+
+[91]
 File: figure/rrv_ipm_plot_map_2019_athens.png Graphic file (type bmp)
 <figure/rrv_ipm_plot_map_2019_athens.png>
 File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
 <figure/rrv_ipm_plot_map_2019_griffin.png>
 File: thesis_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/unnamed-chunk-3-1.pdf>
-
-LaTeX Warning: Reference `fig:ipm' on page 92 undefined on input line 1163.
-
 File: figure/rrv_actigard_graph.png Graphic file (type bmp)
 <figure/rrv_actigard_graph.png>
 [92] [93] [94] [95] [96] [97]
@@ -1057,14 +1221,14 @@ CHAPTER 5.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 1296.
+(hyperref)                removing `\uppercase' on input line 1298.
 
 File: thesis_files/figure-latex/fig-1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig-1-1.pdf>
 File: thesis_files/figure-latex/fig-2-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig-2-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1342--1342
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1344
 []\TU/lmr/m/it/12 L. muscari \TU/lmr/m/n/12 cv. ‘Gigantea’ has been traditional
 ly classified as \TU/lmr/m/it/12 L. gigantea \TU/lmr/m/n/12 Hume by Broussard 2
 007 and Fantz et al. 2015, although
@@ -1081,148 +1245,172 @@ CHAPTER 6.
 ***************************
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 1357.
+(hyperref)                removing `\uppercase' on input line 1359.
 
 [112
 
 ] [113
 
-]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
-
-Underfull \hbox (badness 10000) in paragraph at lines 1401--1402
-  
+] [114] [115] [116]
+Overfull \hbox (13.60503pt too wide) in paragraph at lines 1492--1494
+\TU/lmr/m/n/12 plant tissue. Journal of Economic Entomology. 81: 1819–1823, DOI
+:[][]10.1093/jee/81.6.1819[][].  
  []
 
-[114
-
-]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 2>
-[115]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
-[116]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
 [117]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
-[118] [119] [120] [121] [122]
-Overfull \hbox (41.7628pt too wide) in paragraph at lines 1484--1486
- \TU/lmr/m/n/12 predation of their offspring. Plant Science. 252: 300–310, DOI:
-[][]10.1016/j.plantsci.2016.08.004[][].  
+Overfull \hbox (36.99301pt too wide) in paragraph at lines 1510--1512
+\TU/lmr/m/n/12 effects models using lme4. Journal of Statistical Software. 67: 
+1–48, DOI:[][]10.18637/jss.v067.i01[][].  
  []
 
-[123] [124] [125] [126]
-Overfull \hbox (10.9228pt too wide) in paragraph at lines 1571--1573
- \TU/lmr/m/n/12 volatiles. Entomologia Experimentalis et Applicata. 110: 181–18
-9, DOI:[][]10.1111/j.0013- 
+[118] [119]
+Overfull \hbox (19.39302pt too wide) in paragraph at lines 1567--1569
+\TU/lmr/m/n/12 nual Review of Plant Biology. 60: 379–406, DOI:[][]10.1146/annur
+ev.arplant.57.032905.105346[][].  
  []
 
-
-Overfull \hbox (48.73878pt too wide) in paragraph at lines 1580--1582
- \TU/lmr/m/n/12 Annual Review of Plant Biology. 60: 379–406, DOI:[][]10.1146/an
-nurev.arplant.57.032905.105346[][].  
+[120] [121] [122]
+Overfull \hbox (19.10103pt too wide) in paragraph at lines 1627--1629
+\TU/lmr/m/n/12 seiidae). Experimental and Applied Acarology. 25: 819–831, DOI:[
+][]10.1023/a:1020499624661[][].  
  []
 
-[127] [128] [129] [130] [131]
-Overfull \hbox (75.3508pt too wide) in paragraph at lines 1688--1690
- \TU/lmr/m/n/12 mites. Experimental and Applied Acarology. 30: 29–105, DOI:[][]
-10.1023/b:appa.0000006544.10072.01[][].  
+[123] [124]
+Overfull \hbox (10.74101pt too wide) in paragraph at lines 1675--1677
+\TU/lmr/m/n/12 perimental and Applied Acarology. 30: 29–105, DOI:[][]10.1023/b:
+appa.0000006544.10072.01[][].  
+ []
+
+[125] [126] [127] [128]
+Overfull \hbox (28.96501pt too wide) in paragraph at lines 1768--1770
+\TU/lmr/m/n/12 duction to \TU/lmr/m/it/12 Rcpp\TU/lmr/m/n/12 . The American Sta
+tistician. 72: 28–36, DOI:[][]10.1080/00031305.2017.1375990[][].  
+ []
+
+[129] [130] [131]
+Overfull \hbox (52.11302pt too wide) in paragraph at lines 1858--1860
+\TU/lmr/m/n/12 duction of systemic acquired resistance. Science. 261: 754–756, 
+DOI:[][]10.1126/science.261.5122.754[][].  
  []
 
 [132] [133]
-Overfull \hbox (6.4948pt too wide) in paragraph at lines 1718--1720
- \TU/lmr/m/n/12 nalling in plants. Nature Reviews Immunology. 16: 537–552, DOI:
-[][]10.1038/nri.2016.77[][].  
- []
-
-[134] [135] [136]
-Overfull \hbox (58.76677pt too wide) in paragraph at lines 1781--1783
- \TU/lmr/m/n/12 troduction to \TU/lmr/m/it/12 Rcpp\TU/lmr/m/n/12 . The American
- Statistician. 72: 28–36, DOI:[][]10.1080/00031305.2017.1375990[][].  
- []
-
-[137] [138] [139] [140] [141] [142] [143] [144] [145] [146] [147]
-Overfull \hbox (54.1348pt too wide) in paragraph at lines 2045--2047
- \TU/lmr/m/n/12 plant volatile emissions in nature. Science. 291: 2141–2144, DO
-I:[][]10.1126/science.291.5511.2141[][].  
+Overfull \hbox (166.19704pt too wide) in paragraph at lines 1900--1902
+\TU/lmr/m/n/12 necrotrophic pathogens. Annual Review of Phytopathology. 43: 205
+–227, DOI:[][]10.1146/annurev.phyto.43.040204.135923[][].  
  []
 
 
-Overfull \hbox (25.3228pt too wide) in paragraph at lines 2051--2053
- \TU/lmr/m/n/12 grapevine cultivars. Systematic and Applied Acarology. 23: 405,
- DOI:[][]10.11158/saa.23.3.1[][].  
+Overfull \hbox (16.83305pt too wide) in paragraph at lines 1915--1917
+\TU/lmr/m/n/12 their relationships with \TU/lmr/m/it/12 Tetranychus urticae\TU/
+lmr/m/n/12 . Phytopathology. 64: 494, DOI:[][]10.1094/phyto- 
  []
 
-
-Overfull \hbox (4.38678pt too wide) in paragraph at lines 2057--2059
- \TU/lmr/m/n/12 and future prospects. Acta Horticulturae. 13–18, DOI:[][]10.176
-60/actahortic.2009.816.1[][].  
+[134] [135]
+Overfull \hbox (38.76901pt too wide) in paragraph at lines 1984--1986
+\TU/lmr/m/n/12 factometer. Bulletin of Entomological Research. 80: 177–181, DOI
+:[][]10.1017/s0007485300013390[][].  
  []
 
-[148] [149] [150] [151] [152] [153] [154]
-Overfull \hbox (24.17477pt too wide) in paragraph at lines 2201--2203
- \TU/lmr/m/n/12 American Society for Horticultural Science. 128: 575–577, DOI:[
-][]10.21273/jashs.128.4.0575[][].  
+[136] [137]
+Overfull \hbox (9.00903pt too wide) in paragraph at lines 2032--2034
+\TU/lmr/m/n/12 volatile emissions in nature. Science. 291: 2141–2144, DOI:[][]1
+0.1126/science.291.5511.2141[][].  
  []
 
-[155] [156] [157] [158]
+[138] [139] [140]
+Overfull \hbox (24.84897pt too wide) in paragraph at lines 2101--2103
+[]\TU/lmr/bx/n/12 Kuczyński, L., A. Radwańska, K. Karpicka-Ignatowska, A. Laska
+, M. Lewandowski, 
+ []
+
+[141] [142]
+Overfull \hbox (53.40901pt too wide) in paragraph at lines 2152--2154
+\TU/lmr/m/n/12 tions for biological control. Biological Control. 54: 255–262, D
+OI:[][]10.1016/j.biocontrol.2010.05.017[][].  
+ []
+
+[143] [144] [145] [146] [147]
 Missing character: There is no ʻ (U+02BB) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[159] [160] [161]
-Overfull \hbox (5.23477pt too wide) in paragraph at lines 2366--2368
- \TU/lmr/m/n/12 Tenuipalpidae). The Florida Entomologist. 98: 1169–1174, DOI:[]
-[]10.1653/024.098.0422[][].  
+[148] [149] [150]
+Overfull \hbox (23.15704pt too wide) in paragraph at lines 2362--2364
+\TU/lmr/m/n/12 blattfleckenkranken \TU/lmr/m/it/12 Dendrobien\TU/lmr/m/n/12 . J
+ournal of Phytopathology. 70: 43–52, DOI:[][]10.1111/j.1439- 
  []
 
-[162] [163]
-Overfull \hbox (78.67479pt too wide) in paragraph at lines 2423--2425
- \TU/lmr/m/n/12 cases. Experimental and Applied Acarology. 30: 135–160, DOI:[][
-]10.1023/b:appa.0000006546.55305.e3[][].  
+[151]
+Overfull \hbox (3.59703pt too wide) in paragraph at lines 2374--2376
+\TU/lmr/m/n/12 Paraguay. Journal of Plant Diseases and Protection. 127: 715–717
+, DOI:[][]10.1007/s41348- 
  []
 
-[164] [165] [166]
-Overfull \hbox (3.80681pt too wide) in paragraph at lines 2486--2488
- \TU/lmr/m/n/12 salicylate in plant pathogen resistance. Nature. 385: 718–721, 
-DOI:[][]10.1038/385718a0[][].  
+[152]
+Overfull \hbox (30.15701pt too wide) in paragraph at lines 2410--2412
+\TU/lmr/m/n/12 Experimental and Applied Acarology. 30: 135–160, DOI:[][]10.1023
+/b:appa.0000006546.55305.e3[][].  
  []
 
-[167] [168] [169] [170] [171] [172] [173]
-Overfull \hbox (8.19878pt too wide) in paragraph at lines 2645--2647
- \TU/lmr/m/it/12 Rhizoctonia \TU/lmr/m/n/12 species. Phytopathology®. 88: 359–3
-65, DOI:[][]10.1094/phyto.1998.88.4.359[][].  
+
+Overfull \hbox (33.47704pt too wide) in paragraph at lines 2413--2415
+\TU/lmr/m/n/12 Culebra Island. International Journal of Acarology. 33: 3–5, DOI
+:[][]10.1080/01647950708684493[][].  
  []
 
-[174] [175]
+[153] [154] [155]
+Overfull \hbox (39.53702pt too wide) in paragraph at lines 2476--2478
+\TU/lmr/m/n/12 sequences. Bulletin of Entomological Research. 100: 263–272, DOI
+:[][]10.1017/s0007485309990216[][].  
+ []
+
+[156] [157] [158] [159] [160] [161] [162] [163]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+
+Underfull \hbox (badness 10000) in paragraph at lines 2672--2673
+  
+ []
+
+[164
+
+]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+[165]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 3>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 3>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 3>
+[166]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+[167]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+[168]
 No file thesis.bbl.
-[176] [177
+[169
 
 
 ] (./thesis.aux)
@@ -1237,15 +1425,15 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 176 ({)
+### simple group (level 1) entered at line 178 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 20970 strings out of 476493
- 397955 string characters out of 5820669
- 828232 words of memory out of 5000000
- 40993 multiletter control sequences out of 15000+600000
+ 21082 strings out of 476473
+ 400097 string characters out of 5820026
+ 835257 words of memory out of 5000000
+ 41125 multiletter control sequences out of 15000+600000
  409497 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,18n,81p,11073b,1087s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (177 pages).
+Output written on thesis.pdf (169 pages).
