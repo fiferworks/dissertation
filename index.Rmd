@@ -132,7 +132,9 @@ pkgs <-
     "viridisLite",
     "wesanderson",
     "pryr",
-    "tiff"
+    "tiff",
+    "usethis",
+    "devtools"
     )
 
 #installs the packages if you don't have them already installed
