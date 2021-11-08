@@ -3258,6 +3258,20 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   isbn      = {0890541655},
 }
 
+@Article{Gordon1998,
+  author    = {Gordon, Doria R.},
+  journal   = {Ecological Applications},
+  title     = {Effects of invasive, non-indigenous plant species on ecosystem processes: lessons from {Florida}},
+  year      = {1998},
+  month     = nov,
+  number    = {4},
+  pages     = {975--989},
+  volume    = {8},
+  abstract  = {Individual plant species that modify ecosystem properties have traditionally been thought to be uncommon in natural systems. I hypothesize that many invasive non-indigenous species do alter these properties at several scales. The non-indigenous plant species in Florida considered the most invasive by the Florida Exotic Pest Plant Council are examined for this capability through review of the available literature. Out of 31 species total, 12--20 (39--64%) potentially alter the ecosystem properties of geomorphology, hydrology, biogeochemistry, and disturbance. When population-level properties that indicate superior competitive ability of the invading species are examined, 13--24 (42--77%) of the species are included, with the majority of species showing traits capable of modifying natural systems at both ecosystem and community/population scales. This review suggests that ecosystem alteration may be relatively common among invasive non-indigenous species. However, much of the current information is anecdotal. Empirical studies directly examining the effects of species on ecosystem and smaller-scale processes are necessary, and highly invasive species may be particularly appropriate for such research. Further, as non-indigenous species homogenize the global flora, they may also homogenize the local flora by increasing the representation of ruderal species. Where ecosystem processes have been altered, site restoration likely will require both control of the invader(s) and recovery of processes.},
+  doi       = {10.1890/1051-0761(1998)008[0975:eoinip]2.0.co;2},
+  publisher = {Wiley},
+}
+
 @Article{Goy1992,
   author    = {Goy, P. Ahl and Felix, G. and M{\'{e}}traux, J. P. and Meins, F.},
   journal   = {Physiological and Molecular Plant Pathology},
@@ -3526,6 +3540,18 @@ Present knowledge of marine systems has led to the conclusion that, before devel
   note   = {R package version 1.1.1},
   year   = {2021},
   url    = {https://CRAN.R-project.org/package=tidyselect},
+}
+
+@Article{Hiatt2019,
+  author    = {Hiatt, Drew and Serbesoff-King, Kristina and Lieurance, Deah and Gordon, Doria R. and Flory, S. Luke},
+  title     = {Allocation of invasive plant management expenditures for conservation: lessons from {Florida}, {USA}},
+  year      = {2019},
+  month     = may,
+  number    = {7},
+  volume    = {1},
+  abstract  = {Although the ecological impacts of biological invasions are well studied, comprehensive analyses of spending on invasive species management are lacking. Such analyses could inform both effective resource allocation and management planning. We evaluated long-term invasive plant management expenditures and their potential geographic, economic, and ecological drivers for freshwater and terrestrial conservation areas in Florida, USA. Average expenditures for managing invaders were approximately US$45M annually, with over 90% of funding provided by the state. Our model showed that expenditures were best predicted by the prevalence of waterways and abundance of invaders, indicating that funding was allocated towards asset protection in highly invaded aquatic and terrestrial habitats. Higher spending was directly correlated with reduced area invaded for the costliest invader (Hydrilla verticillata, ~$10M/year), demonstrating management efficacy and constructive use of resources. Our study highlights that significant funding is required to manage plant invaders in Florida and that greater funding would likely limit the extent of invasions. Additional analyses of management cost-effectiveness for Florida and other regions would benefit from consistent collection and reporting of high-resolution management data. Given the exponential rate of spread of many invaders, additional and sustained management funding is needed for early detection and rapid, effective control of invasive species.},
+  doi       = {10.1111/csp2.51},
+  publisher = {Wiley},
 }
 
 @Article{Hindal1988,
@@ -5255,6 +5281,7 @@ proteins. The properties of these binding proteins suggest their involvement in 
   month     = sep,
   number    = {3},
   volume    = {104},
+  abstract  = {The eriophyid mite Phyllocoptes fructiphilus Keifer (Acari: Eriophyidae) transmits rose rosette virus to rose (Rosa spp.; Rosaceae) while feeding, which causes serious disease referred to as rose rosette disease. Although there is no cure once rose plants are infected with rose rosette virus, understanding the response of P. fructiphilus and rose rosette disease to abiotic factors such as relative humidity may help to develop management strategies for the disease. The major objective of the current study was to determine the effect of relative humidity on the abundance of P. fructiphilus, as well as the incidence and severity of rose rosette disease symptoms. An experiment was conducted in environmentally controlled chambers where potted pink double knock-out rose plants were maintained at 20, 60, and 95% relative humidity after introducing about 20 P. fructiphilus individuals by attaching a 7-cm-long, field-collected terminal to the branches of potted plants. The densities of P. fructiphilus were recorded at biweekly intervals for 12 wk. The proportion of terminals with rose rosette disease symptoms (disease incidence) and severity of rose rosette disease symptoms was assessed using the Horsfall-Barratt scale at biweekly intervals for 14 wk. The results show that the number of P. fructiphilus individuals was significantly greater under a moderate 60% relative humidity than under a high (95%) or low (20%) relative humidity (P  0.05). However, the incidence and severity of rose rosette disease symptoms were significantly higher under 95% relative humidity relative humidity regimen than under 20% relative humidity regimen (P  0.05). The implications of these results on the breeding program and management of P. fructiphilus and the incidence of rose rosette disease are discussed.},
   doi       = {10.1653/024.104.0305},
   publisher = {Florida Entomological Society},
 }
@@ -5312,17 +5339,6 @@ proteins. The properties of these binding proteins suggest their involvement in 
   title       = {Arthropods of {Florida} and neighboring land areas, volume 6, {Phytoseiidae} of {Florida}},
   year        = {1970},
   url         = {https://ufdc.ufl.edu/AA00000576/00001},
-}
-
-@InBook{Stevens1960,
-  author    = {N},
-  editor    = {Dimond, Albert Eugene and Horsfall, James Gordon},
-  pages     = {357--429},
-  publisher = {Academic Press},
-  title     = {Plant pathology, an advanced treatise},
-  year      = {1960},
-  address   = {New York},
-  volume    = {3},
 }
 
 @Article{Nachappa2013,
@@ -7722,6 +7738,19 @@ It has been observed that the flowers of A. phanluongii Vislobokov are visited b
   publisher = {Microbiology Society},
 }
 
+@Article{Wallace2016,
+  author    = {Wallace, Rebekah D. and Bargeron, Charles T. and Moorhead, David J. and LaForest, Joseph H.},
+  title     = {{IveGot}1: reporting and tracking invasive species in {Florida}},
+  year      = {2016},
+  month     = dec,
+  number    = {sp8},
+  pages     = {51--62},
+  volume    = {15},
+  abstract  = {Several agencies and programs within the state of Florida formed the Everglades Cooperative Invasive Species Management Area (Everglades CISMA) to collaborate and share information about the invasive species that threaten the region's ecosystems. In 2010, the Everglades CISMA contracted with the Center for Invasive Species and Ecosystem Health (Bugwood) to implement EDDMapS as the database to store and share data collected by their programs and to develop and maintain a website and a smartphone application designed for professionals and citizen scientists to report invasive species. The project, IveGot1, has been a categorical success and has become a model for invasive species reporting nationwide. As of May 2015, members had submitted 3481 website records, 1178 smartphone records, and 248,571 records from bulk data-uploads.},
+  doi       = {10.1656/058.015.sp805},
+  publisher = {Humboldt Field Research Institute},
+}
+
 @Article{Walling2000,
   author    = {Walling, Linda L.},
   journal   = {Journal of Plant Growth Regulation},
@@ -8017,6 +8046,19 @@ general and T. ludeni population forecast and precise timing of pest management 
   url    = {https://CRAN.R-project.org/package=devtools},
 }
 
+@Article{Williams2007,
+  author    = {Williams, D. A. and Muchugu, E. and Overholt, W. A. and Cuda, J. P.},
+  title     = {Colonization patterns of the invasive {Brazilian} peppertree, {\textit{Schinus terebinthifolius}}, in {Florida}},
+  year      = {2007},
+  month     = jan,
+  number    = {5},
+  pages     = {284--293},
+  volume    = {98},
+  abstract  = {Invasive species are believed to spread through a process of stratified dispersal consisting of short-distance diffusive spread around established foci and human mediated long-distance jumps. Brazilian peppertree (Schinus terebinthifolius), native to South America, was introduced twice as an ornamental plant into Florida, USA, just over 100 years ago. A previous study indicated that these two introductions were from genetically differentiated source populations in the native range. In this study, we took advantage of these contrasting genetic signatures to study the spatial spread of Brazilian peppertree across its entire range in Florida. A combination of spatial genetic and geostatistical analyses using chloroplast and nuclear microsatellite markers revealed evidence for both diffusive dispersal and long-distance jumps. Chloroplast DNA haplotype distributions and extensive bands of intra-specific hybridization revealed extensive dispersal by both introduced populations across the state. The strong genetic signature around the original introduction points, the presence of a general southeast to northwest genetic cline, and evidence for short-distance genetic spatial autocorrelation provided evidence of diffusive dispersal from an advancing front, probably by birds and small mammals. In the northernmost part of the range, there were patches having a high degree of ancestry from each introduction, suggesting long-distance jump dispersal, probably by the movement of humans. The evidence for extensive movement throughout the state suggests that Brazilian peppertree will be capable of rapidly recolonizing areas from which it has been eradicated. Concerted eradication efforts over large areas or the successful establishment of effective biocontrol agents over a wide area will be needed to suppress this species.},
+  doi       = {10.1038/sj.hdy.6800936},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Article{Wimmer2008,
   author    = {Wimmer, D. and Hoffmann, D. and Schausberger, P.},
   title     = {Prey suitability of {Western flower thrips}, {\textit{Frankliniella occidentalis}}, and {Onion thrips}, {\textit{Thrips tabaci}}, for the predatory mite {\textit{Amblyseius swirskii}}},
@@ -8230,6 +8272,16 @@ general and T. ludeni population forecast and precise timing of pest management 
   publisher = {Elsevier {BV}},
 }
 
+@InBook{Stevens1960,
+  editor    = {Dimond, Albert Eugene and Horsfall, James Gordon},
+  pages     = {357--429},
+  publisher = {Academic Press},
+  title     = {Plant pathology, an advanced treatise},
+  year      = {1960},
+  address   = {New York},
+  volume    = {3},
+}
+
 @Book{Schuster1991,
   editor    = {Schuster, Reinhart and Murphy, Paul W.},
   publisher = {Chapman \& Hall},
@@ -8247,6 +8299,16 @@ general and T. ludeni population forecast and precise timing of pest management 
   isbn      = {9780444886286},
   series    = {World crop pests},
   volume    = {6},
+}
+
+@Book{Simberloff1997,
+  editor    = {Simberloff, Daniel and Schmitz, Don C. and Brown, Tom C.},
+  publisher = {Island Press},
+  title     = {Strangers in paradise : impact and management of nonindigenous species in {Florida}},
+  year      = {1997},
+  address   = {Washington, D.C},
+  isbn      = {9781559634298},
+  abstract  = {Invasive nonindigenous species -- plants and animals that have been introduced to an ecosystem from someplace else -- are wreaking havoc around the globe. Because they did not co-evolve with species already in the ecosystem, they can profoundly disturb species interactions and ecosystem function.The state of Florida has one of the most severe exotic species problems in the country; as much as a quarter of many taxa in Florida are nonnative, and millions of acres of land and water are dominated by nonindigenous species. Strangers in Paradise provides an in-depth examination of the Florida experience and of the ongoing efforts to eradicate or manage introduced species. Chapters consider: natural disturbance and the spread of nonindigenous species case studies of insects, freshwater invertebrates, fishes, amphibians and reptiles, birds, marine invertebrates and algae, and mammals methods of managing nonindigenous species including ecological restoration, eradication, "maintenance control," and biological control management on public lands the regulatory framework including the role of the federal government as well as state authorities and responsibilities Strangers in Paradise is the first comprehensive volume to address a large, diverse region and the full range of nonindigenous species, the problems they cause, and the methods and impediments to dealing with them. Throughout, contributors emphasize solutions and relate the situation in Florida to problems faced by other states, making the book an important guide for anyone involved with control and management of invasive species.},
 }
 
 @Book{Agrawal1999a,
