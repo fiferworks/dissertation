@@ -1,17 +1,7 @@
 # CONCLUSIONS: INVASIVE MITES ARE AN INCREASINGLY LARGE PROBLEM FOR FLORIDA
 ## Invasive species are a problem in Florida
 
-The aim of our research was to address the emerging problems caused by the recent invasions of mites and the plant viruses they vector to northern Florida. Florida is a hotspot for invasive species in the mainland US, due to a combination of its unique geography, climate, rapid development and a multitude of invasion pathways [@Simberloff1997; @Williams2007; @Card2018]. Efforts to manage invasive species costs the state of Florida ~$45M each year [@Hiatt2019].
-
-
-
-Florida programs have been developed to encourage reporting invasive species by the public [@Wallace2016]
-
-Invasive species are often harmful to ecosystem services and modify ecosystems to the detriment of native species [@Gordon1998].
-
-
-[@Williams2007]
-
+The aim of our research was to address the emerging problems caused by the recent invasions of mites and the plant viruses they vector to northern Florida. Florida is a hotspot for invasive species in the mainland US, due to a combination of its unique geography, climate, rapid development and a multitude of invasion pathways [@Simberloff1997; @Williams2007; @Card2018]. Invasive species are often harmful to ecosystem services and modify ecosystems to the detriment of native species [@Gordon1998]. Efforts to manage invasive species costs the state of Florida ~$45M each year [@Hiatt2019]. Many Florida programs have been developed to raise public awareness about the threats of invasive species, as well as encouraging the reporting of invasive species by the public [@Wallace2016]. *Phyllocoptes fructiphilus*, Rose Rosette Disease, and Orchid Fleck Virus all represent yet another chapter in the story of Florida invasion ecology. These organisms have a high possibility of becoming established invasive species in Florida if preventative actions are not taken. Our research was designed to address some of the main issues of controlling *P. fructiphilus*: early detection of the mite vector, 
 
 ## Main findings
 
