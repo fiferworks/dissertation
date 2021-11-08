@@ -95,12 +95,10 @@ grid::grid.raster(tiff::readTIFF('figure/rrv_ipm_plot_map_2021_talla.tif'))
 ```
 
 #### Analysis of field trial data {#mm-field-analyze}
-All data from all trials was processed and analyzed using R version 4.1.1 [@RCT2021]. The data were all count data, so a Zero-Inflated Poisson Model [@Zeileis2008] was required for the ASM data [@Hothorn2008], while Generalized Linear Mixed Models [@Bates2015] were used for all of the IPM and phenology trials. Estimated marginal means (least squares means) [@Lenth2021] and Tukey Contrasts Multiple Comparisons of Means were used to determine significant effects. In addition, about ~5% of early samples collected from the Tallahassee field trials were missing dry weights. Missing weight data was estimated and imputted using Multivariate Imputation by Chained Equations via the mice package [@vanBuuren2011].
+All data from all trials was processed and analyzed using R version 4.1.1 [@RCT2021]. The data were all count data, so a Zero-Inflated Poisson Model [@Zeileis2008] was required for the ASM data [@Hothorn2008], while Generalized Linear Mixed Models [@Bates2015] were used for all of the IPM and phenology trials. Estimated marginal means (least squares means) [@Lenth2021] and Tukey Contrasts Multiple Comparisons of Means were used to determine significant effects. In addition, about ~5\% of early samples collected from the Tallahassee field trials were missing dry weights. Missing weight data was estimated and imputted using Multivariate Imputation by Chained Equations via the mice package [@vanBuuren2011]. 
 
 ## Results {#results-asm-ipm-pheno}
 ### ASM Trials {#results-asm}
-
-
 ```{r asm-graph, cache = TRUE, cache.extra = file.mtime('figure/rrv_actigard_graph.png'), fig.cap="SAR-induction trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. water = Water Control, High = 100 \\si{\\milli\\gram}/\\si{\\liter} Actigard50WG® (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), low = 50 \\si{\\milli\\gram}/\\si{\\liter} Actigard50WG® (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), Spiro = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), All products were applied for 12 weeks. Flower cuttings were taken weekly to record the numbers of herbivorous mites.", fig.scap="SAR-induction trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/rrv_actigard_graph.png')
 ```
@@ -111,12 +109,15 @@ knitr::include_graphics('figure/rrv_actigard_graph.png')
 <!-- df <-read_csv('data/rrv_actigard_master_datasheet.csv') -->
 <!-- df <- df %>% filter(Field == 'Athens') -->
 <!-- ggplot(data = df, mapping = aes(x = Treatment, y=`H-B Score`)) + -->
-<!--   geom_boxplot() -->
+<!--   geom_boxplot() + -->
+<!-- ggtitle("Horsfall-Barratt Score - ASM Trials 2018 - Athens, GA") -->
 
-<!-- ggplot(data = df, mapping = aes(x = Treatment, y=AUDPC)) + -->
-<!--   geom_boxplot() -->
+<!-- ggplot(data = df, mapping = aes(x = Treatment, y = AUDPC)) + -->
+<!--   geom_boxplot() + -->
+<!--   ggtitle("Area Under the Disease Progress Curve - ASM Trials - Athens, GA") -->
 
 <!-- ``` -->
+
 
 
 ```{r asm-athns-2018-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_athens_disease_progress_2018.csv'), caption = "\\label{tab:asm-athns-2018-table}", out.width="100%"}
@@ -130,22 +131,14 @@ read_csv('data/rrv_athens_disease_progress_2018.csv',
 
 ```
 
-<!-- ```{r ipm, cache = TRUE, cache.extra = file.mtime('figure/ipm_graph.png'), fig.cap="IPM trials on Pink Double Knock Out® roses to control \\textit{P. fructiphilus} in Athens and Griffin, GA with five treatments. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. water = Water Control, ASM = Actigard50WG® (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), Spiro = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), mites = \\textit{Amblyseius swirkii} predatory mite mini sachets on hooks (Ambly-S, Arbico Organics, Oro Valley, AZ, USA), ninja = SP2700 (Trade name: Ninja\\texttrademark, SePro, Carmel, IN, USA), MN = \\textit{A. swirskii} + Ninja combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record the numbers of herbivorous mites.", fig.cap="IPM trials on Pink Double Knock Out® roses to control \\textit{P. fructiphilus} in Athens and Griffin, GA with five treatments", out.width="80%", warning=FALSE} -->
-<!-- knitr::include_graphics('figure/ipm_graph.png') -->
-<!-- ``` -->
 
 ### Phenology {#results-pheno}
-
-
 ```{r pheno-graphs, cache = TRUE, cache.extra = file.mtime('figure/rrv_pheno_bargraph.png'), fig.pos = 'h', fig.cap="Phenology of \\textit{P. fructiphilus} mite populations on roses in Leon County, Florida 2020-2021. Roses were pruned back heavily on July 9, 2020.", fig.scap="Phenology of \\textit{P. fructiphilus} mite populations on roses in Leon County, Florida", out.width="100%", warning=FALSE}
 knitr::include_graphics('figure/rrv_pheno_bargraph.png')
 ```
 
 
-
 ### IPM Trials {#results-ipm}
-
-
 ```{r ipm-talla-erios, cache = TRUE, cache.extra = file.mtime('figure/rrv_ipm_graph_erios_talla.png'), fig.cap="IPM trials on Pink Double Knock Out® roses to control \\textit{P. fructiphilus} in Tallahassee, FL with five treatments. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. Water = Water Control, ASM = Actigard50WG® (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), Spiro = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), Mites = \\textit{Amblyseius swirkii} predatory mite mini sachets on hooks (Ambly-S, Arbico Organics, Oro Valley, AZ, USA), MA = \\textit{A. swirskii} + Actigard combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record the numbers of \\textit{P. fructiphilus} and other herbivorous mites.", fig.scap="IPM trials on Pink Double Knock Out® roses to control \\textit{P. fructiphilus} in Tallahassee, FL with five treatments", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/rrv_ipm_graph_erios_talla.png')
 ```
@@ -171,9 +164,5 @@ knitr::include_graphics('figure/rrv_ipm_graph_preds_talla_month.png')
 ```
 
 
-
 ## Discussion {#dis-asm-ipm}
-Our results suggest that applications of spirotetramat was able to significantly reduce populations of *P. fructiphilus*. SAR-induced plant defenses were unable to reduce mite numbers, even when combined with predatory mite releases (see *\@ref(fig:ipm-talla-erios)*).
-The low number of *A. swirskii* mites recovered may indicate that *A. swirskii* do not persist in the rose environment, or are otherwise not surviving. Some evidence has been given that slow release sachets which are sheltered and provided with felt patches and and moisture in the form of water-absorbant sodium polyacrylate gels had better releases of predators [@Shimoda2018]. In addition, other studies have struggled to recover phytoseiid mites generally, as evidenced by our mite surveys on roses.
-
-Populations of *P. fructiphilius* showed seasonal fluctuations in mite numbers, with highest populations achieved during June 2020. Rose pruning in July reduced the numbers of *P, fructiphilus* collected for 3 months, populations began to recover that November. Mite numbers remained relatively lower during 2021 compared to the previous year. None of the mite-infested roses have shown symptoms of RRD to date. The large reductions of *P. fructiphilus* seen post pruning suggests its potential as a method of cultural mite control. It may be possible to combine pruning with acaricide treatments for improved control of *P. fructiphilus*, but this hypothesis requires further study. Tracking populations for longer periods of time with additional climatic data could be used to determine the best times to prune to reduce mite numbers.
+We had low recovery of *P. fructiphilus* for the ASM and IPM trials in Georgia. This lead us to the phenology study, to ensure that there had been adequate establishment of *P. fructiphilus* to create measureable effects. The phenology study was successful, and helped to inform the IPM trial in Tallahassee, which produced some meaningful data. Unfortunately, our results suggest that only applications of spirotetramat were able to significantly reduce populations of *P. fructiphilus*, an effect seen in all of the field trials conducted. SAR-induced plant defenses were unable to reduce mite numbers more than the control, even when combined with predatory mite releases (see *\@ref(fig:ipm-talla-erios)*). The low number of *A. swirskii* mites recovered may indicate that *A. swirskii* do not persist in the rose environment, or are otherwise not surviving. The low recovery of these mites makes it difficult to make claims about their efficacy as predators of *T. urticae* on roses. It is also impossible to know from our data if the ASM or spirotetramat had an effect on their populations. Some evidence has been given that slow release mite sachets which are sheltered and provided with felt patches and/or moisture in the form of water-absorbant sodium polyacrylate gels had better releases of predators [@Shimoda2018]. In addition, other studies have struggled to recover phytoseiid mites generally, as evidenced by our mite surveys on roses. Fortunately, we did recover larger numbers of *A. swirskii* from the plots where they had been released, which is what we expected. We did not see an effect of *A. swirskii* release on the tetranychid mites which we found on the roses. Populations of *P. fructiphilius* showed seasonal fluctuations in mite numbers, with highest populations achieved during June 2020 and July 2021. Rose pruning in July 2020 reduced the numbers of *P, fructiphilus* collected for 3 months, populations began to recover that November. However, the number of *P.fructiphilus* collected was not significantly different between the years 2020 and 2021 for the phenology trials. Mite numbers remained relatively lower during 2021 compared to the previous year. None of the mite-infested roses have shown symptoms of RRD to date. The large reductions of *P. fructiphilus* seen post pruning suggests its potential as a method of cultural mite control. It may be possible to combine pruning with acaricide treatments for improved control of *P. fructiphilus*, but this hypothesis requires further study. Tracking populations for longer periods of time with additional climatic data could be used to determine the best times to prune to reduce mite numbers.
