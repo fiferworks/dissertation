@@ -11,3 +11,62 @@ significance level used: alpha = 0.05
 NOTE: Compact letter displays can be misleading
       because they show NON-findings rather than findings.
       Consider using 'pairs()', 'pwpp()', or 'pwpm()' instead. 
+
+	 Simultaneous Tests for General Linear Hypotheses
+
+Multiple Comparisons of Means: Tukey Contrasts
+
+
+Fit: glmer(formula = time_sec ~ trial + (1 | mite_no), data = df, 
+    family = "poisson")
+
+Linear Hypotheses:
+                     Estimate Std. Error z value Pr(>|z|)    
+limonene - air == 0  -0.55615    0.19465  -2.857 0.017099 *  
+MeSA - air == 0       0.09012    0.19431   0.464 0.642800    
+rose - air == 0      -0.31691    0.18442  -1.718 0.171441    
+MeSA - limonene == 0  0.64627    0.12339   5.238 9.76e-07 ***
+rose - limonene == 0  0.23924    0.10714   2.233 0.076649 .  
+rose - MeSA == 0     -0.40703    0.10652  -3.821 0.000664 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+(Adjusted p values reported -- holm method)
+
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: time_sec
+       Chisq Df Pr(>Chisq)    
+trial 30.752  3  9.588e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
+ Family: poisson  ( log )
+Formula: time_sec ~ trial + (1 | mite_no)
+   Data: df
+
+     AIC      BIC   logLik deviance df.resid 
+  4835.1   4855.3  -2412.5   4825.1      420 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-0.99036 -0.16096 -0.00728  0.07436  0.12480 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ mite_no (Intercept) 0.743    0.862   
+Number of obs: 425, groups:  mite_no, 425
+
+Fixed effects:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)    4.65448    0.17382  26.778  < 2e-16 ***
+triallimonene -0.55615    0.19465  -2.857  0.00427 ** 
+trialMeSA      0.09012    0.19431   0.464  0.64280    
+trialrose     -0.31691    0.18442  -1.718  0.08572 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) trllmn trlMSA
+triallimonn -0.893              
+trialMeSA   -0.894  0.799       
+trialrose   -0.942  0.842  0.843
