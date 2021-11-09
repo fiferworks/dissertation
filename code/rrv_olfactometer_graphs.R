@@ -195,10 +195,10 @@ ggplot(data = rose_df,
   ) +
   annotate(
     geom = "text",
-    size = 50,
+    size = 25,
     x = 1,
     y = 110,
-    label = "***",
+    label = "N.S.",
     color = "black"
   ) +
   annotate(
@@ -402,10 +402,10 @@ ggplot(data = tests_df,
   ) +
   annotate(
     geom = "text",
-    size = 50,
+    size = 25,
     x = 1,
     y = 55,
-    label = "***",
+    label = "N.S.",
     color = "black"
   ) +
   annotate(
