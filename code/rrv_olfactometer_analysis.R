@@ -12,10 +12,7 @@ rm(pkgs, nu_pkgs)
 
 #reading in olfactometer data, making sure R knows df are factors
 df <-
-  read_csv('data/rrv_all_olfactometer_flat.csv',
-           col_types = cols(choice = col_factor(c(
-             'no choice', 'control', 'experiment'
-           ))))
+  read_csv('data/rrv_all_olfactometer_flat.csv', )
 
 tbl_colnames <-
   c(
@@ -38,15 +35,21 @@ tbl_colnames <-
     'stdres.control',
     'stdres.experiment'
   )
+
 rrv_olfact_chisq_tests <- read_csv("\n", col_names = tbl_colnames)
 trial_list <- list('air', 'rrv', 'rose', 'MeSA', 'limonene')
 
 for (i in seq_along(trial_list)) {
   one_trial <- df %>%  filter(trial == unlist(trial_list[i]))
   congnt_table <- table(one_trial$choice)
-  chisq_test <- as_tibble(t(unlist(chisq.test(congnt_table))))
+  chisq_test <- as_tibble(t(unlist(chisq.test(congnt_table[1:2]))))
+  nchs <- as_tibble_row(congnt_table[3])
+  nchs <- nchs %>% rename('observed.no choice' = 'no choice')
+  nchs$`observed.no choice` <-
+    as.character(nchs$`observed.no choice`)
   trial_name <- trial_list[i]
-  rrv_olfact <- bind_cols(trial_name, chisq_test)
+  rrv_olfact <-
+    bind_cols(trial_name, nchs, chisq_test)
   rrv_olfact <- rrv_olfact %>% rename(trial = 1)
   rrv_olfact_chisq_tests <-
     bind_rows(rrv_olfact_chisq_tests, rrv_olfact)
@@ -69,27 +72,29 @@ time_2_choice_model <- glmer(time_sec ~ trial + (1 | mite_no),
                              family = "poisson",
                              data = df)
 
-#model summaries
-summary(choice_model)
-summary(time_2_choice_model)
-
-#ANOVAs
-Anova(choice_model)
-Anova(time_2_choice_model)
-
+#making a compact letter display for each treatment
+sink(file = 'data/rrv_olfact_cld_choice_model.txt')
+#compact letter display
+cld(emmeans(choice_model, "trial"))
 #Simultaneous Tests for General Linear Hypotheses Multiple Comparisons of Means:
 #Tukey Contrasts
 summary(glht(choice_model, linfct = mcp(trial = 'Tukey')), test = adjusted("holm"))
-summary(glht(time_2_choice_model, linfct = mcp(trial = 'Tukey')), test = adjusted("holm"))
-
-
-#making a compact letter display for each treatment
-sink(file = 'data/rrv_olfact_cld_choice_model.txt')
-cld(emmeans(choice_model, "trial"))
+#ANOVA
+Anova(choice_model)
+#model summary
+summary(choice_model)
 sink()
 
 sink(file = 'data/rrv_olfact_cld_time_2_choice_model.txt')
+#compact letter display
 cld(emmeans(time_2_choice_model, "trial"))
+#Simultaneous Tests for General Linear Hypotheses Multiple Comparisons of Means:
+#Tukey Contrasts
+summary(glht(time_2_choice_model, linfct = mcp(trial = 'Tukey')), test = adjusted("holm"))
+#ANOVA
+Anova(time_2_choice_model)
+#model summary
+summary(time_2_choice_model)
 sink()
 
 #cleaning up
