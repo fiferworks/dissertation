@@ -1,5 +1,5 @@
 ---
-title: 'Mite-Virus-Plant Complexes of Importance for Florida Agriculture: Early Detection, Chemical Ecology and Biocontrol of *Phyllocoptes fructiphilus* and *Brevipalpus californicus*'
+title: 'Mite-Virus-Plant Complexes of Importance for Florida Agriculture: *Phyllocoptes fructiphilus* and *Brevipalpus californicus*'
 author: 'Austin Nathaniel Fife'
 date: '2021'
 month: 'December'
