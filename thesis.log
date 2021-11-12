@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.6)  12 NOV 2021 14:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.6)  12 NOV 2021 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1329,7 +1329,7 @@ Overfull \hbox (24.84897pt too wide) in paragraph at lines 2087--2089
  []
 
 [144] [145] [146]
-Overfull \hbox (53.40901pt too wide) in paragraph at lines 2138--2140
+Overfull \hbox (53.40901pt too wide) in paragraph at lines 2144--2146
 \TU/lmr/m/n/12 tions for biological control. Biological Control. 54: 255–262, D
 OI:[][]10.1016/j.biocontrol.2010.05.017[][].  
  []
@@ -1337,43 +1337,43 @@ OI:[][]10.1016/j.biocontrol.2010.05.017[][].
 [147] [148] [149] [150] [151]
 Missing character: There is no ʻ (U+02BB) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[152] [153] [154]
-Overfull \hbox (23.15704pt too wide) in paragraph at lines 2345--2347
+[152] [153] [154] [155]
+Overfull \hbox (23.15704pt too wide) in paragraph at lines 2354--2356
 \TU/lmr/m/n/12 blattfleckenkranken \TU/lmr/m/it/12 Dendrobien\TU/lmr/m/n/12 . J
 ournal of Phytopathology. 70: 43–52, DOI:[][]10.1111/j.1439- 
  []
 
-[155]
-Overfull \hbox (3.59703pt too wide) in paragraph at lines 2360--2362
+
+Overfull \hbox (3.59703pt too wide) in paragraph at lines 2369--2371
 \TU/lmr/m/n/12 Paraguay. Journal of Plant Diseases and Protection. 127: 715–717
 , DOI:[][]10.1007/s41348- 
  []
 
-[156]
-Overfull \hbox (30.15701pt too wide) in paragraph at lines 2396--2398
+[156] [157]
+Overfull \hbox (30.15701pt too wide) in paragraph at lines 2405--2407
 \TU/lmr/m/n/12 Experimental and Applied Acarology. 30: 135–160, DOI:[][]10.1023
 /b:appa.0000006546.55305.e3[][].  
  []
 
 
-Overfull \hbox (33.47704pt too wide) in paragraph at lines 2399--2401
+Overfull \hbox (33.47704pt too wide) in paragraph at lines 2408--2410
 \TU/lmr/m/n/12 Culebra Island. International Journal of Acarology. 33: 3–5, DOI
 :[][]10.1080/01647950708684493[][].  
  []
 
-[157] [158] [159]
-Overfull \hbox (39.53702pt too wide) in paragraph at lines 2465--2467
+[158] [159] [160]
+Overfull \hbox (39.53702pt too wide) in paragraph at lines 2474--2476
 \TU/lmr/m/n/12 sequences. Bulletin of Entomological Research. 100: 263–272, DOI
 :[][]10.1017/s0007485309990216[][].  
  []
 
-[160] [161] [162] [163]
-Overfull \hbox (46.61705pt too wide) in paragraph at lines 2573--2575
+[161] [162] [163] [164]
+Overfull \hbox (46.61705pt too wide) in paragraph at lines 2582--2584
 \TU/lmr/m/n/12 Got1: Reporting and tracking invasive species in Florida. 15: 51
 –62, DOI:[][]10.1656/058.015.sp805[][].  
  []
 
-[164] [165] [166] [167] [168]
+[165] [166] [167] [168] [169]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
@@ -1385,11 +1385,11 @@ File: pubs/pfruct-report.pdf Graphic file (type pdf)
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 2>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2670--2671
+Underfull \hbox (badness 10000) in paragraph at lines 2679--2680
   
  []
 
-[169
+[170
 
 ]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
@@ -1398,30 +1398,30 @@ File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 2>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 2>
-[170]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
 [171]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
+<use pubs/pfruct-report.pdf, page 3>
 [172]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
+<use pubs/pfruct-report.pdf, page 4>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
+<use pubs/pfruct-report.pdf, page 4>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
+<use pubs/pfruct-report.pdf, page 4>
 [173]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+[174]
 No file thesis.bbl.
-[174
+[175
 
 
 ] (./thesis.aux)
@@ -1444,4 +1444,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  73i,18n,81p,11073b,1085s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (174 pages).
+Output written on thesis.pdf (175 pages).
