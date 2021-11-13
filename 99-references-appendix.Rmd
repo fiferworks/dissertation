@@ -9,31 +9,32 @@ delete "References" and replace it.
 -->
 
 # REFERENCES {-}
-
-\begingroup
-<!--
-This manually sets the header for this unnumbered chapter.
--->
-\markboth{References}{References}
-<!--
-To create a hanging indent and spacing between entries.  These three lines may need to be removed for styles that don't require the hanging indent.
--->
-<!--
-To remove the indentation of the first entry.
--->
-\noindent
+<!-- This manually sets the header for this unnumbered chapter. -->
 \singlespacing
-\setlength{\parindent}{-0.40in}
-\setlength{\leftskip}{0.40in}
-\setlength{\parskip}{4pt}
+
+\markboth{References}{References}
+
+<!-- To remove the indentation of the first entry. -->
+\noindent
+
+<!-- To create a hanging indent and spacing between entries.  These three lines
+may need to be removed for styles that don't require the hanging indent. -->
+
+
+\setlength{\parindent}{-0.20in}
+\setlength{\leftskip}{0.20in}
+\setlength{\parskip}{8pt}
+
+
+
 
 <!--This manually sets the location of the references to this location-->
 <div id="refs"></div>
 
-\endgroup
-<!--
-This is just for testing with more citations for the bibliography at the end.  Add other entries into the list here if you'd like them to appear in the bibliography even if they weren't explicitly cited in the document.
--->
+
+<!-- This is just for testing with more citations for the bibliography at the
+end.  Add other entries into the list here if you'd like them to appear in the
+bibliography even if they weren't explicitly cited in the document. -->
 
 ---
 nocite: | 
@@ -41,6 +42,6 @@ nocite: |
 ...
 
 # APPENDIX {-}
-<!-- these import my publication -->
+<!-- this imports my publication -->
 \includegraphics[height=0.9\textheight]{\string"pubs/pfruct-report".pdf}
 \includepdf[scale= 0.9, pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}
