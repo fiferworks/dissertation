@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.6)  12 NOV 2021 22:42
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.6)  12 NOV 2021 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1432,7 +1432,7 @@ No file thesis.bbl.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: EED21443A5210E522F4218570ADBAE88;15964.
+(rerunfilecheck)             Checksum: 3BBFADA92F54E310DDF292E7D09736AB;15941.
  )
 (\end occurred inside a group at level 1)
 
@@ -1441,7 +1441,7 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  21141 strings out of 476473
  401069 string characters out of 5820026
- 835923 words of memory out of 5000000
+ 835915 words of memory out of 5000000
  41178 multiletter control sequences out of 15000+600000
  409497 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
