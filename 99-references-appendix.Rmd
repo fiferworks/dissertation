@@ -15,21 +15,20 @@ delete "References" and replace it.
 This manually sets the header for this unnumbered chapter.
 -->
 \markboth{References}{References}
-
-
 <!--
 To create a hanging indent and spacing between entries.  These three lines may need to be removed for styles that don't require the hanging indent.
 -->
- 
-\setlength{\parindent}{-0.20in}
-\singlespacing
-\setlength{\leftskip}{0.20in}
-\setlength{\parskip}{4pt}
-\vspace{-0.4in}
 <!--
 To remove the indentation of the first entry.
 -->
 \noindent
+
+<!-- \vspace{-2em} -->
+\singlespacing
+\setlength{\parindent}{-0.10in}
+\setlength{\leftskip}{0.10in}
+\setlength{\parskip}{4pt}
+
 <!--This manually sets the location of the references to this location-->
 <div id="refs"></div>
 
