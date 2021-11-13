@@ -579,6 +579,29 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   publisher = {Oxford University Press ({OUP})},
 }
 
+@Article{Arthurs2009,
+  author    = {Arthurs, Steven and McKenzie, Cindy L. and Chen, Jianjun and Dogramaci, Mahmut and Brennan, Mary and Houben, Katherine and Osborne, Lance},
+  title     = {Evaluation of {\textit{Neoseiulus cucumeris}} and {\textit{Amblyseius swirskii}} ({Acari}: {Phytoseiidae}) as biological control agents of chilli thrips, {\textit{Scirtothrips dorsalis}} ({Thysanoptera}: {Thripidae}) on pepper},
+  year      = {2009},
+  month     = apr,
+  number    = {1},
+  pages     = {91--96},
+  volume    = {49},
+  abstract  = {The invasive chilli thrips, Scirtothrips dorsalis Hood poses a significant risk to many food and ornamental
+crops in the Caribbean, Florida and Texas. We evaluated two species of phytoseiid mites as predators of S.
+dorsalis. In leaf disc assays, gravid females of Neoseiulus cucumeris and Amblyseius swirskii both fed on S.
+dorsalis at statistically similar rates. Larvae were the preferred prey for both species, consuming on average 2.7/day, compared with 1.1--1.7 adults/day in no choice tests. Adult thrips were rarely consumed in
+subsequent choice tests when larvae were also present. Mite fecundity was statistically similar for both
+species feeding on thrips larvae (1.3 eggs/day) but significantly less for A. swirskii restricted to a diet of
+adult thrips (0.5 eggs/day). In greenhouse tests with infested pepper plants, both mite species established
+and reduced thrips numbers significantly over 28 days following a single release (30 mites/plant). However, A. swirskii was the more effective predator, consistently maintaining thrips below 1 per terminal
+leaf, compared with up to 36 for N. cucumeris and 70 in control treatments. Similar results were obtained
+for plants maintained outside in the landscape, where A. swirskii continued to reproduce and control
+thrips up to 63 days post release.},
+  doi       = {10.1016/j.biocontrol.2009.01.002},
+  publisher = {Elsevier {BV}},
+}
+
 @Article{Ataide2016,
   author    = {Ataide, Livia M. S. and Pappas, Maria L. and Schimmel, Bernardus C. J. and Lopez-Orenes, Antonio and Alba, Juan M. and Duarte, Marcus V. A. and Pallini, Angelo and Schuurink, Robert C. and Kant, Merijn R.},
   journal   = {Plant Science},
@@ -1363,6 +1386,7 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   number    = {2},
   pages     = {171--180},
   volume    = {62},
+  abstract  = {Biological control in ornamental crops is challenging due to the wide diversity of crops and cultivars. In this study, we tested the hypothesis that trichome density on different host plants influences the behavior and performance of the predatory mite Amblyseius swirskii Athias-Henriot (Acari: Phytoseiidae). Behavioural observations of this predator in the presence or absence of prey (western flower thrips, Frankliniella occidentalis Pergande) (Thysanoptera: Thripidae) were done on leaf squares of ornamental plant species differing in trichome density (rose, chrysanthemum and gerbera) and compared to a smooth surface (plastic). Tomato leaves were used to observe the influence of glandular trichomes. The performance of A. swirskii was assessed by measuring predation and oviposition rate. Behaviour of A. swirskii was influenced by plant species. Up to a certain density of trichomes, trichome number had a negative effect on walking speed. It was highest on plastic, followed by rose. No differences were found among chrysanthemum, gerbera and tomato. Walking speed was slightly higher on disks without prey. Proportion of time spent walking was the same on leaf disks of all plant species, with and without prey. No effect of glandular trichomes on tomato leaves was seen. Most thrips were killed and consumed on gerbera, and least on rose. Predation rates on chrysanthemum and plastic were intermediate. In contrast, no differences in oviposition rate were found among plant species. The results of this study indicate that trichome density can explain some of the variability in efficacy of A. swirskii on different crops. Release rates of A. swirskii may need to be adjusted depending on the crop in which it is used.},
   doi       = {10.1007/s10493-013-9735-1},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -2378,6 +2402,19 @@ Bacterial pathogens are able to subvert the plant immune system by secreting mol
   publisher = {Elsevier {BV}},
 }
 
+@Article{Dogramaci2011,
+  author    = {Do{\u{g}}ramaci, Mahmut and Arthurs, Steven P. and Chen, Jianjun and McKenzie, Cindy and Irrizary, Fabieli and Osborne, Lance},
+  title     = {Management of chilli thrips {\textit{Scirtothrips dorsalis}} ({Thysanoptera}: {Thripidae}) on peppers by {\textit{Amblyseius swirskii}} ({Acari}: {Phytoseiidae}) and {\textit{Orius insidiosus}} ({Hemiptera}: {Anthocoridae})},
+  year      = {2011},
+  month     = dec,
+  number    = {3},
+  pages     = {340--347},
+  volume    = {59},
+  abstract  = {Chilli thrips, Scirtothrips dorsalis Hood, recently established in southeast of the United States, poses an economic threat to a wide-range of ornamental and vegetable plants. In this study, we examined biological control of chilli thrips with a predatory mite, Amblyseius swirskii Athias-Henriot, and the insidious flower bug, Orius insidiosus Say. Laboratory tests showed that at equivalent rates, O. insidiosus was a more effective predator of adult thrips compared with A. swirskii, although the same trend was not observed with thrips larvae. At a rate of 20 predators per infested pepper plant, both predator species maintained $\leqslant$0.5 thrips per leaf and 40% damage on control plants. Slightly less effective control was observed in a second study, where a reduced rate of predators (10 per plant) resulted in approximately 20% foliar damage, while damage was > 90% on control plants. Plants treated with O. insidiosus alone or in combination with A. swirskii had consistently fewer adult thrips and plant damage compared with A. swirskii alone. Furthermore, we observed different susceptibilities to thrips among pepper varieties, with damage lowest on {\textquoteleft}Trinidad perfume{\textquoteright} and {\textquoteleft}Brigadier hybrid{\textquoteright} compared with {\textquoteleft}Large red cherry{\textquoteright}, and {\textquoteleft}Serrano{\textquoteright}. Our results show that both predators were effective predators of chilli thrips on pepper and suggest that both species could be used in combination without decreased efficacy through intraguild predation.},
+  doi       = {10.1016/j.biocontrol.2011.09.008},
+  publisher = {Elsevier {BV}},
+}
+
 @Article{Doi1977,
   author    = {Doi, Y. and Chang, M. U. and Yora, K.},
   journal   = {{CMI/AAB} descriptions of plant viruses},
@@ -3193,6 +3230,19 @@ Bacterial pathogens are able to subvert the plant immune system by secreting mol
   url       = {https://www.ebook.de/de/product/3616330/gerson_ochoa_smiley_mites_{Acari}_for_pest_control.html},
 }
 
+@Article{Ghasemzadeh2017,
+  author    = {Somayyeh Ghasemzadeh and Ada Leman and Gerben J. Messelink},
+  title     = {Biological control of {\textit{Echinothrips americanus}} by phytoseiid predatory mites and the effect of pollen as supplemental food},
+  year      = {2017},
+  month     = oct,
+  number    = {2},
+  pages     = {209--221},
+  volume    = {73},
+  abstract  = {The poinsettia thrips, Echinothrips americanus Morgan, is an upcoming pest in greenhouse crops, causing serious damage in various vegetable and ornamental crops through extensive foliage feeding. We assessed which stages of E. americanus are attacked and killed by the phytoseiid predatory mites Amblyseius swirskii (Athias-Henriot), Amblydromalus limonicus (Garman and McGregor), Euseius gallicus Kreiter and Tixier and Euseius ovalis (Evans). Both the predation and oviposition rates were assessed in the laboratory to evaluate which mite species is potentially the most effective predator of E. americanus. In two greenhouse trials with non-flowering sweet pepper plants, we compared the efficacy of the predators E. gallicus and E. ovalis with A. swirskii and we assessed how this was affected by the application of cattail pollen. All stages of E. americanus, except adults, were consumed by all species of predatory mites. The highest predation and oviposition rates were recorded for A. limonicus followed by A. swirskii and E. ovalis when first and second larval stages were provided as prey, but E. ovalis appeared to be the best predator of thrips pupae. Euseius gallicus displayed very low predation and oviposition rates compared to the other species of predatory mites. Cattail pollen did not support the population growth of poinsettia thrips, but it strongly increased the predatory mite population densities, particularly those of E. ovalis. Both A. swirskii and E. ovalis significantly reduced thrips densities on plants. The application of pollen significantly enhanced the control of E. americanus by A. swirskii; this was not the case for E. ovalis. Euseius gallicus did not reduce densities of E. americanus on sweet pepper plants, not even at high densities in the presence of pollen.},
+  doi       = {10.1007/s10493-017-0191-1},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Article{Giangrande2003,
   author    = {Adriana Giangrande},
   journal   = {Aquatic Conservation: Marine and Freshwater Ecosystems},
@@ -3694,6 +3744,30 @@ CONCLUSIONS: In general, these products appear safe to use prior to establishmen
   number      = {450-620},
 }
 
+@Article{Hoogerbrugge2011,
+  author    = {Hoogerbrugge, Hans and Houten, Y. van and Knapp, Markus and Bolckmans, Karel and others},
+  journal   = {IOBC/WPRS Bulletin},
+  title     = {Biological control of greenhouse whitefly on roses with phytoseiid mites.},
+  year      = {2011},
+  pages     = {59--63},
+  volume    = {68},
+  abstract  = {The predatory mites Amblyseius swirskii, Amblydromalus limonicus, Transeius montdorensis and Euseius ovalis were evaluated as biological control agent of Trialeurodes vaporariorum on roses. When A. swirskii, A. limonicus and E. ovalis were released on separate plants in the same cage, E. ovalis increased to higher population levels than A. swirskii and A. limonicus but was not able to control the whiteflies. When A. swirskii, A. limonicus and T. montdorensis were released in separate cages, A. limonicus achieved a better control of whitefly populations than the other two predatory mites. In both cage trials only A. limonicus successfully controlled T. vaporariorum.},
+  publisher = {International Organization for Biological and Integrated Control of Noxious Animals and Plants (OIBC/OILB), West Palaearctic Regional Section (WPRS/SROP)},
+  url       = {http://www.iobc-wprs.org/pub/bulletins/bulletin_2011_68_table_of_contents_abstracts.pdf},
+}
+
+@Article{Hoogerbrugge2014,
+  author    = {Hoogerbrugge, H. and Lenferink, K. Oude and Houten, Y. van and Bolckmans, K. and others},
+  journal   = {IOBC/WPRS Bulletin},
+  title     = {Screening of three phytoseiid mite species as biocontrol agents of {\textit{Echinothrips americanus}}.},
+  year      = {2014},
+  pages     = {97--101},
+  volume    = {102},
+  abstract  = {In this study 3 phytoseiid mite species were evaluated as biological control agents of Echinothrips americanus. The oviposition and predation rate of Amblyseius swirskii, Amblydromalus limonicus and Euseius gallicus were compared in a laboratory experiment. Moreover, A. swirskii and A. limonicus were compared as control agents of E. americanus on sweet pepper and rose plants in semi-field experiments. In the laboratory study A. swirskii showed a higher predation and oviposition rate than A. limonicus, while E. gallicus did not predate the first instar larvae of E. americanus and was therefore excluded from the semi field experiments. In the semi field experiment on sweet pepper plants the control of E. americanus was better with A. limonicus while A. swirskii built up a higher population. On rose plants, there was no difference between the two phytoseiid species.},
+  publisher = {International Organization for Biological and Integrated Control of Noxious Animals and Plants (OIBC/OILB), West Palaearctic Regional Section (WPRS/SROP)},
+  url       = {http://www.iobc-wprs.org/pub/bulletins/bulletin_2014_102_table_of_contents_abstracts.pdf},
+}
+
 @Article{Horsfall1945,
   author  = {Horsfall, James G.},
   title   = {An improved grading system for measuring plant diseases},
@@ -3711,6 +3785,33 @@ CONCLUSIONS: In general, these products appear safe to use prior to establishmen
   number  = {3},
   pages   = {346--363},
   volume  = {50},
+}
+
+@Article{Houten2016,
+  author    = {Houten, Yvonne M. Van and Hoogerbrugge, Hans and Lenferink, Kirsten Oude and Knapp, Markus and Bolckmans, Karel J. F.},
+  title     = {Evaluation of {\textit{Euseius gallicus}} as a biological control agent of western flower thrips and greenhouse whitefly in rose},
+  year      = {2016},
+  number    = {Supplement1},
+  pages     = {S147--S159},
+  volume    = {25},
+  abstract  = {Euseius gallicus is a new phytoseiid species recently described from southern France that has
+shown potential as a biocontrol agent for thrips and whitefly in rose, if pollen is supplied as an
+additional food source. To investigate if the use of E. gallicus provides improved thrips and
+whitefly control, we conducted laboratory experiments examining the biology of E. gallicus and
+a semi-field experiment comparing the biological control efficiency of E. gallicus with that of
+Amblydromalus limonicus and Amblyseius swirskii, two phytoseiid species commonly used for
+biological control of thrips and whitefly in roses. Euseius gallicus had high oviposition rates on
+Typha latifolia pollen (3.9 eggs/day) and on young whitefly eggs (3.6 eggs/day). Oviposition on
+first instar Frankliniella occidentalis larvae was lower (1.5 eggs/day). Euseius gallicus predated
+2.6 first instar thrips larvae per day; however, predation of thrips larvae was nearly zero when T.
+latifolia pollen was offered as a supplementary food source. Euseius gallicus females did not
+enter diapause under short-day conditions, and juvenile development was completed at 13{\textcelsius}.
+When released in combination with T. latifolia pollen on roses in the semi-field trial, E. gallicus
+developed the largest population of the predatory mites tested; however, despite reducing the
+whitefly population, it had no control effect on the thrips population.
+Key words: Phytoseiidae, Thripidae, Aleyrodidae, predation, alternative food},
+  doi       = {10.2300/acari.25.suppl_147},
+  publisher = {Acarological Society of Japan},
 }
 
 @Article{Howard1991,
@@ -4281,6 +4382,18 @@ Conclusions Herbivores have evolved diverse strategies, which are not mutually e
   pages     = {72--82},
   volume    = {58},
   doi       = {10.24349/acarologia/20184275},
+  publisher = {Les Amis d{\textquotesingle}Acarologia},
+}
+
+@Article{Knapp2013,
+  author    = {Knapp, M. and van Houten, Y. and Hoogerbrugge, H. and Bolckmans, K.},
+  title     = {{\textit{Amblydromalus limonicus}} ({Acari}: {Phytoseiidae}) as a biocontrol agent: literature review and new findings},
+  year      = {2013},
+  month     = jun,
+  number    = {2},
+  pages     = {191--202},
+  volume    = {53},
+  doi       = {10.1051/acarologia/20132088},
   publisher = {Les Amis d{\textquotesingle}Acarologia},
 }
 
@@ -6234,6 +6347,47 @@ Parole chiave: Acarologia, galligeni, vaganti, morfologia, anatomia, fisiologia,
   publisher = {American Association for the Advancement of Science ({AAAS})},
 }
 
+@Article{Parolin2013,
+  author    = {Pia Parolin and C{\'{e}}cile Bresch and Gauthier Ruiz and Nicolas Desneux and Christine Poncet},
+  title     = {Testing banker plants for biological control of mites on roses},
+  year      = {2013},
+  month     = jan,
+  number    = {3},
+  pages     = {249--262},
+  volume    = {41},
+  abstract  = {We tested whether plant species used in a
+banker plant system influence the success of a biological control program with predatory mites. Banker
+plants (BP) may sustain a reproducing population of
+predators and provide long-term pest suppression. In
+an experiment lasting 12 weeks, we analyzed the
+responses of the predatory mite Amblyseius californicus and the pest mite Tetranychus urticae to eight
+species of potential BP with different morphological
+structures. Every BP was paired with a rose plant and
+infested with pest and predatory mites. The measured
+parameters were vitality and growth of the plants and
+numbers of predators, pests and their eggs. Reproduction and establishment of the pest and predatory mites
+differed among plant species as well as plant growth
+and vitality. Vitis riparia and Viburnum tinus were the
+most efficient BP in this combination of pest--predator
+species. Their presence resulted in best health of the
+rose crops, highest number of predatory mites and
+lowest number of pests. Both these BP possess domatia which may be responsible for the efficiency in
+hosting predatory mites. Overall, the species which
+fulfilled the requirements of a BP best was the local
+shrub V, tinus, which bore no pests and a very large
+number of predators and has a compact growth form
+suited for application in greenhouses. Although our
+study gives only evidence for an artificial system with
+a high BP:crop ratio, high numbers of introduced
+predators and short distances between plants, this
+study contributes to knowledge of BP systems and to
+improve the understanding of the criteria for the
+choice of local plant species to be used as BP for
+biological control in IPM},
+  doi       = {10.1007/s12600-012-0285-6},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Article{Pascon2006,
   author    = {Pascon, Renata C. and Kitajima, Jo{\~{a}}o Paulo and Breton, Mich{\`{e}}le C. and Assump{\c{c}}{\~{a}}o, Laura and Greggio, Christian and Zanca, Almir S. and Okura, Vagner Katsumi and Alegria, Marcos C. and Camargo, Maria E. and Silva, Giovana G. C. and Cardozo, Jussara C. and Vallim, Marcelo A. and Franco, Sulamita F. and Silva, Vitor H. and Junior, Hamilton Jord{\~{a}}o and Oliveira, Fernanda and Giachetto, Poliana F. and Ferrari, Fernanda and Aguilar-Vildoso, Carlos I. and Franchiscini, Fabr{\'{\i}}cio J. B. and Silva, Jos{\'{e}} M. F. and Arruda, Paulo and Ferro, Jesus A. and Reinach, Fernando and da Silva, Ana Cl{\'{a}}udia Rasera},
   journal   = {Virus Genes},
@@ -7126,6 +7280,36 @@ Parole chiave: Acarologia, galligeni, vaganti, morfologia, anatomia, fisiologia,
   volume    = {62},
   abstract  = {Because of their size, small arthropods can be highly affected by characteristics of the leaf surface. Leaf surfaces have various structures, such as trichomes and domatia, which add to the complexity of the microenvironment experienced by arthropods. Plant structure can affect the retention and performance of predators and parasitoids and it has been proposed that phylloplane characteristics be modified to improve the utility of these organisms as biological control agents. Phytoseiids have a long history as biological control agents of pest mite species in agricultural systems. In the past 30 years, extensive research has shown that trichomes and domatia influence phytoseiid populations and performance. Various reasons have been proposed to explain this relationship, including increased pollen capture for use as a food source, escape from predation, avoidance of adverse abiotic conditions, and increased/decreased ease of prey capture. There is potential for the manipulation of crops to improve biological control by phytoseiids, but incorporating beneficial traits into plants is likely to have lower priority than other breeding characteristics. The objectives of this review are to summarize the evidence for the relationship between phytoseiids and leaf surface structures, discuss possible hypotheses to explain this relationship, examine the potential of altering current crop varieties for the purpose of increasing phytoseiid populations or performance, and conduct a meta-analysis to quantify the effects of plant surface structures on phytoseiid and phytophagous mite densities.},
   doi       = {10.1007/s10493-013-9730-6},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Schoeller2020,
+  author    = {Schoeller, Erich N. and McKenzie, Cindy L. and Osborne, Lance S.},
+  title     = {Comparison of the phytoseiid mites {\textit{Amblyseius swirskii}} and {\textit{Amblydromalus limonicus}} for biological control of chilli thrips, {\textit{Scirtothrips dorsalis}} ({Thysanoptera}: {Thripidae})},
+  year      = {2020},
+  month     = oct,
+  number    = {3},
+  pages     = {309--318},
+  volume    = {82},
+  abstract  = {The chilli thrips, Scirtothrips dorsalis Hood, is a recently established pest in the USA
+and poses a serious risk to many economically important ornamental and food crops. In
+this study the biological control potential of the phytoseiid mites Amblydromalus limonicus (Garman and McGregor) and Amblyseius swirskii (Athias-Henriot) was compared by
+examining their predation and oviposition rates when fed diferent developmental stages of
+S. dorsalis. Gravid females were ofered 10 individuals of either frst instar, second instar,
+or adult S. dorsalis using a no-choice leaf disc bioassay and oviposition and predation rates
+were assessed daily for 2 and 3 days, respectively. There was no signifcant diference in
+predation and oviposition rates between mite species fed specifc S. dorsalis life stages.
+There was, however, a signifcant efect of S. dorsalis life stage on the oviposition and
+predation rates observed for each mite species. The larval stage was the most preferred
+stage for both mite species, with A. swirskii consuming 4.6--6.3 and A. limonicus 4.8--6.4
+individuals/day compared to only 1.6--1.7 adults/day consumed by both species. Female A.
+swirskii and A. limonicus laid 0.55--0.75 and 0.73 eggs/day on the two larval stages, respectively, compared to only 0.25--0.30 eggs/day observed for individuals feeding on adults.
+Although the results showed that the biological control potential of both mite species was
+similar, having an additional predator available that may be as efective as A. swirskii, a
+proven control agent against S. dorsalis in the feld, warrants additional research into its
+potential utility.
+Keywords Thrips $\cdot$ Biological control $\cdot$ Phytoseiidae},
+  doi       = {10.1007/s10493-020-00556-5},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
