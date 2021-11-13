@@ -22,11 +22,9 @@ To create a hanging indent and spacing between entries.  These three lines may n
 To remove the indentation of the first entry.
 -->
 \noindent
-
-<!-- \vspace{-2em} -->
 \singlespacing
-\setlength{\parindent}{-0.10in}
-\setlength{\leftskip}{0.10in}
+\setlength{\parindent}{-0.40in}
+\setlength{\leftskip}{0.40in}
 \setlength{\parskip}{4pt}
 
 <!--This manually sets the location of the references to this location-->
