@@ -30,7 +30,7 @@
 %% Preamble and comments added by AF
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\documentclass[12pt,final,CPage]{ufdissertation}
+\documentclass[12pt,final,CPage]{ufthesis}
 
 % moved packages from 'packages.tex' to the template file -AF
 % here you define all the packages you wish to use in your paper, the ones shown are not all necessary,
@@ -98,21 +98,22 @@ $if(csl-refs)$
 \setlength{\cslhangindent}{1.5em}
 % for Pandoc 2.8 to 2.10.1
 \newenvironment{cslreferences}%
-{$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
-	\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
-{\par}
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
 % For Pandoc 2.11+
+% As noted by @mirh [2] is needed instead of [3] for 2.12
 \newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
-{% don't indent paragraphs
-	\setlength{\parindent}{0pt}
-	% turn on hanging indent if param 1 is 1
-	\ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
-	% set entry spacing
-	\ifnum #2 > 0
-	\setlength{\parskip}{#2\baselineskip}
-	\fi
-}%
-{}
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
 \usepackage{calc} % for calculating minipage widths
 \newcommand{\CSLBlock}[1]{#1\hfill\break}
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
