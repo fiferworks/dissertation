@@ -621,6 +621,7 @@ thrips up to 63 days post release.},
   title     = {Rose volatile compounds allow the design of new control strategies for the {Western flower thrips} ({\textit{Frankliniella occidentalis}})},
   year      = {2019},
   month     = jun,
+  abstract  = {Western flower thrips (WFT) is a serious pest on rose crops. Semiochemical-mediated WFT--rose interactions have been studied because different rose cultivars interact differently with WFT. Thus, the volatile organic compounds (VOCs) emitted from six commercial rose cultivars were collected in vivo by headspace-solid phase microextraction (HS-SPME) in greenhouses and analyzed by gas chromatography coupled to mass spectrometry. Qualitative and quantitative differences were found among the six cultivars, and terpenes were the most abundant class of VOCs, followed by aromatic hydrocarbons, and esters. Principal component analysis (PCA) was further applied to identify the VOCs with the greatest influence on the differentiation of the cultivars. Cramer{\textquoteright}s phi coefficients between the VOCs emitted by each cultivar and their thrips incidence were also estimated. Accordingly, nine VOCs that could generate chemotactic responses in WFT were selected for testing in a linear track olfactometer, and seven of them elicited responses in female WFT at at least to one of the test concentrations. Thrips showed significant positive chemotaxis (attraction) to six compounds, and of these, the highest response was detected for ($\pm$)-theaspirane. These findings suggest that the tested VOCs could be used to develop a new strategy for the control of WFT on roses.},
   doi       = {10.1007/s10340-019-01131-7},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -2121,6 +2122,19 @@ blue (405 nm) laser light, which could be detected with CLSM.},
   volume    = {155},
   doi       = {10.1007/s10658-019-01854-4},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Cook2007,
+  author    = {Cook, Samantha M. and Khan, Zeyaur R. and Pickett, John A.},
+  title     = {The use of push-pull strategies in integrated pest management},
+  year      = {2007},
+  month     = jan,
+  number    = {1},
+  pages     = {375--400},
+  volume    = {52},
+  abstract  = {Push-pull strategies involve the behavioral manipulation of insect pests and their natural enemies via the integration of stimuli that act to make the protected resource unattractive or unsuitable to the pests (push) while luring them toward an attractive source (pull) from where the pests are subsequently removed. The push and pull components are generally nontoxic. Therefore, the strategies are usually integrated with methods for population reduction, preferably biological control. Push-pull strategies maximize efficacy of behavior-manipulating stimuli through the additive and synergistic effects of integrating their use. By orchestrating a predictable distribution of pests, efficiency of population-reducing components can also be increased. The strategy is a useful tool for integrated pest management programs reducing pesticide input. We describe the principles of the strategy, list the potential components, and present case studies reviewing work on the development and use of push-pull strategies in each of the major areas of pest control.},
+  doi       = {10.1146/annurev.ento.52.110405.091407},
+  publisher = {Annual Reviews},
 }
 
 @Article{Cortesero2000,
