@@ -1,6 +1,6 @@
 ---
 title: 'Mite-Virus-Plant Complexes of Importance for Florida Agriculture: *Phyllocoptes fructiphilus* and *Brevipalpus californicus*'
-author: 'Austin N. Fife'
+author: 'Austin N Fife'
 date: '2021'
 month: 'December'
 institution: 'The University of Florida'
