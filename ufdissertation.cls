@@ -260,12 +260,12 @@
         By \\*[\baselineskip]%
         \MakeUppercase{\@author}%
         \vfill%
-        A \MakeUppercase{\@ThesisType} PRESENTED TO THE GRADUATE SCHOOL \\%
+        A DISSERTATION PRESENTED TO THE GRADUATE SCHOOL \\%
         OF THE UNIVERSITY OF FLORIDA IN PARTIAL FULFILLMENT \\%
         OF THE REQUIREMENTS FOR THE DEGREE OF \\%
-        \MakeUppercase{\@DegreeType} \\*[\baselineskip]%
+        \MakeUppercase{\@degree} \\*[\baselineskip]%
         UNIVERSITY OF FLORIDA \\*[\baselineskip]%
-        \@DegreeYear%
+        \@date%
     \end{center}
     \newpage
     }
@@ -534,12 +534,12 @@
     \providecommand{\@ThesisType}{#1}
     }
 
-\providecommand{\degreeType}[1]{%       Masters of (blah) or Doctorate of Philosophy etc would be the expected text here.
-    \providecommand{\@DegreeType}{#1}
+\providecommand{\degree}[1]{%       Masters of (blah) or Doctorate of Philosophy etc would be the expected text here.
+    \providecommand{\@degree}{#1}
     }
 
-\providecommand{\degreeYear}[1]{%       Almost certainly this would be the current year.
-    \providecommand{\@DegreeYear}{#1}
+\providecommand{\date}[1]{%       Almost certainly this would be the current year.
+    \providecommand{\@date}{#1}
     }
 
 \providecommand{\chair}[2][]{%          This is the chair and takes an optional argument (default blank) for the cochair.
@@ -593,7 +593,7 @@
     \newpage
     \vspace*{\fill}
     \begin{center}
-        \textcopyright{} \@DegreeYear{} \@author
+        \textcopyright{} \@date{} \@author
     \end{center}
     \vspace*{\fill}
     \newpage
@@ -661,7 +661,7 @@
             \begin{center}\realSingleSpace
                 Abstract of \@ThesisType{} Presented to the Graduate School \\
                 of the University of Florida in Partial Fulfillment of the \\
-                Requirements for the Degree of \@DegreeType\\[\baselineskip]
+                Requirements for the Degree of \@degree\\[\baselineskip]
             
                 \bgroup\@docTitle\egroup\\[\baselineskip]
 
@@ -669,7 +669,7 @@
                 
                 \@author \\[\baselineskip]
                 
-                \@DegreeMonth{} \@DegreeYear\\[\baselineskip]
+                \@DegreeMonth{} \@date\\[\baselineskip]
             \end{center}
             \bgroup\realSingleSpace\vspace*{-\baselineskip}
             \hfill \break

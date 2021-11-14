@@ -276,7 +276,7 @@
     \end{center}
     \newpage
     }
-
+    
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%% Header Formatting %%%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -499,12 +499,10 @@
   \newcommand{\euro}{€}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
+\usepackage{upquote}
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
+
 \usepackage{color}
 %\newcommand{\VerbBar}{|}
 %\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
@@ -520,85 +518,42 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 % End of CII add
 
-% This gives us rules below the headers
-% \AtBeginDocument{%
+% % Stolen from book.cls and modified
+% \let\RToldchapter\chapter
+% \renewcommand{\chapter}{\if@openright\RTcleardoublepage
+% 		    \else\clearpage\fi
+% 		    \thispagestyle{empty}%
+% 		    \global\@topnum\z@
+% 		    \@afterindentfalse
+% 		    \secdef\@chapter\@schapter}
+
+
+% \newcommand{\RTcleardoublepage}{
+% 	\clearpage\if@twoside \ifodd\c@page\else
+% 	\thispagestyle{empty}\hbox{}\newpage
+% 	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 % 
-% % Psych majors: You do not need the following six lines, as it conflicts with apacite, so comment them out.
-%   \let\oldthebibliography=\thebibliography
-%   \let\endoldthebibliography=\endthebibliography
-%   \renewenvironment{thebibliography}[1]{
-%     \oldthebibliography{#1}
-%     \addcontentsline{toc}{chapter}{\bibname}
-%   }{\endoldthebibliography}
-%  %%%%%% end of things for psych majors to comment out
+% \let\RToldcleardoublepage\cleardoublepage
+% \renewcommand{\cleardoublepage}{\RTcleardoublepage}
+
+% % adjust margins for binding  (changed 2007-04-24 tgp)
+% \setlength{\oddsidemargin}{.5in}
+% \setlength{\evensidemargin}{0in}
+% \setlength{\textwidth}{6.0in}
+% \setlength{\textheight}{9.0in}
+% \setlength\topmargin{0in}
+% \addtolength\topmargin{-\headheight}
+% \addtolength\topmargin{-\headsep}
 % 
-%   \let\oldtheindex=\theindex
-%   \let\endoldtheindex=\endtheindex
-%   \renewenvironment{theindex}{
-%     \oldtheindex
-%     \addcontentsline{toc}{chapter}{\indexname}
-%   }{\endoldtheindex}
-% }
-
-% Stolen from book.cls and modified
-\let\RToldchapter\chapter
-\renewcommand{\chapter}{\if@openright\RTcleardoublepage
-		    \else\clearpage\fi
-		    \thispagestyle{empty}%
-		    \global\@topnum\z@
-		    \@afterindentfalse
-		    \secdef\@chapter\@schapter}
-
-% % Stolen from book.cls PBC 5/12/05
-% % Using this to actually show "Chapter 1" in TOC instead of "1"
-% \def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
-%                        \if@mainmatter
-%                          \refstepcounter{chapter}%
-%                          \typeout{\@chapapp\space\thechapter.}%
-%                          \addcontentsline{toc}{chapter}%
-%                          {\@chapapp\space\thechapter:\space#1}%
-%                        \else
-%                          \addcontentsline{toc}{chapter}{#1}%
-%                        \fi
-%                     \else
-%                       \addcontentsline{toc}{chapter}{#1}%
-%                     \fi
-%                     \chaptermark{#1}%
-%                     \addtocontents{lof}{\protect\addvspace{10\p@}}%
-%                     \addtocontents{lot}{\protect\addvspace{10\p@}}%
-%                     \if@twocolumn
-%                       \@topnewpage[\@makechapterhead{#2}]%
-%                     \else
-%                       \@makechapterhead{#2}%
-%                       \@afterheading
-%                     \fi}
-
-\newcommand{\RTcleardoublepage}{
-	\clearpage\if@twoside \ifodd\c@page\else
-	\thispagestyle{empty}\hbox{}\newpage
-	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
-
-\let\RToldcleardoublepage\cleardoublepage
-\renewcommand{\cleardoublepage}{\RTcleardoublepage}
-
-% adjust margins for binding  (changed 2007-04-24 tgp)
-\setlength{\oddsidemargin}{.5in}
-\setlength{\evensidemargin}{0in}
-\setlength{\textwidth}{6.0in}
-\setlength{\textheight}{9.0in}
-\setlength\topmargin{0in}
-\addtolength\topmargin{-\headheight}
-\addtolength\topmargin{-\headsep}
-
-%\setlength{\oddsidemargin}{.6in}
-%\setlength{\evensidemargin}{0in}
-%\setlength{\textwidth}{5.9in}
-\addtolength\headheight{2.5pt}
-%\addtolength\topmargin{-\headheight}
-%\addtolength\topmargin{-\headsep}
-%\addtolength\textheight{1in}
-%\addtolength\textheight{\headheight}
-%\addtolength\textheight{\headsep}
+% %\setlength{\oddsidemargin}{.6in}
+% %\setlength{\evensidemargin}{0in}
+% %\setlength{\textwidth}{5.9in}
+% \addtolength\headheight{2.5pt}
+% %\addtolength\topmargin{-\headheight}
+% %\addtolength\topmargin{-\headsep}
+% %\addtolength\textheight{1in}
+% %\addtolength\textheight{\headheight}
+% %\addtolength\textheight{\headsep}
 
 \def\degree#1{\gdef \@degree{#1}}
 \def\@degree{\@latex@warning@no@line{No \noexpand\degree given}}
@@ -620,6 +575,8 @@
 \@altadvisorfalse
 \def\thesistype#1{\gdef \@thesistype{#1}}
 \def\@thesistype{\@latex@warning@no@line{No \noexpand\thesistype given}}
+\def\month#1{\gdef \@month{#1}}
+\def\@month{\@latex@warning@no@line{No \noexpand\month given}}
 
 \renewcommand\l@chapter[2]{%
   \ifnum \c@tocdepth >\m@ne
@@ -646,20 +603,8 @@
   \else
     \@restonecolfalse
   \fi
-  \chapter*{Acknowledgements}
   \fontsize{12}{14}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
-
-\newenvironment{preface}{%
-  \if@twocolumn
-    \@restonecoltrue\onecolumn
-  \else
-    \@restonecolfalse
-  \fi
-  \chapter*{Preface}
-  \fontsize{12}{14}\selectfont
-}{\clearpage \if@restonecol\twocolumn\fi}%
-% End of CII add
 
 \newenvironment{abstract}{%
   \if@twocolumn
@@ -669,6 +614,41 @@
   \fi
   \chapter*{Abstract}
   \fontsize{12}{14}\selectfont
+   \newpage %Since the abstract needs to be a phantom chapter, we need to force a newpage.
+            \phantomsection
+            \addcontentsline{toc}{chapter}{ABSTRACT}
+            \label{abstract}
+            \begin{center}\realSingleSpace
+                Abstract of @\thesistype Presented to the Graduate School \\
+                of the University of Florida in Partial Fulfillment of the \\
+                Requirements for the Degree of \@degree\\[\baselineskip]
+                \bgroup\@docTitle\egroup\\[\baselineskip]
+
+                By\\[\baselineskip]
+                
+                \@author \\[\baselineskip]
+                
+                \@month{} \@date\\[\baselineskip]
+            \end{center}
+            \bgroup\realSingleSpace\vspace*{-\baselineskip}
+            \hfill \break
+                \noindent Chair: \@advisor \\}% 
+                \noindent Cochair: \@altadvisor \\% If you have no Co-Chair
+            \noindent Major: \@Major \\
+            \egroup
+            
+        \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
+        \setcounter{secnumdepth}{5}
+        \docBodytrue
+        
+        \titlecontents{chapter}[2em]
+            {\addvspace{8pt}}
+            {%
+            {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}%
+            \ifchapterCapOff\else\color{blue}\uppercase\fi% Decide if we auto capitalize the chapter in TOC or not
+            }%
+            {}
+            {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
 }{\clearpage \if@restonecol\twocolumn\fi}%
 
 \newenvironment{dedication}{%
@@ -677,28 +657,14 @@
   \else
     \@restonecolfalse
   \fi
-  \chapter*{Dedication}
   \fontsize{12}{14}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
 
 
-\ifx\@pdfoutput\@undefined
-  \newcommand{\RTpercent}{\@percentchar\space}
-  \AtBeginDvi{\special{!\RTpercent Reed College LaTeX Thesis Class 2001/12/04 SN}}
-  \AtBeginDvi{\special{rawpostscript \RTpercent Reed College LaTeX Thesis Class 2001/12/04 SN}}
-\else
-  \AtEndDocument{\pdfinfo{/Creator	(Reed College LaTeX Thesis Class 2001/12/04 SN)}}
-\fi
-
 % From JSS
 % Added by CII
 \renewcommand{\title}[1]{\def\@title{#1}}
-%\newcommand{\Shorttitle}[1]{\def\@Shorttitle{#1}}
-\newcommand{\Plainauthor}[1]{\def\@Plainauthor{#1}}
 \newcommand{\Abstract}[1]{\def\@Abstract{#1}}
-%\newcommand{\Keywords}[1]{\def\@Keywords{#1}}
-%\newcommand{\Plainkeywords}[1]{\def\@Plainkeywords{#1}}
 \newcommand{\Acknowledgements}[1]{\def\@Acknowledgements{#1}}
 \newcommand{\Dedication}[1]{\def\@Dedication{#1}}
-\newcommand{\Preface}[1]{\def\@Preface{#1}}
 % End of CII add

@@ -76,10 +76,10 @@ knitr::include_graphics('figure/rrv_ipm_plot_map_2019_griffin.png')
 Flower samples were collected from all roses once before beginning the treatments on week 1 and once at the end of the experiment on week 12. For weeks 2 through 11, flower samples were collected weekly. starting from the top rows of each block, until each row was sampled three times (see *\@ref(fig:athens-ipm-2019)* and *\@ref(fig:griff-ipm-2019)*). Disease severity was recorded weekly according to the Horsfall-Barratt Scale [@Horsfall1945]. Roses displaying symptoms of RRD had tissues sent to the Plant Disease Diagnostic Clinic at the North Florida Reasearch and Extension Center(PDC) for virus confirmation. Flower cuttings of about ~12 cm were taken and placed in 50 ml centrifuge tubes. Flowers were placed flower side down and submerged with 15 ml of 95% ethanol. Once the lid was secured, the the tube was shaken vigorously for a few seconds to help dislodge any mites. Samples were processed using the washing methods of @Monfreda2007, eriophyoid mites were counted and identified as previously described.
 
 
-### Phenology Field Study {#mm-pheno}
+### Phenology field study {#mm-pheno}
 In order to be sure that a further series of IPM trials would be successful, we monitored a population of *P. fructiphilus* in Tallahassee which had mites but no RRD. Rose cuttings were collected periodically from four plots in the landscape of a church in Leon County, FL from 2020-2021: The site had two plantings of 2-3 years old Double Pink Knockout roses, with open sun exposure, ~0.3 \si{\metre} spacing, and natural watering. Blocks were divided into 24 plots of ~3 \si{\metre}$^2$, with approximately 12 roses per plot. Samples were processed as previously described in \@ref(mm-survey). After washing, plant tissues were placed into in paper bags and put into a drying oven for ~48 hrs at 50 &deg;C, after which dry weight was recorded. Mites were counted and recorded to track changes in the mite populations. Roses were pruned once on the beginning of July 2020 by a professional landscaping crew.
 
-### IPM Field Trials, Tallahassee 2021 {#mm-ipm-talla}
+### IPM field trials, Tallahassee 2021 {#mm-ipm-talla}
 A second trial of IPM was conducted in Tallahassee, FL. This site did not have RRD present, but had verified populations of *P. fructiphilus* present in the landscape (see APPENDIX). Spray applications were done weekly for 12 weeks from May to August 2021. Treatments were made on the same day each week, weather permitting. 
 
 **Roses**
@@ -105,7 +105,7 @@ grid::grid.raster(tiff::readTIFF('figure/rrv_ipm_plot_map_2021_talla.tif'))
 All data from all trials was processed and analyzed using R version 4.1.1 [@RCT2021]. The data were all count data, so a Zero-Inflated Poisson Model [@Zeileis2008] was required for the ASM data [@Hothorn2008], while Generalized Linear Mixed Models [@Bates2015] were used for all of the IPM and phenology trials. Estimated marginal means (least squares means) [@Lenth2021] and Tukey Contrasts Multiple Comparisons of Means were used to determine significant effects. In addition, about ~5\% of early samples collected from the Tallahassee field trials were missing dry weights. Missing weight data was estimated and imputted using Multivariate Imputation by Chained Equations via the mice package [@vanBuuren2011]. 
 
 ## Results {#results-asm-ipm-pheno}
-### ASM Trials {#results-asm}
+### ASM trials {#results-asm}
 ```{r asm-graph, cache = TRUE, cache.extra = file.mtime('figure/rrv_actigard_graph.png'), fig.cap="SAR-induction trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. water = Water Control, High = 100 \\si{\\milli\\gram}/\\si{\\liter} Actigard50WG® (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), low = 50 \\si{\\milli\\gram}/\\si{\\liter} Actigard50WG® (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), Spiro = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), All products were applied for 12 weeks. Flower cuttings were taken weekly to record the numbers of herbivorous mites.", fig.scap="SAR-induction trials on Pink Double Knock Out® roses to control \\textit{Phyllocoptes fructiphilus} in Athens and Griffin, GA", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/rrv_actigard_graph.png')
 ```
@@ -145,7 +145,7 @@ knitr::include_graphics('figure/rrv_pheno_bargraph.png')
 ```
 
 
-### IPM Trials {#results-ipm}
+### IPM trials {#results-ipm}
 ```{r ipm-talla-erios, cache = TRUE, cache.extra = file.mtime('figure/rrv_ipm_graph_erios_talla.png'), fig.cap="IPM trials on Pink Double Knock Out® roses to control \\textit{P. fructiphilus} in Tallahassee, FL with five treatments. Statistical significance was determined using Tukey contrasts for multiple Comparisons of means. Groups which share letters are not statistically different from one another. $\\alpha = 0.05$. Water = Water Control, ASM = Actigard50WG® (Syngenta, Greensboro, NC, USA) acibenzolar-S-methyl (ASM), Spiro = Kontos® Miticide Insecticide - Spirotetramat (Bayer Corporation, Whippany, New Jersey, USA), Mites = \\textit{Amblyseius swirkii} predatory mite mini sachets on hooks (Ambly-S, Arbico Organics, Oro Valley, AZ, USA), MA = \\textit{A. swirskii} + Actigard combined treatments. All products were applied at their label rates for 12 weeks. Flower cuttings were taken weekly to record the numbers of \\textit{P. fructiphilus} and other herbivorous mites.", fig.scap="IPM trials on Pink Double Knock Out® roses to control \\textit{P. fructiphilus} in Tallahassee, FL with five treatments", out.width="80%", warning=FALSE}
 knitr::include_graphics('figure/rrv_ipm_graph_erios_talla.png')
 ```
