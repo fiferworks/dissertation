@@ -1,6 +1,6 @@
 ---
 title: 'Mite-Virus-Plant Complexes of Importance for Florida Agriculture: *Phyllocoptes fructiphilus* and *Brevipalpus californicus*'
-author: 'Austin Nathaniel Fife'
+author: 'Austin N. Fife'
 date: '2021'
 month: 'December'
 institution: 'The University of Florida'
@@ -52,7 +52,7 @@ abstract: |
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
-acknowledgements: |
+acknowledgments: |
   `r paste(readLines(here::here("prelims", "00--acknowledgments.Rmd")), collapse = "\n  ")`
 dedication: |
   `r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`
