@@ -67,11 +67,12 @@
 
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
-% Added by ANF
+% Added by ANF from ufldissertation template
 \usepackage{siunitx}
 \usepackage{textgreek}
 \usepackage{pdfpages}
 \usepackage{placeins}
+
 
 % Syntax highlighting #22
 $if(highlighting-macros)$
@@ -87,6 +88,8 @@ $endif$
 \advisor{$advisor$}
 \institution{$institution$}
 \degree{$degree$}
+\department{$department$}
+\thesistype{$thesistype$}
 %If you have two advisors for some reason, you can use the following
 % Uncommented out by CII
 $if(altadvisor)$
@@ -148,8 +151,6 @@ $if(csl-refs)$
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 $endif$
-
-\renewcommand{\contentsname}{Table of Contents}
 % End of CII addition
 
 \setlength{\parskip}{0pt}
@@ -163,20 +164,61 @@ $endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\Acknowledgements{
-$acknowledgements$
-}
-
 \Dedication{
 $dedication$
 }
 
-\Preface{
-$preface$
+\Acknowledgements{
+$acknowledgements$
 }
 
 \Abstract{
-$abstract$
+ \newpage %Since the abstract needs to be a phantom chapter, we need to force a newpage.
+            \phantomsection
+            \addcontentsline{toc}{chapter}{ABSTRACT}
+            \label{abstract}
+            \begin{center}\realSingleSpace
+                Abstract of @\thesistype Presented to the Graduate School \\
+                of the University of Florida in Partial Fulfillment of the \\
+                Requirements for the Degree of \@degree\\[\baselineskip]
+                \bgroup\@docTitle\egroup\\[\baselineskip]
+
+                By\\[\baselineskip]
+                
+                \@author \\[\baselineskip]
+                
+                \@month{} \@date\\[\baselineskip]
+            \end{center}
+            \bgroup\realSingleSpace\vspace*{-\baselineskip}
+            \hfill \break
+            \ifExists{@advisor}{%
+                \noindent Chair: \@advisor \\}%   If we have a chair recorded, display it.
+                % {%                              If we don't toss a warning out, but proceed.
+                %     \@latex@warning{You haven't specified a committee chair using the command \chair. Hopefully this is intentional!}
+                % }
+            % \ifExists{@altadvisor}{%
+                \noindent Cochair: \@altadvisor \\% If there is a Co-Chair provided, then list it.
+                % }{%                             Else, toss a warning, even though this is probably normal.
+                %     \@latex@warning{You haven't specified a committee co-chair using the optional argument of the command \chair. Hopefully this is intentional!}
+                % }
+            \noindent Major: \@Major \\
+            \egroup
+            
+            $abstract$
+            
+        \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
+        \setcounter{secnumdepth}{5}
+        \docBodytrue
+        
+        \titlecontents{chapter}[2em]
+            {\addvspace{8pt}}
+            {%
+            {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}%
+            \ifchapterCapOff\else\color{blue}\uppercase\fi% Decide if we auto capitalize the chapter in TOC or not
+%                                                               Based on if overrideChapters option is present.
+            }%
+            {}
+            {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
 }
 
 $for(header-includes)$
@@ -192,11 +234,33 @@ $endfor$
 
 % Everything below added by CII
 $if(title)$
-  \maketitle
+  \maketitle%     Titlepage comes first
+    \newpage
+    \vspace*{\fill}
+    \begin{center}
+        \textcopyright{} \@date{} \@author
+    \end{center}
+    \vspace*{\fill}
+    \newpage
+
+    \setcounter{secnumdepth}{-1}% We don't want chapter numbers until later, 
+                                % So let's kill off the table of contents depth detector until we want to start counting.
 $endif$
 
 \frontmatter % this stuff will be roman-numbered
 \pagestyle{empty} % this removes page numbers from the frontmatter
+
+$if(dedication)$
+  \begin{dedication}
+    \vspace*{\fill}%% We want the dedication to be centered. So we use \vspace*{\fill} above and below.
+            \begin{center}% We also want to center the dedication horizontally.
+            \realSingleSpace
+              $dedication$
+            \end{center}
+            \vspace*{\fill}
+  \end{dedication}
+$endif$
+
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -211,27 +275,46 @@ $if(preface)$
 $endif$
 
 $if(toc)$
-  \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+  % \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
   \setcounter{secnumdepth}{$toc-depth$}
   \setcounter{tocdepth}{$toc-depth$}
-  \tableofcontents
+  {\realSingleSpace\tableofcontents}%
 $endif$
 
-\listoftables
+\ifhaveTables
+        {\realSingleSpace\listoftables}%    List of tables comes next, if you have one.
+        \addcontentsline{toc}{chapter}{LIST OF TABLES}
+    \fi
+    
+    \ifhaveFigures
+        {\realSingleSpace\listoffigures}%   List of figures comes next, if you have one.
+        \addcontentsline{toc}{chapter}{LIST OF FIGURES}
+    \fi
+    
+    \ifhaveObjects
+        {\realSingleSpace \listofObjects}%{List of Objects}}% List of Objects is last, if you have one.
+        \addcontentsline{toc}{chapter}{LIST OF OBJECTS}
+    \fi
 
 
-\listoffigures
+\title{$title$}
+\author{$author$}
+% The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
+\date{$date$}
+\division{$division$}
+\advisor{$advisor$}
+\institution{$institution$}
+\degree{$degree$}
+%If you have two advisors for some reason, you can use the following
+% Uncommented out by CII
+$if(altadvisor)$
+\altadvisor{$altadvisor$}
+$endif$
 
 $if(abstract)$
   \begin{abstract}
     $abstract$
   \end{abstract}
-$endif$
-
-$if(dedication)$
-  \begin{dedication}
-    $dedication$
-  \end{dedication}
 $endif$
 
 \mainmatter % here the regular arabic numbering starts

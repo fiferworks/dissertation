@@ -29,7 +29,7 @@
 \ProcessOptions\relax
 \LoadClass{book}
 
-% from ufl template -AF
+% added from ufl template by ANF
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%     Edits to the base class before loading any packages     %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,7 +88,7 @@
     {caption}
     \captionsetup[table]{skip=0pt}
 
-%\RequirePackage{tocloft}%              This is an often recommended package, but generates tons of errors/instability DO NOTE USE.
+%\RequirePackage{tocloft}%              This is an often recommended package, but generates tons of errors/instability DO NOT USE.
 
 \RequirePackage[plain]{algorithm}%      Load the algorithm environment, which we hijack into the "Objects" environment.
 %                                               The "plain" option is to remove the special algorithm formating in the text.
@@ -257,8 +257,8 @@
 %%% Maketitle needs to be redefined to make the titlepage look how they want. 
 %       Actual parameters for the title page would be nice.
 %%%%%%%
-\providecommand{\@docTitle}{\MakeUppercase{\@title}}%   Use this command to force uppercase titles, 
-%                                                           but provide an option to over ride this; using overrideTitles.
+\providecommand{\@docTitle}{\MakeUppercase{\@title}}%   Use this command to force uppercase titles,
+%but provide an option to over ride this; using overrideTitles.
 \renewcommand{\maketitle}{%
     \begin{center}
         \thispagestyle{empty}%
@@ -267,7 +267,7 @@
         By \\*[\baselineskip]%
         \MakeUppercase{\@author}%
         \vfill%
-        A DISSERTATION PRESENTED TO THE GRADUATE SCHOOL \\%
+        A \MakeUppercase{\@thesistype} PRESENTED TO THE GRADUATE SCHOOL \\%
         OF THE UNIVERSITY OF FLORIDA IN PARTIAL FULFILLMENT \\%
         OF THE REQUIREMENTS FOR THE DEGREE OF \\%
         \MakeUppercase{\@degree} \\*[\baselineskip]%
@@ -336,6 +336,151 @@
 \titlespacing{\subsubsection}{0pt}{10pt}{0pt}
 %% End of Header formating
 
+%%%%%%%
+%%% Table of Contents, List of Figures, and List of Tables fixes: They wanted hyperlinked dotted lines between the chapter name and the page number. They also want all uppercase "TABLE OF CONTENTS".
+%%%%%%%
+
+%% Fix the formatting of the various numbers.
+\renewcommand*{\thefigure}{\thechapter-\arabic{figure}}%            Change the dot to a hyphen for list of figures.
+\renewcommand*{\theequation}{\thechapter-\arabic{equation}}%        Change the equation to chapter - equation#
+\renewcommand*{\thetable}{\thechapter-\arabic{table}}%              Change the dot to a hyphen for list of tables.
+\renewcommand*{\thealgorithm}{\thechapter-\arabic{algorithm}}%      Change objects to be chapter - object #.
+
+
+
+%%% Fix the titles of the "List Of ...", complete with adding the page/title at the top where applicable.
+\renewcommand*\listfigurename{LIST OF FIGURES
+    
+    \underline{\smash{Figures}} \hfill \underline{\smash{page}}
+    
+    \vspace*{-0.7\baselineskip}
+    }%
+
+\renewcommand*\listtablename{LIST OF TABLES
+    
+    \underline{\smash{Tables}} \hfill \underline{\smash{page}}
+    
+    \vspace*{-0.7\baselineskip}
+    }%
+
+\renewcommand{\contentsname}{TABLE OF CONTENTS
+    
+    \hspace*{0pt}\hfill \underline{\smash{page}}
+    
+    \vspace*{-0.7\baselineskip}
+    }%
+    
+
+\titlecontents{figure}[2em]
+    {}
+    {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2.5em}{\contentslabel{2.5em}}\hyper@linkend}
+    {}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
+
+\titlecontents{table}[2em]
+    {}
+    {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2.5em}{\contentslabel{2.5em}}\hyper@linkend}
+    {}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
+    
+%%%% An attempt to do everything with titlesec and titletoc packages instead of using toclof package, to avoid package clashes.
+
+\contentsmargin[20pt]{0pt}% This is the right-margin for the table of contents, list of figures, list of tables, and list of objects.
+%                           The optional argument is the correction; the amount you shift multiline entries so that
+%                               they don't overlap the page number section.
+%                           The required argument is the offset from the normal right margin.
+
+%%%%%%%
+%%% Below is the formatting for all the Table of Contents hyperlinks, dotted lines, and horizontal alignment.
+
+\titlecontents{part}[0em]
+    {\mdseries}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\contentslabel{2.3em}}\hyper@linkend}
+    {}
+    {}
+
+\titlecontents{chapter}[0em]
+    {}
+    {\contentslabel{2em}}
+    {}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
+
+\titlecontents{section}[4.1em]
+    {}
+    {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}
+    {}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+
+\titlecontents{subsection}[6.4em]
+    {}
+    {\hspace*{-2.3em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2.3em}{\contentslabel{2.3em}}\hyper@linkend}
+    {}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+
+\titlecontents{subsubsection}[9.4em]
+    {}
+    {\hspace*{-3em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{3em}{\contentslabel{3em}}\hyper@linkend}
+    {}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+
+%%%%%% Next is the creation of the List of Objects code.
+%   Note: By default LaTeX only supports table of contents, List of tables and List of figures. The primary package to use to create a custom list is the tocloft package; but that has been depreciated and thus creates all kinds of cascading formatting problems with the other packages we use here. 
+%   However, we can hijack another well maintained package that generates (among other things) a custom "List of ...". Specifically, we hijack the "algorithms" package, which gives a "list of algorithms" and an "algorithm" environment that takes captions and, in general, does everything we want. We will hijack this, then retool it to format it how we want, and finally reskin the words a little bit to make it say "object" instead of "algorithm" where needed, in the output. Since this could be a bit confusing for the author (using an 'algorithm' environment to insert an object') we conclude by defining an "addObject" command that will allow the author to add an object via the sensible "addObject" command, and that command will do all the weird formating and call all the weird environments/factors/etc to make it work, all behind the scenes.
+%   Currently I don't have a good enough idea of what the formating or nature of "Objects" are, in order to actually write the "addObjects" command fully, but I have the shell defined and correct until I get additional parameters.
+
+
+%%% Hijack "list of algorithms" from the already-in-use caption package, but reskin it to be a "list of objects" instead.
+
+%%% Now setup everything to be formatted correctly as 'algorithms'.
+\contentsuse{algorithm}{loa}%   Switches the definitions of things like \contentslabel to algorithms for the
+%                                   titlecontents command that comes next.
+\titlecontents{algorithm}[2em]% Copied from the \titlecontents for table/figure, but pointed to 'algorithms' for now.
+    {}
+    {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2.5em}{\contentslabel{2.5em}}\hyper@linkend}
+    {}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
+    
+% Now we copy the existing "list of tables" command and patch it to work as a "list of Objects" command.
+\let\listofObjects\listoftables%                                        Copy command
+\patchcmd{\listofObjects}{\listtablename}{\listalgorithmname}{}{}%      Patch the three instances of \listtablename
+\patchcmd{\listofObjects}{\listtablename}{\listalgorithmname}{}{}%          to all be converted to the
+\patchcmd{\listofObjects}{\listtablename}{\listalgorithmname}{}{}%          \listalgorithmname.
+\patchcmd{\listofObjects}{lot}{loa}{}{}%                                Get the list of objects from the .loa file.
+
+
+%%% Now we do the reskin process; converting the default "algorithm" content to be "object" content.
+
+% Rename the "algorithms" name in the \listofObjects to be "Objects". Also include the other typesetting stuff
+%   like the "Object" and "page" above the list of actual objects.
+\renewcommand{\listalgorithmname}{LIST OF OBJECTS
+    
+    \underline{\smash{Objects}} \hfill \underline{\smash{page}}
+    
+    \vspace*{-0.7\baselineskip}
+    }%
+        
+\floatname{algorithm}{Object}% Change the word "Algorithm" in the in-line text to be "Object".
+
+%% NOTE ABOUT THE FOLLOWING \addObject COMMAND::
+%   I am still unclear about what exactly objects are, or how they are to be treated in the text. 
+%       This command is a temporary formating command, which can be adjusted to format the "object" input by an author,
+%       without the author actually needing to do much of anything, or knowing much of anything in the background.
+%       At a minimum, I suspect there will need to be another required argument, where the author will supply a hyperlink.
+%       As I understand it, the in-text object will be the caption, but clicking the caption/text should launch a url?
+
+\newcommand{\addObject}[2][H]{%    This command is for the user to add an 'object' to their dissertation,
+%                                   this command is intended to do all the formating for them, hiding the fact that we
+%                                   hijacked the 'algorithms' list and environments to do so.
+%                                   SYNTAX:: \addObject[#1]{#2}
+%                                       #1 Is an optional parameter that handles placement. We use `H` by default to force
+%                                           LaTeX to place it inline where the command is used, as best it can.
+%                                       #2 Is the required argument, which is the caption (ie text) of the object.
+    \begin{algorithm}[#1]
+        \captionof{algorithm}{#2}
+    \end{algorithm}
+    }%
+
+\setlength\parindent{1cm}
 
 % Added by CII
 \usepackage{ifxetex,ifluatex}
@@ -368,38 +513,7 @@
 % Add ',fontsize=\small' for more characters per line
 \usepackage{framed}
 \definecolor{shadecolor}{RGB}{248,248,248}
-% \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-% \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
-% \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}
-% \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-% \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-% \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
-% \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-% \newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-% \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-% \newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-% \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-% \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
-% \newcommand{\ImportTok}[1]{{#1}}
-% \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
-% \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-% \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-% \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-% \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{{#1}}}
-% \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-% \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
-% \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
-% \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{{#1}}}}
-% \newcommand{\BuiltInTok}[1]{{#1}}
-% \newcommand{\ExtensionTok}[1]{{#1}}
-% \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
-% \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{{#1}}}
-% \newcommand{\RegionMarkerTok}[1]{{#1}}
-% \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-% \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{{#1}}}}}
-% \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
-% \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{{#1}}}}
-% \newcommand{\NormalTok}[1]{{#1}}
+
 
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
@@ -407,35 +521,24 @@
 % End of CII add
 
 % This gives us rules below the headers
-\AtBeginDocument{%
-%   \fancyhf{}
-%   \fancyhead[LE,RO]{\thepage}
-% %  \fancyhead[RE]{\slshape \leftmark}
-% %  \fancyhead[LO]{\slshape \rightmark}
-% %	The above makes your headers in all caps. If you would like different headers, choose one of the following options (be sure to remove the % symbol from both the right and left headers):
-% 	 \fancyhead[RE]{\slshape \nouppercase \leftmark} % This makes the headers on the RIGHT side pages be italic and use lowercase With Capitals When Specified.
-% 	\fancyhead[LO]{\slshape \nouppercase \rightmark} % This does the same thing to the LEFT side pages
-% %	or
-% %	\fancyhead[RE]{\scshape \leftmark} % The RIGHT headers will be in small caps.
-% %	\fancyhead[LO]{\scshape \rightmark} %  And so will the LEFT headers
-%   \pagestyle{fancy}
-
-% Psych majors: You do not need the following six lines, as it conflicts with apacite, so comment them out.
-  \let\oldthebibliography=\thebibliography
-  \let\endoldthebibliography=\endthebibliography
-  \renewenvironment{thebibliography}[1]{
-    \oldthebibliography{#1}
-    \addcontentsline{toc}{chapter}{\bibname}
-  }{\endoldthebibliography}
- %%%%%% end of things for psych majors to comment out
-
-  \let\oldtheindex=\theindex
-  \let\endoldtheindex=\endtheindex
-  \renewenvironment{theindex}{
-    \oldtheindex
-    \addcontentsline{toc}{chapter}{\indexname}
-  }{\endoldtheindex}
-}
+% \AtBeginDocument{%
+% 
+% % Psych majors: You do not need the following six lines, as it conflicts with apacite, so comment them out.
+%   \let\oldthebibliography=\thebibliography
+%   \let\endoldthebibliography=\endthebibliography
+%   \renewenvironment{thebibliography}[1]{
+%     \oldthebibliography{#1}
+%     \addcontentsline{toc}{chapter}{\bibname}
+%   }{\endoldthebibliography}
+%  %%%%%% end of things for psych majors to comment out
+% 
+%   \let\oldtheindex=\theindex
+%   \let\endoldtheindex=\endtheindex
+%   \renewenvironment{theindex}{
+%     \oldtheindex
+%     \addcontentsline{toc}{chapter}{\indexname}
+%   }{\endoldtheindex}
+% }
 
 % Stolen from book.cls and modified
 \let\RToldchapter\chapter
@@ -515,6 +618,8 @@
 \global\let\@altadvisor\@empty
 \newif\if@altadvisor
 \@altadvisorfalse
+\def\thesistype#1{\gdef \@thesistype{#1}}
+\def\@thesistype{\@latex@warning@no@line{No \noexpand\thesistype given}}
 
 \renewcommand\l@chapter[2]{%
   \ifnum \c@tocdepth >\m@ne
