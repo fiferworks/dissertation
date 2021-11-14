@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.13)  13 NOV 2021 19:52
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.13)  13 NOV 2021 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -756,7 +756,7 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \TeXr@lab=\toks50
 )
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 189.
+h' as default language. on input line 231.
 (./thesis.aux
 
 LaTeX Warning: Label `tab:all-contrib-table' multiply defined.
@@ -773,46 +773,46 @@ LaTeX Warning: Label `tab:all-corr-table' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 231.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+31.
 (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 189.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 18
-9.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 231.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 23
+1.
 (c:/texlive/2021/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 189.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
-89.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 231.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 2
+31.
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 189.
-Package hyperref Info: Link coloring ON on input line 189.
+LaTeX Font Info:    ... okay on input line 231.
+Package hyperref Info: Link coloring ON on input line 231.
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -822,9 +822,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count351
 )
-LaTeX Info: Redefining \ref on input line 189.
-LaTeX Info: Redefining \pageref on input line 189.
-LaTeX Info: Redefining \nameref on input line 189.
+LaTeX Info: Redefining \ref on input line 231.
+LaTeX Info: Redefining \pageref on input line 231.
+LaTeX Info: Redefining \nameref on input line 231.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -873,11 +873,11 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 189.
-Package microtype Info: Applying patch `item' on input line 189.
-Package microtype Info: Applying patch `toc' on input line 189.
-Package microtype Info: Applying patch `eqnum' on input line 189.
-Package microtype Info: Applying patch `footnote' on input line 189.
+LaTeX Info: Redefining \microtypecontext on input line 231.
+Package microtype Info: Applying patch `item' on input line 231.
+Package microtype Info: Applying patch `toc' on input line 231.
+Package microtype Info: Applying patch `eqnum' on input line 231.
+Package microtype Info: Applying patch `footnote' on input line 231.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -902,12 +902,11 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 189.
+or `english'. on input line 231.
 [1
 
-] [2
+] [2] [1
 
-] [1
 
 ] [2
 
@@ -915,9 +914,9 @@ or `english'. on input line 189.
 ] [3] [4
 
 
-] (./thesis.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-.
+]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+63.
 (c:/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -925,245 +924,81 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmr' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+63.
 (c:/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-1.
+263.
 (c:/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-1.
+263.
 (c:/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1.
+(Font)              <12> on input line 263.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 1.
+(Font)              <9> on input line 263.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1.
+(Font)              <7> on input line 263.
 (c:/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (c:/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+63.
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 263.
 (c:/texlive/2021/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 263.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 1.
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 263.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 26
+3.
 (c:/texlive/2021/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-Underfull \vbox (badness 1297) has occurred while \output is active []
+) (./thesis.toc
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5] [6])
+[5]
+Underfull \hbox (badness 2035) in paragraph at lines 46--46
+ [] [][][]\TU/lmr/bx/it/12 BREVIPALPUS\TU/lmr/bx/n/12 -TRANSMITTED ORCHID FLECK
+ VIRUS IN-
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 49--49
+ [] [][][]\TU/lmr/bx/n/12 CONCLUSIONS: INVASIVE MITES ARE AN INCREASINGLY
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[7] [8
-
-] (./thesis.lot
-Overfull \vbox (8.448pt too high) detected at line 1
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 2
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 3
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 4
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 5
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 6
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 6--6
- [][] [][][]\TU/lmr/m/n/12 Contribution table for PCA of headspace VOCs collect
-ed with 
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 7
- []
-
-
-Underfull \hbox (badness 2310) in paragraph at lines 7--7
- [][] [][][]\TU/lmr/m/n/12 Correlation table for PCA of headspace VOCs collecte
-d with 
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 8
- []
-
-
-Overfull \vbox (9.0pt too high) detected at line 9
- []
-
-)
-\tf@lot=\write6
-\openout6 = `thesis.lot'.
-
-[9] [10
-
-] (./thesis.lof
-Overfull \vbox (9.0pt too high) detected at line 1
- []
-
-
-Overfull \vbox (9.0pt too high) detected at line 6
- []
-
-
-Overfull \vbox (32.99748pt too high) detected at line 7
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 10
- []
-
-
-Overfull \vbox (9.0pt too high) detected at line 13
- []
-
-
-Overfull \vbox (9.0pt too high) detected at line 14
- []
-
-
-Overfull \vbox (9.0pt too high) detected at line 17
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 18
- []
-
-[11]
-Overfull \vbox (8.568pt too high) detected at line 23
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 28
- []
-
-
-Overfull \vbox (9.0pt too high) detected at line 29
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 30
- []
-
-
-Overfull \vbox (9.0pt too high) detected at line 31
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 32
- []
-
-
-Overfull \vbox (32.99748pt too high) detected at line 33
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 34
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 35
- []
-
-
-Overfull \vbox (8.568pt too high) detected at line 36
- []
-
-
+[6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[12]
-Overfull \vbox (8.448pt too high) detected at line 37
- []
+[7
 
-
-Overfull \vbox (8.448pt too high) detected at line 38
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 39
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 40
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 41
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 42
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 43
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 44
- []
-
-
-Overfull \vbox (8.448pt too high) detected at line 46
- []
-
-)
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
-
-[13] [14
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[15] [16] [17
-
-
-] [18
-
-
-]
+] [8]
 Chapter 1.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [1
+
+
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1233,7 +1068,12 @@ File: thesis_files/figure-latex/oncidium-ofv-1.pdf Graphic file (type pdf)
 [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[23] [24]
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[24] [25] [26
+
+]
 Chapter 2.
 File: figure/full-1288fig1.jpg Graphic file (type bmp)
 <figure/full-1288fig1.jpg>
@@ -1242,18 +1082,16 @@ File: figure/full-1288fig2.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[25
-
-]
+[27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[26]
+[28]
 Underfull \vbox (badness 8000) has occurred while \output is active []
 
-[27] [28]
+[29] [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[29] [30]
+[31] [32]
 File: figure/rrv_survey_map_fl_pf.png Graphic file (type bmp)
 <figure/rrv_survey_map_fl_pf.png>
 File: figure/rrv_survey_map_fl_other.png Graphic file (type bmp)
@@ -1262,10 +1100,10 @@ File: figure/rrv_survey_map_years_pf.png Graphic file (type bmp)
 <figure/rrv_survey_map_years_pf.png>
 File: figure/rrv_survey_map_years_others.png Graphic file (type bmp)
 <figure/rrv_survey_map_years_others.png>
-[31] [32] [33] [34] [35]
+[33] [34] [35] [36] [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[36] [37] [38
+[38] [39] [40
 
 ]
 Chapter 3.
@@ -1276,16 +1114,16 @@ ex-text;!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[39]
+[41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[40]
+[42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[41] [42]
+[43] [44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[43]
+[45]
 File: thesis_files/figure-latex/voc-qsep-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/voc-qsep-1.pdf>
 File: thesis_files/figure-latex/voc-spme-1.pdf Graphic file (type pdf)
@@ -1293,10 +1131,10 @@ File: thesis_files/figure-latex/voc-spme-1.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[44]
+[46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[45] [46]
+[47] [48]
 Missing character: There is no Ɣ (U+0194) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
@@ -1326,7 +1164,7 @@ File: figure/rrv_volatiles_biplot_var_pca_qsep.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[47]
+[49]
 File: figure/rrv_volatiles_comparison_pca_comp_qsep.png Graphic file (type bmp)
 
 <figure/rrv_volatiles_comparison_pca_comp_qsep.png>
@@ -1335,7 +1173,7 @@ File: figure/rrv_volatiles_screeplot_pca_qsep.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48]
+[50]
 File: figure/rrv_volatiles_umap_rrd_qsep.png Graphic file (type bmp)
 <figure/rrv_volatiles_umap_rrd_qsep.png>
 File: figure/rrv_volatiles_umap_chems_rrd_qsep.png Graphic file (type bmp)
@@ -1343,7 +1181,7 @@ File: figure/rrv_volatiles_umap_chems_rrd_qsep.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[49]
+[51]
 File: figure/rrv_volatiles_biplot_var_pca_spme.png Graphic file (type bmp)
 <figure/rrv_volatiles_biplot_var_pca_spme.png>
 File: figure/rrv_volatiles_comparison_pca_comp_spme.png Graphic file (type bmp)
@@ -1352,7 +1190,7 @@ File: figure/rrv_volatiles_comparison_pca_comp_spme.png Graphic file (type bmp)
 
 Underfull \vbox (badness 4156) has occurred while \output is active []
 
-[50] [51] [52]
+[52] [53] [54]
 File: figure/rrv_volatiles_screeplot_pca_spme.png Graphic file (type bmp)
 <figure/rrv_volatiles_screeplot_pca_spme.png>
 File: figure/rrv_volatiles_umap_rrd_spme.png Graphic file (type bmp)
@@ -1360,13 +1198,13 @@ File: figure/rrv_volatiles_umap_rrd_spme.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[53]
+[55]
 File: figure/rrv_volatiles_umap_chems_rrd_spme.png Graphic file (type bmp)
 <figure/rrv_volatiles_umap_chems_rrd_spme.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[54]
+[56]
 File: figure/rrv_volatiles_biplot_var_pca_df.png Graphic file (type bmp)
 <figure/rrv_volatiles_biplot_var_pca_df.png>
 File: figure/rrv_volatiles_comparison_pca_comp_df.png Graphic file (type bmp)
@@ -1376,40 +1214,40 @@ File: figure/rrv_volatiles_screeplot_pca_df.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[55] [56] [57]
+[57] [58] [59]
 File: figure/rrv_volatiles_umap_chems_df.png Graphic file (type bmp)
 <figure/rrv_volatiles_umap_chems_df.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[58] [59]
-Overfull \hbox (3.91202pt too wide) in alignment at lines 809--814
+[60] [61]
+Overfull \hbox (3.91202pt too wide) in alignment at lines 887--892
  [] [] [] [] 
  []
 
 
-Overfull \hbox (3.91202pt too wide) in alignment at lines 814--819
+Overfull \hbox (3.91202pt too wide) in alignment at lines 892--897
  [] [] [] [] 
  []
 
 
-Overfull \hbox (3.91202pt too wide) in alignment at lines 819--821
+Overfull \hbox (3.91202pt too wide) in alignment at lines 897--899
  [] [] [] [] 
  []
 
 
-Overfull \hbox (3.91202pt too wide) in alignment at lines 821--823
+Overfull \hbox (3.91202pt too wide) in alignment at lines 899--901
  [] [] [] [] 
  []
 
 
-Overfull \hbox (3.91202pt too wide) in alignment at lines 823--898
+Overfull \hbox (3.91202pt too wide) in alignment at lines 901--976
  [] [] [] [] 
  []
 
-[60
+[62
 
-] [61] [62
+] [63] [64
 
 ]
 File: figure/rrv_graph_olfact_rose.png Graphic file (type bmp)
@@ -1419,82 +1257,82 @@ File: figure/rrv_graph_olfact_vocs.png Graphic file (type bmp)
 
 Underfull \vbox (badness 6461) has occurred while \output is active []
 
-[63]
+[65]
 File: figure/rrv_graph_olfact_vocs_time_choice.png Graphic file (type bmp)
 <figure/rrv_graph_olfact_vocs_time_choice.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[64]
+[66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[65]
+[67]
 Missing character: There is no Ɣ (U+0194) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[66]
+[68]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[67] [68]
+[69] [70]
 Chapter 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[69
+[71
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[70]
+[72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[71]
+[73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[72] [73]
+[74] [75]
 File: figure/rrv_asm_plot_2018_griffin.png Graphic file (type bmp)
 <figure/rrv_asm_plot_2018_griffin.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[74]
+[76]
 File: figure/rrv_asm_plot_2019_griffin.png Graphic file (type bmp)
 <figure/rrv_asm_plot_2019_griffin.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[75] [76]
+[77] [78]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[77]
+[79]
 File: figure/rrv_ipm_plot_map_2019_athens.png Graphic file (type bmp)
 <figure/rrv_ipm_plot_map_2019_athens.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[78]
+[80]
 File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
 <figure/rrv_ipm_plot_map_2019_griffin.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[79] [80]
+[81] [82]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[81]
+[83]
 File: thesis_files/figure-latex/talla-ipm-2021-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/talla-ipm-2021-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[82]
+[84]
 File: figure/rrv_actigard_graph.png Graphic file (type bmp)
 <figure/rrv_actigard_graph.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[83] [84] [85]
+[85] [86] [87]
 File: figure/rrv_pheno_bargraph.png Graphic file (type bmp)
 <figure/rrv_pheno_bargraph.png>
 File: figure/rrv_ipm_graph_erios_talla.png Graphic file (type bmp)
@@ -1504,7 +1342,7 @@ File: figure/rrv_ipm_graph_erios_talla_month.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[86
+[88
 
 
 ]
@@ -1513,7 +1351,7 @@ File: figure/rrv_ipm_graph_tets_talla.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[87]
+[89]
 File: figure/rrv_ipm_graph_tets_talla_month.png Graphic file (type bmp)
 <figure/rrv_ipm_graph_tets_talla_month.png>
 File: figure/rrv_ipm_graph_preds_talla.png Graphic file (type bmp)
@@ -1521,40 +1359,40 @@ File: figure/rrv_ipm_graph_preds_talla.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[88]
+[90]
 File: figure/rrv_ipm_graph_preds_talla_month.png Graphic file (type bmp)
 <figure/rrv_ipm_graph_preds_talla_month.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[89] [90] [91] [92
+[91] [92] [93] [94
 
 ]
 Chapter 5.
 File: thesis_files/figure-latex/fig-1-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig-1-1.pdf>
-[93]
+[95]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[94]
+[96]
 File: thesis_files/figure-latex/fig-2-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig-2-1.pdf>
-[95]
+[97]
 File: thesis_files/figure-latex/fig-3-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/fig-3-1.pdf>
-[96]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[97]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [98]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [99]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[100] [101] [102
+[100]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[102] [103] [104
 
 ]
 Chapter 6.
@@ -1562,18 +1400,12 @@ Missing character: There is no Ɣ (U+0194) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[103] [104]
+[105] [106]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[105
+[107
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[106]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[107]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [108]
@@ -1616,15 +1448,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [121]
-Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [122]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [123]
+Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
+ex-text;!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [124]
@@ -1655,15 +1487,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [133]
-Missing character: There is no ʻ (U+02BB) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [134]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [135]
+Missing character: There is no ʻ (U+02BB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [136]
@@ -1679,30 +1511,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [140]
-Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [141]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [142]
+Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
+ex-text;!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [143]
-Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
-ex-text;!
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [144]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[145]
 Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
 ex-text;!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[145] [146]
+[146]
+Missing character: There is no β (U+03B2) in font [lmroman12-regular]:mapping=t
+ex-text;!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[147] [148]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
@@ -1714,11 +1552,11 @@ File: pubs/pfruct-report.pdf Graphic file (type pdf)
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 2>
 
-Overfull \hbox (18.72968pt too wide) in paragraph at lines 2758--2759
+Overfull \hbox (18.72968pt too wide) in paragraph at lines 2836--2837
  [][] 
  []
 
-[147
+[149
 
 ]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
@@ -1727,41 +1565,41 @@ File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 2>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 2>
-[148]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 3>
-[149]
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
-File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 4>
 [150]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
-<use pubs/pfruct-report.pdf, page 5>
+<use pubs/pfruct-report.pdf, page 3>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 3>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 3>
+[151]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+[152]
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 5>
 File: pubs/pfruct-report.pdf Graphic file (type pdf)
 <use pubs/pfruct-report.pdf, page 5>
-[151] (./thesis.aux)
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+[153] [154] (./thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8517F846E6C1F3C75D53D6D2A3CA2667;14228.
+(rerunfilecheck)             Checksum: 41CABF84F7EE711C48FADF637EC4CDE1;14228.
  ) 
 Here is how much of TeX's memory you used:
- 28335 strings out of 476275
- 579222 string characters out of 5815120
- 1058576 words of memory out of 5000000
- 48485 multiletter control sequences out of 15000+600000
+ 28354 strings out of 476275
+ 579440 string characters out of 5815120
+ 1058525 words of memory out of 5000000
+ 48510 multiletter control sequences out of 15000+600000
  419750 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,18n,105p,11071b,922s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (171 pages).
+Output written on thesis.pdf (164 pages).
