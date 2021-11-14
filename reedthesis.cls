@@ -194,6 +194,148 @@
 %                                                       single space bullet point lists.
 \RequirePackage{indentfirst}%                       This will make sure the first paragraph of every chapter is indented.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Formating Design    %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%
+%%% Caption Configuration TBD
+% NOTE: Make sure long captions don't overlap numbers in ToC :: Done.
+
+\newcounter{figCount}%      This is an internal counter to track how many figures
+\setcounter{figCount}{1}%   We will start at 1 due to how stepping it works.
+
+\newcommand{\addFigure}[3][\Alph{figCount}]{%   Command to manually add a figure
+    \parbox{#2\textwidth}{\centering #1 \\ \includegraphics[width=#2\textwidth]{#3}}
+    \stepcounter{figCount}
+    }
+
+\newenvironment{multiFigure}% Environment that mimicks figure type environment,
+%                               Except it doesn't float around and it resets figCount.
+    {% Begin Environment Code
+        \setcounter{figCount}{1}
+        \minipage\textwidth
+    }
+    {% End Environment Code
+        \endminipage
+    }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Theorem environment definitions %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{theorem}{Theorem}[chapter]
+    \renewcommand{\thetheorem}{\thechapter-\arabic{theorem}}
+\newtheorem{claim}{Claim}[chapter]
+    \renewcommand{\theclaim}{\thechapter-\arabic{claim}}
+\newtheorem{lemma}{Lemma}[chapter]
+    \renewcommand{\thelemma}{\thechapter-\arabic{lemma}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Table Formatting %%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%% They want tables configured a certain way that makes the package "longtables" a more desirable option.
+%   More specifically, from their website on text-flow:
+%        Text must be continuous throughout the chapter. 
+%        It is best to place all tables and figures at the end of the appropriate chapter. 
+%        Avoid inserting them into the text of the chapter, unless you are able to do so 
+%        without leaving blank gaps at the bottom of text pages.
+%%%%%%%
+\RequirePackage{longtable}
+\RequirePackage{flafter}%   This package stops tables from floating backward up the text. 
+%                               This stops weirdness like tables appearing before the section they are in within the source.
+
+%%% Tables need to have their captions "sit" on the table, but figures shouldn't.
+
+
+%% End table configure
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Title Page Formating %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Maketitle needs to be redefined to make the titlepage look how they want. 
+%       Actual parameters for the title page would be nice.
+%%%%%%%
+\providecommand{\@docTitle}{\MakeUppercase{\@title}}%   Use this command to force uppercase titles, 
+%                                                           but provide an option to over ride this; using overrideTitles.
+\renewcommand{\maketitle}{%
+    \begin{center}
+        \thispagestyle{empty}%
+        \vspace*{-0.4in}\realSingleSpace{\@docTitle}%
+        \vfill%
+        By \\*[\baselineskip]%
+        \MakeUppercase{\@author}%
+        \vfill%
+        A DISSERTATION PRESENTED TO THE GRADUATE SCHOOL \\%
+        OF THE UNIVERSITY OF FLORIDA IN PARTIAL FULFILLMENT \\%
+        OF THE REQUIREMENTS FOR THE DEGREE OF \\%
+        \MakeUppercase{\@degree} \\*[\baselineskip]%
+        UNIVERSITY OF FLORIDA \\*[\baselineskip]%
+        \@date%
+    \end{center}
+    \newpage
+    }
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Header Formatting %%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Some headers by default have a huge margin between the top of the chapter text and the top margin, 
+%       which the grad school doesn't like. So we use the titlesec package and the \titleformat command to 
+%       directly access all aspects of chapters and parts to fix spacing, formating, and style.
+\titlelabel{\thetitle . \quad}
+
+%% Define chapter's style based on if we want chapters to auto-upper-case or not.
+
+\titleformat{\chapter}[hang]
+    {\uppercase}
+    {}
+    {0pt}
+    {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+    [\raggedright\doublespacing]
+    % Look into a gap between Chapter name and text (only when it's immediately text, gap between chapter name and section header is fine. See default chapter one for example. :: Fixed via the 'largestsep' package option for titlesec.
+\titleformat{\part}[hang]
+    {}
+    {}
+    {0pt}
+    {\centering\realSingleSpace\MakeUppercase}
+    {\raggedright\doublespacing}
+
+
+\titlespacing{\part}{0pt}{-0.7in}{0.5\baselineskip}
+
+\titlespacing{\chapter}{0pt}{-0.7in}{0\baselineskip}
+
+%%% Setup the formating for the actual section, subsection, and subsubsections in the text. We use the titlesec package here as it allows us to directly access the formating without having to renew the command and deal with all the code happening in the background for things like "table of contents" and pagebreaking.
+
+\setcounter{secnumdepth}{5}
+\titleformat{\section}%
+    {%
+        \bfseries\center\realSingleSpace%       We want \section to be bold (\bfseries), centered (\center), 
+    }%                                              and single spaced (\realSingleSpace)
+    {%
+        \thesection%                            The section number is held in \thesection
+    }%
+    {1em}%                                      The space between section number and text is the standard 1em
+    {}%
+
+\titleformat{\subsection}%
+    {\bfseries\raggedright\realSingleSpace}%
+    {\thesubsection}%
+    {1em}{}%
+\titleformat{\subsubsection}
+    {\bfseries\filright\realSingleSpace%     We want \subsubsection to be bold (\bfseries), left-justified (\filright), 
+    }%                                              and single spaced (\realSingleSpace)
+    {\thesubsubsection%                      The section number is held in \thesubsubsection
+    }%
+    {1em}%                                      The space between section number and text is the standard 1em
+    {}
+
+\titlespacing{\section}{0pt}{10pt}{0pt}
+\titlespacing{\subsection}{0pt}{10pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{10pt}{0pt}
+%% End of Header formating
+
 
 % Added by CII
 \usepackage{ifxetex,ifluatex}
@@ -442,71 +584,6 @@
 \else
   \AtEndDocument{\pdfinfo{/Creator	(Reed College LaTeX Thesis Class 2001/12/04 SN)}}
 \fi
-
-% I hacked the title page to all be the same font size
-% as requested by the library, BTS 2005
-
-\renewcommand{\maketitle}{%
-  {\pagestyle{empty}
-  \fontsize{12}{14}\selectfont
-  \begin{titlepage}
-  \newpage
-  \let\footnotesize\small
-  \let\footnoterule\relax
-  \let \footnote \thanks
-
-  \baselineskip = 1.4\baselineskip
-  \setbox0=\hbox{of the Requirements for the Degree}
-
-  \begin{center}
-    \setcounter{page}{1}
-    \null\vfil
-    {\fontsize{12}{14}\selectfont \@title}
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \vfil
-    A Thesis \\
-    Presented to \\
-    \@thedivisionof \ \@division \\
-    \@institution
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \vfil
-    In Partial Fulfillment \\
-    of the Requirements for the Degree \\
-    \@degree
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \bigskip
-    \centerline{}
-    \bigskip
-    {\fontsize{12}{14}\selectfont \lineskip .75em
-    \begin{tabular}[t]{c}%
-      \@author
-    \end{tabular}\par}
-    \vskip 1.5em
-    {\fontsize{12}{14}\selectfont \@date \par}
-  \end{center}\par
-  \end{titlepage}
-
-%% Approved for the division page
-  \cleardoublepage
-  {\fontsize{12}{14}
-  \setbox0=\hbox{Approved for the \@approvedforthe}
-  \thispagestyle{empty}
-  \null\vfil		% just below center of page
-  \par\vskip 6cm	% below center, not center
-  \centerline{\copy0}	% approved
-  \centerline{(\@department)} %major
-  \vskip 1cm		%space to sign
-  \centerline{\makebox[\wd0][c]{\hrulefill}
-	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\hrulefill} \fi}
-  \centerline{\makebox[\wd0][c]{\@advisor}
-	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\@altadvisor} \fi}
-  \par\vfil\null}
-  \cleardoublepage
-  }
-}
 
 % From JSS
 % Added by CII
