@@ -101,7 +101,7 @@ Samples were collected and processed using similar methods as previously describ
 grid::grid.raster(tiff::readTIFF('figure/rrv_ipm_plot_map_2021_talla.tif'))
 ```
 
-#### Analysis of field trial data {#mm-field-analyze}
+### Analysis of field trial data {#mm-field-analyze}
 All data from all trials was processed and analyzed using R version 4.1.1 [@RCT2021]. The data were all count data, so a Zero-Inflated Poisson Model [@Zeileis2008] was required for the ASM data [@Hothorn2008], while Generalized Linear Mixed Models [@Bates2015] were used for all of the IPM and phenology trials. Estimated marginal means (least squares means) [@Lenth2021] and Tukey Contrasts Multiple Comparisons of Means were used to determine significant effects. In addition, about ~5\% of early samples collected from the Tallahassee field trials were missing dry weights. Missing weight data was estimated and imputted using Multivariate Imputation by Chained Equations via the mice package [@vanBuuren2011]. 
 
 ## Results {#results-asm-ipm-pheno}
