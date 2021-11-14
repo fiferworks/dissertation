@@ -1,8 +1,7 @@
 ---
 title: 'Mite-Virus-Plant Complexes of Importance for Florida Agriculture: *Phyllocoptes fructiphilus* and *Brevipalpus californicus*'
 author: 'Austin Nathaniel Fife'
-date: '2021'
-month: 'December'
+date: 'December 2021'
 institution: 'The University of Florida'
 division: 'College of Agriculture and Life Sciences'
 advisor: 'Xavier Martini'
@@ -10,6 +9,7 @@ advisor: 'Xavier Martini'
 altadvisor: 'Mathews Paret'
 department: 'Entomology and Nematology'
 degree: 'Doctor of Philosophy'
+thesistype: 'Dissertation'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 
@@ -56,9 +56,6 @@ acknowledgements: |
 dedication: |
   `r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`
 #Use this section for your biography
-preface: |
-  Austin N. Fife received his B.S. degree in biology - zoology emphasis at Brigham Young University - Idaho at Rexburg, a M.S. in entomology at the University of Idaho at Moscow, and a Ph.D. in entomology and nematology at the University of Florida, Gainesville, where he specialized in acarology, biological control, chemical ecology, vector biology and plant-pathogen-arthropod interactions. He loves to spend time outdoors with his wife Liz and his two lovely daughters Violet and Juniper.
-
   
 # keywords: keywords #this isn't implemented yet
 # subject: subject #also not implemented
