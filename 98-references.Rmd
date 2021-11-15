@@ -28,16 +28,16 @@ may need to be removed for styles that don't require the hanging indent. -->
 \clearpage 
 \addcontentsline{toc}{chapter}{REFERENCES}
 \label{references}
-\bibliographystyle{\referenceStyle}
-{\singlespacing
- \bibliography{\referenceFile}}
+<!-- \bibliographystyle{\referenceStyle} -->
+\singlespacing
+ <!-- \bibliography{\referenceFile} -->
 
-\titlecontents{chapter}[0em]
-{\addvspace{8pt}}
-{\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}
-{}
-{\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
-\titlespacing{\chapter}{0pt}{-0.7in}{0.5\baselineskip}
+<!-- \titlecontents{chapter}[0em] -->
+<!-- {\addvspace{8pt}} -->
+<!-- {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend} -->
+<!-- {} -->
+<!-- {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*} -->
+<!-- \titlespacing{\chapter}{0pt}{-0.7in}{0.5\baselineskip} -->
 
 <!--This manually sets the location of the references to here-->
 <div id="refs"></div>

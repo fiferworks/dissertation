@@ -10,7 +10,7 @@ chair: 'Xavier Martini'
 cochair: 'Mathews Paret'
 # department: 'Entomology and Nematology'
 degree: 'Doctor of Philosophy'
-major: 'Major'
+major: 'Entomology and Nematology'
 thesistype: 'Dissertation'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
