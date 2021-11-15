@@ -31,26 +31,18 @@
 % Check out CTAN to see: https://www.ctan.org/
 %%
 \usepackage{siunitx}
-% \usepackage{graphicx,latexsym}
-% \usepackage{booktabs}
+\usepackage{textgreek}
+\usepackage[section]{placeins}
+\usepackage{pdfpages}
 % \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
 % \usepackage[hyphens]{url}
 % % Added by CII
 % \usepackage{lmodern}
 % \floatplacement{figure}{H}
 % % Thanks, @Xyv
-% \usepackage{calc}
+\usepackage{calc}
 % % End of CII addition
-% \usepackage{rotating}
-
-% Next line commented out by CII
-%%% \usepackage{natbib}
-% Comment out the natbib line above and uncomment the following two lines to use the new
-% biblatex-chicago style, for Chicago A. Also make some changes at the end where the
-% bibliography is included.
-%\usepackage{biblatex-chicago}
-%\bibliography{thesis}
-
+\usepackage{rotating}
 
 % % Added by CII (Thanks, Hadley!)
 % % Use ref for internal links
@@ -67,32 +59,6 @@ $if(highlighting-macros)$
   $highlighting-macros$
 $endif$
 
-% To pass between YAML and LaTeX the dollar signs are added by CII
-\title{$title$}
-\author{$author$}
-% The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\degreeyear{$year$}
-\degreemonth{$month$}
-% \division{$division$}
-\chair{$chair$}
-%If you have two advisors for some reason, you can use the following
-% Uncommented out by CII
-\cochair{$cochair$}
-% End of CII addition
-% \institution{$institution$}
-\degreetype{$degree$}
-\major{$major$}
-\thesistype{$thesistype$}
-%%% Remember to use the correct department!
-% \department{$department$}
-% if you're writing a thesis in an interdisciplinary major,
-% uncomment the line below and change the text as appropriate.
-% check the Senior Handbook if unsure.
-%\thedivisionof{The Established Interdisciplinary Committee for}
-% if you want the approval page to say "Approved for the Committee",
-% uncomment the next line
-%\approvedforthe{Committee}
-
 % Added by CII
 %%% Copied from knitr
 %% maxwidth is the original width if it's less than linewidth
@@ -107,36 +73,36 @@ $endif$
 % }
 % \makeatother
 
-% % From {rticles}
-% $if(csl-refs)$
-% \newlength{\csllabelwidth}
-% \setlength{\csllabelwidth}{3em}
-% \newlength{\cslhangindent}
-% \setlength{\cslhangindent}{1.5em}
-% % for Pandoc 2.8 to 2.10.1
-% \newenvironment{cslreferences}%
-%   {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
-%   \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
-%   {\par}
-% % For Pandoc 2.11+
-% % As noted by @mirh [2] is needed instead of [3] for 2.12
-% \newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
-%  {% don't indent paragraphs
-%   \setlength{\parindent}{0pt}
-%   % turn on hanging indent if param 1 is 1
-%   \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
-%   % set entry spacing
-%   \ifnum #2 > 0
-%   \setlength{\parskip}{#2\baselineskip}
-%   \fi
-%  }%
-%  {}
-% \usepackage{calc} % for calculating minipage widths
-% \newcommand{\CSLBlock}[1]{#1\hfill\break}
-% \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-% \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
-% \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-% $endif$
+% From {rticles}
+$if(csl-refs)$
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+% for Pandoc 2.8 to 2.10.1
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+% For Pandoc 2.11+
+% As noted by @mirh [2] is needed instead of [3] for 2.12
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc} % for calculating minipage widths
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+$endif$
 
 % \renewcommand{\contentsname}{Table of Contents}
 % End of CII addition
@@ -149,65 +115,79 @@ $endif$
 %   \usepackage[parfill]{parskip}
 % $endif$
 
-% \providecommand{\tightlist}{%
-%   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% TITLE PAGE                    % 
+% TITLE PAGE                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\maketitle                       % Titlepage comes first
+    \begin{center}
+        \thispagestyle{empty}%
+        \vspace*{-0.4in}\realSingleSpace{\MakeUppercase{$title$}}%
+        \vfill%
+        By \\*[\baselineskip]%
+        \MakeUppercase{$author$}%
+        \vfill%
+        A \MakeUppercase{$thesistype$} PRESENTED TO THE GRADUATE SCHOOL \\%
+        OF THE UNIVERSITY OF FLORIDA IN PARTIAL FULFILLMENT \\%
+        OF THE REQUIREMENTS FOR THE DEGREE OF \\%
+        \MakeUppercase{$degree$} \\*[\baselineskip]%
+        UNIVERSITY OF FLORIDA \\*[\baselineskip]%
+        $year$%
+    \end{center}
     \newpage
-      \vspace*{\fill}
-        \begin{center}
-            \textcopyright{} \@degreeyear{} \@author
-        \end{center}
-      \vspace*{\fill}
-    \newpage
-
-\setcounter{secnumdepth}{-1}     % We don't want chapter numbers until later, 
-                                 % So let's kill off the table of contents depth detector until we want to start counting.
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COPYRIGHT PAGE                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newpage
+      \vspace*{\fill}
+        \begin{center}
+            \textcopyright{} $year$ $author$
+        \end{center}
+      \vspace*{\fill}
+    \newpage
 
-
+\setcounter{secnumdepth}{-1}     % We don't want chapter numbers until later,
+                                 % So let's kill off the table of contents depth detector until we want to start counting.
+                                 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DEDICATION                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \begin{dedication}
-    \dedication{$dedication$}
-  \end{dedication}
+    \vspace*{\fill}               % We want the dedication to be centered,
+                                  % So we use \vspace*{\fill} above and below.
+\begin{center}                    % We also want to center the dedication horizontally.
+  \realSingleSpace
+  $dedication$
+\end{center}
+\vspace*{\fill}                   % Note that the * in \vspace* is necessary,
+                                  % as otherwise latex will ignore it here
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ACKNOWLEDGMENTS               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\begin{acknowledgments}
-    \acknowledgments{$acknowledgments$}
-\end{acknowledgments}
+$acknowledgments$
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE OF CONTENTS             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \realSingleSpace\tableofcontents  % Table of Contents comes fourth.
-    
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF TABLES                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \realSingleSpace\listoftables    % List of tables comes next, if you have one.
 \addcontentsline{toc}{chapter}{LIST OF TABLES}
-        
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF FIGURES               %
@@ -223,15 +203,46 @@ $endif$
 % ACADEMIC ABSTRACT             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\abstract{$abstract$}
+\newpage                         % Since the abstract needs to be a phantom chapter, we need to force a newpage.
+    \phantomsection
+    \addcontentsline{toc}{chapter}{ABSTRACT}
+    \label{abstract}
+        \begin{center}\realSingleSpace
+            Abstract of $thesistype$ Presented to the Graduate School \\
+            of the University of Florida in Partial Fulfillment of the \\
+            Requirements for the Degree of $degree$\\[\baselineskip]
+            \MakeUppercase{$title$}\\[\baselineskip]
+            By\\[\baselineskip]
+            $author$ \\[\baselineskip]
+            $month$ $year$\\[\baselineskip]
+        \end{center}
+    \realSingleSpace\vspace*{-\baselineskip}
+            \hfill \break
+                \noindent Chair: $chair$ \\    % If we have a chair recorded, display it.
+                $if(cochair)$
+                \noindent Cochair: $cochair$ \\% If there is a Co-chair provided, then list it.
+                $endif$
+            \noindent Major: $major$ \\
+   \hphantom{forcing a space here} \\
+$abstract$
+
+\addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
+        \setcounter{secnumdepth}{5}
+        \docBodytrue
+        
+        \titlecontents{chapter}[2em]
+            {\addvspace{8pt}}
+            {%
+            {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}%
+            \ifchapterCapOff\else\color{blue}\uppercase\fi% Decide if we auto capitalize the chapter in TOC or not
+%                                                               Based on if overrideChapters option is present.
+            }%
+            {}
+            {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHAPTERS                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\titlecontents{chapter}[2em]
-{\addvspace{8pt}}
-{\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}%
-{\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
 
 $body$
 
@@ -239,40 +250,102 @@ $body$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % APPENDICES                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\titlecontents{chapter}[0em]
-{\addvspace{8pt}}
-{\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX:  \expandafter\contentslabel{2em}}\hyper@linkend%
-{\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
-\renewcommand{\thechapter}{}     % Remove the number in front of the appendix chapter name.
-\titlecontents{chapter}[0em]
-{\addvspace{8pt}}
-{\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX: }\hyper@linkend%
-{\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
-\renewcommand{\thechapter}{}     % Remove the number in front of the appendix chapter name.
-\titleformat{\chapter}[hang]
-{\uppercase}
-{}
-{0pt}
-{\centering\realSingleSpace Appendix\\[-5pt]}
-[\raggedright\doublespacing]
-
-\setcounter{secnumdepth}{4}
-\newcounter{appendixVal}         % Use an entirely different counter for Appendicies to avoid
-                                 %  hyperref misdirections to other already existing chapters.
-\setcounter{appendixVal}{0}      %  Start counter at 0,
-                                 %  Since the counter is stepped before the label is made.
-\let\appendixChapter\chapter     % Save the normal \chapter command so we can temporarily hijack it.
-\renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the Appendix
-\renewcommand{\thechapter}{\Alph{appendixVal}}%
-\input{$appendix$}               % Imports Appendix from Rmarkdown
-\let\chapter\appendixChapter%
-
-\titleformat{\chapter}[hang]%
-{\uppercase}
-{}
-{0pt}
-% {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
-[\raggedright\doublespacing]
+$if(appendix)$
+        % \ifmultipleAppendix%                            If there are multiple appendicies, we should format it this way.
+        %     
+        %     %% I am told that now the grad school wants "APPENDIX A" above the first appendix etc for multi appendicies. I have included this option into the multiAppendix conditional under the assumption this is true.
+        %     \titleformat{\chapter}[hang]
+        %         {\uppercase}
+        %         {}
+        %         {0pt}
+        %         {\centering\realSingleSpace Appendix \thechapter \\[-5pt]}
+        %         [\raggedright\doublespacing]
+        % 
+        %     \setcounter{secnumdepth}{-1}%               We don't want the Appendix to have a number, but it should be linked.
+        %     
+        %     \phantomsection%                            We use a phantom section under the assumption that the appendicies 
+        %     %                                               will each individually be named via a \chapter command in the file.
+        % 
+        %     \addcontentsline{toc}{chapter}{APPENDIX}
+        % 
+        %     \addtocontents{toc}{\vspace{2 mm}}
+        %     \addtocontents{toc}{\protect\contentsline{part}{APPENDIX}{}{}}%
+        %     
+        %     \setcounter{secnumdepth}{4}
+        %     \newcounter{appendixVal}%                   Use an entirely different counter for Appendicies to avoid
+        %     %                                               hyperref misdirections to other already existing chapters.
+        %     \setcounter{appendixVal}{0}%                Start counter at 0,
+        %     %                                               Since the counter is stepped before the label is made.
+        %     \let\appendixChapter\chapter%                  Save the normal \chapter command so we can temporarily hijack it.
+        %     \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the 
+        %     %                                               Appendix counter to the normal chapter command.
+        %     \renewcommand{\thechapter}{\Alph{appendixVal}}% Force the ToC to display and link using the new counter.
+        %     \input{\appendixFile}%                      Input the appendix file, since we already checked that it exists.
+        %     \let\chapter\appendixChapter%               Reset the chapter command back to normal now that appendix is done.
+        %     
+        %     \titleformat{\chapter}[hang]%               Reset chapter titling to normal now that Appendix are done.
+        %         {\uppercase}
+        %         {}
+        %         {0pt}
+        %         {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+        %         [\raggedright\doublespacing]
+        % 
+             \titlecontents{chapter}[0em]
+                {\addvspace{8pt}}
+                {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX:  \expandafter\contentslabel{2em}}\hyper@linkend%
+                \ifchapterCapOff\else\color{blue}\uppercase\fi}
+                {}
+                {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+                \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
+                
+                \titlecontents{chapter}[0em]
+                {\addvspace{8pt}}
+                {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX: }\hyper@linkend%
+                \ifchapterCapOff\else\color{blue}\uppercase\fi}
+                {}
+                {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+                \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
+                
+                
+               \titleformat{\chapter}[hang]
+                {\uppercase}
+                {}
+                {0pt}
+                {\centering\realSingleSpace Appendix\\[-5pt]}
+                [\raggedright\doublespacing]
+                 %%%%%%%%%%%%%%
+                 
+    
+               
+               \setcounter{secnumdepth}{4}
+                \newcounter{appendixVal}%                  Use an entirely different counter for Appendicies to avoid
+            %                                               hyperref misdirections to other already existing chapters.
+                \setcounter{appendixVal}{0}%                Start counter at 0,
+            %                                               Since the counter is stepped before the label is made.
+                \let\appendixChapter\chapter%               Save the normal \chapter command so we can temporarily hijack it.
+                 \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the Appendix
+               \renewcommand{\thechapter}{\Alph{appendixVal}}%
+               
+                $appendix$
+                
+                 \let\chapter\appendixChapter% 
+                
+                %%%%%%%%%%%%%%
+                \titleformat{\chapter}[hang]%               
+                {\uppercase}
+                {}
+                {0pt}
+                {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+                [\raggedright\doublespacing]
+                            
+       \titlecontents{chapter}[0em]
+        {\addvspace{8pt}}
+        {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}
+        {}
+        {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+        
+    \titlespacing{\chapter}{0pt}{-0.7in}{0.5\baselineskip}
+$endif$
 
 
 
@@ -289,7 +362,7 @@ $body$
 \chapter{BIOGRAPHICAL SKETCH}
 \label{biography}
 \vspace*{-0.5\baselineskip}      % Offset the doublespacing between title and paragraph.
-\input{\$biography$}
+$biography$
         
 \setlength\parindent{1cm}
 
