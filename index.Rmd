@@ -1,15 +1,16 @@
 ---
 title: 'Mite-Virus-Plant Complexes of Importance for Florida Agriculture: *Phyllocoptes fructiphilus* and *Brevipalpus californicus*'
 author: 'Austin N Fife'
-date: '2021'
+year: '2021'
 month: 'December'
-institution: 'The University of Florida'
-division: 'College of Agriculture and Life Sciences'
-advisor: 'Xavier Martini'
+# institution: 'The University of Florida'
+# division: 'College of Agriculture and Life Sciences'
+chair: 'Xavier Martini'
 # If you have more two advisors, un-silence line 9:
-altadvisor: 'Mathews Paret'
-department: 'Entomology and Nematology'
+cochair: 'Mathews Paret'
+# department: 'Entomology and Nematology'
 degree: 'Doctor of Philosophy'
+major: 'Entomology and Nematology'
 thesistype: 'Dissertation'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
@@ -22,13 +23,11 @@ params:
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
 output:
-  thesisdown::thesis_pdf:
-    latex_engine: xelatex
-    fig_caption: yes
-    # thesisdown::thesis_word:
-    # reference_docx: uf-formatting-guide-jis.docx
-#  thesisdown::thesis_gitbook: default         
-#  thesisdown::thesis_epub: default
+  # thesisdown::thesis_pdf:
+  #   latex_engine: xelatex
+  #   fig_caption: yes
+    thesisdown::thesis_word:
+    reference_docx: uf-formatting-guide-jis.docx
 
 # Specify the location of the bibliography below
 bibliography: bib/thesis.bib
@@ -56,8 +55,12 @@ acknowledgments: |
   `r paste(readLines(here::here("prelims", "00--acknowledgments.Rmd")), collapse = "\n  ")`
 dedication: |
   `r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`
-#Use this section for your biography
-  
+appendix: |
+  `r paste(readLines(here::here("prelims", "99-appendix.Rmd")), collapse = "\n  ")`
+biography: |
+  `r paste(readLines(here::here("prelims", "99-biography.Rmd")), collapse = "\n  ")`
+
+
 # keywords: keywords #this isn't implemented yet
 # subject: subject #also not implemented
 # space_between_paragraphs: true
@@ -150,6 +153,6 @@ knitr::opts_chunk$set(fig.align="center", echo=FALSE, cache.comments = FALSE)
 
  
 <!--
-The acknowledgments, preface, dedication, and abstract are added into the PDF
+The acknowledgments, dedication, and abstract are added into the PDF
 version automatically by inputting them in the YAML at the top of this file.
 -->

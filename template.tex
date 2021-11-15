@@ -1,7 +1,7 @@
-% This is an adaptation of the the Reed College LaTeX thesis template.
-% Most of the work for the document class was done by Sam Noble (SN),
-% as well as this  template. Later comments etc. by Ben Salzberg (BTS).
-% Additional restructuring and APA support by Jess Youngberg (JY).
+% This is the Reed College LaTeX thesis template. Most of the work
+% for the document class was done by Sam Noble (SN), as well as this
+% template. Later comments etc. by Ben Salzberg (BTS). Additional
+% restructuring and APA support by Jess Youngberg (JY).
 % Your comments and suggestions are more than welcome; please email
 % them to cus@reed.edu
 %
@@ -15,81 +15,64 @@
 % to yourself and explaining commands.
 % Commenting also removes a line from the document;
 % very handy for troubleshooting problems. -BTS
-%
-%
-% This template was originally adapted by Kristen Sauby (KS) in 2017
-% to meet the requirements outlined in the University of Florida
-% Guide for Preparing Theses and Dissertations
-% http://graduateschool.ufl.edu/media/graduate-school/pdf-files/Guide-for-ETDs.pdf
-% http://graduateschool.ufl.edu/about-us/offices/editorial/thesis-and-dissertation/
-% https://helpdesk.ufl.edu/application-support-center/etd-technical-support/ms-word-and-latex-templates/
-%
-% Austin N Fife (AF) made some adaptations to the template and .cls files in 2021 to reduce
-% dependencies on external files, as well as integrating many of the edits from ismayc's depository
+
+% As far as I know, this follows the requirements laid out in
+% the 2002-2003 Senior Handbook. Ask a librarian to check the
+% document before binding. -SN
+
 %%
-%% Preamble and comments added by AF
+%% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\documentclass[12pt,final,CPage]{ufthesis}
-
-% moved packages from 'packages.tex' to the template file -AF
-% here you define all the packages you wish to use in your paper, the ones shown are not all necessary,
-% but all have a purpose and can be very useful, so leave these as default and add packages as necessary
-\usepackage{graphicx}
-\usepackage{microtype}
-%\usepackage[dvipdfmx]{graphicx}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{algpseudocode}
-\usepackage{tabularx}
-\usepackage[letterpaper,hmargin=1in,vmargin=1in]{geometry}
-\usepackage{lscape}
-%\usepackage{hanging}
-\usepackage{float}
-\usepackage{longtable}
-\usepackage[table]{xcolor}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{textcomp}
-%\usepackage[cmbright]{sfmath} % Comment this line to use Times New Roman Math Typeface\\
-\usepackage[nottoc]{tocbibind}
-\usepackage{booktabs}
-\usepackage{threeparttable}
-\usepackage{subfigure}
-\usepackage{flafter}
-\usepackage{placeins}
-\usepackage{rotating}
-\usepackage{calc}
-\usepackage{setspace}
-%\usepackage{ufenumerate}
-\usepackage{latexsym}
-\usepackage{epsf}
-\usepackage{epsfig}
-\usepackage{euscript}
-\usepackage[format=hang,justification=raggedright,singlelinecheck=0,labelsep=period]{caption}
-\usepackage[numbers,sort&compress]{natbib} %Use this set-up for numbered reference lists
-%\usepackage[authoryear]{natbib} %Use this set-up if you want an un-numbered reference list
-%\usepackage{hypernat}
+\documentclass{ufdissertation} %UF's 2019 Template --ANF
+% Packages are extensions to the basic LaTeX functions. Whatever you
+% want to typeset, there is probably a package out there for it.
+% Chemistry (chemtex), screenplays, you name it.
+% Check out CTAN to see: https://www.ctan.org/
+%%
 \usepackage{siunitx}
-%\usepackage[utf8]{inputenc}
 \usepackage{textgreek}
+\usepackage[section]{placeins}
 \usepackage{pdfpages}
-\usepackage[defaultlines=4,all]{nowidow}
-\raggedbottom
-\PassOptionsToPackage{hyphens}{url}\RequirePackage[linktoc=all]{hyperref}% Use this to provide intra-pdf hyperlinking and better toc
-\hypersetup{%               %           Setup the coloring of the links.
-%                           %           Currently the only necessary one is "colorlinks=true" and "linkcolor=blue".
-    colorlinks   = true,    %           Colours links instead of ugly boxes
-    urlcolor     = blue,    %           Colour for external hyperlinks
-    linkcolor    = blue,    %           Colour of internal links
-    citecolor    = blue     %           Colour of citations, could be ``red''
-    }
-\usepackage{letltxmacro}
-\LetLtxMacro{\oldhypertarget}{\hypertarget}
-\renewcommand{\hypertarget}[2]{\leavevmode\oldhypertarget{#1}{#2}}
-% % %DO NOT PLACE ANY PACKAGES AFTER THE HYPERREF SET UP
+% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+% \usepackage[hyphens]{url}
+% % Added by CII
+% \usepackage{lmodern}
+% \floatplacement{figure}{H}
+% % Thanks, @Xyv
+\usepackage{calc}
+% % End of CII addition
+\usepackage{rotating}
 
-%from ismayc/thesisdown, allows for changes made to newer release of pandoc
+% % Added by CII (Thanks, Hadley!)
+% % Use ref for internal links
+% \renewcommand{\hyperref}[2][???]{\autoref{#1}}
+% \def\chapterautorefname{Chapter}
+% \def\sectionautorefname{Section}
+% \def\subsectionautorefname{Subsection}
+% % End of CII addition
+
+% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
+
+% Syntax highlighting #22
+$if(highlighting-macros)$
+  $highlighting-macros$
+$endif$
+
+% Added by CII
+%%% Copied from knitr
+%% maxwidth is the original width if it's less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+% \makeatletter
+% \def\maxwidth{ %
+%   \ifdim\Gin@nat@width>\linewidth
+%     \linewidth
+%   \else
+%     \Gin@nat@width
+%   \fi
+% }
+% \makeatother
+
 % From {rticles}
 $if(csl-refs)$
 \newlength{\csllabelwidth}
@@ -121,78 +104,267 @@ $if(csl-refs)$
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 $endif$
 
-$if(highlighting-macros)$
-$highlighting-macros$
-$endif$
+% \renewcommand{\contentsname}{Table of Contents}
+% End of CII addition
 
-\def\UrlFont{\rmfamily}
+% \setlength{\parskip}{0pt}
 
-\renewcommand{\topfraction}{0.85}
-\renewcommand{\textfraction}{0.1}
-\renewcommand{\floatpagefraction}{0.75}
+% % Added by CII
+% $if(space_between_paragraphs)$
+%   %\setlength{\parskip}{\baselineskip}
+%   \usepackage[parfill]{parskip}
+% $endif$
 
-%this grabs the information provided in your yaml header and formats it using the .cls file
-\SetFullName{$author$}
-\SetThesisType{Dissertation}
-\SetDegreeType{$degree$}
-\SetGradMonth{$month$}
-\SetGradYear{$date$}
-\SetDepartment{$department$}
-\SetChair{$advisor$}
-\SetCochair{$altadvisor$}
-\SetTitle{$title$}
-
-%\include{usersetcommands}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \begin{document}
 
-%this creates and formats your title page using the data supplied from your yaml header
-	\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TITLE PAGE                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\makecopyright
+    \begin{center}
+        \thispagestyle{empty}%
+        \vspace*{-0.4in}\realSingleSpace{\MakeUppercase{$title$}}%
+        \vfill%
+        By \\*[\baselineskip]%
+        \MakeUppercase{$author$}%
+        \vfill%
+        A \MakeUppercase{$thesistype$} PRESENTED TO THE GRADUATE SCHOOL \\%
+        OF THE UNIVERSITY OF FLORIDA IN PARTIAL FULFILLMENT \\%
+        OF THE REQUIREMENTS FOR THE DEGREE OF \\%
+        \MakeUppercase{$degree$} \\*[\baselineskip]%
+        UNIVERSITY OF FLORIDA \\*[\baselineskip]%
+        $year$%
+    \end{center}
+    \newpage
 
-%this creates and formats your dedication page using the data supplied from your yaml header
-	\dedication{$dedication$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COPYRIGHT PAGE                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newpage
+      \vspace*{\fill}
+        \begin{center}
+            \textcopyright{} $year$ $author$
+        \end{center}
+      \vspace*{\fill}
+    \newpage
 
-% %this creates and formats your acknowledgements using the data supplied from your yaml header
-	\acknowledge{$acknowledgments$}
+\setcounter{secnumdepth}{-1}     % We don't want chapter numbers until later,
+                                 % So let's kill off the table of contents depth detector until we want to start counting.
+                                 
 
-%The list shown below gives a brief description of the major mathematical symbols defined in this work. For each
-%symbol, the page number corresponds to the place where the symbol is first used.} %
-\microtypesetup{protrusion=false}
-\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DEDICATION                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\listoftables % comment out if you don't have tables
-\microtypesetup{protrusion=false}
+    \vspace*{\fill}               % We want the dedication to be centered,
+                                  % So we use \vspace*{\fill} above and below.
+\begin{center}                    % We also want to center the dedication horizontally.
+  \realSingleSpace
+  $dedication$
+\end{center}
+\vspace*{\fill}                   % Note that the * in \vspace* is necessary,
+                                  % as otherwise latex will ignore it here
 
-\listoffigures % comment out if you don't have figures
-  %\setcounter{lofdepth}{2}
-\microtypesetup{protrusion=true}
 
-% Produced list of abbreviations or symbols
-% These commands don't work now, the TOC used to be preserved as a separate tex file
-% hopefully someone who needs these can find a way to fix them
-% \printindex[keylist]{KEY TO ABBREVIATIONS}{KEY TO ABBREVIATIONS}{}
-% \printindex[mathlist]{KEY TO SYMBOLS}{KEY TO SYMBOLS}{%
-% }% Produced list of abbreviations or symbols %
-%\printindex[keylist]{KEY TO ABBREVIATIONS}{KEY TO ABBREVIATIONS}{}
-%\printindex[mathlist]{KEY TO SYMBOLS}{KEY TO SYMBOLS}{%
-%\phantomsection
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGMENTS               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%this takes the 'abstract:' field from your yaml header and formats it
-  \abstract{$abstract$}
+$acknowledgments$
 
-%this adds a header which says 'CHAPTER' to the toc
-  \addtocontents{toc}{\protect\addvspace{10pt}\noindent{CHAPTER}\protect\hfill\par}{\pdfbookmark[0]{TABLE OF CONTENTS}{tableofcontents}
-  $body$
 
-%formats and injects the bibliography here
-\bibliography {bib/sample,bib/example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE OF CONTENTS             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\realSingleSpace\tableofcontents  % Table of Contents comes fourth.
 
-%this takes the 'preface:' field from your yaml header and uses it as the biography
-%removes the dependency on the .tex file
-  \biography{$preface$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF TABLES                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\realSingleSpace\listoftables    % List of tables comes next, if you have one.
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF FIGURES               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\realSingleSpace\listoffigures   % List of figures comes next, if you have one.
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF ABBREVIATIONS         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACADEMIC ABSTRACT             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage                         % Since the abstract needs to be a phantom chapter, we need to force a newpage.
+    \phantomsection
+    \addcontentsline{toc}{chapter}{ABSTRACT}
+    \label{abstract}
+        \begin{center}\realSingleSpace
+            Abstract of $thesistype$ Presented to the Graduate School \\
+            of the University of Florida in Partial Fulfillment of the \\
+            Requirements for the Degree of $degree$\\[\baselineskip]
+            \MakeUppercase{$title$}\\[\baselineskip]
+            By\\[\baselineskip]
+            $author$ \\[\baselineskip]
+            $month$ $year$\\[\baselineskip]
+        \end{center}
+    \realSingleSpace\vspace*{-\baselineskip}
+            \hfill \break
+                \noindent Chair: $chair$ \\    % If we have a chair recorded, display it.
+                $if(cochair)$
+                \noindent Cochair: $cochair$ \\% If there is a Co-chair provided, then list it.
+                $endif$
+            \noindent Major: $major$ \\
+   \hphantom{forcing a space here} \\
+$abstract$
+
+\addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
+        \setcounter{secnumdepth}{5}
+        \docBodytrue
+        
+        \titlecontents{chapter}[2em]
+            {\addvspace{8pt}}
+            {%
+            {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}%
+            \ifchapterCapOff\else\color{blue}\uppercase\fi% Decide if we auto capitalize the chapter in TOC or not
+%                                                               Based on if overrideChapters option is present.
+            }%
+            {}
+            {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTERS                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+$body$
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APPENDICES                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$if(appendix)$
+        % \ifmultipleAppendix%                            If there are multiple appendicies, we should format it this way.
+        %     
+        %     %% I am told that now the grad school wants "APPENDIX A" above the first appendix etc for multi appendicies. I have included this option into the multiAppendix conditional under the assumption this is true.
+        %     \titleformat{\chapter}[hang]
+        %         {\uppercase}
+        %         {}
+        %         {0pt}
+        %         {\centering\realSingleSpace Appendix \thechapter \\[-5pt]}
+        %         [\raggedright\doublespacing]
+        % 
+        %     \setcounter{secnumdepth}{-1}%               We don't want the Appendix to have a number, but it should be linked.
+        %     
+        %     \phantomsection%                            We use a phantom section under the assumption that the appendicies 
+        %     %                                               will each individually be named via a \chapter command in the file.
+        % 
+        %     \addcontentsline{toc}{chapter}{APPENDIX}
+        % 
+        %     \addtocontents{toc}{\vspace{2 mm}}
+        %     \addtocontents{toc}{\protect\contentsline{part}{APPENDIX}{}{}}%
+        %     
+        %     \setcounter{secnumdepth}{4}
+        %     \newcounter{appendixVal}%                   Use an entirely different counter for Appendicies to avoid
+        %     %                                               hyperref misdirections to other already existing chapters.
+        %     \setcounter{appendixVal}{0}%                Start counter at 0,
+        %     %                                               Since the counter is stepped before the label is made.
+        %     \let\appendixChapter\chapter%                  Save the normal \chapter command so we can temporarily hijack it.
+        %     \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the 
+        %     %                                               Appendix counter to the normal chapter command.
+        %     \renewcommand{\thechapter}{\Alph{appendixVal}}% Force the ToC to display and link using the new counter.
+        %     \input{\appendixFile}%                      Input the appendix file, since we already checked that it exists.
+        %     \let\chapter\appendixChapter%               Reset the chapter command back to normal now that appendix is done.
+        %     
+        %     \titleformat{\chapter}[hang]%               Reset chapter titling to normal now that Appendix are done.
+        %         {\uppercase}
+        %         {}
+        %         {0pt}
+        %         {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+        %         [\raggedright\doublespacing]
+        % 
+             \titlecontents{chapter}[0em]
+                {\addvspace{8pt}}
+                {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX:  \expandafter\contentslabel{2em}}\hyper@linkend%
+                \ifchapterCapOff\else\color{blue}\uppercase\fi}
+                {}
+                {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+                \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
+                
+                \titlecontents{chapter}[0em]
+                {\addvspace{8pt}}
+                {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX: }\hyper@linkend%
+                \ifchapterCapOff\else\color{blue}\uppercase\fi}
+                {}
+                {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+                \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
+                
+                
+               \titleformat{\chapter}[hang]
+                {\uppercase}
+                {}
+                {0pt}
+                {\centering\realSingleSpace Appendix\\[-5pt]}
+                [\raggedright\doublespacing]
+                 %%%%%%%%%%%%%%
+                 
+    
+               
+               \setcounter{secnumdepth}{4}
+                \newcounter{appendixVal}%                  Use an entirely different counter for Appendicies to avoid
+            %                                               hyperref misdirections to other already existing chapters.
+                \setcounter{appendixVal}{0}%                Start counter at 0,
+            %                                               Since the counter is stepped before the label is made.
+                \let\appendixChapter\chapter%               Save the normal \chapter command so we can temporarily hijack it.
+                 \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the Appendix
+               \renewcommand{\thechapter}{\Alph{appendixVal}}%
+               
+                $appendix$
+                
+                 \let\chapter\appendixChapter% 
+                
+                %%%%%%%%%%%%%%
+                \titleformat{\chapter}[hang]%               
+                {\uppercase}
+                {}
+                {0pt}
+                {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+                [\raggedright\doublespacing]
+                            
+       \titlecontents{chapter}[0em]
+        {\addvspace{8pt}}
+        {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}
+        {}
+        {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+        
+    \titlespacing{\chapter}{0pt}{-0.7in}{0.5\baselineskip}
+$endif$
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF REFERENCES            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% provided by file 98-references.Rmd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIOGRAPHICAL SKETCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{BIOGRAPHICAL SKETCH}
+\label{biography}
+\vspace*{-0.5\baselineskip}      % Offset the doublespacing between title and paragraph.
+$biography$
+        
+\setlength\parindent{1cm}
+
 
 \end{document}
-
-%------------------------------------------------------------------------------%
