@@ -24,27 +24,23 @@
 %% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\documentclass[12pt,twoside]{reedthesis}
+\documentclass[12pt, report]{ufdissertation} %UF's 2019 Template --ANF
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
 % Check out CTAN to see: https://www.ctan.org/
 %%
-\usepackage{graphicx,latexsym}
-\usepackage{amsmath}
-\usepackage{amssymb,amsthm}
-\usepackage{longtable,booktabs,setspace}
-\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
-\usepackage[hyphens]{url}
-% Added by CII
-\usepackage{hyperref}
-\usepackage{lmodern}
-\usepackage{float}
-\floatplacement{figure}{H}
-% Thanks, @Xyv
-\usepackage{calc}
-% End of CII addition
-\usepackage{rotating}
+% \usepackage{graphicx,latexsym}
+% \usepackage{booktabs}
+% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+% \usepackage[hyphens]{url}
+% % Added by CII
+% \usepackage{lmodern}
+% \floatplacement{figure}{H}
+% % Thanks, @Xyv
+% \usepackage{calc}
+% % End of CII addition
+% \usepackage{rotating}
 
 % Next line commented out by CII
 %%% \usepackage{natbib}
@@ -55,18 +51,13 @@
 %\bibliography{thesis}
 
 
-% Added by CII (Thanks, Hadley!)
-% Use ref for internal links
-\renewcommand{\hyperref}[2][???]{\autoref{#1}}
-\def\chapterautorefname{Chapter}
-\def\sectionautorefname{Section}
-\def\subsectionautorefname{Subsection}
-% End of CII addition
-
-% Added by CII
-\usepackage{caption}
-\captionsetup{width=5in}
-% End of CII addition
+% % Added by CII (Thanks, Hadley!)
+% % Use ref for internal links
+% \renewcommand{\hyperref}[2][???]{\autoref{#1}}
+% \def\chapterautorefname{Chapter}
+% \def\sectionautorefname{Section}
+% \def\subsectionautorefname{Subsection}
+% % End of CII addition
 
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
@@ -146,16 +137,16 @@ $if(csl-refs)$
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 $endif$
 
-\renewcommand{\contentsname}{Table of Contents}
+% \renewcommand{\contentsname}{Table of Contents}
 % End of CII addition
 
-\setlength{\parskip}{0pt}
+% \setlength{\parskip}{0pt}
 
-% Added by CII
-$if(space_between_paragraphs)$
-  %\setlength{\parskip}{\baselineskip}
-  \usepackage[parfill]{parskip}
-$endif$
+% % Added by CII
+% $if(space_between_paragraphs)$
+%   %\setlength{\parskip}{\baselineskip}
+%   \usepackage[parfill]{parskip}
+% $endif$
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -192,8 +183,8 @@ $if(title)$
   \maketitle
 $endif$
 
-\frontmatter % this stuff will be roman-numbered
-\pagestyle{empty} % this removes page numbers from the frontmatter
+% \frontmatter % this stuff will be roman-numbered
+% \pagestyle{empty} % this removes page numbers from the frontmatter
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -208,9 +199,9 @@ $if(preface)$
 $endif$
 
 $if(toc)$
-  \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
-  \setcounter{secnumdepth}{$toc-depth$}
-  \setcounter{tocdepth}{$toc-depth$}
+  % \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+  % \setcounter{secnumdepth}{$toc-depth$}
+  % \setcounter{tocdepth}{$toc-depth$}
   \tableofcontents
 $endif$
 
@@ -234,8 +225,8 @@ $if(dedication)$
   \end{dedication}
 $endif$
 
-\mainmatter % here the regular arabic numbering starts
-\pagestyle{fancyplain} % turns page numbering back on
+% \mainmatter % here the regular arabic numbering starts
+% \pagestyle{fancyplain} % turns page numbering back on
 
 $body$
 
