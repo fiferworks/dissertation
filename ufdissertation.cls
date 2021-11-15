@@ -37,7 +37,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Generic useful configuration packages, used to configure most of the stuff below.
-%\PassOptionsToPackage{hyphens}{url} append to second line?
 \RequirePackage[linktoc=all]{hyperref}% Use this to provide intra-pdf hyperlinking and better toc
 \hypersetup{%               %           Setup the coloring of the links. 
 %                           %           Currently the only necessary one is "colorlinks=true" and "linkcolor=blue".
@@ -59,7 +58,6 @@
     singlelinecheck=false]
     {caption}
     \captionsetup[table]{skip=0pt}
-
 %\RequirePackage{tocloft}%              This is an often recommended package, but generates tons of errors/instability DO NOTE USE.
 
 \RequirePackage[plain]{algorithm}%      Load the algorithm environment, which we hijack into the "Objects" environment.
@@ -71,9 +69,6 @@
 \RequirePackage{titletoc}%          Use this to manipulate Table of Contents styling
 \RequirePackage{float}
 \RequirePackage[numbers]{natbib}
-%\usepackage[numbers,sort&compress]{natbib} %change to this set-up for numbered reference lists
-%\usepackage[authoryear]{natbib} %Use this set-up if you want an un-numbered reference list
-%\usepackage{hypernat}
 
 \providecommand{\ifExists}[3]{%     Check to see if a macro is defined, for the use of detecting 
 %                                   which files have been supplied by the user.
@@ -260,12 +255,12 @@
         By \\*[\baselineskip]%
         \MakeUppercase{\@author}%
         \vfill%
-        A DISSERTATION PRESENTED TO THE GRADUATE SCHOOL \\%
+        A \MakeUppercase{\@ThesisType} PRESENTED TO THE GRADUATE SCHOOL \\%
         OF THE UNIVERSITY OF FLORIDA IN PARTIAL FULFILLMENT \\%
         OF THE REQUIREMENTS FOR THE DEGREE OF \\%
-        \MakeUppercase{\@degree} \\*[\baselineskip]%
+        \MakeUppercase{\@DegreeType} \\*[\baselineskip]%
         UNIVERSITY OF FLORIDA \\*[\baselineskip]%
-        \@date%
+        \@DegreeYear%
     \end{center}
     \newpage
     }
@@ -534,12 +529,12 @@
     \providecommand{\@ThesisType}{#1}
     }
 
-\providecommand{\degree}[1]{%       Masters of (blah) or Doctorate of Philosophy etc would be the expected text here.
-    \providecommand{\@degree}{#1}
+\providecommand{\degreeType}[1]{%       Masters of (blah) or Doctorate of Philosophy etc would be the expected text here.
+    \providecommand{\@DegreeType}{#1}
     }
 
-\providecommand{\date}[1]{%       Almost certainly this would be the current year.
-    \providecommand{\@date}{#1}
+\providecommand{\degreeYear}[1]{%       Almost certainly this would be the current year.
+    \providecommand{\@DegreeYear}{#1}
     }
 
 \providecommand{\chair}[2][]{%          This is the chair and takes an optional argument (default blank) for the cochair.
@@ -593,7 +588,7 @@
     \newpage
     \vspace*{\fill}
     \begin{center}
-        \textcopyright{} \@date{} \@author
+        \textcopyright{} \@DegreeYear{} \@author
     \end{center}
     \vspace*{\fill}
     \newpage
@@ -601,29 +596,29 @@
     \setcounter{secnumdepth}{-1}% We don't want chapter numbers until later, 
                                 % So let's kill off the table of contents depth detector until we want to start counting.
 
-    % \ifExists{dedicationFile}%  Dedication comes second
-    %     {% If we have defined a dedication file, import it.
+    \ifExists{dedicationFile}%  Dedication comes second
+        {% If we have defined a dedication file, import it.
             \vspace*{\fill}%% We want the dedication to be centered. So we use \vspace*{\fill} above and below.
             \begin{center}% We also want to center the dedication horizontally.
             \realSingleSpace
                 \input{\dedicationFile}
             \end{center}
             \vspace*{\fill}% Note that the * in \vspace* is necessary, as otherwise latex will ignore it here.
-        % }
-        % {
-        %     \@latex@warning{You haven't specified a dedication file using the command \setDedicationFile. Hopefully this is intentional!}
-        % }    
+        }
+        {
+            \@latex@warning{You haven't specified a dedication file using the command \setDedicationFile. Hopefully this is intentional!}
+        }    
 
 
-    % \ifExists{acknowledgementsFile}%    Acknowledgements come third.
-    %     {% If we have defined a acknowledgements file, import it.
+    \ifExists{acknowledgementsFile}%    Acknowledgements come third.
+        {% If we have defined a acknowledgements file, import it.
         \chapter{ACKNOWLEDGEMENTS}
         
         \input{\acknowledgementsFile}
-        % }
-        % {
-        %     \@latex@warning{You haven't specified a acknowledgements file using the command \setAcknowledgementsFile. Hopefully this is intentional!}
-        % }
+        }
+        {
+            \@latex@warning{You haven't specified a acknowledgements file using the command \setAcknowledgementsFile. Hopefully this is intentional!}
+        }
 
     {\realSingleSpace\tableofcontents}%     Table of Contents comes fourth.
     
@@ -642,26 +637,26 @@
         \addcontentsline{toc}{chapter}{LIST OF OBJECTS}
     \fi
 
-    % \ifExists{abbreviationsFile}
-    %     {%                              If we have defined a abbreviations file, import it.
+    \ifExists{abbreviationsFile}
+        {%                              If we have defined a abbreviations file, import it.
             \chapter{LIST OF ABBREVIATIONS}
             \label{abbreviations}
             \input{\abbreviationsFile}% Abbreviations come after our lists.
-        % }
-        % {
-        %     \@latex@warning{You haven't specified a abbreviations file using the command \setAbbreviationsFile. Hopefully this is intentional!}
-        % }
-        % 
+        }
+        {
+            \@latex@warning{You haven't specified a abbreviations file using the command \setAbbreviationsFile. Hopefully this is intentional!}
+        }
+        
     \newpage%                           Since the abstract needs to be a phantom chapter, we need to force a newpage.
-    % \ifExists{abstractFile}%            Abstract page comes next.
-    %     {%                              If we have defined a abstract file, import it.
+    \ifExists{abstractFile}%            Abstract page comes next.
+        {%                              If we have defined a abstract file, import it.
             \phantomsection
             \addcontentsline{toc}{chapter}{ABSTRACT}
             \label{abstract}
             \begin{center}\realSingleSpace
                 Abstract of \@ThesisType{} Presented to the Graduate School \\
                 of the University of Florida in Partial Fulfillment of the \\
-                Requirements for the Degree of \@degree\\[\baselineskip]
+                Requirements for the Degree of \@DegreeType\\[\baselineskip]
             
                 \bgroup\@docTitle\egroup\\[\baselineskip]
 
@@ -669,27 +664,27 @@
                 
                 \@author \\[\baselineskip]
                 
-                \@DegreeMonth{} \@date\\[\baselineskip]
+                \@DegreeMonth{} \@DegreeYear\\[\baselineskip]
             \end{center}
             \bgroup\realSingleSpace\vspace*{-\baselineskip}
             \hfill \break
             \ifExists{@Chair}{%
                 \noindent Chair: \@Chair \\}%   If we have a chair recorded, display it.
-                % {%                              If we don't toss a warning out, but proceed.
-                %     \@latex@warning{You haven't specified a committee chair using the command \chair. Hopefully this is intentional!}
-                % }
-            % \ifExists{@CoChair}{%
+                {%                              If we don't toss a warning out, but proceed.
+                    \@latex@warning{You haven't specified a committee chair using the command \chair. Hopefully this is intentional!}
+                }
+            \ifExists{@CoChair}{%
                 \noindent Cochair: \@CoChair \\% If there is a Co-Chair provided, then list it.
-                % }{%                             Else, toss a warning, even though this is probably normal.
-                %     \@latex@warning{You haven't specified a committee co-chair using the optional argument of the command \chair. Hopefully this is intentional!}
-                % }
+                }{%                             Else, toss a warning, even though this is probably normal.
+                    \@latex@warning{You haven't specified a committee co-chair using the optional argument of the command \chair. Hopefully this is intentional!}
+                }
             \noindent Major: \@Major \\
             \egroup
             
             \input{\abstractFile}
-        % }
-        % {
-        %     \@latex@warning{You haven't specified a abstract file using the command \setAbstractFile. Hopefully this is intentional!}
+        }
+        {
+            \@latex@warning{You haven't specified a abstract file using the command \setAbstractFile. Hopefully this is intentional!}
         }
         \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
         \setcounter{secnumdepth}{5}
@@ -704,8 +699,8 @@
             }%
             {}
             {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
-    %     
-    % }%
+        
+    }%
 
 \AtEndDocument{%                                            Use this to display the end-content files.
     \docBodyfalse
@@ -720,52 +715,52 @@
             {}
             {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
 
-    % \ifExists{appendixFile}%                                Appendix file comes first after user content.
-    %     {%                                                  If we have defined an appendix file, import it.
-    %     %                                                   NOTE: If there is only one Appendix, it should be of the form: Appendix:  "Appendix title". Otherwise it should use Alpha headers A, B, C, etc. :: Done, see below.
-    %     
-    %     
-    %     
-    %     \ifmultipleAppendix%                            If there are multiple appendicies, we should format it this way.
-        %     
-        %     %% I am told that now the grad school wants "APPENDIX A" above the first appendix etc for multi appendicies. I have included this option into the multiAppendix conditional under the assumption this is true.
-        %     \titleformat{\chapter}[hang]
-        %         {\uppercase}
-        %         {}
-        %         {0pt}
-        %         {\centering\realSingleSpace Appendix \thechapter \\[-5pt]}
-        %         [\raggedright\doublespacing]
-        % 
-        %     \setcounter{secnumdepth}{-1}%               We don't want the Appendix to have a number, but it should be linked.
-        %     
-        %     \phantomsection%                            We use a phantom section under the assumption that the appendicies 
-        %     %                                               will each individually be named via a \chapter command in the file.
-        %     %
-        %     %\addcontentsline{toc}{chapter}{APPENDIX}
-        %     %
-        %     \addtocontents{toc}{\vspace{2 mm}}
-        %     \addtocontents{toc}{\protect\contentsline{part}{APPENDIX}{}{}}%
-        %     
-        %     \setcounter{secnumdepth}{4}
-        %     \newcounter{appendixVal}%                   Use an entirely different counter for Appendicies to avoid
-        %     %                                               hyperref misdirections to other already existing chapters.
-        %     \setcounter{appendixVal}{0}%                Start counter at 0,
-        %     %                                               Since the counter is stepped before the label is made.
-        %     \let\appendixChapter\chapter%                  Save the normal \chapter command so we can temporarily hijack it.
-        %     \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the 
-        %     %                                               Appendix counter to the normal chapter command.
-        %     \renewcommand{\thechapter}{\Alph{appendixVal}}% Force the ToC to display and link using the new counter.
-        %     \input{\appendixFile}%                      Input the appendix file, since we already checked that it exists.
-        %     \let\chapter\appendixChapter%               Reset the chapter command back to normal now that appendix is done.
-        %     
-        %     \titleformat{\chapter}[hang]%               Reset chapter titling to normal now that Appendix are done.
-        %         {\uppercase}
-        %         {}
-        %         {0pt}
-        %         {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
-        %         [\raggedright\doublespacing]
-        % 
-        % \else%                                          If there is only one Appendix, we should do it this way:
+    \ifExists{appendixFile}%                                Appendix file comes first after user content.
+        {%                                                  If we have defined an appendix file, import it.
+        %                                                   NOTE: If there is only one Appendix, it should be of the form: Appendix:  "Appendix title". Otherwise it should use Alpha headers A, B, C, etc. :: Done, see below.
+        
+        
+        
+        \ifmultipleAppendix%                            If there are multiple appendicies, we should format it this way.
+            
+            %% I am told that now the grad school wants "APPENDIX A" above the first appendix etc for multi appendicies. I have included this option into the multiAppendix conditional under the assumption this is true.
+            \titleformat{\chapter}[hang]
+                {\uppercase}
+                {}
+                {0pt}
+                {\centering\realSingleSpace Appendix \thechapter \\[-5pt]}
+                [\raggedright\doublespacing]
+        
+            \setcounter{secnumdepth}{-1}%               We don't want the Appendix to have a number, but it should be linked.
+            
+            \phantomsection%                            We use a phantom section under the assumption that the appendicies 
+            %                                               will each individually be named via a \chapter command in the file.
+            %
+            %\addcontentsline{toc}{chapter}{APPENDIX}
+            %
+            \addtocontents{toc}{\vspace{2 mm}}
+            \addtocontents{toc}{\protect\contentsline{part}{APPENDIX}{}{}}%
+            
+            \setcounter{secnumdepth}{4}
+            \newcounter{appendixVal}%                   Use an entirely different counter for Appendicies to avoid
+            %                                               hyperref misdirections to other already existing chapters.
+            \setcounter{appendixVal}{0}%                Start counter at 0,
+            %                                               Since the counter is stepped before the label is made.
+            \let\appendixChapter\chapter%                  Save the normal \chapter command so we can temporarily hijack it.
+            \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the 
+            %                                               Appendix counter to the normal chapter command.
+            \renewcommand{\thechapter}{\Alph{appendixVal}}% Force the ToC to display and link using the new counter.
+            \input{\appendixFile}%                      Input the appendix file, since we already checked that it exists.
+            \let\chapter\appendixChapter%               Reset the chapter command back to normal now that appendix is done.
+            
+            \titleformat{\chapter}[hang]%               Reset chapter titling to normal now that Appendix are done.
+                {\uppercase}
+                {}
+                {0pt}
+                {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+                [\raggedright\doublespacing]
+
+        \else%                                          If there is only one Appendix, we should do it this way:
 
              \titlecontents{chapter}[0em]
                 {\addvspace{8pt}}
@@ -815,12 +810,12 @@
                 {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
                 [\raggedright\doublespacing]
                             
-        % \fi
+        \fi
         
-        % }
-        % {
-        %     \@latex@warning{You haven't specified an appendix file using the command \setAppendixFile. Hopefully this is intentional!}
-        % }
+        }
+        {
+            \@latex@warning{You haven't specified an appendix file using the command \setAppendixFile. Hopefully this is intentional!}
+        }
     %   Fix the spacing and formatting for the references and biographical sketch.
     %       For some reason LaTeX messes with the spacing when the `end of document' processes, so we reset it here.
     \titlecontents{chapter}[0em]
@@ -831,8 +826,8 @@
         
     \titlespacing{\chapter}{0pt}{-0.7in}{0.5\baselineskip}
     
-    % \ifExists{referenceFile}%                               Reference file comes next.
-    %     {%                                                  If we have defined a reference file, import it.
+    \ifExists{referenceFile}%                               Reference file comes next.
+        {%                                                  If we have defined a reference file, import it.
             \setcounter{secnumdepth}{-1}%                   And we don't want to number our chapters anymore.
             \renewcommand{\bibname}{REFERENCES}%            We want our heading to be "REFERENCES" not "Bibliography".
             \phantomsection
@@ -842,22 +837,22 @@
             \bibliographystyle{\referenceStyle}
             {\singlespacing
             \bibliography{\referenceFile}}
-        % }
-        % {
-        %     \@latex@warning{You haven't specified a reference file using the command \setReferenceFile. Hopefully this is intentional!}
-    %     % }
-    %     
-    % \ifExists{biographicalFile}%                            Biographical Sketch comes next (and last).
-    %     {%                                                  If we have defined a biography file, import it.
+        }
+        {
+            \@latex@warning{You haven't specified a reference file using the command \setReferenceFile. Hopefully this is intentional!}
+        }
+        
+    \ifExists{biographicalFile}%                            Biographical Sketch comes next (and last).
+        {%                                                  If we have defined a biography file, import it.
             \chapter{BIOGRAPHICAL SKETCH}
             \label{biography}
             \vspace*{-0.5\baselineskip}%                       Offset the doublespacing between title and paragraph.
             \input{\biographicalFile}
-    %     }
-    %     {
-    %         \@latex@warning{You haven't specified a biography file using the command \setBiographicalFile. Hopefully this is intentional!}
-    %     }
-    % }%                                                      End of End-Document processing.
+        }
+        {
+            \@latex@warning{You haven't specified a biography file using the command \setBiographicalFile. Hopefully this is intentional!}
+        }
+    }%                                                      End of End-Document processing.
 
 
 %%% End of automatic input of documents and lists.
