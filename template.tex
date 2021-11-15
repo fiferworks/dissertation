@@ -186,12 +186,7 @@ $endif$
   \addtocontents{toc}{\protect\addvspace{10pt}\noindent{CHAPTER}\protect\hfill\par}{\pdfbookmark[0]{TABLE OF CONTENTS}{tableofcontents}
   $body$
 
-%formats and injects the bibliography here
-\bibliography {bib/sample,bib/example}
-
-%this takes the 'preface:' field from your yaml header and uses it as the biography
-%removes the dependency on the .tex file
-  \biography{$preface$}
+\biography
 
 \end{document}
 
