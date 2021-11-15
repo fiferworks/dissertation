@@ -70,20 +70,20 @@ $endif$
 \title{$title$}
 \author{$author$}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{$date$}
-\division{$division$}
-\advisor{$advisor$}
-\institution{$institution$}
-\degree{$degree$}
+\degreeyear{$year$}
+\degreemonth{$month$}
+% \division{$division$}
+\chair{$chair$}
 %If you have two advisors for some reason, you can use the following
 % Uncommented out by CII
-$if(altadvisor)$
-\altadvisor{$altadvisor$}
-$endif$
+\cochair{$cochair$}
 % End of CII addition
-
+% \institution{$institution$}
+\degreetype{$degree$}
+\major{$major$}
+\thesistype{$thesistype$}
 %%% Remember to use the correct department!
-\department{$department$}
+% \department{$department$}
 % if you're writing a thesis in an interdisciplinary major,
 % uncomment the line below and change the text as appropriate.
 % check the Senior Handbook if unsure.
@@ -96,46 +96,46 @@ $endif$
 %%% Copied from knitr
 %% maxwidth is the original width if it's less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
+% \makeatletter
+% \def\maxwidth{ %
+%   \ifdim\Gin@nat@width>\linewidth
+%     \linewidth
+%   \else
+%     \Gin@nat@width
+%   \fi
+% }
+% \makeatother
 
-% From {rticles}
-$if(csl-refs)$
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-% for Pandoc 2.8 to 2.10.1
-\newenvironment{cslreferences}%
-  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
-  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
-  {\par}
-% For Pandoc 2.11+
-% As noted by @mirh [2] is needed instead of [3] for 2.12
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
-  % set entry spacing
-  \ifnum #2 > 0
-  \setlength{\parskip}{#2\baselineskip}
-  \fi
- }%
- {}
-\usepackage{calc} % for calculating minipage widths
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-$endif$
+% % From {rticles}
+% $if(csl-refs)$
+% \newlength{\csllabelwidth}
+% \setlength{\csllabelwidth}{3em}
+% \newlength{\cslhangindent}
+% \setlength{\cslhangindent}{1.5em}
+% % for Pandoc 2.8 to 2.10.1
+% \newenvironment{cslreferences}%
+%   {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+%   \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+%   {\par}
+% % For Pandoc 2.11+
+% % As noted by @mirh [2] is needed instead of [3] for 2.12
+% \newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+%  {% don't indent paragraphs
+%   \setlength{\parindent}{0pt}
+%   % turn on hanging indent if param 1 is 1
+%   \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+%   % set entry spacing
+%   \ifnum #2 > 0
+%   \setlength{\parskip}{#2\baselineskip}
+%   \fi
+%  }%
+%  {}
+% \usepackage{calc} % for calculating minipage widths
+% \newcommand{\CSLBlock}[1]{#1\hfill\break}
+% \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+% \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+% \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+% $endif$
 
 % \renewcommand{\contentsname}{Table of Contents}
 % End of CII addition
@@ -148,89 +148,149 @@ $endif$
 %   \usepackage[parfill]{parskip}
 % $endif$
 
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-\Acknowledgements{
-$acknowledgements$
-}
-
-\Dedication{
-$dedication$
-}
-
-\Preface{
-$preface$
-}
-
-\Abstract{
-$abstract$
-}
-
-$for(header-includes)$
-	$header-includes$
-$endfor$
-% End of CII addition
-%%
-%% End Preamble
-%%
-%
+% \providecommand{\tightlist}{%
+%   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \begin{document}
 
-% Everything below added by CII
-$if(title)$
-  \maketitle
-$endif$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TITLE PAGE                    % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \frontmatter % this stuff will be roman-numbered
-% \pagestyle{empty} % this removes page numbers from the frontmatter
+\maketitle                       % Titlepage comes first
+    \newpage
+      \vspace*{\fill}
+        \begin{center}
+            \textcopyright{} \@degreeyear{} \@author
+        \end{center}
+      \vspace*{\fill}
+    \newpage
 
-$if(acknowledgements)$
-  \begin{acknowledgements}
-    $acknowledgements$
-  \end{acknowledgements}
-$endif$
+\setcounter{secnumdepth}{-1}     % We don't want chapter numbers until later, 
+                                 % So let's kill off the table of contents depth detector until we want to start counting.
 
-$if(preface)$
-  \begin{preface}
-    $preface$
-  \end{preface}
-$endif$
 
-$if(toc)$
-  % \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
-  % \setcounter{secnumdepth}{$toc-depth$}
-  % \setcounter{tocdepth}{$toc-depth$}
-  \tableofcontents
-$endif$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COPYRIGHT PAGE                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$if(lot)$
-  \listoftables
-$endif$
 
-$if(lof)$
-  \listoffigures
-$endif$
 
-$if(abstract)$
-  \begin{abstract}
-    $abstract$
-  \end{abstract}
-$endif$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DEDICATION                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$if(dedication)$
   \begin{dedication}
-    $dedication$
+    \dedication{$dedication$}
   \end{dedication}
-$endif$
 
-% \mainmatter % here the regular arabic numbering starts
-% \pagestyle{fancyplain} % turns page numbering back on
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGMENTS               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{acknowledgments}
+    \acknowledgments{$acknowledgments$}
+\end{acknowledgments}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE OF CONTENTS             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\realSingleSpace\tableofcontents  % Table of Contents comes fourth.
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF TABLES                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\realSingleSpace\listoftables    % List of tables comes next, if you have one.
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+        
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF FIGURES               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\realSingleSpace\listoffigures   % List of figures comes next, if you have one.
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF ABBREVIATIONS         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACADEMIC ABSTRACT             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract{$abstract$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTERS                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titlecontents{chapter}[2em]
+{\addvspace{8pt}}
+{\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}%
+{\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
 
 $body$
 
 
-% Index?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APPENDICES                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titlecontents{chapter}[0em]
+{\addvspace{8pt}}
+{\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX:  \expandafter\contentslabel{2em}}\hyper@linkend%
+{\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+\renewcommand{\thechapter}{}     % Remove the number in front of the appendix chapter name.
+\titlecontents{chapter}[0em]
+{\addvspace{8pt}}
+{\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX: }\hyper@linkend%
+{\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+\renewcommand{\thechapter}{}     % Remove the number in front of the appendix chapter name.
+\titleformat{\chapter}[hang]
+{\uppercase}
+{}
+{0pt}
+{\centering\realSingleSpace Appendix\\[-5pt]}
+[\raggedright\doublespacing]
+
+\setcounter{secnumdepth}{4}
+\newcounter{appendixVal}         % Use an entirely different counter for Appendicies to avoid
+                                 %  hyperref misdirections to other already existing chapters.
+\setcounter{appendixVal}{0}      %  Start counter at 0,
+                                 %  Since the counter is stepped before the label is made.
+\let\appendixChapter\chapter     % Save the normal \chapter command so we can temporarily hijack it.
+\renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the Appendix
+\renewcommand{\thechapter}{\Alph{appendixVal}}%
+\input{$appendix$}               % Imports Appendix from Rmarkdown
+\let\chapter\appendixChapter%
+
+\titleformat{\chapter}[hang]%
+{\uppercase}
+{}
+{0pt}
+% {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+[\raggedright\doublespacing]
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF REFERENCES            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% provided by file 98-references.Rmd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIOGRAPHICAL SKETCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{BIOGRAPHICAL SKETCH}
+\label{biography}
+\vspace*{-0.5\baselineskip}      % Offset the doublespacing between title and paragraph.
+\input{\$biography$}
+        
+\setlength\parindent{1cm}
+
 
 \end{document}

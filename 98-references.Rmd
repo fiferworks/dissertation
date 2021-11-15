@@ -9,36 +9,42 @@ delete "References" and replace it.
 
 # REFERENCES {-}
 <!-- This manually sets the header for this unnumbered chapter. -->
-\singlespacing
+<!-- \singlespacing -->
 
-\markboth{References}{References}
+<!-- \markboth{References}{References} -->
 
 <!-- To remove the indentation of the first entry. -->
-\noindent
+<!-- \noindent -->
 
 <!-- To create a hanging indent and spacing between entries.  These three lines
 may need to be removed for styles that don't require the hanging indent. -->
+<!-- \setlength{\parindent}{-0.20in} -->
+<!-- \setlength{\leftskip}{0.20in} -->
+<!-- \setlength{\parskip}{8pt} -->
 
+\setcounter{secnumdepth}{-1}                   <!-- And we don't want to number our chapters anymore. -->
+\renewcommand{\bibname}{REFERENCES}            <!-- We want our heading to be "REFERENCES" not "Bibliography". -->
+\phantomsection
+\clearpage 
+\addcontentsline{toc}{chapter}{REFERENCES}
+\label{references}
+\bibliographystyle{\referenceStyle}
+{\singlespacing
+ \bibliography{\referenceFile}}
 
-\setlength{\parindent}{-0.20in}
-\setlength{\leftskip}{0.20in}
-\setlength{\parskip}{8pt}
-
-
-
+\titlecontents{chapter}[0em]
+{\addvspace{8pt}}
+{\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}
+{}
+{\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+\titlespacing{\chapter}{0pt}{-0.7in}{0.5\baselineskip}
 
 <!--This manually sets the location of the references to here-->
 <div id="refs"></div>
 
-\newpage
-
-# BIOGRAPHICAL SKETCH {-}
-
-Austin N. Fife received his B.S. degree in biology - zoology emphasis at Brigham Young University - Idaho at Rexburg, a M.S. in entomology at the University of Idaho at Moscow, and a Ph.D. in entomology and nematology at the University of Florida, Gainesville, where he specialized in acarology, biological control, chemical ecology, vector biology and plant-pathogen-arthropod interactions. He loves to spend time outdoors with his wife Liz and his two lovely daughters Violet and Juniper.
 
 
-<!-- This is just for testing with more citations for the bibliography at the
-end.  Add other entries into the list here if you'd like them to appear in the
+<!-- Add other entries into the list here if you'd like them to appear in the
 bibliography even if they weren't explicitly cited in the document. -->
 
 ---
