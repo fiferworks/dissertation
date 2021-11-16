@@ -43,7 +43,7 @@ Rose/rosebud cuttings of about ~10 cm of cane were taken from each rose before t
 
 
 ### Integrating management options to control *Phyllocoptes fructiphilus*
-During 2019 we conducted a second set of field trials in Griffin and Athens in addition to the ASM trials. We tested ASM alongside a different a SAR-inducer (SP2700, Trade name 'Ninja', SePro) and combined this SAR-inducer with predatory mites releases to observe any synergistic effects. We again tested a spirotetramat-based miticide and used water as a positive control (see *\@ref(fig:athens-ipm-2019)* and *\@ref(fig:griff-ipm-2019)*).
+During 2019 we conducted a second set of field trials in Griffin and Athens in addition to the ASM trials. We tested ASM alongside a different a SAR-inducer (SP2700, Trade name 'Ninja', SePro) and combined this SAR-inducer with predatory mites releases to observe if these two treatments would have greater reductions of *T. urticae* than either treatment on its own. We again tested a spirotetramat-based miticide and used water as a positive control (see *\@ref(fig:athens-ipm-2019)* and *\@ref(fig:griff-ipm-2019)*).
 
 **Mite Infestation**
 *P. fructiphilus* are present in the landscape of Georgia. Cuttings of ~10 cm or rose cane were taken from roses showing symptoms of RRD in the landscape and placed in each rose pot on the 1st, 5th and 9th weeks of the experiment.
