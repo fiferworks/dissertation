@@ -463,6 +463,19 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   publisher = {Elsevier {BV}},
 }
 
+@Article{AnguelovaMerhar2008,
+  author    = {Anguelova-Merhar, V. S. and Westhuizen, A. J. and Pretorius, Z. A.},
+  journal   = {Journal of Phytopathology},
+  title     = {\textbeta-1,3-glucanase and chitinase activities and the resistance response of wheat to leaf rust},
+  year      = {2008},
+  month     = jun,
+  number    = {7-8},
+  pages     = {381--384},
+  volume    = {149},
+  doi       = {10.1111/j.1439-0434.2001.tb03866.x},
+  publisher = {Wiley},
+}
+
 @Manual{Appelhans2021a,
   title  = {{mapview}: interactive viewing of spatial data in {R}},
   author = {Appelhans, Tim and Detsch, Florian and Reudenbach, Christoph and Woellauer, Stefan},
@@ -1078,6 +1091,18 @@ was found in Florida (Babu et al. 2014).},
   year      = {1999},
   address   = {Princeton, N.J},
   isbn      = {9780691012216},
+}
+
+@Article{Bhardwaj2021,
+  author    = {Garima Bhardwaj and Indu Ravi and Sanjay Kumar and Vinay Sharma},
+  journal   = {Archives of Phytopathology and Plant Protection},
+  title     = {Induction of \textbeta-1,3-glucanase and chitinase activity, cloning and their characterization in the defense response of {\textit{Cuminum cyminum}} plant against the fungal pathogen {\textit{Fusarium oxysporum}}},
+  year      = {2021},
+  month     = jun,
+  pages     = {1--16},
+  abstract  = {The activities of $\beta$-1,3-glucanase and chitinase, two important PR proteins were measured on 15\hspace{0.167em}days and one month old plants in two varieties viz. GC-4 (Resistant) and RZ-209 (Susceptible) as control and pathogenic state, respectively. The activities were found to be higher in the pathogen inoculated plants than the control plants. Varietal differences with respect to slightly higher $\beta$-1,3-glucanase and chitinase activity in var. GC-4 than var. RZ-209 was obtained. The enzyme activity gradually increased throughout the experimental period of 168\hspace{0.167em}h in pathogen inoculated plants as compared to control. However, the increase in activity of $\beta$-1,3-glucanase and chitinase was more rapid and to a greater extent in plants of var. GC-4 than in var. RZ-209. A number of protein bands were observed on SDS-Page, further Western blot analysis revealed the presence of 30 and 28\hspace{0.167em}kDa bands of $\beta$-1,3-glucanase and chitinase in induced cumin plants. The results indicate a distinct role of PR proteins in the defense response of Cumin plants. The isolation, cloning and characterization of $\beta$-1,3-glucanase and chitinase were, then performed as a part of a wider study to enhance the resistance of cumin to fungal diseases. A phylogenetic analysis was done to investigate the pattern of functional divergence in these proteins.},
+  doi       = {10.1080/03235408.2021.1932016},
+  publisher = {Informa {UK} Limited},
 }
 
 @Book{Bhat2020,
@@ -5109,6 +5134,19 @@ Despite this quibble, the volume clearly is a labor of love by dedicated acarolo
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Article{Liu2017,
+  author    = {Shan Liu and Jiale Lv and Endong Wang and Xuenong Xu},
+  title     = {Life-style classification of some {Phytoseiidae} ({Acari}: {Mesostigmata}) species based on gnathosoma morphometrics},
+  year      = {2017},
+  month     = apr,
+  number    = {5},
+  pages     = {629},
+  volume    = {22},
+  abstract  = {Life style of phytoseiid species (Acari: Mesostigmata) is an important feature in evaluating their potential as biological control agents. Previous studies suggested that some morphometrics of gnathosoma are related to the feeding habits of phytoseiids. In this study, we showed it is appropriate to estimate feeding habits and/or life styles of phytoseiids based on variations in gnathosoma morphology. Scanning electron microscope pictures of 10 phytoseiid species belonging to four major life styles were taken. For each species, 23 morphometrics of gnathosoma and the length of dorsal shield were measured. Principle Component Analysis (PCA) showed that the 10 species can be divided into three groups based on the first two principle components of these parameters. The 1\textsuperscript{st} group includes one specialized predators of Tetranychus species (Phytoseiulus persimilis) and two selective predators of tetranychid mites (Neoseiulus pseudolongispinosus, Neoseiulus californicus), the 2\textsuperscript{nd} group includes six generalist predators (Amblyseius orientalis, Amblyseius swirskii, Amblyseius tsugawai, Neoseiulus barkeri, Neoseiulus bicaudus, Neoseiulus cucumeris), and the 3\textsuperscript{rd} group includes one specialized pollen feeder (Euseius utilis). This grouping is consistent with the life style division of McMurtry & Croft (1997), except that Type I and II were not separated. However, there is a trend that both Type II species were closer to each other. Overall, species in Group II have larger chelicerae and hypostome than those of Group I and III, while species in Group III have larger lobes and angle of fixed digit than those of the other two groups.},
+  doi       = {10.11158/saa.22.5.3},
+  publisher = {Systematic and Applied Acarology Society},
+}
+
 @Article{Locali2003,
   author    = {Locali, Eliane Cristina and Freitas-Astua, Juliana and de Souza, Alessandra Alves and Takita, Marco Aur{\'{e}}lio and Astua-Monge, Gustavo and Antonioli, Renata and Kitajima, Elliot W. and Machado, Marcos Antonio},
   journal   = {Plant Disease},
@@ -5413,6 +5451,21 @@ Keywords: host jumping; viral evolution; trade-off; plant virus; RNA virus; poty
   month     = dec,
   doi       = {10.3733/hilg.v40n11p331},
   publisher = {University of California Agriculture and Natural Resources ({UC} {ANR})},
+}
+
+@Article{McMurtry2013,
+  author    = {McMurtry, James A. and de Moraes, Gilberto Jos{\'{e}} and Sourassou, Nazer Famah},
+  journal   = {Systematic and Applied Acarology},
+  title     = {Revision of the lifestyles of phytoseiid mites ({Acari}: {Phytoseiidae}) and implications for biological control strategies},
+  year      = {2013},
+  issn      = {2056-6069},
+  month     = dec,
+  number    = {4},
+  pages     = {297},
+  volume    = {18},
+  abstract  = {A new classification of lifestyles of phytoseiid mites is proposed based on the findings and suggestions from many studies conducted in the fifteen years since the publication of the lifestyle system by McMurtry & Croft (1997). In this newly proposed classification, Type I (Specialized mite predators) is divided into three subtypes to highlight mite prey specificity: subtype I-a---Specialized predators of Tetranychus species (Tetranychidae); subtype I-b---Specialized predators of web-nest producing mites (Tetranychidae); subtype I-c---Specialized predators of tydeoids (Tydeoidea). Type II (Selective predators of tetranychid mites) remains essentially the same. Type III (Generalist predators) is a huge and diverse group of general feeders; predators in this category are now grouped into five subtypes based on the microhabitat occupied and morphology: subtype III-a---Generalist predators living on pubescent leaves; subtype III-b---Generalist predators living on glabrous leaves;  III-c---Generalist predators living in confined spaces on dicotyledonous plants; III-d---Generalist predators living in confined spaces on monocotyledonous plants; III-e---Generalist predators from soil/litter habitats. Type IV (Pollen feeding generalist predators) also remains essentially the same. Two possible additional lifestyles include phytoseiids living on aquatic plants and phytoseiids able to pierce leaf cells. Behavioral and biological information is updated and implications for biological control strategies are discussed.},
+  doi       = {10.11158/saa.18.4.1},
+  publisher = {Systematic and Applied Acarology Society},
 }
 
 @InBook{McNew1960,
@@ -6245,12 +6298,14 @@ Parole chiave: Acarologia, galligeni, vaganti, morfologia, anatomia, fisiologia,
 
 @Article{Otero-Colina2018,
   author    = {Otero-Colina, Gabriel and Ochoa, Ronald and Amrine Jr, James W. and Hammond, John and Jordan, Ramon and Bauchan, Gary R.},
-  title     = {Eriophyoid mites found on healthy and {Rose rosette diseased} roses in the {United States}},
   journal   = {Journal of Environmental Horticulture},
+  title     = {Eriophyoid mites found on healthy and {Rose rosette diseased} roses in the {United States}},
   year      = {2018},
-  volume    = {36},
   number    = {4},
   pages     = {146--153},
+  volume    = {36},
+  abstract  = {Phyllocoptes fructiphilus (Keifer), known as the rose bud mite, is an eriophyoid mite that has been shown to be the vector of Rose rosette virus (RRV), an Emaravirus, and the causal agent of rose rosette disease (RRD). Studies were conducted of mites found on roses, using various microscopy techniques including wide field, phase contrast and differential interference contrast light microscopy, and table top and low temperature scanning electron microscopy. Surveys of roses from several states within the US indicate the presence of three species of eriophyid mites: Phyllocoptes fructiphilus, Eriophyes eremus (Druciarek & Lewandowski), and Callyntrotus schlechtendali (Nalepa). Phyllocoptes fructiphilus was found primarily under the petioles (stipules), inside the flower sepals appressed to the ovary/seeds, and on the surface of the leaves. It was collected on plants with or without symptoms of RRD and often hides amongst the dense simple and bulbous, glandular hairs or under the stipules/petioles. Eriophyes eremus was found under the stipules of roses and is now recorded for the first time in the Americas. Callyntrotus schlechtendali was found on the open surface of the older leaves. The latter two species were not observed to be associated with obvious plant injury. In addition, predatory mites were found associated with these mites which may be useful as biological control agents of the eriophyid mites.},
+  doi       = {10.24266/0738-2898-36.4.146},
   publisher = {Horticultural Research Institute},
 }
 
@@ -6706,6 +6761,20 @@ biological control in IPM},
   month     = mar,
   doi       = {10.2307/3547045},
   publisher = {{JSTOR}},
+}
+
+@Article{Rajninec2021,
+  author    = {Rajninec, Miroslav and Fratrikova, Monika and Boszoradova, Eva and Jopcik, Martin and Bauer, Miroslav and Libantova, Jana},
+  journal   = {Plants},
+  title     = {Basic \textbeta-1,3-glucanase from {textit{Drosera binata}} exhibits antifungal potential in transgenic tobacco plants},
+  year      = {2021},
+  month     = aug,
+  number    = {8},
+  pages     = {1747},
+  volume    = {10},
+  abstract  = {The basic $\beta$-1,3-glucanase of the carnivorous plant Drosera binata was tested as a purified protein, as well as under the control of a double CaMV35S promoter in transgenic tobacco for its capability to inhibit the growth of Trichoderma viride, Rhizoctonia solani, Alternaria solani, and Fusarium poae in an in-vitro assay. The purified protein inhibited tested phytopathogens but not the saprophytic fungus T. viride. Out of the analysed transgenic plants, lines 13, 16, 19, and 22 exhibited high DbGluc1 transcript abundance normalised to the actin transcript. Because of DbGluc1 transgene expression, lines 13 and 16 showed a 1.7-fold increase and lines 19 and 22 showed more than a 2-fold increase in total $\beta$-1,3-glucanase activity compared to the non-transgenic control. In accordance with the purified $\beta$-1,3-glucanase in-vitro antifungal assay, crude protein extracts of lines 19 and 22 significantly inhibited the growth of phytopathogens (14--34%). Further analyses revealed that the complementary action of transgenic $\beta$-1,3-glucanase and 20% higher activity of endogenous chitinase(s) in these lines were crucial for maximising the antifungal efficiency of crude protein extracts.},
+  doi       = {10.3390/plants10081747},
+  publisher = {{MDPI} {AG}},
 }
 
 @Manual{Ram2018a,
