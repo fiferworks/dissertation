@@ -167,7 +167,9 @@ $acknowledgments$                % Inputs the text found in the 00--acknowledgme
             Abstract of $thesistype$ Presented to the Graduate School \\
             of the University of Florida in Partial Fulfillment of the \\
             Requirements for the Degree of $degree$\\[\baselineskip]
-            \MakeUppercase{$title$}\\[\baselineskip]
+            % \MakeUppercase{$title$}\\[\baselineskip] % use this line if your title doesn't have scientific names
+                                                       % otherwise, type it out and italicize as necessary
+            DETECTION OF TWO MITE-PLANT-VIRUS PATHOSYSTEMS IN FLORIDA, INCLUDING FIELD STUDIES AND CHEMICAL ECOLOGY OF INDUCED PLANT DEFENSES ON \textit{Phyllocoptes fructiphilus} AND \textit{Amblyseius swirskii}\\[\baselineskip]
             By\\[\baselineskip]
             $author$ \\[\baselineskip]
             $month$ $year$\\[\baselineskip]
@@ -184,14 +186,15 @@ $abstract$
 
 \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
         \setcounter{secnumdepth}{5}
-        \docBodytrue
-
+        
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHAPTERS                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\doublespacing%
-$body$
+\docBodytrue
+  \doublespacing
+    $body$                       % This imports the body chapters included in the _bookdown.yml file,
+\docBodyfalse                    % you can add as many chapters as you need
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
