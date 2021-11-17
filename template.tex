@@ -22,10 +22,11 @@
 %%%%%%%%%%%%%%
 % \documentclass{<something>} must begin each LaTeX document
 \documentclass{ufdissertation}[overrideChapters] %UF's 2019 Template --ANF
-% Packages are extensions to the basic LaTeX functions. Whatever you
-% want to typeset, there is probably a package out there for it.
-% Chemistry (chemtex), screenplays, you name it.
-% Check out CTAN to see: https://www.ctan.org/
+%Packages are extensions to the basic LaTeX functions. Whatever you want to
+%typeset, there is probably a package out there for it. Chemistry (chemtex),
+%screenplays, you name it. Check out CTAN to see: https://www.ctan.org/ Also,
+%Rmarkdown can read LaTex commands in Rmd files, so long as the output is a pdf,
+%because pdfs are rendered by Rmarkdown via LaTex
 %%
 \usepackage{siunitx}
 \usepackage{textgreek}
@@ -143,20 +144,20 @@ $endif$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE OF CONTENTS             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\realSingleSpace\tableofcontents  % Table of Contents comes fourth.
+{\realSingleSpace\tableofcontents} % Table of Contents comes fourth.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF TABLES                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\realSingleSpace\listoftables    % List of tables comes next, if you have one.
+{\realSingleSpace\listoftables}  % List of tables comes next, if you have one.
 \addcontentsline{toc}{chapter}{LIST OF TABLES}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF FIGURES               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\realSingleSpace\listoffigures   % List of figures comes next, if you have one.
+{\realSingleSpace\listoffigures} % List of figures comes next, if you have one.
 \addcontentsline{toc}{chapter}{LIST OF FIGURES}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -190,7 +191,7 @@ $endif$
    \hphantom{forcing a space here} \\
 {$abstract$}
 
-\addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
+\addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}% Input a dummy "CHAPTER" heading to show user-content
         \setcounter{secnumdepth}{5}
         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
