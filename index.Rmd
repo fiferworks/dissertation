@@ -56,9 +56,9 @@ acknowledgments: |
 dedication: |
   `r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`
 appendix: |
-  `r paste(readLines(here::here("prelims", "99-appendix.Rmd")), collapse = "\n  ")`
+  `r paste(readLines(here::here("prelims", "99--appendix.Rmd")), collapse = "\n  ")`
 biography: |
-  `r paste(readLines(here::here("prelims", "99-biography.Rmd")), collapse = "\n  ")`
+  `r paste(readLines(here::here("prelims", "99--biography.Rmd")), collapse = "\n  ")`
 
 
 # keywords: keywords #this isn't implemented yet
