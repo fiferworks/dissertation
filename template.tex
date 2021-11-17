@@ -227,23 +227,24 @@ $acknowledgments$
 $abstract$
 
 \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
-        \setcounter{secnumdepth}{5}
-        \docBodytrue
-        
-        \titlecontents{chapter}[2em]
-            {\addvspace{8pt}}
-            {%
-            {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}%
-            \ifchapterCapOff\else\color{blue}\uppercase\fi% Decide if we auto capitalize the chapter in TOC or not
-%                                                               Based on if overrideChapters option is present.
-            }%
-            {}
-            {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
+%         \setcounter{secnumdepth}{5}
+%         \docBodytrue
+%         
+%         \titlecontents{chapter}[2em]
+%             {\addvspace{8pt}}
+%             {%
+%             {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}%
+%             \ifchapterCapOff\else\color{blue}\uppercase\fi% Decide if we auto capitalize the chapter in TOC or not
+% %                                                               Based on if overrideChapters option is present.
+%             }%
+%             {}
+%             {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHAPTERS                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\doublespacing%
 $body$
 
 
@@ -290,61 +291,61 @@ $if(appendix)$
         %         {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
         %         [\raggedright\doublespacing]
         % 
-             \titlecontents{chapter}[0em]
-                {\addvspace{8pt}}
-                {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX:  \expandafter\contentslabel{2em}}\hyper@linkend%
-                \ifchapterCapOff\else\color{blue}\uppercase\fi}
-                {}
-                {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
-                \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
-                
-                \titlecontents{chapter}[0em]
-                {\addvspace{8pt}}
-                {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX: }\hyper@linkend%
-                \ifchapterCapOff\else\color{blue}\uppercase\fi}
-                {}
-                {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
-                \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
-                
-                
-               \titleformat{\chapter}[hang]
-                {\uppercase}
-                {}
-                {0pt}
-                {\centering\realSingleSpace Appendix\\[-5pt]}
-                [\raggedright\doublespacing]
-                 %%%%%%%%%%%%%%
-                 
-    
-               
-               \setcounter{secnumdepth}{4}
-                \newcounter{appendixVal}%                  Use an entirely different counter for Appendicies to avoid
-            %                                               hyperref misdirections to other already existing chapters.
-                \setcounter{appendixVal}{0}%                Start counter at 0,
-            %                                               Since the counter is stepped before the label is made.
-                \let\appendixChapter\chapter%               Save the normal \chapter command so we can temporarily hijack it.
-                 \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the Appendix
-               \renewcommand{\thechapter}{\Alph{appendixVal}}%
+             % \titlecontents{chapter}[0em]
+             %    {\addvspace{8pt}}
+             %    {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX:  \expandafter\contentslabel{2em}}\hyper@linkend%
+             %    \ifchapterCapOff\else\color{blue}\uppercase\fi}
+             %    {}
+             %    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+             %    \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
+             %    
+             %    \titlecontents{chapter}[0em]
+             %    {\addvspace{8pt}}
+             %    {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX: }\hyper@linkend%
+             %    \ifchapterCapOff\else\color{blue}\uppercase\fi}
+             %    {}
+             %    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+             %    \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
+             %    
+             %    
+             %   \titleformat{\chapter}[hang]
+             %    {\uppercase}
+             %    {}
+             %    {0pt}
+             %    {\centering\realSingleSpace Appendix\\[-5pt]}
+             %    [\raggedright\doublespacing]
+             %     %%%%%%%%%%%%%%
+             %     
+             % 
+             %   
+            %    \setcounter{secnumdepth}{4}
+            %     \newcounter{appendixVal}%                  Use an entirely different counter for Appendicies to avoid
+            % %                                               hyperref misdirections to other already existing chapters.
+            %     \setcounter{appendixVal}{0}%                Start counter at 0,
+            % %                                               Since the counter is stepped before the label is made.
+            %     \let\appendixChapter\chapter%               Save the normal \chapter command so we can temporarily hijack it.
+            %      \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the Appendix
+            %    \renewcommand{\thechapter}{\Alph{appendixVal}}%
                
                 $appendix$
                 
-                 \let\chapter\appendixChapter% 
-                
-                %%%%%%%%%%%%%%
-                \titleformat{\chapter}[hang]%               
-                {\uppercase}
-                {}
-                {0pt}
-                {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
-                [\raggedright\doublespacing]
-                            
-       \titlecontents{chapter}[0em]
-        {\addvspace{8pt}}
-        {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}
-        {}
-        {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
-        
-    \titlespacing{\chapter}{0pt}{-0.7in}{0.5\baselineskip}
+    %              \let\chapter\appendixChapter% 
+    %             
+    %             %%%%%%%%%%%%%%
+    %             \titleformat{\chapter}[hang]%               
+    %             {\uppercase}
+    %             {}
+    %             {0pt}
+    %             {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+    %             [\raggedright\doublespacing]
+    %                         
+    %    \titlecontents{chapter}[0em]
+    %     {\addvspace{8pt}}
+    %     {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}
+    %     {}
+    %     {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+    %     
+    % \titlespacing{\chapter}{0pt}{-0.7in}{0.5\baselineskip}
 $endif$
 
 

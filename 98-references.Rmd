@@ -23,11 +23,10 @@ may need to be removed for styles that don't require the hanging indent. -->
 <!-- \setlength{\parskip}{8pt} -->
 
 \setcounter{secnumdepth}{-1}                   <!-- And we don't want to number our chapters anymore. -->
-\renewcommand{\bibname}{REFERENCES}            <!-- We want our heading to be "REFERENCES" not "Bibliography". -->
-\phantomsection
-\clearpage 
-\addcontentsline{toc}{chapter}{REFERENCES}
-\label{references}
+<!-- \phantomsection -->
+<!-- \clearpage  -->
+<!-- \addcontentsline{toc}{chapter}{REFERENCES} -->
+<!-- \label{references} -->
 <!-- \bibliographystyle{\referenceStyle} -->
 \singlespacing
  <!-- \bibliography{\referenceFile} -->

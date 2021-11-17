@@ -1,5 +1,5 @@
 ---
-title: 'Invasions of *Phyllocoptes fructiphilus* and *Brevipalpus californicus* into Florida: Two Mite-Plant-Virus Pathosystems of Potential Concern for the Ornamental Plant Industry'
+title: 'Detection of Two Mite-Plant-Virus Pathosystems in Florida, Including Field Studies and Chemical Ecology of Induced Plant Defenses on *Phyllocoptes fructiphilus* and *Amblyseius swirskii*'
 author: 'Austin N Fife'
 year: '2021'
 month: 'December'
@@ -23,11 +23,11 @@ params:
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
 output:
-  # thesisdown::thesis_pdf:
-  #   latex_engine: xelatex
-  #   fig_caption: yes
-    thesisdown::thesis_word:
-    reference_docx: uf-formatting-guide-jis.docx
+  thesisdown::thesis_pdf:
+    latex_engine: xelatex
+    fig_caption: yes
+    # thesisdown::thesis_word:
+    # reference_docx: uf-formatting-guide-jis.docx
 
 # Specify the location of the bibliography below
 bibliography: bib/thesis.bib

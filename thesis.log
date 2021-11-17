@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.11.7)  15 NOV 2021 14:16
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2021.11.7)  16 NOV 2021 19:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,24 +378,22 @@ Package: fancyhdr 2021/01/04 v4.0 Extensive control of page headers and footers
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-\c@figCount=\count285
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTleft=\skip71
 \LTright=\skip72
 \LTpre=\skip73
 \LTpost=\skip74
-\LTchunksize=\count286
+\LTchunksize=\count285
 \LTcapwidth=\dimen195
 \LT@head=\box56
 \LT@firsthead=\box57
 \LT@foot=\box58
 \LT@lastfoot=\box59
-\LT@cols=\count287
-\LT@rows=\count288
-\c@LT@tables=\count289
-\c@LT@chunks=\count290
+\LT@cols=\count286
+\LT@rows=\count287
+\c@LT@tables=\count288
+\c@LT@chunks=\count289
 \LT@p@ftn=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/flafter.sty
 Package: flafter 2018/11/28 v1.4d Standard LaTeX floats after reference (FMi)
@@ -407,13 +405,13 @@ Package: expl3 2021-01-09 L3 programming layer (loader)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2020-01-29 L3 backend support: XeTeX
 (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count291
-\l__color_backend_stack_int=\count292
-\g__graphics_track_int=\count293
+\c__kernel_sys_dvipdfmx_version_int=\count290
+\l__color_backend_stack_int=\count291
+\g__graphics_track_int=\count292
 \l__pdf_internal_box=\box60
-\g__pdf_backend_object_int=\count294
-\g__pdf_backend_annotation_int=\count295
-\g__pdf_backend_link_int=\count296
+\g__pdf_backend_object_int=\count293
+\g__pdf_backend_annotation_int=\count294
+\g__pdf_backend_link_int=\count295
 )) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2020-10-27 L3 Experimental document command parser
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
@@ -423,27 +421,27 @@ Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box61
 \l__siunitx_tmp_dim=\dimen196
-\l__siunitx_tmp_int=\count297
-\l__siunitx_number_mantissa_length_int=\count298
-\l__siunitx_number_uncert_length_int=\count299
-\l__siunitx_round_int=\count300
-\l__siunitx_process_decimal_int=\count301
-\l__siunitx_process_uncertainty_int=\count302
-\l__siunitx_process_fixed_int=\count303
-\l__siunitx_process_integer_min_int=\count304
-\l__siunitx_process_precision_int=\count305
-\l__siunitx_group_min_int=\count306
+\l__siunitx_tmp_int=\count296
+\l__siunitx_number_mantissa_length_int=\count297
+\l__siunitx_number_uncert_length_int=\count298
+\l__siunitx_round_int=\count299
+\l__siunitx_process_decimal_int=\count300
+\l__siunitx_process_uncertainty_int=\count301
+\l__siunitx_process_fixed_int=\count302
+\l__siunitx_process_integer_min_int=\count303
+\l__siunitx_process_precision_int=\count304
+\l__siunitx_group_min_int=\count305
 \l__siunitx_angle_marker_box=\box62
 \l__siunitx_angle_unit_box=\box63
 \l__siunitx_angle_marker_dim=\dimen197
 \l__siunitx_angle_unit_dim=\dimen198
-\l__siunitx_unit_int=\count307
-\l__siunitx_unit_denominator_int=\count308
-\l__siunitx_unit_numerator_int=\count309
-\l__siunitx_unit_prefix_int=\count310
-\l__siunitx_unit_prefix_base_int=\count311
-\l__siunitx_unit_prefix_gram_int=\count312
-\l__siunitx_number_product_int=\count313
+\l__siunitx_unit_int=\count306
+\l__siunitx_unit_denominator_int=\count307
+\l__siunitx_unit_numerator_int=\count308
+\l__siunitx_unit_prefix_int=\count309
+\l__siunitx_unit_prefix_base_int=\count310
+\l__siunitx_unit_prefix_gram_int=\count311
+\l__siunitx_number_product_int=\count312
 \c__siunitx_one_fill_skip=\skip75
 \l__siunitx_table_unit_align_skip=\skip76
 \l__siunitx_table_exponent_dim=\dimen199
@@ -482,15 +480,15 @@ Package: pdfpages 2021/01/09 v0.5r Insert pages of external PDF documents (AM)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count314
-\calc@Bcount=\count315
+\calc@Acount=\count313
+\calc@Bcount=\count314
 \calc@Adimen=\dimen264
 \calc@Bdimen=\dimen265
 \calc@Askip=\skip79
 \calc@Bskip=\skip80
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count316
+\calc@Ccount=\count315
 \calc@Cskip=\skip81
 ) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
@@ -502,16 +500,16 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2021/01/09 v0.5r Pdfpages driver for XeTeX (AM)
 )
-\pdfpages@includegraphics@status=\count317
+\pdfpages@includegraphics@status=\count316
 \AM@pagebox=\box68
 \AM@global@opts=\toks37
-\AM@pagecnt=\count318
+\AM@pagecnt=\count317
 \AM@toc@title=\toks38
-\c@AM@survey=\count319
+\c@AM@survey=\count318
 \AM@templatesizebox=\box69
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count320
+\c@r@tfl@t=\count319
 \rotFPtop=\skip82
 \rotFPbot=\skip83
 \rot@float@box=\box70
@@ -519,7 +517,20 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 )
 \csllabelwidth=\skip84
 \cslhangindent=\skip85
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `tab:all-contrib-table' multiply defined.
+
+
+LaTeX Warning: Label `tab:all-contrib-table' multiply defined.
+
+
+LaTeX Warning: Label `tab:all-corr-table' multiply defined.
+
+
+LaTeX Warning: Label `tab:all-corr-table' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
@@ -562,7 +573,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count321
+\c@section@level=\count320
 )
 LaTeX Info: Redefining \ref on input line 110.
 LaTeX Info: Redefining \pageref on input line 110.
@@ -634,26 +645,275 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 ) [1
 
-] [2] [3] (./thesis.toc [4
+] [2] [3] [4
+
+] (./thesis.toc [5
+
+])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+[6] (./thesis.lot)
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
+
+[7
+
+] (./thesis.lof [8
+
+])
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+[9] [10] [11]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 241.
+
+[12
+
+] [13] [14]
+File: thesis_files/figure-latex/rrd-symptoms-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/rrd-symptoms-1.pdf>
+[15] [16] [17] [18]
+File: thesis_files/figure-latex/erio-fungus-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/erio-fungus-1.pdf>
+[19] [20]
+File: figure/mite-pfruct-hide.png Graphic file (type bmp)
+<figure/mite-pfruct-hide.png>
+[21] [22] [23] [24] [25] [26]
+LaTeX Font Info:    Trying to load font information for LGR+lmr on input line 3
+04.
+(/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrlmr.fd
+File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
+) [27] [28] [29]
+File: thesis_files/figure-latex/brevi-fungus-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/brevi-fungus-1.pdf>
+File: thesis_files/figure-latex/oncidium-ofv-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/oncidium-ofv-1.pdf>
+[30] [31] [32] [33] [34] [35] [36]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 331.
+
+File: figure/full-1288fig1.jpg Graphic file (type bmp)
+<figure/full-1288fig1.jpg>
+File: figure/full-1288fig2.jpg Graphic file (type bmp)
+<figure/full-1288fig2.jpg>
+[37
+
+] [38] [39] [40] [41] [42]
+File: figure/rrv_survey_map_fl_pf.png Graphic file (type bmp)
+<figure/rrv_survey_map_fl_pf.png>
+File: figure/rrv_survey_map_fl_other.png Graphic file (type bmp)
+<figure/rrv_survey_map_fl_other.png>
+File: figure/rrv_survey_map_years_pf.png Graphic file (type bmp)
+<figure/rrv_survey_map_years_pf.png>
+File: figure/rrv_survey_map_years_others.png Graphic file (type bmp)
+<figure/rrv_survey_map_years_others.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[43] [44] [45] [46] [47] [48] [49] [50]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 470.
+
+[51
+
+] [52]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 481.
+
+[53] [54] [55]
+File: thesis_files/figure-latex/voc-qsep-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/voc-qsep-1.pdf>
+File: thesis_files/figure-latex/voc-spme-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/voc-spme-1.pdf>
+[56] [57] [58]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 526.
+
+File: figure/rrv_volatiles_biplot_var_pca_qsep.png Graphic file (type bmp)
+<figure/rrv_volatiles_biplot_var_pca_qsep.png>
+File: figure/rrv_volatiles_comparison_pca_comp_qsep.png Graphic file (type bmp)
+
+<figure/rrv_volatiles_comparison_pca_comp_qsep.png>
+File: figure/rrv_volatiles_screeplot_pca_qsep.png Graphic file (type bmp)
+<figure/rrv_volatiles_screeplot_pca_qsep.png>
+File: figure/rrv_volatiles_umap_rrd_qsep.png Graphic file (type bmp)
+<figure/rrv_volatiles_umap_rrd_qsep.png>
+File: figure/rrv_volatiles_umap_chems_rrd_qsep.png Graphic file (type bmp)
+<figure/rrv_volatiles_umap_chems_rrd_qsep.png>
+File: figure/rrv_volatiles_biplot_var_pca_spme.png Graphic file (type bmp)
+<figure/rrv_volatiles_biplot_var_pca_spme.png>
+File: figure/rrv_volatiles_comparison_pca_comp_spme.png Graphic file (type bmp)
+
+<figure/rrv_volatiles_comparison_pca_comp_spme.png>
+File: figure/rrv_volatiles_screeplot_pca_spme.png Graphic file (type bmp)
+<figure/rrv_volatiles_screeplot_pca_spme.png>
+File: figure/rrv_volatiles_umap_rrd_spme.png Graphic file (type bmp)
+<figure/rrv_volatiles_umap_rrd_spme.png>
+File: figure/rrv_volatiles_umap_chems_rrd_spme.png Graphic file (type bmp)
+<figure/rrv_volatiles_umap_chems_rrd_spme.png>
+
+LaTeX Warning: Float too large for page by 5.81653pt on input line 745.
+
+
+LaTeX Warning: Float too large for page by 16.01468pt on input line 792.
+
+File: figure/rrv_volatiles_biplot_var_pca_df.png Graphic file (type bmp)
+<figure/rrv_volatiles_biplot_var_pca_df.png>
+File: figure/rrv_volatiles_comparison_pca_comp_df.png Graphic file (type bmp)
+<figure/rrv_volatiles_comparison_pca_comp_df.png>
+File: figure/rrv_volatiles_screeplot_pca_df.png Graphic file (type bmp)
+<figure/rrv_volatiles_screeplot_pca_df.png>
+File: figure/rrv_volatiles_umap_chems_df.png Graphic file (type bmp)
+<figure/rrv_volatiles_umap_chems_df.png>
+[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72
+
+] [73] [74
 
 ]
-Overfull \hbox (9.35724pt too wide) in paragraph at lines 50--50
-[]|[][]\TU/lmr/m/it/12 BREVIPALPUS\TU/lmr/m/n/12 -TRANSMITTED ORCHID FLECK VIRU
-S INFECTING THREE NEW 
- []
+File: figure/rrv_graph_olfact_rose.png Graphic file (type bmp)
+<figure/rrv_graph_olfact_rose.png>
+File: figure/rrv_graph_olfact_vocs.png Graphic file (type bmp)
+<figure/rrv_graph_olfact_vocs.png>
+File: figure/rrv_graph_olfact_vocs_time_choice.png Graphic file (type bmp)
+<figure/rrv_graph_olfact_vocs_time_choice.png>
+[75] [76] [77] [78] [79] [80]
 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ignorespaces 
-l.60 ...chapter}{\numberline {A}*}{118}{chapter.1}
-                                                  % 
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 1044.
+
+[81
+
+] [82]
+
+LaTeX Warning: Reference `chemeco' on page 83 undefined on input line 1053.
+
+[83] [84]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 1064.
+
+[85]
+File: figure/rrv_asm_plot_2018_griffin.png Graphic file (type bmp)
+<figure/rrv_asm_plot_2018_griffin.png>
+File: figure/rrv_asm_plot_2019_griffin.png Graphic file (type bmp)
+<figure/rrv_asm_plot_2019_griffin.png>
+[86] [87] [88] [89]
+File: figure/rrv_ipm_plot_map_2019_athens.png Graphic file (type bmp)
+<figure/rrv_ipm_plot_map_2019_athens.png>
+File: figure/rrv_ipm_plot_map_2019_griffin.png Graphic file (type bmp)
+<figure/rrv_ipm_plot_map_2019_griffin.png>
+
+LaTeX Warning: Reference `mm-survey' on page 90 undefined on input line 1139.
+
+[90] [91] [92] [93]
+
+LaTeX Warning: Reference `mm-survey' on page 94 undefined on input line 1159.
+
+File: thesis_files/figure-latex/talla-ipm-2021-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/talla-ipm-2021-1.pdf>
+[94] [95]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 1177.
+
+File: figure/rrv_actigard_graph.png Graphic file (type bmp)
+<figure/rrv_actigard_graph.png>
+[96] [97] [98]
+File: figure/rrv_pheno_bargraph.png Graphic file (type bmp)
+<figure/rrv_pheno_bargraph.png>
+File: figure/rrv_ipm_graph_erios_talla.png Graphic file (type bmp)
+<figure/rrv_ipm_graph_erios_talla.png>
+File: figure/rrv_ipm_graph_erios_talla_month.png Graphic file (type bmp)
+<figure/rrv_ipm_graph_erios_talla_month.png>
+File: figure/rrv_ipm_graph_tets_talla.png Graphic file (type bmp)
+<figure/rrv_ipm_graph_tets_talla.png>
+File: figure/rrv_ipm_graph_tets_talla_month.png Graphic file (type bmp)
+<figure/rrv_ipm_graph_tets_talla_month.png>
+File: figure/rrv_ipm_graph_preds_talla.png Graphic file (type bmp)
+<figure/rrv_ipm_graph_preds_talla.png>
+File: figure/rrv_ipm_graph_preds_talla_month.png Graphic file (type bmp)
+<figure/rrv_ipm_graph_preds_talla_month.png>
+[99
+
+
+] [100] [101] [102] [103] [104] [105]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 1327.
+
+File: thesis_files/figure-latex/fig-1-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/fig-1-1.pdf>
+File: thesis_files/figure-latex/fig-2-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/fig-2-1.pdf>
+[106
+
+] [107] [108] [109] [110]
+File: thesis_files/figure-latex/fig-3-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/fig-3-1.pdf>
+[111] [112] [113] [114] [115]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 1386.
+
+[116
+
+] [117] [118
+
+] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128] [129] [130] [131]
+[132] [133] [134] [135] [136] [137] [138] [139] [140]
+Missing character: There is no ʻ in font [lmroman12-regular]:mapping=tex-text;!
+[141] [142] [143] [144] [145] [146] [147] [148] [149] [150]
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 2>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 3>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 3>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 4>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+File: pubs/pfruct-report.pdf Graphic file (type pdf)
+<use pubs/pfruct-report.pdf, page 5>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(./thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 7E08018D6AA15EF3532B34D566D9BBE8;5795.
+ ) 
 Here is how much of TeX's memory you used:
- 17055 strings out of 479180
- 287730 string characters out of 5873661
- 587380 words of memory out of 5000000
- 36373 multiletter control sequences out of 15000+600000
- 409863 words of font info for 54 fonts, out of 8000000 for 9000
+ 17771 strings out of 479180
+ 312994 string characters out of 5873661
+ 780076 words of memory out of 5000000
+ 37009 multiletter control sequences out of 15000+600000
+ 410591 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,11n,91p,1110b,747s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,17n,91p,11387b,1097s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (4 pages).
+Output written on thesis.pdf (150 pages).

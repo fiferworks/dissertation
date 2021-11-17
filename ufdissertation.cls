@@ -160,23 +160,23 @@
 %%% Caption Configuration TBD
 % NOTE: Make sure long captions don't overlap numbers in ToC :: Done.
 
-\newcounter{figCount}%      This is an internal counter to track how many figures
-\setcounter{figCount}{1}%   We will start at 1 due to how stepping it works.
-
-\newcommand{\addFigure}[3][\Alph{figCount}]{%   Command to manually add a figure
-    \parbox{#2\textwidth}{\centering #1 \\ \includegraphics[width=#2\textwidth]{#3}}
-    \stepcounter{figCount}
-    }
-
-\newenvironment{multiFigure}% Environment that mimicks figure type environment,
-%                               Except it doesn't float around and it resets figCount.
-    {% Begin Environment Code
-        \setcounter{figCount}{1}
-        \minipage\textwidth
-    }
-    {% End Environment Code
-        \endminipage
-    }
+%\newcounter{figCount}%      This is an internal counter to track how many figures
+%\setcounter{figCount}{1}%   We will start at 1 due to how stepping it works.
+%
+%\newcommand{\addFigure}[3][\Alph{figCount}]{%   Command to manually add a figure
+%    \parbox{#2\textwidth}{\centering #1 \\ \includegraphics[width=#2\textwidth]{#3}}
+%    \stepcounter{figCount}
+%    }
+%
+%\newenvironment{multiFigure}% Environment that mimicks figure type environment,
+%%                               Except it doesn't float around and it resets figCount.
+%    {% Begin Environment Code
+%        \setcounter{figCount}{1}
+%        \minipage\textwidth
+%    }
+%    {% End Environment Code
+%        \endminipage
+%    }
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%% Theorem environment definitions %%%
