@@ -1,5 +1,5 @@
 ---
-title: 'Detection of Two Mite-Plant-Virus Pathosystems in Florida, Including Field Studies and Chemical Ecology of Induced Plant Defenses on *Phyllocoptes fructiphilus* and *Amblyseius swirskii*'
+title: 'DETECTION OF TWO MITE-PLANT-VIRUS PATHOSYSTEMS IN FLORIDA, INCLUDING FIELD STUDIES AND CHEMICAL ECOLOGY OF INDUCED PLANT DEFENSES ON *Phyllocoptes fructiphilus* AND *Amblyseius swirskii*'
 author: 'Austin N Fife'
 year: '2021'
 month: 'December'
@@ -153,8 +153,6 @@ knitr::opts_chunk$set(
 )
 ```
 
- 
-<!--
-The acknowledgments, dedication, and abstract are added into the PDF
-version automatically by inputting them in the YAML at the top of this file.
--->
+<!-- DO NOT WRITE HERE! The acknowledgments, dedication, and abstract are added
+into the PDF version automatically by inputting them in prelims files mentioned
+in the YAML at the top of this file. -->
