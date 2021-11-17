@@ -15,6 +15,7 @@ thesistype: 'Dissertation'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 
+
 # This will automatically install the {remotes} package and {thesisdown}
 # Change this to FALSE if you'd like to install them manually on your own.
 params:
@@ -55,9 +56,7 @@ acknowledgments: |
   `r paste(readLines(here::here("prelims", "00--acknowledgments.Rmd")), collapse = "\n  ")`
 dedication: |
   `r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`
-appendix: |
-  `r paste(readLines(here::here("prelims", "99--appendix.Rmd")), collapse = "\n  ")`
-
+  
 # keywords: keywords #this isn't implemented yet
 # subject: subject #also not implemented
 # space_between_paragraphs: true
