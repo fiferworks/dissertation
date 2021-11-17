@@ -54,7 +54,7 @@
 \usepackage{pdflscape}
 \usepackage{threeparttablex}
 \RequirePackage{amsthm,amssymb,amsmath}
-\usepackage[defaultlines=4,all]{nowidow}
+% \usepackage[defaultlines=4,all]{nowidow} % this one
 \RequirePackage[
     format=hang,
     labelsep=period,
@@ -120,7 +120,7 @@
 %\renewcommand{\familydefault}{\sfdefault}% Converts default to actual Arial
 
 \raggedright%               They want a ragged right edge.
-\raggedbottom%              They also do not want references split between pages
+% \raggedbottom%              They also do not want references split between pages
 % \widowpenalty10000%
 % \clubpenalty10000%
 
@@ -307,9 +307,9 @@
 
 \titlecontents{part}[0em]
     {\mdseries}
-    {\hyper@linkstart{link}{\Hy@tocdestname}{\contentslabel{2.3em}}\hyper@linkend}
     {}
     {}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\contentslabel{2.3em}}\hyper@linkend \\*\addvspace{8pt}}
 
 \titlecontents{chapter}[0em]
     {}
