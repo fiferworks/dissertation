@@ -22,10 +22,11 @@
 %%%%%%%%%%%%%%
 % \documentclass{<something>} must begin each LaTeX document
 \documentclass{ufdissertation}[overrideChapters] %UF's 2019 Template --ANF
-% Packages are extensions to the basic LaTeX functions. Whatever you
-% want to typeset, there is probably a package out there for it.
-% Chemistry (chemtex), screenplays, you name it.
-% Check out CTAN to see: https://www.ctan.org/
+%Packages are extensions to the basic LaTeX functions. Whatever you want to
+%typeset, there is probably a package out there for it. Chemistry (chemtex),
+%screenplays, you name it. Check out CTAN to see: https://www.ctan.org/ Also,
+%Rmarkdown can read LaTex commands in Rmd files, so long as the output is a pdf,
+%because pdfs are rendered by Rmarkdown via LaTex
 %%
 \usepackage{siunitx}
 \usepackage{textgreek}
@@ -138,20 +139,20 @@ I would like to give special thanks for the Tallahassee Museum and their patienc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE OF CONTENTS             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\realSingleSpace\tableofcontents  % Table of Contents comes fourth.
+{\realSingleSpace\tableofcontents} % Table of Contents comes fourth.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF TABLES                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\realSingleSpace\listoftables    % List of tables comes next, if you have one.
+{\realSingleSpace\listoftables}  % List of tables comes next, if you have one.
 \addcontentsline{toc}{chapter}{LIST OF TABLES}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF FIGURES               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\realSingleSpace\listoffigures   % List of figures comes next, if you have one.
+{\realSingleSpace\listoffigures} % List of figures comes next, if you have one.
 \addcontentsline{toc}{chapter}{LIST OF FIGURES}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -178,14 +179,13 @@ I would like to give special thanks for the Tallahassee Museum and their patienc
     \realSingleSpace\vspace*{-\baselineskip}
             \hfill \break
                 \noindent Chair: {Xavier Martini} \\    % If we have a chair recorded, display it.
-                                \noindent Cochair: {Mathews Paret} \\% If there is a Co-chair provided, then list it.
                             \noindent Major: {Entomology and Nematology} \\
    \hphantom{forcing a space here} \\
 {\emph{Rose rosette emaravirus} (RRV) is the most devastating disease of roses, and is the causal agent of Rose Rosette Disease (RRD). Roses infected with RRD produce witches brooms, rosetting, deformed flowers, increased prickle density, elongated shoots, reddened plant tissues, dieback and ultimately plant death. Few management options are available: Current mite control is achieved by removing infected roses and frequent pesticide applications. Growers are interested in alternative and less expensive management options to combat \emph{P. fructiphilus} and RRV. Surveys from 2019-2021 were conducted along an east-west transect in northern Florida, searching for RRD, \emph{P. fructiphilus}, predatory mites, and other mites on roses in the landscape. As a result of these surveys, \emph{P. fructiphilus} were detected for the first time in the state, but no RRD was detected. \emph{P. fructiphilus} represents a potential threat to the Florida rose industry if RRD becomes established.
 
 We also describe the first detection of \emph{Orchid fleck dichorhavirus} (OFV) infecting three unreported ornamental hosts: \emph{Liriope muscari}, cv. `Gigantea' (Decaisne) Bailey, \emph{Ophiopogon intermedius} Don and \emph{Aspidistra elatior} Blume (Asparagaceae: Nolinoidaea) in Leon and Alachua Counties, FL. The orchid-infecting subgroup (Orc) of OFV infects over 50 plant species belonging to the plant families Orchidaceae, Asparagaceae (Nolinoidaea), and causes citrus leprosis disease in Citrus (Rutaceae). The only known vectors of OFV-Orc are the flat mites, \emph{Brevipalpus californicus} (Banks) \emph{sensu lato} (Trombidiformes: Tenuipalpidae). Chlorotic ringspots and flecking were seen affecting Liriopogons (\emph{Liriope} and \emph{Ophiopogon} spp.) in Leon County, FL. Nearby A. elatior also appeared chlorotic. Local diagnostics returned negative for common plant pathogens, therefore new samples were sent to the Florida Department of Agriculture and Consumer Services (FDACS) and USDA-ARS for identification. Two orchid-infecting strains of OFV were detected via combinations of conventional RT-PCR, RT-qPCR, Sanger sequencing and High Throughput Sequencing (HTS). Amplicons shared 98\% nucleotide identity with OFV-Orc1 and OFV-Orc2 RNA2 genome sequences available in NCBI GenBank. Coinfections were detected in each county, but single strains of OFV-Orc were detected in L. muscari (Alachua, OFV-Orc2) and A. elatior (Leon, OFV-Orc1). Three potential mite vectors were identified via cryo-scanning electron microscopy (Cryo-SEM): \emph{B. californicus s. l,}, \emph{B. obovatus} Donnadieu, and \emph{B. confusus Baker}. Florida has various plants in the landscape which \emph{Brevipalpus} spp. feed on, which are susceptible to infection by OFV-Orc. In conclusion, OFV orchid strains are present in northern Florida, representing a risk for susceptible plants in the southeastern US.}
 
-\addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
+\addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}% Input a dummy "CHAPTER" heading to show user-content
         \setcounter{secnumdepth}{5}
         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2536,7 +2536,7 @@ Austin N Fife received his B.S. degree in biology - zoology emphasis at Brigham 
 
 \includepdf[pages=1,pagecommand=\chapter{APPENDIX}, offset=0 -3cm]{pubs/pfruct-report.pdf}
 
-\setlength{\footskip}{4.5em}
+\setlength{\footskip}{4.2em}
 
 \includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}}                       % This imports the body chapters included in the _bookdown.yml file,
 % you can add as many chapters as you need

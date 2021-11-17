@@ -5,6 +5,7 @@ year: '2021'
 month: 'December'
 chair: 'Xavier Martini'
 # If you have more two advisors, un-silence line 9:
+cochair: 'Mathews Paret'
 degree: 'Doctor of Philosophy'
 major: 'Entomology and Nematology'
 thesistype: 'Dissertation'
