@@ -54,6 +54,7 @@
 \usepackage{pdflscape}
 \usepackage{threeparttablex}
 \RequirePackage{amsthm,amssymb,amsmath}
+\usepackage[defaultlines=4,all]{nowidow}
 \RequirePackage[
     format=hang,
     labelsep=period,
@@ -119,6 +120,10 @@
 %\renewcommand{\familydefault}{\sfdefault}% Converts default to actual Arial
 
 \raggedright%               They want a ragged right edge.
+\raggedbottom%              They also do not want references split between pages
+% \widowpenalty10000%
+% \clubpenalty10000%
+
 %% End Font Setting
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -145,38 +150,10 @@
 %                                                       for math display mode environments.
 \doublespacing%                                     Make everything double spaced by default.
 %
-\AtBeginEnvironment{longtable}{\realSingleSpace}{}%             Pre-append using longtables to make sure that tables are single spaced.
+\AtBeginEnvironment{longtable}{\realSingleSpace}{}% Pre-append using longtables to make sure that tables are single spaced.
 \preto\itemize{\par\realSingleSpace}%               Pre-append singlespace to itemize to account for 
 %                                                       single space bullet point lists.
 \RequirePackage{indentfirst}%                       This will make sure the first paragraph of every chapter is indented.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Formating Design    %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%
-%%% Caption Configuration TBD
-% NOTE: Make sure long captions don't overlap numbers in ToC :: Done.
-
-\newcounter{figCount}%      This is an internal counter to track how many figures
-\setcounter{figCount}{1}%   We will start at 1 due to how stepping it works.
-
-\newcommand{\addFigure}[3][\Alph{figCount}]{%   Command to manually add a figure
-    \parbox{#2\textwidth}{\centering #1 \\ \includegraphics[width=#2\textwidth]{#3}}
-    \stepcounter{figCount}
-    }
-
-\newenvironment{multiFigure}% Environment that mimicks figure type environment,
-%                               Except it doesn't float around and it resets figCount.
-    {% Begin Environment Code
-        \setcounter{figCount}{1}
-        \minipage\textwidth
-    }
-    {% End Environment Code
-        \endminipage
-    }
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%% Theorem environment definitions %%%
