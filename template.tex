@@ -21,7 +21,7 @@
 %% Preamble %%
 %%%%%%%%%%%%%%
 % \documentclass{<something>} must begin each LaTeX document
-\documentclass{ufdissertation} %UF's 2019 Template --ANF
+\documentclass{ufdissertation}[overrideChapters] %UF's 2019 Template --ANF
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
@@ -39,6 +39,8 @@ $if(highlighting-macros)$
   $highlighting-macros$
 $endif$
 
+% So, this code uses your CSL file to decide how to format your citations
+% You may need to edit your CSL if the editorial office doesn't like it
 % From {rticles}
 $if(csl-refs)$
 \newlength{\csllabelwidth}
@@ -72,6 +74,12 @@ $endif$
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% % Added by CII (Thanks, Hadley!)
+% % Use ref for internal links
+\renewcommand{\hyperref}[2][???]{\autoref{#1}}
+\def\chapterautorefname{Chapter}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
 % End of CII addition
 
 \begin{document}
@@ -82,7 +90,7 @@ $endif$
 
     \begin{center}
         \thispagestyle{empty}%
-        \vspace*{-0.4in}\realSingleSpace{\MakeUppercase{$title$}}%
+        \vspace*{-0.4in}\realSingleSpace{$title$}%
         \vfill%
         By \\*[\baselineskip]%
         \MakeUppercase{$author$}%
@@ -92,7 +100,7 @@ $endif$
         OF THE REQUIREMENTS FOR THE DEGREE OF \\%
         \MakeUppercase{$degree$} \\*[\baselineskip]%
         UNIVERSITY OF FLORIDA \\*[\baselineskip]%
-        $year$%
+        {$year$}%
     \end{center}
     \newpage
 
@@ -102,7 +110,7 @@ $endif$
     \newpage
       \vspace*{\fill}
         \begin{center}
-            \textcopyright{} $year$ $author$
+            \textcopyright{} {$year$} {$author$}
         \end{center}
       \vspace*{\fill}
     \newpage
@@ -119,7 +127,7 @@ $endif$
                                   % So we use \vspace*{\fill} above and below.
 \begin{center}                    % We also want to center the dedication horizontally.
   \realSingleSpace
-  $dedication$
+  {$dedication$}
 \end{center}
 \vspace*{\fill}                   % Note that the * in \vspace* is necessary,
                                   % as otherwise latex will ignore it here
@@ -129,7 +137,7 @@ $endif$
 % ACKNOWLEDGMENTS               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-$acknowledgments$                % Inputs the text found in the 00--acknowledgments.Rmd file
+{$acknowledgments$}              % Inputs the text found in the 00--acknowledgments.Rmd file
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -167,22 +175,20 @@ $acknowledgments$                % Inputs the text found in the 00--acknowledgme
             Abstract of $thesistype$ Presented to the Graduate School \\
             of the University of Florida in Partial Fulfillment of the \\
             Requirements for the Degree of $degree$\\[\baselineskip]
-            % \MakeUppercase{$title$}\\[\baselineskip] % use this line if your title doesn't have scientific names
-                                                       % otherwise, type it out and italicize as necessary
-            DETECTION OF TWO MITE-PLANT-VIRUS PATHOSYSTEMS IN FLORIDA, INCLUDING FIELD STUDIES AND CHEMICAL ECOLOGY OF INDUCED PLANT DEFENSES ON \textit{Phyllocoptes fructiphilus} AND \textit{Amblyseius swirskii}\\[\baselineskip]
+            {$title$}\\[\baselineskip] % reads in your title from the YAML header
             By\\[\baselineskip]
-            $author$ \\[\baselineskip]
-            $month$ $year$\\[\baselineskip]
+            {$author$} \\[\baselineskip]
+            {$month$} {$year$}\\[\baselineskip]
         \end{center}
     \realSingleSpace\vspace*{-\baselineskip}
             \hfill \break
-                \noindent Chair: $chair$ \\    % If we have a chair recorded, display it.
+                \noindent Chair: {$chair$} \\    % If we have a chair recorded, display it.
                 $if(cochair)$
-                \noindent Cochair: $cochair$ \\% If there is a Co-chair provided, then list it.
+                \noindent Cochair: {$cochair$} \\% If there is a Co-chair provided, then list it.
                 $endif$
-            \noindent Major: $major$ \\
+            \noindent Major: {$major$} \\
    \hphantom{forcing a space here} \\
-$abstract$
+{$abstract$}
 
 \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}%% Input a dummy "CHAPTER" heading to show user-content
         \setcounter{secnumdepth}{5}
@@ -192,16 +198,15 @@ $abstract$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \docBodytrue
-  \doublespacing
-    $body$                       % This imports the body chapters included in the _bookdown.yml file,
+ \doublespacing
+    {$body$}                       % This imports the body chapters included in the _bookdown.yml file,
 \docBodyfalse                    % you can add as many chapters as you need
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % APPENDICES                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 $if(appendix)$                   % If you have multiple appendices, add them as new chapters in the
-  $appendix$                     % prelims/99--appendix file and edit the chapter headings to say 'APPENDIX A'
+  {$appendix$}                     % prelims/99--appendix file and edit the chapter headings to say 'APPENDIX A'
 $endif$                          % 'APPENDIX B' and so on
 
 
