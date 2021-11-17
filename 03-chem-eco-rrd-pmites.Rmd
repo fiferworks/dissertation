@@ -120,70 +120,70 @@ knitr::kable(format = "latex", booktabs = TRUE, caption = "Correlation table for
 ```
 
 
-<!-- ####BOTH#### -->
-```{r all-vocs, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_df.png'), fig.cap="PCA biplot of volatiles collected with VCT+SPME methods.", fig.scap="PCA biplot of volatiles collected with VCT+SPME methods", warning=FALSE}
-knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_df.png')
-```
+<!-- <!-- ####BOTH#### --> -->
+<!-- ```{r all-vocs, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_biplot_var_pca_df.png'), fig.cap="PCA biplot of volatiles collected with VCT+SPME methods.", fig.scap="PCA biplot of volatiles collected with VCT+SPME methods", warning=FALSE} -->
+<!-- knitr::include_graphics('figure/rrv_volatiles_biplot_var_pca_df.png') -->
+<!-- ``` -->
 
-```{r all-vocs-compares, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_df.png'), fig.cap="Comparison of VCT+SPME principal components. Ellipses represent 95\\% confidence intervals.", fig.scap="Comparison of VCT+SPME principal components", warning=FALSE}
-knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_df.png')
-```
+<!-- ```{r all-vocs-compares, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_comparison_pca_comp_df.png'), fig.cap="Comparison of VCT+SPME principal components. Ellipses represent 95\\% confidence intervals.", fig.scap="Comparison of VCT+SPME principal components", warning=FALSE} -->
+<!-- knitr::include_graphics('figure/rrv_volatiles_comparison_pca_comp_df.png') -->
+<!-- ``` -->
 
-```{r all-vocs-scree, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_df.png'), fig.cap="Scree plot of VCT+SPME principal components.", fig.scap="Scree plot of VCT+SPME principal components", warning=FALSE}
-knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_df.png')
-```
+<!-- ```{r all-vocs-scree, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_screeplot_pca_df.png'), fig.cap="Scree plot of VCT+SPME principal components.", fig.scap="Scree plot of VCT+SPME principal components", warning=FALSE} -->
+<!-- knitr::include_graphics('figure/rrv_volatiles_screeplot_pca_df.png') -->
+<!-- ``` -->
 
-```{r all-vocs-umap, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_df.png'), fig.cap="UMAP of all VCT+SPME volatiles.", fig.scap="UMAP of all VCT+SPME volatiles", warning=FALSE}
-knitr::include_graphics('figure/rrv_volatiles_umap_chems_df.png')
-```
+<!-- ```{r all-vocs-umap, cache = TRUE, cache.extra = file.mtime('figure/rrv_volatiles_umap_chems_df.png'), fig.cap="UMAP of all VCT+SPME volatiles.", fig.scap="UMAP of all VCT+SPME volatiles", warning=FALSE} -->
+<!-- knitr::include_graphics('figure/rrv_volatiles_umap_chems_df.png') -->
+<!-- ``` -->
 
-\clearpage
-```{r all-contrib-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_volatiles_contribution_table_pca_dat.csv'),}
-read_csv('data/rrv_volatiles_contribution_table_pca_dat.csv',
-         show_col_types = FALSE) %>%
-  knitr::kable(
-    format = "latex",
-    booktabs = TRUE,
-    longtable = TRUE,
-    caption = "\\label{tab:all-contrib-table} Contribution table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses."
-  ) %>%
-  kable_styling(
-    latex_options = c(
-      "striped",
-      "repeat_header",
-      repeat_header_continued = "Continued",
-      repeat_header_method = "replace",
-      full_width = TRUE
-    )
-  )
-# %>%
-#   footnote(general = "beans.")
+<!-- \clearpage -->
+<!-- ```{r all-contrib-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_volatiles_contribution_table_pca_dat.csv'),} -->
+<!-- read_csv('data/rrv_volatiles_contribution_table_pca_dat.csv', -->
+<!--          show_col_types = FALSE) %>% -->
+<!--   knitr::kable( -->
+<!--     format = "latex", -->
+<!--     booktabs = TRUE, -->
+<!--     longtable = TRUE, -->
+<!--     caption = "\\label{tab:all-contrib-table} Contribution table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses." -->
+<!--   ) %>% -->
+<!--   kable_styling( -->
+<!--     latex_options = c( -->
+<!--       "striped", -->
+<!--       "repeat_header", -->
+<!--       repeat_header_continued = "Continued", -->
+<!--       repeat_header_method = "replace", -->
+<!--       full_width = TRUE -->
+<!--     ) -->
+<!--   ) -->
+<!-- # %>% -->
+<!-- #   footnote(general = "beans.") -->
 
-```
+<!-- ``` -->
 
-\clearpage
-```{r all-corr-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_volatiles_correlation_table_pca_dat.csv')}
-read_csv('data/rrv_volatiles_correlation_table_pca_dat.csv',
-         show_col_types = FALSE) %>%
-  knitr::kable(
-    format = "latex",
-    booktabs = TRUE,
-    longtable = TRUE,
-    caption = "\\label{tab:all-corr-table} Correlation table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses.",
-  ) %>%
-  kable_styling(
-    latex_options = c(
-      "striped",
-      "repeat_header",
-      repeat_header_text = "\\textit{(Beans)}",
-      repeat_header_method = "replace",
-      full_width = TRUE
-    )
-  )
-# %>%
-#   footnote(general = "beans.")
+<!-- \clearpage -->
+<!-- ```{r all-corr-table, echo = FALSE, warning = FALSE, cache = TRUE, cache.extra = file.mtime('data/rrv_volatiles_correlation_table_pca_dat.csv')} -->
+<!-- read_csv('data/rrv_volatiles_correlation_table_pca_dat.csv', -->
+<!--          show_col_types = FALSE) %>% -->
+<!--   knitr::kable( -->
+<!--     format = "latex", -->
+<!--     booktabs = TRUE, -->
+<!--     longtable = TRUE, -->
+<!--     caption = "\\label{tab:all-corr-table} Correlation table for PCA of headspace VOCs collected with VCT+SPME methods from Pink Double Knock Out® roses.", -->
+<!--   ) %>% -->
+<!--   kable_styling( -->
+<!--     latex_options = c( -->
+<!--       "striped", -->
+<!--       "repeat_header", -->
+<!--       repeat_header_text = "\\textit{(Beans)}", -->
+<!--       repeat_header_method = "replace", -->
+<!--       full_width = TRUE -->
+<!--     ) -->
+<!--   ) -->
+<!-- # %>% -->
+<!-- #   footnote(general = "beans.") -->
 
-```
+<!-- ``` -->
 
 
 ### *Amblyseius swirskii* were not affected by the VOCs tested
@@ -202,4 +202,4 @@ knitr::include_graphics('figure/rrv_graph_olfact_vocs_time_choice.png')
 ```
 
 ## Discussion
-Plants play a large role in the lives of phytoseiid mites [@Schmidt2013; @Cortesero2000]: for example the trichome density of plants affects their dispersal [@Loughner2010; @Loughner2010a; @Lopez2016; @Buitenhuis2013], oviposition, [@Agrawal1997; @Walter1996; @Grostal1994; @Walter1992; @ODowd1991], performance as predators [@Buitenhuis2013; @Seelmann2007; @Cedola2001] and their ability to avoid predation [@Faraji2002]. Therefore, it is not unusual to see a preference towards plant VOCs, but it is interesting to note their attraction to an infected rose (*\@ref(fig:aswir-rrd)*). Future tests should try varying the concentrations of these chemicals, and testing the other chemicals detected from the volatile extractions. Olfactometers are considered a useful way to determine predatory mite attraction to different prey items [@Janssen1990], so it is possible that infected roses release volatiles that *A. swirskii* would associate with prey. It is interesting to note that VCT methods found that levels of MeSA were lower for infected plants; SPME methods did not recover MeSA. It may be that SPME fibers were not exposed to VOCs long enough on infected roses to reach equilibrium, or MeSA is very low in severely infected plants. It is also peculiar to see that MeSA levels were not recovered from ASM-treated plants (*\@ref(tab:spme-contrib-table), \@ref(tab:spme-corr-table)*). ASM induces SAR, again possibly that SPME fibers may not be adsorbing MeSA in our assays for some reason. Furthermore, ASM-treated plants had lower volatile activity overall, compared to other roses, which may explain the clustering we see in our figures (*\@ref(fig:spme-vocs-compares)*, *\@ref(fig:all-vocs-umap)*). Another possibility is that the time of sampling affected the outcome. ASM-treated plants were sampled at the end of a 12-week application period, by which it may no longer be producing MeSA at high levels. This is an unfortunate side effect of sampling in the field at a remote site rather than in the lab. The SPME method is limited to short extractions, partially due to overheating of the inflator pumps. It is harder to have high confidence about results without VCT validation, due to the many variables and possible confounding effects such as plant age, measurement error, sample contamination, temperature, etc.. Sampling recently SAR-induced plants with VCT methods would give a good point of reference to resolve this discrepancy. If MeSA levels are truly low on infected roses, it may suggest that MeSA was not the primary chemical involved with attracting *A. swirskii* to roses. The most common VOCs extracted from roses were terpenes. \textgamma-Murrolene and \textbeta-Caryophyllene were the largest contributors to the VOC composition from the roses collected, so it would be worth testing these chemicals with *A. swirskii* to see if these chemicals play a role in *A. swirskii* attraction to infected roses. Mites were not more attracted to Limonene than filtered air in our preliminary trials, but there were differences in time to choice (*\@ref(fig:aswir-mesa-lim-times)*) and a significant difference between making a choice vs. no choice (*\@ref(fig:aswir-mesa-lim)*). On the contrary to the Limonene results, *A. swirskii* appeared to have random behaviors between choices and no-choice, and did not vary in their time to choice (*\@ref(fig:aswir-mesa-lim)*, *\@ref(fig:aswir-mesa-lim-times)*). We predict that reducing the concentrations of these synthetic VOCs may produce different responses, more experiments are warranted. In conclusion, we have found preliminary data about volatile changes in infected roses and SAR-induced roses, and their putative relationships with *A. swirskii*.
+Plants play a large role in the lives of phytoseiid mites [@Schmidt2013; @Cortesero2000]: for example the trichome density of plants affects their dispersal [@Loughner2010; @Loughner2010a; @Lopez2016; @Buitenhuis2013], oviposition, [@Agrawal1997; @Walter1996; @Grostal1994; @Walter1992; @ODowd1991], performance as predators [@Buitenhuis2013; @Seelmann2007; @Cedola2001] and their ability to avoid predation [@Faraji2002]. Therefore, it is not unusual to see a preference towards plant VOCs, but it is interesting to note their attraction to an infected rose (*\@ref(fig:aswir-rrd)*). Future tests should try varying the concentrations of these chemicals, and testing the other chemicals detected from the volatile extractions. Olfactometers are considered a useful way to determine predatory mite attraction to different prey items [@Janssen1990], so it is possible that infected roses release volatiles that *A. swirskii* would associate with prey. It is interesting to note that VCT methods found that levels of MeSA were lower for infected plants; SPME methods did not recover MeSA. It may be that SPME fibers were not exposed to VOCs long enough on infected roses to reach equilibrium, or MeSA is very low in severely infected plants. It is also peculiar to see that MeSA levels were not recovered from ASM-treated plants (*\@ref(tab:spme-contrib-table), \@ref(tab:spme-corr-table)*). ASM induces SAR, again possibly that SPME fibers may not be adsorbing MeSA in our assays for some reason. Furthermore, ASM-treated plants had lower volatile activity overall, compared to other roses, which may explain the clustering we see in our figures (*\@ref(fig:spme-vocs-compares)*, *\@ref(fig:qsep-vocs-compares)*). Another possibility is that the time of sampling affected the outcome. ASM-treated plants were sampled at the end of a 12-week application period, by which it may no longer be producing MeSA at high levels. This is an unfortunate side effect of sampling in the field at a remote site rather than in the lab. The SPME method is limited to short extractions, partially due to overheating of the inflator pumps. It is harder to have high confidence about results without VCT validation, due to the many variables and possible confounding effects such as plant age, measurement error, sample contamination, temperature, etc.. Sampling recently SAR-induced plants with VCT methods would give a good point of reference to resolve this discrepancy. If MeSA levels are truly low on infected roses, it may suggest that MeSA was not the primary chemical involved with attracting *A. swirskii* to roses. The most common VOCs extracted from roses were terpenes. \textgamma-Murrolene and \textbeta-Caryophyllene were the largest contributors to the VOC composition from the roses collected, so it would be worth testing these chemicals with *A. swirskii* to see if these chemicals play a role in *A. swirskii* attraction to infected roses. Mites were not more attracted to Limonene than filtered air in our preliminary trials, but there were differences in time to choice (*\@ref(fig:aswir-mesa-lim-times)*) and a significant difference between making a choice vs. no choice (*\@ref(fig:aswir-mesa-lim)*). On the contrary to the Limonene results, *A. swirskii* appeared to have random behaviors between choices and no-choice, and did not vary in their time to choice (*\@ref(fig:aswir-mesa-lim)*, *\@ref(fig:aswir-mesa-lim-times)*). We predict that reducing the concentrations of these synthetic VOCs may produce different responses, more experiments are warranted. In conclusion, we have found preliminary data about volatile changes in infected roses and SAR-induced roses, and their putative relationships with *A. swirskii*.
