@@ -30,7 +30,7 @@
 %%
 \usepackage{siunitx}
 \usepackage{textgreek}
-\usepackage[section]{placeins}
+% \usepackage[section]{placeins}
 \usepackage{pdfpages}
 \usepackage{calc}
 \usepackage{rotating}
@@ -146,17 +146,18 @@ I am obliged to my goodly parents for teaching me about the importance of learni
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF TABLES                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-{\realSingleSpace\listoftables}  % List of tables comes next, if you have one.
-\addcontentsline{toc}{chapter}{LIST OF TABLES}
-
+% \begin{singlespace}
+  \listoftables  % List of tables comes next, if you have one.
+  \addcontentsline{toc}{chapter}{LIST OF TABLES}
+ % \end{singlespace}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF FIGURES               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\realSingleSpace\listoffigures} % List of figures comes next, if you have one.
-\addcontentsline{toc}{chapter}{LIST OF FIGURES}
-
+\begin{singlespace}
+  \listoffigures % List of figures comes next, if you have one.
+  \addcontentsline{toc}{chapter}{LIST OF FIGURES}
+\end{singlespace}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF ABBREVIATIONS         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -324,8 +325,6 @@ A survey of roses in the landscape was conducted following a transect of norther
 \section{Results}\label{results}}
 
 425 samples were taken from 33 sites from an east to west transect along the border northern Florida. Eriophyoid mites were recovered in rose samples from six cities. The first samples of \emph{P. fructiphilus} were first encountered in Tallahassee during 2019; subsequent sampling efforts found in more eriophyoids in Jacksonville, Baldwin, Gainesville and Defuniak Springs in 2020, and Lake City in 2021. Other mites were collected from 68\% of the cities visited. The largest populations of \emph{P. fructiphilus} were seen in Tallahassee, with over 8,400 eriophyoid mites from 260 samples collected during 2019-2021 (\emph{see \ref{tab:survey-table-1}}). No evidence of RRD was observed in northern Florida during the surveys, even in areas where abundant \emph{P. fructiphilus} were found. Over 4,600 non-eriophyoid mites were collected from various cities during 2019-2021 \emph{\ref{tab:survey-table-1}}. Other non-eriophyoid mites collected primarily belong to the family Tetranychidae, but a small number of phytoseiidae and other predatory mites were recovered as well. These other mites currently await curation and expert identification.
-
-\FloatBarrier
 \begin{figure}[p]
 
 {\centering \includegraphics[width=1\linewidth]{figure/rrv_survey_map_fl_pf} 
@@ -419,8 +418,6 @@ Tallahassee & 2021 & 424 & 2.78 & 579 & 8.68 & 24 & 17.7 & 1003 & -84.30731 & 30
 \bottomrule
 \end{tabular}}
 \end{table}
-\FloatBarrier
-
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
@@ -1161,6 +1158,12 @@ The principal findings of our experiments are:
   Orchid Fleck Virus (OFV) is present in ornamental groundcover plants in Florida. the vector of OFV (\emph{Brevipalpus californicus}, \emph{sensu lato}) is present as well
 \end{enumerate}
 We encountered two invasive mite species associated with plant viruses in the last three years. This is likely an unfortunate byproduct of the plant trade and the (\protect\hyperlink{ref-Chapman2017}{Chapman et al. 2017}).
+
+\includepdf[pages=1,pagecommand=\chapter{APPENDIX}, offset=0 -3cm]{pubs/pfruct-report.pdf}
+
+\setlength{\footskip}{4.2em}
+
+\includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}
 
 \docBodyfalse
 \setcounter{secnumdepth}{-1}
@@ -2535,13 +2538,7 @@ We encountered two invasive mite species associated with plant viruses in the la
 
 \realSingleSpace\vspace*{\baselineskip}
 
-Austin N Fife received his B.S. degree in biology - zoology emphasis at Brigham Young University - Idaho at Rexburg. During his undergraduate degree, he conducted research on the distribution of the endemic St.~Anthony Dunes Tiger Beetle \emph{Cicendela arenicola}. He went on to receive a M.S. in entomology at the University of Idaho while working at the Kimberly Research and Extension Center on potato psyllids \emph{Bactericera cockerelli} and host plant resistance. He received his PhD in entomology and nematology at the University of Florida in 2021 while working at the North Florida Research and Education Center in Quincy, FL. There, his research focused on \emph{Phyllocoptes fructiphilus} and \emph{Rose rosette emaravirus}, the causal agent of Rose Rosette Disease. His research covered a variety of topics, including acarology, chemical ecology, induced plant defenses, biological control, and plant-pathogen-arthropod interactions. As a former Eagle Scout from Idaho, he loves to spend time outdoors with his wife, Liz and his two (soon to be three) lovely daughters, Violet, Juniper and \{insert plant name here\}.
-
-\includepdf[pages=1,pagecommand=\chapter{APPENDIX}, offset=0 -3cm]{pubs/pfruct-report.pdf}
-
-\setlength{\footskip}{4.2em}
-
-\includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}}                       % This imports the body chapters included in the _bookdown.yml file,
+Austin N Fife received his B.S. degree in biology - zoology emphasis at Brigham Young University - Idaho at Rexburg. During his undergraduate degree, he conducted research on the distribution of the endemic St.~Anthony Dunes Tiger Beetle \emph{Cicendela arenicola}. He went on to receive a M.S. in entomology at the University of Idaho while working at the Kimberly Research and Extension Center on potato psyllids \emph{Bactericera cockerelli} and host plant resistance. He received his PhD in entomology and nematology at the University of Florida in 2021 while working at the North Florida Research and Education Center in Quincy, FL. There, his research focused on \emph{Phyllocoptes fructiphilus} and \emph{Rose rosette emaravirus}, the causal agent of Rose Rosette Disease. His research covered a variety of topics, including acarology, chemical ecology, induced plant defenses, biological control, and plant-pathogen-arthropod interactions. As a former Eagle Scout from Idaho, he loves to spend time outdoors with his wife, Liz and his two (soon to be three) lovely daughters, Violet, Juniper and \{insert plant name here\}.}                       % This imports the body chapters included in the _bookdown.yml file,
 % you can add as many chapters as you need
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
