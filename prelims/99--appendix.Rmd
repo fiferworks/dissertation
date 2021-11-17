@@ -1,7 +1,6 @@
-# APPENDIX {-}
-
-<!-- this prevents the creation of a new page before inserting the pdf -->
-\let\newpage\relax
+<!-- Un-silence the following line if you aren't importing a pdf -->
+<!-- # APPENDIX {-} --> 
 
 <!-- this imports my publication -->
-\includepdf[scale= 0.9, pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}
+\includepdf[pages=1,pagecommand=\chapter{APPENDIX}, offset=0 -3cm]{pubs/pfruct-report.pdf}
+\includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}
