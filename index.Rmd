@@ -57,9 +57,6 @@ dedication: |
   `r paste(readLines(here::here("prelims", "00--dedication.Rmd")), collapse = "\n  ")`
 appendix: |
   `r paste(readLines(here::here("prelims", "99--appendix.Rmd")), collapse = "\n  ")`
-biography: |
-  `r paste(readLines(here::here("prelims", "99--biography.Rmd")), collapse = "\n  ")`
-
 
 # keywords: keywords #this isn't implemented yet
 # subject: subject #also not implemented
@@ -108,7 +105,7 @@ library(thesisdown)
 options(width = 70)
 
 #installs the required phantomjs for the maps
-if(!require(webshot))
+if (!require(webshot))
   webshot::install_phantomjs()
 
 pkgs <-
@@ -136,7 +133,7 @@ pkgs <-
     "tiff",
     "usethis",
     "devtools"
-    )
+  )
 
 #installs the packages if you don't have them already installed
 nu_pkgs <- pkgs[!(pkgs %in% installed.packages()[, "Package"])]
@@ -148,7 +145,12 @@ lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
 # R global options
-knitr::opts_chunk$set(fig.align="center", echo=FALSE, cache.comments = FALSE)
+knitr::opts_chunk$set(
+  fig.align = "center",
+  echo = FALSE,
+  out.width = "100%",
+  cache.comments = FALSE
+)
 ```
 
  

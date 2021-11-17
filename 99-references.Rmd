@@ -1,0 +1,26 @@
+\docBodyfalse
+\setcounter{secnumdepth}{-1}                   <!-- We don't want to number our chapters anymore. -->
+\singlespacing
+<!-- The bib chunk below must go last in this document according to how R
+Markdown renders.  More info is at
+http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html If
+you'd like to change the name of the bibliography to something else, delete
+"References" and replace it. -->
+
+# REFERENCES {-}
+
+<!--This manually sets the location of the references to here-->
+<div id="refs"></div>
+
+
+
+<!-- Imports the Biographical Sketch chapter here -->
+`r paste(readLines(here::here("prelims", "99--biography.Rmd")), collapse = "\n  ")`
+
+<!-- Add other entries into the list here if you'd like them to appear in the
+bibliography even if they weren't explicitly cited in the document. -->
+
+---
+nocite: | 
+  @Broussard2007, @Baker1987, @Beard2015, @Fantz2008b, @Fantz2009, @Fantz2015, @Masiero2020, @Wang2014, @Xie2021, @Xie2016, @Ismay2021, @Wickham2019, @Pebesma2018, @Wickham2016, @Cheng2021, @Appelhans2019, @Zhu2021, @Wickham2021, @Arnold2021, @Qiu2021, @WinstonChang2014, @Urbanek2020, @Ooms2021, @Wickham2019a, @Appelhans2021, @Vaidyanathan2020, @Garnier2021, @Ram2018, @Wickham2021a, @Urbanek2021, @Dunnington2021, @Wickham2021b, @Grolemund2011, @Feinerer2008, @Chang2019, @Neuwirth2014, @Bates2015, @Fox2019, @Hothorn2008, @Lenth2021, @Wickham2019b, @Bischl2016, @vanBuuren2011, @Tennekes2018, @Tierney2021, @Kassambara2020, @Mueller2021, @Konopka2020, @Eddelbuettel2018, @Schloerke2021, @Henry2021, @Ottolinger2019, @Zeileis2008, @Jackman2020
+...
