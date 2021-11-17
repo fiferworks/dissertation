@@ -1,6 +1,14 @@
 <!-- Un-silence the following line if you aren't importing a pdf -->
 <!-- # APPENDIX {-} --> 
 
-<!-- this imports my publication -->
+
+<!-- This imports the first page of my pdf, you need the -3 cm offset to
+avoid overlapping the chapter heading-->
 \includepdf[pages=1,pagecommand=\chapter{APPENDIX}, offset=0 -3cm]{pubs/pfruct-report.pdf}
+
+<!-- I needed to move the page numbers a little lower to avoid overlapping the
+text at the bottom of the pdf -->
+\setlength{\footskip}{4.5em}
+
+<!-- This imports the second to the last pages of my pdf -->
 \includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}
