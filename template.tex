@@ -200,15 +200,15 @@ $endif$
 \docBodytrue
  \doublespacing
     {$body$}                       % This imports the body chapters included in the _bookdown.yml file,
-\docBodyfalse                    % you can add as many chapters as you need
-\clearpage
+% you can add as many chapters as you need
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % APPENDICES                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-$if(appendix)$                   % If you have multiple appendices, add them as new chapters in the
-  {$appendix$}                     % prelims/99--appendix file and edit the chapter headings to say 'APPENDIX A'
-$endif$                          % 'APPENDIX B' and so on
+
+% If you have multiple appendices, add them as new chapters in the
+% prelims/99--appendix file and edit the chapter headings to say 'APPENDIX A'
+% 'APPENDIX B' and so on
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,7 +222,6 @@ $endif$                          % 'APPENDIX B' and so on
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % provided by file prelims/99--biography.Rmd
-% look at file 99-references to see the code
-% that imports the text or to delete this section
+
 
 \end{document}
