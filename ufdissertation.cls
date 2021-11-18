@@ -306,16 +306,16 @@
 %%% Below is the formatting for all the Table of Contents hyperlinks, dotted lines, and horizontal alignment.
 
 \titlecontents{part}[0em]
-    {\mdseries}
+    {\addvspace{5pt}\mdseries}
     {}
     {}
-    {\hyper@linkstart{link}{\Hy@tocdestname}{\contentslabel{2.3em}}\hyper@linkend \\*\addvspace{8pt}}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\contentslabel{2.3em}}\hyper@linkend \\*\addvspace{5pt}}
 
 \titlecontents{chapter}[0em]
+    {\addvspace{5pt}}
+    {\hspace*{1.3em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{\contentslabel{2em}}\hyper@linkend}
     {}
-    {\contentslabel{2em}}
-    {}
-    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{8pt}}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*\addvspace{5pt}}
 
 \titlecontents{section}[4.1em]
     {}
