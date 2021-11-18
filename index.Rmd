@@ -149,6 +149,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-<!-- DO NOT WRITE HERE! The acknowledgments, dedication, and abstract are added
+<!-- DO NOT WRITE HERE! The abstract, acknowledgments, and dedication are added
 into the PDF version automatically by inputting them in prelims files mentioned
 in the YAML at the top of this file. -->
