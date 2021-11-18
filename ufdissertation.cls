@@ -54,7 +54,7 @@
 \usepackage{pdflscape}
 \usepackage{threeparttablex}
 \RequirePackage{amsthm,amssymb,amsmath}
-% \usepackage[defaultlines=4,all]{nowidow} % this one
+\usepackage[defaultlines=4,all]{nowidow} % this one
 \RequirePackage[
     format=hang,
     labelsep=period,
@@ -74,7 +74,6 @@
 %the gap between the chapter and section when they occur consecutively.
 \RequirePackage{titletoc}%          Use this to manipulate Table of Contents styling
 \RequirePackage{float}
-% \RequirePackage[numbers]{natbib}
 
 \providecommand{\realSingleSpace}{\setstretch{1}}%  They claim they want single-space, but what they actually want is "as little white space between letters as is visually acceptable".
 
@@ -306,10 +305,10 @@
 %%% Below is the formatting for all the Table of Contents hyperlinks, dotted lines, and horizontal alignment.
 
 \titlecontents{part}[0em]
-    {\mdseries}
+    {\addvspace{5pt}\mdseries}
     {}
     {}
-    {\hyper@linkstart{link}{\Hy@tocdestname}{\contentslabel{2.3em}}\hyper@linkend \\*\addvspace{6pt}}
+    {\hyper@linkstart{link}{\Hy@tocdestname}{\contentslabel{2.3em}}\hyper@linkend \\*\addvspace{5pt}}
 
 \titlecontents{chapter}[0em]
     {\addvspace{5pt}}
