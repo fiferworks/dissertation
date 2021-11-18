@@ -84,7 +84,7 @@ $endif$
 % End of CII addition
 
 \begin{document}
-
+\docBodyfalse
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TITLE PAGE                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -144,23 +144,32 @@ $endif$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE OF CONTENTS             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\realSingleSpace\tableofcontents} % Table of Contents comes fourth.
+
+% \begin{singlespace}
+ \realSingleSpace
+  \tableofcontents % Table of Contents comes fourth.
+% \end{singlespace}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF TABLES                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{singlespace}
+
+\begin{singlespace}
   \listoftables  % List of tables comes next, if you have one.
   \addcontentsline{toc}{chapter}{LIST OF TABLES}
- % \end{singlespace}
+ \end{singlespace}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF FIGURES               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{singlespace}
   \listoffigures % List of figures comes next, if you have one.
   \addcontentsline{toc}{chapter}{LIST OF FIGURES}
 \end{singlespace}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF ABBREVIATIONS         %
@@ -169,7 +178,7 @@ $endif$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ACADEMIC ABSTRACT             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+$if(abstract)$
 \newpage                         % Since the abstract needs to be a phantom chapter, we need to force a newpage.
     \phantomsection
     \addcontentsline{toc}{chapter}{ABSTRACT}
@@ -195,12 +204,13 @@ $endif$
 
 \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}% Input a dummy "CHAPTER" heading to show user-content
         \setcounter{secnumdepth}{5}
-        
+        \docBodytrue
+$endif$
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHAPTERS                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\docBodytrue
  \doublespacing
     {$body$}                       % This imports the body chapters included in the _bookdown.yml file,
 % you can add as many chapters as you need
