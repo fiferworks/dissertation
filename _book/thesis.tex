@@ -77,7 +77,7 @@
 \def\subsectionautorefname{Subsection}
 % End of CII addition
 \begin{document}
-
+\docBodyfalse
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TITLE PAGE                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,15 +141,20 @@ I am obliged to my goodly parents for teaching me about the importance of learni
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE OF CONTENTS             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\realSingleSpace\tableofcontents} % Table of Contents comes fourth.
+
+% \begin{singlespace}
+ \realSingleSpace
+  \tableofcontents % Table of Contents comes fourth.
+% \end{singlespace}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF TABLES                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{singlespace}
+\begin{singlespace}
   \listoftables  % List of tables comes next, if you have one.
   \addcontentsline{toc}{chapter}{LIST OF TABLES}
- % \end{singlespace}
+ \end{singlespace}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF FIGURES               %
@@ -158,6 +163,7 @@ I am obliged to my goodly parents for teaching me about the importance of learni
   \listoffigures % List of figures comes next, if you have one.
   \addcontentsline{toc}{chapter}{LIST OF FIGURES}
 \end{singlespace}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LIST OF ABBREVIATIONS         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,7 +171,6 @@ I am obliged to my goodly parents for teaching me about the importance of learni
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ACADEMIC ABSTRACT             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \newpage                         % Since the abstract needs to be a phantom chapter, we need to force a newpage.
     \phantomsection
     \addcontentsline{toc}{chapter}{ABSTRACT}
@@ -191,12 +196,12 @@ We also describe the first detection of \emph{Orchid fleck dichorhavirus} (OFV) 
 
 \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}% Input a dummy "CHAPTER" heading to show user-content
         \setcounter{secnumdepth}{5}
-        
+        \docBodytrue
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CHAPTERS                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\docBodytrue
  \doublespacing
     {\hypertarget{literature-review}{%
 \chapter{LITERATURE REVIEW}\label{literature-review}}
@@ -1159,6 +1164,9 @@ The principal findings of our experiments are:
 \end{enumerate}
 We encountered two invasive mite species associated with plant viruses in the last three years. This is likely an unfortunate byproduct of the plant trade and the (\protect\hyperlink{ref-Chapman2017}{Chapman et al. 2017}).
 
+\docBodyfalse
+\setcounter{secnumdepth}{-1}
+
 \includepdf[pages=1,pagecommand=\chapter{APPENDIX}, offset=0 -3cm]{pubs/pfruct-report.pdf}
 
 \setlength{\footskip}{4.2em}
@@ -1171,8 +1179,6 @@ We encountered two invasive mite species associated with plant viruses in the la
 \hypertarget{references}{%
 \chapter*{REFERENCES}\label{references}}
 \addcontentsline{toc}{chapter}{REFERENCES}
-
-\realSingleSpace
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
@@ -2530,13 +2536,9 @@ We encountered two invasive mite species associated with plant viruses in the la
 \textbf{Ziadi, S., P. Poupard, M. Brisset, J.-P. Paulin, and P. Simoneau}. \textbf{2001}. Characterization in apple leaves of two subclasses of {PR}-10 transcripts inducible by acibenzolar-{S}-methyl, a functional analogue of salicylic acid. Physiological and Molecular Plant Pathology. 59: 33--43, DOI:\href{https://doi.org/10.1006/pmpp.2001.0343}{10.1006/pmpp.2001.0343}.
 
 \end{CSLReferences}
-\doublespacing
-
 \hypertarget{biographical-sketch}{%
 \chapter*{BIOGRAPHICAL SKETCH}\label{biographical-sketch}}
 \addcontentsline{toc}{chapter}{BIOGRAPHICAL SKETCH}
-
-\realSingleSpace\vspace*{\baselineskip}
 
 Austin N Fife received his B.S. degree in biology - zoology emphasis at Brigham Young University - Idaho at Rexburg. During his undergraduate degree, he conducted research on the distribution of the endemic St.~Anthony Dunes Tiger Beetle \emph{Cicendela arenicola}. He went on to receive a M.S. in entomology at the University of Idaho while working at the Kimberly Research and Extension Center on potato psyllids \emph{Bactericera cockerelli} and host plant resistance. He received his PhD in entomology and nematology at the University of Florida in 2021 while working at the North Florida Research and Education Center in Quincy, FL. There, his research focused on \emph{Phyllocoptes fructiphilus} and \emph{Rose rosette emaravirus}, the causal agent of Rose Rosette Disease. His research covered a variety of topics, including acarology, chemical ecology, induced plant defenses, biological control, and plant-pathogen-arthropod interactions. As a former Eagle Scout from Idaho, he loves to spend time outdoors with his wife, Liz and his two (soon to be three) lovely daughters, Violet, Juniper and \{insert plant name here\}.}                       % This imports the body chapters included in the _bookdown.yml file,
 % you can add as many chapters as you need
