@@ -3927,6 +3927,20 @@ CONCLUSIONS: In general, these products appear safe to use prior to establishmen
   publisher = {American Society of Plant Biologists ({ASPB})},
 }
 
+@Article{Griebel2008,
+  author    = {Thomas Griebel and J{\"{u}}rgen Zeier},
+  journal   = {Plant Physiology},
+  title     = {Light regulation and daytime dependency of inducible plant defenses in arabidopsis: phytochrome signaling controls systemic acquired resistance rather than local defense},
+  year      = {2008},
+  month     = apr,
+  number    = {2},
+  pages     = {790--801},
+  volume    = {147},
+  abstract  = {We have examined molecular and physiological principles underlying the light dependency of defense activation in Arabidopsis (Arabidopsis thaliana) plants challenged with the bacterial pathogen Pseudomonas syringae. Within a fixed light/dark cycle, plant defense responses and disease resistance significantly depend on the time of day when pathogen contact takes place. Morning and midday inoculations result in higher salicylic acid accumulation, faster expression of pathogenesis-related genes, and a more pronounced hypersensitive response than inoculations in the evening or at night. Rather than to the plants' circadian rhythm, this increased plant defense capability upon day inoculations is attributable to the availability of a prolonged light period during the early plant-pathogen interaction. Moreover, pathogen responses of Arabidopsis double mutants affected in light perception, i.e. cryptochrome1cryptochrome2 (cry1cry2), phototropin1phototropin2 (phot1phot2), and phytochromeAphytochromeB (phyAphyB) were assessed. Induction of defense responses by either avirulent or virulent P. syringae at inoculation sites is relatively robust in leaves of photoreceptor mutants, indicating little cross talk between local defense and light signaling. In addition, the blue-light receptor mutants cry1cry2 and phot1phot2 are both capable of establishing a full systemic acquired resistance (SAR) response. Induction of SAR and salicylic-acid-dependent systemic defense reactions, however, are compromised in phyAphyB mutants. Phytochrome regulation of SAR involves the essential SAR component FLAVIN-DEPENDENT MONOOXYGENASE1. Our findings highlight the importance of phytochrome photoperception during systemic rather than local resistance induction. The phytochrome system seems to accommodate the supply of light energy to the energetically costly increase in whole plant resistance.},
+  doi       = {10.1104/pp.108.119503},
+  publisher = {Oxford University Press ({OUP})},
+}
+
 @Article{Grodsky2015,
   author    = {Grodsky, Steven M. and Iglay, Raymond B. and Sorenson, Clyde E. and Moorman, Christopher E.},
   journal   = {The Journal of Wildlife Management},
@@ -8646,6 +8660,19 @@ As they develop, many plants deploy shifts in antiherbivore defense allocation d
   pages     = {108--112},
   volume    = {37},
   publisher = {Horticultural Research Institute},
+}
+
+@Article{Solo2019a,
+  author    = {Solo, Katherine M. and Collins, Sara B. and Schneider, Liesel G. and Hajimorad, M. R. and Hale, Frank A. and Wilkerson, John B. and Windham, Alan S. and Windham, Mark T.},
+  journal   = {Plant Health Progress},
+  title     = {Evaluation of floral cuts on eriophyid mite retention on knock out and multiflora rose cuttings},
+  year      = {2019},
+  month     = jan,
+  number    = {2},
+  pages     = {83--87},
+  volume    = {20},
+  doi       = {10.1094/php-12-18-0080-rs},
+  publisher = {Scientific Societies},
 }
 
 @Article{Solo2020,
