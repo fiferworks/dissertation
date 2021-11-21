@@ -3,11 +3,11 @@
 \setcounter{secnumdepth}{-1}
 
 <!-- Un-silence the following line if you aren't importing a pdf -->
-<!-- # APPENDIX {-} --> 
+# APPENDIX {-}
 
 <!-- This imports the first page of my pdf, you need the -3 cm offset to
 avoid overlapping the chapter heading-->
-\includepdf[pages=1,pagecommand=\chapter{APPENDIX}, offset=0 -3cm]{pubs/pfruct-report.pdf}
+\includepdf[pages=1,pagecommand=\chapter{FIRST REPORT OF \textit{Phyllocoptes fructiphilus} Kiefer (ERIOPHYIDAE), THE VECTOR OF THE ROSE ROSETTE VIRUS, IN FLORIDA, USA}, offset=0 -3cm]{pubs/pfruct-report.pdf}
 
 <!-- I needed to move the page numbers a little lower to avoid overlapping the
 text at the bottom of the pdf -->
@@ -17,3 +17,13 @@ text at the bottom of the pdf -->
 \includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}
 
 
+<!-- This imports the first page of my pdf, you need the -3 cm offset to
+avoid overlapping the chapter heading-->
+\includepdf[pages=1,pagecommand=\chapter{\textit{Brevipalpus}-TRANSMITTED ORCHID FLECK VIRUS INFECTING THREE NEW ORNAMENTAL HOSTS IN FLORIDA}, scale=0.9, offset=0 -1cm]{pubs/ofv_brevi_report.pdf}
+
+<!-- I needed to move the page numbers a little lower to avoid overlapping the
+text at the bottom of the pdf -->
+\setlength{\footskip}{3.2em}
+
+<!-- This imports the second to the last pages of my pdf -->
+\includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/ofv_brevi_report.pdf}
