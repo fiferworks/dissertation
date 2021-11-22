@@ -335,6 +335,113 @@
     {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Appendix Numbering %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% \ifExists{appendixFile}%                                Appendix file comes first after user content.
+%         {%                                                  If we have defined an appendix file, import it.
+%         %                                                   NOTE: If there is only one Appendix, it should be of the form: Appendix:  "Appendix title". Otherwise it should use Alpha headers A, B, C, etc. :: Done, see below.
+%         
+%         
+%         
+%         \ifmultipleAppendix%                            If there are multiple appendicies, we should format it this way.
+%             
+%             %% I am told that now the grad school wants "APPENDIX A" above the first appendix etc for multi appendicies. I have included this option into the multiAppendix conditional under the assumption this is true.
+%             \titleformat{\chapter}[hang]
+%                 {\uppercase}
+%                 {}
+%                 {0pt}
+%                 {\centering\realSingleSpace Appendix \thechapter \\[-5pt]}
+%                 [\raggedright\doublespacing]
+%         
+%             \setcounter{secnumdepth}{-1}%               We don't want the Appendix to have a number, but it should be linked.
+%             
+%             \phantomsection%                            We use a phantom section under the assumption that the appendicies 
+%             %                                               will each individually be named via a \chapter command in the file.
+%             %
+%             %\addcontentsline{toc}{chapter}{APPENDIX}
+%             %
+%             \addtocontents{toc}{\vspace{2 mm}}
+%             \addtocontents{toc}{\protect\contentsline{part}{APPENDIX}{}{}}%
+%             
+%             \setcounter{secnumdepth}{4}
+%             \newcounter{appendixVal}%                   Use an entirely different counter for Appendicies to avoid
+%             %                                               hyperref misdirections to other already existing chapters.
+%             \setcounter{appendixVal}{0}%                Start counter at 0,
+%             %                                               Since the counter is stepped before the label is made.
+%             \let\appendixChapter\chapter%                  Save the normal \chapter command so we can temporarily hijack it.
+%             \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the 
+%             %                                               Appendix counter to the normal chapter command.
+%             \renewcommand{\thechapter}{\Alph{appendixVal}}% Force the ToC to display and link using the new counter.
+%             \input{\appendixFile}%                      Input the appendix file, since we already checked that it exists.
+%             \let\chapter\appendixChapter%               Reset the chapter command back to normal now that appendix is done.
+%             
+%             \titleformat{\chapter}[hang]%               Reset chapter titling to normal now that Appendix are done.
+%                 {\uppercase}
+%                 {}
+%                 {0pt}
+%                 {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+%                 [\raggedright\doublespacing]
+% 
+%         \else%                                          If there is only one Appendix, we should do it this way:
+% 
+%              \titlecontents{chapter}[0em]
+%                 {\addvspace{8pt}}
+%                 {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX:  \expandafter\contentslabel{2em}}\hyper@linkend%
+%                 \ifchapterCapOff\else\color{blue}\uppercase\fi}
+%                 {}
+%                 {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+%                 \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
+%                 
+%                 \titlecontents{chapter}[0em]
+%                 {\addvspace{8pt}}
+%                 {\hspace*{-2em}\hyper@linkstart{link}{\Hy@tocdestname}\hspace*{2em}{APPENDIX: }\hyper@linkend%
+%                 \ifchapterCapOff\else\color{blue}\uppercase\fi}
+%                 {}
+%                 {\hyper@linkstart{link}{\Hy@tocdestname}{\titlerule*[5pt]{.}\thecontentspage}\hyper@linkend \\*}
+%                 \renewcommand{\thechapter}{}% Remove the number in front of the appendix chapter name.
+%                 
+%                 
+%                \titleformat{\chapter}[hang]
+%                 {\uppercase}
+%                 {}
+%                 {0pt}
+%                 {\centering\realSingleSpace Appendix\\[-5pt]}
+%                 [\raggedright\doublespacing]
+%                  %%%%%%%%%%%%%%
+%                  
+%     
+%                
+%                \setcounter{secnumdepth}{4}
+%                 \newcounter{appendixVal}%                  Use an entirely different counter for Appendicies to avoid
+%             %                                               hyperref misdirections to other already existing chapters.
+%                 \setcounter{appendixVal}{0}%                Start counter at 0,
+%             %                                               Since the counter is stepped before the label is made.
+%                 \let\appendixChapter\chapter%               Save the normal \chapter command so we can temporarily hijack it.
+%                  \renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}}% Append a stepcounter to the Appendix
+%                \renewcommand{\thechapter}{\Alph{appendixVal}}%
+%                
+%                 \input{\appendixFile}
+%                 
+%                  \let\chapter\appendixChapter% 
+%                 
+%                 %%%%%%%%%%%%%%
+%                 \titleformat{\chapter}[hang]%               
+%                 {\uppercase}
+%                 {}
+%                 {0pt}
+%                 {\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}
+%                 [\raggedright\doublespacing]
+%                             
+%         \fi
+%         
+%         }
+%         {
+%             \@latex@warning{You haven't specified an appendix file using the command \setAppendixFile. Hopefully this is intentional!}
+%         }
+%     
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%      Class Options     %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
