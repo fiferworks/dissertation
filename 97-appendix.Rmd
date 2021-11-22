@@ -1,25 +1,46 @@
 <!-- We don't want to number our chapters anymore. -->
 \docBodyfalse
-\setcounter{secnumdepth}{-1}
+
+<!-- MULTIPLE APPENDICIES -->
+<!-- silence the code below if only one appendix -->
+<!-- If there are multiple appendicies, we should format it this way. I am told
+that now the grad school wants "APPENDIX A" above the first appendix etc for
+multi appendicies. I have included this option into the multiAppendix
+conditional under the assumption this is true. -->
+\titleformat{\chapter}[hang]{\uppercase}{}{0pt}{\centering\realSingleSpace Appendix \thechapter \\[-5pt]}\raggedright\doublespacing
+\setcounter{secnumdepth}{-1} <!-- We don't want the Appendix to have a number, but it should be linked. -->
+\phantomsection <!-- We use a phantom section under the assumption that the appendicies will each individually be named via a \chapter command in the file.-->
+\addtocontents{toc}{\vspace{2 mm}}
+\addtocontents{toc}{\protect\contentsline{part}{APPENDIX}{}{}}
+\setcounter{secnumdepth}{4}
+\newcounter{appendixVal} <!-- Use an entirely different counter for Appendicies to avoid hyperref misdirections to other already existing chapters. -->
+\setcounter{appendixVal}{-2} <!-- The counter is double counting for some reason, starting the counter at -2, Since the counter is stepped before the label is made. -->
+\let\appendixChapter\chapter <!-- Save the normal \chapter command so we can temporarily hijack it. -->
+\renewcommand{\chapter}[1]{\stepcounter{appendixVal}\appendixChapter{#1}} <!-- Append a stepcounter to the Appendix counter to the normal chapter command. -->
+\renewcommand{\thechapter}{\Alph{appendixVal}} <!-- Force the ToC to display and link using the new counter. -->
+<!-- END MULTIPLE APPENDICIES -->
 
 <!-- Un-silence the following line if you aren't importing a pdf -->
-# APPENDIX {-}
+<!-- # APPENDIX {-} -->
 
 <!-- This imports the first page of my pdf, you need the -3 cm offset to
 avoid overlapping the chapter heading-->
-\includepdf[pages=1,pagecommand=\chapter{FIRST REPORT OF \textit{Phyllocoptes fructiphilus} Kiefer (ERIOPHYIDAE), THE VECTOR OF THE ROSE ROSETTE VIRUS, IN FLORIDA, USA}, offset=0 -3cm]{pubs/pfruct-report.pdf}
+\includepdf[pages=1,pagecommand=\chapter{FIRST REPORT OF \textit{Phyllocoptes fructiphilus} Kiefer (ERIOPHYIDAE), THE VECTOR OF THE ROSE ROSETTE VIRUS, IN FLORIDA, USA}, scale=0.93, offset=0 -0.75cm]{pubs/pfruct-report.pdf}
 
 <!-- I needed to move the page numbers a little lower to avoid overlapping the
 text at the bottom of the pdf -->
 \setlength{\footskip}{4.2em}
 
+<!-- The counter is double counting for some reason, resetting the counter here -->
+\setcounter{appendixVal}{-1} 
+
 <!-- This imports the second to the last pages of my pdf -->
 \includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/pfruct-report.pdf}
 
 
-<!-- This imports the first page of my pdf, you need the -0.5 cm offset to
+<!-- This imports the first page of my pdf, you need the - cm offset to
 avoid overlapping the chapter heading-->
-\includepdf[pages=1,pagecommand=\chapter{\textit{Brevipalpus}-TRANSMITTED ORCHID FLECK VIRUS INFECTING THREE NEW ORNAMENTAL HOSTS IN FLORIDA}, scale=0.95, offset=0 -0.5cm]{pubs/ofv_brevi_report.pdf}
+\includepdf[pages=1,pagecommand=\chapter{\textit{Brevipalpus}-TRANSMITTED ORCHID FLECK VIRUS INFECTING THREE NEW ORNAMENTAL HOSTS IN FLORIDA}, scale=0.93, offset=0.75 -1cm]{pubs/ofv_brevi_report.pdf}
 
 <!-- I needed to move the page numbers a little lower to avoid overlapping the
 text at the bottom of the pdf -->
@@ -27,3 +48,7 @@ text at the bottom of the pdf -->
 
 <!-- This imports the second to the last pages of my pdf -->
 \includepdf[pages={2-last}, pagecommand={\thispagestyle{plain}}, fitpaper = true]{pubs/ofv_brevi_report.pdf}
+
+<!-- END APPENDICIES -->
+\let\chapter\appendixChapter <!--  Reset the chapter command back to normal now that appendix is done. -->
+\titleformat{\chapter}[hang]{\uppercase}{}{0pt}{\centering\realSingleSpace\ifdocBody CHAPTER \thechapter \\[-5pt] \fi}\raggedright\doublespacing
