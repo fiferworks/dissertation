@@ -317,6 +317,9 @@ causing damage in defoliation in coffee plantations in the states of Minas Gerai
   number    = {1},
   pages     = {89--96},
   volume    = {34},
+  abstract  = {The knowledge of pest dispersal is crucial for understanding the dynamics of resistance to pesticides. Therefore, the main objective of this research was to study the dispersal of Brevipalpus phoenicis (Geijskes) under laboratory, greenhouse and citrus groves conditions. Dispersal studies of B. phoenicis on sandy surface conducted under greenhouse conditions showed that dispersal capacity by crawling is relatively limited. After the release of 6,000 mites in one point, approximately 3% reached distances of 40 to 50 cm from the release point. This mite moved less than 1 cm.day-1. Wind speed of 23 km.h-1 was not enough to trigger mite dispersal from the surface of citrus fruits under laboratory conditions. Wind speeds of 30 and 40 km.h-1 were capable to trigger the dispersal of less than 1% of mites on fruits. Mite dispersal studies with the use of sticky traps under field conditions also showed that B. phoenicis dispersal is limited when compared to other mite species from citrus groves. In this experiment, from a total of 2,420 and 661 mites collected from each of two citrus fields in Descalvado, region, State of S{\~{a}}o Paulo, Brazil, 0.4 and 11.8% of the mites belonged to the family Tenuipalpidae. The limited dispersal of B. phoenicis requires considerable attention in the establishment of acaricide resistance management strategies.
+
+Leprosis mite; acaricide resistance; aerial dispersal},
   doi       = {10.1590/s1519-566x2005000100013},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -6055,6 +6058,19 @@ Dispersal involves many behavioural interactions that if inefficient or ineffect
   series    = {World crop pests},
   volume    = {6},
   doi       = {10.1016/s1572-4379(96)80050-9},
+}
+
+@Article{Marini2021,
+  author    = {Marini, Francesca and Vidovi{\'{c}}, Biljana and Lonis, Simone and Wibawa, Maria Irene and de Lillo, Enrico and Kashefi, Javid and Cristofaro, Massimo and Smith, Lincoln},
+  journal   = {Biological Control},
+  title     = {Comparison of the performance of an eriophyid mite, {\textit{Aceria salsolae}}, on nontarget plants in the laboratory and in the field},
+  year      = {2021},
+  month     = jan,
+  pages     = {104455},
+  volume    = {152},
+  abstract  = {There is increasing interest in the possibility of using eriophyid mites as biological control agents of invasive alien weeds; however their small size and our lack of knowledge about their general biology present challenges to evaluating their risk to nontarget plants. Aceria salsolae has been proposed as a candidate agent for Russian thistle (Salsola tragus) in the USA. During host specificity testing this mite could sometimes persist on five nontarget species under laboratory no-choice conditions. We conducted a series of no-choice laboratory experiments and a field experiment to try to delineate the physiological and ecological host ranges of this mite and assess its risk to nontarget plants. In the laboratory, A. salsolae increased exponentially on S. tragus, multiplying about 80 fold in 5 weeks. Low levels of reproduction were observed on some plants of Atriplex coronata, Bassia hyssopifolia, B. prostrata, Kochia scoparia and Suaeda calceoliformis in the laboratory during 5 weeks, but mean mite densities remained low (less than 6 fold increase vs. 80 fold on S. tragus). In a field experiment in which plants were inoculated with mites in June and then harvested when they began to produce seed, mites persisted on A. coronata for up to 9 weeks after inoculation, but at extremely low densities, and with no evidence of reproduction. No mites persisted on A. truncata, B. hyssopifolia, or S. calceoliformis. Mite densities were lower on all plants in the field than in the laboratory, probably due to increased mortality and the opportunity to disperse by wind. No signs of damage were observed on any of the nontarget plants in the laboratory or the field experiments. We conclude that this mite is not likely to multiply on any of these plants under field conditions, and that it is not expected to pose a risk to any nontarget plants in the contiguous USA.},
+  doi       = {10.1016/j.biocontrol.2020.104455},
+  publisher = {Elsevier {BV}},
 }
 
 @Article{Marques2010,
