@@ -34,6 +34,8 @@ Eriophyoid mites are known to disperse aerially over a hundred meters away from 
 Eriophyids have also been found to move on contaminated clothing and equipment [@Duffner2001].
 
 
+Similarly, tenuipalpid mites are not known to disperse very far by walking, and few (< 1\%) mites were seen to disperse even when wind speeds reached 30 and 40 km/h$_{-1}$ in lab experiments [@Alves2005], suggesting that their potential for natural dispersal is low.
+
 On the other hand, the current invasions of *P. fructiphilus* may have been introduced through their natural means of dispersal over time. The short distances between mite infested roses in Georgia, Alabama and Florida suggest the possibility of multiple routes of introduction, but the mechanisms of dispersal require further investigation for *P. fructiphilus*. 
 
 In addition, the movements of plant pathogens such as RRD is thought to be partially driven by socioeconomic factors and the movement of plants by people [@Nelson2015; @Katsiani2020]. Inspections and quarantines of mite-infested roses by wholesalers and larger growers is predicted to slow the spread of plant pathogen epidemics [@Nelson2015].
