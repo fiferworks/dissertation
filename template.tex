@@ -83,15 +83,21 @@ $endif$
 \def\subsectionautorefname{Subsection}
 % End of CII addition
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN DOCUMENT                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
-\docBodyfalse
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TITLE PAGE                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    \begin{center}
-        \thispagestyle{empty}%
-        \vspace*{-0.4in}\realSingleSpace{$title$}%
+\docBodyfalse
+
+\begin{center}
+    \thispagestyle{empty}%
+      \vspace*{-0.4in}\realSingleSpace{$title$}%
         \vfill%
         By \\*[\baselineskip]%
         \MakeUppercase{$author$}%
@@ -102,19 +108,21 @@ $endif$
         \MakeUppercase{$degree$} \\*[\baselineskip]%
         UNIVERSITY OF FLORIDA \\*[\baselineskip]%
         {$year$}%
-    \end{center}
-    \newpage
+\end{center}
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COPYRIGHT PAGE                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \newpage
-      \vspace*{\fill}
-        \begin{center}
-            \textcopyright{} {$year$} {$author$}
-        \end{center}
-      \vspace*{\fill}
-    \newpage
+
+\newpage
+  \vspace*{\fill}
+    \begin{center}
+        \textcopyright{} {$year$} {$author$}
+    \end{center}
+  \vspace*{\fill}
+\newpage
 
 \setcounter{secnumdepth}{-1}     % We don't want chapter numbers until later,
                                  % So let's kill off the table of contents depth detector until we want to start counting.
@@ -124,12 +132,13 @@ $endif$
 % DEDICATION                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    \vspace*{\fill}               % We want the dedication to be centered,
+\vspace*{\fill}                   % We want the dedication to be centered,
                                   % So we use \vspace*{\fill} above and below.
-\begin{center}                    % We also want to center the dedication horizontally.
-  \realSingleSpace
-  {$dedication$}
-\end{center}
+  \begin{center}                    % We also want to center the dedication horizontally.
+    \realSingleSpace
+    {$dedication$}
+  \end{center}
+
 \vspace*{\fill}                   % Note that the * in \vspace* is necessary,
                                   % as otherwise latex will ignore it here
 
@@ -145,7 +154,7 @@ $endif$
 % TABLE OF CONTENTS             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \realSingleSpace
+\realSingleSpace
   \tableofcontents % Table of Contents comes fourth.
 
 
@@ -153,7 +162,7 @@ $endif$
 % LIST OF TABLES                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \listoftables  % List of tables comes next, if you have one.
+\listoftables  % List of tables comes next, if you have one.
   \addcontentsline{toc}{chapter}{LIST OF TABLES}
 
 
@@ -161,7 +170,7 @@ $endif$
 % LIST OF FIGURES               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \listoffigures % List of figures comes next, if you have one.
+\listoffigures % List of figures comes next, if you have one.
   \addcontentsline{toc}{chapter}{LIST OF FIGURES}
 
 
@@ -172,6 +181,7 @@ $endif$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ACADEMIC ABSTRACT             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 $if(abstract)$
 \newpage                         % Since the abstract needs to be a phantom chapter, we need to force a newpage.
     \phantomsection
@@ -194,6 +204,8 @@ $if(abstract)$
                 $endif$
             \noindent Major: {$major$} \\
    \hphantom{forcing a space here} \\
+   
+\doublespacing
 {$abstract$}
 
 \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}% Input a dummy "CHAPTER" heading to show user-content
@@ -205,7 +217,6 @@ $endif$
 % CHAPTERS                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \doublespacing
     {$body$}                       % This imports the body chapters included in the _bookdown.yml file,
 % you can add as many chapters as you need
 
@@ -230,3 +241,7 @@ $endif$
 
 
 \end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END DOCUMENT                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

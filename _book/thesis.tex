@@ -76,14 +76,20 @@
 \def\sectionautorefname{Section}
 \def\subsectionautorefname{Subsection}
 % End of CII addition
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN DOCUMENT                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\docBodyfalse
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TITLE PAGE                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{center}
-        \thispagestyle{empty}%
-        \vspace*{-0.4in}\realSingleSpace{DETECTION OF TWO MITE-PLANT-VIRUS PATHOSYSTEMS IN FLORIDA, INCLUDING CHEMICAL ECOLOGY OF \emph{Amblyseius swirskii} and INDUCTION OF SYSTEMIC ACQUIRED RESISTANCE ON ROSES}%
+
+\docBodyfalse
+\begin{center}
+    \thispagestyle{empty}%
+      \vspace*{-0.4in}\realSingleSpace{DETECTION OF TWO MITE-PLANT-VIRUS PATHOSYSTEMS IN FLORIDA, INCLUDING CHEMICAL ECOLOGY OF \emph{Amblyseius swirskii} and INDUCTION OF SYSTEMIC ACQUIRED RESISTANCE ON ROSES}%
         \vfill%
         By \\*[\baselineskip]%
         \MakeUppercase{Austin N Fife}%
@@ -94,19 +100,20 @@
         \MakeUppercase{Doctor of Philosophy} \\*[\baselineskip]%
         UNIVERSITY OF FLORIDA \\*[\baselineskip]%
         {2021}%
-    \end{center}
-    \newpage
+\end{center}
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COPYRIGHT PAGE                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \newpage
-      \vspace*{\fill}
-        \begin{center}
-            \textcopyright{} {2021} {Austin N Fife}
-        \end{center}
-      \vspace*{\fill}
-    \newpage
+
+\newpage
+  \vspace*{\fill}
+    \begin{center}
+        \textcopyright{} {2021} {Austin N Fife}
+    \end{center}
+  \vspace*{\fill}
+\newpage
 
 \setcounter{secnumdepth}{-1}     % We don't want chapter numbers until later,
                                  % So let's kill off the table of contents depth detector until we want to start counting.
@@ -116,12 +123,12 @@
 % DEDICATION                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    \vspace*{\fill}               % We want the dedication to be centered,
+\vspace*{\fill}                   % We want the dedication to be centered,
                                   % So we use \vspace*{\fill} above and below.
-\begin{center}                    % We also want to center the dedication horizontally.
-  \realSingleSpace
-  {For Liz, Violet, Juniper and Fifes to come}
-\end{center}
+  \begin{center}                    % We also want to center the dedication horizontally.
+    \realSingleSpace
+    {For Liz, Violet, Juniper and Fifes to come}
+  \end{center}
 \vspace*{\fill}                   % Note that the * in \vspace* is necessary,
                                   % as otherwise latex will ignore it here
 
@@ -140,7 +147,7 @@ I would like to give special thanks for the Tallahassee Museum and their patienc
 % TABLE OF CONTENTS             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \realSingleSpace
+\realSingleSpace
   \tableofcontents % Table of Contents comes fourth.
 
 
@@ -148,7 +155,7 @@ I would like to give special thanks for the Tallahassee Museum and their patienc
 % LIST OF TABLES                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \listoftables  % List of tables comes next, if you have one.
+\listoftables  % List of tables comes next, if you have one.
   \addcontentsline{toc}{chapter}{LIST OF TABLES}
 
 
@@ -156,7 +163,7 @@ I would like to give special thanks for the Tallahassee Museum and their patienc
 % LIST OF FIGURES               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \listoffigures % List of figures comes next, if you have one.
+\listoffigures % List of figures comes next, if you have one.
   \addcontentsline{toc}{chapter}{LIST OF FIGURES}
 
 
@@ -167,6 +174,7 @@ I would like to give special thanks for the Tallahassee Museum and their patienc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ACADEMIC ABSTRACT             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newpage                         % Since the abstract needs to be a phantom chapter, we need to force a newpage.
     \phantomsection
     \addcontentsline{toc}{chapter}{ABSTRACT}
@@ -186,6 +194,8 @@ I would like to give special thanks for the Tallahassee Museum and their patienc
                                 \noindent Cochair: {Mathews Paret} \\% If there is a Co-chair provided, then list it.
                             \noindent Major: {Entomology and Nematology} \\
    \hphantom{forcing a space here} \\
+   
+\doublespacing
 {The invasive \emph{Phyllocoptes fructiphilus} (Trombidformes: Eriophyidae) is the vector of \emph{Rose rosette emaravirus} (RRV), the causal agent of Rose Rosette Disease (RRD). Growers are interested in more management options to combat this mite-plant-virus pathosystem. Surveys were conducted from 2019-2021 in northern Florida, searching for RRD, \emph{P. fructiphilus}, predatory mites, and other mites on roses in the landscape. As a result, \emph{P. fructiphilus} were discovered for the first time in Florida. Various other unidentified mites were collected, but no RRD was found. Some growers of ornamental roses are interested in use of the predatory mite, \emph{Amblyseius swirskii} Athias-Henriot (Parasitiformes: Phytoseiidae) for biological control of various pests in roses. Olfactometer tests revealed \emph{A. swirskii} attraction to RRV-infested roses. To investigate this attraction, volatile organic chemicals (VOCs) were collected with two different methodologies from the headspace of roses treated in the field and in the lab. Volatiles were collected from roses treated with acibenzolar-S-methyl (ASM, a systemic acquired resistance (SAR) inducer), healthy and RRV-infected roses. The volatiles \textbeta-Caryophyllene and \textgamma-Murrolene were found in greater amounts in RRV-infected roses using the solid phase microextraction field method. These chemicals may explain \emph{A. swirskii} attraction to RRV-infected roses. We conducted field trials of ASM, spirotetramat and \emph{A. swirskii} releases on roses in Griffin and Athens, GA, as well as Tallahassee, FL. We found that spirotetramat significantly reduced populations of \emph{P. fructiphilus}. Pruning may also reduce populations of \emph{P. fructiphilus} in non-viruliferous roses. We describe the first detection of \emph{Orchid fleck dichorhavirus}, orchid infecting subgroup (OFV-Orc) infecting three unreported ornamental hosts in Leon and Alachua Counties, FL. Plants from the Orchidaceae, Asparagaceae (Nolinoidaea), and Rutaceae can become infected with OFV-Orc. Infection causes citrus leprosis-like symptoms in the Rutaceae. The vector, \emph{Brevipalpus californicus} (Banks) \emph{sensu lato} (Trombidiformes: Tenuipalpidae) were collected an identified from OFV-Orc-infected plants. Coinfections of two different OFV-Orc strains were detected in both counties. In conclusion, Florida has many plants in the landscape threatened by these mite-plant-virus pathosystems, each of which represent a risk for economic losses for the ornamental plant industry in the southeastern US.}
 
 \addtocontents{toc}{\protect\contentsline{part}{CHAPTER}{}{}}% Input a dummy "CHAPTER" heading to show user-content
@@ -196,7 +206,6 @@ I would like to give special thanks for the Tallahassee Museum and their patienc
 % CHAPTERS                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \doublespacing
     {\hypertarget{literature-review}{%
 \chapter{LITERATURE REVIEW}\label{literature-review}}
 
@@ -2867,3 +2876,6 @@ Austin N Fife received his B.S. degree in biology - zoology emphasis at Brigham 
 
 
 \end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END DOCUMENT                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
