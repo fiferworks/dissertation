@@ -15,6 +15,9 @@ if (length(nu_pkgs))
 lapply(pkgs, library, character.only = TRUE)
 rm(pkgs, nu_pkgs)
 
+# allowing more overlaps in the plots
+options(ggrepel.max.overlaps = Inf)
+
 # reading in master datasheet
 df <- read_csv("data/rrv_volatiles_pca_table.csv")
 
@@ -23,28 +26,28 @@ df <- df %>% dplyr::select(-Styrene)
 
 # averaging the baseline plants from the data,
 # they overwhelm components from rrv plants
-avg_clean_rose_qsep <- df %>%
+avg_clean_rose_vcts <- df %>%
   filter(str_detect(Sample, "rose_clean_greenhouse*"))
 
-avg_clean_rose_qsep <-
-  avg_clean_rose_qsep %>% summarise(across(is.numeric, mean))
+avg_clean_rose_vcts <-
+  avg_clean_rose_vcts %>% summarise(across(is.numeric, mean))
 
 # there is no injection method, it is an average of the baseline roses
-avg_clean_rose_qsep <-
-  avg_clean_rose_qsep %>% add_column('Sample' = 'avg_clean_rose_qsep', 'Treatment' = 'untreated')
+avg_clean_rose_vcts <-
+  avg_clean_rose_vcts %>% add_column('Sample' = 'avg_clean_rose_vcts', 'Treatment' = 'untreated')
 
-df <- bind_rows(df, avg_clean_rose_qsep)
+df <- bind_rows(df, avg_clean_rose_vcts)
 
 df <- df %>%
   filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
-# making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
+# making three different tables: one with just spme samples, another with just vcts samples and one with all combined (df)
 rrd_spme <-
   df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
 
-# qsep only
-rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
+# vcts only
+rrd_vcts <-
+  df %>%  filter(`Injection Method` == 'rrd_vcts') %>% select_if(~ any(. > 0))
 
 ####PRINCIPAL COMPONENT ANALYSIS####
 # prcomp uses singular value decomposition (SVD)
@@ -56,7 +59,7 @@ run_pca <- function(data) {
 
 pca_df <- run_pca(df)
 pca_spme <- run_pca(rrd_spme)
-pca_qsep <- run_pca(rrd_qsep)
+pca_vcts <- run_pca(rrd_vcts)
 
 ####PLOTTING SCREEPLOTS AND PCA####
 # fviz_screeplot(pca_df, addlabels = TRUE, choice = "eigenvalue")
@@ -64,8 +67,10 @@ plot_n_save <- function(graph) {
   fviz_screeplot(
     graph,
     addlabels = TRUE,
+    labelsize = 15,
     choice = "variance",
-    title = paste(deparse(substitute(graph)))
+    title = paste(deparse(substitute(graph))),
+    ggtheme = theme_minimal(base_size = 30)
   )
   filename <-
     paste("figure/rrv_volatiles_screeplot_",
@@ -77,25 +82,23 @@ plot_n_save <- function(graph) {
     plot = last_plot(),
     device = png,
     type = 'cairo',
-    width = 16,
-    height = 9,
     scale = 1,
     dpi = 300
   )
-  fviz_pca_biplot(
+  fviz_contrib(
     graph,
-    labelsize = 24,
-    col.var = "contrib",
-    select.var = list(contrib = 5),
-    addEllipses = TRUE,
-    label = "all",
-    repel = TRUE,
-    geom = c("arrow", "text"),
+    choice = c("var"),
+    axes = 1,
+    fill = "steelblue",
+    color = "steelblue",
+    sort.val = c("desc"),
+    top = 10,
+    xtickslab.rt = 45,
     title = paste(deparse(substitute(graph))),
-    ggtheme = theme_minimal(base_size = 50)
+    ggtheme = theme_minimal(base_size = 20)
   )
-  filename2 <-
-    paste("figure/rrv_volatiles_biplot_var_",
+filename2 <-
+    paste("figure/rrv_volatiles_var_",
           deparse(substitute(graph)),
           ".png",
           sep = "")
@@ -104,24 +107,25 @@ plot_n_save <- function(graph) {
     plot = last_plot(),
     device = png,
     type = 'cairo',
-    width = 16,
-    height = 9,
     scale = 1,
+    width = 12,
+    height = 8,
     dpi = 300
   )
-  
-  fviz_pca_biplot(
+fviz_contrib(
     graph,
-    labelsize = 24,
-    addEllipses = TRUE,
-    label = "all",
-    repel = TRUE,
-    select.ind = list(contrib = 10),
+    choice = c("ind"),
+    axes = 1,
+    fill = "steelblue",
+    color = "steelblue",
+    sort.val = c("desc"),
+    top = 10,
+    xtickslab.rt = 45,
     title = paste(deparse(substitute(graph))),
-    ggtheme = theme_minimal(base_size = 50)
-  )
-  filename3 <-
-    paste("figure/rrv_volatiles_biplot_ind_",
+    ggtheme = theme_minimal(base_size = 20))
+
+filename3 <-
+    paste("figure/rrv_volatiles_ind_",
           deparse(substitute(graph)),
           ".png",
           sep = "")
@@ -130,8 +134,6 @@ plot_n_save <- function(graph) {
     plot = last_plot(),
     device = png,
     type = 'cairo',
-    width = 16,
-    height = 9,
     scale = 1,
     dpi = 300
   )
@@ -140,12 +142,12 @@ plot_n_save <- function(graph) {
 # plotting and savin'
 plot_n_save(pca_df)
 plot_n_save(pca_spme)
-plot_n_save(pca_qsep)
+plot_n_save(pca_vcts)
 
 ####COMPONENT TABLES####
 pca_dat <- get_pca(pca_df)
 pca_dat_spme <- get_pca(pca_spme)
-pca_dat_qsep <- get_pca(pca_qsep)
+pca_dat_vcts <- get_pca(pca_vcts)
 
 # summary(pca_df)
 #
@@ -194,7 +196,7 @@ save_table <- function(tab) {
 
 save_table(pca_dat)
 save_table(pca_dat_spme)
-save_table(pca_dat_qsep)
+save_table(pca_dat_vcts)
 
 
 
@@ -202,7 +204,7 @@ save_table(pca_dat_qsep)
 ####PLOTTING PCAS AGAINST ONE ANOTHER####
 pca_df <- run_pca(df)
 pca_spme <- run_pca(rrd_spme)
-pca_qsep <- run_pca(rrd_qsep)
+pca_vcts <- run_pca(rrd_vcts)
 
 # plotting the PCAs against one another
 pca_comp_df <- df %>%
@@ -211,8 +213,8 @@ pca_comp_df <- df %>%
 pca_comp_spme <- rrd_spme %>%
   mutate(PCA1 = pca_spme$x[, 1], PCA2 = pca_spme$x[, 2])
 
-pca_comp_qsep <- rrd_qsep %>%
-  mutate(PCA1 = pca_qsep$x[, 1], PCA2 = pca_qsep$x[, 2])
+pca_comp_vcts <- rrd_vcts %>%
+  mutate(PCA1 = pca_vcts$x[, 1], PCA2 = pca_vcts$x[, 2])
 
 # function fer savin'
 save_pca_comparisons <- function (graph) {
@@ -276,7 +278,7 @@ save_pca_comparisons <- function (graph) {
 #savin' graphs
 save_pca_comparisons(pca_comp_df)
 save_pca_comparisons(pca_comp_spme)
-save_pca_comparisons(pca_comp_qsep)
+save_pca_comparisons(pca_comp_vcts)
 
 #cleanup
 rm(list = ls())

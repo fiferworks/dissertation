@@ -24,26 +24,26 @@ df <- df %>% select(-Styrene)
 
 # averaging the baseline plants from the data,
 # they overwhelm components from rrv plants
-avg_clean_rose_qsep <- df %>%
+avg_clean_rose_vcts <- df %>%
   filter(str_detect(Sample, "rose_clean_greenhouse*"))
 
-avg_clean_rose_qsep <-
-  avg_clean_rose_qsep %>% summarise(across(is.numeric, mean))
+avg_clean_rose_vcts <-
+  avg_clean_rose_vcts %>% summarise(across(is.numeric, mean))
 
 # there is no injection method, it is an average of the baseline roses
-avg_clean_rose_qsep <-
-  avg_clean_rose_qsep %>% add_column('Sample' = 'avg_clean_rose_qsep', 'Treatment' = 'untreated')
+avg_clean_rose_vcts <-
+  avg_clean_rose_vcts %>% add_column('Sample' = 'avg_clean_rose_vcts', 'Treatment' = 'untreated')
 
-df <- bind_rows(df, avg_clean_rose_qsep)
-
-df <- df %>%
-  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
+df <- bind_rows(df, avg_clean_rose_vcts)
 
 df <- df %>%
   filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
+df <- df %>%
+  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
 
-# making three different tables: one with just spme samples, another with just qsep samples and one with all combined (df)
+
+# making three different tables: one with just spme samples, another with just vcts samples and one with all combined (df)
 rrd_spme <-
   df %>%  filter(`Injection Method` == 'rrd_spme') %>% select_if(~ any(. > 0))
 
@@ -54,15 +54,15 @@ cont_spme <- head(cont_spme %>% arrange(desc(PCA1)), n = 6)
 rrd_spme <-
   rrd_spme %>% select(Sample, Treatment, `Injection Method`, cont_spme$Chemical)
 
-# # limiting list to top ten contributing chemicals, qsep only
-rrd_qsep <-
-  df %>%  filter(`Injection Method` == 'rrd_qsep') %>% select_if(~ any(. > 0))
+# # limiting list to top ten contributing chemicals, vcts only
+rrd_vcts <-
+  df %>%  filter(`Injection Method` == 'rrd_vcts') %>% select_if(~ any(. > 0))
 
-cont_qsep <-
-  read_csv("data/rrv_volatiles_contribution_table_pca_dat_qsep.csv")
-cont_qsep <- head(cont_qsep %>% arrange(desc(PCA1)), n = 6)
-rrd_qsep <-
-  rrd_qsep %>% select(Sample, Treatment, `Injection Method`, cont_qsep$Chemical)
+cont_vcts <-
+  read_csv("data/rrv_volatiles_contribution_table_pca_dat_vcts.csv")
+cont_vcts <- head(cont_vcts %>% arrange(desc(PCA1)), n = 6)
+rrd_vcts <-
+  rrd_vcts %>% select(Sample, Treatment, `Injection Method`, cont_vcts$Chemical)
 
 # for all volatiles
 cont_all <-
@@ -117,8 +117,6 @@ make_main_umap <- function(y) {
     plot = last_plot(),
     device = png,
     type = 'cairo',
-    width = 16,
-    height = 9,
     scale = 1,
     dpi = 300
   )
@@ -126,10 +124,10 @@ make_main_umap <- function(y) {
 
 make_main_umap(df)
 make_main_umap(rrd_spme)
-make_main_umap(rrd_qsep)
+make_main_umap(rrd_vcts)
 
 # in the future, refactor the function to make this work:
-# list_of_tables <- list(df, rrd_spme, rrd_qsep)
+# list_of_tables <- list(df, rrd_spme, rrd_vcts)
 # walk(list_of_tables, make_main_umap)
 
 
@@ -169,8 +167,6 @@ umap_n_save_graph <- function(x) {
     plot = last_plot(),
     device = png,
     type = 'cairo',
-    width = 16,
-    height = 9,
     scale = 1,
     dpi = 300
   )
@@ -178,7 +174,7 @@ umap_n_save_graph <- function(x) {
 
 umap_n_save_graph(df)
 umap_n_save_graph(rrd_spme)
-umap_n_save_graph(rrd_qsep)
+umap_n_save_graph(rrd_vcts)
 
 # ####3D UMAP PLOTS####
 # volatiles_umap_3d <- select(df, -Sample, -Treatment) %>%
