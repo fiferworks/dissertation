@@ -6218,6 +6218,20 @@ Keywords: host jumping; viral evolution; trade-off; plant virus; RNA virus; poty
   publisher = {American Society for Horticultural Science},
 }
 
+@Article{McInnes2018,
+  author        = {McInnes, Leland and Healy, John and Melville, James},
+  journal       = {arXiv preprint arXiv:1802.03426},
+  title         = {{UMAP}: uniform manifold approximation and projection for dimension reduction},
+  year          = {2018},
+  month         = feb,
+  abstract      = {UMAP (Uniform Manifold Approximation and Projection) is a novel manifold learning technique for dimension reduction. UMAP is constructed from a theoretical framework based in Riemannian geometry and algebraic topology. The result is a practical scalable algorithm that applies to real world data. The UMAP algorithm is competitive with t-SNE for visualization quality, and arguably preserves more of the global structure with superior run time performance. Furthermore, UMAP has no computational restrictions on embedding dimension, making it viable as a general purpose dimension reduction technique for machine learning.},
+  archiveprefix = {arXiv},
+  eprint        = {1802.03426},
+  file          = {:http\://arxiv.org/pdf/1802.03426v3:PDF},
+  keywords      = {stat.ML, cs.CG, cs.LG},
+  primaryclass  = {stat.ML},
+}
+
 @Article{McMurtry1997,
   author    = {McMurtry, J. A. and Croft, B. A.},
   journal   = {Annual Review of Entomology},
