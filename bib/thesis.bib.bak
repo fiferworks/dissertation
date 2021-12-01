@@ -4628,6 +4628,18 @@ Synthesis and applications. Intentional releases and escapes should be straightf
   publisher = {Wiley},
 }
 
+@InCollection{Jeppson1975a,
+  author    = {Jeppson, Lee R. and Keifer, Hartford H. and Baker, Edward W.},
+  booktitle = {Mites Injurious to Economic Plants},
+  publisher = {University of California Press},
+  title     = {Regulation of water loss by phytophagous mites},
+  year      = {1975},
+  month     = dec,
+  pages     = {35--39},
+  abstract  = {Mites,  to  survive,  must  be  able  to  withstand  considerable  fluctuations  of  tem-perature,  atmospheric  humidity,  and  various  other  potential  hinderances  in  their  milieu  which  affect  loss  of  water  from  the  mite.  Tetranychid  mites  regulate  their  water  loss by  virtue  of  a relatively  impermeable  cuticle  and  control  of  diffusion  of  water  from  the  tracheal   system  by  movements  of  the   stylophore.   At the  leaf  surface---the  usual  environment  of  tetranychid  mites---the relative  hu-midity  is  usually  high,  and  webbing  produced  by  the  mites  has  the  further  effect  of  maintaining  the  humidity  immediately  adjacent  to  the  leaf  surface.  Boudreaux  (1958)  has  shown  a  direct  relationship  of  feeding  rate  and  egg  production  to  the  relative  humidity  surrounding  the  food  plant.  From  his  work  it  can  be  assumed  that  the rate  of  water  excretion  governs  the  feeding  rate,  upon  which  egg  production  depends,  and  that  the  high  water  content  of  the  food  presents  a  problem  in  excretion rather  than  conservation.},
+  doi       = {10.1525/9780520335431-013},
+}
+
 @Book{Jeppson1975,
   author    = {Jeppson, Lee R. and Kiefer, Hartford H. and Baker, Edward W.},
   publisher = {University of California Press},
@@ -6061,6 +6073,20 @@ Dispersal involves many behavioural interactions that if inefficient or ineffect
   volume    = {42},
   doi       = {10.1007/s10493-007-9091-0},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Maggio2012,
+  author    = {Matt Maggio},
+  journal   = {Cactus and Succulent Journal},
+  title     = {Operation agave might!: combating eriophyoid mite of agave},
+  year      = {2012},
+  month     = nov,
+  number    = {6},
+  pages     = {283--291},
+  volume    = {84},
+  abstract  = {If you could design the most insidious pest imaginable, what would it be like? Would it command piercing sucking mouthparts more formidable than those of an IRS agent, or have the size and temperament of a Doberman pinscher? Not really, try a microscope on for size. Would it have impenetrable elytra which neither armor-piercing rounds nor the most caustic chemical could penetrate? You wish. The best shield is your most cherished plant. Would it be able to leap across fourteen flats of plants like Weevil Knievel, faster than you can count to Sevin? Dramatic, but why bother when the most gentle breeze makes the perfect vehicle. If you could imagine, the worst pest would be one you couldn't see, shoot, smell or squish between your fingers. But, perhaps the most insidious of all is the pest that doesn't kill your plants. It's the one that makes you kill your plants.},
+  doi       = {10.2985/0007-9367-84.6.283},
+  publisher = {Cactus and Succulent Society of America},
 }
 
 @Article{Majer2021,
