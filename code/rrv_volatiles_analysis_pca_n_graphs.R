@@ -1,6 +1,7 @@
 ####SETUP####
 pkgs <-
   c("tidyverse",
+    "FactoMineR",
     "factoextra",
     "tibble",
     "ggplot2",
@@ -38,8 +39,9 @@ avg_clean_rose_vcts <-
 
 df <- bind_rows(df, avg_clean_rose_vcts)
 
-df <- df %>%
-  filter(!str_detect(Sample, "rose_clean_greenhouse*"))
+df <- df %>% filter(!str_detect(Sample, "rose_clean_greenhouse*"))
+
+df <- df %>% filter(Sample != "avg_clean_rose_vcts")
 
 # making three different tables: one with just spme samples, another with just vcts samples and one with all combined (df)
 rrd_spme <-
@@ -52,10 +54,11 @@ rrd_vcts <-
 ####PRINCIPAL COMPONENT ANALYSIS####
 # prcomp uses singular value decomposition (SVD)
 # quick helper function to run for each dataframe
-run_pca <- function(data) {
-  data %>% dplyr::select(-Sample, -Treatment,-`Injection Method`) %>%
-    prcomp(center = TRUE, scale = FALSE)
-}
+
+run_pca <-
+  function(data) {
+    data %>% dplyr::select(-Sample,-Treatment, -`Injection Method`) %>% prcomp(center = TRUE, scale = FALSE)
+  }
 
 pca_df <- run_pca(df)
 pca_spme <- run_pca(rrd_spme)
@@ -63,7 +66,7 @@ pca_vcts <- run_pca(rrd_vcts)
 
 ####PLOTTING SCREEPLOTS AND PCA####
 # fviz_screeplot(pca_df, addlabels = TRUE, choice = "eigenvalue")
-plot_n_save <- function(graph) {
+plot_n_save <- function(graph, frame) {
   fviz_screeplot(
     graph,
     addlabels = TRUE,
@@ -72,11 +75,13 @@ plot_n_save <- function(graph) {
     title = paste(deparse(substitute(graph))),
     ggtheme = theme_minimal(base_size = 30)
   )
+  
   filename <-
     paste("figure/rrv_volatiles_screeplot_",
           deparse(substitute(graph)),
           ".png",
           sep = "")
+  
   ggsave(
     file = filename,
     plot = last_plot(),
@@ -85,6 +90,7 @@ plot_n_save <- function(graph) {
     scale = 1,
     dpi = 300
   )
+  
   fviz_contrib(
     graph,
     choice = c("var"),
@@ -97,11 +103,13 @@ plot_n_save <- function(graph) {
     title = paste(deparse(substitute(graph))),
     ggtheme = theme_minimal(base_size = 20)
   )
-filename2 <-
+  
+  filename2 <-
     paste("figure/rrv_volatiles_var_",
           deparse(substitute(graph)),
           ".png",
           sep = "")
+  
   ggsave(
     file = filename2,
     plot = last_plot(),
@@ -112,7 +120,8 @@ filename2 <-
     height = 8,
     dpi = 300
   )
-fviz_contrib(
+  
+  fviz_contrib(
     graph,
     choice = c("ind"),
     axes = 1,
@@ -122,13 +131,15 @@ fviz_contrib(
     top = 10,
     xtickslab.rt = 45,
     title = paste(deparse(substitute(graph))),
-    ggtheme = theme_minimal(base_size = 20))
-
-filename3 <-
+    ggtheme = theme_minimal(base_size = 20)
+  )
+  
+  filename3 <-
     paste("figure/rrv_volatiles_ind_",
           deparse(substitute(graph)),
           ".png",
           sep = "")
+  
   ggsave(
     file = filename3,
     plot = last_plot(),
@@ -137,12 +148,71 @@ filename3 <-
     scale = 1,
     dpi = 300
   )
+  
+  fviz_pca(
+    graph,
+    addEllipses = TRUE,
+    ellipse.level = 0.95,
+    label = "ind",
+    select.ind = list(contrib = 10),
+    repel = TRUE,
+    habillage = frame$Treatment,
+    xtickslab.rt = 45,
+    title = paste(deparse(substitute(graph))),
+    ggtheme = theme_minimal(base_size = 20)
+  )
+  
+  filename4 <-
+    paste("figure/rrv_volatiles_pca_ind_biplot_",
+          deparse(substitute(graph)),
+          ".png",
+          sep = "")
+  
+  ggsave(
+    file = filename4,
+    plot = last_plot(),
+    device = png,
+    type = 'cairo',
+    scale = 1,
+    dpi = 300
+  )
+  
+  fviz_pca(
+    graph,
+    addEllipses = TRUE,
+    ellipse.level = 0.95,
+    label = "var",
+    select.var = list(contrib = 10),
+    repel = TRUE,
+    habillage = frame$Treatment,
+    xtickslab.rt = 45,
+    title = paste(deparse(substitute(graph))),
+    ggtheme = theme_minimal(base_size = 20)
+  )
+  
+  filename5 <-
+    paste("figure/rrv_volatiles_pca_var_biplot_",
+          deparse(substitute(graph)),
+          ".png",
+          sep = "")
+  
+  ggsave(
+    file = filename5,
+    plot = last_plot(),
+    device = png,
+    type = 'cairo',
+    scale = 1,
+    dpi = 300
+  )
+  
+  
+  
 }
 
 # plotting and savin'
-plot_n_save(pca_df)
-plot_n_save(pca_spme)
-plot_n_save(pca_vcts)
+plot_n_save(pca_df, df)
+plot_n_save(pca_spme, rrd_spme)
+plot_n_save(pca_vcts, rrd_vcts)
 
 ####COMPONENT TABLES####
 pca_dat <- get_pca(pca_df)
@@ -201,84 +271,84 @@ save_table(pca_dat_vcts)
 
 
 
-####PLOTTING PCAS AGAINST ONE ANOTHER####
-pca_df <- run_pca(df)
-pca_spme <- run_pca(rrd_spme)
-pca_vcts <- run_pca(rrd_vcts)
-
-# plotting the PCAs against one another
-pca_comp_df <- df %>%
-  mutate(PCA1 = pca_df$x[, 1], PCA2 = pca_df$x[, 2])
-
-pca_comp_spme <- rrd_spme %>%
-  mutate(PCA1 = pca_spme$x[, 1], PCA2 = pca_spme$x[, 2])
-
-pca_comp_vcts <- rrd_vcts %>%
-  mutate(PCA1 = pca_vcts$x[, 1], PCA2 = pca_vcts$x[, 2])
-
-# function fer savin'
-save_pca_comparisons <- function (graph) {
-  ggplot(graph,
-         aes(PCA1,
-             PCA2,
-             color = Treatment)) +
-    ggtitle(paste(deparse(substitute(graph)))) +
-    geom_point(size = 3, alpha = 0.6) +
-    theme_bw() +
-    stat_ellipse(level = 0.95)
-  
-  filename <-
-    paste("figure/rrv_volatiles_comparison_",
-          deparse(substitute(graph)),
-          ".png",
-          sep = "")
-  ggsave(
-    file = filename,
-    plot = last_plot(),
-    device = png,
-    type = 'cairo',
-    width = 16,
-    height = 9,
-    scale = 1,
-    dpi = 300
-  )
-  
-  ggplot(graph,
-         aes(PCA1,
-             PCA2,
-             color = Treatment)) +
-    ggtitle(paste(deparse(substitute(graph)))) +
-    geom_point(size = 3, alpha = 0.6) +
-    theme_bw() +
-    stat_ellipse(level = 0.95) +
-    geom_text(
-      aes(label = Sample),
-      hjust = -0.05,
-      vjust = 0,
-      size = 24
-    )
-  
-  filename2 <-
-    paste("figure/rrv_volatiles_comparison_labeled_",
-          deparse(substitute(graph)),
-          ".png",
-          sep = "")
-  ggsave(
-    file = filename2,
-    plot = last_plot(),
-    device = png,
-    type = 'cairo',
-    width = 16,
-    height = 9,
-    scale = 1,
-    dpi = 300
-  )
-}
-
-#savin' graphs
-save_pca_comparisons(pca_comp_df)
-save_pca_comparisons(pca_comp_spme)
-save_pca_comparisons(pca_comp_vcts)
+# ####PLOTTING PCAS AGAINST ONE ANOTHER####
+# pca_df <- run_pca(df)
+# pca_spme <- run_pca(rrd_spme)
+# pca_vcts <- run_pca(rrd_vcts)
+#
+# # plotting the PCAs against one another
+# pca_comp_df <- df %>%
+#   mutate(PCA1 = pca_df$x[, 1], PCA2 = pca_df$x[, 2])
+#
+# pca_comp_spme <- rrd_spme %>%
+#   mutate(PCA1 = pca_spme$x[, 1], PCA2 = pca_spme$x[, 2])
+#
+# pca_comp_vcts <- rrd_vcts %>%
+#   mutate(PCA1 = pca_vcts$x[, 1], PCA2 = pca_vcts$x[, 2])
+#
+# # function fer savin'
+# save_pca_comparisons <- function (graph) {
+#   ggplot(graph,
+#          aes(PCA1,
+#              PCA2,
+#              color = Treatment)) +
+#     ggtitle(paste(deparse(substitute(graph)))) +
+#     geom_point(size = 3, alpha = 0.6) +
+#     theme_bw() +
+#     stat_ellipse(level = 0.95)
+#
+#   filename <-
+#     paste("figure/rrv_volatiles_comparison_",
+#           deparse(substitute(graph)),
+#           ".png",
+#           sep = "")
+#   ggsave(
+#     file = filename,
+#     plot = last_plot(),
+#     device = png,
+#     type = 'cairo',
+#     width = 16,
+#     height = 9,
+#     scale = 1,
+#     dpi = 300
+#   )
+#
+#   ggplot(graph,
+#          aes(PCA1,
+#              PCA2,
+#              color = Treatment)) +
+#     ggtitle(paste(deparse(substitute(graph)))) +
+#     geom_point(size = 3, alpha = 0.6) +
+#     theme_bw() +
+#     stat_ellipse(level = 0.95) +
+#     geom_text(
+#       aes(label = Sample),
+#       hjust = -0.05,
+#       vjust = 0,
+#       size = 24
+#     )
+#
+#   filename2 <-
+#     paste("figure/rrv_volatiles_comparison_labeled_",
+#           deparse(substitute(graph)),
+#           ".png",
+#           sep = "")
+#   ggsave(
+#     file = filename2,
+#     plot = last_plot(),
+#     device = png,
+#     type = 'cairo',
+#     width = 16,
+#     height = 9,
+#     scale = 1,
+#     dpi = 300
+#   )
+# }
+#
+# #savin' graphs
+# save_pca_comparisons(pca_comp_df)
+# save_pca_comparisons(pca_comp_spme)
+# save_pca_comparisons(pca_comp_vcts)
 
 #cleanup
 rm(list = ls())
