@@ -35,10 +35,10 @@ msfiles <-
     full.names = T
   )
 
-# reading in the VCT GC/MS data channel mass calls "MS_CALL"
+# reading in the vcts GC/MS data channel mass calls "MS_CALL"
 qsfiles <-
   list.files(
-    path = "./data/rrd_vct/TIC",
+    path = "./data/rrd_vcts/TIC",
     pattern = "*_Integration.txt",
     ignore.case = T,
     recursive = T,
